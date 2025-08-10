@@ -69,11 +69,11 @@
 				},
 				{
 					"id": "SphereMaxRadius",
-					"value": 4
+					"value": 5
 				},
 				{
 					"id": "SphereTransitionDuration",
-					"value": 1
+					"value": 0.5
 				},
 				{
 					"id": "SphereColor",

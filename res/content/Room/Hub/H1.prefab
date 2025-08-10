@@ -84,8 +84,7 @@
 					"name": "Present",
 					"source": "lighting/Present.prefab",
 					"x": 3.5399,
-					"y": -0.6998,
-					"editMode": "Edit"
+					"y": -0.6998
 				}
 			]
 		},

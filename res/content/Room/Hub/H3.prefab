@@ -28,11 +28,6 @@
 			"name": "present",
 			"children": [
 				{
-					"type": "reference",
-					"name": "redLighting",
-					"source": "lighting/redLighting.prefab"
-				},
-				{
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
@@ -86,6 +81,11 @@
 					"args": [
 						0
 					]
+				},
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
 				}
 			]
 		},
@@ -108,6 +108,13 @@
 					"args": [
 						0
 					]
+				},
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab",
+					"x": 8.0535,
+					"y": -17.1998
 				}
 			]
 		},

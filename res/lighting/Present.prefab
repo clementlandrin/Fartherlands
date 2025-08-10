@@ -24,7 +24,29 @@
 				{
 					"type": "environment",
 					"name": "environment",
+					"power": 1.1,
 					"sourceMapPath": "content/Art/Envmap/test_sky_J.hdr"
+				},
+				{
+					"type": "rfx.sao",
+					"name": "sao",
+					"size": 0.5,
+					"blur": 10,
+					"noiseScale": 1000,
+					"samples": 40,
+					"radius": 5,
+					"intensity": 10,
+					"bias": 0.1
+				},
+				{
+					"type": "rfx.sao",
+					"name": "sao",
+					"size": 0.5,
+					"blur": 10,
+					"noiseScale": 1000,
+					"samples": 40,
+					"radius": 0.3,
+					"bias": 0.1
 				},
 				{
 					"type": "rfx.volumetricLighting",
@@ -58,9 +80,12 @@
 				{
 					"type": "light",
 					"name": "light",
+					"enabled": false,
 					"rotationY": 58.7,
 					"rotationZ": -30.7,
 					"kind": "Directional",
+					"color": 16775367,
+					"power": 1.7,
 					"range": 10,
 					"zNear": 0.02,
 					"shadows": {

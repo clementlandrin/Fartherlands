@@ -30,45 +30,6 @@
 					"args": [
 						0
 					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"y": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"rotationZ": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
 				}
 			]
 		},
@@ -107,6 +68,44 @@
 					"x": 0.31,
 					"y": 7.13,
 					"rotationZ": 180
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Common",
+			"children": [
+				{
+					"type": "model",
+					"name": "Mill",
+					"source": "content/LD/Placeholder/Mill.fbx",
+					"x": -7,
+					"y": 7,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "Mill",
+					"source": "content/LD/Placeholder/Mill.fbx",
+					"x": 7,
+					"y": -7,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "Mill",
+					"source": "content/LD/Placeholder/Mill.fbx",
+					"x": 7,
+					"y": 7,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "Mill",
+					"source": "content/LD/Placeholder/Mill.fbx",
+					"x": -7,
+					"y": -7,
+					"rotationZ": 90
 				}
 			]
 		}
