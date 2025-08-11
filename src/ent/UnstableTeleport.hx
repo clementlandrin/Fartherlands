@@ -23,11 +23,7 @@ class UnstableTeleport extends Entity {
 		}
 	}
 
-	function unstabilityProximity() {
+	public function unstabilityProximity() {
 		return game.goddess.unlockedSkill && getPos().distance(game.player.getPos()) < Const.get(UnstableTriggerDistance);
-	}
-
-	override function canTrigger() {
-		return super.canTrigger() && !unstabilityProximity(); 
 	}
 }

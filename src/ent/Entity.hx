@@ -89,95 +89,27 @@ class Entity extends st.State {
 	}
 
 	final function trigger() {
-		if ( canTrigger() )
-			onTrigger();
+		var action = getAction(Primary);
+		if ( action != null )
+			action.onTrigger(this);
 	}
 
 	final function secondTrigger() {
-		if ( canSecondaryTrigger() )
-			onSecondTrigger();
+		var action = getAction(Secondary);
+		if ( action != null )
+			action.onTrigger(this);
 	}
 
-	function canTrigger() {
-		if ( !activated )
-			return false;
-		if ( inf == null )
-			return false;
-		if ( inf.dialog != null )
-			return true;
-		if ( inf.pickableItem && !isInEntity() )
-			return true;
-		return false;
+	final function getAction(triggerType : actions.Action.TriggerType) {
+		return actions.Action.findAction(triggerType, this);
 	}
 
-	public function isInEntity() {
-		for ( e in game.entities )
-			if ( e.item == this )
-				return true;
-		return false;
+	final function canTrigger() {
+		return getAction(Primary) != null;
 	}
 
-	function canSecondaryTrigger() {
-		if ( inf != null && game.player == this && inf.takeControl != null )
-			return true;
-		if ( !game.ctrl.canSecondaryTrigger() )
-			return false;
-		if ( inf == null )
-			return false;
-		if ( !activated && inf.activateByInfusion )
-			return true;
-		if ( inf.takeControl != null )
-			return true;
-		return false;
-	}
-
-	function onTrigger() {
-		game.ctrl.requestInteract = false;
-		if ( tooltip != null )
-			removeTooltip();
-		if ( inf != null ) {
-			if ( inf.dialog != null ) {
-				new ui.Dialog(this, game.baseUI.root);
-			}
-			if ( inf.knowledgeId != null ) {
-				var k = null;
-				game.state.knowledgeRoot.iter(function(n) {
-					if ( inf.knowledgeId == n.id )
-						k = n;
-				});
-				k.discovered = true;
-			}
-			if ( inf.unlockArtefact )
-				game.goddess.unlockedSkill = true;
-			if ( inf.activatorId != null ) {
-				for ( e in game.entities ) {
-					if ( e.id == inf.activatorId )
-						e.activated = true;
-				}
-			}
-			if ( inf.pickableItem )
-				game.player.pickItem(this);
-		}
-	}
-
-	function onSecondTrigger() {
-		game.ctrl.requestSecondaryInteract = false;
-		if ( tooltip != null )
-			removeTooltip();
-		if ( inf != null ) {
-			if ( inf.activateByInfusion && !activated ) {
-				activated = true;
-				if ( inf.activatedModel != null ) {
-					obj.removeChildren();
-					hxd.res.Loader.currentInstance.load(inf.activatedModel).toPrefab().load().make(obj);
-				}
-			} else if ( inf.takeControl != null ) {
-				switch (inf.takeControl) {
-				case Golem:
-					game.ctrl = new controllers.GolemController(this);
-				}
-			}
-		}
+	final function canSecondaryTrigger() {
+		return getAction(Secondary) != null;
 	}
 
 	override function start() {
@@ -207,19 +139,24 @@ class Entity extends st.State {
 		super.update(dt);
 		updateItem(dt);
 		var player = game.player;
+		var goddess = game.goddess;
 		var range = Const.get(InteractibleRadius);
-		var inRange = player.getPos().distanceSq(getPos()) < range * range;
-		if ( inRange && canInteract() ) {
-			var goddess = game.goddess;
-			switch ( timeMode ) {
+
+		var i = player.getPos().distanceSq(getPos()) < range * range;
+		if ( i ) {
+			switch(timeMode) {
 			case Common:
 			case Past:
-				inRange = inRange && getPos().distance(goddess.getTemporalPos()) < goddess.getTemporalRadius();
+				var r = goddess.getTemporalRadius();
+				i = getPos().distanceSq(goddess.getTemporalPos()) < r * r;
 			case Present:
-				inRange = inRange && getPos().distance(goddess.getTemporalPos()) > goddess.getTemporalRadius();
+				var r = goddess.getTemporalRadius();
+				i = getPos().distanceSq(goddess.getTemporalPos()) > r * r;
 			case None:
 				throw "assert";
 			}
+		}
+		if ( i && canInteract() ) {
 			onOver();
 			if ( game.ctrl.requestInteract )
 				trigger();
@@ -233,9 +170,14 @@ class Entity extends st.State {
 	public function canInteract() {
 		if ( !game.canControl() )
 			return false;
-		if ( game.player.item == this )
-			return false;
 		return canTrigger() || canSecondaryTrigger();
+	}
+
+	public function isInEntity() {
+		for ( e in game.entities )
+			if ( e.item == this )
+				return true;
+		return false;
 	}
 
 	public function cull() {
@@ -297,6 +239,10 @@ class Entity extends st.State {
 		item.room = room;
 	}
 
+	public function isPickable() {
+		return inf != null && inf.pickableItem;
+	}
+
 	public function pickItem(e : Entity) {
 		if ( item != null )
 			dropItem();
@@ -304,7 +250,9 @@ class Entity extends st.State {
 	}
 
 	public function dropItem() {
+		var i = item;
 		item = null;
+		return i;
 	}
 
 	function setTooltip() {
@@ -325,32 +273,14 @@ class Entity extends st.State {
 		}
 	}
 
-	function hasTooltip() {
-		return inf.dialog == null && !inf.pickableItem;
-	}
-
-	function getTriggerText() {
-		if ( inf == null )
-			return "";
-		if ( inf.dialog != null )
-			return "Press F to discuss. ";
-		else if ( inf.pickableItem )
-			return "Press F to pick. ";
-		return "";
-	}
-
-	function getSecondTriggerText() {
-		if ( inf != null && game.player == this )
-			return "Press E to leave. ";
-		return "Press E to infuse. ";
-	}
-
 	public function getTooltipText() {
 		var str = "";
-		if ( canTrigger() )
-			str = getTriggerText();
-		if ( canSecondaryTrigger() )
-			str += getSecondTriggerText();
+		var action = getAction(Primary);
+		if ( action != null )
+			str += action.getTooltipText();
+		var secondaryAction = getAction(Secondary);
+		if ( secondaryAction != null )
+			str += secondaryAction.getTooltipText();
 		return str;
 	}
 

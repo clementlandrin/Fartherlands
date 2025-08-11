@@ -10,10 +10,6 @@ class SeedPot extends Chest {
         return Std.isOfType(i, Seed);
     }
     
-    override function getTriggerText() {
-        return "Press F to plant.";
-    }
-
     override function update(dt : Float) {
         super.update(dt);
 

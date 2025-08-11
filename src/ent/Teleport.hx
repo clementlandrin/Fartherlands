@@ -3,19 +3,16 @@ package ent;
 class Teleport extends Entity {
 
 	var shader : h3d.shader.ColorMult;
-	var targetIndex = 0;
+	var targetIndex(default, set) = 0;
+	function set_targetIndex(v : Int) {
+		targetIndex = v;
+		updateColor();
+		return targetIndex;
+	}
 
 	public function new() {
 		super();
 		shader = new h3d.shader.ColorMult();
-	}
-
-	override function canTrigger() {
-		return super.canTrigger() || isHub();
-	}
-
-	override function canSecondaryTrigger() {
-		return true;
 	}
 
 	function getColor() : Null<Int> {
@@ -50,44 +47,6 @@ class Teleport extends Entity {
 			m.mainPass.addShader(shader);
 	}
 
-	override function onSecondTrigger() {
-		super.onSecondTrigger();
-		for ( e in game.entities ) {
-			var t = Std.downcast(e, Teleport);
-			if ( t == null )
-				continue;
-			if ( matches(t) ) {
-				if ( !t.activated ) {
-					var s = new h3d.shader.ColorMult();
-					s.color.setColor(0);
-					for ( m in obj.getMaterials() )
-						m.mainPass.addShader(s);
-					game.globalEvent.wait(0.1, function() {
-						for ( m in obj.getMaterials() )
-							m.mainPass.removeShader(s);
-					});
-					break;
-				}
-				var toTp = [];
-				for ( e in game.entities ) {
-					if ( e.canBeTp() ) {
-						var d = e.getPos().to2D().distance(getPos().to2D());
-						if ( d < Const.get(PillarRadiusEffect) )
-							toTp.push(e);
-					}
-				}
-				t.teleport(toTp);
-				break;
-			}
-		}
-	}
-
-	override function onTrigger() {
-		super.onTrigger();
-		targetIndex++;
-		updateColor();
-	}
-
 	function updateColor() {
 		if ( isHub() ) {
 			var targets = [];
@@ -109,7 +68,7 @@ class Teleport extends Entity {
 		return shader.color.toColor();
 	}
 
-	function matches(t : Teleport) {
+	public function matches(t : Teleport) {
 		if ( isHub() && getTargetColor() == t.getColor() )
 			return true;
 		if ( !isHub() && t.isHub() )
@@ -117,7 +76,7 @@ class Teleport extends Entity {
 		return false;
 	}
 
-	function teleport(toTp : Array<Entity>) {
+	public function teleport(toTp : Array<Entity>) {
 		var teleportCb = function() {
 			var outPos = new h3d.col.Point();
 			var outRadius = 1.0;
@@ -134,14 +93,8 @@ class Teleport extends Entity {
 		};
 		game.moveTo(room, [teleportCb]);
 	}
-	
-	override function getSecondTriggerText() {
-		return "Press E to teleport. ";
-	}
 
-	override function getTriggerText() {
-		if ( isHub() )
-			return "Press F to change color. ";
-		return super.getTriggerText();
+	public function canTp() {
+		return true;
 	}
 }

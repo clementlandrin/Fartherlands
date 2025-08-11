@@ -12,6 +12,7 @@
 --macro include("prefab")
 --macro include("ui.comp")
 --macro include("ui")
+--macro include("actions")
 -hl main.hl
 -main Main
 -D domkit_heaps

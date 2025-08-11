@@ -2,7 +2,7 @@ package st;
 
 class State implements hxbit.Serializable {
 
-	var game : Game;
+	public var game(default, null) : Game;
 	public var name(default, null) : String;
 
 	public var enabled : Bool = true;

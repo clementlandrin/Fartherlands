@@ -13,9 +13,7 @@ class FinalTeleport extends Teleport {
         return false;
     }
 
-    override function canTrigger() {
-        if ( super.canTrigger() )
-            return true;
+    override function canTp() {
         return color.amount >= 1.0;
     }
 
