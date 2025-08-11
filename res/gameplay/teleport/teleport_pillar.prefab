@@ -1,0 +1,39 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"props": {
+				"id": "Teleport_pillar_object",
+				"type": 5,
+				"$cdbtype": "element"
+			},
+			"children": [
+				{
+					"type": "box",
+					"name": "box",
+					"z": 0.74,
+					"scaleX": 0.2,
+					"scaleY": 0.2,
+					"scaleZ": 1.5
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"PBR": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
+				}
+			]
+		}
+	]
+}

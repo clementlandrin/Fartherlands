@@ -119,7 +119,7 @@
 			"type": "object",
 			"name": "object",
 			"props": {
-				"id": "AgapantheSeed",
+				"id": "Test_Seed",
 				"type": 6,
 				"$cdbtype": "element",
 				"props": {
@@ -180,8 +180,8 @@
 			"type": "object",
 			"name": "object",
 			"props": {
-				"id": "AgapantheSeed",
-				"type": 9,
+				"id": "Test_Chest",
+				"type": 8,
 				"$cdbtype": "element"
 			},
 			"x": -2.24,
@@ -221,8 +221,8 @@
 			"type": "object",
 			"name": "object",
 			"props": {
-				"id": "AgapantheSeed",
-				"type": 9,
+				"id": "Test_Golem",
+				"type": 8,
 				"$cdbtype": "element",
 				"props": {
 					"takeControl": 0

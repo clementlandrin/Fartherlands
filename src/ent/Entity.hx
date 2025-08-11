@@ -191,6 +191,10 @@ class Entity extends st.State {
 
 	}
 
+	public function getDataColor() {
+		return inf != null ? inf.color : null;
+	}
+
 	public function setOutline(b : Bool) {
 		if ( b ) {
 			if ( outlineShader == null ) {

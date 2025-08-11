@@ -63,6 +63,7 @@ class Game extends hxd.App {
 	var fadeDuration = 0.0;
 	var curFade = 0.0;
 	var bench : h3d.impl.Benchmark;
+	var console : ui.Console;
 
 	public function new(?level : String) {
 		super();
@@ -93,7 +94,7 @@ class Game extends hxd.App {
 		}
 		ctrl = new controllers.GoddessController(state.goddess);
 		baseUI = new ui.BaseUI();
-		new ui.Console();
+		console = new ui.Console();
 		globalEvent = new hxd.WaitEvent();
 
 		mainUI = new ui.MainUI(baseUI.root);
@@ -297,9 +298,6 @@ class Game extends hxd.App {
 			case SeedPot:
 				var sp = new ent.SeedPot();
 				e = sp;
-			case FinalTeleport:
-				var ft = new ent.FinalTeleport();
-				e = ft;
 			}
 			if ( e != null ) {
 				e.inf = props.props;
@@ -467,6 +465,8 @@ class Game extends hxd.App {
 			if ( w.preventControl )
 				return false;
 		}
+		if ( console.isActive() )
+			return false;
 		return true;
 	}
 

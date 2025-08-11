@@ -127,6 +127,20 @@
 			"type": "reference",
 			"name": "hub_teleport",
 			"source": "gameplay/teleport/hub_teleport.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "AgapantheSeed",
+			"source": "gameplay/AgapantheSeed.prefab",
+			"x": 2.12,
+			"y": -4.08
+		},
+		{
+			"type": "reference",
+			"name": "SeedPot",
+			"source": "gameplay/SeedPot.prefab",
+			"x": -2.2,
+			"y": -4.75
 		}
 	]
 }

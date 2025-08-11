@@ -1,0 +1,44 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"props": {
+				"id": "SeedPot",
+				"type": 7,
+				"$cdbtype": "element"
+			},
+			"children": [
+				{
+					"type": "box",
+					"name": "box",
+					"z": 0.28,
+					"children": [
+						{
+							"type": "material",
+							"name": "material",
+							"props": {
+								"PBR": {
+									"mode": "PBR",
+									"blend": "None",
+									"shadows": true,
+									"culling": "Back",
+									"depthTest": "Less",
+									"colorMask": 15,
+									"enableStencil": false
+								}
+							},
+							"color": [
+								0.43529411764705883,
+								0.4156862745098039,
+								0.4156862745098039,
+								1
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

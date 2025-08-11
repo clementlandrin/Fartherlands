@@ -121,7 +121,6 @@
 			"name": "object",
 			"props": {
 				"id": "BrokenArch_object",
-				"type": 8,
 				"$cdbtype": "element",
 				"props": {
 					"activateByInfusion": true,

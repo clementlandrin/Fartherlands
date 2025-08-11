@@ -115,6 +115,11 @@
 					"y": -7.28
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "under_tree_teleport",
+			"source": "gameplay/teleport/under_tree_teleport.prefab"
 		}
 	]
 }

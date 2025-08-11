@@ -2,20 +2,24 @@
 	"type": "prefab",
 	"children": [
 		{
-			"type": "object",
-			"name": "object",
-			"props": {
-				"id": "Teleport_Hub",
-				"type": 5,
-				"$cdbtype": "element"
-			},
-			"children": [
-				{
-					"type": "reference",
-					"name": "test_pillar",
-					"source": "gameplay/test_pillar.prefab"
-				}
-			]
+			"type": "reference",
+			"name": "bath_teleport",
+			"source": "gameplay/teleport/bath_teleport.prefab",
+			"x": 1.86
+		},
+		{
+			"type": "reference",
+			"name": "factory_teleport",
+			"source": "gameplay/teleport/factory_teleport.prefab",
+			"x": -1.3,
+			"y": 2.13
+		},
+		{
+			"type": "reference",
+			"name": "garden_teleport",
+			"source": "gameplay/teleport/garden_teleport.prefab",
+			"x": -1.53,
+			"y": -2.24
 		}
 	]
 }

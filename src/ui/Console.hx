@@ -11,6 +11,10 @@ class Console {
 		initCommands();
 	}
 
+	public function isActive() {
+		return console.isActive();
+	}
+
 	function initCommands() {
 		console.add("debug", function() {
 			var r = cast(game.s3d.renderer, gfx.Renderer);

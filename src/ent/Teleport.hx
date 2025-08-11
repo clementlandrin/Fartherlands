@@ -3,42 +3,11 @@ package ent;
 class Teleport extends Entity {
 
 	var shader : h3d.shader.ColorMult;
-	var targetIndex(default, set) = 0;
-	function set_targetIndex(v : Int) {
-		targetIndex = v;
-		updateColor();
-		return targetIndex;
-	}
+	var runtimeColor : Int = 0;
 
 	public function new() {
 		super();
 		shader = new h3d.shader.ColorMult();
-	}
-
-	function getColor() : Null<Int> {
-		if ( inf == null )
-			return null;
-		if ( inf.color == null )
-			return null;
-		return inf.color;
-	}
-
-	override function start() {
-		super.start();
-		if ( isHub() ) {
-			for ( e in game.entities ) {
-				var t = Std.downcast(e, Teleport);
-				if ( t == null || t == this )
-					continue;
-				if ( t.isHub() )
-					throw "duplicate teleport pillar hub. should be unique.";
-			}
-		}
-		updateColor();
-	}
-
-	public function isHub() {
-		return getColor() == null;
 	}
 
 	override function setObject(obj) {
@@ -47,33 +16,39 @@ class Teleport extends Entity {
 			m.mainPass.addShader(shader);
 	}
 
-	function updateColor() {
-		if ( isHub() ) {
-			var targets = [];
-			for ( e in game.entities ) {
-				var t = Std.downcast(e, Teleport);
-				if ( t == null || t == this || Std.isOfType(t, FinalTeleport) )
-					continue;
-				targets.push(t);
-			}
-			var target = targets[targetIndex % targets.length];
-			shader.color.setColor(target.getColor());
-		} else
-			shader.color.setColor(getColor());
-	}
+	override function update(dt : Float) {
+		super.update(dt);
 
-	function getTargetColor() {
-		if ( !isHub() )
-			throw "assert";
-		return shader.color.toColor();
+		var curColor = new h3d.Vector(0.0, 0.0, 0.0);
+
+		for ( e in game.entities ) {
+			if ( e.room != null && e.room != room )
+				continue;
+			var c = e.getDataColor();
+			if ( c == null )
+				continue;
+			var d = e.getPos().distance(getPos());
+			var min = 1.0;
+            var max = 2.0;
+            var t = (max - d) / (max - min);
+            t = hxd.Math.clamp(t);
+			if ( t > 0.0 ) {
+				var c = h3d.Vector.fromColor(c);
+				c.scale(t);
+				curColor = curColor.add(c);
+			}
+		}
+		curColor.x = hxd.Math.clamp(curColor.x);
+		curColor.y = hxd.Math.clamp(curColor.y);
+		curColor.z = hxd.Math.clamp(curColor.z);
+
+		shader.color.set(curColor.x, curColor.y, curColor.z, 1.0);
 	}
 
 	public function matches(t : Teleport) {
-		if ( isHub() && getTargetColor() == t.getColor() )
-			return true;
-		if ( !isHub() && t.isHub() )
-			return true;
-		return false;
+		if ( t == this )
+			return false;
+		return shader.color.toColor() == t.shader.color.toColor();
 	}
 
 	public function teleport(toTp : Array<Entity>) {

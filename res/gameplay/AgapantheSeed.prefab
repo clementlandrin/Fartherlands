@@ -1,0 +1,34 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"props": {
+				"id": "AgapantheSeed",
+				"type": 6,
+				"$cdbtype": "element",
+				"props": {
+					"pickableItem": true,
+					"color": 64767
+				}
+			},
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"z": 0.5,
+					"scaleX": 0.2,
+					"scaleY": 0.2,
+					"scaleZ": 0.2,
+					"color": -16712449,
+					"kind": 4,
+					"args": [
+						24,
+						24
+					]
+				}
+			]
+		}
+	]
+}
