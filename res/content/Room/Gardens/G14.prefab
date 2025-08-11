@@ -24,13 +24,29 @@
 		},
 		{
 			"type": "object",
-			"name": "past",
-			"x": 1.344,
-			"y": 0.002
+			"name": "common"
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				}
+			]
 		},
 		{
 			"type": "object",

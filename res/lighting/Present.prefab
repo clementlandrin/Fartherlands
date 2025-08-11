@@ -4,6 +4,7 @@
 		{
 			"type": "renderProps",
 			"name": "renderProps",
+			"inGameOnly": true,
 			"props": {
 				"PBR": {
 					"mode": "Pbr",
@@ -80,7 +81,6 @@
 				{
 					"type": "light",
 					"name": "light",
-					"enabled": false,
 					"rotationY": 58.7,
 					"rotationZ": -30.7,
 					"kind": "Directional",

@@ -8,6 +8,34 @@
 		},
 		{
 			"type": "object",
+			"name": "common",
+			"children": [
+				{
+					"type": "object",
+					"name": "Tooltip",
+					"props": {
+						"id": "World_Tooltip",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"memo": true,
+							"dialog": "Arche détruite "
+						}
+					}
+				},
+				{
+					"type": "model",
+					"name": "Arch",
+					"source": "content/LD/Placeholder/Arch.fbx",
+					"scaleX": 1.43,
+					"scaleY": 1.43,
+					"scaleZ": 1.43,
+					"rotationZ": -90
+				}
+			]
+		},
+		{
+			"type": "object",
 			"name": "present",
 			"children": [
 				{

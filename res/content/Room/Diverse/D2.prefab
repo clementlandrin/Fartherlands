@@ -53,18 +53,6 @@
 		},
 		{
 			"type": "object",
-			"name": "present",
-			"x": 1.344,
-			"y": 0.002
-		},
-		{
-			"type": "object",
-			"name": "past",
-			"x": 1.344,
-			"y": 0.002
-		},
-		{
-			"type": "object",
 			"name": "common"
 		},
 		{
@@ -103,6 +91,28 @@
 					"source": "gameplay/door.prefab",
 					"x": -5.02,
 					"y": -3.66
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
 				}
 			]
 		}

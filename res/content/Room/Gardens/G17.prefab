@@ -24,13 +24,44 @@
 		},
 		{
 			"type": "object",
-			"name": "past",
-			"x": 1.344,
-			"y": 0.002
+			"name": "common",
+			"children": [
+				{
+					"type": "object",
+					"name": "Tooltip",
+					"props": {
+						"id": "World_Tooltip",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"memo": true,
+							"dialog": "Tu es l'entité"
+						}
+					}
+				}
+			]
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -45,29 +76,6 @@
 					"x": 7.22,
 					"y": -0.23,
 					"rotationZ": 87.5
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -7.35,
-					"y": -0.03,
-					"rotationZ": -91.1
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -0.13,
-					"y": 3.54,
-					"rotationZ": 179.8
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 0.31,
-					"y": -3.54
 				}
 			]
 		},
