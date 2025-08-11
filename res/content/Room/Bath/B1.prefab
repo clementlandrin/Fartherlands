@@ -91,6 +91,11 @@
 			"args": [
 				0
 			]
+		},
+		{
+			"type": "reference",
+			"name": "bath_teleport",
+			"source": "gameplay/teleport/bath_teleport.prefab"
 		}
 	]
 }

@@ -161,6 +161,13 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "garden_teleport",
+			"source": "gameplay/teleport/garden_teleport.prefab",
+			"x": 3.659506861245873,
+			"y": -2.905678226245172
 		}
 	]
 }

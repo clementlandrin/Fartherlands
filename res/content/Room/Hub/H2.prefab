@@ -150,6 +150,25 @@
 					"y": -7.28
 				}
 			]
+		},
+		{
+			"type": "object",
+			"name": "roomProps",
+			"props": {
+				"id": "H1_roomProps",
+				"type": 0,
+				"$cdbtype": "element",
+				"props": {
+					"startingRoom": true
+				}
+			}
+		},
+		{
+			"type": "reference",
+			"name": "fruit",
+			"source": "gameplay/fruit.prefab",
+			"x": 1.6874261601089557,
+			"y": -1.3463302403692836
 		}
 	]
 }

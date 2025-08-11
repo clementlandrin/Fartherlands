@@ -287,6 +287,9 @@ class Entity extends st.State {
 	override function dispose() {
 		super.dispose();
 		obj.remove();
+		for ( e in game.entities )
+			if ( e.item == this )
+				e.dropItem();
 		if ( tooltip != null )
 			tooltip.remove();
 		game.entities.remove(this);

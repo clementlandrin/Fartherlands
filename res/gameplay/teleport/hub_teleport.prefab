@@ -1,0 +1,21 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"props": {
+				"id": "Teleport_Hub",
+				"type": 5,
+				"$cdbtype": "element"
+			},
+			"children": [
+				{
+					"type": "reference",
+					"name": "test_pillar",
+					"source": "gameplay/test_pillar.prefab"
+				}
+			]
+		}
+	]
+}

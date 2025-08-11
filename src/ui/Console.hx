@@ -84,5 +84,15 @@ class Console {
 				}
 			}
 		});
+
+		console.add("tp", function(name:String) {
+			for ( e in game.entities ) {
+				var r = Std.downcast(e, ent.Room);
+				if ( r == null || r.name != name )
+					continue;
+				game.moveTo(r, []);
+				return;
+			}
+		});
 	}
 }

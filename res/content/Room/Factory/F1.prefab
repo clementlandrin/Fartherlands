@@ -97,6 +97,11 @@
 					"y": -3.66
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "factory_teleport",
+			"source": "gameplay/teleport/factory_teleport.prefab"
 		}
 	]
 }

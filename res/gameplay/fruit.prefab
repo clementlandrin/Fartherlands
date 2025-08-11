@@ -1,0 +1,48 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"props": {
+				"id": "H1_object",
+				"type": 4,
+				"$cdbtype": "element",
+				"props": {
+					"dialog": "Vous avez récupéré un étrange fruit.",
+					"unlockArtefact": true
+				}
+			},
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"z": 0.25,
+					"scaleX": 0.2,
+					"scaleY": 0.2,
+					"scaleZ": 0.2,
+					"color": -16747777,
+					"kind": 3,
+					"args": [
+						24,
+						24
+					]
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"props": {
+						"id": "H1_object",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"dialog": "Récupérez l'artefact.",
+							"memo": true
+						}
+					},
+					"z": 1.78
+				}
+			]
+		}
+	]
+}
