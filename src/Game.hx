@@ -9,12 +9,13 @@ class Game extends hxd.App {
 
 	public static var inst : Game;
 
-	public var player(get, set) : ent.Player;
+	public var player(get, null) : ent.Entity;
 	public function get_player() {
-		return state.player;
+		return ctrl.player;
 	}
-	public function set_player(p : ent.Player) {
-		return state.player = p;
+	public var goddess(get, null) : ent.Goddess;
+	public function get_goddess() {
+		return state.goddess;
 	}
 	public var curRoom(get, set) : ent.Room;
 	public function get_curRoom() {
@@ -27,6 +28,13 @@ class Game extends hxd.App {
 	public var states : Array<st.State>;
 	public var entities : Array<ent.Entity>;
 	public var modelCache : h3d.prim.ModelCache;
+	public var ctrl(default, set) : controllers.PlayerController;
+	public function set_ctrl(v) {
+		ctrl = v;
+		if ( ctrl.player.room != null )
+			ctrl.player.room.onEnter();
+		return ctrl;
+	}
 
 	public var pastShader : prefab.TemporalShader.Temporal;
 	public var presentShader : prefab.TemporalShader.Temporal;
@@ -83,6 +91,7 @@ class Game extends hxd.App {
 			state = new st.GameState();	
 			state.level = startLevel;
 		}
+		ctrl = new controllers.GoddessController(state.goddess);
 		baseUI = new ui.BaseUI();
 		new ui.Console();
 		globalEvent = new hxd.WaitEvent();
@@ -116,6 +125,7 @@ class Game extends hxd.App {
 
 		for ( s in states )
 			s.start();
+		ctrl.start();
 
 		for ( e in entities ) {
 			var r = Std.downcast(e, ent.Room);
@@ -391,13 +401,11 @@ class Game extends hxd.App {
 			return;
 		}
 
+		ctrl.update(dt);
 		player.update(dt);
-		for ( s in states ) {
-			if ( s == player )
-				continue;
+		for ( s in states )
 			s.update(dt);
-		}
-		player.onEnd();
+		ctrl.onEnd();
 
 		if ( hxd.Key.isPressed(hxd.Key.F5) )
 			Main.reload();

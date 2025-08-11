@@ -11,6 +11,10 @@ class Door extends Entity {
 		game.curRoom.doors.push(this);
 	}
 
+	override function canInteract() {
+        return false;
+    }
+
 	public function getLeavingDirection() {
 		return direction.clone();
 	}
@@ -96,14 +100,14 @@ class Door extends Entity {
 		var pos = to.getPos().add(to.getEnteringDirection());
 		var doorCb = function() {
 			game.player.setPos(pos);
-			if ( game.player.isClimbing() ) {
+			if ( game.ctrl.isClimbing() ) {
 				var ladders = newRoom.ladders.filter(l -> l.door == to);
 				if ( ladders.length == 0 )
 					throw 'missing matching ladder to ${newRoom.name}';
 				if ( ladders.length > 1 )
 					throw 'too many ladders to ${newRoom.name}';
 				var ladder = ladders[0];
-				game.player.enterLadder(ladder, game.player.getPos());
+				game.ctrl.enterLadder(ladder, game.player.getPos());
 			}
 		};
 		game.moveTo(newRoom, [doorCb]);
@@ -111,7 +115,7 @@ class Door extends Entity {
 
 	override function update(dt : Float) {
 		super.update(dt);
-		if ( enabled ) {
+		if ( enabled && game.ctrl.canChangeRoom() ) {
 			var playerPos = new h3d.col.Point(game.player.x,game.player.y,game.player.z);
 			if ( obj.getBounds().contains(playerPos) )
 				enters();

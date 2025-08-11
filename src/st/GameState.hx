@@ -3,7 +3,7 @@ package st;
 class GameState extends State {
 	@:s public var level : String;
 	
-	@:s public var player : ent.Player;
+	@:s public var goddess : ent.Goddess;
 	
 	@:s public var curRoomId : String;
 	@:ignore public var curRoom : ent.Room;
@@ -12,7 +12,7 @@ class GameState extends State {
 
 	public function new() {
 		super();
-		player = new ent.Player();
+		goddess = new ent.Goddess();
 		knowledgeRoot = st.KnowledgeNode.buildTree();
 	}
 }

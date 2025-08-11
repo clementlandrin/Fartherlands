@@ -15,6 +15,10 @@ class Room extends Entity {
 	public var pastPrefab : hrt.prefab.Object3D;
 	public var presentPrefab : hrt.prefab.Object3D;
 
+	override function canInteract() {
+		return false;
+	}
+	
 	public function onEnter() {
 		if ( voxels != null )
 			voxels.dispose();

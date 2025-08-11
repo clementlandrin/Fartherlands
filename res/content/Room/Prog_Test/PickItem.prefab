@@ -223,7 +223,10 @@
 			"props": {
 				"id": "AgapantheSeed",
 				"type": 9,
-				"$cdbtype": "element"
+				"$cdbtype": "element",
+				"props": {
+					"takeControl": 0
+				}
 			},
 			"x": -1.78,
 			"y": -3.34,

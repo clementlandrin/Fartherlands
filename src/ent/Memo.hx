@@ -11,4 +11,8 @@ class Memo extends Entity {
 		if ( tooltip != null )
 			tooltip.visible = tooltip.visible && Main.PREFS.memo;
 	}
+
+	override function canInteract() {
+		return false;
+	}
 }

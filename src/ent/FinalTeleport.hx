@@ -13,7 +13,9 @@ class FinalTeleport extends Teleport {
         return false;
     }
 
-    override function hasSpecificInteraction() {
+    override function canTrigger() {
+        if ( super.canTrigger() )
+            return true;
         return color.amount >= 1.0;
     }
 

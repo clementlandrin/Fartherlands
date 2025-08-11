@@ -17,6 +17,10 @@ class Ladder extends Entity {
 			room.ladders.push(this);
 	}
 
+	override function canInteract() {
+        return false;
+    }
+
 	override function setObject(obj) {
 		super.setObject(obj);
 
@@ -63,23 +67,23 @@ class Ladder extends Entity {
 	override function update(dt : Float) {
 		super.update(dt);
 
-		if ( !game.player.isClimbing() ) {
+		if ( !game.ctrl.isClimbing() ) {
 			if ( bottom != null && playerInBounds(bottom) )
-				game.player.enterLadder(this, bottom.getAbsPos().getPosition());
+				game.ctrl.enterLadder(this, bottom.getAbsPos().getPosition());
 			else if ( top != null && playerInBounds(top) )
-				game.player.enterLadder(this, top.getAbsPos().getPosition());
+				game.ctrl.enterLadder(this, top.getAbsPos().getPosition());
 		}
 	}
 
 	public function tryLeaveTop() {
 		if ( top == null || !playerInBounds(top) )
 			return;
-		game.player.leaveLadder(top.getAbsPos().getPosition(), topOut.getAbsPos().getPosition());
+		game.ctrl.leaveLadder(top.getAbsPos().getPosition(), topOut.getAbsPos().getPosition());
 	}
 
 	public function tryLeaveBottom() {
 		if ( bottom == null || !playerInBounds(bottom) )
 			return;
-		game.player.leaveLadder(bottom.getAbsPos().getPosition(), bottomOut.getAbsPos().getPosition());
+		game.ctrl.leaveLadder(bottom.getAbsPos().getPosition(), bottomOut.getAbsPos().getPosition());
 	}
 }

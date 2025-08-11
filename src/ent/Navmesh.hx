@@ -17,6 +17,10 @@ class Navmesh extends Entity {
 		game.curRoom.navmeshes.push(this);
     }
 
+    override function canInteract() {
+        return false;
+    }
+    
     override function setObject(obj:h3d.scene.Object) {
         super.setObject(obj);
         bounds = obj.getBounds();

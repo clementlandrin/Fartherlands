@@ -14,8 +14,8 @@ class Renderer extends h3d.scene.pbr.Renderer {
 		super.initGlobals();
 
 		var player = game.player;
-		ctx.setGlobal("playerPos", player.getTemporalPos());
-		ctx.setGlobal("temporalRadius", player.getTemporalRadius());
+		ctx.setGlobal("playerPos", game.goddess.getTemporalPos());
+		ctx.setGlobal("temporalRadius", game.goddess.getTemporalRadius());
 	}
 
 	override function mark(id : String) {

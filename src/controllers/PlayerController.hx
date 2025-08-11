@@ -1,49 +1,47 @@
-package ent;
+package controllers;
 
-class Player extends Entity {
+class PlayerController {
 
-	@:s public var unlockedSkill : Bool = false;
-	public var item : Entity = null;
 	public var requestInteract : Bool = false;
 	public var requestSecondaryInteract : Bool = false;
+	public var player : ent.Entity;
+	
+	var game : Game;
 
-	var temporalVisual : h3d.scene.Object;
-	var temporalRadius : Float = 0.0;
-	var sphereActive : Bool = false;
 	var skin : h3d.scene.Skin;
 	var curLadder : ent.Ladder;
 	var idle = false;
 	var sequence : Sequence;
 
-	override function start() {
-		super.start();
-		
-		var chara = new h3d.scene.Object(game.s3d);
-		hxd.Res.chara.chara.load().make(chara);
-		skin = chara.find(o -> Std.downcast(o, h3d.scene.Skin));
-		setObject(chara);
-		for ( m in obj.getMaterials() )
-			m.color.setColor(0xFF0000);
+	var x(get,set) : Float;
+	function get_x() {
+		return player.x;
+	}
+	function set_x(v) {
+		return player.x = v;
+	}
+	var y(get,set) : Float;
+	function get_y() {
+		return player.y;
+	}
+	function set_y(v) {
+		return player.y = v;
+	}
+	var z(get,set) : Float;
+	function get_z() {
+		return player.z;
+	}
+	function set_z(v) {
+		return player.z = v;
+	}
 
-		var temporalPrim = new h3d.prim.Sphere(1.0, 64, 60);
-		temporalVisual = new h3d.scene.Mesh(temporalPrim, null, game.s3d);
-		for ( m in temporalVisual.getMaterials() ) {
-			m.color.set(1.0, 1.0, 1.0, 0.2);
-			m.mainPass.setBlendMode(Alpha);
-			m.mainPass.setPassName("beforeTonemapping");
-			m.mainPass.depthWrite = false;
-			m.shadows = false;
-			@:privateAccess m.mainPass.addSelfShader(game.pastWindowShader);
-			var p = m.allocPass("afterTonemapping");
-			p.setBlendMode(Alpha);
-			var cm = new h3d.shader.ColorMult();
-			cm.color.setColor(Const.getColor(SphereColor));
-			cm.color.set(cm.color.x, cm.color.y, cm.color.z, Const.get(SphereColor));
-			p.addShader(cm);
-		}
-		temporalVisual.followPositionOnly = true;
-		temporalVisual.follow = chara.find(o -> o.name == "sphereCenter" ? o : null);
-		temporalVisual.setScale(temporalRadius);
+	public function new(p : ent.Entity) {
+		game = Game.inst;
+		player = p;
+	}
+
+	public function start() {
+		skin = player.obj.find(o -> Std.downcast(o, h3d.scene.Skin));
 	}
 
 	public function onEnd() {
@@ -51,54 +49,21 @@ class Player extends Entity {
 		requestSecondaryInteract = false;
 	}
 	
-	public function getTemporalRadius() {
-		return temporalRadius;
-	}
-
-	public function getTemporalPos() {
-		return temporalVisual.getAbsPos().getPosition();
-	}
-
-	override function canBeTp() {
-		return true;
-	}
-
-	override function update(dt : Float) {
-		super.update(dt);
+	public function update(dt : Float) {
 
 		if ( canControl() ) {
-			updateSphere(dt);
 			updateMovement(dt);
 			if ( hxd.Key.isPressed(hxd.Key.G) )
-				dropItem();
+				player.dropItem();
 			if ( hxd.Key.isPressed(hxd.Key.F) )
 				requestInteract = true;
 			if ( hxd.Key.isPressed(hxd.Key.E) )
 				requestSecondaryInteract = true;
 		}
-
-		updateItem(dt);
 	}
 
 	function canControl() {
 		return game.canControl();
-	}
-
-	function updateSphere(dt : Float) {
-		if ( !unlockedSkill )
-			return;
-		var sphereIncrease = dt * Const.get(SphereMaxRadius) / Const.get(SphereTransitionDuration);
-		if ( hxd.Key.isPressed(hxd.Key.SPACE) ) {
-			sphereActive = !sphereActive;
-		}
-		if ( sphereActive ) {
-			temporalRadius += sphereIncrease;
-		} else {
-			temporalRadius -= sphereIncrease;
-		}
-		temporalRadius = hxd.Math.clamp(temporalRadius, 0.0, Const.get(SphereMaxRadius));
-
-		temporalVisual.setScale(temporalRadius);
 	}
 
 	function updateMovement(dt : Float) {
@@ -144,13 +109,15 @@ class Player extends Entity {
 			if ( idle ) {
 				idle = false;
 				var anim = game.modelCache.loadAnimation(hxd.Res.chara.Anim.Anim_Walk);
-				skin.switchToAnimation(anim.createInstance(skin));
+				if ( skin != null )
+					skin.switchToAnimation(anim.createInstance(skin));
 			}
 		} else {
 			if ( !idle ) {
 				idle = true;
 				var anim = game.modelCache.loadAnimation(hxd.Res.chara.Anim.Anim_Idle);
-				skin.switchToAnimation(anim.createInstance(skin));
+				if ( skin != null )
+					skin.switchToAnimation(anim.createInstance(skin));
 			}
 		}
 		
@@ -215,13 +182,6 @@ class Player extends Entity {
 		}
 	}
 
-	function updateItem(dt : Float) {
-		if ( item == null )
-			return;
-		item.setPos(getPos());
-		item.room = room;
-	}
-
 	function moveTo(target : h3d.col.Point, dt : Float) {
 		var curPos = new h3d.col.Point(x,y,z);
 		var diff = target.sub(curPos);
@@ -248,7 +208,7 @@ class Player extends Entity {
 	public function setFront(dir : h3d.col.Point) {
 		var quat = new h3d.Quat();
 		quat.initDirection(dir.normalized(), new h3d.Vector(0.0, 0.0, 1.0));
-		obj.setRotationQuat(quat);
+		player.obj.setRotationQuat(quat);
 	}
 
 	function updateLadderMovement(dt : Float) {
@@ -263,10 +223,12 @@ class Player extends Entity {
 	}
 
 	public function getTimeMode() : Game.TimeMode {
-		return sphereActive ? Past : Present; 
+		return @:privateAccess player.timeMode; 
 	}
 
 	public function enterLadder(l : ent.Ladder, to : h3d.col.Point) {
+		if ( !canClimb() )
+			return;
 		if ( l == null )
 			throw "entering null ladder";
 		curLadder = l;
@@ -276,6 +238,8 @@ class Player extends Entity {
 	}
 
 	public function leaveLadder(ladderEdge : h3d.col.Point, out : h3d.col.Point) {
+		if ( !canClimb() )
+			throw "controller can't climb, shouldn't try to leave ladder";
 		if ( curLadder == null )
 			throw "assert";
 		sequence = new Sequence(function (dt : Float) {
@@ -298,19 +262,15 @@ class Player extends Entity {
 		return curLadder == l;
 	}
 
-	override function setMode(mode : Game.TimeMode) {
-		super.setMode(mode);
-
-		temporalVisual.visible = mode == Present;
+	public function canClimb() {
+		return true;
 	}
 
-	public function pickItem(e : Entity) {
-		if ( item != null )
-			dropItem();
-		item = e;
+	public function canChangeRoom() {
+		return true;
 	}
 
-	public function dropItem() {
-		item = null;
+	public function canSecondaryTrigger() {
+		return true;
 	}
 }

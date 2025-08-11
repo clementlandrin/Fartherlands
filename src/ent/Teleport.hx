@@ -10,11 +10,11 @@ class Teleport extends Entity {
 		shader = new h3d.shader.ColorMult();
 	}
 
-	override function canSecondaryTrigger() {
-		return super.canSecondaryTrigger() || isHub();
+	override function canTrigger() {
+		return super.canTrigger() || isHub();
 	}
 
-	override function hasSpecificInteraction() {
+	override function canSecondaryTrigger() {
 		return true;
 	}
 
@@ -50,8 +50,8 @@ class Teleport extends Entity {
 			m.mainPass.addShader(shader);
 	}
 
-	override function onTrigger() {
-		super.onTrigger();
+	override function onSecondTrigger() {
+		super.onSecondTrigger();
 		for ( e in game.entities ) {
 			var t = Std.downcast(e, Teleport);
 			if ( t == null )
@@ -82,8 +82,8 @@ class Teleport extends Entity {
 		}
 	}
 
-	override function onSecondTrigger() {
-		super.onSecondTrigger();
+	override function onTrigger() {
+		super.onTrigger();
 		targetIndex++;
 		updateColor();
 	}
@@ -135,13 +135,13 @@ class Teleport extends Entity {
 		game.moveTo(room, [teleportCb]);
 	}
 	
-	override function getTriggerText() {
-		return "Press F to teleport. ";
+	override function getSecondTriggerText() {
+		return "Press E to teleport. ";
 	}
 
-	override function getSecondTriggerText() {
+	override function getTriggerText() {
 		if ( isHub() )
-			return "Press E to change color. ";
-		return super.getSecondTriggerText();
+			return "Press F to change color. ";
+		return super.getTriggerText();
 	}
 }
