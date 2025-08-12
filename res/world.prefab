@@ -86,8 +86,7 @@
 					"name": "A1",
 					"source": "content/Room/Arch/A1.prefab",
 					"x": -2,
-					"y": -7.5,
-					"editMode": "Edit"
+					"y": -7.5
 				}
 			]
 		},
@@ -217,7 +216,8 @@
 					"source": "content/Room/Gardens/G21.prefab",
 					"x": -55,
 					"y": 10,
-					"z": 20
+					"z": 20,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -257,7 +257,8 @@
 					"source": "content/Room/Gardens/G16.prefab",
 					"x": -135,
 					"y": 30,
-					"z": 10
+					"z": 10,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -266,6 +267,7 @@
 					"x": -155,
 					"y": 30,
 					"z": 15,
+					"editMode": "Edit",
 					"children": [
 						{
 							"type": "shader",

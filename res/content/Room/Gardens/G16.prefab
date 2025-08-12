@@ -8,6 +8,25 @@
 		},
 		{
 			"type": "object",
+			"name": "common",
+			"children": [
+				{
+					"type": "object",
+					"name": "Tooltip",
+					"props": {
+						"id": "World_Tooltip",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"memo": true,
+							"dialog": "Serre d'étude d'infusion"
+						}
+					}
+				}
+			]
+		},
+		{
+			"type": "object",
 			"name": "present",
 			"children": [
 				{
