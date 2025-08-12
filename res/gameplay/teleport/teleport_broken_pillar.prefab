@@ -6,18 +6,6 @@
 			"name": "object",
 			"children": [
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"z": 0.1,
-					"kind": 1,
-					"args": [
-						24,
-						360,
-						0,
-						4
-					]
-				},
-				{
 					"type": "box",
 					"name": "box",
 					"z": 0.23,

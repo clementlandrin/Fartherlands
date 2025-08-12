@@ -2,24 +2,36 @@
 	"type": "prefab",
 	"children": [
 		{
-			"type": "object",
-			"name": "object",
-			"props": {
-				"id": "Teleport_Hub",
-				"type": 5,
-				"$cdbtype": "element",
-				"props": {
-					"color": 64767,
-					"hiddenTeleport": true
+			"type": "reference",
+			"name": "teleport_pillar",
+			"source": "gameplay/teleport/teleport_pillar.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "teleport_socle",
+			"source": "gameplay/teleport/teleport_socle.prefab",
+			"editMode": "Override",
+			"overrides": {
+				"children": {
+					"object": {
+						"props": {
+							"props": {
+								"color": 64767
+							}
+						},
+						"children": {
+							"material": {
+								"color": [
+									0,
+									0.9882352941176471,
+									1,
+									1
+								]
+							}
+						}
+					}
 				}
-			},
-			"children": [
-				{
-					"type": "reference",
-					"name": "test_pillar",
-					"source": "gameplay/test_pillar.prefab"
-				}
-			]
+			}
 		}
 	]
 }

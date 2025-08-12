@@ -77,7 +77,7 @@
 						{
 							"type": "reference",
 							"name": "test_pillar_broken",
-							"source": "gameplay/test_pillar_broken.prefab"
+							"source": "gameplay/teleport/teleport_broken_pillar.prefab"
 						}
 					]
 				}
@@ -103,7 +103,7 @@
 						{
 							"type": "reference",
 							"name": "test_pillar",
-							"source": "gameplay/test_pillar.prefab"
+							"source": "gameplay/teleport/bath_teleport.prefab"
 						}
 					]
 				}

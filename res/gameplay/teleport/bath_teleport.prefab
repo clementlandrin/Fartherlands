@@ -3,11 +3,6 @@
 	"children": [
 		{
 			"type": "reference",
-			"name": "teleport_pillar",
-			"source": "gameplay/teleport/teleport_pillar.prefab"
-		},
-		{
-			"type": "reference",
 			"name": "teleport_socle",
 			"source": "gameplay/teleport/teleport_socle.prefab",
 			"editMode": "Override",
@@ -32,6 +27,28 @@
 					}
 				}
 			}
+		},
+		{
+			"type": "object",
+			"name": "present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "teleport_broken_pillar",
+					"source": "gameplay/teleport/teleport_broken_pillar.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "teleport_pillar",
+					"source": "gameplay/teleport/teleport_pillar.prefab"
+				}
+			]
 		}
 	]
 }

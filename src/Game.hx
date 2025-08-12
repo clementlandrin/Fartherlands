@@ -226,6 +226,7 @@ class Game extends hxd.App {
 		var source = p.source;
 		var e : ent.Entity = null;
 
+		var prevModeMake = modeMake;
 		switch(p.name.toLowerCase()) {
 		case "past":
 			modeMake = Past;
@@ -323,17 +324,7 @@ class Game extends hxd.App {
 		}
 
 		p.make();
-		onPrefabMake(p);
-		if ( e != null ) {
-			e.setObject(obj3d.local3d);
-			e.posFromObj();
-			// leaving room
-			if ( Std.isOfType(e, ent.Room) )
-				curRoom = null;
-		}
-	}
 
-	function onPrefabMake(p : hrt.prefab.Prefab) {
 		var obj3d = p.to(hrt.prefab.Object3D);
 		if ( obj3d != null )
 			temporalMaterials(obj3d.local3d, modeMake);
@@ -342,11 +333,19 @@ class Game extends hxd.App {
 		switch(p.name.toLowerCase()) {
 		case "past":
 			curRoom.pastPrefab = obj3d;
-			modeMake = Common;
 		case "present":
 			curRoom.presentPrefab = obj3d;
-			modeMake = Common;
 		default:
+		}
+
+		modeMake = prevModeMake;
+
+		if ( e != null ) {
+			e.setObject(obj3d.local3d);
+			e.posFromObj();
+			// leaving room
+			if ( Std.isOfType(e, ent.Room) )
+				curRoom = null;
 		}
 	}
 
