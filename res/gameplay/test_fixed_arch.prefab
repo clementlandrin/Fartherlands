@@ -4,31 +4,35 @@
 		{
 			"type": "object",
 			"name": "object",
+			"x": 1.09,
+			"scaleX": 5,
+			"scaleY": 5,
+			"scaleZ": 5,
 			"children": [
 				{
 					"type": "box",
 					"name": "box",
-					"x": 0.5,
+					"x": 0.85,
 					"z": 0.5,
-					"scaleX": 0.44,
-					"scaleY": 0.44
+					"scaleX": 0.2,
+					"scaleY": 0.2
 				},
 				{
 					"type": "box",
 					"name": "box",
-					"z": 1.2,
-					"scaleX": 0.44,
-					"scaleY": 0.44,
-					"scaleZ": 1.43,
+					"z": 1.07,
+					"scaleX": 0.2,
+					"scaleY": 0.2,
+					"scaleZ": 1.94,
 					"rotationY": 90
 				},
 				{
 					"type": "box",
 					"name": "box",
-					"x": -0.5,
+					"x": -0.9,
 					"z": 0.5,
-					"scaleX": 0.44,
-					"scaleY": 0.44
+					"scaleX": 0.2,
+					"scaleY": 0.2
 				}
 			]
 		}

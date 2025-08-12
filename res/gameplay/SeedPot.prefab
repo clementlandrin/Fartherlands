@@ -37,6 +37,19 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"props": {
+						"id": "SeedPot_object",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"memo": true,
+							"dialog": "C'est un pot. On peut y planter des graines."
+						}
+					}
 				}
 			]
 		}

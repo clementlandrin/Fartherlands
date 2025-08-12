@@ -27,6 +27,19 @@
 						24,
 						24
 					]
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"props": {
+						"id": "AgapantheSeed_object",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"memo": true,
+							"dialog": "C'est une graine."
+						}
+					}
 				}
 			]
 		}

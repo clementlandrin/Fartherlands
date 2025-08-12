@@ -16,6 +16,7 @@ class Activate extends Action {
         if ( e.inf.activatedModel != null ) {
             e.obj.removeChildren();
             hxd.res.Loader.currentInstance.load(e.inf.activatedModel).toPrefab().load().make(e.obj);
+            e.setObject(e.obj);
         }
     }
 

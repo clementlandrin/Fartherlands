@@ -7,6 +7,40 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "reference",
+			"name": "SeedPot",
+			"source": "gameplay/SeedPot.prefab",
+			"x": 5.14
+		},
+		{
+			"type": "reference",
+			"name": "AgapantheSeed",
+			"source": "gameplay/AgapantheSeed.prefab",
+			"x": -5.08,
+			"y": -1.51
+		},
+		{
+			"type": "reference",
+			"name": "AgapantheSeed",
+			"source": "gameplay/AgapantheSeed.prefab",
+			"x": -5.08,
+			"y": 0.04
+		},
+		{
+			"type": "reference",
+			"name": "AgapantheSeed",
+			"source": "gameplay/AgapantheSeed.prefab",
+			"x": -5.08,
+			"y": -3.01
+		},
+		{
+			"type": "reference",
+			"name": "AgapantheSeed",
+			"source": "gameplay/AgapantheSeed.prefab",
+			"x": -5.08,
+			"y": -4.29
+		},
+		{
 			"type": "object",
 			"name": "present",
 			"children": [

@@ -12,8 +12,10 @@ class Teleport extends Entity {
 
 	override function setObject(obj) {
 		super.setObject(obj);
-		for ( m in obj.getMaterials() )
-			m.mainPass.addShader(shader);
+		for ( m in obj.getMaterials() ) {
+			if ( m.mainPass.getShader(h3d.shader.ColorMult) == null )
+				m.mainPass.addShader(shader);
+		}
 	}
 
 	override function update(dt : Float) {
