@@ -171,6 +171,7 @@ js.node.Dns = require("dns");
 js.node.Fs = require("fs");
 js.node.Module = require("module");
 js.node.Net = require("net");
+js.node.Os = require("os");
 js.node.Path = require("path");
 if(!js.node.events) js.node.events = {};
 js.node.events.EventEmitter = require("events").EventEmitter;
@@ -204,6 +205,69 @@ js.node.zlib.Inflate = require("zlib").Inflate;
 js.node.zlib.InflateRaw = require("zlib").InflateRaw;
 js.node.zlib.Unzip = require("zlib").Unzip;
 var prefab = prefab || {};
+prefab.Light = function(parent,contextShared) {
+	hrt.prefab.Light.call(this,parent,contextShared);
+};
+$hxClasses["prefab.Light"] = prefab.Light;
+prefab.Light.__name__ = "prefab.Light";
+prefab.Light.getSerializablePropsStatic = function() {
+	if(prefab.Light.serializablePropsFields == null) {
+		prefab.Light.serializablePropsFields = [{ name : "kind", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PUnknown, defaultValue : null},{ name : "color", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PInt, defaultValue : 16777215},{ name : "power", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "occlusionFactor", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "isMainLight", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "range", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : null},{ name : "size", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "zNear", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : null},{ name : "angle", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 90},{ name : "fallOff", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 80},{ name : "cookiePath", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PString, defaultValue : null},{ name : "maxDist", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : -1},{ name : "minDist", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : -1},{ name : "autoShrink", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "autoZPlanes", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "length", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "width", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "height", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "verticalAngle", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "horizontalAngle", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "cascade", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "cascadeNbr", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PInt, defaultValue : 1},{ name : "cascadePow", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 2},{ name : "firstCascadeSize", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 10},{ name : "minPixelSize", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PInt, defaultValue : 1},{ name : "castingMaxDist", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "transitionFraction", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.15},{ name : "params", meta : { }, hasSetter : false, type : null, defaultValue : null},{ name : "debugShader", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "highPrecision", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "debugDisplay", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "x", meta : { range_min : 0, range_max : 400}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "y", meta : { range_min : 0, range_max : 400}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "z", meta : { range_min : 0, range_max : 400}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "scaleX", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "scaleY", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "scaleZ", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "rotationX", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "rotationY", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "rotationZ", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "visible", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "name", meta : { doc : "\r\n\t\tThe name of the prefab in the tree view\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PString, defaultValue : ""},{ name : "source", meta : { doc : "\r\n\t\tThe associated source file (an image, a 3D model, etc.) if the prefab type needs it.\r\n\t"}, hasSetter : true, type : hrt.prefab.PrefabFieldType.PString, defaultValue : null},{ name : "enabled", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when calling make() or be ignored. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "editorOnly", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when used in an other prefab or in game. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "inGameOnly", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when used in editor. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "locked", meta : { doc : "\r\n\t\tPrevent the prefab from being selected in Hide. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "props", meta : { doc : "\r\n\t\tA storage for some extra properties\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PUnknown, defaultValue : null}];
+	}
+	return prefab.Light.serializablePropsFields;
+};
+prefab.Light.__super__ = hrt.prefab.Light;
+prefab.Light.prototype = $extend(hrt.prefab.Light.prototype,{
+	shouldBeInstanciated: function() {
+		var s = hrt.prefab.Light.prototype.shouldBeInstanciated.call(this);
+		if(!s) {
+			return false;
+		}
+		var scene = hide.comp.Scene.getCurrent();
+		var s3d = scene.s3d;
+		if(this.kind == "Directional") {
+			var l = s3d.find(function(o) {
+				return ((o) instanceof h3d.scene.pbr.DirLight) ? o : null;
+			});
+			return l == null;
+		} else {
+			return true;
+		}
+	}
+	,make: function(sh) {
+		if(this.shared == sh) {
+			sh = null;
+		}
+		if(sh != null || !this.shared.isInstance) {
+			return this.makeClone(sh);
+		}
+		if(!this.shouldBeInstanciated()) {
+			return this;
+		}
+		if(this.shared.root3d == null) {
+			this.shared.root3d = this.shared.current3d = new h3d.scene.Object();
+		}
+		return this.__makeInternal();
+	}
+	,copyFromDynamic: function(obj) {
+		hrt.prefab.Light.prototype.copyFromDynamic.call(this,obj);
+	}
+	,copyFromOther: function(obj) {
+		hrt.prefab.Light.prototype.copyFromOther.call(this,obj);
+		var obj1 = obj;
+	}
+	,copyToDynamic: function(obj) {
+		if(obj == null) {
+			obj = { };
+		}
+		obj = hrt.prefab.Light.prototype.copyToDynamic.call(this,obj);
+		return obj;
+	}
+	,postCloneInit: function() {
+		hrt.prefab.Light.prototype.postCloneInit.call(this);
+	}
+	,__class__: prefab.Light
+});
 prefab.Temporal = function() {
 	hxsl.Shader.call(this);
 };
@@ -318,11 +382,137 @@ prefab.TemporalShader.prototype = $extend(hrt.prefab.Shader.prototype,{
 	}
 	,__class__: prefab.TemporalShader
 });
+prefab.TemporalWindow = function() {
+	hxsl.Shader.call(this);
+};
+$hxClasses["prefab.TemporalWindow"] = prefab.TemporalWindow;
+prefab.TemporalWindow.__name__ = "prefab.TemporalWindow";
+prefab.TemporalWindow._SHADER = null;
+prefab.TemporalWindow.__super__ = hxsl.Shader;
+prefab.TemporalWindow.prototype = $extend(hxsl.Shader.prototype,{
+	tex__: null
+	,get_tex: function() {
+		return this.tex__;
+	}
+	,set_tex: function(_v) {
+		return this.tex__ = _v;
+	}
+	,depth__: null
+	,get_depth: function() {
+		return this.depth__;
+	}
+	,set_depth: function(_v) {
+		return this.depth__ = _v;
+	}
+	,updateConstants: function(globals) {
+		this.constBits = 0;
+		this.updateConstantsFinal(globals);
+	}
+	,getParamValue: function(index) {
+		switch(index) {
+		case 0:
+			return this.tex__;
+		case 1:
+			return this.depth__;
+		default:
+		}
+		return null;
+	}
+	,getParamFloatValue: function(index) {
+		return 0.;
+	}
+	,setParamIndexValue: function(index,val) {
+		switch(index) {
+		case 0:
+			this.tex__ = val;
+			break;
+		case 1:
+			this.depth__ = val;
+			break;
+		default:
+		}
+	}
+	,setParamIndexFloatValue: function(index,val) {
+	}
+	,clone: function() {
+		var s = Object.create(prefab.TemporalWindow.prototype);
+		s.shader = this.shader;
+		s.tex__ = this.tex__;
+		s.depth__ = this.depth__;
+		return s;
+	}
+	,__class__: prefab.TemporalWindow
+	,__properties__: {set_depth:"set_depth",get_depth:"get_depth",set_tex:"set_tex",get_tex:"get_tex"}
+});
+prefab.TemporalWindowShader = function(parent,contextShared) {
+	hrt.prefab.Shader.call(this,parent,contextShared);
+};
+$hxClasses["prefab.TemporalWindowShader"] = prefab.TemporalWindowShader;
+prefab.TemporalWindowShader.__name__ = "prefab.TemporalWindowShader";
+prefab.TemporalWindowShader.getSerializablePropsStatic = function() {
+	if(prefab.TemporalWindowShader.serializablePropsFields == null) {
+		prefab.TemporalWindowShader.serializablePropsFields = [{ name : "targetMaterial", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PString, defaultValue : null},{ name : "recursiveApply", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "name", meta : { doc : "\r\n\t\tThe name of the prefab in the tree view\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PString, defaultValue : ""},{ name : "source", meta : { doc : "\r\n\t\tThe associated source file (an image, a 3D model, etc.) if the prefab type needs it.\r\n\t"}, hasSetter : true, type : hrt.prefab.PrefabFieldType.PString, defaultValue : null},{ name : "enabled", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when calling make() or be ignored. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "editorOnly", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when used in an other prefab or in game. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "inGameOnly", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when used in editor. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "locked", meta : { doc : "\r\n\t\tPrevent the prefab from being selected in Hide. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "props", meta : { doc : "\r\n\t\tA storage for some extra properties\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PUnknown, defaultValue : null}];
+	}
+	return prefab.TemporalWindowShader.serializablePropsFields;
+};
+prefab.TemporalWindowShader.__super__ = hrt.prefab.Shader;
+prefab.TemporalWindowShader.prototype = $extend(hrt.prefab.Shader.prototype,{
+	makeShader: function() {
+		return new prefab.TemporalWindow();
+	}
+	,updateInstance: function(propName) {
+		hrt.prefab.Shader.prototype.updateInstance.call(this,propName);
+		var sh = js.Boot.__cast(this.shader , prefab.TemporalWindow);
+		sh.tex__ = h3d.mat.Texture.fromColor(16711935);
+	}
+	,edit: function(ctx) {
+		var _gthis = this;
+		ctx.properties.add($("\r\n\t\t"),this,function(pname) {
+			ctx.onChange(_gthis,pname);
+		});
+	}
+	,make: function(sh) {
+		if(this.shared == sh) {
+			sh = null;
+		}
+		if(sh != null || !this.shared.isInstance) {
+			return this.makeClone(sh);
+		}
+		if(!this.shouldBeInstanciated()) {
+			return this;
+		}
+		return this.__makeInternal();
+	}
+	,copyFromDynamic: function(obj) {
+		hrt.prefab.Shader.prototype.copyFromDynamic.call(this,obj);
+	}
+	,copyFromOther: function(obj) {
+		hrt.prefab.Shader.prototype.copyFromOther.call(this,obj);
+		var obj1 = obj;
+	}
+	,copyToDynamic: function(obj) {
+		if(obj == null) {
+			obj = { };
+		}
+		obj = hrt.prefab.Shader.prototype.copyToDynamic.call(this,obj);
+		return obj;
+	}
+	,postCloneInit: function() {
+		hrt.prefab.Shader.prototype.postCloneInit.call(this);
+	}
+	,__class__: prefab.TemporalWindowShader
+});
 $hxClasses["Math"] = Math;
 if( String.fromCodePoint == null ) String.fromCodePoint = function(c) { return c < 0x10000 ? String.fromCharCode(c) : String.fromCharCode((c>>10)+0xD7C0)+String.fromCharCode((c&0x3FF)+0xDC00); }
+prefab.Light._ = hrt.prefab.Prefab.register("light",prefab.Light);
+prefab.Light.serializablePropsFields = null;
 prefab.Temporal.SRC = "HXSMD3ByZWZhYi5UZW1wb3JhbAEBBFBBU1QCAgABAAAAAAAA";
 prefab.Temporal._MODULE = "prefab.TemporalShader";
 prefab.TemporalShader._ = hrt.prefab.Prefab.register("temporalShader",prefab.TemporalShader);
 prefab.TemporalShader.serializablePropsFields = null;
+prefab.TemporalWindow.SRC = "HXSMFXByZWZhYi5UZW1wb3JhbFdpbmRvdwgBBmdsb2JhbA0BAgIEdGltZQMAAQADEG1vZGVsVmlld0ludmVyc2UHAAEBAwAAAAQGY2FtZXJhDQIBBQ9pbnZlcnNlVmlld1Byb2oHAAQAAAAABghkZXB0aE1hcBEBAAAABwN0ZXgKAgIAAAgFZGVwdGgKAgIAAAkIc2NyZWVuVVYFCgQAAAoKcGl4ZWxDb2xvcgUMBAAACwhmcmFnbWVudA4GAAABAQsAAAUEBgQCCgUMCQMiDgICBwoCAgkFCgUMBQwIDAhjdXJEZXB0aAMEAAAJA0AOAgIGEQECCQUKAwAIDQlwYXN0RGVwdGgDBAAACgkDIg4CAggKAgIJBQoFDAAAAwALBgkCDAMCDQMCDAAAAAA";
+prefab.TemporalWindow._MODULE = "prefab.TemporalWindowShader";
+prefab.TemporalWindowShader._ = hrt.prefab.Prefab.register("temporalWindow",prefab.TemporalWindowShader);
+prefab.TemporalWindowShader.serializablePropsFields = null;
 
 //# sourceMappingURL=hide-plugin.js.map

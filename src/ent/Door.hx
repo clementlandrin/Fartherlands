@@ -103,7 +103,7 @@ class Door extends Entity {
 			if ( game.ctrl.isClimbing() ) {
 				var ladders = newRoom.ladders.filter(l -> l.door == to);
 				if ( ladders.length == 0 )
-					throw 'missing matching ladder to ${newRoom.name}';
+					throw 'missing matching ladder from ${game.curRoom} to ${newRoom.name}';
 				if ( ladders.length > 1 )
 					throw 'too many ladders to ${newRoom.name}';
 				var ladder = ladders[0];

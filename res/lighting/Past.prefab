@@ -4,7 +4,6 @@
 		{
 			"type": "renderProps",
 			"name": "renderProps",
-			"inGameOnly": true,
 			"props": {
 				"PBR": {
 					"mode": "Pbr",

@@ -92,6 +92,11 @@
 					"source": "lighting/Past.prefab"
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "doorUp",
+			"source": "gameplay/doorUp.prefab"
 		}
 	]
 }
