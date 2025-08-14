@@ -53,7 +53,22 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "object",
+					"name": "Tooltip",
+					"props": {
+						"id": "World_Tooltip",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"memo": true,
+							"dialog": "Il n'y a plus personne ici depuis plus de 1000 ans"
+						}
+					}
+				}
+			]
 		},
 		{
 			"type": "object",

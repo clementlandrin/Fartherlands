@@ -22,6 +22,17 @@
 							"dialog": "Serre d'étude d'infusion"
 						}
 					}
+				},
+				{
+					"type": "reference",
+					"name": "AgapantheSeed",
+					"source": "gameplay/AgapantheSeed.prefab",
+					"x": 2.56
+				},
+				{
+					"type": "reference",
+					"name": "SeedPot",
+					"source": "gameplay/SeedPot.prefab"
 				}
 			]
 		},

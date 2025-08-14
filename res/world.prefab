@@ -31,19 +31,20 @@
 				{
 					"type": "reference",
 					"name": "H1",
-					"source": "content/Room/Hub/H1.prefab"
+					"source": "content/Room/Hub/H1.prefab",
+					"editMode": "Edit"
+				},
+				{
+					"type": "reference",
+					"name": "H10",
+					"source": "content/Room/Hub/H10.prefab",
+					"z": -15
 				},
 				{
 					"type": "reference",
 					"name": "H4",
 					"source": "content/Room/Hub/H4.prefab",
-					"x": -15,
-					"z": 25
-				},
-				{
-					"type": "reference",
-					"name": "H5",
-					"source": "content/Room/Hub/H5.prefab",
+					"x": -35,
 					"z": 25
 				},
 				{
@@ -57,14 +58,14 @@
 					"type": "reference",
 					"name": "H6",
 					"source": "content/Room/Hub/H6.prefab",
-					"x": -15,
+					"x": -34.06,
 					"z": 100
 				},
 				{
 					"type": "reference",
 					"name": "H7",
 					"source": "content/Room/Hub/H7.prefab",
-					"x": -135,
+					"x": -154.06,
 					"z": 100,
 					"children": [
 						{
@@ -87,7 +88,7 @@
 					"type": "reference",
 					"name": "H8",
 					"source": "content/Room/Hub/H8.prefab",
-					"x": -75,
+					"x": -94.06,
 					"z": 100
 				},
 				{
@@ -191,8 +192,7 @@
 					"source": "content/Room/Gardens/G16.prefab",
 					"x": -135,
 					"y": 30,
-					"z": 10,
-					"editMode": "Edit"
+					"z": 10
 				},
 				{
 					"type": "reference",
@@ -201,7 +201,6 @@
 					"x": -155,
 					"y": 30,
 					"z": 15,
-					"editMode": "Edit",
 					"children": [
 						{
 							"type": "shader",
@@ -513,6 +512,20 @@
 				},
 				{
 					"type": "reference",
+					"name": "D14",
+					"source": "content/Room/Diverse/D14.prefab",
+					"y": 15,
+					"z": -15
+				},
+				{
+					"type": "reference",
+					"name": "D15",
+					"source": "content/Room/Diverse/D15.prefab",
+					"y": -15,
+					"z": -15
+				},
+				{
+					"type": "reference",
 					"name": "D13",
 					"source": "content/Room/Diverse/D13.prefab",
 					"y": -15,
@@ -647,6 +660,22 @@
 					"source": "content/Room/Bath/B6.prefab",
 					"x": 3.85,
 					"y": 30,
+					"z": 10
+				},
+				{
+					"type": "reference",
+					"name": "B12",
+					"source": "content/Room/Bath/B12.prefab",
+					"x": 50,
+					"y": 20,
+					"z": 10
+				},
+				{
+					"type": "reference",
+					"name": "B11",
+					"source": "content/Room/Bath/B11.prefab",
+					"x": 35,
+					"y": 20,
 					"z": 10
 				},
 				{

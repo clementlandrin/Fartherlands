@@ -7,6 +7,11 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "reference",
+			"name": "hub_teleport",
+			"source": "gameplay/teleport/hub_teleport.prefab"
+		},
+		{
 			"type": "polygon",
 			"name": "polygon",
 			"props": {
@@ -122,11 +127,6 @@
 					"rotationZ": 179.8
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "hub_teleport",
-			"source": "gameplay/teleport/hub_teleport.prefab"
 		}
 	]
 }

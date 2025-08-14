@@ -2,6 +2,47 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"scaleX": 7.5,
+			"scaleY": 7.5,
+			"scaleZ": 7.5,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "object",
+			"name": "common"
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"x": -0.13,
+					"y": 3.5,
+					"rotationZ": 179.8
+				}
+			]
+		},
+		{
 			"type": "polygon",
 			"name": "polygon",
 			"x": -3.75,
@@ -28,61 +69,6 @@
 			"kind": 0,
 			"args": [
 				0
-			]
-		},
-		{
-			"type": "reference",
-			"name": "camera",
-			"source": "gameplay/camera.prefab"
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"props": {
-				"id": "Start_polygon",
-				"type": 2,
-				"$cdbtype": "element"
-			},
-			"scaleX": 7.5,
-			"scaleY": 7.5,
-			"scaleZ": 7.5,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
-			"type": "object",
-			"name": "common",
-			"children": [
-				{
-					"type": "reference",
-					"name": "test_golem",
-					"source": "gameplay/test_golem.prefab",
-					"props": {
-						"id": "World_test_golem",
-						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Ils ont tous disparus"
-						}
-					}
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "doors",
-			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 0.31,
-					"y": -3.59
-				}
 			]
 		},
 		{

@@ -53,22 +53,7 @@
 		},
 		{
 			"type": "object",
-			"name": "common",
-			"children": [
-				{
-					"type": "reference",
-					"name": "test_golem",
-					"source": "gameplay/test_golem.prefab",
-					"props": {
-						"id": "World_test_golem",
-						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Ils ont tous disparus"
-						}
-					}
-				}
-			]
+			"name": "common"
 		},
 		{
 			"type": "object",
