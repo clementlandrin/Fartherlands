@@ -8,6 +8,19 @@
 		},
 		{
 			"type": "object",
+			"name": "Tooltip",
+			"props": {
+				"id": "World_Tooltip",
+				"type": 4,
+				"$cdbtype": "element",
+				"props": {
+					"memo": true,
+					"dialog": "Cet atelier de golem démontrent qu'ils ont été créés par la civilisation dans le but de servir de main d'oeuvre pour une construction dont il est fait mention"
+				}
+			}
+		},
+		{
+			"type": "object",
 			"name": "present",
 			"children": [
 				{

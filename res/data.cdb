@@ -69,7 +69,7 @@
 				},
 				{
 					"id": "SphereMaxRadius",
-					"value": 5
+					"value": 4
 				},
 				{
 					"id": "SphereTransitionDuration",

@@ -7,6 +7,11 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "reference",
+			"name": "doorUp",
+			"source": "gameplay/doorUp.prefab"
+		},
+		{
 			"type": "object",
 			"name": "Tooltip",
 			"props": {
@@ -17,7 +22,8 @@
 					"memo": true,
 					"dialog": "Ils ont construit l'arche dans le but de ramener le reste de la civilisation"
 				}
-			}
+			},
+			"y": 3.95
 		},
 		{
 			"type": "object",

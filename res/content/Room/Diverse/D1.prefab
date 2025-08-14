@@ -7,6 +7,11 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "reference",
+			"name": "doorDown",
+			"source": "gameplay/doorDown.prefab"
+		},
+		{
 			"type": "polygon",
 			"name": "polygon",
 			"props": {

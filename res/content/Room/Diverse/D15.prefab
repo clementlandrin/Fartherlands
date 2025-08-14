@@ -7,6 +7,11 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "reference",
+			"name": "doorUp",
+			"source": "gameplay/doorUp.prefab"
+		},
+		{
 			"type": "polygon",
 			"name": "polygon",
 			"props": {

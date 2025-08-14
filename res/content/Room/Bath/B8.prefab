@@ -64,7 +64,7 @@
 						"type": 4,
 						"$cdbtype": "element",
 						"props": {
-							"dialog": "Ils ont tous disparus"
+							"dialog": "Ils ont tous disparus\nLorsque leur prototype était achevé, l'activation a raté, il y a eu un gros flash bleu, et je me suis retrouvé ici, depuis il n'y a plus personne dans les environs"
 						}
 					}
 				}

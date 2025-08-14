@@ -24,7 +24,25 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "object",
+					"name": "Tooltip",
+					"props": {
+						"id": "World_Tooltip",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"memo": true,
+							"dialog": "Les golems sont activables par \"infusion\""
+						}
+					},
+					"scaleX": 15,
+					"scaleY": 7.5,
+					"scaleZ": 5
+				}
+			]
 		},
 		{
 			"type": "object",

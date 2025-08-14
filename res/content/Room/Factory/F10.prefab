@@ -2,9 +2,32 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "object",
+			"name": "Tooltip",
+			"props": {
+				"id": "World_Tooltip",
+				"type": 4,
+				"$cdbtype": "element",
+				"props": {
+					"memo": true,
+					"dialog": "Cet endroit sert d'atelier de cronstruction au mécanisme de téléportation"
+				}
+			},
+			"scaleX": 15,
+			"scaleY": 15,
+			"scaleZ": 15
+		},
+		{
 			"type": "reference",
 			"name": "camera",
 			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "doorDown",
+			"source": "gameplay/doorDown.prefab",
+			"x": -1.38,
+			"y": 5.38
 		},
 		{
 			"type": "object",

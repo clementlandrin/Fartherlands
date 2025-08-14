@@ -24,7 +24,14 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "reference",
+					"name": "doorUp",
+					"source": "gameplay/doorUp.prefab"
+				}
+			]
 		},
 		{
 			"type": "object",

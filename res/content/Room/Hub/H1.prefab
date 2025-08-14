@@ -7,6 +7,27 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "object",
+			"name": "Common",
+			"x": 1.92,
+			"rotationZ": -90,
+			"children": [
+				{
+					"type": "reference",
+					"name": "test_golem",
+					"source": "gameplay/test_golem.prefab",
+					"props": {
+						"id": "World_test_golem",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"dialog": "Mais... Mais, quelqu'un? Je pensais être seul depuis..... longtemps\nOn est bloqué ici tous les 2!"
+						}
+					}
+				}
+			]
+		},
+		{
 			"type": "polygon",
 			"name": "polygon",
 			"props": {
@@ -73,6 +94,87 @@
 					"source": "lighting/Present.prefab",
 					"x": 3.5399,
 					"y": -0.6998
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -0.98,
+					"y": -6.46,
+					"z": 0.01,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationZ": -29.8
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -1.24,
+					"y": -5.74,
+					"z": 1.59,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationY": -68.5,
+					"rotationZ": -119.8
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -0.86,
+					"y": 6.22,
+					"z": -0.27,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationX": 2,
+					"rotationY": 5.4,
+					"rotationZ": 164.2
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -0.08,
+					"y": 6.47,
+					"z": 0.52,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationX": 0.2,
+					"rotationY": -23.6,
+					"rotationZ": -156.5
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -0.57,
+					"y": 5.67,
+					"z": 1.37,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationX": -13.5,
+					"rotationY": -66,
+					"rotationZ": 86.5
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -1.84,
+					"y": -6.46,
+					"z": 0.75,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationX": -5.4,
+					"rotationY": -26.5,
+					"rotationZ": 12
 				}
 			]
 		},
@@ -122,11 +224,6 @@
 					"rotationZ": 179.8
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "hub_teleport",
-			"source": "gameplay/teleport/hub_teleport.prefab"
 		}
 	]
 }

@@ -10,12 +10,13 @@
 			"type": "model",
 			"name": "tree",
 			"source": "content/LD/Placeholder/tree.fbx",
-			"x": -3.2,
-			"y": 0.18,
-			"scaleX": 0.61,
-			"scaleY": 0.61,
-			"scaleZ": 0.61,
-			"rotationZ": 122.6
+			"x": -3.81,
+			"y": -0.75,
+			"z": -0.26,
+			"scaleX": 1.21,
+			"scaleY": 1.21,
+			"scaleZ": 0.93,
+			"rotationZ": 87
 		},
 		{
 			"type": "object",
@@ -30,24 +31,6 @@
 						"$cdbtype": "element"
 					},
 					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": 4.01,
-					"z": 10.28,
-					"scaleX": 2.1,
 					"scaleY": 15,
 					"scaleZ": 15,
 					"kind": 0,
@@ -143,46 +126,6 @@
 					"x": 7.33,
 					"y": -0.23,
 					"rotationZ": 87.5
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -7.18,
-					"y": -0.03,
-					"rotationZ": -91.1
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 0.43,
-					"y": 7.23,
-					"rotationZ": 179.8
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -0.16,
-					"y": -7.28
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 4.11,
-					"y": -7.28,
-					"z": 10.44
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 4.11,
-					"y": 7,
-					"z": 10.44,
-					"rotationZ": -180
 				}
 			]
 		},

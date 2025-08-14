@@ -2,6 +2,11 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "reference",
+			"name": "doorUp",
+			"source": "gameplay/doorUp.prefab"
+		},
+		{
 			"type": "polygon",
 			"name": "polygon",
 			"x": -3.75,

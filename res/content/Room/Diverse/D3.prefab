@@ -2,6 +2,11 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "reference",
+			"name": "doorDown",
+			"source": "gameplay/doorDown.prefab"
+		},
+		{
 			"type": "polygon",
 			"name": "polygon",
 			"x": -3.75,

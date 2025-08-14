@@ -31,8 +31,7 @@
 				{
 					"type": "reference",
 					"name": "H1",
-					"source": "content/Room/Hub/H1.prefab",
-					"editMode": "Edit"
+					"source": "content/Room/Hub/H1.prefab"
 				},
 				{
 					"type": "reference",
@@ -151,8 +150,7 @@
 					"source": "content/Room/Gardens/G21.prefab",
 					"x": -55,
 					"y": 10,
-					"z": 20,
-					"editMode": "Edit"
+					"z": 20
 				},
 				{
 					"type": "reference",
@@ -369,14 +367,16 @@
 					"name": "F13",
 					"source": "content/Room/Factory/F13.prefab",
 					"x": -5,
-					"y": -25
+					"y": -25,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
 					"name": "F14",
 					"source": "content/Room/Factory/F14.prefab",
 					"x": -25,
-					"y": -25
+					"y": -25,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -391,7 +391,8 @@
 					"source": "content/Room/Factory/F4.prefab",
 					"x": 15,
 					"y": -19.97,
-					"z": 10
+					"z": 10,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -454,7 +455,8 @@
 					"source": "content/Room/Factory/F10.prefab",
 					"x": -23.91,
 					"y": -30,
-					"z": 10
+					"z": 10,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -667,7 +669,7 @@
 					"name": "B12",
 					"source": "content/Room/Bath/B12.prefab",
 					"x": 50,
-					"y": 20,
+					"y": 23.61,
 					"z": 10
 				},
 				{
@@ -675,7 +677,7 @@
 					"name": "B11",
 					"source": "content/Room/Bath/B11.prefab",
 					"x": 35,
-					"y": 20,
+					"y": 23.61,
 					"z": 10
 				},
 				{
@@ -690,7 +692,7 @@
 					"name": "B7",
 					"source": "content/Room/Bath/B7.prefab",
 					"x": 19.09,
-					"y": 18.13,
+					"y": 21.74,
 					"z": 10
 				},
 				{
