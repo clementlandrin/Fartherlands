@@ -9,6 +9,16 @@
 				"__ref": "content/Art/MaterialLibrary/Present.prefab",
 				"name": "Ground"
 			}
+		},
+		"Fatherlands": {
+			"Ground_Present": {
+				"__ref": "content/Art/MaterialLibrary/Present.prefab",
+				"name": "Ground"
+			},
+			"Ground_Past": {
+				"__ref": "content/Art/MaterialLibrary/Past.prefab",
+				"name": "Ground_Past"
+			}
 		}
 	}
 }
