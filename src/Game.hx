@@ -119,8 +119,6 @@ class Game extends hxd.App {
 		else
 			p = hxd.res.Loader.currentInstance.load(state.level).toPrefab().load().clone(sh);
 		p.make();
-		for ( m in s3d.getMaterials() )
-			m.refreshProps();
 
 		cameraController = new CameraController();
 

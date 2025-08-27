@@ -4,6 +4,7 @@ class Main extends hxd.App {
 		voxelDebug : false,
 		doorDebug : false,
 		memo : true,
+		navmeshDebug : true,
 	});
 
 	static var level : String;

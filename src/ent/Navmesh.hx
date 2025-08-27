@@ -26,6 +26,8 @@ class Navmesh extends Entity {
         bounds = obj.getBounds();
         invAbsPos = obj.getAbsPos().getInverse();
         zScale = obj.getAbsPos().getScale().z;
+        for ( m in obj.getMaterials() )
+            m.color.set(1.0,0.0,1.0,1.0);
     }
 
     public function setPolygon(polygon : hrt.prefab.l3d.Polygon) {
@@ -100,5 +102,10 @@ class Navmesh extends Entity {
                 }
             }
         }
+    }
+
+    override function cull() {
+        super.cull();
+        obj.culled = obj.culled || !Main.PREFS.navmeshDebug;
     }
 }

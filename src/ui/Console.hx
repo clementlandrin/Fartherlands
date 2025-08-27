@@ -40,6 +40,11 @@ class Console {
 			Main.savePrefs();
 		});
 
+		console.add("navmeshDebug", function() {
+			Main.PREFS.navmeshDebug = !Main.PREFS.navmeshDebug;
+			Main.savePrefs();
+		});
+
 		console.add("prof", function(arg:String) {
 			// https://github.com/HaxeFoundation/hashlink/wiki/Profiler
 			switch (arg) {
