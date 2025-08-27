@@ -11,3 +11,4 @@
 -debug
 -dce no
 --macro include("prefab")
+HideImports

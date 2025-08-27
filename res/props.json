@@ -34,5 +34,9 @@
 	"sceneeditor.backgroundColor": 3355443,
 	"sceneeditor.pause": false,
 	"sceneeditor.refresh": true,
-	"sceneeditor.showGizmo": true
+	"sceneeditor.showGizmo": true,
+	"renderers": {
+		"Fartherlands": "gfx.MaterialSetup"
+	},
+	"defaultRenderer": "Fartherlands"
 }

@@ -269,7 +269,7 @@ class Game extends hxd.App {
 					var box = cast(p, hrt.prefab.l3d.Box);
 					n.setBox(box);
 				default:
-					throw "unsupported navmesh";
+					throw 'unsupported navmesh ${p.name}';
 				}
 				n.navmeshMode = modeMake;
 				e = n;
