@@ -6,7 +6,33 @@
 		"src",
 		"../src"
 	],
-	"fs.convert" : {
-		"fbx" :{ "convert" : "hmd", "tangents" : true }
-	}
+	"fs.convert": {
+		"fbx": {
+			"convert": "hmd",
+			"tangents": true
+		}
+	},
+	"scene.renderProps": null,
+	"materialLibraries": [
+		{
+			"name": "Present",
+			"path": "content/Art/MaterialLibrary/Present.prefab"
+		},
+		{
+			"name": "Past",
+			"path": "content/Art/MaterialLibrary/Past.prefab"
+		}
+	],
+	"sceneeditor.axisToggle": true,
+	"sceneeditor.showViewportOverlays": false,
+	"sceneeditor.gridToggle": false,
+	"sceneeditor.jointsToggle": false,
+	"sceneeditor.colliderToggle": false,
+	"sceneeditor.iconVisibility": true,
+	"sceneeditor.sceneInformationToggle": false,
+	"sceneeditor.wireframeToggle": false,
+	"sceneeditor.backgroundColor": 3355443,
+	"sceneeditor.pause": false,
+	"sceneeditor.refresh": true,
+	"sceneeditor.showGizmo": true
 }

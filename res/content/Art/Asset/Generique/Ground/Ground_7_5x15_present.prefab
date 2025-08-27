@@ -1,0 +1,26 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "model",
+			"name": "Ground_7_5x15_present",
+			"source": "content/Art/Asset/Generique/Ground/fbx/Ground_7_5x15_present.fbx"
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Ground_Present_7_5x15_past_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"z": -0.1,
+			"scaleX": 15,
+			"scaleY": 7.5,
+			"kind": 0,
+			"args": [
+				0
+			]
+		}
+	]
+}

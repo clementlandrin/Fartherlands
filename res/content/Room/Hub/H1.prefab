@@ -35,22 +35,6 @@
 				"type": 2,
 				"$cdbtype": "element"
 			},
-			"scaleX": 7.5,
-			"scaleY": 15,
-			"scaleZ": 9.72,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"props": {
-				"id": "Start_polygon",
-				"type": 2,
-				"$cdbtype": "element"
-			},
 			"x": -3.75,
 			"z": 3,
 			"scaleX": 6,
@@ -85,21 +69,17 @@
 		{
 			"type": "object",
 			"name": "present",
-			"x": 1.344,
-			"y": 0.002,
 			"children": [
 				{
 					"type": "reference",
 					"name": "Present",
-					"source": "lighting/Present.prefab",
-					"x": 3.5399,
-					"y": -0.6998
+					"source": "lighting/Present.prefab"
 				},
 				{
 					"type": "model",
 					"name": "box",
 					"source": "content/LD/Placeholder/box.fbx",
-					"x": -0.98,
+					"x": -0.09,
 					"y": -6.46,
 					"z": 0.01,
 					"scaleX": 0.69,
@@ -111,7 +91,7 @@
 					"type": "model",
 					"name": "box",
 					"source": "content/LD/Placeholder/box.fbx",
-					"x": -1.24,
+					"x": -0.35,
 					"y": -5.74,
 					"z": 1.59,
 					"scaleX": 0.69,
@@ -124,7 +104,7 @@
 					"type": "model",
 					"name": "box",
 					"source": "content/LD/Placeholder/box.fbx",
-					"x": -0.86,
+					"x": 0.03,
 					"y": 6.22,
 					"z": -0.27,
 					"scaleX": 0.69,
@@ -135,10 +115,16 @@
 					"rotationZ": 164.2
 				},
 				{
+					"type": "reference",
+					"name": "Ground_7_5x15_present",
+					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x15_present.prefab",
+					"rotationZ": -90
+				},
+				{
 					"type": "model",
 					"name": "box",
 					"source": "content/LD/Placeholder/box.fbx",
-					"x": -0.08,
+					"x": 0.81,
 					"y": 6.47,
 					"z": 0.52,
 					"scaleX": 0.69,
@@ -152,7 +138,7 @@
 					"type": "model",
 					"name": "box",
 					"source": "content/LD/Placeholder/box.fbx",
-					"x": -0.57,
+					"x": 0.32,
 					"y": 5.67,
 					"z": 1.37,
 					"scaleX": 0.69,
@@ -166,7 +152,7 @@
 					"type": "model",
 					"name": "box",
 					"source": "content/LD/Placeholder/box.fbx",
-					"x": -1.84,
+					"x": -0.95,
 					"y": -6.46,
 					"z": 0.75,
 					"scaleX": 0.69,
@@ -181,15 +167,17 @@
 		{
 			"type": "object",
 			"name": "past",
-			"x": 1.344,
-			"y": 0.002,
 			"children": [
 				{
 					"type": "reference",
 					"name": "Past",
-					"source": "lighting/Past.prefab",
-					"x": -1.344,
-					"y": -0.002
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Ground_7_5x15_past",
+					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x15_past.prefab",
+					"rotationZ": -90
 				}
 			]
 		},

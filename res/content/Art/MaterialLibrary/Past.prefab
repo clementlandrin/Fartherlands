@@ -1,0 +1,24 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "material",
+			"name": "Ground_Past",
+			"props": {
+				"PBR": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_MetallicRoughnessAO.png"
+		}
+	]
+}
