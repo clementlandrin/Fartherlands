@@ -18,6 +18,19 @@
 					"d": 0.59,
 					"e": 0.14,
 					"skyColor": 0
+				},
+				"Fatherlands": {
+					"mode": "Pbr",
+					"emissive": 1,
+					"exposure": 0,
+					"sky": "Irrad",
+					"tone": "Linear",
+					"occlusion": 1,
+					"a": 2.51,
+					"b": 0.03,
+					"c": 2.43,
+					"d": 0.59,
+					"e": 0.14
 				}
 			},
 			"children": [
