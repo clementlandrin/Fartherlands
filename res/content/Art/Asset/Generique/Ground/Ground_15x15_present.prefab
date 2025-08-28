@@ -1,0 +1,29 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Ground_Present_7_5x15_past_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"z": -0.1,
+			"scaleX": 15,
+			"scaleY": 15,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "model",
+			"name": "Ground_15x15_present",
+			"source": "content/Art/Asset/Generique/Ground/fbx/Ground_15x15_present.fbx",
+			"rotationX": 8.839631836452914e-12,
+			"rotationY": 3.7586341052392425e-12,
+			"rotationZ": 2.899423132088139e-25
+		}
+	]
+}
