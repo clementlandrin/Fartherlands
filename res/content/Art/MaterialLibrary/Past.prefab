@@ -28,7 +28,18 @@
 			},
 			"diffuseMap": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Albedo.png",
 			"normalMap": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Normal.png",
-			"specularMap": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_MetallicRoughnessAO.png"
+			"specularMap": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_MetallicRoughnessAO.png",
+			"children": [
+				{
+					"type": "shader",
+					"name": "UVTransform",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/UVTransform.shgraph",
+					"props": {
+						"Tiling": 2,
+						"Offset": 0
+					}
+				}
+			]
 		}
 	]
 }

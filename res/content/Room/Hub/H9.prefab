@@ -11,25 +11,14 @@
 			"name": "present",
 			"children": [
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Ground_15x15_present",
+					"source": "content/Art/Asset/Generique/Ground/Ground_15x15_present.prefab"
 				},
 				{
 					"type": "polygon",
@@ -77,25 +66,14 @@
 			"name": "past",
 			"children": [
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Ground_15x15_past",
+					"source": "content/Art/Asset/Generique/Ground/Ground_15x15_past.prefab"
 				}
 			]
 		},

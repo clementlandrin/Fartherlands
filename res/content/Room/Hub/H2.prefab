@@ -23,6 +23,12 @@
 			"name": "present",
 			"children": [
 				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab",
+					"x": 2
+				},
+				{
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
@@ -65,12 +71,6 @@
 					"args": [
 						0
 					]
-				},
-				{
-					"type": "reference",
-					"name": "Present",
-					"source": "lighting/Present.prefab",
-					"x": 2
 				}
 			]
 		},

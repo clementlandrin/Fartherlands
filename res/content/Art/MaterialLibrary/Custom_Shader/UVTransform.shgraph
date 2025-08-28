@@ -1,0 +1,120 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Tiling",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 0
+		},
+		{
+			"id": 1,
+			"name": "Offset",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 1
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 270,
+				"y": 504,
+				"id": 0,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 738,
+				"y": 522,
+				"id": 1,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1062,
+				"y": 522,
+				"id": 2,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 324,
+				"y": 774,
+				"id": 3,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 353.5,
+				"y": 1002.5,
+				"id": 4,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 1,
+					"perInstance": null
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 0,
+				"nameOutput": "output",
+				"inputNodeId": 1,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 3,
+				"nameOutput": "Tiling",
+				"inputNodeId": 1,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 4,
+				"nameOutput": "Offset",
+				"inputNodeId": 1,
+				"nameInput": "offset",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 1,
+				"nameOutput": "output",
+				"inputNodeId": 2,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			}
+		]
+	}
+}

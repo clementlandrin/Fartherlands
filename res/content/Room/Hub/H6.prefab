@@ -7,71 +7,9 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
-			"type": "reference",
-			"name": "ladder",
-			"source": "gameplay/ladder.prefab",
-			"x": -1.8,
-			"y": -4.2
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"props": {
-				"id": "R1_polygon",
-				"type": 2,
-				"$cdbtype": "element"
-			},
-			"x": 0.8,
-			"y": 0.88,
-			"z": -0.21,
-			"kind": 3,
-			"args": [
-				24,
-				24
-			],
-			"children": [
-				{
-					"type": "material",
-					"name": "material",
-					"props": {
-						"PBR": {
-							"mode": "PBR",
-							"blend": "None",
-							"shadows": true,
-							"culling": "Back",
-							"depthTest": "Less",
-							"colorMask": 15,
-							"enableStencil": false
-						}
-					}
-				}
-			]
-		},
-		{
 			"type": "object",
 			"name": "present",
 			"children": [
-				{
-					"type": "reference",
-					"name": "redLighting",
-					"source": "lighting/redLighting.prefab"
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
 				{
 					"type": "polygon",
 					"name": "polygon",
@@ -90,6 +28,11 @@
 					"args": [
 						0
 					]
+				},
+				{
+					"type": "reference",
+					"name": "Ground_15x15_present",
+					"source": "content/Art/Asset/Generique/Ground/Ground_15x15_present.prefab"
 				},
 				{
 					"type": "reference",
@@ -124,26 +67,15 @@
 			"name": "past",
 			"children": [
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab",
 					"rotationX": -90
+				},
+				{
+					"type": "reference",
+					"name": "Ground_15x15_past",
+					"source": "content/Art/Asset/Generique/Ground/Ground_15x15_past.prefab"
 				}
 			]
 		},
@@ -159,41 +91,6 @@
 					"source": "gameplay/door.prefab",
 					"x": 0.31,
 					"y": -7.28
-				}
-			]
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"props": {
-				"id": "R1_polygon",
-				"type": 2,
-				"$cdbtype": "element"
-			},
-			"x": -1.72,
-			"y": -5.8,
-			"z": 3.67,
-			"scaleX": 2.69,
-			"scaleY": 3.33,
-			"kind": 0,
-			"args": [
-				0
-			],
-			"children": [
-				{
-					"type": "material",
-					"name": "material",
-					"props": {
-						"PBR": {
-							"mode": "PBR",
-							"blend": "None",
-							"shadows": true,
-							"culling": "Back",
-							"depthTest": "Less",
-							"colorMask": 15,
-							"enableStencil": false
-						}
-					}
 				}
 			]
 		}

@@ -12,22 +12,6 @@
 			"source": "gameplay/doorUp.prefab"
 		},
 		{
-			"type": "polygon",
-			"name": "polygon",
-			"props": {
-				"id": "Start_polygon",
-				"type": 2,
-				"$cdbtype": "element"
-			},
-			"scaleX": 7.5,
-			"scaleY": 7.5,
-			"scaleZ": 7.5,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
 			"type": "object",
 			"name": "common"
 		},
@@ -84,6 +68,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Ground_7_5x7_5_present",
+					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x7_5_present.prefab"
 				}
 			]
 		},
@@ -95,6 +84,11 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Ground_7_5x7_5_past",
+					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x7_5_past.prefab"
 				}
 			]
 		}
