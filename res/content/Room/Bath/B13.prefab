@@ -24,14 +24,7 @@
 		},
 		{
 			"type": "object",
-			"name": "common",
-			"children": [
-				{
-					"type": "reference",
-					"name": "doorUp",
-					"source": "gameplay/doorUp.prefab"
-				}
-			]
+			"name": "common"
 		},
 		{
 			"type": "object",
@@ -43,17 +36,17 @@
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door.prefab",
-					"x": -0.28,
-					"y": 3.54,
-					"rotationZ": 179.8
+					"x": -3.37,
+					"y": 0.03,
+					"rotationZ": -90.2
 				},
 				{
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door.prefab",
-					"x": 3.6,
-					"y": -0.05,
-					"rotationZ": 89.8
+					"x": 0.06,
+					"y": -3.56,
+					"rotationZ": -0.2
 				}
 			]
 		},

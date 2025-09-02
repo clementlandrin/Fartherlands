@@ -45,24 +45,6 @@
 					]
 				},
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": 4.78,
-					"z": 10.07,
-					"scaleX": 6.14,
-					"scaleY": 7.5,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
@@ -149,15 +131,6 @@
 					"y": 0.03,
 					"z": 9.77,
 					"rotationZ": -90.2
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 3.59,
-					"y": 3.46,
-					"z": 9.77,
-					"rotationZ": 179.8
 				}
 			]
 		}
