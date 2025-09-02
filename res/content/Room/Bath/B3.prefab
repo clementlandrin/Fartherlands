@@ -160,6 +160,39 @@
 					"rotationZ": 179.8
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "Sunflower",
+			"source": "content/LD/Placeholder/Sunflower.prefab",
+			"x": -2.73,
+			"y": 0.98,
+			"z": -3.59,
+			"rotationX": 2.2899462613242315e-11,
+			"rotationY": -1.3343178896145287e-11,
+			"rotationZ": -2.6664409566529796e-24
+		},
+		{
+			"type": "reference",
+			"name": "Sunflower",
+			"source": "content/LD/Placeholder/Sunflower.prefab",
+			"x": -0.04,
+			"y": -1.23,
+			"z": -3.59,
+			"rotationX": 2.2899462613242315e-11,
+			"rotationY": -1.3343178896145287e-11,
+			"rotationZ": -2.6664409566529796e-24
+		},
+		{
+			"type": "reference",
+			"name": "Sunflower",
+			"source": "content/LD/Placeholder/Sunflower.prefab",
+			"x": 1.17,
+			"y": 1.81,
+			"z": -3.59,
+			"rotationX": 2.2899462613242315e-11,
+			"rotationY": -1.3343178896145287e-11,
+			"rotationZ": -2.6664409566529796e-24
 		}
 	]
 }

@@ -1,0 +1,107 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"x": -3.75,
+			"z": 2.5,
+			"scaleX": 7.5,
+			"scaleY": 5,
+			"scaleZ": 5,
+			"rotationX": -90,
+			"rotationZ": -90,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"y": -3.75,
+			"z": 2.5,
+			"scaleX": 7.5,
+			"scaleY": 5,
+			"scaleZ": 5,
+			"rotationX": -90,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"scaleX": 7.5,
+			"scaleY": 7.5,
+			"scaleZ": 7.5,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "object",
+			"name": "common",
+			"children": [
+				{
+					"type": "model",
+					"name": "tree",
+					"source": "content/LD/Placeholder/tree.fbx",
+					"scaleX": 0.5,
+					"scaleY": 0.5,
+					"scaleZ": 0.5
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"x": -0.03,
+					"y": 3.34,
+					"rotationZ": 180
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				}
+			]
+		}
+	]
+}

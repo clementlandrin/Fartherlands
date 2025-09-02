@@ -1,0 +1,68 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "model",
+			"name": "sunflower",
+			"source": "content/LD/Placeholder/sunflower.fbx"
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"x": -0.48,
+			"z": 13.55,
+			"scaleX": 3,
+			"scaleY": 3,
+			"scaleZ": 3,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"x": -0.65,
+			"y": 0.4,
+			"z": 13.55,
+			"scaleX": 3,
+			"scaleY": 3,
+			"scaleZ": 3,
+			"rotationZ": -43.8,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"x": 0.42,
+			"y": 0.32,
+			"z": 13.55,
+			"scaleX": 3,
+			"scaleY": 3,
+			"scaleZ": 3,
+			"rotationZ": -151.2,
+			"kind": 0,
+			"args": [
+				0
+			]
+		}
+	]
+}
