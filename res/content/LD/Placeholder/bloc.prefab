@@ -1,0 +1,27 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "model",
+			"name": "bloc",
+			"source": "content/LD/Placeholder/bloc.fbx"
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"z": 2.5,
+			"scaleX": 5,
+			"scaleY": 5,
+			"scaleZ": 5,
+			"kind": 0,
+			"args": [
+				0
+			]
+		}
+	]
+}

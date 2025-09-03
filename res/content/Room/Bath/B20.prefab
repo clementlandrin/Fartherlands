@@ -2,6 +2,19 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "object",
+			"name": "Tooltip",
+			"props": {
+				"id": "World_Tooltip",
+				"type": 4,
+				"$cdbtype": "element",
+				"props": {
+					"memo": true,
+					"dialog": "Les plantes ici démontre que le temple est là l'abandon depuis environ 1000 ans"
+				}
+			}
+		},
+		{
 			"type": "reference",
 			"name": "camera",
 			"source": "gameplay/camera.prefab"
@@ -27,13 +40,6 @@
 					]
 				},
 				{
-					"type": "reference",
-					"name": "Present",
-					"source": "lighting/Present.prefab",
-					"x": -4.2198,
-					"y": -2.3907
-				},
-				{
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
@@ -42,9 +48,9 @@
 						"$cdbtype": "element"
 					},
 					"y": -7.5,
-					"z": 2.5,
+					"z": 5,
 					"scaleX": 15,
-					"scaleY": 5,
+					"scaleY": 10,
 					"scaleZ": 15,
 					"rotationX": -90,
 					"kind": 0,
@@ -61,9 +67,9 @@
 						"$cdbtype": "element"
 					},
 					"x": -7.5,
-					"z": 2.5,
+					"z": 5,
 					"scaleX": 15,
-					"scaleY": 5,
+					"scaleY": 10,
 					"scaleZ": 15,
 					"rotationX": -90,
 					"rotationZ": -90,
@@ -71,6 +77,11 @@
 					"args": [
 						0
 					]
+				},
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
 				}
 			]
 		},
@@ -97,9 +108,7 @@
 				{
 					"type": "reference",
 					"name": "Past",
-					"source": "lighting/Past.prefab",
-					"x": -4.2198,
-					"y": -2.3907
+					"source": "lighting/Past.prefab"
 				}
 			]
 		},
@@ -113,20 +122,19 @@
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door.prefab",
-					"x": 4.17,
-					"y": 7.15,
-					"rotationZ": 180
+					"x": -6.99,
+					"y": -1.89,
+					"rotationZ": -90
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"x": 7.14,
+					"y": -1.89,
+					"rotationZ": 90
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "ladderDown",
-			"source": "gameplay/ladderDown.prefab",
-			"x": 7.96,
-			"y": -3.08,
-			"z": 1.42,
-			"rotationZ": -90
 		}
 	]
 }

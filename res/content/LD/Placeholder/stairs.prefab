@@ -1,0 +1,29 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "model",
+			"name": "stairs",
+			"source": "content/LD/Placeholder/stairs.fbx"
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"y": -0.01,
+			"z": 1.24,
+			"scaleX": 5,
+			"scaleY": 5.69,
+			"scaleZ": 3,
+			"rotationX": 25,
+			"kind": 0,
+			"args": [
+				0
+			]
+		}
+	]
+}

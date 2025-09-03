@@ -4,7 +4,7 @@
 		{
 			"type": "model",
 			"name": "stair",
-			"source": "content/LD/Placeholder/stair.fbx",
+			"source": "content/LD/Placeholder/stairs_revolution.fbx",
 			"scaleX": 0.76,
 			"scaleY": 0.76,
 			"scaleZ": 0.35
@@ -12,7 +12,7 @@
 		{
 			"type": "model",
 			"name": "stair",
-			"source": "content/LD/Placeholder/stair.fbx",
+			"source": "content/LD/Placeholder/stairs_revolution.fbx",
 			"z": -10.21,
 			"scaleX": 0.76,
 			"scaleY": 0.76,

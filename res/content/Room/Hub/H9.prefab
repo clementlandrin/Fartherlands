@@ -7,6 +7,17 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "reference",
+			"name": "doorUp",
+			"source": "gameplay/doorUp.prefab",
+			"x": -4.36,
+			"z": 2.82,
+			"scaleX": 0.5,
+			"scaleY": 0.5,
+			"scaleZ": 0.5,
+			"rotationZ": -90
+		},
+		{
 			"type": "object",
 			"name": "present",
 			"children": [
@@ -86,7 +97,24 @@
 		{
 			"type": "reference",
 			"name": "under_tree_teleport",
-			"source": "gameplay/teleport/under_tree_teleport.prefab"
+			"source": "gameplay/teleport/under_tree_teleport.prefab",
+			"x": 5.06
+		},
+		{
+			"type": "reference",
+			"name": "stairs",
+			"source": "content/LD/Placeholder/stairs.prefab",
+			"rotationZ": 90
+		},
+		{
+			"type": "reference",
+			"name": "bloc",
+			"source": "content/LD/Placeholder/bloc.prefab",
+			"x": -4.39,
+			"scaleX": 0.78,
+			"rotationX": 1.3329644594284084e-11,
+			"rotationY": -1.1372087026980996e-11,
+			"rotationZ": -1.3228363384977934e-24
 		}
 	]
 }
