@@ -1,0 +1,450 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Albedo",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_Albedo.png",
+			"index": 0
+		},
+		{
+			"id": 6,
+			"name": "MetallicRoughnessAO",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_MetallicRoughnessAO.png",
+			"index": 1
+		},
+		{
+			"id": 7,
+			"name": "Normal",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_Normal.png",
+			"index": 2
+		},
+		{
+			"id": 1,
+			"name": "Weight",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.5,
+			"index": 3
+		},
+		{
+			"id": 2,
+			"name": "Sharpness",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 4
+		},
+		{
+			"id": 3,
+			"name": "Offset",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 5
+		},
+		{
+			"id": 4,
+			"name": "Tiling",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 6
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 1152,
+				"y": 324,
+				"id": 0,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_color",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 666,
+				"y": 324,
+				"id": 1,
+				"type": "hrt.shgraph.nodes.TriplanarSampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 0,
+				"y": 252,
+				"id": 2,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -702,
+				"y": 774,
+				"id": 12,
+				"type": "hrt.shgraph.nodes.TriplanarParams",
+				"properties": {
+					"LOCAL": false,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -1008,
+				"y": 1134,
+				"id": 15,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 3,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -1008,
+				"y": 720,
+				"id": 16,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 2,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -1008,
+				"y": 918,
+				"id": 17,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 4,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1152,
+				"y": 864,
+				"id": 18,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "metalness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 0,
+				"y": 954,
+				"id": 19,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 6,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 666,
+				"y": 864,
+				"id": 22,
+				"type": "hrt.shgraph.nodes.TriplanarSampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 900,
+				"y": 864,
+				"id": 23,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1152,
+				"y": 1116,
+				"id": 24,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "roughness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1152,
+				"y": 1368,
+				"id": 25,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "occlusion",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -36,
+				"y": 1602,
+				"id": 27,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 7,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 648,
+				"y": 1656,
+				"id": 28,
+				"type": "hrt.shgraph.nodes.TriplanarNormalMap",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1152,
+				"y": 1692,
+				"id": 29,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 1,
+				"nameOutput": "RGBA",
+				"inputNodeId": 0,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "Albedo",
+				"inputNodeId": 1,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "weight",
+				"inputNodeId": 1,
+				"nameInput": "weight",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvX",
+				"inputNodeId": 1,
+				"nameInput": "uvX",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvY",
+				"inputNodeId": 1,
+				"nameInput": "uvY",
+				"inputId": 3,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvZ",
+				"inputNodeId": 1,
+				"nameInput": "uvZ",
+				"inputId": 4,
+				"outputId": 3
+			},
+			{
+				"outputNodeId": 16,
+				"nameOutput": "Sharpness",
+				"inputNodeId": 12,
+				"nameInput": "sharpness",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 17,
+				"nameOutput": "Tiling",
+				"inputNodeId": 12,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 15,
+				"nameOutput": "Offset",
+				"inputNodeId": 12,
+				"nameInput": "offset",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "r",
+				"inputNodeId": 18,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 19,
+				"nameOutput": "MetallicRoughnessAO",
+				"inputNodeId": 22,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "weight",
+				"inputNodeId": 22,
+				"nameInput": "weight",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvX",
+				"inputNodeId": 22,
+				"nameInput": "uvX",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvY",
+				"inputNodeId": 22,
+				"nameInput": "uvY",
+				"inputId": 3,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvZ",
+				"inputNodeId": 22,
+				"nameInput": "uvZ",
+				"inputId": 4,
+				"outputId": 3
+			},
+			{
+				"outputNodeId": 22,
+				"nameOutput": "RGBA",
+				"inputNodeId": 23,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "g",
+				"inputNodeId": 24,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "b",
+				"inputNodeId": 25,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 27,
+				"nameOutput": "Normal",
+				"inputNodeId": 28,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "weight",
+				"inputNodeId": 28,
+				"nameInput": "weight",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvX",
+				"inputNodeId": 28,
+				"nameInput": "uvX",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvY",
+				"inputNodeId": 28,
+				"nameInput": "uvY",
+				"inputId": 3,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvZ",
+				"inputNodeId": 28,
+				"nameInput": "uvZ",
+				"inputId": 4,
+				"outputId": 3
+			},
+			{
+				"outputNodeId": 28,
+				"nameOutput": "normalWS",
+				"inputNodeId": 29,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			}
+		]
+	}
+}

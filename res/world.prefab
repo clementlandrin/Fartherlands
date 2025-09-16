@@ -2,6 +2,12 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "reference",
+			"name": "WM",
+			"source": "lighting/WM.prefab",
+			"editorOnly": true
+		},
+		{
 			"type": "object",
 			"name": "Arch",
 			"x": -10,
