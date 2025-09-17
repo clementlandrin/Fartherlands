@@ -16,11 +16,11 @@
 	"materialLibraries": [
 		{
 			"name": "Present",
-			"path": "content/Art/MaterialLibrary/Present.prefab"
+			"path": "content/Art/MaterialLibrary/Generic/Present.prefab"
 		},
 		{
 			"name": "Past",
-			"path": "content/Art/MaterialLibrary/Past.prefab"
+			"path": "content/Art/MaterialLibrary/Generic/Past.prefab"
 		}
 	],
 	"sceneeditor.axisToggle": true,

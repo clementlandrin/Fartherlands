@@ -2,21 +2,21 @@
 	"materials": {
 		"PBR": {
 			"Ground_Past": {
-				"__ref": "content/Art/MaterialLibrary/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Ground_Past"
 			},
 			"Ground_Present": {
-				"__ref": "content/Art/MaterialLibrary/Present.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Present.prefab",
 				"name": "Ground"
 			}
 		},
 		"Fatherlands": {
 			"Ground_Present": {
-				"__ref": "content/Art/MaterialLibrary/Present.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Present.prefab",
 				"name": "Ground"
 			},
 			"Ground_Past": {
-				"__ref": "content/Art/MaterialLibrary/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Ground_Past"
 			}
 		}

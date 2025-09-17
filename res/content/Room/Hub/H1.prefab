@@ -34,7 +34,8 @@
 				{
 					"type": "reference",
 					"name": "Present",
-					"source": "lighting/Present.prefab"
+					"source": "lighting/Present.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "lightProbe",
@@ -101,9 +102,9 @@
 							"name": "Triplanar",
 							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
 							"props": {
-								"Albedo": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_MetallicRoughnessAO.png",
-								"Normal": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_Normal.png",
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
 								"Sharpness": 1,
 								"Offset": 1,
 								"Tiling": 0.25
@@ -136,9 +137,9 @@
 							"name": "Triplanar",
 							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
 							"props": {
-								"Albedo": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_MetallicRoughnessAO.png",
-								"Normal": "content/Art/MaterialLibrary/Textures/Present/Ground_Present_Normal.png",
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
 								"Sharpness": 1,
 								"Offset": 1,
 								"Tiling": 0.25
@@ -249,9 +250,9 @@
 							"name": "Triplanar",
 							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
 							"props": {
-								"Albedo": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_MetallicRoughnessAO.png",
-								"Normal": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Normal.png",
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
 								"Sharpness": 1,
 								"Offset": 1,
 								"Tiling": 0.25
@@ -284,9 +285,9 @@
 							"name": "Triplanar",
 							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
 							"props": {
-								"Albedo": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_MetallicRoughnessAO.png",
-								"Normal": "content/Art/MaterialLibrary/Textures/Past/Ground_Past_Normal.png",
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
 								"Sharpness": 1,
 								"Offset": 1,
 								"Tiling": 0.25

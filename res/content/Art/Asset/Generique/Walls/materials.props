@@ -1,0 +1,10 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"WALL06": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Bloc"
+			}
+		}
+	}
+}

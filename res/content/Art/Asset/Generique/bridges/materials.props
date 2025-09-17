@@ -1,0 +1,39 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"WALL06": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Bloc",
+				"colorMask": 15
+			},
+			"dalles_mesh": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_bricks",
+				"colorMask": 15
+			},
+			"parts01": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Idol",
+				"colorMask": 15
+			},
+			"mosaique_plane": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern04",
+				"colorMask": 15
+			},
+			"13 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Modules",
+				"colorMask": 15
+			},
+			"parts02": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins"
+			},
+			"16 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern05"
+			}
+		}
+	}
+}

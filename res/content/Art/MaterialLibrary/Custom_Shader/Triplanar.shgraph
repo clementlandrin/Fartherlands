@@ -70,6 +70,16 @@
 			],
 			"defaultValue": 1,
 			"index": 6
+		},
+		{
+			"id": 8,
+			"name": "Rotation",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 7
 		}
 	],
 	"variables": [],

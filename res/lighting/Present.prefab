@@ -26,11 +26,11 @@
 					"sky": "CustomColor",
 					"tone": "Linear",
 					"occlusion": 1,
-					"a": 2.51,
-					"b": 0.03,
-					"c": 2.43,
-					"d": 0.59,
-					"e": 0.14,
+					"a": 1.55,
+					"b": 0.46,
+					"c": 0.96,
+					"d": 1.15,
+					"e": 0.5,
 					"skyColor": 0
 				}
 			},
@@ -38,7 +38,13 @@
 				{
 					"type": "environment",
 					"name": "environment",
+					"power": 0,
 					"sourceMapPath": "content/Art/Envmap/test_sky_J.hdr"
+				},
+				{
+					"type": "rfx.colorGrading",
+					"name": "colorGrading",
+					"texturePath": "content/Art/Lut/LUT_J.png"
 				},
 				{
 					"type": "rfx.sao",
@@ -48,18 +54,22 @@
 					"noiseScale": 1000,
 					"samples": 40,
 					"radius": 5,
-					"intensity": 10,
-					"bias": 0.1
+					"intensity": 12,
+					"bias": 0.1,
+					"microIntensity": 0.67,
+					"useScalableBias": true
 				},
 				{
 					"type": "rfx.sao",
 					"name": "sao",
 					"size": 0.5,
-					"blur": 10,
+					"blur": 3.71,
 					"noiseScale": 1000,
 					"samples": 40,
-					"radius": 0.3,
-					"bias": 0.1
+					"radius": 0.2,
+					"intensity": 0.45,
+					"bias": 0.01,
+					"useScalableBias": true
 				},
 				{
 					"type": "rfx.volumetricLighting",
@@ -88,7 +98,7 @@
 				{
 					"type": "rfx.kuwaharaFilter",
 					"name": "kuwaharaFilter",
-					"radius": 2,
+					"radius": 3,
 					"endDist": 0
 				},
 				{

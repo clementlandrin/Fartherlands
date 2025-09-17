@@ -1,0 +1,18 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"dalles_mesh": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_bricks02"
+			},
+			"parts01": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins"
+			},
+			"big_stone": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_bricks"
+			}
+		}
+	}
+}
