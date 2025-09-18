@@ -19,6 +19,7 @@
 -D hl-ver=1.15.0
 -D hl-profile
 -D windowSize=1030x1030
+-cp src/lib/hide
 -cp src
 # -D debug
 -D dce=no
