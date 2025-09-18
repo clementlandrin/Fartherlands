@@ -1,0 +1,67 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"mosaique_plane": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern04",
+				"colorMask": 15
+			},
+			"dalles_plane": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern03",
+				"colorMask": 15
+			},
+			"dalles_mesh": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_bricks02",
+				"colorMask": 15
+			},
+			"parts01": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins",
+				"colorMask": 15
+			},
+			"08 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Basewall_tileable",
+				"colorMask": 15
+			},
+			"parts02": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins",
+				"colorMask": 15
+			},
+			"01": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Module"
+			},
+			"09 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern04",
+				"colorMask": 15
+			},
+			"07 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Module",
+				"colorMask": 15
+			},
+			"01/tower01.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Basewall_tileable",
+				"__refMode": "modelSpec",
+				"colorMask": 15
+			},
+			"default/wall_deco01.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Modules",
+				"__refMode": "modelSpec",
+				"colorMask": 15
+			},
+			"default/wall_deco02.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Modules",
+				"__refMode": "modelSpec"
+			}
+		}
+	}
+}

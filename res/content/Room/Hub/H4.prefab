@@ -290,28 +290,28 @@
 			"name": "column03",
 			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
 			"x": 6.62,
-			"y": -7.82
+			"y": -7.47
 		},
 		{
 			"type": "model",
 			"name": "column03",
 			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
 			"x": -0.42,
-			"y": -7.82
+			"y": -7.5
 		},
 		{
 			"type": "model",
 			"name": "column03",
 			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
-			"x": -7.08,
-			"y": -7.82
+			"x": -6.79,
+			"y": -7.5
 		},
 		{
 			"type": "model",
 			"name": "column03",
 			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
-			"x": -7.42,
-			"y": 6.95
+			"x": -7.72,
+			"y": 7.13
 		}
 	]
 }

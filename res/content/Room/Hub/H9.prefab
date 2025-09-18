@@ -115,6 +115,21 @@
 			"rotationX": 1.3329644594284084e-11,
 			"rotationY": -1.1372087026980996e-11,
 			"rotationZ": -1.3228363384977934e-24
+		},
+		{
+			"type": "lightProbe",
+			"name": "lightProbe_0",
+			"x": -10.19,
+			"y": -8.28,
+			"z": 1.96,
+			"scaleX": 36.04,
+			"scaleY": 32.63,
+			"scaleZ": 17.03,
+			"fadeDist": 5.3,
+			"fadeMode": "Smoothstep",
+			"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
+			"power": 3.11,
+			"sphereRadius": 0.4
 		}
 	]
 }

@@ -1,11 +1,6 @@
 {
 	"materials": {
 		"Fatherlands": {
-			"WALL06": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
-				"name": "Wall_Bloc",
-				"colorMask": 15
-			},
 			"dalles_mesh": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_bricks",
@@ -30,9 +25,28 @@
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_Joins"
 			},
+			"parts01/bridge01.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins",
+				"__refMode": "modelSpec"
+			},
+			"WALL06": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Bloc"
+			},
+			"dalles_mesh/bridge01.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_bricks02",
+				"__refMode": "modelSpec"
+			},
+			"parts02/bridge01.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Idol",
+				"__refMode": "modelSpec"
+			},
 			"16 - Default": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
-				"name": "Wall_pattern05"
+				"name": "Basewall_tileable"
 			}
 		}
 	}

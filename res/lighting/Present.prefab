@@ -72,58 +72,10 @@
 					"useScalableBias": true
 				},
 				{
-					"type": "rfx.volumetricLighting",
-					"name": "volumetricLighting",
-					"enabled": false,
-					"AFTER_FX": true,
-					"color": 13355770,
-					"steps": 40,
-					"blur": 2,
-					"startDistance": 100,
-					"endDistance": 0,
-					"maxCamDist": 2000,
-					"noiseScale": 0.5,
-					"noiseSharpness": 5,
-					"noisePersistence": 1,
-					"noiseTurmoil": 0.1,
-					"fogDensity": 2,
-					"fogUseNoise": 0,
-					"fogHeightFalloff": 2,
-					"fogTop": 600,
-					"fogEnvColorMult": 1,
-					"secondFogHeightFalloff": 3,
-					"secondFogTop": 400,
-					"offsetCamHeight": true
-				},
-				{
 					"type": "rfx.kuwaharaFilter",
 					"name": "kuwaharaFilter",
 					"radius": 3,
 					"endDist": 0
-				},
-				{
-					"type": "light",
-					"name": "light",
-					"rotationY": 58.7,
-					"rotationZ": -30.7,
-					"kind": "Directional",
-					"color": 16775367,
-					"power": 0,
-					"range": 10,
-					"zNear": 0.02,
-					"shadows": {
-						"mode": "Dynamic",
-						"size": 2048,
-						"radius": 0,
-						"quality": 1,
-						"bias": 0.1,
-						"samplingMode": {
-							"kind": "PCF",
-							"quality": 3,
-							"scale": 10,
-							"bias": 0.1
-						}
-					}
 				}
 			]
 		}

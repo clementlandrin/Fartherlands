@@ -53,10 +53,6 @@
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_Modules"
 			},
-			"16 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
-				"name": "Wall_pattern03"
-			},
 			"parts01/column04.fbx": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_Idol",
@@ -80,6 +76,15 @@
 			"default": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_Modules"
+			},
+			"16 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Basewall_tileable"
+			},
+			"parts02/wall_join01.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins",
+				"__refMode": "modelSpec"
 			}
 		}
 	}

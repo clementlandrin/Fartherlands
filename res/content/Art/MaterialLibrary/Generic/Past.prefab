@@ -242,6 +242,95 @@
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern05_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern05_Normal.png",
 			"specularMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern05_MetallicRoughnessAO.png"
+		},
+		{
+			"type": "material",
+			"name": "Wall_pattern01_mesh",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"wrapRepeat": true,
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall01_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall01_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/wall01_MetallicRoughnessAO.png"
+		},
+		{
+			"type": "material",
+			"name": "Wall_pattern02_mesh",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"wrapRepeat": true,
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall02_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall02_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/wall02_MetallicRoughnessAO.png"
+		},
+		{
+			"type": "material",
+			"name": "Basewall_tileable",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_MetallicRoughnessAO.png",
+			"children": [
+				{
+					"type": "shader",
+					"name": "Triplanar",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_Normal.png",
+						"Sharpness": 1,
+						"Offset": 1,
+						"Tiling": 1
+					}
+				}
+			]
+		},
+		{
+			"type": "material",
+			"name": "Module",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/module_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/module_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/module_MetallicRoughnessAO.png"
 		}
 	]
 }
