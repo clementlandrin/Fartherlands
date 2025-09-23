@@ -85,6 +85,10 @@
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_Joins",
 				"__refMode": "modelSpec"
+			},
+			"01 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern04"
 			}
 		}
 	}

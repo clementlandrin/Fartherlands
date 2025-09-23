@@ -7,37 +7,111 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
-			"type": "polygon",
-			"name": "polygon",
-			"y": -3.75,
-			"z": 2.5,
-			"scaleX": 15,
-			"scaleY": 5,
-			"scaleZ": 5,
-			"rotationX": -90,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"x": -7.5,
-			"z": 2.5,
-			"scaleX": 7.5,
-			"scaleY": 5,
-			"scaleZ": 5,
-			"rotationX": -90,
-			"rotationZ": -90,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "lightProbe",
+					"name": "lightProbe_0",
+					"x": -0.76,
+					"y": -2.08,
+					"z": 0.9,
+					"scaleX": 16.95,
+					"scaleY": 12,
+					"scaleZ": 8.67,
+					"fadeDist": 3.5,
+					"fadeMode": "Smoothstep",
+					"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
+					"power": 3.11,
+					"debugDisplay": false,
+					"sphereRadius": 0.48
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"y": -3.75,
+					"z": 2.5,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"scaleX": 15,
+					"scaleY": 7.5,
+					"scaleZ": 5,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": -7.5,
+					"z": 2.5,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -78,11 +152,6 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Ground_7_5x15_present",
-					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x15_present.prefab"
 				}
 			]
 		},
@@ -94,11 +163,41 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "object",
+			"x": -3.795,
+			"y": -1.1575000000000002,
+			"z": -0.19,
+			"children": [
+				{
+					"type": "model",
+					"name": "long_joins",
+					"source": "content/Art/Asset/Generique/blocs/long_joins.fbx",
+					"x": 3.915,
+					"y": -2.4525,
+					"z": 0.45
 				},
 				{
-					"type": "reference",
-					"name": "Ground_7_5x15_past",
-					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x15_past.prefab"
+					"type": "model",
+					"name": "joins",
+					"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+					"x": -3.585,
+					"y": -0.3525,
+					"z": 0.45,
+					"rotationZ": -90
+				},
+				{
+					"type": "model",
+					"name": "joins",
+					"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+					"x": -3.585,
+					"y": 4.1875,
+					"z": 0.45,
+					"rotationZ": -90
 				}
 			]
 		}

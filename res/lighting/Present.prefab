@@ -56,7 +56,7 @@
 					"radius": 5,
 					"intensity": 12,
 					"bias": 0.1,
-					"microIntensity": 0.67,
+					"microIntensity": 0.3,
 					"useScalableBias": true
 				},
 				{

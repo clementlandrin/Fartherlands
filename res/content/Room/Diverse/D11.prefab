@@ -42,35 +42,6 @@
 			]
 		},
 		{
-			"type": "polygon",
-			"name": "polygon",
-			"y": -3.75,
-			"z": 2.5,
-			"scaleX": 15,
-			"scaleY": 5,
-			"scaleZ": 5,
-			"rotationX": -90,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"x": -7.5,
-			"z": 2.5,
-			"scaleX": 7.5,
-			"scaleY": 5,
-			"scaleZ": 5,
-			"rotationX": -90,
-			"rotationZ": -90,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
 			"type": "object",
 			"name": "Present",
 			"children": [
@@ -78,11 +49,6 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Ground_7_5x15_present",
-					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x15_present.prefab"
 				}
 			]
 		},
@@ -94,13 +60,13 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Ground_7_5x15_past",
-					"source": "content/Art/Asset/Generique/Ground/Ground_7_5x15_past.prefab"
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "Medium_room_Left",
+			"source": "content/Art/Room_template/Medium_room_Left.prefab"
 		}
 	]
 }

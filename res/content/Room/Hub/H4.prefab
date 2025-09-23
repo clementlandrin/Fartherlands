@@ -7,6 +7,35 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
+			"type": "light",
+			"name": "light",
+			"x": -6.37,
+			"y": 6.26,
+			"z": 19.44,
+			"rotationY": 60,
+			"rotationZ": -45,
+			"kind": "Spot",
+			"color": 16772302,
+			"power": 5,
+			"range": 24.02,
+			"zNear": 0.02,
+			"angle": 39.43,
+			"fallOff": 1,
+			"shadows": {
+				"mode": "Dynamic",
+				"size": 1024,
+				"radius": 0,
+				"quality": 1,
+				"bias": 0.02,
+				"samplingMode": {
+					"kind": "PCF",
+					"quality": 2,
+					"scale": 10,
+					"bias": 0.1
+				}
+			}
+		},
+		{
 			"type": "object",
 			"name": "present",
 			"children": [
@@ -39,7 +68,7 @@
 								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
 								"Sharpness": 1,
 								"Offset": 0.94,
-								"Tiling": 0.15
+								"Tiling": 0.2
 							}
 						}
 					]
@@ -70,7 +99,7 @@
 								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
 								"Sharpness": 1,
 								"Offset": 0.73,
-								"Tiling": 0.1
+								"Tiling": 0.15
 							}
 						}
 					]
@@ -105,7 +134,7 @@
 								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
 								"Sharpness": 1,
 								"Offset": 0.95,
-								"Tiling": 0.15
+								"Tiling": 0.2
 							}
 						}
 					]
@@ -134,27 +163,7 @@
 			"type": "object",
 			"name": "doors",
 			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -7.18,
-					"y": -3.91,
-					"z": 3.94,
-					"rotationZ": -90
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -0.76,
-					"y": 6.78,
-					"z": 0.12,
-					"rotationZ": 180
-				}
-			]
+			"y": 0.0275
 		},
 		{
 			"type": "lightProbe",
@@ -165,153 +174,138 @@
 			"scaleX": 36.04,
 			"scaleY": 32.63,
 			"scaleZ": 17.03,
-			"fadeDist": 5.3,
+			"fadeDist": 10,
 			"fadeMode": "Smoothstep",
 			"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
 			"power": 3.11,
 			"sphereRadius": 0.4
 		},
 		{
+			"type": "object",
+			"name": "object",
+			"x": -1.3745454545454547,
+			"y": -2.9945454545454546,
+			"z": 0.8063636363636365,
+			"children": [
+				{
+					"type": "model",
+					"name": "joins",
+					"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+					"x": 9.5645,
+					"y": -4.3655,
+					"z": -0.2664,
+					"scaleX": 1.42,
+					"scaleY": 1.42,
+					"scaleZ": 1.42,
+					"rotationX": -1.5,
+					"rotationY": -0.5
+				},
+				{
+					"type": "model",
+					"name": "column03",
+					"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+					"x": 7.9945,
+					"y": -4.4755,
+					"z": -0.8064,
+					"scaleX": 1.07,
+					"scaleY": 1.07,
+					"scaleZ": 1.07
+				},
+				{
+					"type": "model",
+					"name": "column03",
+					"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+					"x": -6.3455,
+					"y": 10.1245,
+					"z": -0.8064,
+					"scaleX": 1.07,
+					"scaleY": 1.07,
+					"scaleZ": 1.07
+				},
+				{
+					"type": "shader",
+					"name": "Top_down_Highlight",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_Highlight.shgraph",
+					"props": {
+						"Smooth": 0.3,
+						"Opacity": 0.07,
+						"Power": 1,
+						"Power2": 0
+					}
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc01",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc01.fbx",
+			"x": 1.37,
+			"y": -5.54,
+			"z": 0.76,
+			"scaleX": 0.68,
+			"scaleY": 0.68,
+			"scaleZ": 0.68,
+			"rotationX": 6.372896281801869e-12,
+			"rotationY": 2.6332923329887782e-11,
+			"rotationZ": 1.4644795009700319e-24
+		},
+		{
 			"type": "model",
 			"name": "basic_bloc02",
 			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-			"x": -4.51,
-			"y": -2.95,
-			"z": 1.62,
-			"rotationZ": 90
-		},
-		{
-			"type": "model",
-			"name": "stairs02",
-			"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
-			"x": 1.48,
-			"y": -0.8,
-			"z": 0.71,
-			"scaleX": 0.88,
-			"scaleY": 0.88,
-			"scaleZ": 0.88,
-			"rotationX": -9.260180511439058e-12,
-			"rotationY": 8.708963358241532e-12,
-			"rotationZ": -7.037741125976921e-25
-		},
-		{
-			"type": "model",
-			"name": "column06",
-			"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-			"x": -2.28,
-			"y": 0.88,
-			"z": 3.07,
-			"rotationX": 0.000008144584110819768,
-			"rotationY": -2.4931159172469386e-11,
-			"rotationZ": -1.7719797565023945e-18
-		},
-		{
-			"type": "model",
-			"name": "column06",
-			"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-			"x": -2.28,
-			"y": -2.2,
-			"z": 3.07,
-			"rotationX": 0.000008144584110819768,
-			"rotationY": -2.4931159172469386e-11,
-			"rotationZ": -1.7719797565023945e-18
-		},
-		{
-			"type": "model",
-			"name": "joins",
-			"source": "content/Art/Asset/Generique/blocs/joins.fbx",
-			"x": 1.66,
-			"y": -7.36,
-			"z": 0.48,
-			"scaleX": 1.42,
-			"scaleY": 1.42,
-			"scaleZ": 1.42,
-			"rotationX": -1.5,
-			"rotationY": -0.5
-		},
-		{
-			"type": "model",
-			"name": "joins",
-			"source": "content/Art/Asset/Generique/blocs/joins.fbx",
-			"x": -7.23,
-			"y": 4.43,
-			"z": 0.33,
-			"scaleX": 1.42,
-			"scaleY": 1.42,
-			"scaleZ": 1.42,
-			"rotationX": 0.5,
-			"rotationY": -1.5,
+			"x": 4.12,
+			"y": -5.08,
+			"z": 2.97,
+			"scaleX": 0.75,
+			"scaleY": 0.75,
+			"scaleZ": 0.75,
 			"rotationZ": -90
 		},
 		{
 			"type": "model",
-			"name": "joins",
-			"source": "content/Art/Asset/Generique/blocs/joins.fbx",
-			"x": 8.19,
-			"y": -7.36,
-			"z": 0.54,
-			"scaleX": 1.42,
-			"scaleY": 1.42,
-			"scaleZ": 1.42,
-			"rotationX": -1.5,
-			"rotationY": -0.5
-		},
-		{
-			"type": "light",
-			"name": "light",
-			"x": -7.89,
-			"y": 6.26,
-			"z": 19.44,
-			"rotationY": 60,
-			"rotationZ": -45,
-			"kind": "Spot",
-			"color": 16772302,
-			"power": 2.27,
-			"range": 24.02,
-			"zNear": 0.02,
-			"angle": 31.34,
-			"fallOff": 1,
-			"shadows": {
-				"mode": "Dynamic",
-				"size": 1024,
-				"radius": 0,
-				"quality": 1,
-				"bias": 0.02,
-				"samplingMode": {
-					"kind": "PCF",
-					"quality": 2,
-					"scale": 10,
-					"bias": 0.1
-				}
-			}
+			"name": "stairs01",
+			"source": "content/Art/Asset/Generique/stairs/stairs01.fbx",
+			"x": -4.73,
+			"y": 0.25,
+			"scaleX": 0.51,
+			"scaleY": 0.51,
+			"scaleZ": 0.51,
+			"rotationZ": 90
 		},
 		{
 			"type": "model",
-			"name": "column03",
-			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
-			"x": 6.62,
-			"y": -7.47
+			"name": "stairs01",
+			"source": "content/Art/Asset/Generique/stairs/stairs01.fbx",
+			"x": -0.08,
+			"y": -4.81,
+			"z": 2.37,
+			"scaleX": 0.51,
+			"scaleY": 0.51,
+			"scaleZ": 0.51,
+			"rotationZ": 180
 		},
 		{
 			"type": "model",
-			"name": "column03",
-			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
-			"x": -0.42,
-			"y": -7.5
+			"name": "tower01",
+			"source": "content/Art/Asset/Generique/deco/tower01.fbx",
+			"x": -7.6,
+			"y": -7.29,
+			"z": -1.71,
+			"scaleX": 1.2,
+			"scaleY": 1.2,
+			"scaleZ": 0.96,
+			"rotationX": 1.274579256360449e-11,
+			"rotationY": 5.2665846659767674e-11,
+			"rotationZ": 5.857918003879594e-24
 		},
 		{
 			"type": "model",
-			"name": "column03",
-			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
-			"x": -6.79,
-			"y": -7.5
-		},
-		{
-			"type": "model",
-			"name": "column03",
-			"source": "content/Art/Asset/Generique/blocs/column03.fbx",
-			"x": -7.72,
-			"y": 7.13
+			"name": "wall03",
+			"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+			"x": 4.3,
+			"y": 1.07,
+			"z": -0.04,
+			"rotationX": 90
 		}
 	]
 }

@@ -1,0 +1,292 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Smooth",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 0
+		},
+		{
+			"id": 1,
+			"name": "Opacity",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 1
+		},
+		{
+			"id": 2,
+			"name": "Power",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 2
+		},
+		{
+			"id": 3,
+			"name": "Power2",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 3
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 684,
+				"y": 216,
+				"id": 0,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_color",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -72,
+				"y": 36,
+				"id": 1,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "pixelColor",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 450,
+				"y": 234,
+				"id": 2,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -1692,
+				"y": 432,
+				"id": 3,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "normal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -1458,
+				"y": 432,
+				"id": 4,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 90,
+				"y": 558,
+				"id": 5,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"defaults": {
+						"a": 0,
+						"b": 1
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -306,
+				"y": 756,
+				"id": 7,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 1,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -900,
+				"y": 558,
+				"id": 9,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -288,
+				"y": 522,
+				"id": 11,
+				"type": "hrt.shgraph.nodes.Saturate",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -684,
+				"y": 414,
+				"id": 12,
+				"type": "hrt.shgraph.nodes.SmoothStep",
+				"properties": {
+					"defaults": {
+						"a": 0
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -1098,
+				"y": 432,
+				"id": 13,
+				"type": "hrt.shgraph.nodes.Remap",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -1404,
+				"y": 918,
+				"id": 14,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 2,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -1404,
+				"y": 702,
+				"id": 15,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 3,
+					"perInstance": null
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 2,
+				"nameOutput": "output",
+				"inputNodeId": 0,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 5,
+				"nameOutput": "output",
+				"inputNodeId": 2,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 1,
+				"nameOutput": "output",
+				"inputNodeId": 2,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 3,
+				"nameOutput": "output",
+				"inputNodeId": 4,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 7,
+				"nameOutput": "Opacity",
+				"inputNodeId": 5,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 11,
+				"nameOutput": "output",
+				"inputNodeId": 5,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "output",
+				"inputNodeId": 11,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 9,
+				"nameOutput": "Smooth",
+				"inputNodeId": 12,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 13,
+				"nameOutput": "output",
+				"inputNodeId": 12,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 4,
+				"nameOutput": "b",
+				"inputNodeId": 13,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 15,
+				"nameOutput": "Power2",
+				"inputNodeId": 13,
+				"nameInput": "outMin",
+				"inputId": 3,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 14,
+				"nameOutput": "Power",
+				"inputNodeId": 13,
+				"nameInput": "outMax",
+				"inputId": 4,
+				"outputId": 0
+			}
+		]
+	}
+}

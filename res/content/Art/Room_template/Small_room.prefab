@@ -1,0 +1,105 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"x": -3.75,
+			"z": 2.5,
+			"scaleX": 7.5,
+			"scaleY": 5,
+			"scaleZ": 5,
+			"rotationX": -90,
+			"rotationZ": -90,
+			"kind": 0,
+			"args": [
+				0
+			],
+			"children": [
+				{
+					"type": "shader",
+					"name": "Triplanar",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+						"Sharpness": 1,
+						"Offset": 0.94,
+						"Tiling": 0.2
+					}
+				}
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"y": -3.75,
+			"z": 2.5,
+			"scaleX": 7.5,
+			"scaleY": 5,
+			"scaleZ": 5,
+			"rotationX": -90,
+			"kind": 0,
+			"args": [
+				0
+			],
+			"children": [
+				{
+					"type": "shader",
+					"name": "Triplanar",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+						"Sharpness": 1,
+						"Offset": 0.94,
+						"Tiling": 0.2
+					}
+				}
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"scaleX": 7.5,
+			"scaleY": 7.5,
+			"scaleZ": 7.5,
+			"kind": 0,
+			"args": [
+				0
+			],
+			"children": [
+				{
+					"type": "shader",
+					"name": "Triplanar",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
+						"Sharpness": 1,
+						"Offset": 0.73,
+						"Tiling": 0.2
+					}
+				}
+			]
+		},
+		{
+			"type": "lightProbe",
+			"name": "lightProbe_0",
+			"x": -2.79,
+			"y": -2.08,
+			"z": 0.64,
+			"scaleX": 13.24,
+			"scaleY": 12,
+			"scaleZ": 8.67,
+			"fadeDist": 3.5,
+			"fadeMode": "Smoothstep",
+			"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
+			"power": 3.11,
+			"sphereRadius": 0.48
+		}
+	]
+}

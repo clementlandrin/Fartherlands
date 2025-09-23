@@ -25,50 +25,6 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Ground_15x15_present",
-					"source": "content/Art/Asset/Generique/Ground/Ground_15x15_present.prefab"
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"y": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"rotationZ": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
 				}
 			]
 		},
@@ -80,11 +36,6 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Ground_15x15_past",
-					"source": "content/Art/Asset/Generique/Ground/Ground_15x15_past.prefab"
 				}
 			]
 		},
@@ -102,34 +53,60 @@
 		},
 		{
 			"type": "reference",
-			"name": "stairs",
-			"source": "content/LD/Placeholder/stairs.prefab",
-			"rotationZ": 90
+			"name": "Big_room",
+			"source": "content/Art/Room_template/Big_room.prefab"
 		},
 		{
-			"type": "reference",
-			"name": "bloc",
-			"source": "content/LD/Placeholder/bloc.prefab",
-			"x": -4.39,
-			"scaleX": 0.78,
-			"rotationX": 1.3329644594284084e-11,
-			"rotationY": -1.1372087026980996e-11,
-			"rotationZ": -1.3228363384977934e-24
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -5.18,
+			"z": 1.01,
+			"scaleX": 0.77,
+			"scaleY": 0.77,
+			"scaleZ": 0.77,
+			"rotationZ": -90
 		},
 		{
-			"type": "lightProbe",
-			"name": "lightProbe_0",
-			"x": -10.19,
-			"y": -8.28,
-			"z": 1.96,
-			"scaleX": 36.04,
-			"scaleY": 32.63,
-			"scaleZ": 17.03,
-			"fadeDist": 5.3,
-			"fadeMode": "Smoothstep",
-			"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
-			"power": 3.11,
-			"sphereRadius": 0.4
+			"type": "model",
+			"name": "stairs01",
+			"source": "content/Art/Asset/Generique/stairs/stairs01.fbx",
+			"x": -0.5,
+			"y": 0.03,
+			"z": -0.1,
+			"scaleX": 0.68,
+			"scaleY": 0.68,
+			"scaleZ": 0.68,
+			"rotationX": 2.8523067045528676e-12,
+			"rotationY": -7.869298464534253e-12,
+			"rotationZ": -1.958752718024687e-25
+		},
+		{
+			"type": "light",
+			"name": "light",
+			"x": -4.31,
+			"z": 11.14,
+			"rotationY": 90,
+			"kind": "Spot",
+			"color": 7052543,
+			"power": 2.95,
+			"range": 20,
+			"zNear": 0.02,
+			"angle": 57.64,
+			"fallOff": 1,
+			"shadows": {
+				"mode": "Mixed",
+				"size": 1024,
+				"radius": 0,
+				"quality": 1,
+				"bias": 0.04,
+				"samplingMode": {
+					"kind": "PCF",
+					"quality": 2,
+					"scale": 10,
+					"bias": 0.1
+				}
+			}
 		}
 	]
 }
