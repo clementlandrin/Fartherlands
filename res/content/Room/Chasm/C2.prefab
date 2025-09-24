@@ -42,6 +42,15 @@
 							"depthTest": "Less",
 							"colorMask": 15,
 							"enableStencil": false
+						},
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
 						}
 					}
 				}
@@ -51,61 +60,6 @@
 			"type": "object",
 			"name": "present",
 			"children": [
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"y": -7.5,
-					"z": 2.5,
-					"scaleX": 15,
-					"scaleY": 5,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -7.5,
-					"z": 2.5,
-					"scaleX": 15,
-					"scaleY": 5,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"rotationZ": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
 				{
 					"type": "reference",
 					"name": "Present",
@@ -117,22 +71,6 @@
 			"type": "object",
 			"name": "past",
 			"children": [
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
 				{
 					"type": "reference",
 					"name": "Past",
@@ -185,10 +123,24 @@
 							"depthTest": "Less",
 							"colorMask": 15,
 							"enableStencil": false
+						},
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
 						}
 					}
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "Big_room02",
+			"source": "content/Art/Room_template/Big_room02.prefab"
 		}
 	]
 }

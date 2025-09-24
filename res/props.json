@@ -21,6 +21,10 @@
 		{
 			"name": "Past",
 			"path": "content/Art/MaterialLibrary/Generic/Past.prefab"
+		},
+		{
+			"name": "Pots",
+			"path": "content/Art/MaterialLibrary/Assets/Pots.prefab"
 		}
 	],
 	"sceneeditor.axisToggle": true,
@@ -38,5 +42,8 @@
 	"renderers": {
 		"Fartherlands": "gfx.MaterialSetup"
 	},
-	"defaultRenderer": "Fartherlands"
+	"defaultRenderer": "Fartherlands",
+	"sceneeditor.newrecents": [
+		"material"
+	]
 }

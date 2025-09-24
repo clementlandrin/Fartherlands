@@ -20,25 +20,9 @@
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door.prefab",
-					"x": 7.22,
-					"y": -0.23,
-					"rotationZ": 87.5
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
 					"x": -7.35,
 					"y": -0.03,
 					"rotationZ": -91.1
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 3.87,
-					"y": 3.53,
-					"rotationZ": 179.8
 				},
 				{
 					"type": "reference",
@@ -78,6 +62,22 @@
 			"rotationX": -2.4165452526107245e-12,
 			"rotationY": 1.0979131582967183e-11,
 			"rotationZ": -2.3153161131658806e-25
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 7.22,
+			"y": -0.23,
+			"rotationZ": 87.5
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 3.87,
+			"y": 3.53,
+			"rotationZ": 179.8
 		}
 	]
 }

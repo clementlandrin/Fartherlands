@@ -24,7 +24,7 @@
 					"emissive": 1,
 					"exposure": 0,
 					"sky": "CustomColor",
-					"tone": "Linear",
+					"tone": "Filmic",
 					"occlusion": 1,
 					"a": 1.55,
 					"b": 0.46,

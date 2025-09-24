@@ -18,22 +18,6 @@
 						"type": 2,
 						"$cdbtype": "element"
 					},
-					"scaleX": 15,
-					"scaleY": 7.5,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
 					"x": -6.08,
 					"z": 10.07,
 					"scaleX": 2.94,
@@ -66,45 +50,6 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"y": -3.75,
-					"z": 7.5,
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -7.5,
-					"z": 7.5,
-					"scaleX": 7.5,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"rotationZ": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
 				}
 			]
 		},
@@ -149,15 +94,6 @@
 					"y": 0.03,
 					"z": 9.77,
 					"rotationZ": -90.2
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 3.59,
-					"y": 3.46,
-					"z": 9.77,
-					"rotationZ": 179.8
 				}
 			]
 		},
@@ -193,6 +129,137 @@
 			"rotationX": 2.2899462613242315e-11,
 			"rotationY": -1.3343178896145287e-11,
 			"rotationZ": -2.6664409566529796e-24
+		},
+		{
+			"type": "object",
+			"name": "Common",
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"y": -3.75,
+					"z": 7.5,
+					"scaleX": 15,
+					"scaleY": 15,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "lightProbe",
+					"name": "lightProbe_0",
+					"x": -0.76,
+					"y": -2.08,
+					"z": 4.66,
+					"scaleX": 16.95,
+					"scaleY": 12,
+					"scaleZ": 21.08,
+					"fadeDist": 3.5,
+					"fadeMode": "Smoothstep",
+					"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
+					"power": 3.11,
+					"debugDisplay": false,
+					"sphereRadius": 0.48
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"scaleX": 15,
+					"scaleY": 7.5,
+					"scaleZ": 5,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -7.5,
+					"z": 7.5,
+					"scaleX": 7.5,
+					"scaleY": 15,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 3.59,
+			"y": 3.46,
+			"z": 9.77,
+			"rotationZ": 179.8
 		}
 	]
 }

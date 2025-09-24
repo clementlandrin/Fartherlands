@@ -45,30 +45,6 @@
 			]
 		},
 		{
-			"type": "box",
-			"name": "model",
-			"x": 0.98,
-			"z": 1,
-			"scaleY": 0.3,
-			"scaleZ": 2
-		},
-		{
-			"type": "box",
-			"name": "model",
-			"x": -1.01,
-			"z": 1,
-			"scaleY": 0.3,
-			"scaleZ": 2
-		},
-		{
-			"type": "box",
-			"name": "model",
-			"z": 2.2,
-			"scaleX": 2.9,
-			"scaleY": 0.29,
-			"scaleZ": 0.37
-		},
-		{
 			"type": "polygon",
 			"name": "polygon",
 			"editorOnly": true,
@@ -104,6 +80,15 @@
 					"y": -1.0610435563893685
 				}
 			]
+		},
+		{
+			"type": "model",
+			"name": "Door",
+			"source": "content/Art/Asset/Generique/Door/Door.fbx",
+			"scaleX": 0.43,
+			"scaleY": 0.43,
+			"scaleZ": 0.43,
+			"rotationZ": -180
 		}
 	]
 }

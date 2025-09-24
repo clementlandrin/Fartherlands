@@ -22,65 +22,10 @@
 			"name": "present",
 			"children": [
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab",
 					"y": 0.5068
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"y": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"rotationZ": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
 				}
 			]
 		},
@@ -88,22 +33,6 @@
 			"type": "object",
 			"name": "past",
 			"children": [
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
 				{
 					"type": "reference",
 					"name": "Past",
@@ -115,17 +44,20 @@
 			"type": "object",
 			"name": "doors",
 			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 4.38,
-					"y": 6.91,
-					"rotationZ": 180
-				}
-			]
+			"y": 0.0275
+		},
+		{
+			"type": "reference",
+			"name": "Big_room",
+			"source": "content/Art/Room_template/Big_room.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 4.38,
+			"y": 6.91,
+			"rotationZ": 180
 		}
 	]
 }

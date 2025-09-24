@@ -4,6 +4,11 @@
 		{
 			"type": "polygon",
 			"name": "polygon",
+			"props": {
+				"id": "Small_room_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
 			"x": -3.75,
 			"z": 2.5,
 			"scaleX": 7.5,
@@ -34,6 +39,11 @@
 		{
 			"type": "polygon",
 			"name": "polygon",
+			"props": {
+				"id": "Small_room_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
 			"y": -3.75,
 			"z": 2.5,
 			"scaleX": 7.5,
@@ -63,6 +73,11 @@
 		{
 			"type": "polygon",
 			"name": "polygon",
+			"props": {
+				"id": "Small_room_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
 			"scaleX": 7.5,
 			"scaleY": 7.5,
 			"scaleZ": 7.5,

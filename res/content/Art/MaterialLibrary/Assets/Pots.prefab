@@ -1,0 +1,157 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "material",
+			"name": "Pot01_01",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/01_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/01_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/01_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Pot01_02",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/02_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/02_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/02_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Pot01_03",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/03_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/03_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/03_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Pot02",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/pot02_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/pot02_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/pot02_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Pot03",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/pot03_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/pot03_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/pot03_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Pot04",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/pot04_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/pot04_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/pot04_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Pot05_01",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_01_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_01_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_01_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Pot05_02",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_02_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_02_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_02_MetallicRoughnessAO.png",
+			"refMatLib": ""
+		}
+	]
+}

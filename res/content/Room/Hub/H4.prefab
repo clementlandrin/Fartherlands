@@ -16,7 +16,7 @@
 			"rotationZ": -45,
 			"kind": "Spot",
 			"color": 16772302,
-			"power": 5,
+			"power": 3.74,
 			"range": 24.02,
 			"zNear": 0.02,
 			"angle": 39.43,
@@ -306,6 +306,67 @@
 			"y": 1.07,
 			"z": -0.04,
 			"rotationX": 90
+		},
+		{
+			"type": "model",
+			"name": "Pot05",
+			"source": "content/Art/Asset/Pot/Pot05.fbx",
+			"x": -3.8,
+			"y": -6.34,
+			"z": 1.47,
+			"rotationX": -1.132982990862416e-12,
+			"rotationY": -2.512502312093016e-11,
+			"rotationZ": 2.4841466581791707e-25
+		},
+		{
+			"type": "model",
+			"name": "Pot04",
+			"source": "content/Art/Asset/Pot/Pot04.FBX",
+			"x": -6.54,
+			"y": -3.29,
+			"z": 1.34,
+			"rotationX": -1.3093257093048235e-11,
+			"rotationY": -1.1458993104002624e-11,
+			"rotationZ": 1.309307107898895e-24
+		},
+		{
+			"type": "model",
+			"name": "Pot04",
+			"source": "content/Art/Asset/Pot/Pot04.FBX",
+			"x": -1.28,
+			"y": -0.39,
+			"z": 0.58,
+			"rotationY": 98.9
+		},
+		{
+			"type": "model",
+			"name": "Pot03",
+			"source": "content/Art/Asset/Pot/Pot03.FBX",
+			"x": -6.58,
+			"y": -4.57,
+			"z": 1.49,
+			"rotationZ": -78.5
+		},
+		{
+			"type": "model",
+			"name": "Pot03",
+			"source": "content/Art/Asset/Pot/Pot03.FBX",
+			"x": 1.57,
+			"y": -0.29,
+			"z": 0.36,
+			"rotationX": 88,
+			"rotationY": -35.2,
+			"rotationZ": -145.1
+		},
+		{
+			"type": "model",
+			"name": "Pot01",
+			"source": "content/Art/Asset/Pot/Pot01.FBX",
+			"x": -6.83,
+			"y": -0.59,
+			"rotationX": 5.980137051088191e-12,
+			"rotationY": -6.8330150084701916e-12,
+			"rotationZ": -3.5659141537173944e-25
 		}
 	]
 }

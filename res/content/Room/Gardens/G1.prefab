@@ -24,61 +24,6 @@
 			"name": "present",
 			"children": [
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"y": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -7.5,
-					"z": 5,
-					"scaleX": 15,
-					"scaleY": 10,
-					"scaleZ": 15,
-					"rotationX": -90,
-					"rotationZ": -90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
@@ -157,6 +102,15 @@
 							"depthTest": "Less",
 							"colorMask": 15,
 							"enableStencil": false
+						},
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
 						}
 					}
 				}
@@ -168,6 +122,11 @@
 			"source": "gameplay/teleport/garden_teleport.prefab",
 			"x": 3.659506861245873,
 			"y": -2.905678226245172
+		},
+		{
+			"type": "reference",
+			"name": "Big_room",
+			"source": "content/Art/Room_template/Big_room.prefab"
 		}
 	]
 }

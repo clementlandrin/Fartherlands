@@ -89,6 +89,16 @@
 			"01 - Default": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_pattern04"
+			},
+			"Material #436/beam01.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins",
+				"__refMode": "modelSpec"
+			},
+			"Material #435/beam02.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_Joins",
+				"__refMode": "modelSpec"
 			}
 		}
 	}

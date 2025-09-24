@@ -1,0 +1,22 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "material",
+			"name": "Gradient",
+			"props": {
+				"Fatherlands": {
+					"mode": "BeforeTonemapping",
+					"blend": "AlphaAdd",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"alphaKill": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Utilities/gradient_AlbedoAlpha.png"
+		}
+	]
+}

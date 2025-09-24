@@ -12,69 +12,131 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
-			"type": "polygon",
-			"name": "polygon",
-			"props": {
-				"id": "Start_polygon",
-				"type": 2,
-				"$cdbtype": "element"
-			},
-			"scaleX": 7.5,
-			"scaleY": 7.5,
-			"scaleZ": 7.5,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "F8_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -3.75,
+					"z": 7.5,
+					"scaleX": 7.5,
+					"scaleY": 15,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "F8_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"y": -3.75,
+					"z": 7.5,
+					"scaleX": 7.5,
+					"scaleY": 15,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "F8_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"scaleX": 7.5,
+					"scaleY": 7.5,
+					"scaleZ": 7.5,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "lightProbe",
+					"name": "lightProbe_0",
+					"x": -2.79,
+					"y": -2.08,
+					"z": 5.59,
+					"scaleX": 13.24,
+					"scaleY": 12,
+					"scaleZ": 19.23,
+					"fadeDist": 3.5,
+					"fadeMode": "Smoothstep",
+					"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
+					"power": 3.11,
+					"sphereRadius": 0.48
+				}
+			]
 		},
 		{
 			"type": "object",
 			"name": "doors",
 			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -0.13,
-					"y": 3.5,
-					"rotationZ": 179.8
-				}
-			]
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"x": -3.75,
-			"z": 7.5,
-			"scaleX": 7.5,
-			"scaleY": 15,
-			"scaleZ": 5,
-			"rotationX": -90,
-			"rotationZ": -90,
-			"kind": 0,
-			"args": [
-				0
-			]
-		},
-		{
-			"type": "polygon",
-			"name": "polygon",
-			"y": -3.75,
-			"z": 7.5,
-			"scaleX": 7.5,
-			"scaleY": 15,
-			"scaleZ": 5,
-			"rotationX": -90,
-			"kind": 0,
-			"args": [
-				0
-			]
+			"y": 0.0275
 		},
 		{
 			"type": "object",
@@ -97,6 +159,14 @@
 					"source": "lighting/Past.prefab"
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": -0.13,
+			"y": 3.5,
+			"rotationZ": 179.8
 		}
 	]
 }
