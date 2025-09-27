@@ -153,8 +153,10 @@ class LightProbeObject extends h3d.scene.Mesh {
 
 		var r : h3d.scene.pbr.Renderer = cast ctx.scene.renderer;
 		if( r != null ) {
-			if( material.mainPass.getShader(h3d.shader.pbr.PropsImport) == null )
-				@:privateAccess material.mainPass.addShader(r.pbrProps);
+			var propsImport = material.mainPass.getShader(h3d.shader.pbr.PropsImport);
+			if ( propsImport != null )
+				material.mainPass.removeShader(propsImport);
+			@:privateAccess material.mainPass.addShader(r.pbrProps);
 			var props : h3d.scene.pbr.Renderer.RenderProps = r.props;
 			indirectShader.emissivePower = props.emissive;
 		}
