@@ -15,6 +15,7 @@ class TemporalWindow extends hxsl.Shader {
 
 		@global var depthMap : Channel;
 
+		@const var GAMMA_CORRECT : Bool = true;
 		@param var tex : Sampler2D;
 		@param var depth : Sampler2D;
 
@@ -23,6 +24,8 @@ class TemporalWindow extends hxsl.Shader {
 
 		function fragment() {
 			pixelColor = tex.get(screenUV);
+			if ( GAMMA_CORRECT )
+				pixelColor.rgb *= pixelColor.rgb;
 			var curDepth = depthMap.get(screenUV);
 			var pastDepth = depth.get(screenUV).r;
 			if ( curDepth < pastDepth )

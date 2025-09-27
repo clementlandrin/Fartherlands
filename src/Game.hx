@@ -144,9 +144,6 @@ class Game extends hxd.App {
 				break;
 			}
 		}
-
-		presentLighting = new h3d.scene.Object(s3d);
-		pastLighting = new h3d.scene.Object(s3d);
 	}
 
 	var pastTexCopy : h3d.mat.Texture;
@@ -198,7 +195,7 @@ class Game extends hxd.App {
 			if ( presentLighting != null )
 				presentLighting.remove();
 			presentLighting = new h3d.scene.Object(s3d);
-			var p = p.make(presentLighting); // p.clone()?
+			var p = p.make(presentLighting);
 			p.applyProps(presentRenderer);
 			var env = p.find(hrt.prefab.l3d.Environment);
 			if ( env != null )
@@ -208,7 +205,7 @@ class Game extends hxd.App {
 			if ( pastLighting != null )
 				pastLighting.remove();
 			pastLighting = new h3d.scene.Object(s3d);
-			var p = p.make(pastLighting); // p.clone()?
+			var p = p.make(pastLighting);
 			p.applyProps(pastRenderer);
 			var env = p.find(hrt.prefab.l3d.Environment);
 			if ( env != null )

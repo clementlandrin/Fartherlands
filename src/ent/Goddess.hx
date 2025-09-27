@@ -23,6 +23,7 @@ class Goddess extends Entity {
 		for ( m in temporalVisual.getMaterials() ) {
 			m.color.set(1.0, 1.0, 1.0, 0.2);
 			m.mainPass.setBlendMode(Alpha);
+			game.pastWindowShader.GAMMA_CORRECT = true;
 			m.mainPass.setPassName("beforeTonemapping");
 			m.mainPass.depthWrite = false;
 			m.shadows = false;
