@@ -135,6 +135,35 @@ class Entity extends st.State {
 		return boxBounds;
 	}
 
+	public function setFront(dir : h3d.col.Point) {
+		var quat = new h3d.Quat();
+		quat.initDirection(dir.normalized(), new h3d.Vector(0.0, 0.0, 1.0));
+		obj.setRotationQuat(quat);
+	}
+
+	public function movementTarget(target : h3d.col.Point, dt : Float) {
+		var curPos = new h3d.col.Point(x,y,z);
+		var diff = target.sub(curPos);
+		var dir = diff.normalized();
+		var distToTarget = diff.length();
+		var moveDist = dt * Const.get(PlayerSpeed);
+
+		if ( distToTarget > 1e-3 )
+			setFront(target.sub(new h3d.col.Point(x,y,target.z)));
+
+		if ( moveDist > distToTarget ) {
+			x = target.x;
+			y = target.y;
+			z = target.z;
+			return true;
+		}
+		curPos = curPos.add(dir.scaled(moveDist));
+		x = curPos.x;
+		y = curPos.y;
+		z = curPos.z;
+		return false;
+	}
+
 	override function update(dt : Float) {
 		super.update(dt);
 		updateItem(dt);

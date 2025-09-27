@@ -7,11 +7,6 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
-			"type": "reference",
-			"name": "doorDown",
-			"source": "gameplay/doorDown.prefab"
-		},
-		{
 			"type": "object",
 			"name": "common",
 			"children": [
@@ -217,6 +212,11 @@
 			"x": 3.55,
 			"y": -0.23,
 			"rotationZ": 87.5
+		},
+		{
+			"type": "reference",
+			"name": "elevatorDown",
+			"source": "gameplay/elevator/elevatorDown.prefab"
 		}
 	]
 }

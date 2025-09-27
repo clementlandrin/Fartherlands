@@ -5,33 +5,34 @@ class PlayerController {
 	public var requestInteract : Bool = false;
 	public var requestSecondaryInteract : Bool = false;
 	public var player : ent.Entity;
+	public var sequence : Sequence;
+	public var curElevator : ent.Elevator;
 	
 	var game : Game;
 
 	var skin : h3d.scene.Skin;
 	var curLadder : ent.Ladder;
 	var idle = false;
-	var sequence : Sequence;
 
-	var x(get,set) : Float;
-	function get_x() {
+	public var x(get,set) : Float;
+	public function get_x() {
 		return player.x;
 	}
-	function set_x(v) {
+	public function set_x(v) {
 		return player.x = v;
 	}
-	var y(get,set) : Float;
-	function get_y() {
+	public var y(get,set) : Float;
+	public function get_y() {
 		return player.y;
 	}
-	function set_y(v) {
+	public function set_y(v) {
 		return player.y = v;
 	}
-	var z(get,set) : Float;
-	function get_z() {
+	public var z(get,set) : Float;
+	public function get_z() {
 		return player.z;
 	}
-	function set_z(v) {
+	public function set_z(v) {
 		return player.z = v;
 	}
 
@@ -104,7 +105,7 @@ class PlayerController {
 		var newPos = new h3d.col.Point(x + move.x, y + move.y, z);
 
 		if ( move.length() > 0.0 ) {
-			setFront(move.normalized());
+			player.setFront(move.normalized());
 
 			if ( idle ) {
 				idle = false;
@@ -182,35 +183,6 @@ class PlayerController {
 		}
 	}
 
-	function moveTo(target : h3d.col.Point, dt : Float) {
-		var curPos = new h3d.col.Point(x,y,z);
-		var diff = target.sub(curPos);
-		var dir = diff.normalized();
-		var distToTarget = diff.length();
-		var moveDist = dt * Const.get(PlayerSpeed);
-
-		if ( distToTarget > 1e-3 )
-			setFront(target.sub(new h3d.col.Point(x,y,target.z)));
-
-		if ( moveDist > distToTarget ) {
-			x = target.x;
-			y = target.y;
-			z = target.z;
-			return true;
-		}
-		curPos = curPos.add(dir.scaled(moveDist));
-		x = curPos.x;
-		y = curPos.y;
-		z = curPos.z;
-		return false;
-	}
-
-	public function setFront(dir : h3d.col.Point) {
-		var quat = new h3d.Quat();
-		quat.initDirection(dir.normalized(), new h3d.Vector(0.0, 0.0, 1.0));
-		player.obj.setRotationQuat(quat);
-	}
-
 	function updateLadderMovement(dt : Float) {
 		if ( hxd.Key.isDown(hxd.Key.Z) || hxd.Key.isDown(hxd.Key.UP) ) {
 			curLadder.tryLeaveTop();
@@ -233,7 +205,7 @@ class PlayerController {
 			throw "entering null ladder";
 		curLadder = l;
 		sequence = new Sequence(function (dt : Float) {
-			return moveTo(to, dt);
+			return player.movementTarget(to, dt);
 		});
 	}
 
@@ -243,10 +215,10 @@ class PlayerController {
 		if ( curLadder == null )
 			throw "assert";
 		sequence = new Sequence(function (dt : Float) {
-			var reached = moveTo(ladderEdge, dt);
+			var reached = player.movementTarget(ladderEdge, dt);
 			if ( reached ) {
 				sequence = new Sequence(function (dt : Float) {
-					var reached = moveTo(out, dt);
+					var reached = player.movementTarget(out, dt);
 					if ( reached )
 						curLadder = null;
 					return reached;

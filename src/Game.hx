@@ -274,6 +274,9 @@ class Game extends hxd.App {
 			case Ladder:
 				var l = new ent.Ladder();
 				e = l;
+			case Elevator:
+				var el = new ent.Elevator();
+				e = el;
 			case Element:
 				if ( props.props != null && props.props.memo ) {
 					var m = new ent.Memo();

@@ -108,6 +108,14 @@ class Door extends Entity {
 					throw 'too many ladders to ${newRoom.name}';
 				var ladder = ladders[0];
 				game.ctrl.enterLadder(ladder, game.player.getPos());
+			} else if ( game.ctrl.curElevator != null ) {
+				var elevators = newRoom.elevators.filter(e -> e.door == to);
+				if ( elevators.length == 0 )
+					throw 'missing matching elevator from ${game.curRoom} to ${newRoom.name}';
+				if ( elevators.length > 1 )
+					throw 'too many elevators to ${newRoom.name}';
+				var elevator = elevators[0];
+				elevator.enterFromDoor();
 			}
 		};
 		game.moveTo(newRoom, [doorCb]);
@@ -115,7 +123,7 @@ class Door extends Entity {
 
 	override function update(dt : Float) {
 		super.update(dt);
-		if ( enabled && game.ctrl.canChangeRoom() ) {
+		if ( enabled && game.ctrl.canChangeRoom() && room == game.curRoom ) {
 			var playerPos = new h3d.col.Point(game.player.x,game.player.y,game.player.z);
 			if ( obj.getBounds().contains(playerPos) )
 				enters();

@@ -3,11 +3,6 @@
 	"children": [
 		{
 			"type": "reference",
-			"name": "doorUp",
-			"source": "gameplay/doorUp.prefab"
-		},
-		{
-			"type": "reference",
 			"name": "camera",
 			"source": "gameplay/camera.prefab"
 		},
@@ -56,6 +51,11 @@
 			"type": "reference",
 			"name": "Small_room",
 			"source": "content/Art/Room_template/Small_room.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "elevatorUp",
+			"source": "gameplay/elevator/elevatorUp.prefab"
 		}
 	]
 }

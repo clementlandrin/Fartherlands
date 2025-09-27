@@ -4,6 +4,7 @@ class Room extends Entity {
 
     public var doors : Array<Door> = [];
     public var ladders : Array<Ladder> = [];
+    public var elevators : Array<Elevator> = [];
     public var navmeshes : Array<Navmesh> = [];
 	public var voxels : Voxels;
 	public var camera : hrt.prefab.l3d.Camera;

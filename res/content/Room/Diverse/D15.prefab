@@ -7,11 +7,6 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
-			"type": "reference",
-			"name": "doorUp",
-			"source": "gameplay/doorUp.prefab"
-		},
-		{
 			"type": "object",
 			"name": "common"
 		},
@@ -55,6 +50,11 @@
 			"x": -0.13,
 			"y": 3.5,
 			"rotationZ": 179.8
+		},
+		{
+			"type": "reference",
+			"name": "elevatorUp",
+			"source": "gameplay/elevator/elevatorUp.prefab"
 		}
 	]
 }

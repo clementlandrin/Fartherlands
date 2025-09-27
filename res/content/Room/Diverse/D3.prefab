@@ -3,11 +3,6 @@
 	"children": [
 		{
 			"type": "reference",
-			"name": "doorDown",
-			"source": "gameplay/doorDown.prefab"
-		},
-		{
-			"type": "reference",
 			"name": "camera",
 			"source": "gameplay/camera.prefab"
 		},
@@ -64,6 +59,22 @@
 			"type": "reference",
 			"name": "Small_room",
 			"source": "content/Art/Room_template/Small_room.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "elevatorDown",
+			"source": "gameplay/elevator/elevatorDown.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "elevator",
+			"source": "gameplay/elevator/elevator.prefab",
+			"x": -1.6067271855686869,
+			"y": 2.4426223871204087,
+			"z": -1.7763568394002505e-15,
+			"rotationX": 2.0988822756618206e-12,
+			"rotationY": -2.0885390645921653e-12,
+			"rotationZ": -3.825410581680723e-26
 		}
 	]
 }

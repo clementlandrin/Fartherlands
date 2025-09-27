@@ -10,7 +10,7 @@
 					"scope": null
 				},
 				{
-					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest",
+					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator",
 					"name": "type",
 					"opt": false
 				},
@@ -83,6 +83,10 @@
 				{
 					"id": "ClimbSpeed",
 					"value": 5
+				},
+				{
+					"id": "ElevatorSpeed",
+					"value": 2
 				},
 				{
 					"id": "InteractibleRadius",

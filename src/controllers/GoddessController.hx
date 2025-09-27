@@ -10,8 +10,10 @@ class GoddessController extends PlayerController {
 	override function update(dt : Float) {
 		super.update(dt);
 
-		if ( canControl() )
-			updateSphere(dt);
+		if ( canControl() ) {
+			if ( sequence == null )
+				updateSphere(dt);
+		}
 	}
 
 	function updateSphere(dt : Float) {
