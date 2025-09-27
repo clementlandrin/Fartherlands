@@ -23,17 +23,17 @@ class Goddess extends Entity {
 		for ( m in temporalVisual.getMaterials() ) {
 			m.color.set(1.0, 1.0, 1.0, 0.2);
 			m.mainPass.setBlendMode(Alpha);
-			game.pastWindowShader.GAMMA_CORRECT = true;
-			m.mainPass.setPassName("beforeTonemapping");
+			game.pastWindowShader.GAMMA_CORRECT = false;
+			m.mainPass.setPassName("afterTonemapping");
 			m.mainPass.depthWrite = false;
 			m.shadows = false;
 			@:privateAccess m.mainPass.addSelfShader(game.pastWindowShader);
-			var p = m.allocPass("afterTonemapping");
-			p.setBlendMode(Alpha);
-			var cm = new h3d.shader.ColorMult();
-			cm.color.setColor(Const.getColor(SphereColor));
-			cm.color.set(cm.color.x, cm.color.y, cm.color.z, Const.get(SphereColor));
-			p.addShader(cm);
+			// var p = m.allocPass("afterTonemapping");
+			// p.setBlendMode(Alpha);
+			// var cm = new h3d.shader.ColorMult();
+			// cm.color.setColor(Const.getColor(SphereColor));
+			// cm.color.set(cm.color.x, cm.color.y, cm.color.z, Const.get(SphereColor));
+			// p.addShader(cm);
 		}
 		temporalVisual.followPositionOnly = true;
 		temporalVisual.follow = chara.find(o -> o.name == "sphereCenter" ? o : null);
