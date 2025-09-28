@@ -17,6 +17,59 @@
 				}
 			},
 			"diffuseMap": "content/Art/MaterialLibrary/Textures/Utilities/gradient_AlbedoAlpha.png"
+		},
+		{
+			"type": "material",
+			"name": "material",
+			"props": {
+				"Fatherlands": {
+					"mode": "BeforeTonemapping",
+					"blend": "Alpha",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Utilities/z_FillWhite.jpg",
+			"children": [
+				{
+					"type": "shader",
+					"name": "SHADER_Lake",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/SHADER_Lake.shgraph",
+					"props": {
+						"ColorDistance": 2.61,
+						"WaterColor1": [
+							0.8156862745098039,
+							0.984313725490196,
+							1,
+							1
+						],
+						"WaterColor2": [
+							0.22745098039215686,
+							0.3803921568627451,
+							0.39215686274509803,
+							1
+						],
+						"Opacity": 0.07,
+						"Opacity2": 0.64,
+						"PerlinDisto": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
+						"PerlinDisto_Tiling": 0.25,
+						"PerlinDisto_Speed": 0.05,
+						"BorderColor": [
+							0.803921568627451,
+							1,
+							0.9215686274509803,
+							1
+						],
+						"BorderDistance": 4.9,
+						"BorderWigglyScale": 0.4,
+						"BorderScale": 0.62,
+						"BorderOpacity": 0.25
+					}
+				}
+			]
 		}
 	]
 }

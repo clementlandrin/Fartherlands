@@ -119,6 +119,7 @@
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
+					"editorOnly": true,
 					"props": {
 						"amount": 0.5,
 						"color": [
@@ -337,6 +338,7 @@
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
+					"editorOnly": true,
 					"props": {
 						"amount": 0.4,
 						"color": [
@@ -495,6 +497,7 @@
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
+					"editorOnly": true,
 					"props": {
 						"amount": 0.4,
 						"color": [
@@ -622,6 +625,7 @@
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
+					"editorOnly": true,
 					"props": {
 						"amount": 0.4,
 						"color": [
@@ -822,6 +826,7 @@
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
+					"editorOnly": true,
 					"props": {
 						"amount": 0.4,
 						"color": [

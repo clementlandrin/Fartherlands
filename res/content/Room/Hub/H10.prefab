@@ -14,30 +14,32 @@
 		{
 			"type": "object",
 			"name": "present",
-			"x": 1.344,
-			"y": 0.002,
 			"children": [
 				{
 					"type": "reference",
 					"name": "Present",
-					"source": "lighting/Present.prefab",
-					"x": 3.5399,
-					"y": -0.6998
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Right_Present",
+					"source": "content/Art/Room_template/Present/Medium_room_Right_Present.prefab"
 				}
 			]
 		},
 		{
 			"type": "object",
 			"name": "past",
-			"x": 1.344,
-			"y": 0.002,
 			"children": [
 				{
 					"type": "reference",
 					"name": "Past",
-					"source": "lighting/Past.prefab",
-					"x": -1.344,
-					"y": -0.002
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Right",
+					"source": "content/Art/Room_template/Past/Medium_room_Right_Past.prefab"
 				}
 			]
 		},
@@ -56,11 +58,6 @@
 					"rotationZ": -1.1
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Medium_room_Right",
-			"source": "content/Art/Room_template/Medium_room_Right.prefab"
 		},
 		{
 			"type": "reference",

@@ -25,6 +25,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room_Present",
+					"source": "content/Art/Room_template/Present/Big_room_Present.prefab"
 				}
 			]
 		},
@@ -36,6 +41,11 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room",
+					"source": "content/Art/Room_template/Past/Big_room_Past.prefab"
 				}
 			]
 		},
@@ -50,11 +60,6 @@
 			"name": "under_tree_teleport",
 			"source": "gameplay/teleport/under_tree_teleport.prefab",
 			"x": 5.06
-		},
-		{
-			"type": "reference",
-			"name": "Big_room",
-			"source": "content/Art/Room_template/Big_room.prefab"
 		},
 		{
 			"type": "model",

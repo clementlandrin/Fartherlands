@@ -24,13 +24,14 @@
 					"emissive": 1,
 					"exposure": 0,
 					"sky": "CustomColor",
-					"tone": "Linear",
+					"tone": "Filmic",
 					"occlusion": 1,
-					"a": 2.51,
-					"b": 0.03,
-					"c": 2.43,
-					"d": 0.59,
-					"e": 0.14
+					"a": 1.55,
+					"b": 0.46,
+					"c": 0.96,
+					"d": 1.15,
+					"e": 0.5,
+					"skyColor": 0
 				}
 			},
 			"children": [
@@ -41,6 +42,11 @@
 					"sourceMapPath": "content/Art/Envmap/test_sky_J.hdr"
 				},
 				{
+					"type": "rfx.colorGrading",
+					"name": "colorGrading",
+					"texturePath": "content/Art/Lut/LUT_J.png"
+				},
+				{
 					"type": "rfx.sao",
 					"name": "sao",
 					"size": 0.5,
@@ -48,65 +54,49 @@
 					"noiseScale": 1000,
 					"samples": 40,
 					"radius": 5,
-					"intensity": 10,
-					"bias": 0.1
+					"intensity": 12,
+					"bias": 0.1,
+					"microIntensity": 0.3,
+					"useScalableBias": true
 				},
 				{
 					"type": "rfx.sao",
 					"name": "sao",
 					"size": 0.5,
-					"blur": 10,
+					"blur": 3.71,
 					"noiseScale": 1000,
 					"samples": 40,
-					"radius": 0.3,
-					"bias": 0.1
+					"radius": 0.2,
+					"intensity": 0.45,
+					"bias": 0.01,
+					"useScalableBias": true
 				},
 				{
-					"type": "rfx.volumetricLighting",
-					"name": "volumetricLighting",
-					"enabled": false,
-					"AFTER_FX": true,
-					"color": 10724055,
-					"steps": 40,
-					"blur": 2,
-					"endDistance": 0,
-					"maxCamDist": 2000,
-					"noiseScale": 0.5,
-					"noiseSharpness": 5,
-					"noisePersistence": 1,
-					"noiseTurmoil": 0.1,
-					"fogDensity": 1.5,
-					"fogUseNoise": 0,
-					"fogHeightFalloff": 2,
-					"fogTop": 600,
-					"fogEnvColorMult": 1,
-					"secondFogHeightFalloff": 3,
-					"secondFogTop": 400,
-					"offsetCamHeight": true
+					"type": "rfx.kuwaharaFilter",
+					"name": "kuwaharaFilter",
+					"radius": 2,
+					"endDist": 0
 				},
 				{
-					"type": "light",
-					"name": "light",
-					"rotationY": 58.7,
-					"rotationZ": -30.7,
-					"kind": "Directional",
-					"color": 9675764,
-					"power": 2.05,
-					"range": 10,
-					"zNear": 0.02,
-					"shadows": {
-						"mode": "Dynamic",
-						"size": 2048,
-						"radius": 0,
-						"quality": 1,
-						"bias": 0.1,
-						"samplingMode": {
-							"kind": "PCF",
-							"quality": 3,
-							"scale": 1,
-							"bias": 0.1
-						}
-					}
+					"type": "rfx.sharpen",
+					"name": "sharpen",
+					"intensity": 0.4
+				},
+				{
+					"type": "rfx.temporalbloom",
+					"name": "temporalbloom",
+					"size": 1,
+					"downScaleCount": 2,
+					"threshold": 0.9,
+					"intensity": 0.5,
+					"maxValue": 3,
+					"useTemporalFilter": false,
+					"temporalStrength": 0.1
+				},
+				{
+					"type": "rfx.temporalFiltering",
+					"name": "temporalFiltering",
+					"renderMode": "BeforeTonemapping"
 				}
 			]
 		}

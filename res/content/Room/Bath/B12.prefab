@@ -51,7 +51,7 @@
 		{
 			"type": "reference",
 			"name": "Small_room",
-			"source": "content/Art/Room_template/Small_room.prefab"
+			"source": "content/Art/Room_template/Past/Small_room_Past.prefab"
 		}
 	]
 }

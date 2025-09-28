@@ -41,6 +41,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Present",
+					"source": "content/Art/Room_template/Present/Medium_room_Left_Present.prefab"
 				}
 			]
 		},
@@ -52,16 +57,13 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left",
+					"source": "content/Art/Room_template/Past/Medium_room_Left_Past.prefab"
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Medium_room_Left",
-			"source": "content/Art/Room_template/Medium_room_Left.prefab",
-			"rotationX": -2.4165452526107245e-12,
-			"rotationY": 1.0979131582967183e-11,
-			"rotationZ": -2.3153161131658806e-25
 		},
 		{
 			"type": "reference",

@@ -74,8 +74,29 @@
 				{
 					"type": "rfx.kuwaharaFilter",
 					"name": "kuwaharaFilter",
-					"radius": 3,
+					"radius": 2,
 					"endDist": 0
+				},
+				{
+					"type": "rfx.sharpen",
+					"name": "sharpen",
+					"intensity": 0.4
+				},
+				{
+					"type": "rfx.temporalbloom",
+					"name": "temporalbloom",
+					"size": 1,
+					"downScaleCount": 2,
+					"threshold": 0.9,
+					"intensity": 0.5,
+					"maxValue": 3,
+					"useTemporalFilter": false,
+					"temporalStrength": 0.1
+				},
+				{
+					"type": "rfx.temporalFiltering",
+					"name": "temporalFiltering",
+					"renderMode": "BeforeTonemapping"
 				}
 			]
 		}

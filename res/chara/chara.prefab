@@ -18,6 +18,15 @@
 					"type": "object",
 					"name": "sphereCenter",
 					"z": 2.37
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"z": 1.96,
+					"power": 0.1,
+					"range": 8,
+					"size": 2,
+					"zNear": 0.02
 				}
 			]
 		}

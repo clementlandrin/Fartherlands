@@ -33,6 +33,11 @@
 			"children": [
 				{
 					"type": "reference",
+					"name": "Medium_room_Right_Present",
+					"source": "content/Art/Room_template/Present/Medium_room_Right_Present.prefab"
+				},
+				{
+					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
 				},
@@ -134,6 +139,11 @@
 			"children": [
 				{
 					"type": "reference",
+					"name": "Medium_room_Right",
+					"source": "content/Art/Room_template/Past/Medium_room_Right_Past.prefab"
+				},
+				{
+					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
 				}
@@ -159,22 +169,16 @@
 					"source": "gameplay/door.prefab",
 					"x": -0.07,
 					"y": -7.21
+				},
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door_back.prefab",
+					"x": 0.455,
+					"y": 7.2125,
+					"rotationZ": 180
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Medium_room_Right",
-			"source": "content/Art/Room_template/Medium_room_Right.prefab",
-			"editMode": "Edit"
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": 0.36,
-			"y": 7.24,
-			"rotationZ": 180
 		}
 	]
 }

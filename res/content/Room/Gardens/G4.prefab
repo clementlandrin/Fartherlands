@@ -46,7 +46,7 @@
 		{
 			"type": "reference",
 			"name": "Big_room",
-			"source": "content/Art/Room_template/Big_room.prefab"
+			"source": "content/Art/Room_template/Past/Big_room_Past.prefab"
 		},
 		{
 			"type": "reference",

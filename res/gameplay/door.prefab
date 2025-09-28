@@ -10,7 +10,9 @@
 				"type": 1
 			},
 			"z": 0.5,
-			"scaleZ": 3,
+			"scaleX": 0.7,
+			"scaleY": 0.3,
+			"scaleZ": 2,
 			"children": [
 				{
 					"type": "material",
@@ -85,9 +87,9 @@
 			"type": "model",
 			"name": "Door",
 			"source": "content/Art/Asset/Generique/Door/Door.fbx",
-			"scaleX": 0.43,
-			"scaleY": 0.43,
-			"scaleZ": 0.43,
+			"scaleX": 0.3,
+			"scaleY": 0.3,
+			"scaleZ": 0.3,
 			"rotationZ": -180
 		}
 	]

@@ -70,7 +70,7 @@
 		{
 			"type": "reference",
 			"name": "Big_room02",
-			"source": "content/Art/Room_template/Big_room02.prefab"
+			"source": "content/Art/Room_template/Past/Big_room02_Past.prefab"
 		},
 		{
 			"type": "reference",

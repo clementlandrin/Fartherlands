@@ -25,6 +25,10 @@
 		{
 			"name": "Pots",
 			"path": "content/Art/MaterialLibrary/Assets/Pots.prefab"
+		},
+		{
+			"name": "Utilities",
+			"path": "content/Art/MaterialLibrary/Generic/Utilities.prefab"
 		}
 	],
 	"sceneeditor.axisToggle": true,

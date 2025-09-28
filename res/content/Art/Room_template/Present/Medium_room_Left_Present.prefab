@@ -4,39 +4,41 @@
 		{
 			"type": "lightProbe",
 			"name": "lightProbe_0",
-			"x": -2.32,
-			"y": -1.13,
-			"z": 1.86,
-			"scaleX": 20.51,
-			"scaleY": 17.62,
-			"scaleZ": 7.08,
-			"fadeDist": 5,
+			"x": -0.76,
+			"y": -2.08,
+			"z": 0.9,
+			"scaleX": 16.95,
+			"scaleY": 12,
+			"scaleZ": 8.67,
+			"fadeDist": 3.5,
 			"fadeMode": "Smoothstep",
 			"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
-			"power": 3.11,
-			"sphereRadius": 0.4
+			"rotation": 330,
+			"power": 3.7,
+			"debugDisplay": false,
+			"sphereRadius": 0.48
 		},
 		{
 			"type": "object",
 			"name": "object",
 			"x": -2.5,
-			"y": -2.5,
+			"y": -1.25,
 			"z": 1.6666666666666665,
 			"children": [
 				{
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
-						"id": "Start_polygon",
+						"id": "Medium_room_Left_polygon",
 						"type": 2,
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
-					"y": -5,
+					"y": -2.5,
 					"z": 0.8333,
 					"scaleX": 15,
 					"scaleY": 5,
-					"scaleZ": 15,
+					"scaleZ": 5,
 					"rotationX": -90,
 					"kind": 0,
 					"args": [
@@ -62,16 +64,16 @@
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
-						"id": "Start_polygon",
+						"id": "Medium_room_Left_polygon",
 						"type": 2,
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
-					"y": 2.5,
+					"y": 1.25,
 					"z": -1.6667,
 					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
+					"scaleY": 7.5,
+					"scaleZ": 5,
 					"kind": 0,
 					"args": [
 						0
@@ -87,7 +89,7 @@
 								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
 								"Sharpness": 1,
 								"Offset": 0.73,
-								"Tiling": 0.15
+								"Tiling": 0.2
 							}
 						}
 					]
@@ -96,16 +98,16 @@
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
-						"id": "Start_polygon",
+						"id": "Medium_room_Left_polygon",
 						"type": 2,
 						"$cdbtype": "element"
 					},
 					"x": -5,
-					"y": 2.5,
+					"y": 1.25,
 					"z": 0.8333,
-					"scaleX": 15,
+					"scaleX": 7.5,
 					"scaleY": 5,
-					"scaleZ": 15,
+					"scaleZ": 5,
 					"rotationX": -90,
 					"rotationZ": -90,
 					"kind": 0,
@@ -122,7 +124,7 @@
 								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png",
 								"Normal": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
 								"Sharpness": 1,
-								"Offset": 0.95,
+								"Offset": 0.94,
 								"Tiling": 0.2
 							}
 						}
