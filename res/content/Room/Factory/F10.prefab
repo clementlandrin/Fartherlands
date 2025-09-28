@@ -37,6 +37,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room02_Present",
+					"source": "content/Art/Room_template/Factory/Present/Big_room02_Present.prefab"
 				}
 			]
 		},
@@ -48,6 +53,11 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room02_Past",
+					"source": "content/Art/Room_template/Factory/Past/Big_room02_Past.prefab"
 				}
 			]
 		},
@@ -66,11 +76,6 @@
 					"rotationZ": -90
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Big_room02",
-			"source": "content/Art/Room_template/Past/Big_room02_Past.prefab"
 		},
 		{
 			"type": "reference",

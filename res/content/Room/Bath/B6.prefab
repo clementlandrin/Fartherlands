@@ -59,7 +59,7 @@
 		{
 			"type": "reference",
 			"name": "Big_room",
-			"source": "content/Art/Room_template/Past/Big_room_Past.prefab",
+			"source": "content/Art/Room_template/Generic/Past/Big_room_Past.prefab",
 			"rotationX": 4.3866460495164e-12,
 			"rotationY": 7.598320601940199e-12,
 			"rotationZ": 2.908690948506037e-25

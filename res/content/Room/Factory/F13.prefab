@@ -59,6 +59,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Present",
+					"source": "content/Art/Room_template/Factory/Present/Medium_room_Left_Present.prefab"
 				}
 			]
 		},
@@ -70,21 +75,13 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Past",
+					"source": "content/Art/Room_template/Factory/Past/Medium_room_Left_Past.prefab"
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Medium_room_Left",
-			"source": "content/Art/Room_template/Past/Medium_room_Left_Past.prefab"
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": -0.13,
-			"y": 3.54,
-			"rotationZ": 179.8
 		},
 		{
 			"type": "reference",
@@ -92,7 +89,15 @@
 			"source": "gameplay/door_back.prefab",
 			"x": 7.22,
 			"y": -0.23,
-			"rotationZ": 87.5
+			"rotationZ": 90
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 5.32,
+			"y": 3.04,
+			"rotationZ": 180
 		}
 	]
 }

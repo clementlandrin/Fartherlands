@@ -27,6 +27,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Right_Present",
+					"source": "content/Art/Room_template/Factory/Present/Medium_room_Right_Present.prefab"
 				}
 			]
 		},
@@ -38,6 +43,11 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Right_Past",
+					"source": "content/Art/Room_template/Factory/Past/Medium_room_Right_Past.prefab"
 				}
 			]
 		},
@@ -71,11 +81,6 @@
 					"rotationZ": -90
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Medium_room_Right",
-			"source": "content/Art/Room_template/Past/Medium_room_Right_Past.prefab"
 		}
 	]
 }

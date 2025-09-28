@@ -29,7 +29,7 @@
 				{
 					"type": "reference",
 					"name": "Big_room_Present",
-					"source": "content/Art/Room_template/Present/Big_room_Present.prefab"
+					"source": "content/Art/Room_template/Generic/Present/Big_room_Present.prefab"
 				}
 			]
 		},
@@ -45,7 +45,7 @@
 				{
 					"type": "reference",
 					"name": "Big_room",
-					"source": "content/Art/Room_template/Past/Big_room_Past.prefab"
+					"source": "content/Art/Room_template/Generic/Past/Big_room_Past.prefab"
 				}
 			]
 		},

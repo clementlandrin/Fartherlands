@@ -142,7 +142,7 @@
 		{
 			"type": "reference",
 			"name": "Big_room02",
-			"source": "content/Art/Room_template/Past/Big_room02_Past.prefab"
+			"source": "content/Art/Room_template/Generic/Past/Big_room02_Past.prefab"
 		}
 	]
 }

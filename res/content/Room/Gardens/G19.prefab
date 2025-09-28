@@ -129,6 +129,14 @@
 					"rotationZ": -180
 				}
 			]
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc_garden01",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
+			"rotationX": -3.3233621851413237e-12,
+			"rotationY": 3.283719221011445e-12,
+			"rotationZ": -9.523378840879023e-26
 		}
 	]
 }

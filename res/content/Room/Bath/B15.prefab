@@ -51,7 +51,7 @@
 		{
 			"type": "reference",
 			"name": "Medium_room_Left",
-			"source": "content/Art/Room_template/Past/Medium_room_Left_Past.prefab"
+			"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
 		}
 	]
 }
