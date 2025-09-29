@@ -40,6 +40,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Present",
+					"source": "content/Art/Room_template/Bath/Present/Medium_room_Left_Present.prefab"
 				}
 			]
 		},
@@ -51,13 +56,13 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Past",
+					"source": "content/Art/Room_template/Bath/Past/Medium_room_Left_Past.prefab"
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Medium_room_Left",
-			"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
 		},
 		{
 			"type": "reference",

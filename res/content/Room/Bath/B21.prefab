@@ -27,6 +27,11 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room_Present",
+					"source": "content/Art/Room_template/Bath/Present/Big_room_Present.prefab"
 				}
 			]
 		},
@@ -38,6 +43,11 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room_Past",
+					"source": "content/Art/Room_template/Bath/Past/Big_room_Past.prefab"
 				}
 			]
 		},
@@ -64,11 +74,6 @@
 					"rotationZ": 90
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Big_room",
-			"source": "content/Art/Room_template/Generic/Past/Big_room_Past.prefab"
 		}
 	]
 }
