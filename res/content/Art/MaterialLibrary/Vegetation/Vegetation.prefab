@@ -1,0 +1,71 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "material",
+			"name": "Moss",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "None",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"alphaKill": true
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Vegetation/Moss/Moss_AlbedoAlpha.png",
+			"normalMap": "content/Art/Asset/Vegetation/Moss/Moss_Normal.png",
+			"specularMap": "content/Art/Asset/Vegetation/Moss/Moss_MetallicRoughnessAO.png",
+			"children": [
+				{
+					"type": "shader",
+					"name": "ColorAdd",
+					"source": "h3d.shader.ColorAdd",
+					"props": {
+						"color": [
+							0.4823529411764706,
+							0.5725490196078431,
+							0.3607843137254902
+						]
+					}
+				}
+			]
+		},
+		{
+			"type": "material",
+			"name": "Moss_cards",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "None",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"alphaKill": true
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Vegetation/Moss/Square_tree_AlbedoAlpha.png",
+			"normalMap": "content/Art/Asset/Vegetation/Moss/Square_tree_Normal.png",
+			"specularMap": "content/Art/Asset/Vegetation/Moss/Square_tree_MetallicGlossAO.png",
+			"children": [
+				{
+					"type": "shader",
+					"name": "ColorAdd",
+					"source": "h3d.shader.ColorAdd",
+					"props": {
+						"color": [
+							0.4823529411764706,
+							0.5725490196078431,
+							0.3607843137254902
+						]
+					}
+				}
+			]
+		}
+	]
+}

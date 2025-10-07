@@ -8,7 +8,61 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "model",
+					"name": "wall02",
+					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
+					"x": 1.71,
+					"y": -3.44,
+					"z": 2.21
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": 9.13,
+					"y": 0.02,
+					"scaleX": 3.24,
+					"scaleY": 8.4,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "material",
+							"name": "material",
+							"props": {
+								"Fatherlands": {
+									"mode": "PBR",
+									"blend": "None",
+									"shadows": true,
+									"culling": "Back",
+									"depthTest": "Less",
+									"colorMask": 15,
+									"enableStencil": false
+								}
+							},
+							"refMatLib": "content/Art/MaterialLibrary/Generic/Utilities.prefab/Black_unlit"
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "column04",
+					"source": "content/Art/Asset/Generique/blocs/column04.fbx",
+					"x": -7.53,
+					"y": -3.87
+				},
+				{
+					"type": "model",
+					"name": "column04",
+					"source": "content/Art/Asset/Generique/blocs/column04.fbx",
+					"x": -7.53,
+					"y": 3.64
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -46,6 +100,23 @@
 					"type": "reference",
 					"name": "Medium_room_Left_Present",
 					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Moss02",
+					"source": "content/Art/Asset/Vegetation/Moss/Moss02.prefab",
+					"x": -1.44,
+					"y": -0.41,
+					"z": -0.08
+				},
+				{
+					"type": "reference",
+					"name": "Moss02",
+					"source": "content/Art/Asset/Vegetation/Moss/Moss02.prefab",
+					"x": 1.1,
+					"y": -0.68,
+					"z": 0.01,
+					"rotationZ": 63.5
 				}
 			]
 		},

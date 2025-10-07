@@ -14,7 +14,7 @@
 			"fadeMode": "Smoothstep",
 			"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
 			"rotation": 330,
-			"power": 3.11,
+			"power": 2.5,
 			"sphereRadius": 0.4
 		},
 		{

@@ -70,6 +70,27 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "material",
+			"name": "Black_unlit",
+			"props": {
+				"Fatherlands": {
+					"mode": "BeforeTonemapping",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"color": [
+				0,
+				0,
+				0,
+				1
+			]
 		}
 	]
 }

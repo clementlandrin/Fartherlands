@@ -8,7 +8,48 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "model",
+					"name": "wall04",
+					"source": "content/Art/Asset/Generique/Walls/wall04.fbx",
+					"x": -3.75,
+					"y": 0.32,
+					"z": -2.8
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": -1.77,
+					"y": 5.16,
+					"scaleX": 3.24,
+					"scaleY": 8.4,
+					"rotationZ": 90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "material",
+							"name": "material",
+							"props": {
+								"Fatherlands": {
+									"mode": "PBR",
+									"blend": "None",
+									"shadows": true,
+									"culling": "Back",
+									"depthTest": "Less",
+									"colorMask": 15,
+									"enableStencil": false
+								}
+							},
+							"refMatLib": "content/Art/MaterialLibrary/Generic/Utilities.prefab/Black_unlit"
+						}
+					]
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -38,6 +79,15 @@
 					"type": "reference",
 					"name": "Small_room_Present",
 					"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Moss02",
+					"source": "content/Art/Asset/Vegetation/Moss/Moss02.prefab",
+					"x": 1.24,
+					"y": 0.05,
+					"z": -0.03,
+					"rotationZ": -69.1
 				}
 			]
 		},

@@ -58,6 +58,28 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Moss01",
+					"source": "content/Art/Asset/Vegetation/Moss/Moss01.prefab",
+					"x": -1.32,
+					"y": -2.58
+				},
+				{
+					"type": "reference",
+					"name": "Moss01",
+					"source": "content/Art/Asset/Vegetation/Moss/Moss01.prefab",
+					"x": 0.56,
+					"y": -2.27,
+					"rotationZ": 157.6
+				},
+				{
+					"type": "reference",
+					"name": "Moss01",
+					"source": "content/Art/Asset/Vegetation/Moss/Moss01.prefab",
+					"x": -1.4716,
+					"y": 1.59
 				}
 			]
 		},

@@ -1,0 +1,91 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "model",
+			"name": "Moss_large",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_large.fbx",
+			"x": -0.83,
+			"y": 1.69
+		},
+		{
+			"type": "model",
+			"name": "Moss_little",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_little.fbx"
+		},
+		{
+			"type": "model",
+			"name": "Moss_medium",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_medium.fbx",
+			"x": 0.8392819873927664,
+			"y": 1.0880335415474574
+		},
+		{
+			"type": "model",
+			"name": "Moss_large",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_large.fbx",
+			"x": -2.08,
+			"y": -0.07,
+			"scaleX": 1.21,
+			"scaleY": 1.21,
+			"scaleZ": 1.21
+		},
+		{
+			"type": "model",
+			"name": "Moss_large",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_large.fbx",
+			"x": 0.42,
+			"y": -4.37,
+			"scaleX": 1.48,
+			"scaleY": 1.48,
+			"scaleZ": 1.48,
+			"rotationZ": 120
+		},
+		{
+			"type": "model",
+			"name": "Moss_large",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_large.fbx",
+			"x": -1.3,
+			"y": -2.87,
+			"rotationZ": 165
+		},
+		{
+			"type": "model",
+			"name": "Moss_little",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_little.fbx",
+			"x": -1.66,
+			"y": -1.03,
+			"rotationZ": 165
+		},
+		{
+			"type": "model",
+			"name": "Moss_medium",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_medium.fbx",
+			"x": -2.75,
+			"y": -1.86,
+			"rotationZ": 165
+		},
+		{
+			"type": "model",
+			"name": "Moss_large",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_large.fbx",
+			"x": 0.37,
+			"y": -1.5,
+			"scaleX": 1.21,
+			"scaleY": 1.21,
+			"scaleZ": 1.21,
+			"rotationZ": 165
+		},
+		{
+			"type": "model",
+			"name": "Moss_large",
+			"source": "content/Art/Asset/Vegetation/Moss/Moss_large.fbx",
+			"x": -2.87,
+			"y": 2.69,
+			"scaleX": 1.48,
+			"scaleY": 1.48,
+			"scaleZ": 1.48,
+			"rotationZ": -45
+		}
+	]
+}

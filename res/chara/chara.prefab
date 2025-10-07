@@ -23,7 +23,7 @@
 					"type": "light",
 					"name": "light",
 					"z": 1.96,
-					"power": 0.1,
+					"power": 0.2,
 					"range": 8,
 					"size": 2,
 					"zNear": 0.02

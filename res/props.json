@@ -29,6 +29,10 @@
 		{
 			"name": "Utilities",
 			"path": "content/Art/MaterialLibrary/Generic/Utilities.prefab"
+		},
+		{
+			"name": "Vegetation",
+			"path": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab"
 		}
 	],
 	"sceneeditor.axisToggle": true,
@@ -49,5 +53,6 @@
 	"defaultRenderer": "Fartherlands",
 	"sceneeditor.newrecents": [
 		"material"
-	]
+	],
+	"sceneeditor.selfOnlyTransformsToggle": false
 }

@@ -1,0 +1,14 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"Moss_cards": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Moss_cards"
+			},
+			"Moss": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Moss"
+			}
+		}
+	}
+}
