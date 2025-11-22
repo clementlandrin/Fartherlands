@@ -21,6 +21,10 @@
 			"parts01": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_Joins"
+			},
+			"default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern01_mesh"
 			}
 		}
 	}

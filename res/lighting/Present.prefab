@@ -63,7 +63,7 @@
 					"type": "rfx.sao",
 					"name": "sao",
 					"size": 0.5,
-					"blur": 3.71,
+					"blur": 10,
 					"noiseScale": 1000,
 					"samples": 40,
 					"radius": 0.2,

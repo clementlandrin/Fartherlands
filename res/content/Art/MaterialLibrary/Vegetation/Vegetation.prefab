@@ -66,6 +66,92 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "material",
+			"name": "green",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_MetallicRoughnessAO.png",
+			"color": [
+				0.7137254901960784,
+				0.8862745098039215,
+				0.30196078431372547,
+				1
+			]
+		},
+		{
+			"type": "material",
+			"name": "Tree_Background",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_MetallicRoughnessAO.png",
+			"color": [
+				0.3568627450980392,
+				0.7137254901960784,
+				0.28627450980392155,
+				1
+			]
+		},
+		{
+			"type": "material",
+			"name": "Garden_ground",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_MetallicRoughnessAO.png",
+			"color": [
+				0.8431372549019608,
+				0.8901960784313725,
+				0.3176470588235294,
+				1
+			],
+			"children": [
+				{
+					"type": "shader",
+					"name": "UVTransform",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/UVTransform.shgraph",
+					"props": {
+						"Tiling": 1,
+						"Offset": 0
+					}
+				}
+			]
 		}
 	]
 }

@@ -99,6 +99,10 @@
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_Joins",
 				"__refMode": "modelSpec"
+			},
+			"Garden_ground": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Garden_ground"
 			}
 		}
 	}

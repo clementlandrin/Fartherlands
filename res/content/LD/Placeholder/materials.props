@@ -1,0 +1,28 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"default": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "green"
+			},
+			"tree_forest": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Tree_Background"
+			},
+			"01 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Garden_ground",
+				"colorMask": 15
+			},
+			"02 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Tree_Background"
+			},
+			"01 - Default/exterior_plane_pinetrees.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Tree_Background",
+				"__refMode": "modelSpec"
+			}
+		}
+	}
+}

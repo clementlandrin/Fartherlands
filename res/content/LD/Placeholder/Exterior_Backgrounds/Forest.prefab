@@ -1,0 +1,23 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "Forest",
+			"children": [
+				{
+					"type": "model",
+					"name": "exterior_plane_pinetrees",
+					"source": "content/LD/Placeholder/exterior_plane_pinetrees.fbx",
+					"x": -100.79,
+					"y": -106.29,
+					"z": -150,
+					"scaleX": 0.27,
+					"scaleY": 0.27,
+					"scaleZ": 0.3,
+					"rotationX": -2.7
+				}
+			]
+		}
+	]
+}
