@@ -1,0 +1,1190 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "DepthBlend",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 10,
+			"index": 0
+		},
+		{
+			"id": 10,
+			"name": "EndCamFade",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 20,
+			"index": 1
+		},
+		{
+			"id": 1,
+			"name": "StartCamFade",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 50,
+			"index": 2
+		},
+		{
+			"id": 2,
+			"name": "Mask",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/cirlce_mask.png",
+			"index": 3
+		},
+		{
+			"id": 3,
+			"name": "Noise",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/fog.png",
+			"index": 4
+		},
+		{
+			"id": 4,
+			"name": "Speed_y",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.1,
+			"index": 5
+		},
+		{
+			"id": 5,
+			"name": "Scale",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 6
+		},
+		{
+			"id": 6,
+			"name": "Opacity",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 7
+		},
+		{
+			"id": 7,
+			"name": "Contrast",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 8
+		},
+		{
+			"id": 8,
+			"name": "Mask_Power",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 9
+		},
+		{
+			"id": 9,
+			"name": "Fog_teint",
+			"type": [
+				"TVec",
+				"4,VFloat"
+			],
+			"defaultValue": [
+				0,
+				0,
+				0,
+				1
+			],
+			"index": 10
+		},
+		{
+			"id": 11,
+			"name": "Speed_x",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 11
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 846,
+				"y": 324,
+				"id": 3,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedPosition",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1188,
+				"y": 486,
+				"id": 5,
+				"type": "hrt.shgraph.nodes.Distance",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2790,
+				"y": 234,
+				"id": 7,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_alpha",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 700,
+				"y": 268,
+				"id": 8,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "Depth blend",
+					"width": 1111,
+					"height": 661,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1242,
+				"y": 666,
+				"id": 9,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1476,
+				"y": 450,
+				"id": 10,
+				"type": "hrt.shgraph.nodes.Remap",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 864,
+				"y": 1098,
+				"id": 13,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedPosition",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1188,
+				"y": 1170,
+				"id": 14,
+				"type": "hrt.shgraph.nodes.Distance",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 720,
+				"y": 1044,
+				"id": 15,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "Cam dist",
+					"width": 1129,
+					"height": 661,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1494,
+				"y": 1224,
+				"id": 17,
+				"type": "hrt.shgraph.nodes.Remap",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1206,
+				"y": 1458,
+				"id": 19,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 1,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1925.1871485044244,
+				"y": 939.349597486999,
+				"id": 20,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 774,
+				"y": -162,
+				"id": 21,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 2,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1152,
+				"y": -198,
+				"id": 22,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2448,
+				"y": 54,
+				"id": 23,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1656,
+				"y": 450,
+				"id": 24,
+				"type": "hrt.shgraph.nodes.Clamp",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1656,
+				"y": 1224,
+				"id": 25,
+				"type": "hrt.shgraph.nodes.Clamp",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 738,
+				"y": -1818,
+				"id": 26,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 3,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 990,
+				"y": -1710,
+				"id": 27,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -180,
+				"y": -1998,
+				"id": 28,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -180,
+				"y": -1728,
+				"id": 30,
+				"type": "hrt.shgraph.ShaderGlobalInput",
+				"properties": {
+					"variableIdx": 0,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 162,
+				"y": -1746,
+				"id": 31,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -180,
+				"y": -1476,
+				"id": 32,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 4,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 342,
+				"y": -1890,
+				"id": 33,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 324,
+				"y": -1728,
+				"id": 34,
+				"type": "hrt.shgraph.nodes.Vec2",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2178,
+				"y": -360,
+				"id": 35,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -324,
+				"y": -2088,
+				"id": 36,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "Scroll",
+					"width": 855,
+					"height": 799,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 630,
+				"y": -234,
+				"id": 37,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "Alpha mask",
+					"width": 778,
+					"height": 383,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 648,
+				"y": -1908,
+				"id": 38,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "Noise",
+					"width": 1616,
+					"height": 596,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 846,
+				"y": 1386,
+				"id": 39,
+				"type": "hrt.shgraph.ShaderGlobalInput",
+				"properties": {
+					"variableIdx": 2,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 36,
+				"y": -1944,
+				"id": 40,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 5,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 216,
+				"y": -1980,
+				"id": 41,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 738,
+				"y": 648,
+				"id": 43,
+				"type": "hrt.shgraph.nodes.SceneDepth",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 950.2912558072846,
+				"y": 645.6624397188015,
+				"id": 44,
+				"type": "hrt.shgraph.nodes.SceneDepthToWorld",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2394,
+				"y": 342,
+				"id": 45,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 6,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2649.530468930798,
+				"y": 251.10717842672125,
+				"id": 46,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1440,
+				"y": -1674,
+				"id": 47,
+				"type": "hrt.shgraph.nodes.Pow",
+				"properties": {
+					"defaults": {
+						"b": 5
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1224,
+				"y": -1512,
+				"id": 49,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 7,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1656,
+				"y": -162,
+				"id": 50,
+				"type": "hrt.shgraph.nodes.Pow",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1479.5430465993647,
+				"y": -110.10699117073628,
+				"id": 51,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 8,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1836,
+				"y": -1548,
+				"id": 52,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1638,
+				"y": -1728,
+				"id": 53,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 9,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2304,
+				"y": -360,
+				"id": 56,
+				"type": "hrt.shgraph.nodes.Clamp",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1206,
+				"y": 1350,
+				"id": 58,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 10,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -360,
+				"y": -630,
+				"id": 59,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -360,
+				"y": -360,
+				"id": 60,
+				"type": "hrt.shgraph.ShaderGlobalInput",
+				"properties": {
+					"variableIdx": 0,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -18,
+				"y": -378,
+				"id": 61,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 162,
+				"y": -522,
+				"id": 63,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 144,
+				"y": -360,
+				"id": 64,
+				"type": "hrt.shgraph.nodes.Vec2",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -144,
+				"y": -576,
+				"id": 65,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 5,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 36,
+				"y": -612,
+				"id": 66,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -443.68944934147,
+				"y": -109.39224045042099,
+				"id": 67,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 11,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 774,
+				"y": -1080,
+				"id": 68,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 3,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1026,
+				"y": -972,
+				"id": 69,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1476,
+				"y": -936,
+				"id": 70,
+				"type": "hrt.shgraph.nodes.Pow",
+				"properties": {
+					"defaults": {
+						"b": 5
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1260,
+				"y": -774,
+				"id": 71,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 7,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1872,
+				"y": -810,
+				"id": 72,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1674,
+				"y": -990,
+				"id": 73,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 9,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2322,
+				"y": -1062,
+				"id": 74,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 3,
+				"nameOutput": "output",
+				"inputNodeId": 5,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 44,
+				"nameOutput": "output",
+				"inputNodeId": 5,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 46,
+				"nameOutput": "output",
+				"inputNodeId": 7,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 5,
+				"nameOutput": "output",
+				"inputNodeId": 10,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 9,
+				"nameOutput": "DepthBlend",
+				"inputNodeId": 10,
+				"nameInput": "inMax",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 13,
+				"nameOutput": "output",
+				"inputNodeId": 14,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 39,
+				"nameOutput": "output",
+				"inputNodeId": 14,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 14,
+				"nameOutput": "output",
+				"inputNodeId": 17,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 58,
+				"nameOutput": "EndCamFade",
+				"inputNodeId": 17,
+				"nameInput": "inMin",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 19,
+				"nameOutput": "StartCamFade",
+				"inputNodeId": 17,
+				"nameInput": "inMax",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 24,
+				"nameOutput": "output",
+				"inputNodeId": 20,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 25,
+				"nameOutput": "output",
+				"inputNodeId": 20,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 21,
+				"nameOutput": "Mask",
+				"inputNodeId": 22,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 56,
+				"nameOutput": "output",
+				"inputNodeId": 23,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 20,
+				"nameOutput": "output",
+				"inputNodeId": 23,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 10,
+				"nameOutput": "output",
+				"inputNodeId": 24,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 17,
+				"nameOutput": "output",
+				"inputNodeId": 25,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 26,
+				"nameOutput": "Noise",
+				"inputNodeId": 27,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 33,
+				"nameOutput": "output",
+				"inputNodeId": 27,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 30,
+				"nameOutput": "output",
+				"inputNodeId": 31,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 32,
+				"nameOutput": "Speed_y",
+				"inputNodeId": 31,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 41,
+				"nameOutput": "output",
+				"inputNodeId": 33,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 34,
+				"nameOutput": "output",
+				"inputNodeId": 33,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 31,
+				"nameOutput": "output",
+				"inputNodeId": 34,
+				"nameInput": "y",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 74,
+				"nameOutput": "output",
+				"inputNodeId": 35,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 50,
+				"nameOutput": "output",
+				"inputNodeId": 35,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 28,
+				"nameOutput": "output",
+				"inputNodeId": 41,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 40,
+				"nameOutput": "Scale",
+				"inputNodeId": 41,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 43,
+				"nameOutput": "output",
+				"inputNodeId": 44,
+				"nameInput": "depth",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "output",
+				"inputNodeId": 46,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 45,
+				"nameOutput": "Opacity",
+				"inputNodeId": 46,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 27,
+				"nameOutput": "RGBA",
+				"inputNodeId": 47,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 49,
+				"nameOutput": "Contrast",
+				"inputNodeId": 47,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 22,
+				"nameOutput": "RGBA",
+				"inputNodeId": 50,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 51,
+				"nameOutput": "Mask_Power",
+				"inputNodeId": 50,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 53,
+				"nameOutput": "Fog_teint",
+				"inputNodeId": 52,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 47,
+				"nameOutput": "output",
+				"inputNodeId": 52,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 35,
+				"nameOutput": "output",
+				"inputNodeId": 56,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 60,
+				"nameOutput": "output",
+				"inputNodeId": 61,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 67,
+				"nameOutput": "Speed_x",
+				"inputNodeId": 61,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 66,
+				"nameOutput": "output",
+				"inputNodeId": 63,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 64,
+				"nameOutput": "output",
+				"inputNodeId": 63,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 61,
+				"nameOutput": "output",
+				"inputNodeId": 64,
+				"nameInput": "x",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 59,
+				"nameOutput": "output",
+				"inputNodeId": 66,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 65,
+				"nameOutput": "Scale",
+				"inputNodeId": 66,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 68,
+				"nameOutput": "Noise",
+				"inputNodeId": 69,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 63,
+				"nameOutput": "output",
+				"inputNodeId": 69,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 69,
+				"nameOutput": "RGBA",
+				"inputNodeId": 70,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 71,
+				"nameOutput": "Contrast",
+				"inputNodeId": 70,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 53,
+				"nameOutput": "Fog_teint",
+				"inputNodeId": 72,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 70,
+				"nameOutput": "output",
+				"inputNodeId": 72,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 52,
+				"nameOutput": "output",
+				"inputNodeId": 74,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 72,
+				"nameOutput": "output",
+				"inputNodeId": 74,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			}
+		]
+	}
+}

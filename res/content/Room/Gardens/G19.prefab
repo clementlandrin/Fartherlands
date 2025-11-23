@@ -7,8 +7,8 @@
 			"children": [
 				{
 					"type": "reference",
-					"name": "Plains",
-					"source": "lighting/Exterior/Plains.prefab",
+					"name": "Overcast",
+					"source": "lighting/Exterior/Overcast.prefab",
 					"editMode": "Edit"
 				},
 				{
@@ -419,11 +419,6 @@
 			]
 		},
 		{
-			"type": "reference",
-			"name": "Plains",
-			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab"
-		},
-		{
 			"type": "model",
 			"name": "basic_bloc02",
 			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
@@ -571,6 +566,11 @@
 			"x": -12.48,
 			"y": 7.06,
 			"z": -3.06
+		},
+		{
+			"type": "reference",
+			"name": "Forest",
+			"source": "content/LD/Placeholder/Exterior_Backgrounds/Forest.prefab"
 		}
 	]
 }

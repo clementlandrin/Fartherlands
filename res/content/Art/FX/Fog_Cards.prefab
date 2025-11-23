@@ -1,0 +1,59 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"scaleX": 50,
+			"scaleY": 50,
+			"scaleZ": 50,
+			"kind": 0,
+			"args": [
+				0
+			],
+			"children": [
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "BeforeTonemapping",
+							"blend": "Alpha",
+							"shadows": false,
+							"culling": "None",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"children": [
+						{
+							"type": "shader",
+							"name": "CardFog",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/CardFog.shgraph",
+							"props": {
+								"DepthBlend": 11.36,
+								"EndCamFade": 0,
+								"StartCamFade": 0,
+								"Mask": "content/Art/MaterialLibrary/Textures/Utilities/fog_cards_mask.png",
+								"Noise": "content/Art/MaterialLibrary/Textures/Utilities/fog_cards.png",
+								"Speed_y": 0.1,
+								"Scale": 2,
+								"Opacity": 1,
+								"Contrast": 2,
+								"Mask_Power": 0.52,
+								"Fog_teint": [
+									1,
+									1,
+									1,
+									1
+								],
+								"Speed_x": 0.07
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"x": -126.96,
+			"y": -147.9,
+			"z": -166.82,
+			"scaleX": 0.69,
+			"scaleY": 0.69,
+			"scaleZ": 0.69,
+			"children": [
+				{
+					"type": "model",
+					"name": "alazar_mountain02",
+					"source": "content/LD/Placeholder/mountains/alazar_mountain02.FBX",
+					"x": 2.778,
+					"y": 28.008,
+					"z": -2.23,
+					"scaleX": 0.1,
+					"scaleY": 0.1,
+					"scaleZ": 0.09
+				},
+				{
+					"type": "model",
+					"name": "alazar_mountain02",
+					"source": "content/LD/Placeholder/mountains/alazar_mountain02.FBX",
+					"x": 28.058,
+					"y": 9.828,
+					"z": 1.44,
+					"scaleX": 0.1,
+					"scaleY": 0.1,
+					"scaleZ": 0.09,
+					"rotationX": 8.4,
+					"rotationY": -9.7,
+					"rotationZ": -74.8
+				},
+				{
+					"type": "model",
+					"name": "alazar_mountain",
+					"source": "content/LD/Placeholder/mountains/alazar_mountain.FBX",
+					"x": 0.948,
+					"y": -8.012,
+					"z": -0.46,
+					"scaleX": 0.11,
+					"scaleY": 0.11,
+					"scaleZ": 0.07
+				},
+				{
+					"type": "model",
+					"name": "alazar_mountain",
+					"source": "content/LD/Placeholder/mountains/alazar_mountain.FBX",
+					"x": -5.192,
+					"y": -27.932,
+					"z": 3.17,
+					"scaleX": 0.11,
+					"scaleY": 0.11,
+					"scaleZ": 0.07,
+					"rotationX": 9.9,
+					"rotationY": 11.2,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "alazar_mountain",
+					"source": "content/LD/Placeholder/mountains/alazar_mountain.FBX",
+					"x": -26.592,
+					"y": -1.892,
+					"z": -1.92,
+					"scaleX": 0.11,
+					"scaleY": 0.11,
+					"scaleZ": 0.07,
+					"rotationX": 8.4,
+					"rotationY": -9.7,
+					"rotationZ": -74.8
+				}
+			]
+		}
+	]
+}
