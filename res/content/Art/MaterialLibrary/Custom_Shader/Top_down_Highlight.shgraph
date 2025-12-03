@@ -87,7 +87,7 @@
 				"id": 3,
 				"type": "hrt.shgraph.ShaderInput",
 				"properties": {
-					"variable": "normal",
+					"variable": "transformedNormal",
 					"nameOverride": null,
 					"showPreview": true
 				}

@@ -7,8 +7,8 @@
 			"children": [
 				{
 					"type": "reference",
-					"name": "Overcast",
-					"source": "lighting/Exterior/Overcast.prefab",
+					"name": "Plains",
+					"source": "lighting/Exterior/Plains.prefab",
 					"editMode": "Edit"
 				},
 				{
@@ -569,8 +569,9 @@
 		},
 		{
 			"type": "reference",
-			"name": "Forest",
-			"source": "content/LD/Placeholder/Exterior_Backgrounds/Forest.prefab"
+			"name": "Plains",
+			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab",
+			"scaleZ": 0.9999999999999999
 		}
 	]
 }

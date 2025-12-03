@@ -103,6 +103,10 @@
 			"Garden_ground": {
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
 				"name": "Garden_ground"
+			},
+			"Grass": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Grass"
 			}
 		}
 	}

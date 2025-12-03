@@ -36,10 +36,19 @@
 			},
 			"children": [
 				{
+					"type": "rfx.bloom",
+					"name": "bloom",
+					"size": 0.5,
+					"threshold": 0.16,
+					"intensity": 0.2,
+					"blur": 10,
+					"saturation": 1
+				},
+				{
 					"type": "environment",
 					"name": "environment",
 					"power": 1.4,
-					"rotation": 100.91,
+					"rotation": 117.27,
 					"sampleBits": 16,
 					"diffSize": 512,
 					"specSize": 64,
@@ -52,8 +61,8 @@
 					"blur": 10,
 					"noiseScale": 1000,
 					"samples": 40,
-					"radius": 5,
-					"intensity": 12,
+					"radius": 20,
+					"intensity": 40,
 					"bias": 0.1,
 					"microIntensity": 0.3,
 					"USE_FADE": true,
@@ -111,7 +120,7 @@
 					"rotationZ": 130.6,
 					"kind": "Directional",
 					"color": 16764028,
-					"power": 2.4,
+					"power": 2.2,
 					"range": 10,
 					"zNear": 0.02,
 					"shadows": {

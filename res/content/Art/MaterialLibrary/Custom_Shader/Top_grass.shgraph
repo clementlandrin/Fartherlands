@@ -1,0 +1,131 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Gradient",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Vegetation/Grass_gradient_Albedo.png",
+			"index": 0
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 432,
+				"y": 360,
+				"id": 1,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "pixelColor",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 936,
+				"y": 360,
+				"id": 2,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 270,
+				"y": 18,
+				"id": 3,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 630,
+				"y": 108,
+				"id": 4,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 234,
+				"y": 216,
+				"id": 5,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1206,
+				"y": 380,
+				"id": 6,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_color",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 4,
+				"nameOutput": "RGBA",
+				"inputNodeId": 2,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 1,
+				"nameOutput": "output",
+				"inputNodeId": 2,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 3,
+				"nameOutput": "Gradient",
+				"inputNodeId": 4,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 5,
+				"nameOutput": "output",
+				"inputNodeId": 4,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "output",
+				"inputNodeId": 6,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			}
+		]
+	}
+}

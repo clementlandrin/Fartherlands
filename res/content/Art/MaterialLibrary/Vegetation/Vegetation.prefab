@@ -86,9 +86,9 @@
 			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Normal.png",
 			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_MetallicRoughnessAO.png",
 			"color": [
-				0.7137254901960784,
-				0.8862745098039215,
-				0.30196078431372547,
+				0.6823529411764706,
+				0.8274509803921568,
+				0.3411764705882353,
 				1
 			]
 		},
@@ -111,9 +111,9 @@
 			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Normal.png",
 			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_MetallicRoughnessAO.png",
 			"color": [
-				0.3568627450980392,
-				0.7137254901960784,
-				0.28627450980392155,
+				0.3803921568627451,
+				0.6274509803921569,
+				0.3333333333333333,
 				1
 			]
 		},
@@ -132,13 +132,12 @@
 					"textureWrap": true
 				}
 			},
-			"diffuseMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Albedo.png",
-			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_Normal.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground02_Normal.png",
 			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_MetallicRoughnessAO.png",
 			"color": [
-				0.8431372549019608,
-				0.8901960784313725,
-				0.3176470588235294,
+				0.6313725490196078,
+				0.6666666666666666,
+				0.2392156862745098,
 				1
 			],
 			"children": [
@@ -149,6 +148,38 @@
 					"props": {
 						"Tiling": 1,
 						"Offset": 0
+					}
+				}
+			]
+		},
+		{
+			"type": "material",
+			"name": "Grass",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": false,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true
+				}
+			},
+			"color": [
+				0.6313725490196078,
+				0.6666666666666666,
+				0.2392156862745098,
+				1
+			],
+			"children": [
+				{
+					"type": "shader",
+					"name": "Top_grass",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Top_grass.shgraph",
+					"props": {
+						"Gradient": "content/Art/MaterialLibrary/Textures/Vegetation/Grass_gradient_Albedo.png"
 					}
 				}
 			]
