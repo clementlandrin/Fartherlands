@@ -128,11 +128,11 @@
 						"size": 4096,
 						"radius": 0,
 						"quality": 1,
-						"bias": 0.01,
+						"bias": 0.03,
 						"samplingMode": {
 							"kind": "PCF",
 							"quality": 3,
-							"scale": 4.53,
+							"scale": 3.5,
 							"bias": 0.1
 						}
 					}
