@@ -405,6 +405,31 @@
 					"typeStr": "2",
 					"name": "hiddenTeleport",
 					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "ambients",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "element@props@ambients",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "13",
+					"name": "presentRenderProps",
+					"opt": null
+				},
+				{
+					"typeStr": "13",
+					"name": "pastRenderProps",
+					"opt": null
 				}
 			]
 		}

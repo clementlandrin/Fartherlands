@@ -29,10 +29,20 @@ class Room extends Entity {
 		if ( camera != null )
 			camera.applyTo(game.s3d.camera);
 
-		var presentProps = presentRenderProps != null ?  presentRenderProps : hxd.Res.lighting._default.load().clone().find(hrt.prefab.RenderProps);
+		
+		var presentProps : hrt.prefab.RenderProps = null;
+		var pastProps : hrt.prefab.RenderProps = null;
+		if (inf?.ambients != null) {
+			var a = inf.ambients[hxd.Math.round(hxd.Math.random(inf.ambients.length - 1))];
+			presentProps = hxd.Res.load(a.presentRenderProps).toPrefab().load().find(hrt.prefab.RenderProps);
+			pastProps = hxd.Res.load(a.pastRenderProps).toPrefab().load().find(hrt.prefab.RenderProps);
+		}
+		else {
+			presentProps = presentRenderProps != null ?  presentRenderProps : hxd.Res.lighting._default.load().clone().find(hrt.prefab.RenderProps);
+			pastProps = pastRenderProps != null ?  pastRenderProps : hxd.Res.lighting._default.load().clone().find(hrt.prefab.RenderProps);
+		}
+		
 		game.applyRenderer(presentProps, Present);
-
-		var pastProps = pastRenderProps != null ?  pastRenderProps : hxd.Res.lighting._default.load().clone().find(hrt.prefab.RenderProps);
 		game.applyRenderer(pastProps, Past);
 	}
 

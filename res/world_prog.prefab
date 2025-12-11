@@ -183,6 +183,13 @@
 			"x": -13.46,
 			"y": -49.47,
 			"z": 26.01
+		},
+		{
+			"type": "reference",
+			"name": "Exterior",
+			"source": "content/Room/Prog_Test/Exterior.prefab",
+			"x": 14.95,
+			"z": 25.84
 		}
 	]
 }
