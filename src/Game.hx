@@ -294,6 +294,9 @@ class Game extends hxd.App {
 			case Chest:
 				var c = new ent.Chest();
 				e = c;
+			case Recharge:
+				var c = new ent.Recharge();
+				e = c;
 			case SeedPot:
 				var sp = new ent.SeedPot();
 				e = sp;

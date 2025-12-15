@@ -1,0 +1,52 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "box",
+			"name": "collision",
+			"props": {
+				"id": "P",
+				"$cdbtype": "element",
+				"type": 10
+			},
+			"children": [
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"PBR": {
+							"mode": "PBR",
+							"blend": "Alpha",
+							"shadows": false,
+							"culling": "None",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						},
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						},
+						"Default": {
+							"kind": "Opaque",
+							"shadows": true,
+							"culling": true,
+							"light": true
+						}
+					},
+					"color": [
+						1,
+						0.9411764705882353,
+						0.00784313725490196,
+						1
+					]
+				}
+			]
+		}
+	]
+}

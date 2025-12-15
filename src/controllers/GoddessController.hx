@@ -2,6 +2,7 @@ package controllers;
 
 @:access(ent.Goddess)
 class GoddessController extends PlayerController {
+	public var sphereRemainingTime = Const.get(SphereMaxTime);
 
 	function getGoddess() {
 		return cast(player, ent.Goddess);
@@ -21,7 +22,7 @@ class GoddessController extends PlayerController {
 		if ( !goddess.unlockedSkill )
 			return;
 		var sphereIncrease = dt * Const.get(SphereMaxRadius) / Const.get(SphereTransitionDuration);
-		if ( hxd.Key.isPressed(hxd.Key.SPACE) ) {
+		if ( hxd.Key.isPressed(hxd.Key.SPACE) && goddess.getSphereRemainingTime() > 0) {
 			goddess.sphereActive = !goddess.sphereActive;
 		}
 		if ( goddess.sphereActive ) {
@@ -29,8 +30,8 @@ class GoddessController extends PlayerController {
 		} else {
 			goddess.temporalRadius -= sphereIncrease;
 		}
-		goddess.temporalRadius = hxd.Math.clamp(goddess.temporalRadius, 0.0, Const.get(SphereMaxRadius));
 
+		goddess.temporalRadius = hxd.Math.clamp(goddess.temporalRadius, 0.0, Const.get(SphereMaxRadius));
 		goddess.temporalVisual.setScale(goddess.temporalRadius);
 	}
 }

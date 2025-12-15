@@ -19,7 +19,8 @@
 					"e": 0.14,
 					"forceDirectDiscard": false,
 					"skyColor": 0
-				}
+				},
+				"Default": {}
 			},
 			"children": [
 				{
@@ -189,6 +190,13 @@
 			"name": "Exterior",
 			"source": "content/Room/Prog_Test/Exterior.prefab",
 			"x": 14.95,
+			"z": 25.84
+		},
+		{
+			"type": "reference",
+			"name": "Recharge",
+			"source": "content/Room/Prog_Test/Recharge.prefab",
+			"x": 25.93,
 			"z": 25.84
 		}
 	]

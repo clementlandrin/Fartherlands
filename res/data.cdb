@@ -10,7 +10,7 @@
 					"scope": null
 				},
 				{
-					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator",
+					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator,Recharge",
 					"name": "type",
 					"opt": false
 				},
@@ -79,6 +79,10 @@
 					"id": "SphereColor",
 					"value": 0,
 					"color": 4183295
+				},
+				{
+					"id": "SphereMaxTime",
+					"value": 5
 				},
 				{
 					"id": "ClimbSpeed",

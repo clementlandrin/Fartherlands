@@ -1,0 +1,218 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab",
+			"editMode": "Edit"
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"scaleX": 7.5,
+			"scaleY": 15,
+			"scaleZ": 9.72,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"x": -3.75,
+			"z": 3,
+			"scaleX": 6,
+			"scaleY": 15,
+			"scaleZ": 9.72,
+			"rotationY": 90,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"props": {
+				"id": "Start_polygon",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"y": -7.5,
+			"z": 3,
+			"scaleX": 6,
+			"scaleY": 7.5,
+			"scaleZ": 9.72,
+			"rotationX": -90,
+			"rotationY": 90,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "object",
+			"name": "present",
+			"x": 1.344,
+			"y": 0.002,
+			"children": [
+				{
+					"type": "reference",
+					"name": "recharge",
+					"source": "gameplay/recharge.prefab"
+				},
+				{
+					"type": "renderProps",
+					"name": "renderProps",
+					"props": {
+						"PBR": {
+							"mode": "Pbr",
+							"emissive": 1,
+							"exposure": 0,
+							"sky": "Background",
+							"tone": "Linear",
+							"occlusion": 1,
+							"a": 2.51,
+							"b": 0.03,
+							"c": 2.43,
+							"d": 0.59,
+							"e": 0.14
+						},
+						"Default": {}
+					},
+					"children": [
+						{
+							"type": "light",
+							"name": "light",
+							"rotationY": 89.9,
+							"kind": "Directional",
+							"color": 16711680,
+							"range": 10,
+							"zNear": 0.02
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"x": 1.344,
+			"y": 0.002,
+			"children": [
+				{
+					"type": "renderProps",
+					"name": "renderProps",
+					"props": {
+						"PBR": {
+							"mode": "Pbr",
+							"emissive": 1,
+							"exposure": 0,
+							"sky": "Background",
+							"tone": "Linear",
+							"occlusion": 1,
+							"a": 2.51,
+							"b": 0.03,
+							"c": 2.43,
+							"d": 0.59,
+							"e": 0.14
+						},
+						"Default": {}
+					},
+					"children": [
+						{
+							"type": "light",
+							"name": "light",
+							"rotationY": 62.6,
+							"rotationZ": 15.7,
+							"kind": "Directional",
+							"color": 12543,
+							"power": 2.58,
+							"range": 10,
+							"zNear": 0.02,
+							"shadows": {
+								"mode": "Dynamic",
+								"size": 4096,
+								"radius": 0,
+								"quality": 1,
+								"bias": 0.01,
+								"samplingMode": {
+									"kind": "PCF",
+									"quality": 1,
+									"scale": 0.5,
+									"bias": 0.1
+								}
+							}
+						},
+						{
+							"type": "rfx.genFog",
+							"name": "genFog",
+							"startDistance": 5.3,
+							"endDistance": 22.73,
+							"distanceOpacity": 0.74,
+							"startHeight": 100,
+							"endOpacity": 1,
+							"startColor": 16765440,
+							"endColor": 393471,
+							"renderMode": "AfterTonemapping"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"x": -3.64,
+					"y": -2.23,
+					"rotationZ": -90
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"enabled": false,
+					"x": 3.89,
+					"y": -2.24,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"enabled": false,
+					"x": 0.8,
+					"y": -7.61
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"enabled": false,
+					"x": 0.8,
+					"y": 7.38,
+					"rotationZ": -180
+				}
+			]
+		}
+	]
+}

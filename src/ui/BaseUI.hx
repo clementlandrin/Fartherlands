@@ -33,6 +33,7 @@ class BaseUI {
 		style.addObject(root);
 
 		root.addChild(new ui.Inventory());
+		root.addChild(new ui.Sphere());
 		
 		loadStyle();
 	}

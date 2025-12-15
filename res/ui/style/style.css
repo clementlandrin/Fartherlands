@@ -43,9 +43,19 @@ knowledge-window knowledgeComp.discovered text {
 }
 inventory {
   margin: 30;
-  align: bottom right;
-  background: #000000 0.5;
   padding: 20;
   content-align: middle middle;
+  align: bottom right;
+  background: #000000 0.5;
+}
+sphere {
+  margin: 20;
+  align: bottom left;
+  content-align: middle middle;
+  background: #000000 0.5;
+}
+sphere bitmap {
+  height: 100;
+  width: 30;
 }
 /*# sourceMappingURL=./style.css.map */

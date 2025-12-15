@@ -7,6 +7,7 @@ class Goddess extends Entity {
 	var temporalVisual : h3d.scene.Object;
 	var temporalRadius : Float = 0.0;
 	var sphereActive : Bool = false;
+	var sphereRemainingTime : Float;
 	var idle = false;
 
 	override function start() {
@@ -38,6 +39,8 @@ class Goddess extends Entity {
 		temporalVisual.followPositionOnly = true;
 		temporalVisual.follow = chara.find(o -> o.name == "sphereCenter" ? o : null);
 		temporalVisual.setScale(temporalRadius);
+
+		sphereRemainingTime = Const.get(SphereMaxTime);
 	}
 
 	public function getTemporalRadius() {
@@ -48,6 +51,13 @@ class Goddess extends Entity {
 		return temporalVisual.getAbsPos().getPosition();
 	}
 
+	public function getSphereRemainingTime() {
+		return sphereRemainingTime;
+	}
+	public function resetSphereRemainingTime() {
+		sphereRemainingTime = Const.get(SphereMaxTime);
+	}
+
 	override function canBeTp() {
 		return true;
 	}
@@ -56,6 +66,10 @@ class Goddess extends Entity {
 		super.update(dt);
 
 		timeMode = sphereActive ? Past : Present;
+		if (sphereActive)
+			sphereRemainingTime = hxd.Math.max(0, sphereRemainingTime - dt);
+		if (sphereRemainingTime == 0)
+			sphereActive = false;
 	}
 
 	override function setMode(mode : Game.TimeMode) {
