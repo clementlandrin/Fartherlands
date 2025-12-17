@@ -38,7 +38,7 @@
 				{
 					"type": "environment",
 					"name": "environment",
-					"power": 1.09,
+					"power": 1.1,
 					"sampleBits": 16,
 					"diffSize": 16,
 					"specSize": 64,

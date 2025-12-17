@@ -6,6 +6,12 @@
 			"name": "present",
 			"children": [
 				{
+					"type": "reference",
+					"name": "Day01",
+					"source": "lighting/Exterior/Day01.prefab",
+					"editMode": "Edit"
+				},
+				{
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
@@ -566,12 +572,6 @@
 			"type": "reference",
 			"name": "Plains",
 			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab"
-		},
-		{
-			"type": "reference",
-			"name": "Overcast",
-			"source": "lighting/Exterior/Overcast.prefab",
-			"editMode": "Edit"
 		}
 	]
 }
