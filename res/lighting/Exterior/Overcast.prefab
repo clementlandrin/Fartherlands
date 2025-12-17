@@ -64,12 +64,11 @@
 				{
 					"type": "environment",
 					"name": "environment",
-					"power": 1.76,
 					"sampleBits": 16,
 					"diffSize": 16,
 					"specSize": 64,
 					"ignoredSpecLevels": 3,
-					"sourceMapPath": "content/Art/Envmap/rain.hdr"
+					"sourceMapPath": "content/Art/Envmap/Overcast.hdr"
 				},
 				{
 					"type": "rfx.sao",
@@ -102,6 +101,7 @@
 					"type": "rfx.volumetricLighting",
 					"name": "volumetricLighting",
 					"AFTER_FX": true,
+					"color": 13097440,
 					"steps": 40,
 					"blur": 5,
 					"endDistance": 0,
@@ -111,7 +111,7 @@
 					"noisePersistence": 1,
 					"noiseTurmoil": 0.1,
 					"noiseOctave": 0,
-					"fogDensity": 1.64,
+					"fogDensity": 1.2,
 					"fogUseNoise": 0,
 					"fogHeightFalloff": 0,
 					"fogEnvPower": 2,
@@ -133,9 +133,22 @@
 					"rotationY": 112.7,
 					"rotationZ": -12.3,
 					"kind": "Directional",
-					"power": 1.44,
+					"power": 0.98,
 					"range": 10,
-					"zNear": 0.02
+					"zNear": 0.02,
+					"shadows": {
+						"mode": "Dynamic",
+						"size": 4096,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.03,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 3,
+							"scale": 4.68,
+							"bias": 0.1
+						}
+					}
 				},
 				{
 					"type": "rfx.distanceBlur",

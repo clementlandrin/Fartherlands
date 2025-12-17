@@ -1,0 +1,40 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "material",
+			"name": "Ocean",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true
+				}
+			},
+			"normalMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_MetallicRoughnessAO.png",
+			"color": [
+				0.043137254901960784,
+				0.44705882352941173,
+				0.615686274509804,
+				1
+			],
+			"children": [
+				{
+					"type": "shader",
+					"name": "UVTransform",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/UVTransform.shgraph",
+					"props": {
+						"Tiling": 10,
+						"Offset": 10
+					}
+				}
+			]
+		}
+	]
+}

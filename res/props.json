@@ -33,10 +33,14 @@
 		{
 			"name": "Vegetation",
 			"path": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab"
+		},
+		{
+			"name": "Exterior",
+			"path": "content/Art/MaterialLibrary/Exterior/Background.prefab"
 		}
 	],
 	"sceneeditor.axisToggle": true,
-	"sceneeditor.showViewportOverlays": false,
+	"sceneeditor.showViewportOverlays": true,
 	"sceneeditor.gridToggle": false,
 	"sceneeditor.jointsToggle": false,
 	"sceneeditor.colliderToggle": false,
@@ -54,5 +58,10 @@
 	"sceneeditor.newrecents": [
 		"material"
 	],
-	"sceneeditor.selfOnlyTransformsToggle": false
+	"sceneeditor.selfOnlyTransformsToggle": false,
+	"sceneeditor.localTransformsToggle": false,
+	"sceneeditor.showOutlines": true,
+	"sceneeditor.showOtherGuides": true,
+	"sceneeditor.snapToGrid": true,
+	"sceneeditor.show-compressed": true
 }

@@ -125,20 +125,20 @@
 				"props": {
 					"ambients": [
 						{
-							"presentRenderProps": "lighting/Exterior/Forest.prefab",
-							"pastRenderProps": "lighting/Exterior/Forest.prefab"
+							"presentRenderProps": "lighting/Exterior/Day01.prefab",
+							"pastRenderProps": "lighting/Exterior/Day01.prefab"
 						},
 						{
 							"presentRenderProps": "lighting/Exterior/Mist.prefab",
 							"pastRenderProps": "lighting/Exterior/Mist.prefab"
 						},
 						{
-							"presentRenderProps": "lighting/Exterior/Mountains.prefab",
-							"pastRenderProps": "lighting/Exterior/Mountains.prefab"
+							"presentRenderProps": "lighting/Exterior/Cold.prefab",
+							"pastRenderProps": "lighting/Exterior/Cold.prefab"
 						},
 						{
-							"presentRenderProps": "lighting/Exterior/Plains.prefab",
-							"pastRenderProps": "lighting/Exterior/Plains.prefab"
+							"presentRenderProps": "lighting/Exterior/Day02.prefab",
+							"pastRenderProps": "lighting/Exterior/Day02.prefab"
 						}
 					]
 				}

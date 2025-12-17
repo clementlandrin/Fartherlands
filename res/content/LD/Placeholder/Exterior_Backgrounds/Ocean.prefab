@@ -1,0 +1,16 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "model",
+			"name": "Ocean",
+			"source": "content/Art/Asset/Exterior/Ocean.fbx",
+			"x": -103.88,
+			"y": -124.05,
+			"z": -166.66,
+			"scaleX": 1.44,
+			"scaleY": 1.44,
+			"scaleZ": 1.44
+		}
+	]
+}

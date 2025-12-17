@@ -64,12 +64,12 @@
 				{
 					"type": "environment",
 					"name": "environment",
-					"power": 1.53,
+					"power": 1.1,
 					"sampleBits": 16,
 					"diffSize": 16,
 					"specSize": 64,
 					"ignoredSpecLevels": 3,
-					"sourceMapPath": "content/Art/Envmap/test_sky_J.hdr"
+					"sourceMapPath": "content/Art/Envmap/Mist.hdr"
 				},
 				{
 					"type": "rfx.sao",

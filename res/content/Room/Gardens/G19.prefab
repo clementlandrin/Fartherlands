@@ -6,12 +6,6 @@
 			"name": "present",
 			"children": [
 				{
-					"type": "reference",
-					"name": "Plains",
-					"source": "lighting/Exterior/Plains.prefab",
-					"editMode": "Edit"
-				},
-				{
 					"type": "polygon",
 					"name": "polygon",
 					"props": {
@@ -469,6 +463,7 @@
 			"type": "model",
 			"name": "wall_join01",
 			"source": "content/Art/Asset/Generique/blocs/wall_join01.fbx",
+			"locked": true,
 			"x": 7.58,
 			"y": 0.39,
 			"z": -0.68,
@@ -570,8 +565,13 @@
 		{
 			"type": "reference",
 			"name": "Plains",
-			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab",
-			"scaleZ": 0.9999999999999999
+			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "Overcast",
+			"source": "lighting/Exterior/Overcast.prefab",
+			"editMode": "Edit"
 		}
 	]
 }

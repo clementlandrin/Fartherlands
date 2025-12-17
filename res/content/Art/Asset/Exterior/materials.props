@@ -1,0 +1,10 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"Ocean": {
+				"__ref": "content/Art/MaterialLibrary/Exterior/Background.prefab",
+				"name": "Ocean"
+			}
+		}
+	}
+}
