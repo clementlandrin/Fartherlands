@@ -5,6 +5,7 @@
 -lib hide
 -lib hxnodejs
 -lib castle
+-lib domkit
 --macro hide.Plugin.init()
 -D script
 -js tools/hide-plugin.js
