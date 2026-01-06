@@ -565,12 +565,14 @@
 		{
 			"type": "reference",
 			"name": "Plains",
-			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab"
+			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab",
+			"enabled": false
 		},
 		{
 			"type": "reference",
 			"name": "Day02",
-			"source": "lighting/Exterior/Day02.prefab"
+			"source": "lighting/Exterior/Day02.prefab",
+			"enabled": false
 		}
 	]
 }

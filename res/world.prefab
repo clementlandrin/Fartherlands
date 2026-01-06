@@ -519,7 +519,8 @@
 					"name": "D2",
 					"source": "content/Room/Diverse/D2.prefab",
 					"x": -15,
-					"y": -15
+					"y": -15,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
