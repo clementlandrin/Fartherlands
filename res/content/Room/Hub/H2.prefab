@@ -72,7 +72,7 @@
 						},
 						{
 							"type": "object",
-							"name": "object",
+							"name": "Art",
 							"x": -0.3275000000000001,
 							"y": -0.41500000000000004,
 							"z": -0.560833333333334,
@@ -82,7 +82,7 @@
 									"name": "polygon",
 									"props": {
 										"id": "Start_polygon",
-										"type": 2,
+										"type": 0,
 										"$cdbtype": "element"
 									},
 									"x": 2.5,
@@ -117,7 +117,7 @@
 									"name": "polygon",
 									"props": {
 										"id": "Start_polygon",
-										"type": 2,
+										"type": 0,
 										"$cdbtype": "element"
 									},
 									"x": 2.5,
@@ -151,7 +151,7 @@
 									"name": "polygon",
 									"props": {
 										"id": "Start_polygon",
-										"type": 2,
+										"type": 0,
 										"$cdbtype": "element"
 									},
 									"x": -5,
@@ -180,6 +180,90 @@
 												"Tiling": 0.2
 											}
 										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									}
+								}
+							]
+						},
+						{
+							"type": "object",
+							"name": "Collide",
+							"x": -0.3275000000000001,
+							"y": -0.41500000000000004,
+							"z": -0.560833333333334,
+							"children": [
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"props": {
+										"id": "Start_polygon",
+										"type": 2,
+										"$cdbtype": "element"
+									},
+									"x": 2.5,
+									"y": -5,
+									"z": 3.3333,
+									"scaleX": 15,
+									"scaleY": 20,
+									"scaleZ": 15,
+									"rotationX": -90,
+									"kind": 0,
+									"args": [
+										0
+									]
+								},
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"props": {
+										"id": "Start_polygon",
+										"type": 2,
+										"$cdbtype": "element"
+									},
+									"x": 2.5,
+									"y": 2.5,
+									"z": -6.6667,
+									"scaleX": 15,
+									"scaleY": 15,
+									"scaleZ": 15,
+									"kind": 0,
+									"args": [
+										0
+									]
+								},
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"props": {
+										"id": "Start_polygon",
+										"type": 2,
+										"$cdbtype": "element"
+									},
+									"x": -5,
+									"y": 2.5,
+									"z": 3.3333,
+									"scaleX": 15,
+									"scaleY": 20,
+									"scaleZ": 15,
+									"rotationX": -90,
+									"rotationZ": -90,
+									"kind": 0,
+									"args": [
+										0
 									]
 								},
 								{
@@ -238,7 +322,91 @@
 						},
 						{
 							"type": "object",
-							"name": "object",
+							"name": "Collide",
+							"x": -0.3275,
+							"y": -0.415,
+							"z": -0.5608,
+							"children": [
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"props": {
+										"id": "Start_polygon",
+										"type": 2,
+										"$cdbtype": "element"
+									},
+									"x": 2.5,
+									"y": -5,
+									"z": 3.3333,
+									"scaleX": 15,
+									"scaleY": 20,
+									"scaleZ": 15,
+									"rotationX": -90,
+									"kind": 0,
+									"args": [
+										0
+									]
+								},
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"props": {
+										"id": "Start_polygon",
+										"type": 2,
+										"$cdbtype": "element"
+									},
+									"x": 2.5,
+									"y": 2.5,
+									"z": -6.6667,
+									"scaleX": 15,
+									"scaleY": 15,
+									"scaleZ": 15,
+									"kind": 0,
+									"args": [
+										0
+									]
+								},
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"props": {
+										"id": "Start_polygon",
+										"type": 2,
+										"$cdbtype": "element"
+									},
+									"x": -5,
+									"y": 2.5,
+									"z": 3.3333,
+									"scaleX": 15,
+									"scaleY": 20,
+									"scaleZ": 15,
+									"rotationX": -90,
+									"rotationZ": -90,
+									"kind": 0,
+									"args": [
+										0
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									}
+								}
+							]
+						},
+						{
+							"type": "object",
+							"name": "Art",
 							"x": -0.3275000000000001,
 							"y": -0.41500000000000004,
 							"z": -0.560833333333334,
@@ -248,7 +416,7 @@
 									"name": "polygon",
 									"props": {
 										"id": "Start_polygon",
-										"type": 2,
+										"type": 0,
 										"$cdbtype": "element"
 									},
 									"x": 2.5,
@@ -283,7 +451,7 @@
 									"name": "polygon",
 									"props": {
 										"id": "Start_polygon",
-										"type": 2,
+										"type": 0,
 										"$cdbtype": "element"
 									},
 									"x": 2.5,
@@ -317,7 +485,7 @@
 									"name": "polygon",
 									"props": {
 										"id": "Start_polygon",
-										"type": 2,
+										"type": 0,
 										"$cdbtype": "element"
 									},
 									"x": -5,
@@ -362,37 +530,56 @@
 											"enableStencil": false
 										}
 									}
-								},
-								{
-									"type": "model",
-									"name": "box",
-									"source": "content/LD/Placeholder/box.fbx",
-									"x": 1.37,
-									"y": -2.69,
-									"z": -5.9,
-									"scaleX": 0.69,
-									"scaleY": 0.09,
-									"scaleZ": 0.17,
-									"rotationX": -90.9,
-									"rotationY": 31.6,
-									"rotationZ": -2.3
-								},
-								{
-									"type": "model",
-									"name": "box",
-									"source": "content/LD/Placeholder/box.fbx",
-									"x": 1.37,
-									"y": -3.59,
-									"z": -5.9,
-									"scaleX": 0.69,
-									"scaleY": 0.09,
-									"scaleZ": 0.17,
-									"rotationX": -90.9,
-									"rotationY": 31.6,
-									"rotationZ": -2.3
 								}
 							]
 						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -1.13,
+					"y": -5.19,
+					"z": 0.7667,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationX": -90.9,
+					"rotationY": 31.6,
+					"rotationZ": -2.3
+				},
+				{
+					"type": "model",
+					"name": "box",
+					"source": "content/LD/Placeholder/box.fbx",
+					"x": -1.13,
+					"y": -6.09,
+					"z": 0.7667,
+					"scaleX": 0.69,
+					"scaleY": 0.09,
+					"scaleZ": 0.17,
+					"rotationX": -90.9,
+					"rotationY": 31.6,
+					"rotationZ": -2.3
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "H2_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -0.66,
+					"y": -5.13,
+					"z": 0.72,
+					"scaleX": 3.64,
+					"scaleY": 1.78,
+					"rotationY": 31.6,
+					"kind": 0,
+					"args": [
+						0
 					]
 				}
 			]
@@ -467,6 +654,28 @@
 			"rotationX": -6.945282294302176e-12,
 			"rotationY": 1.1515589830870577e-11,
 			"rotationZ": -6.979486346156616e-25
+		},
+		{
+			"type": "reference",
+			"name": "Box_Navmesh",
+			"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+			"x": -5.25,
+			"y": -5.84,
+			"z": -0.37,
+			"scaleX": 6.33,
+			"scaleY": 3.74,
+			"scaleZ": 2.09
+		},
+		{
+			"type": "reference",
+			"name": "Box_Navmesh",
+			"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+			"x": -5.25,
+			"y": 5.85,
+			"z": -0.37,
+			"scaleX": 6.33,
+			"scaleY": 3.74,
+			"scaleZ": 2.09
 		}
 	]
 }

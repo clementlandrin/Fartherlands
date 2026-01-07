@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "object",
-			"name": "object",
+			"name": "Art",
 			"x": -2.5,
 			"y": -1.25,
 			"z": 1.6666666666666665,
@@ -30,7 +30,7 @@
 					"name": "polygon",
 					"props": {
 						"id": "Medium_room_Left_polygon",
-						"type": 2,
+						"type": 0,
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
@@ -65,7 +65,7 @@
 					"name": "polygon",
 					"props": {
 						"id": "Medium_room_Left_polygon",
-						"type": 2,
+						"type": 0,
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
@@ -99,7 +99,7 @@
 					"name": "polygon",
 					"props": {
 						"id": "Medium_room_Left_polygon",
-						"type": 2,
+						"type": 0,
 						"$cdbtype": "element"
 					},
 					"x": -5,
@@ -128,6 +128,90 @@
 								"Tiling": 0.2
 							}
 						}
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Collide",
+			"x": -2.5,
+			"y": -1.25,
+			"z": 1.6666666666666665,
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.5,
+					"y": -2.5,
+					"z": 0.8333,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.5,
+					"y": 1.25,
+					"z": -1.6667,
+					"scaleX": 15,
+					"scaleY": 7.5,
+					"scaleZ": 5,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -5,
+					"y": 1.25,
+					"z": 0.8333,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
 					]
 				},
 				{

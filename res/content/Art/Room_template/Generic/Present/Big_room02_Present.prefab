@@ -19,7 +19,7 @@
 		},
 		{
 			"type": "object",
-			"name": "object",
+			"name": "Collide",
 			"x": -2.5,
 			"y": -2.5,
 			"z": 1.6666666666666665,
@@ -30,6 +30,90 @@
 					"props": {
 						"id": "Start_polygon",
 						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.5,
+					"y": -5,
+					"z": 0.8333,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.5,
+					"y": 2.5,
+					"z": -1.6667,
+					"scaleX": 15,
+					"scaleY": 15,
+					"scaleZ": 15,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -5,
+					"y": 2.5,
+					"z": 0.8333,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Art",
+			"x": -2.5,
+			"y": -2.5,
+			"z": 1.6666666666666665,
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 0,
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
@@ -64,7 +148,7 @@
 					"name": "polygon",
 					"props": {
 						"id": "Start_polygon",
-						"type": 2,
+						"type": 0,
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
@@ -98,7 +182,7 @@
 					"name": "polygon",
 					"props": {
 						"id": "Start_polygon",
-						"type": 2,
+						"type": 0,
 						"$cdbtype": "element"
 					},
 					"x": -5,

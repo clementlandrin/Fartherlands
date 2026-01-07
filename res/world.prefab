@@ -114,8 +114,7 @@
 					"type": "reference",
 					"name": "H2",
 					"source": "content/Room/Hub/H2.prefab",
-					"x": -15,
-					"editMode": "Edit"
+					"x": -15
 				},
 				{
 					"type": "shader",
@@ -521,8 +520,7 @@
 					"name": "D2",
 					"source": "content/Room/Diverse/D2.prefab",
 					"x": -15,
-					"y": -15,
-					"editMode": "Edit"
+					"y": -15
 				},
 				{
 					"type": "reference",

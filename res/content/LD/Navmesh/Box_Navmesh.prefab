@@ -1,0 +1,119 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"z": 0.5,
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Box_Navmesh_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"z": 0.5,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Box_Navmesh_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 0.5,
+					"rotationY": 90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Box_Navmesh_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"y": 0.5,
+					"rotationX": -90,
+					"rotationY": 90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Box_Navmesh_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"y": -0.5,
+					"rotationX": 90,
+					"rotationY": 90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Box_Navmesh_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -0.5,
+					"rotationX": 180,
+					"rotationY": 90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Box_Navmesh_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"z": -0.5,
+					"rotationX": 180,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "None",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
+				}
+			]
+		}
+	]
+}

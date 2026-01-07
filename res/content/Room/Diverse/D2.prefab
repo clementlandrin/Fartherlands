@@ -19,6 +19,25 @@
 					"z": 2.21
 				},
 				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "D2_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -0.36,
+					"y": 2.1,
+					"z": 0.83,
+					"scaleX": 4.19,
+					"scaleY": 3.07,
+					"rotationY": 28.6,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
 					"type": "model",
 					"name": "stairs02",
 					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
@@ -93,23 +112,6 @@
 			"x": -0.095,
 			"y": 0.0275,
 			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 3.76,
-					"y": 3.33,
-					"rotationZ": 178.9
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -4.8,
-					"y": 3.33,
-					"z": 1.71,
-					"rotationZ": 178.9
-				},
 				{
 					"type": "reference",
 					"name": "door",
@@ -194,6 +196,34 @@
 			"x": 7.21,
 			"y": -0.23,
 			"rotationZ": 87.5
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 3.63,
+			"y": 3.44,
+			"rotationZ": 177.5
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": -4.84,
+			"y": 3.39,
+			"z": 1.73,
+			"rotationZ": 177.5
+		},
+		{
+			"type": "reference",
+			"name": "Box_Navmesh",
+			"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+			"x": -5.25,
+			"y": 2.06,
+			"z": -0.37,
+			"scaleX": 6.33,
+			"scaleY": 3.74,
+			"scaleZ": 2.09
 		}
 	]
 }
