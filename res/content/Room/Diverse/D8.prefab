@@ -267,14 +267,6 @@
 		},
 		{
 			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": 7.22,
-			"y": -0.23,
-			"rotationZ": 87.5
-		},
-		{
-			"type": "reference",
 			"name": "Moss02",
 			"source": "content/Art/Asset/Vegetation/Moss/Moss02.prefab",
 			"x": -1.06,
