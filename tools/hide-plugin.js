@@ -302,6 +302,212 @@ js.node.zlib.Inflate = require("zlib").Inflate;
 js.node.zlib.InflateRaw = require("zlib").InflateRaw;
 js.node.zlib.Unzip = require("zlib").Unzip;
 var prefab = prefab || {};
+prefab.LakeObject = function(primitive,material,parent) {
+	h3d.scene.Mesh.call(this,primitive,material,parent);
+};
+$hxClasses["prefab.LakeObject"] = prefab.LakeObject;
+prefab.LakeObject.__name__ = "prefab.LakeObject";
+prefab.LakeObject.__super__ = h3d.scene.Mesh;
+prefab.LakeObject.prototype = $extend(h3d.scene.Mesh.prototype,{
+	sync: function(ctx) {
+		h3d.scene.Mesh.prototype.sync.call(this,ctx);
+	}
+	,__class__: prefab.LakeObject
+});
+prefab.Lake = function(parent,contextShared) {
+	this.overrides = [];
+	hrt.prefab.l3d.Polygon.call(this,parent,contextShared);
+};
+$hxClasses["prefab.Lake"] = prefab.Lake;
+prefab.Lake.__name__ = "prefab.Lake";
+prefab.Lake.getSerializablePropsStatic = function() {
+	if(prefab.Lake.serializablePropsFields == null) {
+		prefab.Lake.serializablePropsFields = [{ name : "refMatLib", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PString, defaultValue : null},{ name : "overrides", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PArray(hrt.prefab.PrefabFieldType.PDynamic), defaultValue : null},{ name : "color", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PInt, defaultValue : -1},{ name : "gridSize", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1},{ name : "hasDebugColor", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "x", meta : { range_min : 0, range_max : 400}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "y", meta : { range_min : 0, range_max : 400}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "z", meta : { range_min : 0, range_max : 400}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "scaleX", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "scaleY", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "scaleZ", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 1.0},{ name : "rotationX", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "rotationY", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "rotationZ", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PFloat, defaultValue : 0.0},{ name : "visible", meta : { }, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "name", meta : { doc : "\r\n\t\tThe name of the prefab in the tree view\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PString, defaultValue : ""},{ name : "source", meta : { doc : "\r\n\t\tThe associated source file (an image, a 3D model, etc.) if the prefab type needs it.\r\n\t"}, hasSetter : true, type : hrt.prefab.PrefabFieldType.PString, defaultValue : null},{ name : "enabled", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when calling make() or be ignored. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : true},{ name : "editorOnly", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when used in an other prefab or in game. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "inGameOnly", meta : { doc : "\r\n\t\tTells if the prefab will create an instance when used in editor. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "locked", meta : { doc : "\r\n\t\tPrevent the prefab from being selected in Hide. Also apply to this prefab children.\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PBool, defaultValue : false},{ name : "props", meta : { doc : "\r\n\t\tA storage for some extra properties\r\n\t"}, hasSetter : false, type : hrt.prefab.PrefabFieldType.PUnknown, defaultValue : null}];
+	}
+	return prefab.Lake.serializablePropsFields;
+};
+prefab.Lake.__super__ = hrt.prefab.l3d.Polygon;
+prefab.Lake.prototype = $extend(hrt.prefab.l3d.Polygon.prototype,{
+	refMatLib: null
+	,overrides: null
+	,makeInstance: function() {
+		var lo = new prefab.LakeObject(null,null,this.shared.current3d);
+		this.local3d = lo;
+		this.local3d.name = this.name;
+		this.updateInstance();
+	}
+	,updateInstance: function(propName) {
+		var _gthis = this;
+		hrt.prefab.l3d.Polygon.prototype.updateInstance.call(this,propName);
+		var lo = this.local3d;
+		if(this.refMatLib != null && this.refMatLib != "") {
+			var refMatLibPath = this.refMatLib.substring(0,this.refMatLib.lastIndexOf("/"));
+			var refMatName = this.refMatLib.substring(this.refMatLib.lastIndexOf("/") + 1);
+			var prefabLib = hxd.res.Loader.currentInstance.load(refMatLibPath).toPrefab();
+			try {
+				var mat = h3d.mat.Material.create();
+				if(hxd.fmt.hmd.Library.setupMaterialLibrary(function(path) {
+					return _gthis.shared.loadTexture(path,false);
+				},mat,prefabLib,refMatName)) {
+					lo.material = mat;
+				}
+			} catch( _g ) {
+				haxe.NativeStackTrace.lastError = _g;
+			}
+		}
+	}
+	,setColor: function(color) {
+		return;
+	}
+	,getHideProps: function() {
+		return { icon : "square", name : "Lake"};
+	}
+	,edit: function(ctx) {
+		var _gthis = this;
+		hrt.prefab.l3d.Polygon.prototype.edit.call(this,ctx);
+		var matLibs = ctx.scene.listMatLibraries(this.getAbsPath());
+		var selectedLib = this.refMatLib == null ? null : this.refMatLib.substring(0,this.refMatLib.lastIndexOf("/"));
+		var selectedMat = this.refMatLib == null ? null : this.refMatLib.substring(this.refMatLib.lastIndexOf("/") + 1);
+		var materials = [];
+		var _g = [];
+		var _g1 = 0;
+		var _g2 = matLibs.length;
+		while(_g1 < _g2) {
+			var i = _g1++;
+			_g.push("<option value=\"" + Std.string(matLibs[i].name) + "\" " + (selectedLib == matLibs[i].path ? "selected" : "") + ">" + Std.string(matLibs[i].name) + "</option>");
+		}
+		var materialLibrary = $("<div class=\"group\" name=\"Material Library\">\r\n\t\t<dl>\r\n\t\t\t<dt>Library</dt>\r\n\t\t\t<dd>\r\n\t\t\t\t<select class=\"lib\">\r\n\t\t\t\t\t<option value=\"\">None</option>\r\n\t\t\t\t\t" + _g.join("") + "\r\n\t\t\t\t</select>\r\n\t\t\t</dd>\r\n\t\t\t<dt>Material</dt>\r\n\t\t\t<dd>\r\n\t\t\t\t<select class=\"mat\">\r\n\t\t\t\t\t<option value=\"\">None</option>\r\n\t\t\t\t</select>\r\n\t\t\t</dd>\r\n\t\t</dl></div>");
+		var libSelect = materialLibrary.find(".lib");
+		var matSelect = materialLibrary.find(".mat");
+		var updateLibSelect = function() {
+			libSelect.empty();
+			$("<option value=\"\">None</option>").appendTo(libSelect);
+			var _g = 0;
+			var _g1 = matLibs.length;
+			while(_g < _g1) {
+				var idx = _g++;
+				$("<option value=\"" + Std.string(matLibs[idx].name) + "\" " + (selectedLib == matLibs[idx].path ? "selected" : "") + ">" + Std.string(matLibs[idx].name) + "</option>");
+			}
+		};
+		var updateMatSelect = function() {
+			matSelect.empty();
+			$("<option value=\"\">None</option>").appendTo(matSelect);
+			materials = ctx.scene.listMaterialFromLibrary(_gthis.getAbsPath(),libSelect.val());
+			var _g = 0;
+			var _g1 = materials.length;
+			while(_g < _g1) {
+				var idx = _g++;
+				$("<option value=\"" + (materials[idx].path + "/" + materials[idx].mat.name) + "\" " + (selectedMat == materials[idx].mat.name ? "selected" : "") + ">" + materials[idx].mat.name + "</option>").appendTo(matSelect);
+			}
+		};
+		var updateMat = function() {
+			var previousMatLib = _gthis.refMatLib;
+			var mat = ctx.scene.findMat(materials,matSelect.val());
+			if(mat != null) {
+				_gthis.refMatLib = Std.string(Reflect.field(mat,"path")) + "/" + Std.string(Reflect.field(mat,"mat").name);
+				_gthis.updateInstance();
+				ctx.rebuildProperties();
+			} else {
+				_gthis.refMatLib = "";
+			}
+			ctx.properties.undo.change(hide.ui.HistoryElement.Field(_gthis,"refMatLib",previousMatLib),function() {
+				ctx.rebuildProperties();
+				_gthis.updateInstance();
+			});
+		};
+		updateMatSelect();
+		libSelect.change(function(_) {
+			var previousMatSelect = matSelect.val();
+			updateMatSelect();
+			if(libSelect.val() == "" || previousMatSelect != "") {
+				updateMat();
+			}
+		});
+		matSelect.change(function(_) {
+			updateMat();
+		});
+		ctx.properties.add(materialLibrary,this);
+	}
+	,make: function(sh) {
+		if(this.shared == sh) {
+			sh = null;
+		}
+		if(sh != null || !this.shared.isInstance) {
+			return this.makeClone(sh);
+		}
+		if(!this.shouldBeInstanciated()) {
+			return this;
+		}
+		if(this.shared.root3d == null) {
+			this.shared.root3d = this.shared.current3d = new h3d.scene.Object();
+		}
+		return this.__makeInternal();
+	}
+	,copyFromDynamic: function(obj) {
+		hrt.prefab.l3d.Polygon.prototype.copyFromDynamic.call(this,obj);
+		this.refMatLib = obj.refMatLib;
+		var tmp;
+		if(obj.overrides == null) {
+			tmp = [];
+		} else {
+			var _a = obj.overrides;
+			var target = [];
+			target.length = _a.length;
+			var _g_current = 0;
+			var _g_array = _a;
+			while(_g_current < _g_array.length) {
+				var _g_value = _g_array[_g_current];
+				var _g_key = _g_current++;
+				var idx = _g_key;
+				var _elem = _g_value;
+				target[idx] = _elem;
+			}
+			tmp = target;
+		}
+		this.overrides = tmp;
+	}
+	,copyFromOther: function(obj) {
+		hrt.prefab.l3d.Polygon.prototype.copyFromOther.call(this,obj);
+		var obj1 = obj;
+		this.refMatLib = obj1.refMatLib;
+		this.overrides = obj1.overrides;
+	}
+	,copyToDynamic: function(obj) {
+		if(obj == null) {
+			obj = { };
+		}
+		obj = hrt.prefab.l3d.Polygon.prototype.copyToDynamic.call(this,obj);
+		if(this.refMatLib != null) {
+			obj.refMatLib = this.refMatLib;
+		}
+		if(this.overrides.length > 0) {
+			var tmp;
+			if(this.overrides == null) {
+				tmp = [];
+			} else {
+				var _a = this.overrides;
+				var target = [];
+				target.length = _a.length;
+				var _g_current = 0;
+				var _g_array = _a;
+				while(_g_current < _g_array.length) {
+					var _g_value = _g_array[_g_current];
+					var _g_key = _g_current++;
+					var idx = _g_key;
+					var _elem = _g_value;
+					target[idx] = _elem;
+				}
+				tmp = target;
+			}
+			obj.overrides = tmp;
+		}
+		return obj;
+	}
+	,postCloneInit: function() {
+		hrt.prefab.l3d.Polygon.prototype.postCloneInit.call(this);
+	}
+	,__class__: prefab.Lake
+});
 prefab.Light = function(parent,contextShared) {
 	hrt.prefab.Light.call(this,parent,contextShared);
 };
@@ -2045,7 +2251,7 @@ prefab.BaseOcean.prototype = $extend(hrt.prefab.Object3D.prototype,{
 	,edit: function(ctx) {
 		var _gthis = this;
 		hrt.prefab.Object3D.prototype.edit.call(this,ctx);
-		ctx.properties.add($("\n\t\t\t<div class=\"group\" name=\"Color\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>Color</dt><dd><input type=\"texturechoice\" field=\"color\"/></dd>\n\t\t\t\t\t<dt>UseDepth</dt><dd> <input type=\"checkbox\" field=\"useDepth\"/></dd>\n\t\t\t\t\t<dt>Range</dt><dd><input type=\"range\" min=\"0\" max =\"100\" field=\"depthFactor\"/></dd>\n\t\t\t\t\t<dt>Roughness</dt><dd><input type=\"range\" min=\"0\" max =\"1\" field=\"roughness\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"Color Noise\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>Texture</dt><dd><input type=\"texturepath\" field=\"colorNoiseTexture\"/></dd>\n\t\t\t\t\t<dt>Scale</dt><dd><input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"colorNoiseScale\"/></dd>\n\t\t\t\t\t<dt>Intensity</dt><dd><input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"colorNoiseIntensity\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"Opacity\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>MaxDepth</dt><dd><input type=\"range\" max=\"1000\" field=\"maxOpacityDepth\"/></dd>\n\t\t\t\t\t<dt>Power</dt><dd><input type=\"range\" max=\"5\" field=\"opacityPower\"/></dd>\n\t\t\t\t\t<dt>FadeRange</dt><dd><input type=\"range\" max=\"10\" field=\"opacityFadeRange\"/></dd>\n\t\t\t\t\t<dt>FadePower</dt><dd><input type=\"range\" max=\"5\" field=\"opacityFadePower\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"Wave\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>FadePower</dt><dd><input type=\"range\" max=\"5\" field=\"fadeWavePower\"/></dd>\n\t\t\t\t\t<dt>FadeRange</dt><dd><input type=\"range\" max=\"10\" field=\"fadeWaveRange\"/></dd>\n\t\t\t\t\t<dt>Speed</dt><dd><input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"speed\"/></dd>\n\t\t\t\t\t<dt>Persistence</dt><dd><input type=\"range\" min=\"0\" max=\"1\" field=\"wavePersistence\"/></dd>\n\t\t\t\t\t<dt>Lacunarity</dt><dd><input type=\"range\" min=\"1\" max=\"3\" field=\"waveLacunarity\"/></dd>\n\t\t\t\t\t<dt>Details</dt><dd><input type=\"range\" min=\"0\" max=\"1\" field=\"waveDetails\"/></dd>\n\t\t\t\t\t<dt>Length</dt><dd><input type=\"range\" min=\"0\" max=\"0.5\" field=\"waveLength\"/></dd>\n\t\t\t\t\t<dt>Direction</dt><dd><input type=\"range\" min=\"0\" max=\"360\" field=\"angleDir\"/></dd>\n\t\t\t\t\t<dt>Step angle</dt><dd><input type=\"range\" min=\"0\" max=\"360\" field=\"angleStep\"/></dd>\n\t\t\t\t\t<dt>Wave count</dt><dd><input type=\"range\" min=\"0\" max=\"40\" step=\"1\" field=\"waveCount\"/></dd>\n\t\t\t\t\t<dt>Steepness</dt><dd><input type=\"range\" min=\"0\" max=\"1\" step=\"0.01\" field=\"waveSteepness\"/></dd>\n\t\t\t\t\t<dt>Wave scale</dt><dd><input type=\"range\" min=\"0\" max=\"2\" step=\"0.01\" field=\"waveScale\"/></dd>\n\t\t\t\t\t<dt>Normal intensity</dt><dd><input type=\"range\" min=\"0\" max =\"1\" field=\"waveIntensity\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"OceanFoam\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>Foam height</dt><dd><input type=\"range\" step=\"0.01\"  min=\"0.01\" max =\"1\" field=\"foamHeight\"/></dd>\n\t\t\t\t\t<dt>Foam details</dt><dd><input type=\"range\" step=\"0.01\"  min=\"0\" max =\"1\" field=\"foamDetails\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"Shore Foam\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>Enable</dt><dd> <input type=\"checkbox\" field=\"computeShoreFoam\"/></dd>\n\t\t\t\t\t<dt>Color</dt><dd> <input type=\"color\" alpha=\"true\" field=\"foamColor\"/></dd>\n\t\t\t\t\t<dt>Static foam</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"staticFoam\"/></dd>\n\t\t\t\t\t<dt>Texture</dt><dd> <input type=\"texturepath\" field=\"foamTexture\"/></dd>\n\t\t\t\t\t<dt>Scale</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamScale\"/></dd>\n\t\t\t\t\t<dt>Speed</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamSpeed\"/></dd>\n\t\t\t\t\t<dt>Start Range</dt><dd> <input type=\"range\" min=\"0\" max =\"10\"  field=\"foamStartRange\"/></dd>\n\t\t\t\t\t<dt>Trail Power</dt><dd> <input type=\"range\" min=\"1\" max =\"20\" step=\"0.01\" field=\"foamTrailPower\"/></dd>\n\t\t\t\t\t<dt>Trail Range</dt><dd> <input type=\"range\" min=\"0.01\" max =\"1\" step=\"0.01\" field=\"foamTrailRange\"/></dd>\n\t\t\t\t\t<dt>Anticipation Power</dt><dd> <input type=\"range\" min=\"1\" max =\"20\" step=\"0.01\" field=\"foamAnticipationPower\"/></dd>\n\t\t\t\t\t<dt>Anticipation Range</dt><dd> <input type=\"range\" min=\"0.01\" max =\"1\" step=\"0.01\" field=\"foamAnticipationRange\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"Shore Fade Noise\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>Texture</dt><dd><input type=\"texturepath\" field=\"foamNoise\"/></dd>\n\t\t\t\t\t<dt>Scale</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamNoiseScale\"/></dd>\n\t\t\t\t\t<dt>Intensity</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamNoiseIntensity\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"Subsurface scattering\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>Power</dt><dd><input type=\"range\" min\"0\" max \"10\" step=\"0.1\" field=\"sssPower\"/></dd>\n\t\t\t\t\t<dt>Scale</dt><dd> <input type=\"range\" min=\"0\" max =\"100\" step=\"0.1\" field=\"sssScale\"/></dd>\n\t\t\t\t\t<dt>Distortion</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"sssDistortion\"/></dd>\n\t\t\t\t\t<dt>Color</dt><dd> <input type=\"color\" field=\"sssColor\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\n\t\t\t<div class=\"group\" name=\"Resolution\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>CellCount</dt><dd><input type=\"range\" step=\"1\"  min=\"1\" max =\"100\" field=\"cellCount\"/></dd>\n\t\t\t\t</dl>\n\t\t\t</div>\n\t\t\t"),this,function(pname) {
+		ctx.properties.add($("\r\n\t\t\t<div class=\"group\" name=\"Color\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>Color</dt><dd><input type=\"texturechoice\" field=\"color\"/></dd>\r\n\t\t\t\t\t<dt>UseDepth</dt><dd> <input type=\"checkbox\" field=\"useDepth\"/></dd>\r\n\t\t\t\t\t<dt>Range</dt><dd><input type=\"range\" min=\"0\" max =\"100\" field=\"depthFactor\"/></dd>\r\n\t\t\t\t\t<dt>Roughness</dt><dd><input type=\"range\" min=\"0\" max =\"1\" field=\"roughness\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"Color Noise\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>Texture</dt><dd><input type=\"texturepath\" field=\"colorNoiseTexture\"/></dd>\r\n\t\t\t\t\t<dt>Scale</dt><dd><input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"colorNoiseScale\"/></dd>\r\n\t\t\t\t\t<dt>Intensity</dt><dd><input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"colorNoiseIntensity\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"Opacity\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>MaxDepth</dt><dd><input type=\"range\" max=\"1000\" field=\"maxOpacityDepth\"/></dd>\r\n\t\t\t\t\t<dt>Power</dt><dd><input type=\"range\" max=\"5\" field=\"opacityPower\"/></dd>\r\n\t\t\t\t\t<dt>FadeRange</dt><dd><input type=\"range\" max=\"10\" field=\"opacityFadeRange\"/></dd>\r\n\t\t\t\t\t<dt>FadePower</dt><dd><input type=\"range\" max=\"5\" field=\"opacityFadePower\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"Wave\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>FadePower</dt><dd><input type=\"range\" max=\"5\" field=\"fadeWavePower\"/></dd>\r\n\t\t\t\t\t<dt>FadeRange</dt><dd><input type=\"range\" max=\"10\" field=\"fadeWaveRange\"/></dd>\r\n\t\t\t\t\t<dt>Speed</dt><dd><input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"speed\"/></dd>\r\n\t\t\t\t\t<dt>Persistence</dt><dd><input type=\"range\" min=\"0\" max=\"1\" field=\"wavePersistence\"/></dd>\r\n\t\t\t\t\t<dt>Lacunarity</dt><dd><input type=\"range\" min=\"1\" max=\"3\" field=\"waveLacunarity\"/></dd>\r\n\t\t\t\t\t<dt>Details</dt><dd><input type=\"range\" min=\"0\" max=\"1\" field=\"waveDetails\"/></dd>\r\n\t\t\t\t\t<dt>Length</dt><dd><input type=\"range\" min=\"0\" max=\"0.5\" field=\"waveLength\"/></dd>\r\n\t\t\t\t\t<dt>Direction</dt><dd><input type=\"range\" min=\"0\" max=\"360\" field=\"angleDir\"/></dd>\r\n\t\t\t\t\t<dt>Step angle</dt><dd><input type=\"range\" min=\"0\" max=\"360\" field=\"angleStep\"/></dd>\r\n\t\t\t\t\t<dt>Wave count</dt><dd><input type=\"range\" min=\"0\" max=\"40\" step=\"1\" field=\"waveCount\"/></dd>\r\n\t\t\t\t\t<dt>Steepness</dt><dd><input type=\"range\" min=\"0\" max=\"1\" step=\"0.01\" field=\"waveSteepness\"/></dd>\r\n\t\t\t\t\t<dt>Wave scale</dt><dd><input type=\"range\" min=\"0\" max=\"2\" step=\"0.01\" field=\"waveScale\"/></dd>\r\n\t\t\t\t\t<dt>Normal intensity</dt><dd><input type=\"range\" min=\"0\" max =\"1\" field=\"waveIntensity\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"OceanFoam\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>Foam height</dt><dd><input type=\"range\" step=\"0.01\"  min=\"0.01\" max =\"1\" field=\"foamHeight\"/></dd>\r\n\t\t\t\t\t<dt>Foam details</dt><dd><input type=\"range\" step=\"0.01\"  min=\"0\" max =\"1\" field=\"foamDetails\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"Shore Foam\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>Enable</dt><dd> <input type=\"checkbox\" field=\"computeShoreFoam\"/></dd>\r\n\t\t\t\t\t<dt>Color</dt><dd> <input type=\"color\" alpha=\"true\" field=\"foamColor\"/></dd>\r\n\t\t\t\t\t<dt>Static foam</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"staticFoam\"/></dd>\r\n\t\t\t\t\t<dt>Texture</dt><dd> <input type=\"texturepath\" field=\"foamTexture\"/></dd>\r\n\t\t\t\t\t<dt>Scale</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamScale\"/></dd>\r\n\t\t\t\t\t<dt>Speed</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamSpeed\"/></dd>\r\n\t\t\t\t\t<dt>Start Range</dt><dd> <input type=\"range\" min=\"0\" max =\"10\"  field=\"foamStartRange\"/></dd>\r\n\t\t\t\t\t<dt>Trail Power</dt><dd> <input type=\"range\" min=\"1\" max =\"20\" step=\"0.01\" field=\"foamTrailPower\"/></dd>\r\n\t\t\t\t\t<dt>Trail Range</dt><dd> <input type=\"range\" min=\"0.01\" max =\"1\" step=\"0.01\" field=\"foamTrailRange\"/></dd>\r\n\t\t\t\t\t<dt>Anticipation Power</dt><dd> <input type=\"range\" min=\"1\" max =\"20\" step=\"0.01\" field=\"foamAnticipationPower\"/></dd>\r\n\t\t\t\t\t<dt>Anticipation Range</dt><dd> <input type=\"range\" min=\"0.01\" max =\"1\" step=\"0.01\" field=\"foamAnticipationRange\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"Shore Fade Noise\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>Texture</dt><dd><input type=\"texturepath\" field=\"foamNoise\"/></dd>\r\n\t\t\t\t\t<dt>Scale</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamNoiseScale\"/></dd>\r\n\t\t\t\t\t<dt>Intensity</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"foamNoiseIntensity\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"Subsurface scattering\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>Power</dt><dd><input type=\"range\" min\"0\" max \"10\" step=\"0.1\" field=\"sssPower\"/></dd>\r\n\t\t\t\t\t<dt>Scale</dt><dd> <input type=\"range\" min=\"0\" max =\"100\" step=\"0.1\" field=\"sssScale\"/></dd>\r\n\t\t\t\t\t<dt>Distortion</dt><dd> <input type=\"range\" min=\"0\" max =\"1\" step=\"0.01\" field=\"sssDistortion\"/></dd>\r\n\t\t\t\t\t<dt>Color</dt><dd> <input type=\"color\" field=\"sssColor\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"group\" name=\"Resolution\">\r\n\t\t\t\t<dl>\r\n\t\t\t\t\t<dt>CellCount</dt><dd><input type=\"range\" step=\"1\"  min=\"1\" max =\"100\" field=\"cellCount\"/></dd>\r\n\t\t\t\t</dl>\r\n\t\t\t</div>\r\n\t\t\t"),this,function(pname) {
 			ctx.onChange(_gthis,pname);
 		});
 	}
@@ -2687,6 +2893,8 @@ $hxClasses["Math"] = Math;
 if( String.fromCodePoint == null ) String.fromCodePoint = function(c) { return c < 0x10000 ? String.fromCharCode(c) : String.fromCharCode((c>>10)+0xD7C0)+String.fromCharCode((c&0x3FF)+0xDC00); }
 gfx.PropsTexture.SRC = "HXSMEGdmeC5Qcm9wc1RleHR1cmUOAQd0ZXh0dXJlCgICAAACDWVtaXNzaXZlVmFsdWUDAgAAAwxjdXN0b20xVmFsdWUDAgAABAxjdXN0b20yVmFsdWUDAgAABQZvdXRwdXQNAQYGCW1ldGFsbmVzcwMEBQAHCXJvdWdobmVzcwMEBQAICW9jY2x1c2lvbgMEBQAJCGVtaXNzaXZlAwQFAAoHY3VzdG9tMQMEBQALB2N1c3RvbTIDBAUABAAADAltZXRhbG5lc3MDBAAADQlyb3VnaG5lc3MDBAAADglvY2NsdXNpb24DBAAADwhlbWlzc2l2ZQMEAAAQB2N1c3RvbTEDBAAAEQdjdXN0b20yAwQAABIMY2FsY3VsYXRlZFVWBQoEAAATCGZyYWdtZW50DgYAABQQX19pbml0X19mcmFnbWVudA4GAAACARMAAAUGBgQCBgMCDAMDBgQCBwMCDQMDBgQCCAMCDgMDBgQCCQMCDwMDBgQCCgMCEAMDBgQCCwMCEQMDAAIUAAAFAwUFCBUBdgUMBAAACQMiDgICAQoCAhIFCgUMAAYEAgwDCgIVBQwAAAMDBgQCDQMKAhUFDAQAAwMGBAIOAwoCFQUMCAADAwYEAg8DBgECAgMKAhUFDAwAAwMDAAYEAhADAgMDAwYEAhEDAgQDAwA";
 gfx.PropsTexture._MODULE = "gfx.PropsTexture";
+prefab.Lake._ = hrt.prefab.Prefab.register("lake",prefab.Lake);
+prefab.Lake.serializablePropsFields = null;
 prefab.Light._ = hrt.prefab.Prefab.register("light",prefab.Light);
 prefab.Light.serializablePropsFields = null;
 prefab.OceanDepthShader.SRC = "HXSMF3ByZWZhYi5PY2VhbkRlcHRoU2hhZGVyFQERdHJhbnNmb3JtZWROb3JtYWwFCwQAAAIGZ2xvYmFsDQEBAwR0aW1lAwACAAAAAAQJaGVpZ2h0TWFwCgICAAAFEnRlcnJhaW5IZWlnaHRTY2FsZQMCAAAGCXdhdmVTY2FsZQMCAAAHBXNwZWVkAwIAAAgKd2F2ZU51bWJlcgMCAAAJBmNvc1JvdAMCAAAKBnNpblJvdAMCAAALBmNvc0RpcgMCAAAMBnNpbkRpcgMCAAAND3dhdmVQZXJzaXN0ZW5jZQMCAAAODndhdmVMYWN1bmFyaXR5AwIAAA8Jd2F2ZUNvdW50AQIAABANd2F2ZVN0ZWVwbmVzcwMCAAARDWZhZGVXYXZlUG93ZXIDAgAAEg1mYWRlV2F2ZVJhbmdlAwIAABMQcmVsYXRpdmVQb3NpdGlvbgULBAAAFBN0cmFuc2Zvcm1lZFBvc2l0aW9uBQsEAAAVFGNvbXB1dGVHZXJzdG5lcldhdmVzDgYAABYGdmVydGV4DgYAAAIDFQIXA3BvcwUKBAAAGAF0AwQAAAULBQkIGQNkaXIFCgQAAAkDKQ4CAgsDAgwDBQoACBoBawMEAAACCAMACBsBYwMEAAAJAw0OAQYCAQOamZmZmZkjQAMCGgMDAwAIHAFhAwQAAAYCAhADAhoDAwAIHQZ3ZWlnaHQDBAAAAQMAAAAAAADwPwMACB4BdwULBAAACQMqDgEBAwAAAAAAAAAAAwULAAgfAndzAwQAAAEDAAAAAAAAAAADAA4gAWkBBAAABhUBAgAAAAABAg8BDwEAAAUNBgQCGQUKCQMpDgIGAwQGAQIJAwoCGQUKAAADAwMEBgECCgMKAhkFCgQAAwMDAwYABAYBAgoDCgIZBQoAAAMDAwQGAQIJAwoCGQUKBAADAwMDBQoFCgghAWYDBAAABgECGgMEBgMJAx4OAgIZBQoCFwUKAwYBAhgDAhsDAwMDAwAIIgRzaW5GAwQAAAkDAg4BAiEDAwAIIwRjb3NGAwQAAAkDAw4BAiEDAwAIJAR3YXZlBQsEAAAJAyoOAgIXBQoBAwAAAAAAAAAAAwULAAaACgIkBQsAAAMGAQYBCgIZBQoAAAMCHAMDAiMDAwMGgAoCJAULBAADBgEGAQoCGQUKBAADAhwDAwIjAwMDBgQKAiQFCwgAAwYBAhwDAiIDAwMGgAIeBQsGAQIkBQsCHQMFCwULBoACHwMCHQMDBoECHQMCDQMDBoECGgMCDgMDBgQCGwMJAw0OAQYCAQOamZmZmZkjQAMCGgMDAwMAAA0GAgIeBQsCHwMFCwAAABYAAAUFCCUKZmFkZUZhY3RvcgMEAAABAwAAAAAAAPA/AwAIJgtnZXJzdG5lclBvcwULBAAACQIVDgIKAhQFCxEABQoGAQIDAwIHAwMFCwAGgQoCJgULCAADAgYDAwaACgImBQsIAAMKAhQFCwgAAwMGBAoCFAULkgAFCwkDGA4DAhQFCwImBQsCJQMFCwULAA";
