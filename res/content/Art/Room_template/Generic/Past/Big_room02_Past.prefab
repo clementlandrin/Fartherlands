@@ -111,11 +111,6 @@
 				{
 					"type": "polygon",
 					"name": "polygon",
-					"props": {
-						"id": "Big_room02_Past_polygon",
-						"type": 0,
-						"$cdbtype": "element"
-					},
 					"x": 2.5,
 					"y": -5,
 					"z": 0.8333,
@@ -146,11 +141,6 @@
 				{
 					"type": "polygon",
 					"name": "polygon",
-					"props": {
-						"id": "Big_room02_Past_polygon1",
-						"type": 0,
-						"$cdbtype": "element"
-					},
 					"x": 2.5,
 					"y": 2.5,
 					"z": -1.6667,
@@ -180,11 +170,6 @@
 				{
 					"type": "polygon",
 					"name": "polygon",
-					"props": {
-						"id": "Big_room02_Past_polygon2",
-						"type": 0,
-						"$cdbtype": "element"
-					},
 					"x": -5,
 					"y": 2.5,
 					"z": 0.8333,
