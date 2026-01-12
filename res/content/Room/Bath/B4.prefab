@@ -285,6 +285,21 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "lake",
+			"name": "lake",
+			"x": 6.08,
+			"y": 8.5,
+			"z": 14.27,
+			"scaleX": 27.35,
+			"scaleY": 27.35,
+			"scaleZ": 27.35,
+			"refMatLib": "content/Art/MaterialLibrary/Generic/Utilities.prefab/Water",
+			"kind": 0,
+			"args": [
+				2
+			]
 		}
 	]
 }

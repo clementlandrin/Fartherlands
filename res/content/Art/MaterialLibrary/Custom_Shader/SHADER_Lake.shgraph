@@ -68,7 +68,7 @@
 				"TSampler",
 				"T2D,false"
 			],
-			"defaultValue": "Fx/_Resources/Noise/perlin4.jpg",
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/perlin4.jpg",
 			"index": 5
 		},
 		{
