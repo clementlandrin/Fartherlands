@@ -46,6 +46,20 @@
 					"type": "reference",
 					"name": "Medium_room_Left_Present",
 					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -4.58,
+					"y": -3.97,
+					"z": 0.34,
+					"scaleX": 7.47,
+					"scaleY": 1.86,
+					"scaleZ": 1.39,
+					"rotationX": -82.9,
+					"rotationY": -82.3,
+					"rotationZ": -5.3
 				}
 			]
 		},
@@ -72,14 +86,6 @@
 			"x": 7.22,
 			"y": -0.23,
 			"rotationZ": 87.5
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": 3.87,
-			"y": 3.53,
-			"rotationZ": 179.8
 		}
 	]
 }

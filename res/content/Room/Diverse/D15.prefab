@@ -55,11 +55,6 @@
 			"x": -0.13,
 			"y": 3.5,
 			"rotationZ": 179.8
-		},
-		{
-			"type": "reference",
-			"name": "elevatorUp",
-			"source": "gameplay/elevator/elevatorUp.prefab"
 		}
 	]
 }

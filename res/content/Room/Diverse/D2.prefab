@@ -21,48 +21,6 @@
 				{
 					"type": "polygon",
 					"name": "polygon",
-					"props": {
-						"id": "D2_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -0.36,
-					"y": 2.1,
-					"z": 0.83,
-					"scaleX": 4.19,
-					"scaleY": 3.07,
-					"rotationY": 28.6,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "model",
-					"name": "stairs02",
-					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
-					"x": 0.4,
-					"y": 1.99,
-					"z": -0.06,
-					"scaleX": 0.74,
-					"scaleY": 0.74,
-					"scaleZ": 0.74
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -4.76,
-					"y": 2,
-					"z": 0.85,
-					"scaleX": 0.61,
-					"scaleY": 0.61,
-					"scaleZ": 0.61,
-					"rotationZ": -180
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
 					"x": 9.13,
 					"y": 0.02,
 					"scaleX": 3.24,
@@ -103,6 +61,57 @@
 					"source": "content/Art/Asset/Generique/blocs/column04.fbx",
 					"x": -7.53,
 					"y": 3.64
+				},
+				{
+					"type": "model",
+					"name": "stairs02",
+					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
+					"x": -0.79,
+					"y": 2.53,
+					"z": 0.52,
+					"scaleX": 0.56,
+					"scaleY": 0.56,
+					"scaleZ": 0.56,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -0.5893,
+							"y": 0.3214,
+							"z": -3.2857,
+							"scaleX": 9.7143,
+							"scaleY": 4.8214,
+							"scaleZ": 3.7321,
+							"rotationY": -30,
+							"rotationZ": 180
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -4.98,
+					"y": 2.07,
+					"z": 0.91,
+					"scaleX": 0.61,
+					"scaleY": 0.61,
+					"scaleZ": 0.61,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -0.1,
+							"y": 0.03,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 180
+						}
+					]
 				}
 			]
 		},
@@ -114,43 +123,35 @@
 			"children": [
 				{
 					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door_back.prefab",
+					"x": 7.305,
+					"y": -0.2575,
+					"rotationZ": 87.5
+				},
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door_back.prefab",
+					"x": -4.205,
+					"y": 3.4025,
+					"z": 1.71,
+					"rotationZ": 177.5
+				},
+				{
+					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door.prefab",
-					"x": -5.02,
-					"y": -3.66
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "Present",
-			"children": [
-				{
-					"type": "reference",
-					"name": "Present",
-					"source": "lighting/Present.prefab"
+					"x": -7.305,
+					"y": -1.1175,
+					"rotationZ": -90
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab",
-					"editMode": "Edit"
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "past",
-			"children": [
-				{
-					"type": "reference",
-					"name": "Past",
-					"source": "lighting/Past.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Medium_room_Left_Past",
-					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"x": -5.165,
+					"y": -3.7975
 				}
 			]
 		},
@@ -161,14 +162,6 @@
 			"y": -1.1575000000000002,
 			"z": -0.19,
 			"children": [
-				{
-					"type": "model",
-					"name": "long_joins",
-					"source": "content/Art/Asset/Generique/blocs/long_joins.fbx",
-					"x": 3.915,
-					"y": -2.4525,
-					"z": 0.45
-				},
 				{
 					"type": "model",
 					"name": "joins",
@@ -190,40 +183,232 @@
 			]
 		},
 		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": 7.21,
-			"y": -0.23,
-			"rotationZ": 87.5
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Present",
+					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"x": 2.71,
+					"y": -0.43,
+					"z": 0.44,
+					"children": [
+						{
+							"type": "model",
+							"name": "Pot01",
+							"source": "content/Art/Asset/Pot/Pot01.FBX",
+							"x": 3.64,
+							"y": -2.73,
+							"z": -0.19,
+							"rotationX": -86,
+							"rotationZ": 28.6
+						},
+						{
+							"type": "model",
+							"name": "Pot03",
+							"source": "content/Art/Asset/Pot/Pot03.FBX",
+							"x": -0.3337,
+							"y": -2.6575,
+							"z": 0.1813,
+							"rotationX": -84.9,
+							"rotationZ": -35.3
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 1.78,
+							"y": -1.38,
+							"z": -1.25,
+							"scaleX": 5.44,
+							"scaleY": 1.59,
+							"scaleZ": 2.09,
+							"rotationZ": 125.6
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 0.95,
+							"y": 1.58,
+							"z": -1.25,
+							"scaleX": 5.44,
+							"scaleY": 1.59,
+							"scaleZ": 2.09,
+							"rotationZ": 85.1
+						},
+						{
+							"type": "model",
+							"name": "Pot01",
+							"source": "content/Art/Asset/Pot/Pot01.FBX",
+							"x": 2.01,
+							"y": 1.39,
+							"z": 0.02,
+							"rotationX": -86,
+							"rotationZ": 133.3
+						},
+						{
+							"type": "model",
+							"name": "Pot04",
+							"source": "content/Art/Asset/Pot/Pot04.FBX",
+							"x": 0.08,
+							"y": 1.09,
+							"z": 0.09,
+							"rotationX": -105,
+							"rotationY": 90
+						},
+						{
+							"type": "model",
+							"name": "Pot03",
+							"source": "content/Art/Asset/Pot/Pot03.FBX",
+							"x": 0.85,
+							"y": 0.88,
+							"z": 0.03,
+							"rotationX": -117,
+							"rotationY": 8,
+							"rotationZ": 12.5
+						},
+						{
+							"type": "model",
+							"name": "Pot04",
+							"source": "content/Art/Asset/Pot/Pot04.FBX",
+							"x": -1.1337,
+							"y": 0.3825,
+							"z": 0.0913,
+							"rotationY": 90
+						},
+						{
+							"type": "model",
+							"name": "Pot05",
+							"source": "content/Art/Asset/Pot/Pot05.fbx",
+							"x": 0.87,
+							"y": 3.97,
+							"z": -0.69,
+							"rotationY": 58.2,
+							"rotationZ": -84.6
+						},
+						{
+							"type": "model",
+							"name": "Pot02",
+							"source": "content/Art/Asset/Pot/Pot02.FBX",
+							"x": 2.2063,
+							"y": -1.6575,
+							"z": -0.1887,
+							"rotationY": -42.8
+						}
+					]
+				}
+			]
 		},
 		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": 3.63,
-			"y": 3.44,
-			"rotationZ": 177.5
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": -4.84,
-			"y": 3.39,
-			"z": 1.73,
-			"rotationZ": 177.5
-		},
-		{
-			"type": "reference",
-			"name": "Box_Navmesh",
-			"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-			"x": -5.25,
-			"y": 2.06,
-			"z": -0.37,
-			"scaleX": 6.33,
-			"scaleY": 3.74,
-			"scaleZ": 2.09
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left",
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"x": 3.61,
+					"y": -0.61,
+					"z": -0.13,
+					"children": [
+						{
+							"type": "model",
+							"name": "Pot01",
+							"source": "content/Art/Asset/Pot/Pot01.FBX",
+							"x": -0.6259,
+							"y": -1.7621,
+							"z": 0.0056
+						},
+						{
+							"type": "model",
+							"name": "Pot03",
+							"source": "content/Art/Asset/Pot/Pot03.FBX",
+							"x": 1.1441,
+							"y": -1.7421,
+							"z": -0.0244
+						},
+						{
+							"type": "model",
+							"name": "Pot04",
+							"source": "content/Art/Asset/Pot/Pot04.FBX",
+							"x": -1.6359,
+							"y": -0.7521,
+							"z": -0.0144,
+							"rotationZ": -87.9
+						},
+						{
+							"type": "model",
+							"name": "Pot04",
+							"source": "content/Art/Asset/Pot/Pot04.FBX",
+							"x": 2.27,
+							"y": 3.6,
+							"z": -0.01
+						},
+						{
+							"type": "model",
+							"name": "Pot03",
+							"source": "content/Art/Asset/Pot/Pot03.FBX",
+							"x": 3.38,
+							"y": 3.07,
+							"z": -0.02
+						},
+						{
+							"type": "model",
+							"name": "Pot04",
+							"source": "content/Art/Asset/Pot/Pot04.FBX",
+							"x": 1.05,
+							"y": 3.77,
+							"z": -0.01,
+							"rotationZ": -87.9
+						},
+						{
+							"type": "model",
+							"name": "Pot03",
+							"source": "content/Art/Asset/Pot/Pot03.FBX",
+							"x": -2.7159,
+							"y": -2.3621,
+							"z": -0.0244,
+							"rotationZ": -87.9
+						},
+						{
+							"type": "model",
+							"name": "Pot04",
+							"source": "content/Art/Asset/Pot/Pot04.FBX",
+							"x": 0.4641,
+							"y": -0.8221,
+							"z": -0.0144
+						},
+						{
+							"type": "model",
+							"name": "Pot05",
+							"source": "content/Art/Asset/Pot/Pot05.fbx",
+							"x": 2.967,
+							"y": -1.9636,
+							"z": 0.1256
+						}
+					]
+				}
+			]
 		}
 	]
 }

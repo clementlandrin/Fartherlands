@@ -22,26 +22,11 @@
 				},
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 0.31,
-					"y": -3.52
-				},
-				{
-					"type": "reference",
 					"name": "door_back",
 					"source": "gameplay/door_back.prefab",
-					"x": -0.035,
-					"y": 3.4725,
-					"rotationZ": 179.8
-				},
-				{
-					"type": "reference",
-					"name": "door_back",
-					"source": "gameplay/door_back.prefab",
-					"x": 3.645,
-					"y": -0.2575,
-					"rotationZ": 87.5
+					"x": 0.11,
+					"y": 3.56,
+					"rotationZ": 180
 				}
 			]
 		},
@@ -58,28 +43,6 @@
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Moss01",
-					"source": "content/Art/Asset/Vegetation/Moss/Moss01.prefab",
-					"x": -1.32,
-					"y": -2.58
-				},
-				{
-					"type": "reference",
-					"name": "Moss01",
-					"source": "content/Art/Asset/Vegetation/Moss/Moss01.prefab",
-					"x": 0.56,
-					"y": -2.27,
-					"rotationZ": 157.6
-				},
-				{
-					"type": "reference",
-					"name": "Moss01",
-					"source": "content/Art/Asset/Vegetation/Moss/Moss01.prefab",
-					"x": -1.4716,
-					"y": 1.59
 				}
 			]
 		},
@@ -136,13 +99,13 @@
 					"y": -2.01,
 					"z": 0.27,
 					"rotationZ": -90
+				},
+				{
+					"type": "reference",
+					"name": "doorUp",
+					"source": "gameplay/doorUp.prefab"
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "elevatorDown",
-			"source": "gameplay/elevator/elevatorDown.prefab"
 		}
 	]
 }

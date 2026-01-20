@@ -8,7 +8,15 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "reference",
+					"name": "doorDown",
+					"source": "gameplay/doorDown.prefab",
+					"rotationZ": 90
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -18,18 +26,11 @@
 			"children": [
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -7.34,
-					"y": 0.72,
-					"rotationZ": -91.1
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -3.93,
-					"y": -3.54
+					"name": "door_back",
+					"source": "gameplay/door_back.prefab",
+					"x": 3.515,
+					"y": -0.1575,
+					"rotationZ": 90
 				}
 			]
 		},
@@ -44,10 +45,20 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+					"name": "Small_room_Present",
+					"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab"
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "Present",
+			"source": "lighting/Present.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "Small_room_Present",
+			"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab"
 		},
 		{
 			"type": "object",
@@ -60,26 +71,20 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left",
-					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+					"name": "Small_room",
+					"source": "content/Art/Room_template/Generic/Past/Small_room_Past.prefab"
 				}
 			]
 		},
 		{
 			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": 7.22,
-			"y": -0.23,
-			"rotationZ": 87.5
+			"name": "Past",
+			"source": "lighting/Past.prefab"
 		},
 		{
 			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": -0.13,
-			"y": 3.54,
-			"rotationZ": 179.8
+			"name": "Small_room",
+			"source": "content/Art/Room_template/Generic/Past/Small_room_Past.prefab"
 		}
 	]
 }

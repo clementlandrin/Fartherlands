@@ -2,45 +2,262 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": 2.05,
+			"y": 6.3,
+			"z": 0.91,
+			"scaleX": 0.61,
+			"scaleY": 0.61,
+			"scaleZ": 0.61,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.11,
+					"y": 0.02,
+					"z": -1.97,
+					"scaleX": 8.91,
+					"scaleY": 6.13,
+					"scaleZ": 3.43,
+					"rotationZ": 180
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.11,
+					"y": -5.84,
+					"z": -1.97,
+					"scaleX": 8.91,
+					"scaleY": 6.13,
+					"scaleZ": 3.43,
+					"rotationZ": 180
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -1.02,
+					"y": -8.66,
+					"z": -1.21,
+					"scaleX": 6.62,
+					"scaleY": 0.39,
+					"scaleZ": 3.43,
+					"rotationZ": 180
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": 2.05,
+			"y": 2.73,
+			"z": 0.91,
+			"scaleX": 0.61,
+			"scaleY": 0.61,
+			"scaleZ": 0.61,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.11,
+					"y": 0.02,
+					"z": -1.97,
+					"scaleX": 8.91,
+					"scaleY": 6.13,
+					"scaleZ": 3.43,
+					"rotationZ": 180
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -2.38,
+			"y": 7.97,
+			"z": 0.91,
+			"scaleX": 0.61,
+			"scaleY": 0.61,
+			"scaleZ": 0.61,
+			"rotationZ": -90,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.11,
+					"y": 0.02,
+					"z": -1.97,
+					"scaleX": 8.91,
+					"scaleY": 6.13,
+					"scaleZ": 3.43,
+					"rotationZ": 180
+				}
+			]
+		},
+		{
 			"type": "reference",
 			"name": "camera",
 			"source": "gameplay/camera.prefab"
 		},
 		{
 			"type": "object",
-			"name": "common"
-		},
-		{
-			"type": "object",
-			"name": "doors",
-			"x": -0.095,
-			"y": 0.0275,
+			"name": "Common",
+			"x": 1.92,
+			"rotationZ": -90,
 			"children": [
 				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -7.35,
-					"y": -0.03,
-					"rotationZ": -91.1
+					"type": "model",
+					"name": "column01",
+					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+					"x": 7.78,
+					"y": 1.78,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "column01",
+					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+					"x": 7.3,
+					"y": -5.35,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "column01",
+					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+					"x": -7.8,
+					"y": -5.83,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "stairs02",
+					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
+					"x": -3.44,
+					"y": -4.27,
+					"z": 0.37,
+					"scaleX": 0.6,
+					"scaleY": 0.67,
+					"scaleZ": 0.6,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -0.5893,
+							"y": 0.3214,
+							"z": -3.2857,
+							"scaleX": 9.7143,
+							"scaleY": 4.8214,
+							"scaleZ": 3.7321,
+							"rotationY": -30,
+							"rotationZ": 180
+						}
+					]
 				}
 			]
 		},
 		{
+			"type": "reference",
+			"name": "test_golem",
+			"source": "gameplay/test_golem.prefab",
+			"props": {
+				"id": "World_test_golem",
+				"type": 4,
+				"$cdbtype": "element",
+				"props": {
+					"dialog": "Mais... Mais, quelqu'un? Je pensais être seul depuis..... longtemps\nOn est bloqué ici tous les 2!"
+				}
+			}
+		},
+		{
+			"type": "model",
+			"name": "column01",
+			"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+			"x": 7.3,
+			"y": -5.35,
+			"rotationZ": 90
+		},
+		{
+			"type": "reference",
+			"name": "test_golem",
+			"source": "gameplay/test_golem.prefab",
+			"props": {
+				"id": "World_test_golem",
+				"type": 4,
+				"$cdbtype": "element",
+				"props": {
+					"dialog": "Mais... Mais, quelqu'un? Je pensais être seul depuis..... longtemps\nOn est bloqué ici tous les 2!"
+				}
+			}
+		},
+		{
+			"type": "model",
+			"name": "column01",
+			"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+			"x": 7.3,
+			"y": -5.35,
+			"rotationZ": 90
+		},
+		{
 			"type": "object",
-			"name": "Present",
+			"name": "present",
 			"children": [
+				{
+					"type": "reference",
+					"name": "Medium_room_Right_Present",
+					"source": "content/Art/Room_template/Generic/Present/Medium_room_Right_Present.prefab"
+				},
 				{
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
 				},
 				{
+					"type": "object",
+					"name": "object",
+					"x": -0.038333333333333316,
+					"y": -0.050000000000000114,
+					"z": 0.6616666666666666
+				},
+				{
 					"type": "reference",
-					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -2.1356,
+					"y": 4.652,
+					"z": 0.22,
+					"scaleX": 5.8286,
+					"scaleY": 3.2303,
+					"scaleZ": 2.2393,
+					"rotationY": -30,
+					"rotationZ": 90
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "Medium_room_Right_Present",
+			"source": "content/Art/Room_template/Generic/Present/Medium_room_Right_Present.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "Present",
+			"source": "lighting/Present.prefab"
+		},
+		{
+			"type": "object",
+			"name": "object",
+			"x": -0.038333333333333316,
+			"y": -0.050000000000000114,
+			"z": 0.6616666666666666
 		},
 		{
 			"type": "object",
@@ -48,31 +265,48 @@
 			"children": [
 				{
 					"type": "reference",
-					"name": "Past",
-					"source": "lighting/Past.prefab"
+					"name": "Medium_room_Right",
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Right_Past.prefab"
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left",
-					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+					"name": "Past",
+					"source": "lighting/Past.prefab"
 				}
 			]
 		},
 		{
 			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
-			"x": 0.55,
-			"y": 3.55,
-			"rotationZ": 179.8
+			"name": "Medium_room_Right",
+			"source": "content/Art/Room_template/Generic/Past/Medium_room_Right_Past.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "Past",
+			"source": "lighting/Past.prefab"
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275
 		},
 		{
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door_back.prefab",
-			"x": 7.22,
-			"y": -0.23,
-			"rotationZ": 87.5
+			"x": 3.75,
+			"y": -4.11,
+			"rotationZ": 90
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 3.75,
+			"y": 4.55,
+			"z": 1.79,
+			"rotationZ": 90
 		}
 	]
 }

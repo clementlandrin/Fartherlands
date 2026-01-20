@@ -61,7 +61,7 @@
 				},
 				{
 					"id": "PlayerSpeed",
-					"value": 2
+					"value": 3
 				},
 				{
 					"id": "MaxClimbHeight",
@@ -82,7 +82,7 @@
 				},
 				{
 					"id": "SphereMaxTime",
-					"value": 5
+					"value": 40
 				},
 				{
 					"id": "ClimbSpeed",

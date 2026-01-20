@@ -11,7 +11,7 @@
 			"type": "object",
 			"name": "Arch",
 			"x": -10,
-			"y": -52.5,
+			"y": -72.97,
 			"z": 15,
 			"children": [
 				{
@@ -37,8 +37,7 @@
 				{
 					"type": "reference",
 					"name": "H1",
-					"source": "content/Room/Hub/H1.prefab",
-					"editMode": "Edit"
+					"source": "content/Room/Hub/H1.prefab"
 				},
 				{
 					"type": "reference",
@@ -136,6 +135,7 @@
 		{
 			"type": "object",
 			"name": "Garden",
+			"y": 18.71,
 			"children": [
 				{
 					"type": "reference",
@@ -355,6 +355,7 @@
 		{
 			"type": "object",
 			"name": "Factory",
+			"y": -20.47,
 			"children": [
 				{
 					"type": "reference",
@@ -526,8 +527,8 @@
 					"type": "reference",
 					"name": "D4",
 					"source": "content/Room/Diverse/D4.prefab",
-					"x": -15,
-					"y": 15
+					"x": -11,
+					"y": 19
 				},
 				{
 					"type": "reference",
@@ -539,7 +540,7 @@
 					"type": "reference",
 					"name": "D3",
 					"source": "content/Room/Diverse/D3.prefab",
-					"y": 15
+					"y": 18.79
 				},
 				{
 					"type": "reference",
@@ -573,9 +574,8 @@
 					"type": "reference",
 					"name": "D8",
 					"source": "content/Room/Diverse/D8.prefab",
-					"x": -35,
-					"y": -15,
-					"editMode": "Edit"
+					"x": -29.08,
+					"y": -15
 				},
 				{
 					"type": "reference",
@@ -589,7 +589,7 @@
 					"type": "reference",
 					"name": "D10",
 					"source": "content/Room/Diverse/D10.prefab",
-					"x": -35,
+					"x": -29.17,
 					"y": -15,
 					"z": 10
 				},
@@ -643,6 +643,7 @@
 		{
 			"type": "object",
 			"name": "Bath",
+			"x": 18.34,
 			"children": [
 				{
 					"type": "reference",
