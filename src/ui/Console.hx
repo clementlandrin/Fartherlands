@@ -103,5 +103,13 @@ class Console {
 				return;
 			}
 		});
+
+		console.add("unlockSphere", function() {
+			game.goddess.unlockedSkill = true;
+		});
+
+		console.add("rechargeSphere", function() {
+			game.goddess.resetSphereRemainingTime();
+		});
 	}
 }
