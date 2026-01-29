@@ -7,6 +7,7 @@ class PlayerController {
 	public var player : ent.Entity;
 	public var sequence : Sequence;
 	public var curElevator : ent.Elevator;
+	public var item : ent.interactible.Pickable;
 	
 	var game : Game;
 
@@ -51,17 +52,70 @@ class PlayerController {
 	}
 	
 	public function update(dt : Float) {
-
 		if ( canControl() ) {
 			updateMovement(dt);
 			if ( hxd.Key.isPressed(hxd.Key.G) )
-				player.dropItem();
+				item.drop();
 			if ( hxd.Key.isPressed(hxd.Key.F) )
 				requestInteract = true;
 			if ( hxd.Key.isPressed(hxd.Key.E) )
 				requestSecondaryInteract = true;
 		}
 	}
+
+
+	public function getTimeMode() : Game.TimeMode {
+		return @:privateAccess player.timeMode; 
+	}
+
+	public function enterLadder(l : ent.Ladder, to : h3d.col.Point) {
+		if ( !canClimb() )
+			return;
+		if ( l == null )
+			throw "entering null ladder";
+		curLadder = l;
+		sequence = new Sequence(function (dt : Float) {
+			return player.movementTarget(to, dt);
+		});
+	}
+
+	public function leaveLadder(ladderEdge : h3d.col.Point, out : h3d.col.Point) {
+		if ( !canClimb() )
+			throw "controller can't climb, shouldn't try to leave ladder";
+		if ( curLadder == null )
+			throw "assert";
+		sequence = new Sequence(function (dt : Float) {
+			var reached = player.movementTarget(ladderEdge, dt);
+			if ( reached ) {
+				sequence = new Sequence(function (dt : Float) {
+					var reached = player.movementTarget(out, dt);
+					if ( reached )
+						curLadder = null;
+					return reached;
+				});
+			}
+			return false;
+		});
+	}
+
+	public function isClimbing(?l : ent.Ladder) {
+		if ( l == null )
+			return curLadder != null;
+		return curLadder == l;
+	}
+
+	public function canClimb() {
+		return true;
+	}
+
+	public function canChangeRoom() {
+		return true;
+	}
+
+	public function canSecondaryTrigger() {
+		return true;
+	}
+
 
 	function canControl() {
 		return game.canControl();
@@ -192,57 +246,5 @@ class PlayerController {
 			curLadder.tryLeaveBottom();
 			z -= dt * Const.get(ClimbSpeed);
 		}
-	}
-
-	public function getTimeMode() : Game.TimeMode {
-		return @:privateAccess player.timeMode; 
-	}
-
-	public function enterLadder(l : ent.Ladder, to : h3d.col.Point) {
-		if ( !canClimb() )
-			return;
-		if ( l == null )
-			throw "entering null ladder";
-		curLadder = l;
-		sequence = new Sequence(function (dt : Float) {
-			return player.movementTarget(to, dt);
-		});
-	}
-
-	public function leaveLadder(ladderEdge : h3d.col.Point, out : h3d.col.Point) {
-		if ( !canClimb() )
-			throw "controller can't climb, shouldn't try to leave ladder";
-		if ( curLadder == null )
-			throw "assert";
-		sequence = new Sequence(function (dt : Float) {
-			var reached = player.movementTarget(ladderEdge, dt);
-			if ( reached ) {
-				sequence = new Sequence(function (dt : Float) {
-					var reached = player.movementTarget(out, dt);
-					if ( reached )
-						curLadder = null;
-					return reached;
-				});
-			}
-			return false;
-		});
-	}
-
-	public function isClimbing(?l : ent.Ladder) {
-		if ( l == null )
-			return curLadder != null;
-		return curLadder == l;
-	}
-
-	public function canClimb() {
-		return true;
-	}
-
-	public function canChangeRoom() {
-		return true;
-	}
-
-	public function canSecondaryTrigger() {
-		return true;
 	}
 }

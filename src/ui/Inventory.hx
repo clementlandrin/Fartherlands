@@ -14,7 +14,7 @@ class Inventory extends Window {
 	override function sync(ctx : h2d.RenderContext) {
 		super.sync(ctx);
 
-		var itemId = Game.inst.player.item?.id.toString();
+		var itemId = Game.inst.ctrl.item?.id.toString();
 		text.text = itemId != null ? itemId : "aucun objet en main";
 	}
 }

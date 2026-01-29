@@ -1,3 +1,6 @@
+import ent.interactible.Talkable;
+import ent.interactible.Pickable;
+
 enum TimeMode {
 	None;
 	Present;
@@ -244,63 +247,78 @@ class Game extends hxd.App {
 		case "element":
 			var props:Data.Element = cast p.props;
 			switch(props.type) {
-			case Room:
-				curRoom.inf = props.props;
-				curRoom.id = props.id;
-			case Door:
-				if ( curRoom == null )
-					throw "door outside room";
-				var d = new ent.Door();
-				e = d;
-			case Navmesh:
-				if ( curRoom == null )
-					throw "navmesh outside room";
-				var n = new ent.Navmesh();
-				switch(p.type) {
-				case "polygon":
-					var polygon = cast(p, hrt.prefab.l3d.Polygon);
-					n.setPolygon(polygon);
-				case "box":
-					var box = cast(p, hrt.prefab.l3d.Box);
-					n.setBox(box);
-				default:
-					throw 'unsupported navmesh ${p.name}';
-				}
-				n.navmeshMode = modeMake;
-				e = n;
-			case Ladder:
-				var l = new ent.Ladder();
-				e = l;
-			case Elevator:
-				var el = new ent.Elevator();
-				e = el;
-			case Element:
-				if ( props.props != null && props.props.memo ) {
-					var m = new ent.Memo();
-					e = m;
-				} else if ( props.props != null && props.props.unstableTeleport ) {
-					var u = new ent.UnstableTeleport();
-					e = u;
-				} else {
-					var i = new ent.Entity();
-					e = i;
-				}
-			case Teleport:
-				var t = new ent.Teleport();
-				e = t;
-			case Seed:
-				var s = new ent.Seed();
-				e = s;
-			case Chest:
-				var c = new ent.Chest();
-				e = c;
-			case Recharge:
-				var c = new ent.Recharge();
-				e = c;
-			case SeedPot:
-				var sp = new ent.SeedPot();
-				e = sp;
+				case Room:
+					curRoom.inf = props.props;
+					curRoom.id = props.id;
+				case Door:
+					if ( curRoom == null )
+						throw "door outside room";
+					var d = new ent.Door();
+					e = d;
+				case Navmesh:
+					if ( curRoom == null )
+						throw "navmesh outside room";
+					var n = new ent.Navmesh();
+					switch(p.type) {
+					case "polygon":
+						var polygon = cast(p, hrt.prefab.l3d.Polygon);
+						n.setPolygon(polygon);
+					case "box":
+						var box = cast(p, hrt.prefab.l3d.Box);
+						n.setBox(box);
+					default:
+						throw 'unsupported navmesh ${p.name}';
+					}
+					n.navmeshMode = modeMake;
+					e = n;
+				case Ladder:
+					var l = new ent.Ladder();
+					e = l;
+				case Elevator:
+					var el = new ent.Elevator();
+					e = el;
+				case Element:
+					if (props.props != null && props.props.dialog != null) {
+						var t = new Talkable();
+						e = t;
+<<<<<<< Updated upstream
+					} else 
+					if ( props.props != null && props.props.memo ) {
+=======
+					} else if ( props.props != null && props.props.memo ) {
+>>>>>>> Stashed changes
+						var m = new ent.Memo();
+						e = m;
+					} else if ( props.props != null && props.props.unstableTeleport ) {
+						var u = new ent.UnstableTeleport();
+						e = u;
+					} else {
+						var i = new ent.Entity();
+						e = i;
+					}
+				case Teleport:
+					var t = new ent.Teleport();
+					e = t;
+				case Pickable:
+					var pickable = new Pickable();
+					e = pickable;
+				case Seed:
+					var s = new ent.interactible.pickable.Seed();
+					e = s;
+				case Chest:
+					var c = new ent.interactible.Chest();
+					e = c;
+				case SeedPot:
+					var sp = new ent.interactible.SeedPot();
+					e = sp;
+				case Recharge:
+					var c = new ent.Recharge();
+					e = c;
+				case WeatherWheel:
+					var ww = new ent.interactible.WeatherWheel();
+					e = ww;
 			}
+			
 			if ( e != null ) {
 				e.inf = props.props;
 				e.id = props.id;

@@ -6,7 +6,7 @@
 			"name": "object",
 			"props": {
 				"id": "H1_object",
-				"type": 4,
+				"type": 12,
 				"$cdbtype": "element",
 				"props": {
 					"dialog": "Vous avez récupéré un étrange fruit.",

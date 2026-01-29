@@ -10,7 +10,7 @@
 					"scope": null
 				},
 				{
-					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator,Recharge",
+					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator,Recharge,WeatherWheel,Pickable",
 					"name": "type",
 					"opt": false
 				},
@@ -300,6 +300,66 @@
 					"id": "TousDisparus",
 					"props": {},
 					"parent": "Civilisation"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "item",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"opt": null,
+					"scope": null
+				},
+				{
+					"typeStr": "17",
+					"name": "props",
+					"opt": true
+				}
+			],
+			"lines": [
+				{
+					"id": "artefact"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "item@props",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": []
+		},
+		{
+			"name": "weather",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"opt": null,
+					"scope": null
+				}
+			],
+			"lines": [
+				{
+					"id": "Sun"
+				},
+				{
+					"id": "Wind"
+				},
+				{
+					"id": "Rain"
+				},
+				{
+					"id": "Snow"
 				}
 			],
 			"separators": [],

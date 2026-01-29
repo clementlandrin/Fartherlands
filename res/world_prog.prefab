@@ -2,76 +2,9 @@
 	"type": "prefab",
 	"children": [
 		{
-			"type": "renderProps",
-			"name": "renderProps",
-			"props": {
-				"PBR": {
-					"mode": "Pbr",
-					"emissive": 1,
-					"exposure": 0,
-					"sky": "CustomColor",
-					"tone": "Linear",
-					"occlusion": 1,
-					"a": 2.51,
-					"b": 0.03,
-					"c": 2.43,
-					"d": 0.59,
-					"e": 0.14,
-					"forceDirectDiscard": false,
-					"skyColor": 0
-				},
-				"Default": {}
-			},
-			"children": [
-				{
-					"type": "light",
-					"name": "light",
-					"rotationY": 58.7,
-					"rotationZ": -30.7,
-					"kind": "Directional",
-					"power": 1.82,
-					"range": 10,
-					"zNear": 0.02,
-					"shadows": {
-						"mode": "Dynamic",
-						"size": 2048,
-						"radius": 0,
-						"quality": 1,
-						"bias": 0.1,
-						"samplingMode": {
-							"kind": "None"
-						}
-					}
-				},
-				{
-					"type": "rfx.sao",
-					"name": "sao",
-					"size": 0.5,
-					"blur": 4.7,
-					"noiseScale": 1000,
-					"samples": 50,
-					"radius": 0.68,
-					"intensity": 2.12,
-					"bias": 0.09
-				},
-				{
-					"type": "rfx.kuwaharaFilter",
-					"name": "kuwaharaFilter",
-					"radius": 3,
-					"endDist": 0
-				},
-				{
-					"type": "environment",
-					"name": "environment",
-					"sourceMapPath": "content/Art/Envmap/clarens_night_02_1k.hdr"
-				}
-			]
-		},
-		{
 			"type": "reference",
 			"name": "PT1",
 			"source": "content/Room/Prog_Test/GoUp.prefab",
-			"z": -0.1,
 			"editMode": "Edit"
 		},
 		{
@@ -85,6 +18,7 @@
 			"name": "CamFollowPlayer",
 			"source": "content/Room/Prog_Test/CamFollowPlayer.prefab",
 			"x": -13.43,
+			"z": 25.18,
 			"editMode": "Edit"
 		},
 		{
@@ -162,9 +96,7 @@
 			"type": "reference",
 			"name": "PickItem",
 			"source": "content/Room/Prog_Test/PickItem.prefab",
-			"x": -13.37,
-			"y": -0.81,
-			"z": 25.81,
+			"x": -13.43,
 			"rotationX": 6.366017419360943e-12,
 			"rotationY": -5.3031564165448225e-12,
 			"rotationZ": -2.946114566572193e-25

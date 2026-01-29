@@ -1,5 +1,7 @@
 package actions;
 
+import ent.Interactible;
+
 enum TriggerType {
     Primary;
     Secondary;
@@ -31,16 +33,21 @@ class Action {
     }
 
     public function fit(e : ent.Entity) {
-        return true;
+        var int = Std.downcast(e, Interactible);
+        return int != null && int.canInteract();
     }
 
     public function onTrigger(e : ent.Entity) {
+        var int = Std.downcast(e, Interactible);
+        int?.onInteract(e.game.ctrl);
+
         switch(triggerType) {
-        case Primary:
-            e.game.ctrl.requestInteract = false;
-        case Secondary:
-            e.game.ctrl.requestSecondaryInteract = false;
+            case Primary:
+                e.game.ctrl.requestInteract = false;
+            case Secondary:
+                e.game.ctrl.requestSecondaryInteract = false;
         }
+
         @:privateAccess e.removeTooltip();
     }
 
