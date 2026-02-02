@@ -10,7 +10,7 @@
 					"scope": null
 				},
 				{
-					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator,Recharge,WeatherWheel,Pickable",
+					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator,Recharge,WeatherWheel,Pickable,Golem",
 					"name": "type",
 					"opt": false
 				},

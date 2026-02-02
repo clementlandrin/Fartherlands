@@ -25,7 +25,6 @@ class Main extends hxd.App {
 				level = args.shift();
 			}
 		}
-		level = "world_prog.prefab";
 
 		gfx.MaterialSetup.set();
 

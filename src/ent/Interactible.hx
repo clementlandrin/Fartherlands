@@ -1,16 +1,9 @@
 package ent;
 
-<<<<<<< Updated upstream
 import ent.interactible.Pickable;
 import controllers.PlayerController;
 
 class Interactible extends Entity {
-=======
-import controllers.PlayerController;
-
-class Interactible extends Entity {
-    var interactive : h3d.scene.Interactive;
->>>>>>> Stashed changes
 
     override function update(dt : Float) {
 		super.update(dt);

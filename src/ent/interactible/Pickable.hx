@@ -1,7 +1,6 @@
 package ent.interactible;
 
 class Pickable extends Interactible {
-<<<<<<< Updated upstream
 	public var owner(get, null) : Entity;
 	public function get_owner() {
 		if (game.ctrl.item == this)
@@ -24,10 +23,6 @@ class Pickable extends Interactible {
 			this.setPos(o.getPos());
 			this.room = o.room;
 		}
-=======
-	override function getTooltipText() {
-		return 'Press F to pick';
->>>>>>> Stashed changes
 	}
 
 	override function onInteract(ctrl: controllers.PlayerController) {
@@ -39,7 +34,6 @@ class Pickable extends Interactible {
 			drop();
 	}
 
-<<<<<<< Updated upstream
 	override function isInteractible() {
 		return super.isInteractible() && this.owner == null;
 	}
@@ -48,17 +42,10 @@ class Pickable extends Interactible {
 		return 'Press F to pick';
 	}
 
-=======
->>>>>>> Stashed changes
 	public function pick() {
 		if (game.ctrl.item != null)
 			return;
 		game.ctrl.item = this;
-<<<<<<< Updated upstream
-
-=======
-		this.dispose();
->>>>>>> Stashed changes
 		onPicked();
 	}
 

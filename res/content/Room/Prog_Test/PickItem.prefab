@@ -182,11 +182,8 @@
 			"name": "Golem",
 			"props": {
 				"id": "Test_Golem",
-				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"takeControl": 0
-				}
+				"type": 13,
+				"$cdbtype": "element"
 			},
 			"x": -1.78,
 			"y": -3.34,
