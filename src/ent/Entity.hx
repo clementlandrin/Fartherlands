@@ -6,11 +6,10 @@ class Entity extends st.State {
 	public var inf : Data.Element_props;
 	public var id : Data.ElementKind;
 	@:s public var activated : Bool = true;
-	var interactive : h3d.scene.Interactive;
+	
 	var outlineShader : shaders.OutlineShader;
 	var tooltip : ui.Tooltip;
 	var timeMode : Game.TimeMode;
-	public var item : ent.Entity;
 
 	public var obj : h3d.scene.Object;
 
@@ -164,37 +163,37 @@ class Entity extends st.State {
 		return false;
 	}
 
-	override function update(dt : Float) {
-		super.update(dt);
-		updateItem(dt);
-		var player = game.player;
-		var goddess = game.goddess;
-		var range = Const.get(InteractibleRadius);
+	// override function update(dt : Float) {
+	// 	super.update(dt);
+	// 	updateItem(dt);
+	// 	var player = game.player;
+	// 	var goddess = game.goddess;
+	// 	var range = Const.get(InteractibleRadius);
 
-		var i = player.getPos().distanceSq(getPos()) < range * range;
-		if ( i ) {
-			switch(timeMode) {
-			case Common:
-			case Past:
-				var r = goddess.getTemporalRadius();
-				i = getPos().distanceSq(goddess.getTemporalPos()) < r * r;
-			case Present:
-				var r = goddess.getTemporalRadius();
-				i = getPos().distanceSq(goddess.getTemporalPos()) > r * r;
-			case None:
-				throw "assert";
-			}
-		}
-		if ( i && canInteract() ) {
-			onOver();
-			if ( game.ctrl.requestInteract )
-				trigger();
-			if ( game.ctrl.requestSecondaryInteract )
-				secondTrigger();
-		} else {
-			onOut();
-		}
-	}
+	// 	var i = player.getPos().distanceSq(getPos()) < range * range;
+	// 	if ( i ) {
+	// 		switch(timeMode) {
+	// 		case Common:
+	// 		case Past:
+	// 			var r = goddess.getTemporalRadius();
+	// 			i = getPos().distanceSq(goddess.getTemporalPos()) < r * r;
+	// 		case Present:
+	// 			var r = goddess.getTemporalRadius();
+	// 			i = getPos().distanceSq(goddess.getTemporalPos()) > r * r;
+	// 		case None:
+	// 			throw "assert";
+	// 		}
+	// 	}
+	// 	if ( i && canInteract() ) {
+	// 		onOver();
+	// 		if ( game.ctrl.requestInteract )
+	// 			trigger();
+	// 		if ( game.ctrl.requestSecondaryInteract )
+	// 			secondTrigger();
+	// 	} else {
+	// 		onOut();
+	// 	}
+	// }
 
 	public function canInteract() {
 		if ( !game.canControl() )
@@ -202,12 +201,12 @@ class Entity extends st.State {
 		return canTrigger() || canSecondaryTrigger();
 	}
 
-	public function isInEntity() {
-		for ( e in game.entities )
-			if ( e.item == this )
-				return true;
-		return false;
-	}
+	// public function isInEntity() {
+	// 	for ( e in game.entities )
+	// 		if ( e.item == this )
+	// 			return true;
+	// 	return false;
+	// }
 
 	public function cull() {
 		var culled = !enabled || (room != null && !room.enabled);
@@ -265,28 +264,12 @@ class Entity extends st.State {
 		}
 	}
 
-	function updateItem(dt : Float) {
-		if ( item == null )
-			return;
-		item.setPos(getPos());
-		item.room = room;
-	}
-
-	public function isPickable() {
-		return inf != null && inf.pickableItem;
-	}
-
-	public function pickItem(e : Entity) {
-		if ( item != null )
-			dropItem();
-		item = e;
-	}
-
-	public function dropItem() {
-		var i = item;
-		item = null;
-		return i;
-	}
+	// function updateItem(dt : Float) {
+	// 	if ( item == null )
+	// 		return;
+	// 	item.setPos(getPos());
+	// 	item.room = room;
+	// }
 
 	function setTooltip() {
 		if ( tooltip != null )
@@ -320,11 +303,15 @@ class Entity extends st.State {
 	override function dispose() {
 		super.dispose();
 		obj.remove();
-		for ( e in game.entities )
-			if ( e.item == this )
-				e.dropItem();
+		// for ( e in game.entities )
+			// if ( e.item == this )
+			// 	e.item.dr.dropItem();
 		if ( tooltip != null )
 			tooltip.remove();
 		game.entities.remove(this);
+	}
+
+	public function onUse() {
+
 	}
 }

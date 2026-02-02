@@ -94,11 +94,11 @@
 		},
 		{
 			"type": "material",
-			"name": "Water",
+			"name": "Blue_unlit",
 			"props": {
 				"Fatherlands": {
 					"mode": "BeforeTonemapping",
-					"blend": "Alpha",
+					"blend": "None",
 					"shadows": true,
 					"culling": "Back",
 					"depthTest": "Less",
@@ -106,42 +106,11 @@
 					"enableStencil": false
 				}
 			},
-			"children": [
-				{
-					"type": "shader",
-					"name": "SHADER_Lake",
-					"source": "content/Art/MaterialLibrary/Custom_Shader/SHADER_Lake.shgraph",
-					"props": {
-						"ColorDistance": 0.2,
-						"WaterColor1": [
-							0.580392156862745,
-							0.7686274509803921,
-							0.8470588235294118,
-							1
-						],
-						"WaterColor2": [
-							0.10196078431372549,
-							0.3607843137254902,
-							0.5450980392156862,
-							1
-						],
-						"Opacity": 0.86,
-						"Opacity2": 0.75,
-						"PerlinDisto": "content/Art/MaterialLibrary/Textures/Utilities/perlin4.jpg",
-						"PerlinDisto_Tiling": 0.05,
-						"PerlinDisto_Speed": 0.2,
-						"BorderColor": [
-							0,
-							0,
-							0,
-							1
-						],
-						"BorderDistance": 0,
-						"BorderWigglyScale": 0,
-						"BorderScale": 0,
-						"BorderOpacity": 0
-					}
-				}
+			"color": [
+				0,
+				0.18823529411764706,
+				1,
+				1
 			]
 		},
 		{

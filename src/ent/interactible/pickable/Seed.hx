@@ -1,6 +1,6 @@
-package ent;
+package ent.interactible.pickable;
 
-class Seed extends Entity {
+class Seed extends Pickable {
 
 	var growth : Float = 0.0;
 
