@@ -1,0 +1,18 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "Box_Navmesh",
+			"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+			"scaleX": 1.45,
+			"scaleY": 1.27,
+			"scaleZ": 0.4
+		},
+		{
+			"type": "model",
+			"name": "Debris02",
+			"source": "content/Art/Asset/Debris/Debris02.fbx"
+		}
+	]
+}

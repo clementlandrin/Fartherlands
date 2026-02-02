@@ -19,14 +19,14 @@
 					"name": "A2",
 					"source": "content/Room/Arch/A2.prefab",
 					"x": 2,
-					"y": 7.5
+					"y": -18.95
 				},
 				{
 					"type": "reference",
 					"name": "A1",
 					"source": "content/Room/Arch/A1.prefab",
 					"x": -2,
-					"y": -7.5
+					"y": -33.95
 				}
 			]
 		},
@@ -50,6 +50,7 @@
 					"type": "reference",
 					"name": "H10",
 					"source": "content/Room/Hub/H10.prefab",
+					"x": 25.52,
 					"z": -15
 				},
 				{
@@ -393,59 +394,58 @@
 					"name": "F12",
 					"source": "content/Room/Factory/F12.prefab",
 					"x": 10,
-					"y": -25
+					"y": -51.45
 				},
 				{
 					"type": "reference",
 					"name": "F13",
 					"source": "content/Room/Factory/F13.prefab",
-					"x": -5,
-					"y": -25
+					"x": -15,
+					"y": -4.85
 				},
 				{
 					"type": "reference",
 					"name": "F14",
 					"source": "content/Room/Factory/F14.prefab",
-					"x": -25,
-					"y": -25
+					"x": -32.5,
+					"y": -16.5,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
 					"name": "F15",
 					"source": "content/Room/Factory/F15.prefab",
-					"x": -45,
-					"y": -25
+					"x": -15,
+					"y": -35
 				},
 				{
 					"type": "reference",
 					"name": "F4",
 					"source": "content/Room/Factory/F4.prefab",
-					"x": 10,
-					"y": -20,
-					"z": 10
+					"y": -20
 				},
 				{
 					"type": "reference",
 					"name": "F5",
 					"source": "content/Room/Factory/F5.prefab",
 					"x": 7.5,
-					"y": -38.82,
+					"y": -65.27,
 					"z": 10
 				},
 				{
 					"type": "reference",
 					"name": "F6",
 					"source": "content/Room/Factory/F6.prefab",
-					"x": -3.75,
-					"y": -25,
-					"z": 10
+					"x": -15,
+					"y": -5,
+					"z": -15
 				},
 				{
 					"type": "reference",
 					"name": "F7",
 					"source": "content/Room/Factory/F7.prefab",
 					"x": -8,
-					"y": -35,
+					"y": -61.45,
 					"z": 15
 				},
 				{
@@ -453,14 +453,14 @@
 					"name": "F8",
 					"source": "content/Room/Factory/F8.prefab",
 					"x": -8,
-					"y": -35
+					"y": -54.8
 				},
 				{
 					"type": "reference",
 					"name": "F9",
 					"source": "content/Room/Factory/F9.prefab",
 					"x": -11.5,
-					"y": -45,
+					"y": -71.45,
 					"z": 10,
 					"children": [
 						{
@@ -483,15 +483,14 @@
 					"type": "reference",
 					"name": "F10",
 					"source": "content/Room/Factory/F10.prefab",
-					"x": -23.91,
-					"y": -30,
-					"z": 10
+					"x": -15,
+					"y": -20
 				},
 				{
 					"type": "reference",
 					"name": "F11",
 					"source": "content/Room/Factory/F11.prefab",
-					"x": -43.5,
+					"x": -62.65,
 					"y": -25,
 					"z": 10
 				},
@@ -501,7 +500,7 @@
 					"source": "h3d.shader.ColorMult",
 					"editorOnly": true,
 					"props": {
-						"amount": 0.4,
+						"amount": 0,
 						"color": [
 							0.6352941176470588,
 							0.1843137254901961,
@@ -546,6 +545,7 @@
 					"type": "reference",
 					"name": "D14",
 					"source": "content/Room/Diverse/D14.prefab",
+					"x": 25.52,
 					"y": 15,
 					"z": -15
 				},
@@ -553,6 +553,7 @@
 					"type": "reference",
 					"name": "D15",
 					"source": "content/Room/Diverse/D15.prefab",
+					"x": 25.52,
 					"y": -15,
 					"z": -15
 				},
@@ -561,7 +562,7 @@
 					"name": "D13",
 					"source": "content/Room/Diverse/D13.prefab",
 					"y": -15,
-					"z": 10
+					"z": -15
 				},
 				{
 					"type": "reference",
@@ -583,7 +584,7 @@
 					"source": "content/Room/Diverse/D9.prefab",
 					"x": -15,
 					"y": -15,
-					"z": 10
+					"z": -15
 				},
 				{
 					"type": "reference",
@@ -591,7 +592,7 @@
 					"source": "content/Room/Diverse/D10.prefab",
 					"x": -29.17,
 					"y": -15,
-					"z": 10
+					"z": -15
 				},
 				{
 					"type": "reference",

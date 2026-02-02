@@ -12,8 +12,8 @@
 			"children": [
 				{
 					"type": "reference",
-					"name": "doorDown",
-					"source": "gameplay/doorDown.prefab"
+					"name": "doorUp",
+					"source": "gameplay/doorUp.prefab"
 				}
 			]
 		},

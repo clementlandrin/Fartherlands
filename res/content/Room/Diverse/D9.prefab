@@ -51,15 +51,114 @@
 					"type": "reference",
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": -4.58,
+					"inGameOnly": true,
+					"x": -4.11,
 					"y": -3.97,
-					"z": 0.34,
+					"z": 0.85,
 					"scaleX": 7.47,
-					"scaleY": 1.86,
-					"scaleZ": 1.39,
+					"scaleY": 8.75,
+					"scaleZ": 2.87,
 					"rotationX": -82.9,
 					"rotationY": -82.3,
 					"rotationZ": -5.3
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -1.97,
+					"y": -2.47,
+					"z": 0.85,
+					"scaleX": 7.47,
+					"scaleY": 4.17,
+					"scaleZ": 2.87,
+					"rotationX": -82.9,
+					"rotationY": -82.3,
+					"rotationZ": -5.3
+				},
+				{
+					"type": "object",
+					"name": "Debris",
+					"x": -3.095714285714286,
+					"y": -1.8957142857142852,
+					"z": 0.13285714285714287,
+					"children": [
+						{
+							"type": "model",
+							"name": "Debris04",
+							"source": "content/Art/Asset/Debris/Debris04.fbx",
+							"x": -1.5743,
+							"y": -1.2743,
+							"z": 0.2571,
+							"scaleX": 2.57,
+							"scaleY": 2.57,
+							"scaleZ": 2.57,
+							"rotationX": -30
+						},
+						{
+							"type": "model",
+							"name": "Debris03",
+							"source": "content/Art/Asset/Debris/Debris03.fbx",
+							"x": 1.3557,
+							"y": -0.6343,
+							"z": -0.6229,
+							"scaleX": 2.68,
+							"scaleY": 2.68,
+							"scaleZ": 2.68
+						},
+						{
+							"type": "model",
+							"name": "Debris02",
+							"source": "content/Art/Asset/Debris/Debris02.fbx",
+							"x": -4.1143,
+							"y": -1.4443,
+							"z": -0.3229,
+							"scaleX": 3.32,
+							"scaleY": 3.32,
+							"scaleZ": 3.32
+						},
+						{
+							"type": "model",
+							"name": "Debris01",
+							"source": "content/Art/Asset/Debris/Debris01.fbx",
+							"x": -0.3443,
+							"y": 1.1457,
+							"z": -0.3129,
+							"scaleX": 2.26,
+							"scaleY": 2.26,
+							"scaleZ": 2.26
+						},
+						{
+							"type": "model",
+							"name": "cube_stone02",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
+							"x": 0.8557,
+							"y": -0.7843,
+							"z": 0.7471,
+							"rotationX": 26.5,
+							"rotationY": 151.6,
+							"rotationZ": 13.4
+						},
+						{
+							"type": "model",
+							"name": "cube_stone03",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone03.fbx",
+							"x": 2.4057,
+							"y": 1.5257,
+							"z": 0.3871,
+							"rotationZ": -21.5
+						},
+						{
+							"type": "model",
+							"name": "dalle_ground_path01",
+							"source": "content/Art/Asset/Generique/Ground/dalle_ground_path01.fbx",
+							"x": 1.4157,
+							"y": 1.4657,
+							"z": -0.1329,
+							"rotationZ": 75
+						}
+					]
 				}
 			]
 		},

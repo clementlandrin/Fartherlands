@@ -102,8 +102,8 @@
 				},
 				{
 					"type": "reference",
-					"name": "doorUp",
-					"source": "gameplay/doorUp.prefab"
+					"name": "doorDown",
+					"source": "gameplay/doorDown.prefab"
 				}
 			]
 		}

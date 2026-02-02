@@ -143,6 +143,29 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "material",
+			"name": "BaseMetal",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"normalMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Utilities/BaseMetal_MetallicRoughnessAO.png",
+			"color": [
+				0.43137254901960786,
+				0.43137254901960786,
+				0.43137254901960786,
+				1
+			]
 		}
 	]
 }

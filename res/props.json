@@ -37,6 +37,10 @@
 		{
 			"name": "Exterior",
 			"path": "content/Art/MaterialLibrary/Exterior/Background.prefab"
+		},
+		{
+			"name": "Debris",
+			"path": "content/Art/MaterialLibrary/Assets/Debris.prefab"
 		}
 	],
 	"sceneeditor.axisToggle": true,

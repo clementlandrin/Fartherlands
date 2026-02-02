@@ -8,7 +8,16 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "reference",
+					"name": "doorUp",
+					"source": "gameplay/doorUp.prefab",
+					"x": 0.2346,
+					"y": 0.0078
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -70,7 +79,7 @@
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door_back.prefab",
-			"x": 3.95,
+			"x": -5.03,
 			"y": 3.54,
 			"rotationZ": 179.8
 		}

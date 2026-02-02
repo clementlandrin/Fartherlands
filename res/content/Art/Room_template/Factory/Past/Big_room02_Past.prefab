@@ -149,6 +149,7 @@
 		{
 			"type": "object",
 			"name": "Collide",
+			"inGameOnly": true,
 			"x": -2.5,
 			"y": -2.5,
 			"z": 1.6666666666666665,

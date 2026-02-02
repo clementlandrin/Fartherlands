@@ -4,6 +4,7 @@
 		{
 			"type": "object",
 			"name": "object",
+			"editorOnly": true,
 			"props": {
 				"id": "Ladder_object",
 				"type": 3,
@@ -13,6 +14,7 @@
 				{
 					"type": "box",
 					"name": "bottom",
+					"editorOnly": true,
 					"children": [
 						{
 							"type": "object",
@@ -68,6 +70,7 @@
 				{
 					"type": "box",
 					"name": "top",
+					"editorOnly": true,
 					"z": 4,
 					"children": [
 						{
@@ -132,6 +135,15 @@
 							"depthTest": "Less",
 							"colorMask": 15,
 							"enableStencil": false
+						},
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
 						}
 					},
 					"color": [
@@ -149,60 +161,11 @@
 			"z": 1.9875,
 			"children": [
 				{
-					"type": "box",
-					"name": "box",
+					"type": "model",
+					"name": "Ladder",
+					"source": "content/LD/Placeholder/Ladder.fbx",
 					"z": -1.9875,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
-				},
-				{
-					"type": "box",
-					"name": "box",
-					"z": -1.5475,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
-				},
-				{
-					"type": "box",
-					"name": "box",
-					"z": -0.9775,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
-				},
-				{
-					"type": "box",
-					"name": "box",
-					"z": -0.3375,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
-				},
-				{
-					"type": "box",
-					"name": "box",
-					"z": 0.3425,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
-				},
-				{
-					"type": "box",
-					"name": "box",
-					"z": 0.9525,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
-				},
-				{
-					"type": "box",
-					"name": "box",
-					"z": 1.5325,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
-				},
-				{
-					"type": "box",
-					"name": "box",
-					"z": 2.0225,
-					"scaleY": 0.46,
-					"scaleZ": 0.25
+					"rotationZ": -90
 				}
 			]
 		}

@@ -1,0 +1,23 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "material",
+			"name": "Debris",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Debris/Debris_Albedo.png",
+			"normalMap": "content/Art/Asset/Debris/Debris_Normal.png",
+			"specularMap": "content/Art/Asset/Debris/Debris_MetallicRoughnessAO.png"
+		}
+	]
+}

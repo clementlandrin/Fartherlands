@@ -12,9 +12,9 @@
 			"children": [
 				{
 					"type": "reference",
-					"name": "doorDown",
-					"source": "gameplay/doorDown.prefab",
-					"rotationZ": 90
+					"name": "doorUp",
+					"source": "gameplay/doorUp.prefab",
+					"rotationZ": -90
 				}
 			]
 		},
@@ -51,16 +51,6 @@
 			]
 		},
 		{
-			"type": "reference",
-			"name": "Present",
-			"source": "lighting/Present.prefab"
-		},
-		{
-			"type": "reference",
-			"name": "Small_room_Present",
-			"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab"
-		},
-		{
 			"type": "object",
 			"name": "past",
 			"children": [
@@ -75,16 +65,6 @@
 					"source": "content/Art/Room_template/Generic/Past/Small_room_Past.prefab"
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Past",
-			"source": "lighting/Past.prefab"
-		},
-		{
-			"type": "reference",
-			"name": "Small_room",
-			"source": "content/Art/Room_template/Generic/Past/Small_room_Past.prefab"
 		}
 	]
 }
