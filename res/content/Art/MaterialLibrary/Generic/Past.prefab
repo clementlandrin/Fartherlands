@@ -161,12 +161,45 @@
 					"depthTest": "Less",
 					"colorMask": 15,
 					"enableStencil": false,
-					"textureWrap": true
+					"textureWrap": true,
+					"parallax": 0
 				}
 			},
-			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Albedo.png",
-			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_Normal.png",
-			"specularMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern04_MetallicRoughnessAO.png"
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png"
+		},
+		{
+			"type": "material",
+			"name": "Wall_Past",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true,
+					"parallaxSteps": 30,
+					"parallax": 0.05
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+			"children": [
+				{
+					"type": "shader",
+					"name": "UVTransform",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/UVTransform.shgraph",
+					"props": {
+						"Tiling": 1,
+						"Offset": 0
+					}
+				}
+			]
 		},
 		{
 			"type": "material",
@@ -183,9 +216,9 @@
 				}
 			},
 			"wrapRepeat": true,
-			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Albedo.png",
-			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_Normal.png",
-			"specularMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern03_MetallicRoughnessAO.png"
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Ground_Past_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Ground_Past_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/Ground_Past_MetallicRoughnessAO.png"
 		},
 		{
 			"type": "material",

@@ -74,7 +74,7 @@
 				{
 					"type": "rfx.kuwaharaFilter",
 					"name": "kuwaharaFilter",
-					"radius": 2,
+					"radius": 1,
 					"endDist": 0
 				},
 				{

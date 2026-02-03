@@ -172,7 +172,7 @@
 					"source": "content/Art/Asset/Generique/bridges/little_bridge.fbx",
 					"x": 4.5,
 					"y": 0.26,
-					"z": 2.15,
+					"z": 2.1,
 					"children": [
 						{
 							"type": "reference",
