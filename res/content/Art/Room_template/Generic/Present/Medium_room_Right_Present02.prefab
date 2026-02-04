@@ -47,9 +47,9 @@
 						"$cdbtype": "element"
 					},
 					"y": -7.5,
-					"z": 2.5,
+					"z": 9.19,
 					"scaleX": 7.5,
-					"scaleY": 5,
+					"scaleY": 20.43,
 					"scaleZ": 5,
 					"rotationX": -90,
 					"kind": 0,
@@ -83,9 +83,9 @@
 						"$cdbtype": "element"
 					},
 					"x": -3.75,
-					"z": 2.5,
+					"z": 9.19,
 					"scaleX": 15,
-					"scaleY": 5.1,
+					"scaleY": 20.84,
 					"scaleZ": 5.1,
 					"rotationX": -90,
 					"rotationZ": -90,

@@ -20,6 +20,62 @@
 				},
 				{
 					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 0.35,
+					"y": -8.22,
+					"z": 1.37,
+					"rotationX": -90,
+					"rotationY": -90
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": -4.8,
+					"y": 0.01,
+					"z": 8.88,
+					"rotationX": 180,
+					"rotationY": -90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": 1.74,
+							"z": 0.51,
+							"scaleX": 12.35,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 0.64,
+					"y": 8.21,
+					"z": 1.37,
+					"rotationX": 90,
+					"rotationY": -90
+				},
+				{
+					"type": "model",
+					"name": "wall06",
+					"source": "content/Art/Asset/Generique/Walls/wall06.fbx",
+					"x": -4.8,
+					"y": -6.26,
+					"z": 8.88,
+					"rotationX": 180,
+					"rotationY": -90
+				},
+				{
+					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
 					"x": -3.99,
@@ -68,19 +124,6 @@
 					"scaleX": 7.128,
 					"scaleY": 4.904,
 					"scaleZ": 2.744
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -4.29,
-					"y": -2.18,
-					"z": 7.48,
-					"scaleX": 12.35,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationZ": -90
 				},
 				{
 					"type": "reference",
@@ -175,6 +218,15 @@
 					"x": -3.6,
 					"y": 0.23,
 					"rotationZ": -91.1
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door.prefab",
+					"x": -3.56,
+					"y": 2.56,
+					"z": 10.03,
+					"rotationZ": -91.1
 				}
 			]
 		},
@@ -220,7 +272,7 @@
 							"y": 2.38,
 							"z": -0.92,
 							"scaleX": 4.26,
-							"scaleY": 13.32,
+							"scaleY": 13.91,
 							"scaleZ": 5.35,
 							"rotationZ": 180
 						},
@@ -382,13 +434,31 @@
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"inGameOnly": true,
-					"x": 4.53,
-					"y": 0.062,
-					"z": -0.166,
-					"scaleX": 16.472,
-					"scaleY": 4.904,
-					"scaleZ": 2.744,
+					"x": 3.55,
+					"y": 0.06,
+					"z": -2.92,
+					"scaleX": 16.47,
+					"scaleY": 4.9,
+					"scaleZ": 5.5,
 					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 4.8,
+					"y": -3.85,
+					"z": 1.37,
+					"rotationY": -90
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 4.8,
+					"y": 4.94,
+					"z": 1.37,
+					"rotationY": -90
 				}
 			]
 		},
@@ -397,70 +467,11 @@
 			"name": "ladder_15",
 			"source": "gameplay/ladder_15.prefab",
 			"x": -2.64,
-			"y": 4.1,
+			"y": 4.55,
 			"z": 3.16,
 			"rotationX": 9.326556428018885e-12,
 			"rotationY": -1.0647094032632772e-11,
-			"rotationZ": -8.665622855091746e-25,
-			"editMode": "Edit"
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 4.8,
-			"y": -3.85,
-			"z": 1.37,
-			"rotationY": -90
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 0.35,
-			"y": -8.22,
-			"z": 1.37,
-			"rotationX": -90,
-			"rotationY": -90
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -4.8,
-			"y": -0.44,
-			"z": 8.88,
-			"rotationX": 180,
-			"rotationY": -90
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 4.8,
-			"y": 4.94,
-			"z": 1.37,
-			"rotationY": -90
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 0.64,
-			"y": 8.21,
-			"z": 1.37,
-			"rotationX": 90,
-			"rotationY": -90
-		},
-		{
-			"type": "model",
-			"name": "wall06",
-			"source": "content/Art/Asset/Generique/Walls/wall06.fbx",
-			"x": -4.8,
-			"y": -6.71,
-			"z": 8.88,
-			"rotationX": 180,
-			"rotationY": -90
+			"rotationZ": -8.665622855091746e-25
 		}
 	]
 }

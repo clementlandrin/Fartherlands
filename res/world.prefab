@@ -605,16 +605,15 @@
 					"type": "reference",
 					"name": "D12",
 					"source": "content/Room/Diverse/D12.prefab",
-					"x": -57.54,
-					"y": 15,
-					"z": 10
+					"x": -35,
+					"y": 35
 				},
 				{
 					"type": "reference",
 					"name": "D5",
 					"source": "content/Room/Diverse/D5.prefab",
-					"x": -51.25,
-					"y": 15
+					"x": -15,
+					"y": 35
 				},
 				{
 					"type": "reference",

@@ -8,7 +8,35 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 6.68,
+					"y": -2.11,
+					"z": 0.91,
+					"scaleX": 0.61,
+					"scaleY": 0.61,
+					"scaleZ": 0.61,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 180
+						}
+					]
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -20,16 +48,7 @@
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door.prefab",
-					"x": -7.37,
-					"y": -1.07,
-					"rotationZ": -91.1,
-					"editMode": "Edit"
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 4.43,
+					"x": -1.78,
 					"y": -3.54
 				}
 			]
@@ -70,17 +89,45 @@
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door_back.prefab",
-			"x": 7.22,
-			"y": -0.23,
+			"x": 7.12,
+			"y": -2.52,
+			"z": 1.7,
 			"rotationZ": 87.5
 		},
 		{
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door_back.prefab",
-			"x": 0.27,
-			"y": 3.54,
-			"rotationZ": 179.8
+			"x": 7.3,
+			"y": 1.71,
+			"rotationZ": 87.5
+		},
+		{
+			"type": "model",
+			"name": "stairs02",
+			"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
+			"x": 1.81,
+			"y": -1.92,
+			"z": 0.02,
+			"scaleX": 0.77,
+			"scaleY": 0.77,
+			"scaleZ": 0.77,
+			"rotationZ": 180,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -1.11,
+					"y": 0.23,
+					"z": -1.63,
+					"scaleX": 7.84,
+					"scaleY": 4.86,
+					"scaleZ": 2.72,
+					"rotationY": 27
+				}
+			]
 		}
 	]
 }

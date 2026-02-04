@@ -4,7 +4,6 @@
 		{
 			"type": "object",
 			"name": "object",
-			"editorOnly": true,
 			"props": {
 				"id": "Ladder_object",
 				"type": 3,
@@ -14,7 +13,6 @@
 				{
 					"type": "box",
 					"name": "bottom",
-					"editorOnly": true,
 					"children": [
 						{
 							"type": "object",
@@ -25,7 +23,6 @@
 								{
 									"type": "polygon",
 									"name": "polygon",
-									"editorOnly": true,
 									"y": 0.52,
 									"scaleX": 0.5,
 									"scaleY": 0.5,
@@ -70,7 +67,6 @@
 				{
 					"type": "box",
 					"name": "top",
-					"editorOnly": true,
 					"z": 4,
 					"children": [
 						{
