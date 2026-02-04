@@ -1,0 +1,180 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "object",
+			"editorOnly": true,
+			"props": {
+				"id": "Ladder_object",
+				"type": 3,
+				"$cdbtype": "element"
+			},
+			"children": [
+				{
+					"type": "box",
+					"name": "bottom",
+					"editorOnly": true,
+					"children": [
+						{
+							"type": "object",
+							"name": "out",
+							"y": 1,
+							"rotationZ": 180,
+							"children": [
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"editorOnly": true,
+									"y": 0.52,
+									"scaleX": 0.5,
+									"scaleY": 0.5,
+									"scaleZ": 0.5,
+									"color": -65536,
+									"kind": 2,
+									"points": [
+										{
+											"x": 0.5993503666532403,
+											"y": -0.47981533437085655
+										},
+										{
+											"x": 0.26574416067438505,
+											"y": -0.46235501111571775
+										},
+										{
+											"x": 0.2558207768042604,
+											"y": 0.5067894881428281
+										},
+										{
+											"x": -0.22814808413841609,
+											"y": 0.5057707964221398
+										},
+										{
+											"x": -0.23809401841225847,
+											"y": -0.45811002733865347
+										},
+										{
+											"x": -0.6334003231117055,
+											"y": -0.4722861486990141
+										},
+										{
+											"x": 0.06172116783856346,
+											"y": -1.0610435563893685
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "box",
+					"name": "top",
+					"editorOnly": true,
+					"z": 7.54,
+					"children": [
+						{
+							"type": "object",
+							"name": "out",
+							"y": -1,
+							"children": [
+								{
+									"type": "polygon",
+									"name": "polygon",
+									"editorOnly": true,
+									"y": 0.55,
+									"scaleX": 0.5,
+									"scaleY": 0.5,
+									"scaleZ": 0.5,
+									"color": -65536,
+									"kind": 2,
+									"points": [
+										{
+											"x": 0.5993503666532403,
+											"y": -0.47981533437085655
+										},
+										{
+											"x": 0.26574416067438505,
+											"y": -0.46235501111571775
+										},
+										{
+											"x": 0.2558207768042604,
+											"y": 0.5067894881428281
+										},
+										{
+											"x": -0.22814808413841609,
+											"y": 0.5057707964221398
+										},
+										{
+											"x": -0.23809401841225847,
+											"y": -0.45811002733865347
+										},
+										{
+											"x": -0.6334003231117055,
+											"y": -0.4722861486990141
+										},
+										{
+											"x": 0.06172116783856346,
+											"y": -1.0610435563893685
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"PBR": {
+							"mode": "PBR",
+							"blend": "Alpha",
+							"shadows": false,
+							"culling": "None",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						},
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"color": [
+						0,
+						1,
+						1,
+						1
+					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "model",
+			"z": 1.9875,
+			"children": [
+				{
+					"type": "model",
+					"name": "Ladder",
+					"source": "content/LD/Placeholder/Ladder.fbx",
+					"z": -4.04,
+					"rotationZ": -90
+				},
+				{
+					"type": "model",
+					"name": "Ladder",
+					"source": "content/LD/Placeholder/Ladder.fbx",
+					"z": 0.78,
+					"rotationZ": -90
+				}
+			]
+		}
+	]
+}

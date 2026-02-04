@@ -20,24 +20,7 @@
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door.prefab",
-					"x": 7.22,
-					"y": -0.23,
-					"rotationZ": 87.5
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": -7.35,
-					"y": -0.03,
-					"rotationZ": -91.1
-				},
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door.prefab",
-					"x": 0.31,
-					"y": -3.54
+					"y": -7.5
 				}
 			]
 		},
@@ -52,8 +35,8 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+					"name": "Big_room03_Present",
+					"source": "content/Art/Room_template/Generic/Present/Big_room03_Present.prefab"
 				}
 			]
 		},
@@ -68,10 +51,25 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left",
-					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+					"name": "Big_room03_Past",
+					"source": "content/Art/Room_template/Generic/Past/Big_room03_Past.prefab"
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"y": 7.5,
+			"rotationZ": 180
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door_back.prefab",
+			"x": 7.5,
+			"y": -0.81,
+			"rotationZ": 90
 		}
 	]
 }
