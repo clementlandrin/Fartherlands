@@ -1,0 +1,18 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "camera",
+			"name": "camera",
+			"x": 2.7087,
+			"y": 2.5073,
+			"z": 9.6593,
+			"rotationY": 45,
+			"rotationZ": -135,
+			"fovY": 84.55,
+			"zFar": 109.28215285841122,
+			"zNear": 0.12418426461183099,
+			"orthoWidth": 28
+		}
+	]
+}

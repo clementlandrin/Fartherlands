@@ -55,6 +55,26 @@
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
+					"y": 4.95,
+					"z": 0.83,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.5,
 					"y": 1.25,
 					"z": -1.6667,
 					"scaleX": 15,
@@ -76,6 +96,27 @@
 					"x": -5,
 					"y": 1.25,
 					"z": 0.8333,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Left_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 9.96,
+					"y": 1.25,
+					"z": 0.83,
 					"scaleX": 7.5,
 					"scaleY": 5,
 					"scaleZ": 5,

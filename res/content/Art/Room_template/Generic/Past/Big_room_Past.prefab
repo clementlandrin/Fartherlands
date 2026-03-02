@@ -54,6 +54,26 @@
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
+					"y": 9.91,
+					"z": 1.67,
+					"scaleX": 15,
+					"scaleY": 10,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.5,
 					"y": 2.5,
 					"z": -3.3333,
 					"scaleX": 15,
@@ -75,6 +95,27 @@
 					"x": -5,
 					"y": 2.5,
 					"z": 1.6667,
+					"scaleX": 15,
+					"scaleY": 10,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 9.91,
+					"y": 2.5,
+					"z": 1.67,
 					"scaleX": 15,
 					"scaleY": 10,
 					"scaleZ": 15,

@@ -130,6 +130,42 @@
 					]
 				},
 				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Big_room02_Past_polygon2",
+						"type": 0,
+						"$cdbtype": "element"
+					},
+					"x": -5,
+					"y": 2.5,
+					"z": 0.8333,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
 					"type": "material",
 					"name": "material",
 					"props": {
@@ -183,6 +219,27 @@
 						"$cdbtype": "element"
 					},
 					"x": 2.5,
+					"y": 9.93,
+					"z": 0.83,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 15,
+					"rotationX": 90,
+					"rotationY": 180,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.5,
 					"y": 2.5,
 					"z": -1.6667,
 					"scaleX": 15,
@@ -209,6 +266,27 @@
 					"scaleZ": 15,
 					"rotationX": -90,
 					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 9.94,
+					"y": 2.5,
+					"z": 0.83,
+					"scaleX": 15,
+					"scaleY": 5,
+					"scaleZ": 15,
+					"rotationX": -90,
+					"rotationZ": 90,
 					"kind": 0,
 					"args": [
 						0

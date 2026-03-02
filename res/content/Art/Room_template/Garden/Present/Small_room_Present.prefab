@@ -54,9 +54,50 @@
 						"type": 2,
 						"$cdbtype": "element"
 					},
+					"x": 4.9,
+					"y": 1.25,
+					"z": 0.83,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Small_room_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
 					"x": 1.25,
 					"y": -2.5,
 					"z": 0.8333,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Small_room_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 1.25,
+					"y": 4.93,
+					"z": 0.83,
 					"scaleX": 7.5,
 					"scaleY": 5,
 					"scaleZ": 5,

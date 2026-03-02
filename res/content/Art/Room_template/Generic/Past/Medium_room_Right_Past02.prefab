@@ -33,6 +33,25 @@
 						"type": 2,
 						"$cdbtype": "element"
 					},
+					"y": 7.42,
+					"z": 7.5,
+					"scaleX": 7.5,
+					"scaleY": 15,
+					"scaleZ": 4.9995,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Right_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
 					"scaleX": 15,
 					"scaleY": 7.5,
 					"scaleZ": 5,
@@ -51,6 +70,26 @@
 						"$cdbtype": "element"
 					},
 					"x": -3.75,
+					"z": 7.5,
+					"scaleX": 15,
+					"scaleY": 15,
+					"scaleZ": 5.1,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Medium_room_Right_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 3.63,
 					"z": 7.5,
 					"scaleX": 15,
 					"scaleY": 15,

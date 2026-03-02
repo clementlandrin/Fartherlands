@@ -472,6 +472,50 @@
 			"rotationX": 9.326556428018885e-12,
 			"rotationY": -1.0647094032632772e-11,
 			"rotationZ": -8.665622855091746e-25
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"x": -8.17,
+			"y": 7.8,
+			"z": 3.98,
+			"scaleX": 8.63,
+			"scaleY": 19.95,
+			"scaleZ": 8.63,
+			"rotationX": -90,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"x": -7.98,
+			"y": -2.99,
+			"z": 14.89,
+			"scaleX": 8.63,
+			"scaleY": 19.95,
+			"scaleZ": 8.63,
+			"kind": 0,
+			"args": [
+				0
+			]
+		},
+		{
+			"type": "polygon",
+			"name": "polygon",
+			"x": -1.27,
+			"y": -12.14,
+			"z": 14.89,
+			"scaleX": 8.63,
+			"scaleY": 19.95,
+			"scaleZ": 8.63,
+			"rotationZ": 90,
+			"kind": 0,
+			"args": [
+				0
+			]
 		}
 	]
 }
