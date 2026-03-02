@@ -58,7 +58,7 @@
 		{
 			"type": "reference",
 			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
+			"source": "gameplay/door/door_back.prefab",
 			"x": -0.12,
 			"y": 7.09,
 			"rotationZ": 179.8

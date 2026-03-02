@@ -226,7 +226,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": 7.33,
 					"y": -0.23,
 					"rotationZ": 87.5
@@ -234,7 +234,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": 7.27,
 					"y": -3.67,
 					"z": 15.26,
@@ -282,7 +282,8 @@
 							"colorMask": 15,
 							"enableStencil": false
 						}
-					}
+					},
+					"refMatLib": ""
 				}
 			]
 		},

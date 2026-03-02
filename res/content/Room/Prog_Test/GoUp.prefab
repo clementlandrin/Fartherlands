@@ -161,6 +161,7 @@
 					"type": "reference",
 					"name": "doorUp",
 					"source": "gameplay/doorUp.prefab",
+					"enabled": false,
 					"x": -0.33,
 					"y": -3.05,
 					"children": [
@@ -182,10 +183,9 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": -3.53,
 					"y": -2.23,
-					"rotationZ": -90,
 					"children": [
 						{
 							"type": "object",
@@ -206,10 +206,11 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
+					"enabled": false,
 					"x": 3.89,
 					"y": -2.24,
-					"rotationZ": 90,
+					"rotationZ": 180,
 					"children": [
 						{
 							"type": "object",
@@ -230,9 +231,11 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
+					"enabled": false,
 					"x": 0.8,
 					"y": -7.83,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "object",
@@ -253,10 +256,11 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
+					"enabled": false,
 					"x": 0.8,
 					"y": 7.38,
-					"rotationZ": -180,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "object",

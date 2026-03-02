@@ -4,19 +4,20 @@
 		{
 			"type": "reference",
 			"name": "PT1",
-			"source": "content/Room/Prog_Test/GoUp.prefab",
-			"editMode": "Edit"
+			"source": "content/Room/Prog_Test/GoUp.prefab"
 		},
 		{
 			"type": "reference",
 			"name": "PT2",
 			"source": "content/Room/Prog_Test/GoDown.prefab",
+			"enabled": false,
 			"z": 25.84
 		},
 		{
 			"type": "reference",
 			"name": "CamFollowPlayer",
 			"source": "content/Room/Prog_Test/CamFollowPlayer.prefab",
+			"enabled": false,
 			"x": -13.43,
 			"z": 25.18,
 			"editMode": "Edit"
@@ -25,6 +26,7 @@
 			"type": "reference",
 			"name": "TeleportColor",
 			"source": "content/Room/Prog_Test/TeleportColor.prefab",
+			"enabled": false,
 			"x": 14.68,
 			"y": 20.81,
 			"editMode": "Edit"
@@ -33,6 +35,7 @@
 			"type": "reference",
 			"name": "TeleportHub",
 			"source": "content/Room/Prog_Test/TeleportHub.prefab",
+			"enabled": false,
 			"x": 0.13,
 			"y": 21.31,
 			"editMode": "Edit"
@@ -41,6 +44,7 @@
 			"type": "reference",
 			"name": "TeleportColor2",
 			"source": "content/Room/Prog_Test/TeleportColor2.prefab",
+			"enabled": false,
 			"y": 40.8,
 			"editMode": "Edit"
 		},
@@ -48,18 +52,21 @@
 			"type": "reference",
 			"name": "GolemOnOff",
 			"source": "content/Room/Prog_Test/GolemOnOff.prefab",
+			"enabled": false,
 			"x": 14.95
 		},
 		{
 			"type": "reference",
 			"name": "Knowledge",
 			"source": "content/Room/Prog_Test/Knowledge.prefab",
+			"enabled": false,
 			"y": -23.877443806333062
 		},
 		{
 			"type": "reference",
 			"name": "InvisibleBridge",
 			"source": "content/Room/Prog_Test/InvisibleBridge.prefab",
+			"enabled": false,
 			"y": 21.13,
 			"z": 25.84
 		},
@@ -67,30 +74,9 @@
 			"type": "reference",
 			"name": "TeleportDesactivated",
 			"source": "content/Room/Prog_Test/TeleportDeactivated.prefab",
+			"enabled": false,
 			"x": 15,
 			"y": 40.22
-		},
-		{
-			"type": "object",
-			"name": "object",
-			"props": {
-				"id": "World_prog_object",
-				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"unstableTeleport": true,
-					"dialog": "Tu m'as attrapé !"
-				}
-			},
-			"x": -15.33,
-			"y": -19.93,
-			"children": [
-				{
-					"type": "reference",
-					"name": "test_golem",
-					"source": "gameplay/test_golem.prefab"
-				}
-			]
 		},
 		{
 			"type": "reference",
@@ -105,6 +91,7 @@
 			"type": "reference",
 			"name": "Serre",
 			"source": "content/Room/Prog_Test/Serre.prefab",
+			"enabled": false,
 			"x": -13.64,
 			"y": -25.2,
 			"z": 25.41
@@ -113,6 +100,7 @@
 			"type": "reference",
 			"name": "BrokenArch",
 			"source": "content/Room/Prog_Test/BrokenArch.prefab",
+			"enabled": false,
 			"x": -13.46,
 			"y": -49.47,
 			"z": 26.01
@@ -121,6 +109,7 @@
 			"type": "reference",
 			"name": "Exterior",
 			"source": "content/Room/Prog_Test/Exterior.prefab",
+			"enabled": false,
 			"x": 14.95,
 			"z": 25.84
 		},
@@ -128,6 +117,7 @@
 			"type": "reference",
 			"name": "Recharge",
 			"source": "content/Room/Prog_Test/Recharge.prefab",
+			"enabled": false,
 			"x": 25.93,
 			"z": 25.84
 		}

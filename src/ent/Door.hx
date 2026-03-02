@@ -1,9 +1,12 @@
 package ent;
 
 class Door extends Entity {
+	public static var DIRECTION = new h3d.Vector(-1, 0, 0);
 
 	public var to : Door;
 	var direction : h3d.col.Point;
+	var triggerBounds : h3d.col.Bounds;
+
 	var g : h3d.scene.Graphics;
 
 	public function new() {
@@ -11,9 +14,33 @@ class Door extends Entity {
 		game.curRoom.doors.push(this);
 	}
 
+	override function start() {
+		super.start();
+
+		searchConnection();
+	}
+
+	override function update(dt : Float) {
+		super.update(dt);
+		if ( enabled && game.ctrl.canChangeRoom() && room == game.curRoom ) {
+			var playerPos = new h3d.col.Point(game.player.x,game.player.y,game.player.z);
+			if ( triggerBounds != null && triggerBounds.contains(playerPos) )
+				enters();
+		}
+		debugConnection();
+	}
+	
 	override function canInteract() {
         return false;
     }
+	
+	override function setObject(obj) {
+		super.setObject(obj);
+		var trigger = obj.getObjectByName("trigger");
+		triggerBounds = trigger?.getBounds();
+		trigger?.remove();
+		direction = DIRECTION.transformed3x3(obj.getAbsPos()).normalized();
+	}
 
 	public function getLeavingDirection() {
 		return direction.clone();
@@ -21,18 +48,6 @@ class Door extends Entity {
 
 	public function getEnteringDirection() {
 		return direction.scaled(-1.0);
-	}
-	
-	override function setObject(obj) {
-		super.setObject(obj);
-		obj.culled = true;
-		direction = new h3d.col.Point(0.0,-1.0, 0.0).transformed3x3(obj.getAbsPos()).normalized();
-	}
-
-	override function start() {
-		super.start();
-
-		searchConnection();
 	}
 
 	function searchConnection() {
@@ -119,15 +134,5 @@ class Door extends Entity {
 			}
 		};
 		game.moveTo(newRoom, [doorCb]);
-	}
-
-	override function update(dt : Float) {
-		super.update(dt);
-		if ( enabled && game.ctrl.canChangeRoom() && room == game.curRoom ) {
-			var playerPos = new h3d.col.Point(game.player.x,game.player.y,game.player.z);
-			if ( obj.getBounds().contains(playerPos) )
-				enters();
-		}
-		debugConnection();
 	}
 }

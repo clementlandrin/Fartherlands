@@ -236,7 +236,8 @@
 											"colorMask": 15,
 											"enableStencil": false
 										}
-									}
+									},
+									"refMatLib": ""
 								}
 							]
 						},
@@ -321,7 +322,8 @@
 											"colorMask": 15,
 											"enableStencil": false
 										}
-									}
+									},
+									"refMatLib": ""
 								}
 							]
 						}
@@ -443,7 +445,8 @@
 											"colorMask": 15,
 											"enableStencil": false
 										}
-									}
+									},
+									"refMatLib": ""
 								}
 							]
 						},
@@ -557,7 +560,8 @@
 											"colorMask": 15,
 											"enableStencil": false
 										}
-									}
+									},
+									"refMatLib": ""
 								}
 							]
 						}
@@ -574,10 +578,10 @@
 				{
 					"type": "reference",
 					"name": "door_back",
-					"source": "gameplay/door_back.prefab",
+					"source": "gameplay/door/door_back.prefab",
 					"x": 7.425,
 					"y": -0.2575,
-					"rotationZ": 87.5
+					"rotationZ": 180
 				}
 			]
 		},
@@ -618,13 +622,11 @@
 		{
 			"type": "reference",
 			"name": "door",
-			"source": "gameplay/door.prefab",
+			"source": "gameplay/door/door.prefab",
 			"x": -4.29,
 			"y": -7.48,
 			"z": 1.73,
-			"rotationX": -6.945282294302176e-12,
-			"rotationY": 1.1515589830870577e-11,
-			"rotationZ": -6.979486346156616e-25
+			"rotationZ": 90
 		}
 	]
 }

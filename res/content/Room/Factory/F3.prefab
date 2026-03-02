@@ -19,7 +19,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": 3.48,
 					"y": -0.23,
 					"rotationZ": 87.5

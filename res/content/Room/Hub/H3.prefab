@@ -173,7 +173,8 @@
 											"colorMask": 15,
 											"enableStencil": false
 										}
-									}
+									},
+									"refMatLib": ""
 								}
 							]
 						}
@@ -343,7 +344,8 @@
 											"colorMask": 15,
 											"enableStencil": false
 										}
-									}
+									},
+									"refMatLib": ""
 								}
 							]
 						}
@@ -360,7 +362,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": -7.18,
 					"y": -4.84,
 					"rotationZ": -91.1
@@ -368,7 +370,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": -7.18,
 					"y": 4.84,
 					"rotationZ": -91.1
@@ -376,7 +378,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": -4.14,
 					"y": -7.13,
 					"z": 10.37,
@@ -385,7 +387,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": -6.78,
 					"y": 4.47,
 					"z": 10.37,
@@ -394,7 +396,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": -0.16,
 					"y": -7.28
 				}
@@ -403,7 +405,7 @@
 		{
 			"type": "reference",
 			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
+			"source": "gameplay/door/door_back.prefab",
 			"x": 7.53,
 			"y": -4.34,
 			"z": 10.37,
@@ -412,7 +414,7 @@
 		{
 			"type": "reference",
 			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
+			"source": "gameplay/door/door_back.prefab",
 			"x": 4.42,
 			"y": 7.21,
 			"z": 10.37,
@@ -421,7 +423,7 @@
 		{
 			"type": "reference",
 			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
+			"source": "gameplay/door/door_back.prefab",
 			"x": 0.37,
 			"y": 7.31,
 			"rotationZ": 178.9

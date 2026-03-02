@@ -89,7 +89,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"x": -7.18,
 					"y": 0.03,
 					"z": 9.77,
@@ -255,7 +255,7 @@
 		{
 			"type": "reference",
 			"name": "door_back",
-			"source": "gameplay/door_back.prefab",
+			"source": "gameplay/door/door_back.prefab",
 			"x": 3.59,
 			"y": 3.46,
 			"z": 9.77,

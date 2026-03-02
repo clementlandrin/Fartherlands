@@ -121,7 +121,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"enabled": false,
 					"x": -3.72,
 					"y": -2.23,
@@ -130,7 +130,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"enabled": false,
 					"x": 3.89,
 					"y": -2.24,
@@ -139,7 +139,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"enabled": false,
 					"x": 0.8,
 					"y": -7.83
@@ -147,7 +147,7 @@
 				{
 					"type": "reference",
 					"name": "door",
-					"source": "gameplay/door.prefab",
+					"source": "gameplay/door/door.prefab",
 					"enabled": false,
 					"x": 0.8,
 					"y": 7.38,
