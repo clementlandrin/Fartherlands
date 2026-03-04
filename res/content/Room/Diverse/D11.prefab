@@ -223,7 +223,7 @@
 					"name": "door",
 					"source": "gameplay/door/door.prefab",
 					"x": -3.56,
-					"y": 2.56,
+					"y": -5.49,
 					"z": 10.03
 				}
 			]
@@ -474,6 +474,7 @@
 		{
 			"type": "polygon",
 			"name": "polygon",
+			"inGameOnly": true,
 			"x": -8.17,
 			"y": 7.8,
 			"z": 3.98,
@@ -489,6 +490,7 @@
 		{
 			"type": "polygon",
 			"name": "polygon",
+			"inGameOnly": true,
 			"x": -7.98,
 			"y": -2.99,
 			"z": 14.89,
@@ -503,6 +505,7 @@
 		{
 			"type": "polygon",
 			"name": "polygon",
+			"inGameOnly": true,
 			"x": -1.27,
 			"y": -12.14,
 			"z": 14.89,

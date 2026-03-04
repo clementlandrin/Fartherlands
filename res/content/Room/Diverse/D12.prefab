@@ -4,7 +4,8 @@
 		{
 			"type": "reference",
 			"name": "camera",
-			"source": "gameplay/camera.prefab"
+			"source": "gameplay/camera.prefab",
+			"editMode": "Edit"
 		},
 		{
 			"type": "object",
@@ -35,6 +36,51 @@
 							"rotationZ": 180
 						}
 					]
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"x": -6.53,
+					"y": 1.55,
+					"z": 5.81,
+					"children": [
+						{
+							"type": "model",
+							"name": "wall03",
+							"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+							"x": -0.81,
+							"y": -1.62,
+							"z": 3.88,
+							"rotationX": 90
+						},
+						{
+							"type": "model",
+							"name": "wall03",
+							"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+							"x": -0.81,
+							"y": 2.78,
+							"z": -1.16
+						},
+						{
+							"type": "model",
+							"name": "wall02",
+							"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
+							"x": 1.63,
+							"y": -1.87,
+							"z": -1.16,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "reference",
+					"name": "ladder_15",
+					"source": "gameplay/ladder_15.prefab",
+					"x": -4.22,
+					"y": 2.13,
+					"z": 1.11,
+					"scaleZ": 1.25,
+					"rotationZ": -90
 				}
 			]
 		},
@@ -51,6 +97,15 @@
 					"x": -1.78,
 					"y": -3.54,
 					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -4.92,
+					"y": -3.54,
+					"z": 10.3,
+					"rotationZ": 90
 				}
 			]
 		},
@@ -65,8 +120,9 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+					"name": "Medium_room_Left_Present02",
+					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present02.prefab",
+					"editMode": "Edit"
 				}
 			]
 		},
@@ -81,8 +137,9 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left",
-					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+					"name": "Medium_room_Left_Past02",
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past02.prefab",
+					"editMode": "Edit"
 				}
 			]
 		},

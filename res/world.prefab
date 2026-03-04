@@ -342,7 +342,7 @@
 					"source": "h3d.shader.ColorMult",
 					"editorOnly": true,
 					"props": {
-						"amount": 0.4,
+						"amount": 0.45,
 						"color": [
 							0.5843137254901961,
 							0.8196078431372549,
@@ -569,7 +569,8 @@
 					"name": "D7",
 					"source": "content/Room/Diverse/D7.prefab",
 					"x": -35,
-					"y": 20
+					"y": 20,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -606,7 +607,8 @@
 					"name": "D12",
 					"source": "content/Room/Diverse/D12.prefab",
 					"x": -35,
-					"y": 35
+					"y": 35,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",

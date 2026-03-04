@@ -4,7 +4,8 @@
 		{
 			"type": "reference",
 			"name": "camera",
-			"source": "gameplay/camera.prefab"
+			"source": "gameplay/camera.prefab",
+			"editMode": "Edit"
 		},
 		{
 			"type": "object",
@@ -37,7 +38,8 @@
 				{
 					"type": "reference",
 					"name": "Big_room03_Present",
-					"source": "content/Art/Room_template/Generic/Present/Big_room03_Present.prefab"
+					"source": "content/Art/Room_template/Generic/Present/Big_room03_Present.prefab",
+					"editMode": "Edit"
 				}
 			]
 		},
@@ -69,6 +71,15 @@
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door/door_back.prefab",
+			"x": -5.18,
+			"y": 8.19,
+			"z": 10.25,
+			"rotationZ": -90
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door/door_back.prefab",
 			"x": 7.5,
 			"y": -0.81,
 			"rotationZ": 180
@@ -78,34 +89,9 @@
 			"name": "door_back",
 			"source": "gameplay/door/door_back.prefab",
 			"x": 7.5,
-			"y": 1.58,
+			"y": -6.53,
 			"z": 10.16,
 			"rotationZ": 180
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 9.1,
-			"y": -4.08,
-			"z": 8.88,
-			"rotationY": -90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -1.4,
-					"y": -0.05,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90,
-					"rotationZ": 90
-				}
-			]
 		},
 		{
 			"type": "model",
@@ -163,34 +149,8 @@
 			"type": "model",
 			"name": "wall05",
 			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -5.43,
+			"x": -8.78,
 			"y": 9.14,
-			"z": 8.88,
-			"rotationX": 90,
-			"rotationY": -90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -1.4,
-					"y": -0.05,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90,
-					"rotationZ": 90
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 3.38,
-			"y": 9.13,
 			"z": 8.88,
 			"rotationX": 90,
 			"rotationY": -90,
@@ -268,7 +228,7 @@
 			"name": "wall05",
 			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
 			"x": 9.1,
-			"y": 4.73,
+			"y": -8.91,
 			"z": 8.88,
 			"rotationY": -90,
 			"children": [
@@ -287,6 +247,256 @@
 					"rotationZ": 90
 				}
 			]
+		},
+		{
+			"type": "object",
+			"name": "object",
+			"z": -0.27,
+			"scaleX": 1.39,
+			"scaleY": 1.39,
+			"scaleZ": 1.39,
+			"children": [
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": -1.51,
+					"y": 2.67,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"rotationZ": -90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 1.56,
+					"y": 2.67,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"rotationZ": -90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 2.68,
+					"y": 1.59,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"rotationZ": -180,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 2.69,
+					"y": -1.49,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"rotationZ": -180,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": 1.58,
+					"y": -2.77,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": -1.5,
+					"y": -2.79,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": -2.69,
+					"y": -1.5,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": -2.71,
+					"y": 1.58,
+					"scaleX": 0.35,
+					"scaleY": 0.35,
+					"scaleZ": 0.35,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.4,
+							"y": -0.05,
+							"z": 0.51,
+							"scaleX": 8.8,
+							"scaleY": 4.9,
+							"scaleZ": 2.62,
+							"rotationX": 90,
+							"rotationZ": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "light",
+			"name": "light",
+			"inGameOnly": true,
+			"z": 29.53,
+			"rotationY": 90,
+			"kind": "Spot",
+			"power": 2.73,
+			"range": 40,
+			"zNear": 0.02,
+			"angle": 54.94,
+			"fallOff": 1,
+			"shadows": {
+				"mode": "Dynamic",
+				"size": 1024,
+				"radius": 0,
+				"quality": 1,
+				"bias": 0.01,
+				"samplingMode": {
+					"kind": "PCF",
+					"quality": 2,
+					"scale": 3.84,
+					"bias": 0.1
+				}
+			}
 		}
 	]
 }
