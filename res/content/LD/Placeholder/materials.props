@@ -28,6 +28,11 @@
 				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
 				"name": "BaseMetal",
 				"__refMode": "modelSpec"
+			},
+			"default/exterior_plane.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "green",
+				"__refMode": "modelSpec"
 			}
 		}
 	}

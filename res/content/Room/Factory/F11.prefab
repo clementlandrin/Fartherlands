@@ -7,22 +7,200 @@
 			"source": "gameplay/camera.prefab"
 		},
 		{
-			"type": "object",
-			"name": "common"
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": 5.52,
+			"y": 5.51,
+			"z": 1.21,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -5.8,
+			"y": 5.51,
+			"z": 1.41,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 1.17,
+			"rotationZ": -180
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -2,
+			"y": 5.51,
+			"z": 1.41,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 1.17,
+			"rotationZ": -180
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -12.88,
+			"y": 5.51,
+			"z": 4.18,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -180
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -12.88,
+			"y": 5.51,
+			"z": 1.69,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -180
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -5.8,
+			"y": 5.51,
+			"z": 4.18,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -180
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -6.97,
+			"y": -0.44,
+			"z": 4.18,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -4.85,
+			"y": -7.9,
+			"z": 11.5,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -180
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -5.25,
+			"y": -7.48,
+			"z": 1.82,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationX": -90,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -6.97,
+			"y": -7.48,
+			"z": 4.18,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -5.25,
+			"y": -0.44,
+			"z": 1.82,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationX": -90,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": 5.52,
+			"y": -1.55,
+			"z": 1.21,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": 5.52,
+			"y": -8.64,
+			"z": 1.21,
+			"scaleX": 0.8,
+			"scaleY": 0.8,
+			"scaleZ": 0.8,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "stairs02",
+			"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
+			"x": 0.78,
+			"y": 5.1,
+			"z": 3.27,
+			"scaleX": 0.88,
+			"scaleY": 0.88,
+			"scaleZ": 0.88,
+			"rotationX": 3.496996639689588e-12,
+			"rotationY": 2.0917309706196648e-11,
+			"rotationZ": 6.38334641535109e-25
+		},
+		{
+			"type": "model",
+			"name": "little_bridge",
+			"source": "content/Art/Asset/Generique/bridges/little_bridge.fbx",
+			"x": -0.69,
+			"y": -5.22,
+			"z": 12.44,
+			"scaleY": 0.9999999999999998,
+			"scaleZ": 0.9999999999999998
 		},
 		{
 			"type": "object",
-			"name": "doors",
-			"x": -0.095,
-			"y": 0.0275,
+			"name": "past",
 			"children": [
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": 7.22,
-					"y": -0.23,
-					"rotationZ": 87.5
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room03_Past",
+					"source": "content/Art/Room_template/Generic/Past/Big_room03_Past.prefab"
 				}
 			]
 		},
@@ -37,42 +215,28 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Factory/Present/Medium_room_Left_Present.prefab"
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "past",
-			"children": [
-				{
-					"type": "reference",
-					"name": "Past",
-					"source": "lighting/Past.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Medium_room_Left_Past",
-					"source": "content/Art/Room_template/Factory/Past/Medium_room_Left_Past.prefab"
+					"name": "Big_room03_Present",
+					"source": "content/Art/Room_template/Generic/Present/Big_room03_Present.prefab"
 				}
 			]
 		},
 		{
 			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door/door_back.prefab",
-			"x": 4.58,
-			"y": 3.53,
-			"rotationZ": 179.8
+			"name": "door",
+			"source": "gameplay/door/door.prefab",
+			"x": 2.31,
+			"y": 6.86,
+			"z": -0.1,
+			"rotationZ": -90
 		},
 		{
 			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door/door_back.prefab",
-			"x": -5.1,
-			"y": 3.56,
-			"rotationZ": 179.8
+			"name": "door",
+			"source": "gameplay/door/door.prefab",
+			"x": -0.35,
+			"y": -7.19,
+			"z": 0.36,
+			"rotationZ": 90
 		}
 	]
 }

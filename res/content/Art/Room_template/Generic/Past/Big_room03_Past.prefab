@@ -11,9 +11,9 @@
 				{
 					"type": "lightProbe",
 					"name": "lightProbe_0",
-					"x": 0.9825,
-					"y": 1.245,
-					"z": 1.6825,
+					"x": 0.54,
+					"y": 0.59,
+					"z": 1.28,
 					"scaleX": 18.27,
 					"scaleY": 17.91,
 					"scaleZ": 23.02,
@@ -21,7 +21,7 @@
 					"fadeMode": "Smoothstep",
 					"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
 					"rotation": 330,
-					"power": 3.11,
+					"power": 3.7,
 					"sphereRadius": 0.4
 				},
 				{
