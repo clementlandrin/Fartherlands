@@ -47,6 +47,11 @@
 			"16 - Default": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Basewall_tileable"
+			},
+			"01 - Default/little_bridge02.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"name": "Wall_pattern04",
+				"__refMode": "modelSpec"
 			}
 		}
 	}
