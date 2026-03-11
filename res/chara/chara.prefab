@@ -11,8 +11,7 @@
 				{
 					"type": "model",
 					"name": "Character",
-					"source": "chara/Character.fbx",
-					"rotationZ": 90
+					"source": "chara/Character.fbx"
 				},
 				{
 					"type": "object",
