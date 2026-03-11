@@ -63,7 +63,7 @@
 				{
 					"type": "reference",
 					"name": "doorDown",
-					"source": "gameplay/doorDown.prefab",
+					"source": "gameplay/door/doorDown.prefab",
 					"x": -2.02,
 					"y": -4.86
 				},

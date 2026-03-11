@@ -8,7 +8,7 @@ class PlayerController {
 	public var sequence : Sequence;
 	public var curElevator : ent.Elevator;
 	public var item : ent.interactible.Pickable;
-	
+
 	var game : Game;
 
 	var skin : h3d.scene.Skin;
@@ -50,12 +50,12 @@ class PlayerController {
 		requestInteract = false;
 		requestSecondaryInteract = false;
 	}
-	
+
 	public function update(dt : Float) {
 		if ( canControl() ) {
 			updateMovement(dt);
 			if ( hxd.Key.isPressed(hxd.Key.G) )
-				item.drop();
+				item?.drop();
 			if ( hxd.Key.isPressed(hxd.Key.F) )
 				requestInteract = true;
 			if ( hxd.Key.isPressed(hxd.Key.E) )
@@ -65,7 +65,7 @@ class PlayerController {
 
 
 	public function getTimeMode() : Game.TimeMode {
-		return @:privateAccess player.timeMode; 
+		return @:privateAccess player.timeMode;
 	}
 
 	public function enterLadder(l : ent.Ladder, to : h3d.col.Point) {
@@ -146,7 +146,7 @@ class PlayerController {
 		if ( hxd.Key.isDown(hxd.Key.DOWN) || hxd.Key.isDown(hxd.Key.S) ) {
 			displacement.y = -dt * speed;
 		}
-		
+
 		var camera = game.s3d.camera;
 		var front = camera.getForward();
 		front.z = 0.0;
@@ -175,7 +175,7 @@ class PlayerController {
 					skin.switchToAnimation(anim.createInstance(skin));
 			}
 		}
-		
+
 		if ( game.curRoom != null ) {
 			var voxels = game.curRoom.voxels;
 			if ( voxels.isInside(newPos) ) {

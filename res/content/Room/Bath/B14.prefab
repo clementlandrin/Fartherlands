@@ -13,7 +13,7 @@
 				{
 					"type": "reference",
 					"name": "doorDown",
-					"source": "gameplay/doorDown.prefab"
+					"source": "gameplay/door/doorDown.prefab"
 				}
 			]
 		},

@@ -106,16 +106,14 @@
 							"name": "Ladder",
 							"source": "content/LD/Placeholder/Ladder.fbx",
 							"z": -1.9809,
-							"scaleZ": 0.4785,
-							"rotationZ": -90
+							"scaleZ": 0.4785
 						},
 						{
 							"type": "model",
 							"name": "Ladder",
 							"source": "content/LD/Placeholder/Ladder.fbx",
 							"z": 0.3541,
-							"scaleZ": 0.4785,
-							"rotationZ": -90
+							"scaleZ": 0.4785
 						}
 					]
 				}

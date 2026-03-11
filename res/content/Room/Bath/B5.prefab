@@ -9,7 +9,7 @@
 		{
 			"type": "reference",
 			"name": "doorUp",
-			"source": "gameplay/doorUp.prefab"
+			"source": "gameplay/door/doorUp.prefab"
 		},
 		{
 			"type": "object",

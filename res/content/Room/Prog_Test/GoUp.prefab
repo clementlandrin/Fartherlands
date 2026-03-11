@@ -160,7 +160,7 @@
 				{
 					"type": "reference",
 					"name": "doorUp",
-					"source": "gameplay/doorUp.prefab",
+					"source": "gameplay/door/doorUp.prefab",
 					"enabled": false,
 					"x": -0.33,
 					"y": -3.05,
@@ -291,6 +291,13 @@
 					"startingRoom": true
 				}
 			}
+		},
+		{
+			"type": "reference",
+			"name": "doorUp",
+			"source": "gameplay/door/doorUp.prefab",
+			"x": -2.02,
+			"y": -4.86
 		}
 	]
 }

@@ -3,26 +3,30 @@
 	"children": [
 		{
 			"type": "object",
-			"name": "object",
+			"name": "Door",
+			"props": {
+				"id": "DoorUp",
+				"type": 1,
+				"$cdbtype": "element"
+			},
 			"z": 4.85,
-			"rotationX": -90,
+			"rotationY": 90,
 			"children": [
 				{
-					"type": "box",
-					"name": "collision",
-					"props": {
-						"id": "P",
-						"$cdbtype": "element",
-						"type": 1
-					},
-					"scaleX": 3,
-					"scaleZ": 3
+					"type": "polygon",
+					"name": "trigger",
+					"scaleY": 3,
+					"scaleZ": 3,
+					"kind": 5,
+					"args": []
 				},
 				{
 					"type": "polygon",
 					"name": "polygon",
 					"editorOnly": true,
-					"y": -0.78,
+					"x": -0.53,
+					"y": 0.02,
+					"rotationZ": -90,
 					"kind": 2,
 					"points": [
 						{
@@ -53,36 +57,6 @@
 							"x": 0.06172116783856346,
 							"y": -1.0610435563893685
 						}
-					]
-				},
-				{
-					"type": "material",
-					"name": "material",
-					"props": {
-						"PBR": {
-							"mode": "PBR",
-							"blend": "Alpha",
-							"shadows": false,
-							"culling": "None",
-							"depthTest": "Less",
-							"colorMask": 15,
-							"enableStencil": false
-						},
-						"Fatherlands": {
-							"mode": "PBR",
-							"blend": "None",
-							"shadows": true,
-							"culling": "Back",
-							"depthTest": "Less",
-							"colorMask": 15,
-							"enableStencil": false
-						}
-					},
-					"color": [
-						1,
-						0,
-						1,
-						1
 					]
 				}
 			]

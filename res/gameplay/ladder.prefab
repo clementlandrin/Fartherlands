@@ -160,8 +160,7 @@
 					"type": "model",
 					"name": "Ladder",
 					"source": "content/LD/Placeholder/Ladder.fbx",
-					"z": -1.9875,
-					"rotationZ": -90
+					"z": -1.9875
 				}
 			]
 		}

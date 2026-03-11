@@ -10,7 +10,6 @@
 			"type": "reference",
 			"name": "PT2",
 			"source": "content/Room/Prog_Test/GoDown.prefab",
-			"enabled": false,
 			"z": 25.84
 		},
 		{
