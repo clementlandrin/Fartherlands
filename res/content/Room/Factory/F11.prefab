@@ -992,18 +992,17 @@
 			"name": "door",
 			"source": "gameplay/door/door.prefab",
 			"x": -0.35,
-			"y": -7.19,
-			"z": 0.36,
+			"y": -7.49,
+			"z": -0.01,
 			"rotationZ": 90
 		},
 		{
 			"type": "reference",
 			"name": "door",
 			"source": "gameplay/door/door.prefab",
-			"x": -6.8,
+			"x": -7.54,
 			"y": -2.03,
-			"z": 9.89,
-			"rotationZ": 90
+			"z": 9.99
 		},
 		{
 			"type": "model",

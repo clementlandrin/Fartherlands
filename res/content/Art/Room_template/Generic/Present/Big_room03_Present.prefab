@@ -80,9 +80,9 @@
 									"name": "Triplanar",
 									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
 									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Ground_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Ground_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Ground_Past_Normal.png",
+										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Present_Albedo.png",
+										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Present_MetallicRoughnessAO.png",
+										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Present_Normal.png",
 										"Sharpness": 1,
 										"Offset": 0.73,
 										"Tiling": 0.15
