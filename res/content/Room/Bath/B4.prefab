@@ -288,18 +288,35 @@
 			]
 		},
 		{
-			"type": "lake",
-			"name": "lake",
-			"x": 6.08,
-			"y": 8.5,
-			"z": 14.27,
-			"scaleX": 27.35,
-			"scaleY": 27.35,
-			"scaleZ": 27.35,
-			"refMatLib": "content/Art/MaterialLibrary/Generic/Utilities.prefab/Water",
+			"type": "Lake",
+			"name": "Lake2",
+			"x": -1.21,
+			"y": -1.67,
+			"z": 5.91,
+			"scaleX": 20,
+			"scaleY": 20,
+			"scaleZ": 20,
+			"color": -1052689,
+			"hasDebugColor": false,
+			"nearWaterColor": 4605774,
+			"middleWaterColor": 2762533,
+			"deepWaterColor": 1976104,
+			"roughness": 0.2,
+			"opacityPower": 0.38,
+			"maxDepth": 0.55,
+			"colorNoiseTexture": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
+			"colorNoiseScale": 0.37,
+			"colorNoiseStrength": 0.14,
+			"normalMap": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
+			"waveIntensity": 2.58,
+			"waveScale": 0.1,
+			"waveSpeed": 0.13,
+			"secondWaveScale": 0.04,
+			"secondWaveRotate": 114.55,
+			"secondWaveSpeed": 0.23,
 			"kind": 0,
 			"args": [
-				2
+				0
 			]
 		}
 	]
