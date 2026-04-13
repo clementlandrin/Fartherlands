@@ -1,0 +1,105 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "object",
+			"name": "Door",
+			"props": {
+				"id": "P",
+				"type": 1,
+				"$cdbtype": "element",
+				"props": {
+					"oneWay": true
+				}
+			},
+			"children": [
+				{
+					"type": "model",
+					"name": "Model",
+					"source": "content/Art/Asset/Generique/Door/Door.fbx",
+					"scaleX": 0.3,
+					"scaleY": 0.3,
+					"scaleZ": 0.3
+				},
+				{
+					"type": "polygon",
+					"name": "trigger",
+					"y": 0.03,
+					"z": 0.89,
+					"scaleZ": 1.81,
+					"kind": 5,
+					"args": []
+				},
+				{
+					"type": "model",
+					"name": "blocker",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 0.41,
+					"z": 0.9,
+					"scaleX": 0.2,
+					"scaleY": 0.2,
+					"scaleZ": 0.2,
+					"rotationX": 90,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Box_Navmesh_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"z": 1.45,
+							"scaleX": 4.72,
+							"scaleY": 8.8,
+							"kind": 0,
+							"args": [
+								0
+							]
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"editorOnly": true,
+					"x": -0.53,
+					"y": 0.02,
+					"rotationZ": -90,
+					"kind": 2,
+					"points": [
+						{
+							"x": 0.5993503666532403,
+							"y": -0.47981533437085655
+						},
+						{
+							"x": 0.26574416067438505,
+							"y": -0.46235501111571775
+						},
+						{
+							"x": 0.2558207768042604,
+							"y": 0.5067894881428281
+						},
+						{
+							"x": -0.22814808413841609,
+							"y": 0.5057707964221398
+						},
+						{
+							"x": -0.23809401841225847,
+							"y": -0.45811002733865347
+						},
+						{
+							"x": -0.6334003231117055,
+							"y": -0.4722861486990141
+						},
+						{
+							"x": 0.06172116783856346,
+							"y": -1.0610435563893685
+						}
+					]
+				}
+			]
+		}
+	]
+}

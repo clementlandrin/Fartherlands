@@ -6,6 +6,8 @@ class Door extends Entity {
 	public var to : Door;
 	var direction : h3d.col.Point;
 	var triggerBounds : h3d.col.Bounds;
+	var used : Bool = false;
+	var blockers : Array<h3d.scene.Object>;
 
 	var g : h3d.scene.Graphics;
 
@@ -22,7 +24,7 @@ class Door extends Entity {
 
 	override function update(dt : Float) {
 		super.update(dt);
-		if ( enabled && game.ctrl.canChangeRoom() && room == game.curRoom ) {
+		if ( enabled && game.ctrl.canChangeRoom() && room == game.curRoom && (used || !inf?.oneWay)) {
 			var playerPos = new h3d.col.Point(game.player.x,game.player.y,game.player.z);
 			if ( triggerBounds != null && triggerBounds.contains(playerPos) )
 				enters();
@@ -36,6 +38,12 @@ class Door extends Entity {
 	
 	override function setObject(obj) {
 		super.setObject(obj);
+		var blocker = obj.getObjectByName("blocker");
+		if (blocker != null) {
+			blockers = [];
+			for (c in blocker.findAll((o) -> o))
+				blockers.push(c);
+		}
 		var trigger = obj.getObjectByName("trigger");
 		triggerBounds = trigger?.getBounds();
 		trigger?.remove();
@@ -111,6 +119,15 @@ class Door extends Entity {
 	function enters() {
 		if ( to == null || !enabled )
 			return;
+		to.used = true;
+		if (to.blockers != null) {
+			for (b in to.blockers) {
+				b.remove();
+				for (n in to.room.navmeshes)
+					if (n.obj == b)
+						to.room.navmeshes.remove(n);
+			}
+		}
 		var newRoom = to.room;
 		var pos = to.getPos().add(to.getEnteringDirection());
 		var doorCb = function() {

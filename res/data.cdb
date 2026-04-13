@@ -474,6 +474,11 @@
 					"typeStr": "8",
 					"name": "ambients",
 					"opt": true
+				},
+				{
+					"typeStr": "2",
+					"name": "oneWay",
+					"opt": true
 				}
 			]
 		},

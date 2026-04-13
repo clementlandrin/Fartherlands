@@ -93,7 +93,7 @@
 		{
 			"type": "reference",
 			"name": "door_back",
-			"source": "gameplay/door/door_back.prefab",
+			"source": "gameplay/door/doorBack.prefab",
 			"enabled": false,
 			"x": 7.22,
 			"y": -0.23,
@@ -102,7 +102,7 @@
 		{
 			"type": "reference",
 			"name": "door_back",
-			"source": "gameplay/door/door_back.prefab",
+			"source": "gameplay/door/doorBack.prefab",
 			"x": -4.49,
 			"y": 3.12,
 			"rotationZ": -90

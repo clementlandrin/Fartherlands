@@ -182,26 +182,10 @@
 				},
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
+					"name": "doorOneWay",
+					"source": "gameplay/door/doorOneWay.prefab",
 					"x": -3.53,
-					"y": -2.23,
-					"children": [
-						{
-							"type": "object",
-							"name": "object",
-							"props": {
-								"id": "H1_object",
-								"type": 4,
-								"$cdbtype": "element",
-								"props": {
-									"dialog": "Vers \"la cam suit le joueur\"",
-									"memo": true
-								}
-							},
-							"rotationZ": 90
-						}
-					]
+					"y": -2.23
 				},
 				{
 					"type": "reference",
