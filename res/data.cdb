@@ -22,7 +22,10 @@
 			],
 			"separators": [],
 			"props": {
-				"dataFiles": "content/*.prefab"
+				"dataFiles": "content/*.prefab",
+				"editor": {
+					"index": 0
+				}
 			}
 		},
 		{
@@ -114,7 +117,7 @@
 				},
 				{
 					"id": "DefaultCameraZ",
-					"value": 10
+					"value": 15
 				},
 				{
 					"id": "OutlineSize",
@@ -167,7 +170,11 @@
 					"id": "UnstableTeleportMinTime"
 				}
 			],
-			"props": {}
+			"props": {
+				"editor": {
+					"index": 1
+				}
+			}
 		},
 		{
 			"name": "knowledge",
@@ -303,7 +310,11 @@
 				}
 			],
 			"separators": [],
-			"props": {}
+			"props": {
+				"editor": {
+					"index": 2
+				}
+			}
 		},
 		{
 			"name": "item",
@@ -326,7 +337,11 @@
 				}
 			],
 			"separators": [],
-			"props": {}
+			"props": {
+				"editor": {
+					"index": 3
+				}
+			}
 		},
 		{
 			"name": "item@props",
@@ -363,7 +378,11 @@
 				}
 			],
 			"separators": [],
-			"props": {}
+			"props": {
+				"editor": {
+					"index": 4
+				}
+			}
 		},
 		{
 			"name": "knowledge@props",

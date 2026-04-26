@@ -1,10 +1,10 @@
+import h3d.col.Point;
 
 class CameraController extends h3d.scene.Object {
+    public var strength : Float = 0.01;
 
-    var camera : h3d.Camera;
     var game : Game;
-    var startCamZ : Float;
-    var startPlayerZ : Float;
+    var camera : h3d.Camera;
 
     public function new() {
         game = Game.inst;
@@ -18,29 +18,26 @@ class CameraController extends h3d.scene.Object {
         super.sync(ctx);
 
         var curRoom = game.curRoom;
-        if ( curRoom != null && curRoom.camera == null )
-			defaultCamera();
-
-		if ( curRoom != null && curRoom.inf?.camFollowZ ) {
-			camera.target = new h3d.col.Point(curRoom.x, curRoom.y, game.player.z);
-            camera.pos.z = startCamZ + (game.player.z - startPlayerZ);
-		}
+        if (curRoom != null && curRoom.camera == null)
+			initCamera();
 
 		var Y = camera.orthoBounds.xMax / camera.screenRatio;
 		camera.orthoBounds.yMax = Y;
 		camera.orthoBounds.yMin = -Y;
+
+        var p = new h3d.col.Point(
+            hxd.Math.lerp(camera.target.x, game.player.x, strength),
+            hxd.Math.lerp(camera.target.y, game.player.y, strength),
+            hxd.Math.lerp(camera.target.z, game.player.z, strength));
+
+        set(p);
     }
 
     public function enteredRoom(r : ent.Room) {
-        startCamZ = camera.pos.z;
-        startPlayerZ = game.player.z;
+        set(new Point(r.x, r.y, r.z));
     }
 
-    function defaultCamera() {
-		camera.target = new h3d.col.Point(game.curRoom.x, game.curRoom.y, game.curRoom.z);
-		camera.pos.x = Const.get(DefaultCameraX);
-		camera.pos.y = Const.get(DefaultCameraY);
-		camera.pos.z = Const.get(DefaultCameraZ);
+    function initCamera() {
 		var X = Const.get(DefaultCameraWidth) * 0.5;
 		var Z = Const.get(DefaultCameraDepth) * 0.5;
 		camera.orthoBounds.xMax = X;
@@ -48,4 +45,11 @@ class CameraController extends h3d.scene.Object {
 		camera.orthoBounds.zMax = Z;
 		camera.orthoBounds.zMin = -Z;
 	}
+
+    function set(pos : h3d.col.Point) {
+        camera.target = pos;
+        camera.pos.x = camera.target.x + Const.get(DefaultCameraX);
+        camera.pos.y = camera.target.y + Const.get(DefaultCameraY);
+        camera.pos.z = camera.target.z + Const.get(DefaultCameraZ);
+    }
 }

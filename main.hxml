@@ -18,7 +18,7 @@
 -D domkit_heaps
 -D hl-ver=1.15.0
 -D hl-profile
--D windowSize=1030x1030
+-D windowSize=1800x1000
 -cp src/lib/hide
 -cp src
 # -D debug
