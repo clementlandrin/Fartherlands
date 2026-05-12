@@ -20,6 +20,7 @@
 					"scaleX": 0.61,
 					"scaleY": 0.61,
 					"scaleZ": 0.61,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
@@ -32,7 +33,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				},
@@ -46,7 +47,7 @@
 					"scaleX": 0.61,
 					"scaleY": 0.61,
 					"scaleZ": 0.61,
-					"rotationZ": -180,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -59,7 +60,7 @@
 							"scaleX": 9.43,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				},
@@ -73,6 +74,7 @@
 					"scaleX": 0.61,
 					"scaleY": 0.61,
 					"scaleZ": 0.61,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
@@ -85,7 +87,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				}

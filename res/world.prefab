@@ -569,8 +569,7 @@
 					"name": "D7",
 					"source": "content/Room/Diverse/D7.prefab",
 					"x": -35,
-					"y": 20,
-					"editMode": "Edit"
+					"y": 20
 				},
 				{
 					"type": "reference",
@@ -607,8 +606,7 @@
 					"name": "D12",
 					"source": "content/Room/Diverse/D12.prefab",
 					"x": -35,
-					"y": 35,
-					"editMode": "Edit"
+					"y": 35
 				},
 				{
 					"type": "reference",

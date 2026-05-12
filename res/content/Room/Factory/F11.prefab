@@ -16,13 +16,13 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 20.2213,
-					"y": 17.8519,
+					"x": 20.22,
+					"y": 17.85,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -90,
+					"rotationZ": -180,
 					"children": [
 						{
 							"type": "reference",
@@ -35,13 +35,14 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				},
 				{
 					"type": "polygon",
 					"name": "polygon",
+					"inGameOnly": true,
 					"x": 22.4113,
 					"y": 2.3819,
 					"z": 8.55,
@@ -56,6 +57,7 @@
 				{
 					"type": "polygon",
 					"name": "polygon",
+					"inGameOnly": true,
 					"x": 4.7213,
 					"y": 19.8419,
 					"z": 8.55,
@@ -71,6 +73,7 @@
 				{
 					"type": "polygon",
 					"name": "polygon",
+					"inGameOnly": true,
 					"x": 5.6013,
 					"y": 20.8319,
 					"z": 1.84,
@@ -86,6 +89,7 @@
 				{
 					"type": "polygon",
 					"name": "polygon",
+					"inGameOnly": true,
 					"x": 23.8613,
 					"y": 12.5419,
 					"z": 0.37,
@@ -102,24 +106,25 @@
 					"type": "model",
 					"name": "stairs02",
 					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
-					"x": 15.4813,
-					"y": 17.4419,
+					"x": 15.48,
+					"y": 17.44,
 					"z": 3.27,
 					"scaleX": 0.88,
 					"scaleY": 0.88,
-					"scaleZ": 0.88
+					"scaleZ": 0.88,
+					"rotationZ": -90
 				},
 				{
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 8.9013,
-					"y": 17.8519,
+					"x": 8.9,
+					"y": 17.85,
 					"z": 1.41,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 1.17,
-					"rotationZ": -180,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -132,7 +137,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -140,26 +145,25 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 12.7013,
-					"y": 17.8519,
+					"x": 12.7,
+					"y": 17.85,
 					"z": 1.41,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 1.17,
-					"rotationZ": -180,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.11,
 							"y": 0.02,
 							"z": -1.97,
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -167,13 +171,13 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 1.8213,
-					"y": 17.8519,
+					"x": 8.9,
+					"y": 17.85,
 					"z": 4.18,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -180,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -186,61 +190,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 1.8213,
-					"y": 17.8519,
-					"z": 1.69,
-					"scaleX": 0.8,
-					"scaleY": 0.8,
-					"scaleZ": 0.8,
-					"rotationZ": -180,
-					"children": [
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -0.11,
-							"y": 0.02,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": 180
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 8.9013,
-					"y": 17.8519,
-					"z": 4.18,
-					"scaleX": 0.8,
-					"scaleY": 0.8,
-					"scaleZ": 0.8,
-					"rotationZ": -180,
-					"children": [
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -0.11,
-							"y": 0.02,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -254,7 +204,7 @@
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -180,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
@@ -267,7 +217,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				},
@@ -275,13 +225,12 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 20.2213,
-					"y": 10.7919,
+					"x": 20.22,
+					"y": 10.79,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -294,7 +243,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				},
@@ -302,13 +251,12 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 20.2213,
-					"y": 3.7019,
+					"x": 20.22,
+					"y": 3.7,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -321,7 +269,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				}
@@ -396,13 +344,12 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.9713,
-					"y": -0.0219,
-					"z": 3.41,
+					"x": -6.95,
+					"y": 0.03,
+					"z": 1.78,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
@@ -415,7 +362,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -423,26 +370,26 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.7913,
-					"y": -7.1519,
-					"z": 1.1,
+					"x": -6.85,
+					"y": -7.11,
+					"z": -0.53,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": 90,
+					"rotationZ": 180,
 					"children": [
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.11,
+							"x": 0.02,
 							"y": 0.02,
 							"z": -1.97,
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -450,13 +397,12 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.8913,
-					"y": -7.1719,
-					"z": 3.5,
+					"x": -6.83,
+					"y": -7.21,
+					"z": 1.87,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -469,7 +415,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -477,13 +423,12 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.8913,
-					"y": 0.0081,
-					"z": 1.04,
+					"x": -6.95,
+					"y": 0.03,
+					"z": 4.18,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
@@ -496,7 +441,59 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -6.83,
+					"y": -7.21,
+					"z": 4.27,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -6.92,
+					"y": -0.05,
+					"z": -0.59,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": -90
 						}
 					]
 				}

@@ -16,7 +16,8 @@
 					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
 					"x": 1.71,
 					"y": -3.44,
-					"z": 2.21
+					"z": 2.21,
+					"rotationZ": 90
 				},
 				{
 					"type": "polygon",
@@ -72,20 +73,21 @@
 					"scaleX": 0.56,
 					"scaleY": 0.56,
 					"scaleZ": 0.56,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.5893,
-							"y": 0.3214,
-							"z": -3.2857,
+							"x": -0.59,
+							"y": -0.53,
+							"z": -3.29,
 							"scaleX": 9.7143,
 							"scaleY": 4.8214,
 							"scaleZ": 3.7321,
 							"rotationY": -30,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -99,19 +101,20 @@
 					"scaleX": 0.61,
 					"scaleY": 0.61,
 					"scaleZ": 0.61,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.1,
+							"x": 0.01,
 							"y": 0.03,
 							"z": -1.97,
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				}
@@ -164,15 +167,6 @@
 			"y": -1.1575000000000002,
 			"z": -0.19,
 			"children": [
-				{
-					"type": "model",
-					"name": "joins",
-					"source": "content/Art/Asset/Generique/blocs/joins.fbx",
-					"x": -3.585,
-					"y": -0.3525,
-					"z": 0.45,
-					"rotationZ": -90
-				},
 				{
 					"type": "model",
 					"name": "joins",

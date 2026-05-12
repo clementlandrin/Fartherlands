@@ -92,6 +92,7 @@
 			"scaleX": 0.8,
 			"scaleY": 0.8,
 			"scaleZ": 0.8,
+			"rotationZ": 90,
 			"children": [
 				{
 					"type": "reference",
@@ -104,7 +105,7 @@
 					"scaleX": 8.91,
 					"scaleY": 6.13,
 					"scaleZ": 3.43,
-					"rotationZ": 180
+					"rotationZ": -90
 				}
 			]
 		},
@@ -118,19 +119,20 @@
 			"scaleX": 0.8,
 			"scaleY": 0.8,
 			"scaleZ": 0.8,
+			"rotationZ": 90,
 			"children": [
 				{
 					"type": "reference",
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"inGameOnly": true,
-					"x": -0.11,
+					"x": 0.11,
 					"y": 0.02,
 					"z": -1.97,
 					"scaleX": 8.91,
 					"scaleY": 6.13,
 					"scaleZ": 3.43,
-					"rotationZ": 180
+					"rotationZ": 90
 				}
 			]
 		}

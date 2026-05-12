@@ -25,8 +25,7 @@
 					"x": 0.35,
 					"y": -8.22,
 					"z": 1.37,
-					"rotationX": -90,
-					"rotationY": -90
+					"rotationX": -90
 				},
 				{
 					"type": "model",
@@ -35,22 +34,21 @@
 					"x": -4.8,
 					"y": 0.01,
 					"z": 8.88,
-					"rotationX": 180,
-					"rotationY": -90,
+					"rotationX": -90,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -1.4,
-							"y": 1.74,
-							"z": 0.51,
+							"x": 1.64,
+							"y": 1.45,
+							"z": 0.44,
 							"scaleX": 12.35,
 							"scaleY": 4.9,
 							"scaleZ": 2.62,
-							"rotationX": 90,
-							"rotationZ": 90
+							"rotationX": 90
 						}
 					]
 				},
@@ -62,7 +60,7 @@
 					"y": 8.21,
 					"z": 1.37,
 					"rotationX": 90,
-					"rotationY": -90
+					"rotationY": -180
 				},
 				{
 					"type": "model",
@@ -71,8 +69,8 @@
 					"x": -4.8,
 					"y": -6.26,
 					"z": 8.88,
-					"rotationX": 180,
-					"rotationY": -90
+					"rotationX": 90,
+					"rotationZ": 90
 				},
 				{
 					"type": "model",
@@ -80,11 +78,10 @@
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
 					"x": -3.99,
 					"y": 6.43,
-					"z": 1.41,
+					"z": 1.52,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -172,8 +169,7 @@
 					"z": 0.22,
 					"scaleX": 0.64,
 					"scaleY": 0.72,
-					"scaleZ": 0.72,
-					"rotationZ": 90
+					"scaleZ": 0.72
 				},
 				{
 					"type": "model",
@@ -183,7 +179,7 @@
 					"y": 8.66,
 					"z": 0.12,
 					"rotationX": 90,
-					"rotationY": -90
+					"rotationY": 180
 				},
 				{
 					"type": "model",
@@ -192,8 +188,7 @@
 					"x": -0.11,
 					"y": -8.7,
 					"z": 0.12,
-					"rotationX": -90,
-					"rotationY": -90
+					"rotationX": -90
 				},
 				{
 					"type": "model",
@@ -447,7 +442,8 @@
 					"x": 4.8,
 					"y": -3.85,
 					"z": 1.37,
-					"rotationY": -90
+					"rotationX": 90,
+					"rotationZ": -90
 				},
 				{
 					"type": "model",
@@ -456,7 +452,8 @@
 					"x": 4.8,
 					"y": 4.94,
 					"z": 1.37,
-					"rotationY": -90
+					"rotationX": 90,
+					"rotationZ": -90
 				}
 			]
 		},

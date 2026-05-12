@@ -21,6 +21,7 @@
 					"scaleX": 0.61,
 					"scaleY": 0.61,
 					"scaleZ": 0.61,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -33,7 +34,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": 90
 						}
 					]
 				},
@@ -51,7 +52,8 @@
 							"x": -0.81,
 							"y": -1.62,
 							"z": 3.88,
-							"rotationX": 90
+							"rotationX": 90,
+							"rotationY": 90
 						},
 						{
 							"type": "model",
@@ -67,8 +69,7 @@
 							"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
 							"x": 1.63,
 							"y": -1.87,
-							"z": -1.16,
-							"rotationZ": -90
+							"z": -1.16
 						}
 					]
 				},
@@ -170,7 +171,7 @@
 			"scaleX": 0.77,
 			"scaleY": 0.77,
 			"scaleZ": 0.77,
-			"rotationZ": 180,
+			"rotationZ": 90,
 			"children": [
 				{
 					"type": "reference",
@@ -178,12 +179,13 @@
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"inGameOnly": true,
 					"x": -1.11,
-					"y": 0.23,
+					"y": -0.97,
 					"z": -1.63,
 					"scaleX": 7.84,
 					"scaleY": 4.86,
 					"scaleZ": 2.72,
-					"rotationY": 27
+					"rotationY": 27,
+					"rotationZ": 90
 				}
 			]
 		}

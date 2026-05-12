@@ -20,6 +20,7 @@
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
+					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
@@ -32,7 +33,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -46,6 +47,7 @@
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
@@ -58,7 +60,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				},
@@ -72,6 +74,7 @@
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
@@ -84,7 +87,7 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				}
@@ -291,46 +294,45 @@
 					"x": -2,
 					"y": -0.04,
 					"z": 2.19,
-					"rotationZ": -90,
 					"children": [
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.01,
-							"y": 0.02,
+							"x": -0.03,
+							"y": -0.02,
 							"z": -0.55,
 							"scaleX": 1.93,
 							"scaleY": 7.98,
 							"scaleZ": 0.77,
-							"rotationZ": 180
+							"rotationZ": -90
 						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": 0.83,
-							"y": -0.03,
+							"x": 0.02,
+							"y": 0.82,
 							"z": 0.1,
 							"scaleX": 0.23,
 							"scaleY": 6.79,
 							"scaleZ": 0.77,
-							"rotationZ": 180
+							"rotationZ": -90
 						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.82,
-							"y": -0.03,
+							"x": 0.02,
+							"y": -0.83,
 							"z": 0.1,
 							"scaleX": 0.23,
 							"scaleY": 6.79,
 							"scaleZ": 0.77,
-							"rotationZ": 180
+							"rotationZ": -90
 						}
 					]
 				}
