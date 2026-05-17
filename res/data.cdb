@@ -410,11 +410,6 @@
 			"lines": [],
 			"columns": [
 				{
-					"typeStr": "1",
-					"name": "dialog",
-					"opt": true
-				},
-				{
 					"typeStr": "2",
 					"name": "camFollowZ",
 					"opt": true
@@ -498,6 +493,11 @@
 					"typeStr": "2",
 					"name": "oneWay",
 					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "dialog",
+					"opt": true
 				}
 			]
 		},
@@ -517,6 +517,52 @@
 				{
 					"typeStr": "13",
 					"name": "pastRenderProps",
+					"opt": null
+				}
+			]
+		},
+		{
+			"name": "element@props@dialog",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"opt": null,
+					"scope": 2
+				},
+				{
+					"typeStr": "1",
+					"name": "text",
+					"opt": null
+				},
+				{
+					"typeStr": "8",
+					"name": "choices",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "element@props@dialog@choices",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "text",
+					"opt": null
+				},
+				{
+					"typeStr": "6:element@props@dialog",
+					"name": "target",
 					"opt": null
 				}
 			]

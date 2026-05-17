@@ -284,7 +284,7 @@ class Game extends hxd.App {
 						var el = new ent.Elevator();
 						e = el;
 					case Element:
-						if (props.props != null && props.props.dialog != null) {
+						if (props.props?.dialog != null) {
 							var t = new Talkable();
 							e = t;
 						} else 

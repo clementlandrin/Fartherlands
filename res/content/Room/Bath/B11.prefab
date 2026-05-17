@@ -7,11 +7,7 @@
 			"props": {
 				"id": "World_Tooltip",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"memo": true,
-					"dialog": "Les plantes ici démontre que le temple est là l'abandon depuis environ 1000 ans"
-				}
+				"$cdbtype": "element"
 			}
 		},
 		{

@@ -2,6 +2,9 @@ package ui.comp;
 
 @:uiComp("button")
 class Button extends BaseElement {
+	static var SRC = <button>
+		<text id="label"/>
+	</button>
 
 	public function new(?parent) {
 		super(parent);

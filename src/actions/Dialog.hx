@@ -7,7 +7,8 @@ class Dialog extends Action {
     }
 
     override function fit(e : ent.Entity) {
-        return e.activated && e.inf != null && e.inf.dialog != null; 
+        return true;
+        // return e.activated && e.inf != null && e.inf.dialog != null; 
     }
 
     override function getActionText() {

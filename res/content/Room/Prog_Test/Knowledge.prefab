@@ -7,11 +7,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "La civilisation nous a créé.",
-					"knowledge": "CreationGolem"
-				}
+				"$cdbtype": "element"
 			},
 			"x": 1.14,
 			"y": -3.31,

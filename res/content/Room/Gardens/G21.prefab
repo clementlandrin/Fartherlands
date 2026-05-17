@@ -16,11 +16,7 @@
 					"props": {
 						"id": "World_Tooltip",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"memo": true,
-							"dialog": "Les symboles indiquent un passage invisible"
-						}
+						"$cdbtype": "element"
 					}
 				}
 			]

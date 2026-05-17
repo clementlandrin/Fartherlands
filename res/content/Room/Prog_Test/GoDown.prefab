@@ -7,10 +7,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "Empruntez ce trigger pour descendre à l'étage inférieur."
-				}
+				"$cdbtype": "element"
 			},
 			"x": -0.21,
 			"y": -5.37,

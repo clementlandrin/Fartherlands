@@ -157,10 +157,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "La stèle du Hub. Elle téléporte vers la stèle de la couleur correspondante. On peut changer la couleur de cette stèle."
-				}
+				"$cdbtype": "element"
 			},
 			"x": 0.96,
 			"y": -2.79,
@@ -178,11 +175,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "La stèle bleue est activée.",
-					"activator": "Test_Desactivated_Pillar"
-				}
+				"$cdbtype": "element"
 			},
 			"x": -2.15,
 			"y": 5.09,
@@ -198,11 +191,7 @@
 					"props": {
 						"id": "H1_object",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Parlez au golem pour activer la stèle bleue.",
-							"memo": true
-						}
+						"$cdbtype": "element"
 					}
 				}
 			]

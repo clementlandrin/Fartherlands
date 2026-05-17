@@ -48,11 +48,7 @@
 					"props": {
 						"id": "InvisibleBridge_object",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Il y a un pont invisible ici.",
-							"memo": true
-						}
+						"$cdbtype": "element"
 					}
 				}
 			]
@@ -134,10 +130,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "GG"
-				}
+				"$cdbtype": "element"
 			},
 			"x": 0.96,
 			"y": 4.69,

@@ -19,10 +19,7 @@
 					"props": {
 						"id": "World_test_golem",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Mais... Mais, quelqu'un? Je pensais être seul depuis..... longtemps\nOn est bloqué ici tous les 2!"
-						}
+						"$cdbtype": "element"
 					}
 				},
 				{

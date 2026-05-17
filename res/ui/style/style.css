@@ -1,20 +1,29 @@
 dialog {
   margin-bottom: 200;
-  background: #000000 0.8;
   align: bottom middle;
   max-width: 500;
 }
-dialog #speechText {
+dialog text {
   margin: 10;
   align: middle middle;
-  min-height: 20;
 }
-dialog #button {
-  margin: 5;
-  align: right top;
-  min-height: 10;
-  min-width: 10;
-  background: url("ui/comp/buttonClose.png") 10 10;
+dialog #dialog-container {
+  background: #000000 0.8;
+}
+dialog #dialog-container #dialog-text {
+  min-height: 100;
+  min-width: 500;
+}
+dialog #choices-container {
+  layout: vertical;
+  margin-left: 10;
+}
+dialog #choices-container button {
+  background: #000000 0.8;
+  margin-bottom: 5;
+}
+dialog #choices-container button:hover {
+  background: #404040 0.8;
 }
 tooltip {
   margin: 20;
@@ -43,10 +52,10 @@ knowledge-window knowledgeComp.discovered text {
 }
 inventory {
   margin: 30;
-  padding: 20;
-  content-align: middle middle;
   align: bottom right;
   background: #000000 0.5;
+  padding: 20;
+  content-align: middle middle;
 }
 sphere {
   margin: 20;

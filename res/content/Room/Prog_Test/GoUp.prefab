@@ -7,19 +7,87 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "Bonjour, voici l'artefact.",
-					"unlockArtefact": true
-				}
+				"$cdbtype": "element"
 			},
 			"x": 1.14,
 			"y": 0.68,
 			"children": [
 				{
 					"type": "reference",
-					"name": "test_golem",
-					"source": "gameplay/test_golem.prefab"
+					"name": "golem_1",
+					"source": "gameplay/test_golem.prefab",
+					"props": {
+						"id": "GoUp_golem_1",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"dialog": [
+								{
+									"id": "Start",
+									"text": "Bonjour, je dois vous dire ...",
+									"choices": [
+										{
+											"text": "Dites moi",
+											"target": "End"
+										}
+									]
+								},
+								{
+									"id": "End",
+									"text": "Vous êtes super beau !"
+								}
+							]
+						}
+					},
+					"x": -3.26,
+					"y": 5,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "golem_2",
+					"source": "gameplay/test_golem.prefab",
+					"props": {
+						"id": "GoUp_golem_2",
+						"type": 4,
+						"$cdbtype": "element",
+						"props": {
+							"dialog": [
+								{
+									"id": "Start",
+									"text": "Que voulez vous ?",
+									"choices": [
+										{
+											"text": "Une fraise !",
+											"target": "FraiseChoice"
+										},
+										{
+											"text": "Une poire",
+											"target": "PoireChoice"
+										},
+										{
+											"text": "Rien",
+											"target": "RienChoice"
+										}
+									]
+								},
+								{
+									"id": "FraiseChoice",
+									"text": "Tenez une fraise"
+								},
+								{
+									"id": "PoireChoice",
+									"text": "Tenez une poire"
+								},
+								{
+									"id": "RienChoice",
+									"text": "Tant pis"
+								}
+							]
+						}
+					},
+					"y": 5,
+					"rotationZ": 90
 				}
 			]
 		},
@@ -171,11 +239,7 @@
 							"props": {
 								"id": "H1_object",
 								"type": 4,
-								"$cdbtype": "element",
-								"props": {
-									"dialog": "Empruntez ce trigger pour monter à l'étage supérieur.",
-									"memo": true
-								}
+								"$cdbtype": "element"
 							}
 						}
 					]
@@ -202,11 +266,7 @@
 							"props": {
 								"id": "H1_object",
 								"type": 4,
-								"$cdbtype": "element",
-								"props": {
-									"dialog": "Vers \"golem passé/présent\"",
-									"memo": true
-								}
+								"$cdbtype": "element"
 							},
 							"rotationZ": -90
 						}
@@ -227,11 +287,7 @@
 							"props": {
 								"id": "H1_object",
 								"type": 4,
-								"$cdbtype": "element",
-								"props": {
-									"dialog": "Vers \"knowledge\"",
-									"memo": true
-								}
+								"$cdbtype": "element"
 							},
 							"rotationZ": 180
 						}
@@ -252,11 +308,7 @@
 							"props": {
 								"id": "H1_object",
 								"type": 4,
-								"$cdbtype": "element",
-								"props": {
-									"dialog": "Vers \"stèles de TP\"",
-									"memo": true
-								}
+								"$cdbtype": "element"
 							},
 							"rotationZ": 180
 						}

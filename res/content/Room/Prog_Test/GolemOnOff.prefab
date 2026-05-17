@@ -74,10 +74,7 @@
 					"props": {
 						"id": "H1_object",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "C'est un golem cassé."
-						}
+						"$cdbtype": "element"
 					},
 					"x": -0.73,
 					"y": 0.78,
@@ -103,10 +100,7 @@
 					"props": {
 						"id": "H1_object",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Bonjour, je suis en pleine forme."
-						}
+						"$cdbtype": "element"
 					},
 					"x": -0.384,
 					"y": -2.792,

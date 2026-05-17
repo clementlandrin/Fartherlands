@@ -161,11 +161,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "Cette stèle ramène à la stèle du Hub.",
-					"canTp": true
-				}
+				"$cdbtype": "element"
 			},
 			"x": 0.68,
 			"y": -0.52,
@@ -181,11 +177,7 @@
 					"props": {
 						"id": "TeleportColor_object",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Je peux me TP avec toi !",
-							"memo": true
-						}
+						"$cdbtype": "element"
 					}
 				}
 			]

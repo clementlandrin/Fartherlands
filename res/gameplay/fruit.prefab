@@ -7,11 +7,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 12,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "Vous avez récupéré un étrange fruit.",
-					"unlockArtefact": true
-				}
+				"$cdbtype": "element"
 			},
 			"children": [
 				{
@@ -34,11 +30,7 @@
 					"props": {
 						"id": "H1_object",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"dialog": "Récupérez l'artefact.",
-							"memo": true
-						}
+						"$cdbtype": "element"
 					},
 					"z": 1.78
 				}

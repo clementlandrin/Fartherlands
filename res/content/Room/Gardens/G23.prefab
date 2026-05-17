@@ -16,11 +16,7 @@
 					"props": {
 						"id": "World_Tooltip",
 						"type": 4,
-						"$cdbtype": "element",
-						"props": {
-							"memo": true,
-							"dialog": "Serre d'étude d'infusion"
-						}
+						"$cdbtype": "element"
 					}
 				}
 			]

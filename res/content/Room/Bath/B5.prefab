@@ -19,8 +19,7 @@
 				"type": 4,
 				"$cdbtype": "element",
 				"props": {
-					"memo": true,
-					"dialog": "Ils ont construit l'arche dans le but de ramener le reste de la civilisation"
+					"memo": true
 				}
 			},
 			"y": 3.95

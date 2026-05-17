@@ -7,10 +7,7 @@
 			"props": {
 				"id": "H1_object",
 				"type": 4,
-				"$cdbtype": "element",
-				"props": {
-					"dialog": "La caméra doit suivre le joueur en Z."
-				}
+				"$cdbtype": "element"
 			},
 			"x": 1.14,
 			"y": -0.95,

@@ -3,7 +3,8 @@ package ent;
 class Memo extends Entity {
 
 	override function getTooltipText() {
-		return inf.dialog;
+		return "";
+		// return inf.dialog;
 	}
 
 	override function cull() {
