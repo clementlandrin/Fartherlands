@@ -1,7 +1,11 @@
+import h3d.prim.Cube;
+import h3d.Engine;
+import hxd.Window;
 import h3d.col.Point;
 
 class CameraController extends h3d.scene.Object {
-    public var strength : Float = 0.01;
+    public var strength : Float = 0.3;
+    public var deadZone : h2d.col.Bounds;
 
     var game : Game;
     var camera : h3d.Camera;
@@ -12,6 +16,18 @@ class CameraController extends h3d.scene.Object {
 
         camera = game.s3d.camera;
 		camera.orthoBounds = new h3d.col.Bounds();
+
+        var engine = Engine.getCurrent();
+        var cx = engine.width / 2;
+        var cy = engine.height / 2;
+        var deadzoneWidth = engine.width / 7;
+        var deadZoneHeight = engine.height / 7;
+
+        deadZone = new h2d.col.Bounds();
+        deadZone.xMin = cx - deadzoneWidth;
+        deadZone.xMax = cx + deadzoneWidth;
+        deadZone.yMin = cy - deadZoneHeight;
+        deadZone.yMax = cy + deadZoneHeight;
     }
 
     override function sync(ctx : h3d.scene.RenderContext) {
@@ -25,12 +41,25 @@ class CameraController extends h3d.scene.Object {
 		camera.orthoBounds.yMax = Y;
 		camera.orthoBounds.yMin = -Y;
 
-        var p = new h3d.col.Point(
-            hxd.Math.lerp(camera.target.x, game.player.x, strength),
-            hxd.Math.lerp(camera.target.y, game.player.y, strength),
-            hxd.Math.lerp(camera.target.z, game.player.z, strength));
+        var engine = Engine.getCurrent();
+        var sp = camera.project(game.player.x, game.player.y, game.player.z, engine.width, engine.height);
+        var camTargetScreenPoint = camera.project(camera.target.x, camera.target.y, camera.target.z, engine.width, engine.height);
+        if (!deadZone.contains(new h2d.col.Point(sp.x, sp.y))) {
+            var closestPoint = new h2d.col.Point(engine.width / 2, engine.height / 2);
+            if (sp.x < deadZone.xMin || sp.x > deadZone.xMax)
+                closestPoint.x = hxd.Math.clamp(sp.x, deadZone.xMin, deadZone.xMax);
+            if (sp.y < deadZone.yMin || sp.y > deadZone.yMax)
+                closestPoint.y = hxd.Math.clamp(sp.y, deadZone.yMin, deadZone.yMax);
+            var r = camera.rayFromScreen(closestPoint.x, closestPoint.y, engine.width, engine.height);
+            var targetPoint = r.intersect(h3d.col.Plane.fromNormalPoint(new h3d.col.Point(0, 0, 1), new h3d.col.Point(game.player.x, game.player.y, game.player.z)));
 
-        set(p);
+            var p = new h3d.col.Point(
+                hxd.Math.lerp(camera.target.x, targetPoint.x, strength * ctx.elapsedTime),
+                hxd.Math.lerp(camera.target.y, targetPoint.y, strength * ctx.elapsedTime),
+                hxd.Math.lerp(camera.target.z, targetPoint.z, strength * ctx.elapsedTime));
+
+            set(p);
+        }
     }
 
     public function enteredRoom(r : ent.Room) {
