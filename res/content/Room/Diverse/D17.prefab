@@ -1,0 +1,183 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room02_Present",
+					"source": "content/Art/Room_template/Generic/Present/Big_room02_Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room02_Past",
+					"source": "content/Art/Room_template/Generic/Past/Big_room02_Past.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -7.06,
+					"y": 3.47,
+					"z": 2.36
+				},
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 7.19,
+					"y": 6.1,
+					"z": 2.6,
+					"rotationZ": 180
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Common",
+			"children": [
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -5.18,
+					"y": 4.86,
+					"z": 1.21,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -0.45,
+					"y": 4.86,
+					"z": 1.21,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 5.44,
+					"y": 7.11,
+					"z": 1.14,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Lake",
+			"name": "Lake2",
+			"x": 1.59,
+			"y": 1.4,
+			"z": 1.91,
+			"scaleX": 20,
+			"scaleY": 20,
+			"scaleZ": 20,
+			"color": -1052689,
+			"hasDebugColor": false,
+			"nearWaterColor": 4545647,
+			"middleWaterColor": 2302761,
+			"deepWaterColor": 1514788,
+			"roughness": 0.1,
+			"opacityPower": 0.61,
+			"maxDepth": 1.73,
+			"colorNoiseTexture": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
+			"colorNoiseScale": 0.1,
+			"normalMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_Normal.png",
+			"waveIntensity": 0.53,
+			"waveScale": 0.06,
+			"waveSpeed": 0.13,
+			"secondWaveScale": 0.04,
+			"secondWaveRotate": 114.55,
+			"secondWaveSpeed": 0.23,
+			"kind": 0,
+			"args": [
+				0
+			]
+		}
+	]
+}

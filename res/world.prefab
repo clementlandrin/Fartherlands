@@ -394,7 +394,7 @@
 					"name": "F12",
 					"source": "content/Room/Factory/F12.prefab",
 					"x": 10,
-					"y": -16.25
+					"y": -15
 				},
 				{
 					"type": "reference",
@@ -408,21 +408,20 @@
 					"name": "F14",
 					"source": "content/Room/Factory/F14.prefab",
 					"x": -32.5,
-					"y": -16.5,
-					"editMode": "Edit"
+					"y": -13.82
 				},
 				{
 					"type": "reference",
 					"name": "F15",
 					"source": "content/Room/Factory/F15.prefab",
 					"x": -15,
-					"y": -35
+					"y": -32.1
 				},
 				{
 					"type": "reference",
 					"name": "F4",
 					"source": "content/Room/Factory/F4.prefab",
-					"y": -20
+					"y": -17.5
 				},
 				{
 					"type": "reference",
@@ -484,14 +483,14 @@
 					"name": "F10",
 					"source": "content/Room/Factory/F10.prefab",
 					"x": -15,
-					"y": -20
+					"y": -17.5
 				},
 				{
 					"type": "reference",
 					"name": "F11",
 					"source": "content/Room/Factory/F11.prefab",
 					"x": -32.5,
-					"y": -30.5
+					"y": -27.6
 				},
 				{
 					"type": "shader",
@@ -526,7 +525,7 @@
 					"name": "D4",
 					"source": "content/Room/Diverse/D4.prefab",
 					"x": -11,
-					"y": 19
+					"y": 20
 				},
 				{
 					"type": "reference",
@@ -538,7 +537,7 @@
 					"type": "reference",
 					"name": "D3",
 					"source": "content/Room/Diverse/D3.prefab",
-					"y": 18.79
+					"y": 20
 				},
 				{
 					"type": "reference",
@@ -598,7 +597,7 @@
 					"name": "D11",
 					"source": "content/Room/Diverse/D11.prefab",
 					"x": -20,
-					"y": 19
+					"y": 20
 				},
 				{
 					"type": "reference",
@@ -641,7 +640,7 @@
 		{
 			"type": "object",
 			"name": "Bath",
-			"x": 18.34,
+			"x": 65.1,
 			"children": [
 				{
 					"type": "reference",
@@ -896,6 +895,46 @@
 					"z": -78.27
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "D16",
+			"source": "content/Room/Diverse/D16.prefab",
+			"x": 15
+		},
+		{
+			"type": "reference",
+			"name": "D17",
+			"source": "content/Room/Diverse/D17.prefab",
+			"x": 15,
+			"y": 20
+		},
+		{
+			"type": "reference",
+			"name": "D18",
+			"source": "content/Room/Diverse/D18.prefab",
+			"x": 15,
+			"y": -20
+		},
+		{
+			"type": "reference",
+			"name": "D19",
+			"source": "content/Room/Diverse/D19.prefab",
+			"x": 30,
+			"y": 20
+		},
+		{
+			"type": "reference",
+			"name": "D20",
+			"source": "content/Room/Diverse/D20.prefab",
+			"x": 30,
+			"y": -20
+		},
+		{
+			"type": "reference",
+			"name": "D21",
+			"source": "content/Room/Diverse/D21.prefab",
+			"x": 32.5
 		}
 	]
 }

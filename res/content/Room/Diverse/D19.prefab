@@ -1,0 +1,193 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "Common",
+			"x": 1.92,
+			"rotationZ": -90,
+			"children": [
+				{
+					"type": "model",
+					"name": "column01",
+					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+					"x": -7.8,
+					"y": -5.83,
+					"rotationZ": 90
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "column01",
+			"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+			"x": 7.3,
+			"y": -5.35,
+			"rotationZ": 90
+		},
+		{
+			"type": "object",
+			"name": "present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Medium_room_Right_Present",
+					"source": "content/Art/Room_template/Generic/Present/Medium_room_Right_Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"x": -0.038333333333333316,
+					"y": -0.050000000000000114,
+					"z": 0.6616666666666666
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "Medium_room_Right_Present",
+			"source": "content/Art/Room_template/Generic/Present/Medium_room_Right_Present.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "Present",
+			"source": "lighting/Present.prefab"
+		},
+		{
+			"type": "object",
+			"name": "object",
+			"x": -0.038333333333333316,
+			"y": -0.050000000000000114,
+			"z": 0.6616666666666666
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Medium_room_Right",
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Right_Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -2.45,
+					"y": -7.21,
+					"z": 1.92,
+					"rotationZ": 90
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -3.12,
+			"y": -4.51,
+			"z": 0.91,
+			"scaleX": 0.61,
+			"scaleY": 0.61,
+			"scaleZ": 0.61,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -0.1,
+					"y": 0.03,
+					"z": -1.97,
+					"scaleX": 8.91,
+					"scaleY": 6.13,
+					"scaleZ": 3.43,
+					"rotationZ": 90
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -3.12,
+			"y": 0.93,
+			"z": 0.91,
+			"scaleX": 0.61,
+			"scaleY": 0.61,
+			"scaleZ": 0.61,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -0.1,
+					"y": 0.03,
+					"z": -1.97,
+					"scaleX": 8.91,
+					"scaleY": 6.13,
+					"scaleZ": 3.43,
+					"rotationZ": 90
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "basic_bloc02",
+			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+			"x": -3.12,
+			"y": 6.38,
+			"z": 0.91,
+			"scaleX": 0.61,
+			"scaleY": 0.61,
+			"scaleZ": 0.61,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -0.1,
+					"y": 0.03,
+					"z": -1.97,
+					"scaleX": 8.91,
+					"scaleY": 6.13,
+					"scaleZ": 3.43,
+					"rotationZ": 90
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "door",
+			"source": "gameplay/door/door.prefab",
+			"x": -3.7,
+			"y": 4.65,
+			"z": 1.74
+		}
+	]
+}
