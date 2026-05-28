@@ -12,7 +12,8 @@
 		{
 			"type": "model",
 			"name": "Debris02",
-			"source": "content/Art/Asset/Debris/Debris02.fbx"
+			"source": "content/Art/Asset/Debris/Debris02.fbx",
+			"inGameOnly": true
 		}
 	]
 }

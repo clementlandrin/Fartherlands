@@ -10,6 +10,7 @@
 			"type": "reference",
 			"name": "Box_Navmesh",
 			"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+			"inGameOnly": true,
 			"scaleX": 1.05,
 			"scaleY": 1.27,
 			"scaleZ": 0.4

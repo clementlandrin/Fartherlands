@@ -1,0 +1,1806 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 32,
+			"name": "ReflectionEmissiveIntensity",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.5,
+			"index": 0
+		},
+		{
+			"id": 33,
+			"name": "ReflectionDissolve",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "Fx/_Resources/Noise/FlareNoise01_Sharper.png",
+			"index": 1
+		},
+		{
+			"id": 37,
+			"name": "ReflectionDissolveScale",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				4,
+				0.25
+			],
+			"index": 2
+		},
+		{
+			"id": 38,
+			"name": "ReflectionDissolve_ScrollSpeed",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0.2,
+				-1
+			],
+			"index": 3
+		},
+		{
+			"id": 42,
+			"name": "ReflectionMask",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "Fx/_Resources/Alphas/TEX_WaterSpec02.png",
+			"index": 4
+		},
+		{
+			"id": 44,
+			"name": "ReflectionMask_Offset",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0,
+				0.03
+			],
+			"index": 5
+		},
+		{
+			"id": 45,
+			"name": "ReflectionMask_Scale",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				3,
+				1.77
+			],
+			"index": 6
+		},
+		{
+			"id": 46,
+			"name": "ReflectionDisto",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "Fx/_Resources/Noise/T_FireSharp.png",
+			"index": 7
+		},
+		{
+			"id": 47,
+			"name": "ReflectionDisto_Scale",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				2,
+				1
+			],
+			"index": 8
+		},
+		{
+			"id": 48,
+			"name": "ReflectionDisto_Speed",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0.5,
+				0
+			],
+			"index": 9
+		},
+		{
+			"id": 49,
+			"name": "ReflectionDisto_Intensity",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.01,
+			"index": 10
+		},
+		{
+			"id": 50,
+			"name": "TrailsTexture",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "Fx/_Resources/Alphas/T_WaterFall01.png",
+			"index": 11
+		},
+		{
+			"id": 55,
+			"name": "CouleTexture",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "Fx/_Resources/Noise/T_WaterNoise.png",
+			"index": 16
+		},
+		{
+			"id": 56,
+			"name": "CouleOpacity",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.25,
+			"index": 17
+		},
+		{
+			"id": 57,
+			"name": "Trails_Scale01",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				2,
+				0.25
+			],
+			"index": 12
+		},
+		{
+			"id": 58,
+			"name": "Trails_Scale02",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0.5,
+				0.5
+			],
+			"index": 14
+		},
+		{
+			"id": 59,
+			"name": "Trails_Speed01",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0,
+				-0.5
+			],
+			"index": 13
+		},
+		{
+			"id": 60,
+			"name": "Trails_Speed02",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0.1,
+				-0.5
+			],
+			"index": 15
+		},
+		{
+			"id": 61,
+			"name": "CouleScale01",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				1,
+				0.5
+			],
+			"index": 18
+		},
+		{
+			"id": 62,
+			"name": "CouleSpeed01",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				-0.05,
+				-0.5
+			],
+			"index": 19
+		},
+		{
+			"id": 63,
+			"name": "CouleScale02",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0.5,
+				0.12
+			],
+			"index": 20
+		},
+		{
+			"id": 64,
+			"name": "CouleSpeed02",
+			"type": [
+				"TVec",
+				"2,VFloat"
+			],
+			"defaultValue": [
+				0.05,
+				-0.25
+			],
+			"index": 21
+		}
+	],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 3492,
+				"y": 450,
+				"id": 18,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_color",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3258,
+				"y": -396,
+				"id": 229,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3492,
+				"y": -288,
+				"id": 231,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "emissive",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3060,
+				"y": -540,
+				"id": 232,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 32,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1224,
+				"y": -972,
+				"id": 241,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 33,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1188,
+				"y": -756,
+				"id": 242,
+				"type": "hrt.shgraph.nodes.UVScroll",
+				"properties": {
+					"defaults": {
+						"vSpeed": -1,
+						"uSpeed": -0.1
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1404,
+				"y": -972,
+				"id": 243,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 792,
+				"y": -1026,
+				"id": 294,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "DissolveReflection",
+					"width": 989,
+					"height": 723,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1026,
+				"y": -756,
+				"id": 296,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 828,
+				"y": -738,
+				"id": 297,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 37,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 846,
+				"y": -504,
+				"id": 298,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 38,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 990,
+				"y": -504,
+				"id": 299,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": false
+				}
+			},
+			{
+				"x": 1656,
+				"y": -972,
+				"id": 304,
+				"type": "hrt.shgraph.nodes.Invert",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1332,
+				"y": -252,
+				"id": 305,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 42,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1602,
+				"y": -144,
+				"id": 306,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "ClampY",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1350,
+				"y": 144,
+				"id": 307,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1152,
+				"y": 216,
+				"id": 308,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 44,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1152,
+				"y": 18,
+				"id": 309,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 45,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1890,
+				"y": -378,
+				"id": 310,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -126,
+				"y": -108,
+				"id": 311,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 46,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 72,
+				"y": -108,
+				"id": 312,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 954,
+				"y": 36,
+				"id": 314,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"defaults": {
+						"b": 0.01
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 882,
+				"y": -234,
+				"id": 316,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1170,
+				"y": -162,
+				"id": 317,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 522,
+				"y": -144,
+				"id": 318,
+				"type": "hrt.shgraph.nodes.Remap",
+				"properties": {
+					"defaults": {
+						"outMin": -1
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 522,
+				"y": 108,
+				"id": 319,
+				"type": "hrt.shgraph.nodes.Remap",
+				"properties": {
+					"defaults": {
+						"outMin": -1
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 288,
+				"y": -72,
+				"id": 320,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 702,
+				"y": 36,
+				"id": 322,
+				"type": "hrt.shgraph.nodes.Combine",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -162,
+				"y": 90,
+				"id": 323,
+				"type": "hrt.shgraph.nodes.UVScroll",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -504,
+				"y": 108,
+				"id": 324,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 47,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -324,
+				"y": 90,
+				"id": 325,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -540,
+				"y": 342,
+				"id": 326,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 48,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -360,
+				"y": 342,
+				"id": 327,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 738,
+				"y": 324,
+				"id": 328,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 49,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -558,
+				"y": -288,
+				"id": 329,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "DistoReflection",
+					"width": 2342,
+					"height": 918,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3204,
+				"y": 702,
+				"id": 331,
+				"type": "hrt.shgraph.nodes.Clamp",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -625,
+				"y": -1107,
+				"id": 332,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "TopBorder",
+					"width": 2433,
+					"height": 1774,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 594,
+				"y": 756,
+				"id": 333,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 50,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 828,
+				"y": 756,
+				"id": 334,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 486,
+				"y": 954,
+				"id": 335,
+				"type": "hrt.shgraph.nodes.UVScroll",
+				"properties": {
+					"defaults": {
+						"uSpeed": 0,
+						"vSpeed": -0.5
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3024,
+				"y": 702,
+				"id": 336,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 270,
+				"y": 954,
+				"id": 337,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1440,
+				"y": 1314,
+				"id": 339,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 810,
+				"y": 1332,
+				"id": 340,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 504,
+				"y": 1476,
+				"id": 341,
+				"type": "hrt.shgraph.nodes.UVScroll",
+				"properties": {
+					"defaults": {
+						"uSpeed": 0.1,
+						"vSpeed": -0.5
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 252,
+				"y": 1476,
+				"id": 342,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3492,
+				"y": 702,
+				"id": 371,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_alpha",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 396,
+				"y": 2196,
+				"id": 373,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 54,
+				"y": 2394,
+				"id": 374,
+				"type": "hrt.shgraph.nodes.UVScroll",
+				"properties": {
+					"defaults": {
+						"uSpeed": -0.05,
+						"vSpeed": -0.5
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -198,
+				"y": 2394,
+				"id": 375,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 684,
+				"y": 2556,
+				"id": 377,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 432,
+				"y": 2844,
+				"id": 378,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 126,
+				"y": 2988,
+				"id": 379,
+				"type": "hrt.shgraph.nodes.UVScroll",
+				"properties": {
+					"defaults": {
+						"uSpeed": 0.05,
+						"vSpeed": -0.25
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -126,
+				"y": 2988,
+				"id": 380,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 90,
+				"y": 2196,
+				"id": 382,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 55,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1638,
+				"y": 1548,
+				"id": 386,
+				"type": "hrt.shgraph.nodes.Subtract",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1926,
+				"y": 1314,
+				"id": 387,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2592,
+				"y": 720,
+				"id": 388,
+				"type": "hrt.shgraph.nodes.Subtract",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2790,
+				"y": 720,
+				"id": 390,
+				"type": "hrt.shgraph.nodes.Clamp",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1800,
+				"y": 1548,
+				"id": 391,
+				"type": "hrt.shgraph.nodes.Clamp",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 846,
+				"y": 2556,
+				"id": 393,
+				"type": "hrt.shgraph.nodes.Dissolve",
+				"properties": {
+					"defaults": {
+						"progress": 0.3,
+						"saturation": 0
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1260,
+				"y": 2556,
+				"id": 394,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1080,
+				"y": 2664,
+				"id": 395,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 56,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -382,
+				"y": 2142,
+				"id": 415,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "WaterCoule",
+					"width": 1753,
+					"height": 1396,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -25,
+				"y": 720,
+				"id": 416,
+				"type": "hrt.shgraph.nodes.Comment",
+				"properties": {
+					"comment": "Trails",
+					"width": 1035,
+					"height": 1303,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 90,
+				"y": 972,
+				"id": 417,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 57,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 54,
+				"y": 1494,
+				"id": 418,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 58,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 90,
+				"y": 1188,
+				"id": 419,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 59,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 270,
+				"y": 1188,
+				"id": 420,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 54,
+				"y": 1710,
+				"id": 421,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 60,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 252,
+				"y": 1710,
+				"id": 422,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3348,
+				"y": 360,
+				"id": 423,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3060,
+				"y": 360,
+				"id": 424,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "pixelColor",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -360,
+				"y": 2412,
+				"id": 425,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 61,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -360,
+				"y": 2646,
+				"id": 426,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 62,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -216,
+				"y": 2628,
+				"id": 427,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -360,
+				"y": 3006,
+				"id": 428,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 63,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -360,
+				"y": 3240,
+				"id": 429,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 64,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -162,
+				"y": 3240,
+				"id": 430,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 423,
+				"nameOutput": "output",
+				"inputNodeId": 18,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 232,
+				"nameOutput": "ReflectionEmissiveIntensity",
+				"inputNodeId": 229,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 310,
+				"nameOutput": "output",
+				"inputNodeId": 229,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 229,
+				"nameOutput": "output",
+				"inputNodeId": 231,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 296,
+				"nameOutput": "output",
+				"inputNodeId": 242,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 299,
+				"nameOutput": "r",
+				"inputNodeId": 242,
+				"nameInput": "uSpeed",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 299,
+				"nameOutput": "g",
+				"inputNodeId": 242,
+				"nameInput": "vSpeed",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 241,
+				"nameOutput": "ReflectionDissolve",
+				"inputNodeId": 243,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 242,
+				"nameOutput": "output",
+				"inputNodeId": 243,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 297,
+				"nameOutput": "ReflectionDissolveScale",
+				"inputNodeId": 296,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 298,
+				"nameOutput": "ReflectionDissolve_ScrollSpeed",
+				"inputNodeId": 299,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 243,
+				"nameOutput": "RGBA",
+				"inputNodeId": 304,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 305,
+				"nameOutput": "ReflectionMask",
+				"inputNodeId": 306,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 307,
+				"nameOutput": "output",
+				"inputNodeId": 306,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 317,
+				"nameOutput": "output",
+				"inputNodeId": 307,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 309,
+				"nameOutput": "ReflectionMask_Scale",
+				"inputNodeId": 307,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 308,
+				"nameOutput": "ReflectionMask_Offset",
+				"inputNodeId": 307,
+				"nameInput": "offset",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 304,
+				"nameOutput": "output",
+				"inputNodeId": 310,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 306,
+				"nameOutput": "RGBA",
+				"inputNodeId": 310,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 311,
+				"nameOutput": "ReflectionDisto",
+				"inputNodeId": 312,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 323,
+				"nameOutput": "output",
+				"inputNodeId": 312,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 322,
+				"nameOutput": "output",
+				"inputNodeId": 314,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 328,
+				"nameOutput": "ReflectionDisto_Intensity",
+				"inputNodeId": 314,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 316,
+				"nameOutput": "output",
+				"inputNodeId": 317,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 314,
+				"nameOutput": "output",
+				"inputNodeId": 317,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 320,
+				"nameOutput": "r",
+				"inputNodeId": 318,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 320,
+				"nameOutput": "g",
+				"inputNodeId": 319,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 312,
+				"nameOutput": "RGBA",
+				"inputNodeId": 320,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 318,
+				"nameOutput": "output",
+				"inputNodeId": 322,
+				"nameInput": "r",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 319,
+				"nameOutput": "output",
+				"inputNodeId": 322,
+				"nameInput": "g",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 325,
+				"nameOutput": "output",
+				"inputNodeId": 323,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 327,
+				"nameOutput": "r",
+				"inputNodeId": 323,
+				"nameInput": "uSpeed",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 327,
+				"nameOutput": "g",
+				"inputNodeId": 323,
+				"nameInput": "vSpeed",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 324,
+				"nameOutput": "ReflectionDisto_Scale",
+				"inputNodeId": 325,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 326,
+				"nameOutput": "ReflectionDisto_Speed",
+				"inputNodeId": 327,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 336,
+				"nameOutput": "output",
+				"inputNodeId": 331,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 333,
+				"nameOutput": "TrailsTexture",
+				"inputNodeId": 334,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 335,
+				"nameOutput": "output",
+				"inputNodeId": 334,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 337,
+				"nameOutput": "output",
+				"inputNodeId": 335,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 420,
+				"nameOutput": "r",
+				"inputNodeId": 335,
+				"nameInput": "uSpeed",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 420,
+				"nameOutput": "g",
+				"inputNodeId": 335,
+				"nameInput": "vSpeed",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 310,
+				"nameOutput": "output",
+				"inputNodeId": 336,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 390,
+				"nameOutput": "output",
+				"inputNodeId": 336,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 417,
+				"nameOutput": "Trails_Scale01",
+				"inputNodeId": 337,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 334,
+				"nameOutput": "RGBA",
+				"inputNodeId": 339,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 340,
+				"nameOutput": "RGBA",
+				"inputNodeId": 339,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 333,
+				"nameOutput": "TrailsTexture",
+				"inputNodeId": 340,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 341,
+				"nameOutput": "output",
+				"inputNodeId": 340,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 342,
+				"nameOutput": "output",
+				"inputNodeId": 341,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 422,
+				"nameOutput": "r",
+				"inputNodeId": 341,
+				"nameInput": "uSpeed",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 422,
+				"nameOutput": "g",
+				"inputNodeId": 341,
+				"nameInput": "vSpeed",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 418,
+				"nameOutput": "Trails_Scale02",
+				"inputNodeId": 342,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 331,
+				"nameOutput": "output",
+				"inputNodeId": 371,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 382,
+				"nameOutput": "CouleTexture",
+				"inputNodeId": 373,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 374,
+				"nameOutput": "output",
+				"inputNodeId": 373,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 375,
+				"nameOutput": "output",
+				"inputNodeId": 374,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 427,
+				"nameOutput": "r",
+				"inputNodeId": 374,
+				"nameInput": "uSpeed",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 427,
+				"nameOutput": "g",
+				"inputNodeId": 374,
+				"nameInput": "vSpeed",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 425,
+				"nameOutput": "CouleScale01",
+				"inputNodeId": 375,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 373,
+				"nameOutput": "RGBA",
+				"inputNodeId": 377,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 378,
+				"nameOutput": "RGBA",
+				"inputNodeId": 377,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 382,
+				"nameOutput": "CouleTexture",
+				"inputNodeId": 378,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 379,
+				"nameOutput": "output",
+				"inputNodeId": 378,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 380,
+				"nameOutput": "output",
+				"inputNodeId": 379,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 430,
+				"nameOutput": "r",
+				"inputNodeId": 379,
+				"nameInput": "uSpeed",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 430,
+				"nameOutput": "g",
+				"inputNodeId": 379,
+				"nameInput": "vSpeed",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 428,
+				"nameOutput": "CouleScale02",
+				"inputNodeId": 380,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 394,
+				"nameOutput": "output",
+				"inputNodeId": 386,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 339,
+				"nameOutput": "output",
+				"inputNodeId": 386,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 339,
+				"nameOutput": "output",
+				"inputNodeId": 387,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 391,
+				"nameOutput": "output",
+				"inputNodeId": 387,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 387,
+				"nameOutput": "output",
+				"inputNodeId": 388,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 310,
+				"nameOutput": "output",
+				"inputNodeId": 388,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 388,
+				"nameOutput": "output",
+				"inputNodeId": 390,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 386,
+				"nameOutput": "output",
+				"inputNodeId": 391,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 377,
+				"nameOutput": "output",
+				"inputNodeId": 393,
+				"nameInput": "dissolveMap",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 393,
+				"nameOutput": "alpha",
+				"inputNodeId": 394,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 395,
+				"nameOutput": "CouleOpacity",
+				"inputNodeId": 394,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 419,
+				"nameOutput": "Trails_Speed01",
+				"inputNodeId": 420,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 421,
+				"nameOutput": "Trails_Speed02",
+				"inputNodeId": 422,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 424,
+				"nameOutput": "output",
+				"inputNodeId": 423,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 331,
+				"nameOutput": "output",
+				"inputNodeId": 423,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 426,
+				"nameOutput": "CouleSpeed01",
+				"inputNodeId": 427,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 429,
+				"nameOutput": "CouleSpeed02",
+				"inputNodeId": 430,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			}
+		]
+	}
+}

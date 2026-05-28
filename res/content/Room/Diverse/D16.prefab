@@ -173,6 +173,20 @@
 				},
 				{
 					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": -1.39,
+					"y": 3.24
+				},
+				{
+					"type": "model",
+					"name": "wall05",
+					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
+					"x": -1.39,
+					"y": -2.88
+				},
+				{
+					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
 					"x": -7.57,
@@ -283,17 +297,25 @@
 		},
 		{
 			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -1.39,
-			"y": 3.24
+			"name": "levier",
+			"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+			"x": 6.18,
+			"y": -6.06,
+			"z": 2.25,
+			"rotationX": -0.00000814462207880196,
+			"rotationY": 2.4382158514140184e-11,
+			"rotationZ": -1.7329676657752179e-18
 		},
 		{
 			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -1.39,
-			"y": -2.88
+			"name": "levier",
+			"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+			"x": 6.18,
+			"y": 5.05,
+			"z": 2.25,
+			"rotationX": -0.00000814462207880196,
+			"rotationY": 2.4382158514140184e-11,
+			"rotationZ": -1.7329676657752179e-18
 		}
 	]
 }

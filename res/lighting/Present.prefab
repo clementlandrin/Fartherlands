@@ -44,7 +44,7 @@
 				{
 					"type": "rfx.colorGrading",
 					"name": "colorGrading",
-					"texturePath": "content/Art/Lut/LUT_J.png"
+					"texturePath": "content/Art/Lut/BaseLUT.png"
 				},
 				{
 					"type": "rfx.sao",

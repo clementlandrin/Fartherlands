@@ -28,12 +28,12 @@
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.1,
+							"x": -0.58,
 							"y": 0.67,
 							"z": -1.93,
-							"scaleX": 10.377,
-							"scaleY": 6.1311,
-							"scaleZ": 3.4262,
+							"scaleX": 10.38,
+							"scaleY": 6.92,
+							"scaleZ": 3.43,
 							"rotationZ": -90
 						},
 						{
@@ -581,6 +581,15 @@
 					"x": 7.425,
 					"y": -0.2575,
 					"rotationZ": 180
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -4.195,
+					"y": -7.1375,
+					"z": 1.85,
+					"rotationZ": 90
 				}
 			]
 		},
@@ -601,7 +610,7 @@
 					"name": "tree",
 					"source": "content/LD/Placeholder/tree.fbx",
 					"x": -2.81,
-					"y": -0.75,
+					"y": 0.04,
 					"z": -0.26,
 					"scaleX": 0.93,
 					"scaleY": 0.93,
@@ -617,15 +626,6 @@
 			"x": -3.83,
 			"y": -5.89,
 			"z": 1.58
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": -4.29,
-			"y": -7.48,
-			"z": 1.73,
-			"rotationZ": 90
 		}
 	]
 }

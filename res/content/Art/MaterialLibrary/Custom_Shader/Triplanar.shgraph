@@ -128,7 +128,7 @@
 				"id": 12,
 				"type": "hrt.shgraph.nodes.TriplanarParams",
 				"properties": {
-					"LOCAL": false,
+					"mode": "World",
 					"nameOverride": null,
 					"showPreview": true
 				}
@@ -185,7 +185,7 @@
 				}
 			},
 			{
-				"x": 666,
+				"x": 378,
 				"y": 864,
 				"id": 22,
 				"type": "hrt.shgraph.nodes.TriplanarSampler",
@@ -257,6 +257,30 @@
 				"type": "hrt.shgraph.ShaderOutput",
 				"properties": {
 					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 450,
+				"y": 1260,
+				"id": 30,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "roughness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 648,
+				"y": 864,
+				"id": 31,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"defaults": {
+						"fact": 0
+					},
 					"nameOverride": null,
 					"showPreview": true
 				}
@@ -384,8 +408,8 @@
 				"outputId": 3
 			},
 			{
-				"outputNodeId": 22,
-				"nameOutput": "RGBA",
+				"outputNodeId": 31,
+				"nameOutput": "output",
 				"inputNodeId": 23,
 				"nameInput": "rgba",
 				"inputId": 0,
@@ -453,6 +477,22 @@
 				"inputNodeId": 29,
 				"nameInput": "input",
 				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 22,
+				"nameOutput": "RGBA",
+				"inputNodeId": 31,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 30,
+				"nameOutput": "output",
+				"inputNodeId": 31,
+				"nameInput": "b",
+				"inputId": 1,
 				"outputId": 0
 			}
 		]
