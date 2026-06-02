@@ -363,14 +363,14 @@
 					"type": "reference",
 					"name": "F1",
 					"source": "content/Room/Factory/F1.prefab",
-					"x": -55,
+					"x": -104.79,
 					"y": -4.65
 				},
 				{
 					"type": "reference",
 					"name": "F2",
 					"source": "content/Room/Factory/F2.prefab",
-					"x": -50,
+					"x": -99.79,
 					"y": -10.86,
 					"z": 10
 				},
@@ -378,7 +378,7 @@
 					"type": "reference",
 					"name": "F3",
 					"source": "content/Room/Factory/F3.prefab",
-					"x": -60,
+					"x": -109.79,
 					"y": -15,
 					"z": 10
 				},
@@ -386,7 +386,7 @@
 					"type": "reference",
 					"name": "F16",
 					"source": "content/Room/Factory/F16.prefab",
-					"x": -60,
+					"x": -109.79,
 					"y": -10,
 					"z": 20
 				},
@@ -936,6 +936,20 @@
 			"name": "D21",
 			"source": "content/Room/Diverse/D21.prefab",
 			"x": 32.5
+		},
+		{
+			"type": "reference",
+			"name": "D23",
+			"source": "content/Room/Diverse/D23.prefab",
+			"x": -52.5,
+			"y": -47.5
+		},
+		{
+			"type": "reference",
+			"name": "D24",
+			"source": "content/Room/Diverse/D24.prefab",
+			"x": -52.5,
+			"y": -62.5
 		}
 	]
 }
