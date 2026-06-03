@@ -75,48 +75,52 @@
 			"rotationZ": 180
 		},
 		{
-			"type": "model",
-			"name": "passerelle01",
-			"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
-			"x": 0.89,
-			"y": -1.11,
-			"z": 10.04,
-			"rotationZ": 90
-		},
-		{
-			"type": "model",
-			"name": "passerelle01",
-			"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
-			"x": -6.05,
-			"y": 0.25,
-			"z": 10.04
-		},
-		{
-			"type": "model",
-			"name": "passerelle03",
-			"source": "content/Art/Asset/Generique/bridges/passerelle03.fbx",
-			"x": -0.36,
-			"y": 3.33,
-			"z": 10.04,
-			"rotationZ": 180
-		},
-		{
-			"type": "model",
-			"name": "passerelle03",
-			"source": "content/Art/Asset/Generique/bridges/passerelle03.fbx",
-			"x": -0.36,
-			"y": -2.77,
-			"z": 10.04,
-			"rotationZ": 180
-		},
-		{
-			"type": "model",
-			"name": "passerelle03",
-			"source": "content/Art/Asset/Generique/bridges/passerelle03.fbx",
-			"x": -3.39,
-			"y": -2.77,
-			"z": 10.04,
-			"rotationZ": 90
+			"type": "object",
+			"name": "Passerelles",
+			"children": [
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": 4.45,
+					"y": -1.11,
+					"z": 10.04,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": -0.09,
+					"y": -2.81,
+					"z": 10.04
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": 1.78,
+					"y": 3.47,
+					"z": 10.04
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": -6.05,
+					"y": 0.25,
+					"z": 10.04
+				},
+				{
+					"type": "model",
+					"name": "passerelle03",
+					"source": "content/Art/Asset/Generique/bridges/passerelle03.fbx",
+					"x": -3.39,
+					"y": -2.77,
+					"z": 10.04,
+					"rotationZ": 90
+				}
+			]
 		}
 	]
 }

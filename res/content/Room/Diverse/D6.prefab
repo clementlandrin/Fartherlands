@@ -8,48 +8,7 @@
 		},
 		{
 			"type": "object",
-			"name": "common",
-			"children": [
-				{
-					"type": "model",
-					"name": "wall04",
-					"source": "content/Art/Asset/Generique/Walls/wall04.fbx",
-					"x": -3.75,
-					"y": 0.32,
-					"z": -2.8
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"x": -1.77,
-					"y": 5.16,
-					"scaleX": 3.24,
-					"scaleY": 8.4,
-					"rotationZ": 90,
-					"kind": 0,
-					"args": [
-						0
-					],
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"refMatLib": "content/Art/MaterialLibrary/Generic/Utilities.prefab/Black_unlit"
-						}
-					]
-				}
-			]
+			"name": "common"
 		},
 		{
 			"type": "object",
@@ -62,32 +21,8 @@
 					"name": "door",
 					"source": "gameplay/door/door.prefab",
 					"x": 0.31,
-					"y": -3.59
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "Present",
-			"children": [
-				{
-					"type": "reference",
-					"name": "Present",
-					"source": "lighting/Present.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Small_room_Present",
-					"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab"
-				},
-				{
-					"type": "reference",
-					"name": "Moss02",
-					"source": "content/Art/Asset/Vegetation/Moss/Moss02.prefab",
-					"x": 1.24,
-					"y": 0.05,
-					"z": -0.03,
-					"rotationZ": -69.1
+					"y": -3.59,
+					"rotationZ": -90
 				}
 			]
 		},
@@ -102,8 +37,76 @@
 				},
 				{
 					"type": "reference",
-					"name": "Small_room",
-					"source": "content/Art/Room_template/Generic/Past/Small_room_Past.prefab"
+					"name": "Small_Room_Past02",
+					"source": "content/Art/Room_template/Generic/Past/Small_Room_Past02.prefab",
+					"children": [
+						{
+							"type": "object",
+							"name": "Passerelles",
+							"children": [
+								{
+									"type": "model",
+									"name": "passerelle01",
+									"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+									"x": 1.11,
+									"y": -2.65,
+									"z": 10.04,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "passerelle01",
+									"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+									"x": -0.83,
+									"y": -2.65,
+									"z": 10.04,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "passerelle01",
+									"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+									"x": -2.73,
+									"y": -2.65,
+									"z": 10.04,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "passerelle01",
+									"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+									"x": 5.51,
+									"y": 2.08,
+									"z": 10.04
+								},
+								{
+									"type": "model",
+									"name": "passerelle01",
+									"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+									"x": 1.14,
+									"y": 4.61,
+									"z": 10.04,
+									"rotationZ": -90
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Room_Dark_Small",
+					"source": "content/Art/Room_template/Generic/Present/Room_Dark_Small.prefab"
 				}
 			]
 		},

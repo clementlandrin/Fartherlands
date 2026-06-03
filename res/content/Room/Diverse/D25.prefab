@@ -1,0 +1,124 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "Tooltip",
+			"props": {
+				"id": "World_Tooltip",
+				"type": 4,
+				"$cdbtype": "element"
+			}
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Right_Past03",
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Right_Past03.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Room_Dark_Right",
+					"source": "content/Art/Room_template/Generic/Present/Room_Dark_Right.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": 0.23,
+					"y": -7.28,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -3.3,
+					"y": -0.03
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Passerelles",
+			"children": [
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": -2.9,
+					"y": 4.83,
+					"z": 10.04,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": -0.96,
+					"y": 4.83,
+					"z": 10.04,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": 0.78,
+					"y": 3.12,
+					"z": 10.04,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": 0.78,
+					"y": -9.19,
+					"z": 10.04,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": 0.84,
+					"y": 3.47,
+					"z": 10.04
+				}
+			]
+		}
+	]
+}

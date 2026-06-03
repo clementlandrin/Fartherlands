@@ -618,8 +618,8 @@
 					"type": "reference",
 					"name": "D6",
 					"source": "content/Room/Diverse/D6.prefab",
-					"x": -51.25,
-					"y": -15
+					"x": -67.5,
+					"y": -62.5
 				},
 				{
 					"type": "shader",
@@ -950,6 +950,27 @@
 			"source": "content/Room/Diverse/D24.prefab",
 			"x": -52.5,
 			"y": -62.5
+		},
+		{
+			"type": "reference",
+			"name": "D25",
+			"source": "content/Room/Diverse/D25.prefab",
+			"x": -67.5,
+			"y": -47.5
+		},
+		{
+			"type": "reference",
+			"name": "D26",
+			"source": "content/Room/Diverse/D26.prefab",
+			"x": -32.5,
+			"y": -66.5
+		},
+		{
+			"type": "reference",
+			"name": "D27",
+			"source": "content/Room/Diverse/D27.prefab",
+			"x": -52.5,
+			"y": -72.5
 		}
 	]
 }
