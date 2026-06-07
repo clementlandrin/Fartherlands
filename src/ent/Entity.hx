@@ -2,6 +2,8 @@ package ent;
 
 class Entity extends st.State {
 
+	static var allElements : Map<Data.ElementKind, hrt.prefab.Prefab> = []; 
+
 	public var room : Room;
 	public var inf : Data.Element_props;
 	public var id : Data.ElementKind;
@@ -32,6 +34,14 @@ class Entity extends st.State {
 		return z = v;
 	}
 	
+	public static inline function get(k : Data.ElementKind) {
+		return allElements.get(k);
+	}
+
+	public static inline function add(k : Data.ElementKind, p : hrt.prefab.Prefab) {
+		return allElements.set(k, p);
+	}
+
 	override function init() {
 		super.init();
 		if ( game.state != null )
@@ -115,7 +125,7 @@ class Entity extends st.State {
 		super.start();
 		if ( inf != null && inf.deactivated )
 			activated = false;
-		if ( obj != null ) {
+		if ( obj != null && obj.parent != null ) {
 			var newTransform = new h3d.Matrix();
 			newTransform.multiply3x4inline(obj.getTransform(), obj.parent.getAbsPos());
 			obj.setTransform(newTransform);

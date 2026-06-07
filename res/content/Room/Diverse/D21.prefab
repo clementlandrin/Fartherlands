@@ -670,6 +670,11 @@
 					"type": "model",
 					"name": "passerelle01",
 					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"props": {
+						"id": "lavory_bridge",
+						"type": 4,
+						"$cdbtype": "element"
+					},
 					"x": 3.61,
 					"y": 0.04,
 					"z": -0.39,
@@ -887,6 +892,11 @@
 							"type": "model",
 							"name": "wall_deco02",
 							"source": "content/Art/Asset/Generique/deco/wall_deco02.fbx",
+							"props": {
+								"id": "LavoryTrap1",
+								"type": 4,
+								"$cdbtype": "element"
+							},
 							"y": -1.94,
 							"scaleX": 1.82,
 							"scaleY": 1.82,
@@ -897,6 +907,11 @@
 							"type": "model",
 							"name": "wall_deco02",
 							"source": "content/Art/Asset/Generique/deco/wall_deco02.fbx",
+							"props": {
+								"id": "LavoryTrap2",
+								"type": 4,
+								"$cdbtype": "element"
+							},
 							"y": 1.94,
 							"scaleX": 1.82,
 							"scaleY": 1.82,
@@ -918,7 +933,8 @@
 					"name": "door",
 					"source": "gameplay/door/door.prefab",
 					"x": -7.06,
-					"y": -0.03
+					"y": -0.03,
+					"z": 0.28
 				},
 				{
 					"type": "reference",

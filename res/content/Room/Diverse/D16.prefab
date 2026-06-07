@@ -299,9 +299,26 @@
 			"type": "model",
 			"name": "levier",
 			"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
-			"x": 6.18,
-			"y": -6.06,
-			"z": 2.25,
+			"props": {
+				"id": "D16_levier",
+				"type": 14,
+				"$cdbtype": "element",
+				"props": {
+					"disableOnActivate": [
+						{
+							"ref": "LavoryTrap1"
+						}
+					],
+					"enableOnActivate": [
+						{
+							"ref": "lavory_bridge"
+						}
+					]
+				}
+			},
+			"x": 6.75,
+			"y": -5.08,
+			"z": 2.32,
 			"rotationX": -0.00000814462207880196,
 			"rotationY": 2.4382158514140184e-11,
 			"rotationZ": -1.7329676657752179e-18
@@ -310,9 +327,26 @@
 			"type": "model",
 			"name": "levier",
 			"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
-			"x": 6.18,
+			"props": {
+				"id": "D16_levier",
+				"type": 14,
+				"$cdbtype": "element",
+				"props": {
+					"disableOnActivate": [
+						{
+							"ref": "LavoryTrap2"
+						}
+					],
+					"enableOnActivate": [
+						{
+							"ref": "lavory_bridge"
+						}
+					]
+				}
+			},
+			"x": 6.97,
 			"y": 5.05,
-			"z": 2.25,
+			"z": 2.17,
 			"rotationX": -0.00000814462207880196,
 			"rotationY": 2.4382158514140184e-11,
 			"rotationZ": -1.7329676657752179e-18

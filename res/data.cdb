@@ -10,7 +10,7 @@
 					"scope": null
 				},
 				{
-					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator,Recharge,WeatherWheel,Pickable,Golem",
+					"typeStr": "5:Room,Door,Navmesh,Ladder,Element,Teleport,Seed,SeedPot,Chest,Elevator,Recharge,WeatherWheel,Pickable,Golem,Lever",
 					"name": "type",
 					"opt": false
 				},
@@ -498,6 +498,16 @@
 					"typeStr": "8",
 					"name": "dialog",
 					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "enableOnActivate",
+					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "disableOnActivate",
+					"opt": true
 				}
 			]
 		},
@@ -543,6 +553,36 @@
 				{
 					"typeStr": "8",
 					"name": "choices",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "element@props@enableOnActivate",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:element",
+					"name": "ref",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "element@props@disableOnActivate",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:element",
+					"name": "ref",
 					"opt": true
 				}
 			]

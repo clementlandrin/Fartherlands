@@ -1,3 +1,4 @@
+import ent.Entity;
 import ent.interactible.Golem;
 import ent.Interactible;
 import ent.interactible.Talkable;
@@ -228,14 +229,14 @@ class Game extends hxd.App {
 
 		var prevModeMake = modeMake;
 		switch(p.name.toLowerCase()) {
-		case "past":
-			modeMake = Past;
-		case "present":
-			modeMake = Present;
-		default:
+			case "past":
+				modeMake = Past;
+			case "present":
+				modeMake = Present;
+			default:
 		}
 
-		if ( source != null && source.indexOf("content/Room") == 0 ) {
+		if (source != null && source.indexOf("content/Room") == 0) {
 			if ( curRoom != null )
 				throw 'room in room. ${source} should not be in room?';
 			var r = new ent.Room();
@@ -248,7 +249,8 @@ class Game extends hxd.App {
 		switch (p.getCdbType()) {
 			case "element":
 				var props: Data.Element = cast p.props;
-				// var e = Type.createInstance(Type.resolveClass(props.type.toString()), []);
+				Entity.add(props.id, p);
+				
 				switch (props.type) {
 					case Room:
 						curRoom.inf = props.props;
@@ -279,6 +281,9 @@ class Game extends hxd.App {
 						e = n;
 					case Ladder:
 						var l = new ent.Ladder();
+						e = l;
+					case Lever:
+						var l = new ent.interactible.Lever();
 						e = l;
 					case Elevator:
 						var el = new ent.Elevator();
