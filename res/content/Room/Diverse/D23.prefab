@@ -557,9 +557,9 @@
 							"type": "model",
 							"name": "basic_bloc02",
 							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-							"x": 0.8387,
-							"y": -4.7529,
-							"z": -4.5243,
+							"x": 0.84,
+							"y": -4.75,
+							"z": -4.52,
 							"scaleX": 0.8,
 							"scaleY": 0.8,
 							"scaleZ": 0.8,
@@ -867,6 +867,227 @@
 					"y": 5.16,
 					"z": 10.04,
 					"rotationZ": -90
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "Ground_Debris03",
+			"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
+			"x": 2.23,
+			"y": 1.45,
+			"z": 14,
+			"rotationZ": -77.2,
+			"children": [
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"materialName": "02 - Default",
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.15
+							}
+						}
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"materialName": "01 - Default",
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.15
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "Ground_Debris04",
+			"source": "content/Art/Asset/Generique/bridges/Ground_Debris04.fbx",
+			"x": -2.29,
+			"y": 2.81,
+			"z": 13.96,
+			"rotationX": 6.9123315219057164e-12,
+			"rotationY": -4.2708289039371564e-12,
+			"rotationZ": -2.576226862452429e-25,
+			"children": [
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"materialName": "02 - Default",
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.15
+							}
+						}
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"materialName": "01 - Default",
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.15
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "Ground_Debris01",
+			"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+			"x": 2.66,
+			"y": -2.03,
+			"z": 13.95,
+			"rotationZ": 80.8,
+			"children": [
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"materialName": "02 - Default",
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.15
+							}
+						}
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					},
+					"materialName": "01 - Default",
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.15
+							}
+						}
+					]
 				}
 			]
 		}

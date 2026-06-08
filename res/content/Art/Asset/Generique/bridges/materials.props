@@ -52,6 +52,16 @@
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
 				"name": "Wall_pattern04",
 				"__refMode": "modelSpec"
+			},
+			"02 - Default": {
+				"mode": "PBR",
+				"blend": "None",
+				"shadows": true,
+				"culling": "Back",
+				"depthTest": "Less",
+				"colorMask": 15,
+				"enableStencil": false,
+				"textureWrap": true
 			}
 		}
 	}
