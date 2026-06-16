@@ -942,7 +942,8 @@
 			"name": "D23",
 			"source": "content/Room/Diverse/D23.prefab",
 			"x": -52.5,
-			"y": -47.5
+			"y": -47.5,
+			"z": -33.12
 		},
 		{
 			"type": "reference",
@@ -971,6 +972,14 @@
 			"source": "content/Room/Diverse/D27.prefab",
 			"x": -52.5,
 			"y": -72.5
+		},
+		{
+			"type": "reference",
+			"name": "D28",
+			"source": "content/Room/Diverse/D28.prefab",
+			"x": 7.06,
+			"y": -69.83,
+			"z": 40.95
 		}
 	]
 }
