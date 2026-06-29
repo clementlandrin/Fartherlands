@@ -1,0 +1,10 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"default": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Foliage_test"
+			}
+		}
+	}
+}

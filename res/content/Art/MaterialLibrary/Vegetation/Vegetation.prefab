@@ -183,6 +183,56 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "material",
+			"name": "Foliage_test",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "None",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"alphaKill": true
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Vegetation/Foliage/Test_AlbedoAlpha.png",
+			"normalMap": "content/Art/Asset/Vegetation/Moss/Square_tree_Normal.png",
+			"specularMap": "content/Art/Asset/Vegetation/Moss/Square_tree_MetallicGlossAO.png",
+			"children": [
+				{
+					"type": "shader",
+					"name": "Moss",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Moss.shgraph",
+					"props": {
+						"Face Size ": 30,
+						"Face Inflat": 1,
+						"Lerp": 1,
+						"uvMin": [
+							0,
+							0.5
+						],
+						"uvMax": [
+							0.5,
+							1
+						]
+					}
+				},
+				{
+					"type": "shader",
+					"name": "Top_down_Highlight",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_Highlight.shgraph",
+					"props": {
+						"Smooth": 0.75,
+						"Opacity": 0.32,
+						"Power": 0.35,
+						"Power2": 0
+					}
+				}
+			]
 		}
 	]
 }
