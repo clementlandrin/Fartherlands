@@ -4,6 +4,10 @@
 			"default": {
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
 				"name": "Foliage_test"
+			},
+			"MultiFoliage": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"name": "Multi_Foliage"
 			}
 		}
 	}

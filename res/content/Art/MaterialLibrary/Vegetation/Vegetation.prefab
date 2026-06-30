@@ -208,7 +208,7 @@
 					"name": "Moss",
 					"source": "content/Art/MaterialLibrary/Custom_Shader/Moss.shgraph",
 					"props": {
-						"Face Size ": 30,
+						"Face Size ": 1,
 						"Face Inflat": 1,
 						"Lerp": 1,
 						"uvMin": [
@@ -231,8 +231,40 @@
 						"Power": 0.35,
 						"Power2": 0
 					}
+				},
+				{
+					"type": "shader",
+					"name": "Color_mult",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Color_mult.shgraph",
+					"props": {
+						"Color": [
+							0.4666666666666667,
+							0.6588235294117647,
+							0.3568627450980392,
+							1
+						]
+					}
 				}
 			]
+		},
+		{
+			"type": "material",
+			"name": "Multi_Foliage",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "None",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"alphaKill": true
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Vegetation/Foliage/Foliage_AlbedoAlpha.png",
+			"normalMap": "content/Art/Asset/Vegetation/Moss/Square_tree_Normal.png",
+			"specularMap": "content/Art/Asset/Vegetation/Moss/Square_tree_MetallicGlossAO.png"
 		}
 	]
 }
