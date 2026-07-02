@@ -391,6 +391,17 @@
 			"x": -2.3,
 			"y": -2.73,
 			"rotationZ": -54.8
+		},
+		{
+			"type": "model",
+			"name": "Ivy01",
+			"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
+			"x": -6.82,
+			"y": 0.68,
+			"z": 2.08,
+			"scaleX": 0.45,
+			"scaleY": 0.45,
+			"scaleZ": 0.45
 		}
 	]
 }

@@ -117,6 +117,93 @@
 			"x": -0.11,
 			"y": 7.21,
 			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "Ivy01",
+			"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
+			"x": -3.41,
+			"y": -3.71,
+			"z": 3.03,
+			"scaleX": 0.6,
+			"scaleY": 0.6,
+			"scaleZ": 0.6
+		},
+		{
+			"type": "model",
+			"name": "Ivy02",
+			"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
+			"x": -2.37,
+			"y": -6.25,
+			"z": 2.56,
+			"scaleX": 0.58,
+			"scaleY": 0.58,
+			"scaleZ": 0.58
+		},
+		{
+			"type": "model",
+			"name": "Ivy02",
+			"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
+			"x": -2.37,
+			"y": -4.86,
+			"z": 5.52,
+			"scaleX": 0.63,
+			"scaleY": 0.63,
+			"scaleZ": 0.63,
+			"rotationZ": 165
+		},
+		{
+			"type": "model",
+			"name": "Grass03",
+			"source": "content/Art/Asset/Vegetation/Foliage/Grass03.fbx",
+			"x": -2.98,
+			"y": -2.95,
+			"scaleX": 0.72,
+			"scaleY": 0.72,
+			"scaleZ": 0.72
+		},
+		{
+			"type": "model",
+			"name": "test",
+			"source": "content/Art/Asset/Vegetation/Foliage/test.fbx",
+			"x": -3.36,
+			"y": -5.49,
+			"z": -1.6,
+			"rotationZ": -123.7
+		},
+		{
+			"type": "model",
+			"name": "Monstera01",
+			"source": "content/Art/Asset/Vegetation/Foliage/Monstera01.fbx",
+			"x": -0.8,
+			"y": -7.14,
+			"z": 1.68,
+			"rotationX": -10.2
+		},
+		{
+			"type": "model",
+			"name": "Monstera03",
+			"source": "content/Art/Asset/Vegetation/Foliage/Monstera03.fbx",
+			"x": -2.84,
+			"y": -4.4,
+			"rotationZ": -61.4
+		},
+		{
+			"type": "light",
+			"name": "light",
+			"x": 4.58,
+			"y": -2.07,
+			"z": 9.83,
+			"rotationX": 24.8,
+			"rotationY": 131.9,
+			"rotationZ": 19,
+			"kind": "Spot",
+			"color": 15653514,
+			"power": 1.89,
+			"range": 20,
+			"zNear": 0.02,
+			"angle": 20.55,
+			"fallOff": 1
 		}
 	]
 }
