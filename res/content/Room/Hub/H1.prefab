@@ -60,7 +60,8 @@
 				{
 					"type": "reference",
 					"name": "Present",
-					"source": "lighting/Present.prefab"
+					"source": "lighting/Present.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "object",
@@ -161,15 +162,6 @@
 			"scaleX": 0.72,
 			"scaleY": 0.72,
 			"scaleZ": 0.72
-		},
-		{
-			"type": "model",
-			"name": "test",
-			"source": "content/Art/Asset/Vegetation/Foliage/test.fbx",
-			"x": -3.36,
-			"y": -5.49,
-			"z": -1.6,
-			"rotationZ": -123.7
 		},
 		{
 			"type": "model",
