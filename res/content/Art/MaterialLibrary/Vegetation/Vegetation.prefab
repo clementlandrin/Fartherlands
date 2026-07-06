@@ -135,9 +135,9 @@
 			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground02_Normal.png",
 			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground_MetallicRoughnessAO.png",
 			"color": [
-				0.6313725490196078,
-				0.6666666666666666,
-				0.2392156862745098,
+				0.6352941176470588,
+				0.7019607843137254,
+				0.37254901960784315,
 				1
 			],
 			"children": [
@@ -168,9 +168,9 @@
 				}
 			},
 			"color": [
-				0.6313725490196078,
-				0.6666666666666666,
-				0.2392156862745098,
+				0.6352941176470588,
+				0.7019607843137254,
+				0.37254901960784315,
 				1
 			],
 			"children": [

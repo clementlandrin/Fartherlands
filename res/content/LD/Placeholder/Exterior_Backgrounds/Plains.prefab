@@ -21,12 +21,13 @@
 					"type": "model",
 					"name": "exterior_plane",
 					"source": "content/LD/Placeholder/exterior_plane.fbx",
-					"x": -118.02,
-					"y": -154.04,
-					"z": -162.93,
+					"x": -116.06,
+					"y": -151.32,
+					"z": -169.76,
 					"scaleX": 0.27,
 					"scaleY": 0.27,
 					"scaleZ": 0.73,
+					"rotationY": 12.9,
 					"rotationZ": 172.1
 				},
 				{
@@ -40,30 +41,6 @@
 					"scaleY": 0.27,
 					"scaleZ": 0.73,
 					"rotationZ": 82.1
-				},
-				{
-					"type": "LocalVolumeLighting",
-					"name": "LocalVolumeLighting",
-					"x": -115.25,
-					"y": -103.61,
-					"z": -169.77,
-					"scaleX": 28.23,
-					"scaleY": 28.23,
-					"scaleZ": 28.23,
-					"fogDensity": 0.9480000000000008,
-					"color": 16187320
-				},
-				{
-					"type": "LocalVolumeLighting",
-					"name": "LocalVolumeLighting",
-					"x": -102.35,
-					"y": -126.78,
-					"z": -161.19,
-					"scaleX": 28.23,
-					"scaleY": 28.23,
-					"scaleZ": 28.23,
-					"fogDensity": 0.9480000000000008,
-					"color": 16187320
 				},
 				{
 					"type": "model",
@@ -312,12 +289,13 @@
 					"type": "model",
 					"name": "exterior_plane",
 					"source": "content/LD/Placeholder/exterior_plane.fbx",
-					"x": -118.02,
-					"y": -154.04,
-					"z": -162.93,
+					"x": -116.55,
+					"y": -148.1,
+					"z": -165.79,
 					"scaleX": 0.27,
 					"scaleY": 0.27,
 					"scaleZ": 0.73,
+					"rotationY": 12.6,
 					"rotationZ": 172.1
 				},
 				{
