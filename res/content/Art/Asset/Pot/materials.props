@@ -2,61 +2,61 @@
 	"materials": {
 		"Fatherlands": {
 			"07 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot01_01",
 				"colorMask": 15
 			},
 			"08 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot01_03",
 				"colorMask": 15
 			},
 			"default": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot01_02",
 				"colorMask": 15
 			},
 			"03 - Default/Pot03.FBX": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot03",
 				"__refMode": "modelSpec",
 				"colorMask": 15
 			},
 			"03 - Default/Pot04.FBX": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot04",
 				"__refMode": "modelSpec",
 				"colorMask": 15
 			},
 			"03 - Default/Pot05.fbx": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot05_01",
 				"__refMode": "modelSpec"
 			},
 			"02 - Default/Pot05.fbx": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot05_02",
 				"__refMode": "modelSpec"
 			},
 			"parts01": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot01_01"
 			},
 			"parts02": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot01_02"
 			},
 			"parts03": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot01_03"
 			},
 			"default/Pot02.FBX": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot02",
 				"__refMode": "modelSpec"
 			},
 			"01 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Pots.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Pots.matlib",
 				"name": "Pot05_01"
 			}
 		}

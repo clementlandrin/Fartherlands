@@ -68,7 +68,7 @@
 				{
 					"type": "reference",
 					"name": "doorDown",
-					"source": "gameplay/door/doorDown.prefab"
+					"source": "gameplay/ladder/ladderDown.prefab"
 				}
 			]
 		}

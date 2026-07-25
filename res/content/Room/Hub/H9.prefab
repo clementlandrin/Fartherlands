@@ -9,7 +9,7 @@
 		{
 			"type": "reference",
 			"name": "doorUp",
-			"source": "gameplay/door/doorUp.prefab",
+			"source": "gameplay/ladder/ladderUp.prefab",
 			"x": -4.36,
 			"z": 2.82,
 			"scaleX": 0.5,

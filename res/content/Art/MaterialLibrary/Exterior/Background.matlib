@@ -1,5 +1,5 @@
 {
-	"type": "prefab",
+	"type": "matlib",
 	"children": [
 		{
 			"type": "material",

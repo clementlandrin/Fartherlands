@@ -2,31 +2,31 @@
 	"materials": {
 		"Fatherlands": {
 			"SunMat": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "Yellow_unlit",
 				"colorMask": 15
 			},
 			"WindMat": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "Green_unlit",
 				"colorMask": 15
 			},
 			"Rainmat": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "Blue_unlit",
 				"colorMask": 15
 			},
 			"SnowMat": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "White_unlit",
 				"colorMask": 15
 			},
 			"BaseMat": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "Black_unlit"
 			},
 			"default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "Black_unlit"
 			}
 		}

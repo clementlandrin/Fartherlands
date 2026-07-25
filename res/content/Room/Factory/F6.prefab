@@ -13,7 +13,7 @@
 				{
 					"type": "reference",
 					"name": "doorUp",
-					"source": "gameplay/door/doorUp.prefab",
+					"source": "gameplay/ladder/ladderUp.prefab",
 					"x": 0.2346,
 					"y": 0.0078
 				}

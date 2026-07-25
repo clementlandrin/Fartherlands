@@ -16,31 +16,31 @@
 	"materialLibraries": [
 		{
 			"name": "Present",
-			"path": "content/Art/MaterialLibrary/Generic/Present.prefab"
+			"path": "content/Art/MaterialLibrary/Generic/Present.matlib"
 		},
 		{
 			"name": "Past",
-			"path": "content/Art/MaterialLibrary/Generic/Past.prefab"
+			"path": "content/Art/MaterialLibrary/Generic/Past.matlib"
 		},
 		{
 			"name": "Pots",
-			"path": "content/Art/MaterialLibrary/Assets/Pots.prefab"
+			"path": "content/Art/MaterialLibrary/Assets/Pots.matlib"
 		},
 		{
 			"name": "Utilities",
-			"path": "content/Art/MaterialLibrary/Generic/Utilities.prefab"
+			"path": "content/Art/MaterialLibrary/Generic/Utilities.matlib"
 		},
 		{
 			"name": "Vegetation",
-			"path": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab"
+			"path": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
 		},
 		{
 			"name": "Exterior",
-			"path": "content/Art/MaterialLibrary/Exterior/Background.prefab"
+			"path": "content/Art/MaterialLibrary/Exterior/Background.matlib"
 		},
 		{
 			"name": "Debris",
-			"path": "content/Art/MaterialLibrary/Assets/Debris.prefab"
+			"path": "content/Art/MaterialLibrary/Assets/Debris.matlib"
 		}
 	],
 	"sceneeditor.axisToggle": true,

@@ -2,45 +2,45 @@
 	"materials": {
 		"PBR": {
 			"Ground_Present": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Present.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Present.matlib",
 				"name": "Ground"
 			},
 			"Ground_Past": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Ground_Past"
 			}
 		},
 		"Fatherlands": {
 			"mosaique_plane": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_pattern04"
 			},
 			"dalles_mesh": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_bricks02"
 			},
 			"parts01": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_bricks02"
 			},
 			"dalles_plane": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_pattern03"
 			},
 			"grass": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Modules"
 			},
 			"16 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Basewall_tileable"
 			},
 			"14 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_pattern02"
 			},
 			"15 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Modules"
 			}
 		}

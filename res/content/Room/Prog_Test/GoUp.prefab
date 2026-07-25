@@ -228,7 +228,7 @@
 				{
 					"type": "reference",
 					"name": "doorUp",
-					"source": "gameplay/door/doorUp.prefab",
+					"source": "gameplay/ladder/ladderUp.prefab",
 					"enabled": false,
 					"x": -0.33,
 					"y": -3.05,
@@ -331,7 +331,7 @@
 		{
 			"type": "reference",
 			"name": "doorUp",
-			"source": "gameplay/door/doorUp.prefab",
+			"source": "gameplay/ladder/ladderUp.prefab",
 			"x": -2.02,
 			"y": -4.86
 		}

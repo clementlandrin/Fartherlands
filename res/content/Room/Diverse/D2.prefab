@@ -45,7 +45,7 @@
 									"enableStencil": false
 								}
 							},
-							"refMatLib": "content/Art/MaterialLibrary/Generic/Utilities.prefab/Black_unlit"
+							"refMatLib": "content/Art/MaterialLibrary/Generic/Utilities.matlib/Black_unlit"
 						}
 					]
 				},

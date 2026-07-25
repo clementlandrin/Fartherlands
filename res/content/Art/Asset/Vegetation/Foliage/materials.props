@@ -2,11 +2,11 @@
 	"materials": {
 		"Fatherlands": {
 			"default": {
-				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Foliage_test"
 			},
 			"MultiFoliage": {
-				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Multi_Foliage"
 			}
 		}

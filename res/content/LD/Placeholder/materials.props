@@ -2,35 +2,35 @@
 	"materials": {
 		"Fatherlands": {
 			"tree_forest": {
-				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Tree_Background"
 			},
 			"01 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Garden_ground",
 				"colorMask": 15
 			},
 			"02 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Tree_Background"
 			},
 			"01 - Default/exterior_plane_pinetrees.fbx": {
-				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Tree_Background",
 				"__refMode": "modelSpec"
 			},
 			"default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "BaseMetal",
 				"__refMode": "modelSpec"
 			},
 			"default/Ladder.fbx": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "BaseMetal",
 				"__refMode": "modelSpec"
 			},
 			"default/exterior_plane.fbx": {
-				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.prefab",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "green",
 				"__refMode": "modelSpec"
 			}

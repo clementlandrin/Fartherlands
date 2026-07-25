@@ -2,28 +2,28 @@
 	"materials": {
 		"Fatherlands": {
 			"WALL06": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Bloc"
 			},
 			"patern_mesh02": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_pattern02_mesh"
 			},
 			"parts02": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Joins"
 			},
 			"parts02/wall04.fbx": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Idol",
 				"__refMode": "modelSpec"
 			},
 			"parts01": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Joins"
 			},
 			"default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_pattern01_mesh"
 			}
 		}

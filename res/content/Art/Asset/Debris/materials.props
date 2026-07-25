@@ -2,7 +2,7 @@
 	"materials": {
 		"Fatherlands": {
 			"02 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Assets/Debris.prefab",
+				"__ref": "content/Art/MaterialLibrary/Assets/Debris.matlib",
 				"name": "Debris"
 			}
 		}

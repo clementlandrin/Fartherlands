@@ -2,26 +2,26 @@
 	"materials": {
 		"Fatherlands": {
 			"WALL06": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Bloc",
 				"colorMask": 15
 			},
 			"16 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Basewall_tileable",
 				"colorMask": 15
 			},
 			"parts02": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Joins"
 			},
 			"15 - Default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Modules",
 				"colorMask": 15
 			},
 			"mosaique_plane": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.prefab",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_pattern04"
 			}
 		}
