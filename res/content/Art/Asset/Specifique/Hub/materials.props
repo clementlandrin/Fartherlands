@@ -9,6 +9,18 @@
 			"Wall_Idol": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Idol"
+			},
+			"Wall_parts": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_Modules"
+			},
+			"Wall_Modules": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_Modules"
+			},
+			"dalles_mesh": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_bricks02"
 			}
 		}
 	}

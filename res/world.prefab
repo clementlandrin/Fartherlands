@@ -39,8 +39,7 @@
 				{
 					"type": "reference",
 					"name": "H1",
-					"source": "content/Room/Hub/H1.prefab",
-					"editMode": "Edit"
+					"source": "content/Room/Hub/H1.prefab"
 				},
 				{
 					"type": "reference",
