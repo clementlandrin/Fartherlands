@@ -24,13 +24,7 @@
 							"dialog": [
 								{
 									"id": "Start",
-									"text": "Bonjour, je dois vous dire ...",
-									"choices": [
-										{
-											"text": "Dites moi",
-											"target": "End"
-										}
-									]
+									"text": "Bonjour, je dois vous dire ..."
 								},
 								{
 									"id": "End",

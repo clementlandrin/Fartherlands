@@ -5,7 +5,8 @@
 			"type": "reference",
 			"name": "WM",
 			"source": "lighting/WM.prefab",
-			"editorOnly": true
+			"editorOnly": true,
+			"editMode": "Edit"
 		},
 		{
 			"type": "object",

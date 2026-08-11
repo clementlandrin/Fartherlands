@@ -1,6 +1,4 @@
 dialog {
-  margin-bottom: 200;
-  align: bottom middle;
   max-width: 500;
 }
 dialog text {
@@ -10,7 +8,7 @@ dialog text {
 dialog #dialog-container {
   background: #000000 0.8;
 }
-dialog #dialog-container #dialog-text {
+dialog #dialog-container #bubble-text {
   min-height: 100;
   min-width: 500;
 }
@@ -25,6 +23,11 @@ dialog #choices-container button {
 dialog #choices-container button:hover {
   background: #404040 0.8;
 }
+bubble {
+  background: #000000 0.8;
+  min-height: 100;
+  min-width: 500;
+}
 tooltip {
   margin: 20;
   background: #000000 0.8;
@@ -37,7 +40,7 @@ tooltip #text {
   min-height: 20;
 }
 knowledge-window {
-  margin: 20;
+  margin: 40;
   background: #000000 1;
   fill-height: true;
   fill-width: true;

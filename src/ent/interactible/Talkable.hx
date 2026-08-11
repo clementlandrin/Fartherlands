@@ -3,6 +3,8 @@ package ent.interactible;
 class Talkable extends Interactible {
 	override function onInteract(ctrl: controllers.PlayerController) {
 		super.onInteract(ctrl);
+        
+        this.tooltip.remove();
 
 		var window = new ui.Dialog(this, this.game.baseUI.root);
         if ( this.inf.knowledgeId != null ) {

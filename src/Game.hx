@@ -82,6 +82,7 @@ class Game extends hxd.App {
 		pastWindowShader = new prefab.TemporalWindowShader.TemporalWindow();
 
 		startLevel = level;
+		startLevel = "world_prog.prefab";
 		fadeEffect = new hrt.prefab.rfx.Vignetting(null, null);
 		fadeEffect.alpha = 0.0;
 		fadeEffect.color = 0;

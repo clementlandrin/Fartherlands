@@ -45,7 +45,7 @@ class BaseUI {
 
 	public function update(dt : Float) {
 		style.sync(dt);
-		if ( hxd.Key.isPressed(hxd.Key.ESCAPE) || hxd.Key.isPressed(hxd.Key.ENTER) ) {
+		if ( hxd.Key.isPressed(hxd.Key.ESCAPE) ) {
 			var i = windows.length;
 			while ( i-- > 0 )  {
 				var w = windows[i];

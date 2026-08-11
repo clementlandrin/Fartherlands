@@ -4,7 +4,8 @@
 		{
 			"type": "reference",
 			"name": "camera",
-			"source": "gameplay/camera.prefab"
+			"source": "gameplay/camera.prefab",
+			"editMode": "Edit"
 		},
 		{
 			"type": "object",
