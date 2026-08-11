@@ -4,7 +4,8 @@
 		{
 			"type": "reference",
 			"name": "camera",
-			"source": "gameplay/camera.prefab"
+			"source": "gameplay/camera.prefab",
+			"editMode": "Edit"
 		},
 		{
 			"type": "object",
@@ -12,11 +13,38 @@
 			"children": [
 				{
 					"type": "model",
-					"name": "wall02",
-					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
-					"x": 1.71,
-					"y": -3.44,
-					"z": 2.21,
+					"name": "wall_join01",
+					"source": "content/Art/Asset/Generique/blocs/wall_join01.fbx",
+					"x": -3.24,
+					"y": -3.07,
+					"z": 5.13,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "wall_join01",
+					"source": "content/Art/Asset/Generique/blocs/wall_join01.fbx",
+					"x": 0.25,
+					"y": -3.07,
+					"z": 5.13,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "wall_join01",
+					"source": "content/Art/Asset/Generique/blocs/wall_join01.fbx",
+					"x": 4.25,
+					"y": -3.07,
+					"z": 5.13,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "wall_join01",
+					"source": "content/Art/Asset/Generique/blocs/wall_join01.fbx",
+					"x": 8.03,
+					"y": -3.07,
+					"z": 5.13,
 					"rotationZ": 90
 				},
 				{
@@ -90,33 +118,6 @@
 							"rotationZ": -90
 						}
 					]
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -4.98,
-					"y": 2.07,
-					"z": 0.91,
-					"scaleX": 0.61,
-					"scaleY": 0.61,
-					"scaleZ": 0.61,
-					"rotationZ": 90,
-					"children": [
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": 0.01,
-							"y": 0.03,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": 90
-						}
-					]
 				}
 			]
 		},
@@ -140,7 +141,7 @@
 					"source": "gameplay/door/doorBack.prefab",
 					"x": -4.205,
 					"y": 3.4025,
-					"z": 1.71,
+					"z": 1.8247349602887288,
 					"rotationZ": -90
 				},
 				{
@@ -152,10 +153,10 @@
 				},
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": -5.165,
-					"y": -3.7975,
+					"name": "doorOneWay",
+					"source": "gameplay/door/doorOneWay.prefab",
+					"x": -5,
+					"y": -3.84,
 					"rotationZ": 90
 				}
 			]
@@ -185,12 +186,14 @@
 				{
 					"type": "reference",
 					"name": "Present",
-					"source": "lighting/Present.prefab"
+					"source": "lighting/Present.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
 					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "object",
@@ -199,176 +202,6 @@
 					"y": -0.43,
 					"z": 0.44,
 					"children": [
-						{
-							"type": "model",
-							"name": "Pot01",
-							"source": "content/Art/Asset/Pot/Pot01.FBX",
-							"x": 3.79,
-							"y": -3.01,
-							"z": -1.16,
-							"rotationX": -65.5,
-							"rotationZ": 28.6
-						},
-						{
-							"type": "model",
-							"name": "Pot03",
-							"source": "content/Art/Asset/Pot/Pot03.FBX",
-							"x": -0.33,
-							"y": -2.66,
-							"z": -0.35,
-							"rotationX": -84.9,
-							"rotationZ": -35.3
-						},
-						{
-							"type": "model",
-							"name": "Debris04",
-							"source": "content/Art/Asset/Debris/Debris04.fbx",
-							"x": 0.98,
-							"y": -1.1,
-							"z": -0.56,
-							"scaleX": 2.1,
-							"scaleY": 2.1,
-							"scaleZ": 2.1
-						},
-						{
-							"type": "model",
-							"name": "Debris03",
-							"source": "content/Art/Asset/Debris/Debris03.fbx",
-							"x": 3.63,
-							"y": -1.71,
-							"z": -0.74,
-							"scaleX": 1.68,
-							"scaleY": 1.68,
-							"scaleZ": 1.68,
-							"rotationX": 2.3817,
-							"rotationY": -0.8176,
-							"rotationZ": -0.017
-						},
-						{
-							"type": "model",
-							"name": "Debris01",
-							"source": "content/Art/Asset/Debris/Debris01.fbx",
-							"x": 1.2,
-							"y": 3.29,
-							"z": -0.58,
-							"scaleX": 1.86,
-							"scaleY": 1.86,
-							"scaleZ": 1.86,
-							"rotationZ": 145.5
-						},
-						{
-							"type": "model",
-							"name": "Debris04",
-							"source": "content/Art/Asset/Debris/Debris04.fbx",
-							"x": 1.23,
-							"y": 1.35,
-							"z": -1.02,
-							"scaleX": 1.64,
-							"scaleY": 1.64,
-							"scaleZ": 1.64,
-							"rotationZ": 90
-						},
-						{
-							"type": "model",
-							"name": "Debris02",
-							"source": "content/Art/Asset/Debris/Debris02.fbx",
-							"x": -2.34,
-							"y": -2.64,
-							"z": -0.62,
-							"scaleX": 2.49,
-							"scaleY": 2.49,
-							"scaleZ": 2.49
-						},
-						{
-							"type": "model",
-							"name": "dalle_ground_path02",
-							"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
-							"x": 0.42,
-							"y": -0.34,
-							"z": -0.53,
-							"rotationZ": -90
-						},
-						{
-							"type": "model",
-							"name": "cube_stone03",
-							"source": "content/Art/Asset/Generique/blocs/cube_stone03.fbx",
-							"x": 1.03,
-							"y": 0.15,
-							"z": 0.3,
-							"rotationX": 11.6028,
-							"rotationY": 9.1846,
-							"rotationZ": 0.9351
-						},
-						{
-							"type": "model",
-							"name": "cube_stone02",
-							"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
-							"x": -1.33,
-							"y": -1.09,
-							"z": 0.3,
-							"rotationX": -31.4,
-							"rotationY": 5.1,
-							"rotationZ": 23.6
-						},
-						{
-							"type": "model",
-							"name": "Pot01",
-							"source": "content/Art/Asset/Pot/Pot01.FBX",
-							"x": 2.01,
-							"y": 1.39,
-							"z": -0.67,
-							"rotationX": -86,
-							"rotationZ": 133.3
-						},
-						{
-							"type": "model",
-							"name": "Pot04",
-							"source": "content/Art/Asset/Pot/Pot04.FBX",
-							"x": 0.08,
-							"y": 1.09,
-							"z": 0.09,
-							"rotationX": -105,
-							"rotationY": 90
-						},
-						{
-							"type": "model",
-							"name": "Pot03",
-							"source": "content/Art/Asset/Pot/Pot03.FBX",
-							"x": 0.85,
-							"y": 0.88,
-							"z": 0.03,
-							"rotationX": -117,
-							"rotationY": 8,
-							"rotationZ": 12.5
-						},
-						{
-							"type": "model",
-							"name": "Pot04",
-							"source": "content/Art/Asset/Pot/Pot04.FBX",
-							"x": -1.1337,
-							"y": 0.3825,
-							"z": 0.0913,
-							"rotationY": 90
-						},
-						{
-							"type": "model",
-							"name": "Pot05",
-							"source": "content/Art/Asset/Pot/Pot05.fbx",
-							"x": 0.87,
-							"y": 3.97,
-							"z": -0.69,
-							"rotationY": 58.2,
-							"rotationZ": -84.6
-						},
-						{
-							"type": "model",
-							"name": "Pot02",
-							"source": "content/Art/Asset/Pot/Pot02.FBX",
-							"x": 2.2063,
-							"y": -1.6575,
-							"z": -0.1887,
-							"rotationY": -42.8
-						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
@@ -396,6 +229,45 @@
 							"rotationZ": 50.6
 						},
 						{
+							"type": "model",
+							"name": "Wall_bush02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
+							"x": -9.78,
+							"y": -1.82,
+							"z": 0.04,
+							"rotationX": -32.4285,
+							"rotationY": 41.5065,
+							"rotationZ": -12.5763
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
+							"x": -10.46,
+							"y": 3.23,
+							"z": 5.08,
+							"scaleX": 1.21,
+							"scaleY": 1.21,
+							"scaleZ": 1.21,
+							"rotationX": -32.4285,
+							"rotationY": 41.5065,
+							"rotationZ": -12.5763
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
+							"x": -11.29,
+							"y": 1.34,
+							"z": 4.88,
+							"scaleX": 1.21,
+							"scaleY": 1.21,
+							"scaleZ": 1.21,
+							"rotationX": -32.4,
+							"rotationY": 41.5,
+							"rotationZ": 38.2
+						},
+						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
@@ -419,8 +291,494 @@
 							"scaleY": 2.15,
 							"scaleZ": 3.18,
 							"rotationZ": 85.1
+						},
+						{
+							"type": "object",
+							"name": "object",
+							"x": 0.8594499999999998,
+							"y": -0.3172777777777778,
+							"z": -0.38256111111111113,
+							"children": [
+								{
+									"type": "model",
+									"name": "Pot01",
+									"source": "content/Art/Asset/Pot/Pot01.FBX",
+									"x": 2.9306,
+									"y": -2.6927,
+									"z": -0.7774,
+									"rotationX": -65.5,
+									"rotationZ": 28.6
+								},
+								{
+									"type": "model",
+									"name": "Pot03",
+									"source": "content/Art/Asset/Pot/Pot03.FBX",
+									"x": -1.1894,
+									"y": -2.3427,
+									"z": 0.0326,
+									"rotationX": -84.9,
+									"rotationZ": -35.3
+								},
+								{
+									"type": "model",
+									"name": "Debris04",
+									"source": "content/Art/Asset/Debris/Debris04.fbx",
+									"x": 0.1206,
+									"y": -0.7827,
+									"z": -0.1774,
+									"scaleX": 2.1,
+									"scaleY": 2.1,
+									"scaleZ": 2.1
+								},
+								{
+									"type": "model",
+									"name": "Debris03",
+									"source": "content/Art/Asset/Debris/Debris03.fbx",
+									"x": 2.7706,
+									"y": -1.3927,
+									"z": -0.3574,
+									"scaleX": 1.68,
+									"scaleY": 1.68,
+									"scaleZ": 1.68,
+									"rotationX": 2.3817,
+									"rotationY": -0.8176,
+									"rotationZ": -0.017
+								},
+								{
+									"type": "model",
+									"name": "Debris01",
+									"source": "content/Art/Asset/Debris/Debris01.fbx",
+									"x": 0.3406,
+									"y": 3.6073,
+									"z": -0.1974,
+									"scaleX": 1.86,
+									"scaleY": 1.86,
+									"scaleZ": 1.86,
+									"rotationZ": 145.5
+								},
+								{
+									"type": "model",
+									"name": "Debris04",
+									"source": "content/Art/Asset/Debris/Debris04.fbx",
+									"x": 0.3706,
+									"y": 1.6673,
+									"z": -0.6374,
+									"scaleX": 1.64,
+									"scaleY": 1.64,
+									"scaleZ": 1.64,
+									"rotationZ": 90
+								},
+								{
+									"type": "model",
+									"name": "Debris02",
+									"source": "content/Art/Asset/Debris/Debris02.fbx",
+									"x": -3.2,
+									"y": -2.32,
+									"z": -0.16,
+									"scaleX": 2.49,
+									"scaleY": 2.49,
+									"scaleZ": 2.49
+								},
+								{
+									"type": "model",
+									"name": "dalle_ground_path02",
+									"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
+									"x": -0.4394,
+									"y": -0.0227,
+									"z": -0.1474,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "cube_stone03",
+									"source": "content/Art/Asset/Generique/blocs/cube_stone03.fbx",
+									"x": 0.1706,
+									"y": 0.4673,
+									"z": 0.6826,
+									"rotationX": 11.6028,
+									"rotationY": 9.1846,
+									"rotationZ": 0.9351
+								},
+								{
+									"type": "model",
+									"name": "cube_stone02",
+									"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
+									"x": -2.1894,
+									"y": -0.7727,
+									"z": 0.6826,
+									"rotationX": -31.4,
+									"rotationY": 5.1,
+									"rotationZ": 23.6
+								},
+								{
+									"type": "model",
+									"name": "Pot01",
+									"source": "content/Art/Asset/Pot/Pot01.FBX",
+									"x": 1.1506,
+									"y": 1.7073,
+									"z": -0.2874,
+									"rotationX": -86,
+									"rotationZ": 133.3
+								},
+								{
+									"type": "model",
+									"name": "Pot04",
+									"source": "content/Art/Asset/Pot/Pot04.FBX",
+									"x": -0.7794,
+									"y": 1.4073,
+									"z": 0.4726,
+									"rotationX": -105,
+									"rotationY": 90
+								},
+								{
+									"type": "model",
+									"name": "Pot03",
+									"source": "content/Art/Asset/Pot/Pot03.FBX",
+									"x": -0.0094,
+									"y": 1.1973,
+									"z": 0.4126,
+									"rotationX": -117,
+									"rotationY": 8,
+									"rotationZ": 12.5
+								},
+								{
+									"type": "model",
+									"name": "Pot04",
+									"source": "content/Art/Asset/Pot/Pot04.FBX",
+									"x": -1.9931,
+									"y": 0.6998,
+									"z": 0.4739,
+									"rotationY": 90
+								},
+								{
+									"type": "model",
+									"name": "Pot05",
+									"source": "content/Art/Asset/Pot/Pot05.fbx",
+									"x": 0.0106,
+									"y": 4.2873,
+									"z": -0.3074,
+									"rotationY": 58.2,
+									"rotationZ": -84.6
+								},
+								{
+									"type": "model",
+									"name": "Pot02",
+									"source": "content/Art/Asset/Pot/Pot02.FBX",
+									"x": 1.3468,
+									"y": -1.3402,
+									"z": 0.1939,
+									"rotationY": -42.8
+								},
+								{
+									"type": "shader",
+									"name": "Foliage_cover",
+									"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
+									"props": {
+										"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+										"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+										"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+										"Sharpness": 1,
+										"Offset": 1,
+										"Tiling": 0.29,
+										"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+										"Mask_Tiling": 0.52,
+										"Mask_Offset": 0,
+										"Mask_Power": 1.65
+									}
+								}
+							]
+						},
+						{
+							"type": "object",
+							"name": "grass",
+							"x": -4.8420000000000005,
+							"y": -0.20600000000000002,
+							"z": -0.08000000000000002,
+							"children": [
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": 6.842,
+									"y": 1.946,
+									"z": -0.36,
+									"scaleX": 0.55,
+									"scaleY": 0.55,
+									"scaleZ": 0.55
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle02",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+									"x": -0.308,
+									"y": 0.596,
+									"z": -0.43,
+									"scaleX": 0.55,
+									"scaleY": 0.55,
+									"scaleZ": 0.55
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": -4.538,
+									"y": -1.264,
+									"z": -0.35,
+									"scaleX": 0.55,
+									"scaleY": 0.55,
+									"scaleZ": 0.55
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": 3.22,
+									"y": 0.09,
+									"z": -0.35,
+									"scaleX": 0.55,
+									"scaleY": 0.55,
+									"scaleZ": 0.55,
+									"rotationZ": 75.9
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": -0.748,
+									"y": 1.356,
+									"z": 1.49,
+									"scaleX": 0.55,
+									"scaleY": 0.55,
+									"scaleZ": 0.55,
+									"rotationX": 0.1138,
+									"rotationY": -0.0257
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": -1.21,
+									"y": -2.28,
+									"scaleX": 0.55,
+									"scaleY": 0.55,
+									"scaleZ": 0.55,
+									"rotationX": 0.1138,
+									"rotationY": -0.0257
+								}
+							]
 						}
 					]
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"x": -1.13,
+					"y": 0.18,
+					"z": 9.8,
+					"scaleX": 20,
+					"scaleY": 6.51,
+					"scaleZ": 6.51,
+					"rotationX": -8.1,
+					"rotationY": 63.4,
+					"rotationZ": -7.9,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 3.18,
+					"range": 20,
+					"zNear": 0.02,
+					"angle": 36.06,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -4.98,
+					"y": 2.07,
+					"z": 0.91,
+					"scaleX": 0.61,
+					"scaleY": 0.61,
+					"scaleZ": 0.61,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 0.01,
+							"y": 0.03,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.13,
+								"Mask_Offset": 0,
+								"Mask_Power": 10,
+								"Top_Down_Contrast": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall02",
+					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
+					"x": 2.12,
+					"y": -3.44,
+					"z": 1.86,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.27,
+								"Mask_Offset": 0,
+								"Mask_Power": 2.12,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "Monstera02",
+					"source": "content/Art/Asset/Vegetation/Foliage/Monstera02.fbx",
+					"x": -6.58,
+					"y": -2.73,
+					"scaleX": 0.77,
+					"scaleY": 0.77,
+					"scaleZ": 0.77,
+					"rotationZ": -35.6
+				},
+				{
+					"type": "model",
+					"name": "Monstera02",
+					"source": "content/Art/Asset/Vegetation/Foliage/Monstera02.fbx",
+					"x": -6.93,
+					"y": -3.47,
+					"z": 4.61,
+					"scaleX": 1.01,
+					"scaleY": 1.01,
+					"scaleZ": 1.01,
+					"rotationZ": -69.5
+				},
+				{
+					"type": "model",
+					"name": "Monstera03",
+					"source": "content/Art/Asset/Vegetation/Foliage/Monstera03.fbx",
+					"x": -6.66,
+					"y": 3.46,
+					"z": 1.8,
+					"rotationX": 0.4,
+					"rotationY": -1.2,
+					"rotationZ": -105
+				},
+				{
+					"type": "model",
+					"name": "Ivy02",
+					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
+					"x": -7.02,
+					"y": -1.31,
+					"z": 6.5,
+					"scaleX": 0.57,
+					"scaleY": 0.57,
+					"scaleZ": 0.57
+				},
+				{
+					"type": "model",
+					"name": "Ivy02",
+					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
+					"x": 1.9,
+					"y": -1.86,
+					"z": 7.56,
+					"scaleX": 0.57,
+					"scaleY": 0.57,
+					"scaleZ": 0.57,
+					"rotationZ": 75
+				},
+				{
+					"type": "model",
+					"name": "Ivy01",
+					"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
+					"x": -1.16,
+					"y": -0.61,
+					"z": 10.34,
+					"scaleX": 0.61,
+					"scaleY": 0.61,
+					"scaleZ": 0.61,
+					"rotationZ": 75
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"x": -5.43,
+					"y": 1.11,
+					"z": 7.55,
+					"scaleX": 40,
+					"scaleY": 7.4966,
+					"scaleZ": 7.4966,
+					"rotationX": -14.4,
+					"rotationY": 62.9,
+					"rotationZ": -13.6,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 3.41,
+					"range": 40,
+					"zNear": 0.02,
+					"angle": 21.23,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
 				}
 			]
 		},
@@ -431,7 +789,8 @@
 				{
 					"type": "reference",
 					"name": "Past",
-					"source": "lighting/Past.prefab"
+					"source": "lighting/Past.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -519,6 +878,42 @@
 							"x": 2.967,
 							"y": -1.9636,
 							"z": 0.1256
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "wall02",
+					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
+					"x": 2.12,
+					"y": -3.44,
+					"z": 1.86,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -4.98,
+					"y": 2.07,
+					"z": 0.91,
+					"scaleX": 0.61,
+					"scaleY": 0.61,
+					"scaleZ": 0.61,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 0.01,
+							"y": 0.03,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
 						}
 					]
 				}

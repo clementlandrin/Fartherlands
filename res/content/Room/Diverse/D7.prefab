@@ -9,7 +9,78 @@
 		},
 		{
 			"type": "object",
-			"name": "common"
+			"name": "common",
+			"children": [
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": 5.303892087563881,
+					"y": -6.694418898282301,
+					"z": 9.932593591362355,
+					"rotationZ": 180
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": -1.9595912969779974,
+					"y": -6.694418898282299,
+					"z": 9.932593591362355,
+					"rotationZ": 180
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": -6.572080906402505,
+					"y": -3.895456603060204,
+					"z": 9.932593591362355,
+					"rotationZ": 90.00000000000001
+				},
+				{
+					"type": "model",
+					"name": "passerelle01",
+					"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+					"x": -6.572080906402505,
+					"y": 3.37330341881977,
+					"z": 9.932593591362355,
+					"rotationZ": 90.00000000000001
+				},
+				{
+					"type": "model",
+					"name": "passerelle02",
+					"source": "content/Art/Asset/Generique/bridges/passerelle02.fbx",
+					"x": -6.572080906402505,
+					"y": 8.503917157063835,
+					"z": 9.932593591362355,
+					"rotationZ": 90.00000000000001
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -6.594314226208297,
+					"y": 0.6897466493627107,
+					"z": 9.147301149185378,
+					"scaleX": 16.92950486416872,
+					"scaleY": 1.9386964176278823,
+					"rotationZ": 90.00000000000001
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": 0.6591643720982958,
+					"y": -6.724149710468085,
+					"z": 9.147301149185378,
+					"scaleX": 16.92950486416872,
+					"scaleY": 1.9386964176278823,
+					"rotationZ": 3.465830152829476e-14
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -64,23 +135,23 @@
 			"name": "door_back",
 			"source": "gameplay/door/doorBack.prefab",
 			"x": -1.79,
-			"y": 7.5,
+			"y": 7.303430955078371,
 			"rotationZ": -90
 		},
 		{
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door/doorBack.prefab",
-			"x": -5.18,
-			"y": 8.19,
-			"z": 10.25,
+			"x": -6.817939167017222,
+			"y": 6.758433288141447,
+			"z": 10.290278543397918,
 			"rotationZ": -90
 		},
 		{
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door/doorBack.prefab",
-			"x": 7.5,
+			"x": 7.227296992626148,
 			"y": -0.81,
 			"rotationZ": 180
 		},
@@ -88,160 +159,10 @@
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door/doorBack.prefab",
-			"x": 7.5,
-			"y": -6.53,
-			"z": 10.16,
+			"x": 7.180922020491149,
+			"y": -6.6353906396990805,
+			"z": 10.195540411612283,
 			"rotationZ": 180
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -8.84,
-			"y": -4.08,
-			"z": 8.88,
-			"rotationX": 90,
-			"rotationZ": 90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -1.4,
-					"y": 1.21,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -8.84,
-			"y": 4.73,
-			"z": 8.88,
-			"rotationX": 90,
-			"rotationZ": 90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -1.4,
-					"y": -1.44,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90,
-					"rotationZ": 180
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -8.78,
-			"y": 9.14,
-			"z": 8.88,
-			"rotationX": 90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": 0.06,
-					"y": 1.12,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 3.38,
-			"y": -8.87,
-			"z": 8.88,
-			"rotationX": -90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -1.4,
-					"y": 1.4,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": -5.43,
-			"y": -8.86,
-			"z": 8.88,
-			"rotationX": -90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -1.4,
-					"y": -1.22,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90,
-					"rotationZ": 180
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "wall05",
-			"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-			"x": 9.1,
-			"y": -8.91,
-			"z": 8.88,
-			"rotationX": 90,
-			"rotationZ": -90,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -0.02,
-					"y": -1.4,
-					"z": 0.51,
-					"scaleX": 8.8,
-					"scaleY": 4.9,
-					"scaleZ": 2.62,
-					"rotationX": 90,
-					"rotationZ": 180
-				}
-			]
 		},
 		{
 			"type": "object",
@@ -467,15 +388,47 @@
 		{
 			"type": "light",
 			"name": "light",
-			"inGameOnly": true,
-			"z": 29.53,
+			"x": 3.2953693423761014e-15,
+			"z": 14.688975857626835,
+			"rotationY": 90,
+			"kind": "Capsule",
+			"color": 16708557,
+			"power": 1.44,
+			"range": 8.34,
+			"size": 1.97,
+			"zNear": 0.02,
+			"angle": 28.64,
+			"fallOff": 1,
+			"length": 3.22,
+			"shadows": {
+				"mode": "Dynamic",
+				"size": 1024,
+				"radius": 0,
+				"quality": 1,
+				"bias": 0.01,
+				"samplingMode": {
+					"kind": "PCF",
+					"quality": 2,
+					"scale": 3.84,
+					"bias": 0.1
+				}
+			}
+		},
+		{
+			"type": "light",
+			"name": "light",
+			"x": 9.820575868282751e-16,
+			"z": 25.107205817903807,
 			"rotationY": 90,
 			"kind": "Spot",
+			"color": 16708557,
 			"power": 2.73,
-			"range": 40,
+			"range": 50,
+			"size": 1.97,
 			"zNear": 0.02,
-			"angle": 54.94,
+			"angle": 30.67,
 			"fallOff": 1,
+			"length": 3.22,
 			"shadows": {
 				"mode": "Dynamic",
 				"size": 1024,

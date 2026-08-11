@@ -208,8 +208,8 @@
 					"name": "Moss",
 					"source": "content/Art/MaterialLibrary/Custom_Shader/Moss.shgraph",
 					"props": {
-						"Face Size ": 1,
-						"Face Inflat": 1,
+						"Face Size ": 1.2,
+						"Face Inflat": 0,
 						"Lerp": 1,
 						"uvMin": [
 							0,
@@ -238,9 +238,9 @@
 					"source": "content/Art/MaterialLibrary/Custom_Shader/Color_mult.shgraph",
 					"props": {
 						"Color": [
-							0.4666666666666667,
-							0.6588235294117647,
-							0.3568627450980392,
+							0.5529411764705883,
+							0.6784313725490196,
+							0.39215686274509803,
 							1
 						]
 					}
@@ -265,6 +265,40 @@
 			"diffuseMap": "content/Art/Asset/Vegetation/Foliage/Foliage_AlbedoAlpha.png",
 			"normalMap": "content/Art/Asset/Vegetation/Moss/Square_tree_Normal.png",
 			"specularMap": "content/Art/Asset/Vegetation/Moss/Square_tree_MetallicGlossAO.png"
+		},
+		{
+			"type": "material",
+			"name": "Grass_socle",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": false,
+					"culling": "None",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"alphaKill": true
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Vegetation/Foliage/Ground_grass_AlbedoAlpha.png",
+			"normalMap": "content/Art/Asset/Vegetation/Foliage/Ground_grass_Normal.png",
+			"specularMap": "content/Art/Asset/Vegetation/Foliage/Ground_grass_MetallicRoughnessAO.png",
+			"children": [
+				{
+					"type": "shader",
+					"name": "Grass_socle",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Grass_socle.shgraph",
+					"props": {
+						"Color": [
+							0.5764705882352941,
+							0.6588235294117647,
+							0.34901960784313724,
+							1
+						]
+					}
+				}
+			]
 		}
 	]
 }

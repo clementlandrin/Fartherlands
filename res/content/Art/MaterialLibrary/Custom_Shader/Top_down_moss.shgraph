@@ -1,0 +1,1165 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Albedo",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+			"index": 0
+		},
+		{
+			"id": 6,
+			"name": "MetallicRoughnessAO",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+			"index": 1
+		},
+		{
+			"id": 7,
+			"name": "Normal",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+			"index": 2
+		},
+		{
+			"id": 2,
+			"name": "Sharpness",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 3
+		},
+		{
+			"id": 3,
+			"name": "Offset",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 4
+		},
+		{
+			"id": 4,
+			"name": "Tiling",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 5
+		},
+		{
+			"id": 9,
+			"name": "Mask",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+			"index": 6
+		},
+		{
+			"id": 10,
+			"name": "Mask_Tiling",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 7
+		},
+		{
+			"id": 11,
+			"name": "Mask_Offset",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0,
+			"index": 8
+		},
+		{
+			"id": 12,
+			"name": "Mask_Power",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 9
+		},
+		{
+			"id": 13,
+			"name": "Top_Down_Contrast",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 10
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 4608,
+				"y": 576,
+				"id": 0,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_color",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -108,
+				"y": 306,
+				"id": 1,
+				"type": "hrt.shgraph.nodes.TriplanarSampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -684,
+				"y": 216,
+				"id": 2,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -1386,
+				"y": 684,
+				"id": 12,
+				"type": "hrt.shgraph.nodes.TriplanarParams",
+				"properties": {
+					"mode": "World",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -1692,
+				"y": 1044,
+				"id": 15,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 3,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -1692,
+				"y": 630,
+				"id": 16,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 2,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -1692,
+				"y": 828,
+				"id": 17,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 4,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 4626,
+				"y": 882,
+				"id": 18,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "metalness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -684,
+				"y": 918,
+				"id": 19,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 6,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -396,
+				"y": 846,
+				"id": 22,
+				"type": "hrt.shgraph.nodes.TriplanarSampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 108,
+				"y": 864,
+				"id": 23,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4626,
+				"y": 1134,
+				"id": 24,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "roughness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4626,
+				"y": 1386,
+				"id": 25,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "occlusion",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -720,
+				"y": 1566,
+				"id": 27,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 7,
+					"perInstance": null
+				}
+			},
+			{
+				"x": -126,
+				"y": 1638,
+				"id": 28,
+				"type": "hrt.shgraph.nodes.TriplanarNormalMap",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4626,
+				"y": 1710,
+				"id": 29,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -324,
+				"y": 1242,
+				"id": 30,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "roughness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -126,
+				"y": 846,
+				"id": 31,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"defaults": {
+						"fact": 0
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4320,
+				"y": 90,
+				"id": 32,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2628,
+				"y": -324,
+				"id": 33,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 9,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2880,
+				"y": -306,
+				"id": 34,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2250,
+				"y": -90,
+				"id": 35,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1152,
+				"y": -288,
+				"id": 36,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "pixelColor",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3942,
+				"y": 756,
+				"id": 37,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3942,
+				"y": 972,
+				"id": 38,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3942,
+				"y": 1188,
+				"id": 39,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3258,
+				"y": 1692,
+				"id": 40,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1116,
+				"y": 1548,
+				"id": 41,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1206,
+				"y": 450,
+				"id": 42,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "metalness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1224,
+				"y": 1008,
+				"id": 43,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "roughness",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1296,
+				"y": 1332,
+				"id": 44,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "occlusion",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2664,
+				"y": -72,
+				"id": 45,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2286,
+				"y": 144,
+				"id": 46,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 10,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2286,
+				"y": 360,
+				"id": 47,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 11,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 3294,
+				"y": -324,
+				"id": 48,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3114,
+				"y": -216,
+				"id": 49,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 12,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 3438,
+				"y": -324,
+				"id": 50,
+				"type": "hrt.shgraph.nodes.Saturate",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -594,
+				"y": -576,
+				"id": 51,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -378,
+				"y": -576,
+				"id": 52,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1512,
+				"y": -216,
+				"id": 54,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1620,
+				"y": 450,
+				"id": 55,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1775.5469217311233,
+				"y": 788.7564763735837,
+				"id": 57,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1890,
+				"y": 1152,
+				"id": 58,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2106,
+				"y": 1494,
+				"id": 59,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -54,
+				"y": -702,
+				"id": 60,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -423.77786924631755,
+				"y": -915.6817491723175,
+				"id": 61,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 13,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 257.7925637745144,
+				"y": -818.2560656534208,
+				"id": 62,
+				"type": "hrt.shgraph.nodes.Saturate",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 32,
+				"nameOutput": "output",
+				"inputNodeId": 0,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "Albedo",
+				"inputNodeId": 1,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "weight",
+				"inputNodeId": 1,
+				"nameInput": "weight",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvX",
+				"inputNodeId": 1,
+				"nameInput": "uvX",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvY",
+				"inputNodeId": 1,
+				"nameInput": "uvY",
+				"inputId": 3,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvZ",
+				"inputNodeId": 1,
+				"nameInput": "uvZ",
+				"inputId": 4,
+				"outputId": 3
+			},
+			{
+				"outputNodeId": 16,
+				"nameOutput": "Sharpness",
+				"inputNodeId": 12,
+				"nameInput": "sharpness",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 17,
+				"nameOutput": "Tiling",
+				"inputNodeId": 12,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 15,
+				"nameOutput": "Offset",
+				"inputNodeId": 12,
+				"nameInput": "offset",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 37,
+				"nameOutput": "output",
+				"inputNodeId": 18,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 19,
+				"nameOutput": "MetallicRoughnessAO",
+				"inputNodeId": 22,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "weight",
+				"inputNodeId": 22,
+				"nameInput": "weight",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvX",
+				"inputNodeId": 22,
+				"nameInput": "uvX",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvY",
+				"inputNodeId": 22,
+				"nameInput": "uvY",
+				"inputId": 3,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvZ",
+				"inputNodeId": 22,
+				"nameInput": "uvZ",
+				"inputId": 4,
+				"outputId": 3
+			},
+			{
+				"outputNodeId": 31,
+				"nameOutput": "output",
+				"inputNodeId": 23,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 38,
+				"nameOutput": "output",
+				"inputNodeId": 24,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 39,
+				"nameOutput": "output",
+				"inputNodeId": 25,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 27,
+				"nameOutput": "Normal",
+				"inputNodeId": 28,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "weight",
+				"inputNodeId": 28,
+				"nameInput": "weight",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvX",
+				"inputNodeId": 28,
+				"nameInput": "uvX",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvY",
+				"inputNodeId": 28,
+				"nameInput": "uvY",
+				"inputId": 3,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "uvZ",
+				"inputNodeId": 28,
+				"nameInput": "uvZ",
+				"inputId": 4,
+				"outputId": 3
+			},
+			{
+				"outputNodeId": 40,
+				"nameOutput": "output",
+				"inputNodeId": 29,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 22,
+				"nameOutput": "RGBA",
+				"inputNodeId": 31,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 30,
+				"nameOutput": "output",
+				"inputNodeId": 31,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 54,
+				"nameOutput": "output",
+				"inputNodeId": 32,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 36,
+				"nameOutput": "output",
+				"inputNodeId": 32,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 50,
+				"nameOutput": "output",
+				"inputNodeId": 32,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 33,
+				"nameOutput": "Mask",
+				"inputNodeId": 34,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 45,
+				"nameOutput": "output",
+				"inputNodeId": 34,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 55,
+				"nameOutput": "output",
+				"inputNodeId": 37,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 42,
+				"nameOutput": "output",
+				"inputNodeId": 37,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 50,
+				"nameOutput": "output",
+				"inputNodeId": 37,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 57,
+				"nameOutput": "output",
+				"inputNodeId": 38,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 43,
+				"nameOutput": "output",
+				"inputNodeId": 38,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 50,
+				"nameOutput": "output",
+				"inputNodeId": 38,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 58,
+				"nameOutput": "output",
+				"inputNodeId": 39,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 44,
+				"nameOutput": "output",
+				"inputNodeId": 39,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 50,
+				"nameOutput": "output",
+				"inputNodeId": 39,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 59,
+				"nameOutput": "output",
+				"inputNodeId": 40,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 41,
+				"nameOutput": "output",
+				"inputNodeId": 40,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 50,
+				"nameOutput": "output",
+				"inputNodeId": 40,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 35,
+				"nameOutput": "output",
+				"inputNodeId": 45,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 46,
+				"nameOutput": "Mask_Tiling",
+				"inputNodeId": 45,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 47,
+				"nameOutput": "Mask_Offset",
+				"inputNodeId": 45,
+				"nameInput": "offset",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 34,
+				"nameOutput": "RGBA",
+				"inputNodeId": 48,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 49,
+				"nameOutput": "Mask_Power",
+				"inputNodeId": 48,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 48,
+				"nameOutput": "output",
+				"inputNodeId": 50,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 51,
+				"nameOutput": "output",
+				"inputNodeId": 52,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 36,
+				"nameOutput": "output",
+				"inputNodeId": 54,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 1,
+				"nameOutput": "RGBA",
+				"inputNodeId": 54,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 62,
+				"nameOutput": "output",
+				"inputNodeId": 54,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 42,
+				"nameOutput": "output",
+				"inputNodeId": 55,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "r",
+				"inputNodeId": 55,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 62,
+				"nameOutput": "output",
+				"inputNodeId": 55,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 43,
+				"nameOutput": "output",
+				"inputNodeId": 57,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "g",
+				"inputNodeId": 57,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 62,
+				"nameOutput": "output",
+				"inputNodeId": 57,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 44,
+				"nameOutput": "output",
+				"inputNodeId": 58,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "b",
+				"inputNodeId": 58,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 62,
+				"nameOutput": "output",
+				"inputNodeId": 58,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 41,
+				"nameOutput": "output",
+				"inputNodeId": 59,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 28,
+				"nameOutput": "normalWS",
+				"inputNodeId": 59,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 62,
+				"nameOutput": "output",
+				"inputNodeId": 59,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 52,
+				"nameOutput": "b",
+				"inputNodeId": 60,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 61,
+				"nameOutput": "Top_Down_Contrast",
+				"inputNodeId": 60,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 60,
+				"nameOutput": "output",
+				"inputNodeId": 62,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			}
+		]
+	}
+}

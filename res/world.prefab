@@ -10,6 +10,7 @@
 		{
 			"type": "object",
 			"name": "Arch",
+			"enabled": false,
 			"x": -10,
 			"y": -72.97,
 			"z": 15,
@@ -19,14 +20,14 @@
 					"name": "A2",
 					"source": "content/Room/Arch/A2.prefab",
 					"x": 2,
-					"y": -18.95
+					"y": -72.89
 				},
 				{
 					"type": "reference",
 					"name": "A1",
 					"source": "content/Room/Arch/A1.prefab",
 					"x": -2,
-					"y": -33.95
+					"y": -87.89
 				}
 			]
 		},
@@ -37,7 +38,8 @@
 				{
 					"type": "reference",
 					"name": "H1",
-					"source": "content/Room/Hub/H1.prefab"
+					"source": "content/Room/Hub/H1.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -55,13 +57,6 @@
 				},
 				{
 					"type": "reference",
-					"name": "H4",
-					"source": "content/Room/Hub/H4.prefab",
-					"x": -35,
-					"z": 25
-				},
-				{
-					"type": "reference",
 					"name": "H9",
 					"source": "content/Room/Hub/H9.prefab",
 					"x": -15,
@@ -71,6 +66,7 @@
 					"type": "reference",
 					"name": "H6",
 					"source": "content/Room/Hub/H6.prefab",
+					"enabled": false,
 					"x": -34.06,
 					"z": 100
 				},
@@ -78,6 +74,7 @@
 					"type": "reference",
 					"name": "H7",
 					"source": "content/Room/Hub/H7.prefab",
+					"enabled": false,
 					"x": -154.06,
 					"z": 100,
 					"children": [
@@ -101,6 +98,7 @@
 					"type": "reference",
 					"name": "H8",
 					"source": "content/Room/Hub/H8.prefab",
+					"enabled": false,
 					"x": -94.06,
 					"z": 100
 				},
@@ -114,13 +112,13 @@
 					"type": "reference",
 					"name": "H2",
 					"source": "content/Room/Hub/H2.prefab",
-					"x": -15,
-					"editMode": "Edit"
+					"x": -15.831645978239353
 				},
 				{
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
+					"enabled": false,
 					"editorOnly": true,
 					"props": {
 						"amount": 0.5,
@@ -137,6 +135,7 @@
 		{
 			"type": "object",
 			"name": "Garden",
+			"enabled": false,
 			"y": 18.71,
 			"children": [
 				{
@@ -357,6 +356,7 @@
 		{
 			"type": "object",
 			"name": "Factory",
+			"enabled": false,
 			"y": -20.47,
 			"children": [
 				{
@@ -392,60 +392,18 @@
 				},
 				{
 					"type": "reference",
-					"name": "F12",
-					"source": "content/Room/Factory/F12.prefab",
-					"x": 10,
-					"y": -15
-				},
-				{
-					"type": "reference",
-					"name": "F13",
-					"source": "content/Room/Factory/F13.prefab",
-					"x": -15,
-					"y": -4.85
-				},
-				{
-					"type": "reference",
-					"name": "F14",
-					"source": "content/Room/Factory/F14.prefab",
-					"x": -32.5,
-					"y": -13.82
-				},
-				{
-					"type": "reference",
-					"name": "F15",
-					"source": "content/Room/Factory/F15.prefab",
-					"x": -15,
-					"y": -32.1
-				},
-				{
-					"type": "reference",
-					"name": "F4",
-					"source": "content/Room/Factory/F4.prefab",
-					"y": -17.5
-				},
-				{
-					"type": "reference",
 					"name": "F5",
 					"source": "content/Room/Factory/F5.prefab",
 					"x": 7.5,
-					"y": -65.27,
+					"y": -119.21,
 					"z": 10
-				},
-				{
-					"type": "reference",
-					"name": "F6",
-					"source": "content/Room/Factory/F6.prefab",
-					"x": -15,
-					"y": -5,
-					"z": -15
 				},
 				{
 					"type": "reference",
 					"name": "F7",
 					"source": "content/Room/Factory/F7.prefab",
 					"x": -8,
-					"y": -61.45,
+					"y": -115.39,
 					"z": 15
 				},
 				{
@@ -453,14 +411,14 @@
 					"name": "F8",
 					"source": "content/Room/Factory/F8.prefab",
 					"x": -8,
-					"y": -54.8
+					"y": -108.74
 				},
 				{
 					"type": "reference",
 					"name": "F9",
 					"source": "content/Room/Factory/F9.prefab",
 					"x": -11.5,
-					"y": -71.45,
+					"y": -125.39,
 					"z": 10,
 					"children": [
 						{
@@ -478,20 +436,6 @@
 							}
 						}
 					]
-				},
-				{
-					"type": "reference",
-					"name": "F10",
-					"source": "content/Room/Factory/F10.prefab",
-					"x": -15,
-					"y": -17.5
-				},
-				{
-					"type": "reference",
-					"name": "F11",
-					"source": "content/Room/Factory/F11.prefab",
-					"x": -32.5,
-					"y": -27.6
 				},
 				{
 					"type": "shader",
@@ -547,6 +491,173 @@
 					"x": 25.52,
 					"y": 15,
 					"z": -15
+				},
+				{
+					"type": "reference",
+					"name": "D41",
+					"source": "content/Room/Diverse/D41.prefab",
+					"x": -15,
+					"y": -25.47,
+					"z": -15
+				},
+				{
+					"type": "reference",
+					"name": "D40",
+					"source": "content/Room/Diverse/D40.prefab",
+					"x": -32.5,
+					"y": -48.07
+				},
+				{
+					"type": "reference",
+					"name": "D35",
+					"source": "content/Room/Diverse/D35.prefab",
+					"y": -52.7,
+					"z": 15
+				},
+				{
+					"type": "reference",
+					"name": "D34",
+					"source": "content/Room/Diverse/D34.prefab",
+					"y": -52.7
+				},
+				{
+					"type": "reference",
+					"name": "D37",
+					"source": "content/Room/Diverse/D37.prefab",
+					"y": -62.79,
+					"z": 30
+				},
+				{
+					"type": "reference",
+					"name": "D36",
+					"source": "content/Room/Diverse/D36.prefab",
+					"y": -62.79,
+					"z": 15
+				},
+				{
+					"type": "reference",
+					"name": "D39",
+					"source": "content/Room/Diverse/D39.prefab",
+					"x": -15,
+					"y": -52.57
+				},
+				{
+					"type": "reference",
+					"name": "D33",
+					"source": "content/Room/Diverse/D33.prefab",
+					"x": 10,
+					"y": -35.47
+				},
+				{
+					"type": "reference",
+					"name": "D32",
+					"source": "content/Room/Diverse/D32.prefab",
+					"y": -37.97
+				},
+				{
+					"type": "reference",
+					"name": "D31",
+					"source": "content/Room/Diverse/D31.prefab",
+					"x": -32.5,
+					"y": -34.29
+				},
+				{
+					"type": "reference",
+					"name": "D29",
+					"source": "content/Room/Diverse/D29.prefab",
+					"x": -15,
+					"y": -25.32
+				},
+				{
+					"type": "reference",
+					"name": "D30",
+					"source": "content/Room/Diverse/D30.prefab",
+					"x": -15,
+					"y": -37.97
+				},
+				{
+					"type": "reference",
+					"name": "D16",
+					"source": "content/Room/Diverse/D16.prefab",
+					"x": 15
+				},
+				{
+					"type": "reference",
+					"name": "D17",
+					"source": "content/Room/Diverse/D17.prefab",
+					"x": 15,
+					"y": 20
+				},
+				{
+					"type": "reference",
+					"name": "D18",
+					"source": "content/Room/Diverse/D18.prefab",
+					"x": 15,
+					"y": -20
+				},
+				{
+					"type": "reference",
+					"name": "D19",
+					"source": "content/Room/Diverse/D19.prefab",
+					"x": 30,
+					"y": 20
+				},
+				{
+					"type": "reference",
+					"name": "D20",
+					"source": "content/Room/Diverse/D20.prefab",
+					"x": 30,
+					"y": -20
+				},
+				{
+					"type": "reference",
+					"name": "D21",
+					"source": "content/Room/Diverse/D21.prefab",
+					"x": 32.5
+				},
+				{
+					"type": "reference",
+					"name": "D23",
+					"source": "content/Room/Diverse/D23.prefab",
+					"x": -52.5,
+					"y": -47.5
+				},
+				{
+					"type": "reference",
+					"name": "D24",
+					"source": "content/Room/Diverse/D24.prefab",
+					"x": -52.5,
+					"y": -62.5
+				},
+				{
+					"type": "reference",
+					"name": "D25",
+					"source": "content/Room/Diverse/D25.prefab",
+					"x": -67.5,
+					"y": -47.5
+				},
+				{
+					"type": "reference",
+					"name": "D26",
+					"source": "content/Room/Diverse/D26.prefab",
+					"x": -32.5,
+					"y": -66.5,
+					"editMode": "Edit"
+				},
+				{
+					"type": "reference",
+					"name": "D27",
+					"source": "content/Room/Diverse/D27.prefab",
+					"x": -52.5,
+					"y": -72.5
+				},
+				{
+					"type": "reference",
+					"name": "D28",
+					"source": "content/Room/Diverse/D28.prefab",
+					"x": 0.03,
+					"y": -84.34,
+					"z": 31.75
 				},
 				{
 					"type": "reference",
@@ -641,6 +752,7 @@
 		{
 			"type": "object",
 			"name": "Bath",
+			"enabled": false,
 			"x": 65.1,
 			"children": [
 				{
@@ -843,6 +955,7 @@
 		{
 			"type": "object",
 			"name": "Chasm",
+			"enabled": false,
 			"children": [
 				{
 					"type": "reference",
@@ -896,90 +1009,6 @@
 					"z": -78.27
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "D16",
-			"source": "content/Room/Diverse/D16.prefab",
-			"x": 15
-		},
-		{
-			"type": "reference",
-			"name": "D17",
-			"source": "content/Room/Diverse/D17.prefab",
-			"x": 15,
-			"y": 20
-		},
-		{
-			"type": "reference",
-			"name": "D18",
-			"source": "content/Room/Diverse/D18.prefab",
-			"x": 15,
-			"y": -20
-		},
-		{
-			"type": "reference",
-			"name": "D19",
-			"source": "content/Room/Diverse/D19.prefab",
-			"x": 30,
-			"y": 20
-		},
-		{
-			"type": "reference",
-			"name": "D20",
-			"source": "content/Room/Diverse/D20.prefab",
-			"x": 30,
-			"y": -20
-		},
-		{
-			"type": "reference",
-			"name": "D21",
-			"source": "content/Room/Diverse/D21.prefab",
-			"x": 32.5
-		},
-		{
-			"type": "reference",
-			"name": "D23",
-			"source": "content/Room/Diverse/D23.prefab",
-			"x": -52.5,
-			"y": -47.5,
-			"z": -33.12
-		},
-		{
-			"type": "reference",
-			"name": "D24",
-			"source": "content/Room/Diverse/D24.prefab",
-			"x": -52.5,
-			"y": -62.5
-		},
-		{
-			"type": "reference",
-			"name": "D25",
-			"source": "content/Room/Diverse/D25.prefab",
-			"x": -67.5,
-			"y": -47.5
-		},
-		{
-			"type": "reference",
-			"name": "D26",
-			"source": "content/Room/Diverse/D26.prefab",
-			"x": -32.5,
-			"y": -66.5
-		},
-		{
-			"type": "reference",
-			"name": "D27",
-			"source": "content/Room/Diverse/D27.prefab",
-			"x": -52.5,
-			"y": -72.5
-		},
-		{
-			"type": "reference",
-			"name": "D28",
-			"source": "content/Room/Diverse/D28.prefab",
-			"x": 7.06,
-			"y": -69.83,
-			"z": 40.95
 		}
 	]
 }

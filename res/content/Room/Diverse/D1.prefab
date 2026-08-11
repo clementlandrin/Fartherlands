@@ -17,7 +17,27 @@
 					"name": "door",
 					"source": "gameplay/door/door.prefab",
 					"x": -3.51,
-					"y": -0.03
+					"y": -0.03,
+					"children": [
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.23,
+								"Mask_Offset": 0,
+								"Mask_Power": 10,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
 				},
 				{
 					"type": "reference",
@@ -36,12 +56,145 @@
 				{
 					"type": "reference",
 					"name": "Small_room_Present",
-					"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab"
+					"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
 					"name": "Present",
 					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "object",
+					"name": "Foliage",
+					"x": -1.0923,
+					"y": 1.7988,
+					"children": [
+						{
+							"type": "model",
+							"name": "Grass_socle01",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+							"x": 3.2973,
+							"y": 1.3287,
+							"scaleX": 0.68,
+							"scaleY": 0.68,
+							"scaleZ": 0.77
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle01",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+							"x": -1.7347,
+							"y": -3.2749,
+							"scaleX": 0.4828,
+							"scaleY": 0.4828,
+							"scaleZ": 0.5467
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush01.fbx",
+							"x": 4.08,
+							"y": -5.32,
+							"z": 4.38,
+							"rotationY": 23.2
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle01",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+							"x": -1.5627,
+							"y": 1.9462,
+							"scaleX": 0.4828,
+							"scaleY": 0.4828,
+							"scaleZ": 0.5467
+						}
+					]
+				},
+				{
+					"type": "object",
+					"name": "archi",
+					"x": -1.865,
+					"y": -1.085,
+					"z": 0.31,
+					"children": [
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": 4.385,
+							"y": -2.465,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -1.675,
+							"y": 5.175,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -1.485,
+							"y": -2.225,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -1.485,
+							"y": 4.755,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": 5.465,
+							"y": -2.225,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -1.675,
+							"y": -0.245,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -1.035,
+							"y": -2.465,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.22,
+								"Mask_Offset": 0.6,
+								"Mask_Power": 10,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
 				}
 			]
 		},
@@ -58,6 +211,73 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "object",
+					"name": "archi",
+					"x": -1.865,
+					"y": -1.085,
+					"z": 0.31,
+					"children": [
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": 4.385,
+							"y": -2.465,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -1.675,
+							"y": 5.175,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -1.485,
+							"y": -2.225,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -1.485,
+							"y": 4.755,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": 5.465,
+							"y": -2.225,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -1.675,
+							"y": -0.245,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -1.035,
+							"y": -2.465,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						}
+					]
 				}
 			]
 		},

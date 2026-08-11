@@ -121,7 +121,7 @@
 					"mode": "PBR",
 					"blend": "None",
 					"shadows": true,
-					"culling": "Back",
+					"culling": "None",
 					"depthTest": "Less",
 					"colorMask": 15,
 					"enableStencil": false

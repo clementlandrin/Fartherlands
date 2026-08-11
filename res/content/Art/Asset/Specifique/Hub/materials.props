@@ -1,0 +1,15 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"WALL06": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_Modules",
+				"colorMask": 15
+			},
+			"Wall_Idol": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_Idol"
+			}
+		}
+	}
+}

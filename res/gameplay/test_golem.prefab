@@ -4,10 +4,10 @@
 		{
 			"type": "object",
 			"name": "object",
-			"z": 0.62,
-			"scaleX": 0.38,
-			"scaleY": 0.38,
-			"scaleZ": 0.38,
+			"z": 1.1133927911152925,
+			"scaleX": 0.6546565666210431,
+			"scaleY": 0.6546565666210431,
+			"scaleZ": 0.6546565666210431,
 			"children": [
 				{
 					"type": "box",

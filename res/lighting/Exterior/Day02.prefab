@@ -57,29 +57,29 @@
 				{
 					"type": "rfx.sao",
 					"name": "sao",
-					"size": 0.5,
-					"blur": 10,
+					"blur": 2,
 					"noiseScale": 1000,
-					"samples": 40,
+					"samples": 60,
 					"radius": 20,
 					"intensity": 40,
 					"bias": 0.1,
-					"microIntensity": 0.3,
+					"microIntensity": 0,
 					"USE_FADE": true,
-					"fadeEnd": 100
+					"fadeEnd": 100,
+					"useScalableBias": true
 				},
 				{
 					"type": "rfx.sao",
 					"name": "sao",
-					"size": 0.5,
-					"blur": 10,
+					"blur": 3,
 					"noiseScale": 1000,
 					"samples": 40,
-					"radius": 0.2,
-					"intensity": 0.45,
+					"radius": 2,
+					"intensity": 0.4,
 					"bias": 0.01,
 					"USE_FADE": true,
-					"fadeEnd": 100
+					"fadeEnd": 100,
+					"useScalableBias": true
 				},
 				{
 					"type": "rfx.volumetricLighting",
@@ -109,7 +109,7 @@
 				{
 					"type": "rfx.kuwaharaFilter",
 					"name": "kuwaharaFilter",
-					"radius": 2,
+					"radius": 3,
 					"endDist": 0
 				},
 				{
@@ -143,7 +143,7 @@
 					"farStartDistance": 150,
 					"farEndDistance": 150,
 					"blurTextureSize": 0.5,
-					"blurRange": 16
+					"blurRange": 10
 				},
 				{
 					"type": "rfx.colorGrading",

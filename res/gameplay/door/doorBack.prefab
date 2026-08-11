@@ -69,6 +69,47 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "object",
+			"name": "Collides",
+			"inGameOnly": true,
+			"x": 0.4833333333333334,
+			"y": 0.013333333333333345,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.5,
+					"y": 0.58,
+					"scaleX": 0.29,
+					"scaleY": 0.91,
+					"scaleZ": 1.87,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.5,
+					"y": -0.59,
+					"scaleX": 0.29,
+					"scaleY": 0.91,
+					"scaleZ": 1.87,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.96,
+					"y": 0.02,
+					"scaleX": 0.29,
+					"scaleY": 1.26,
+					"scaleZ": 1.87
+				}
+			]
 		}
 	]
 }

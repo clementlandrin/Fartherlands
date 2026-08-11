@@ -1,0 +1,97 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 1,
+			"name": "Color",
+			"type": [
+				"TVec",
+				"4,VFloat"
+			],
+			"defaultValue": [
+				0.38823529411764707,
+				0.5647058823529412,
+				0.3058823529411765,
+				1
+			],
+			"index": 0
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 630,
+				"y": 288,
+				"id": 1,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "pixelColor",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1206,
+				"y": 380,
+				"id": 6,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_color",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1001.5,
+				"y": 148.5,
+				"id": 7,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 548.783950617284,
+				"y": -32.83333333333333,
+				"id": 8,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 1,
+					"perInstance": null
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 7,
+				"nameOutput": "output",
+				"inputNodeId": 6,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 8,
+				"nameOutput": "Color",
+				"inputNodeId": 7,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 1,
+				"nameOutput": "output",
+				"inputNodeId": 7,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			}
+		]
+	}
+}

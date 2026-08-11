@@ -8,6 +8,10 @@
 			"MultiFoliage": {
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Multi_Foliage"
+			},
+			"Moss": {
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
+				"name": "Foliage_test"
 			}
 		}
 	}

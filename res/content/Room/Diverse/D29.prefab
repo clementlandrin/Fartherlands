@@ -1,0 +1,107 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "common",
+			"children": [
+				{
+					"type": "object",
+					"name": "Tooltip",
+					"props": {
+						"id": "World_Tooltip",
+						"type": 4,
+						"$cdbtype": "element"
+					},
+					"scaleX": 15,
+					"scaleY": 7.5,
+					"scaleZ": 5
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"enabled": false,
+					"x": -7.35,
+					"y": -0.03,
+					"rotationZ": -91.1
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -3.17,
+					"y": -3.54,
+					"rotationZ": 90
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Present",
+					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Past",
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "doorDown",
+			"source": "gameplay/ladder/ladderDown.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door/doorBack.prefab",
+			"enabled": false,
+			"x": 7.22,
+			"y": -0.23,
+			"rotationZ": 90
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door/doorBack.prefab",
+			"x": -5.27,
+			"y": 3.12,
+			"rotationZ": -90
+		}
+	]
+}

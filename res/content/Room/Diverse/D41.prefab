@@ -1,0 +1,69 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "common",
+			"children": [
+				{
+					"type": "reference",
+					"name": "doorUp",
+					"source": "gameplay/ladder/ladderUp.prefab",
+					"x": 0.2346,
+					"y": 0.0078
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Present",
+					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Medium_room_Left_Past",
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door/doorBack.prefab",
+			"x": -5.03,
+			"y": 3.54,
+			"rotationZ": -90
+		}
+	]
+}

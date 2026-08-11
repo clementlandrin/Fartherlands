@@ -77,11 +77,24 @@
 					"type": "reference",
 					"name": "ladder_15",
 					"source": "gameplay/ladder_15.prefab",
-					"x": -4.22,
-					"y": 2.13,
-					"z": 1.11,
+					"x": -4.219999999999999,
+					"y": 2.1300000000000026,
+					"z": 0.7824293960195383,
 					"scaleZ": 1.25,
 					"rotationZ": -90
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -6.760894937237175,
+					"y": 0.2045915260810176,
+					"z": -1.9765858932157272,
+					"scaleX": 11.241883361663225,
+					"scaleY": 4.8706804814962075,
+					"scaleZ": 12.259680689970757,
+					"rotationZ": -89.99999999999999
 				}
 			]
 		},
@@ -95,16 +108,16 @@
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door/door.prefab",
-					"x": -1.78,
-					"y": -3.54,
+					"x": -1.7800000000000011,
+					"y": -3.539999999999999,
 					"rotationZ": 90
 				},
 				{
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door/door.prefab",
-					"x": -4.92,
-					"y": -3.54,
+					"x": -6.7592916348639775,
+					"y": -3.539999999999999,
 					"z": 10.3,
 					"rotationZ": 90
 				}
@@ -139,8 +152,7 @@
 				{
 					"type": "reference",
 					"name": "Medium_room_Left_Past02",
-					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past02.prefab",
-					"editMode": "Edit"
+					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past02.prefab"
 				}
 			]
 		},
@@ -148,9 +160,9 @@
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door/doorBack.prefab",
-			"x": 7.12,
-			"y": -2.52,
-			"z": 1.7,
+			"x": 7.232639899530444,
+			"y": -2.520000000000003,
+			"z": 1.8009964400979477,
 			"rotationZ": 180
 		},
 		{

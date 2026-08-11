@@ -1,0 +1,219 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Distance",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 0
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": -90,
+				"y": 414,
+				"id": 0,
+				"type": "hrt.shgraph.nodes.SceneDepthToWorld",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -90,
+				"y": 306,
+				"id": 1,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedPosition",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 288,
+				"y": 288,
+				"id": 2,
+				"type": "hrt.shgraph.nodes.Distance",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 491.5,
+				"y": 282.5,
+				"id": 4,
+				"type": "hrt.shgraph.nodes.Divide",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 288,
+				"y": 378,
+				"id": 5,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 648.5,
+				"y": 293.5,
+				"id": 6,
+				"type": "hrt.shgraph.nodes.Saturate",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 774,
+				"y": 288,
+				"id": 7,
+				"type": "hrt.shgraph.nodes.OneMinus",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1152,
+				"y": 288,
+				"id": 8,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_alpha",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -378,
+				"y": 414,
+				"id": 9,
+				"type": "hrt.shgraph.nodes.SceneDepth",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 540,
+				"y": 504,
+				"id": 10,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "alpha",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 900,
+				"y": 414,
+				"id": 11,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 9,
+				"nameOutput": "output",
+				"inputNodeId": 0,
+				"nameInput": "depth",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 0,
+				"nameOutput": "output",
+				"inputNodeId": 2,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 1,
+				"nameOutput": "output",
+				"inputNodeId": 2,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "output",
+				"inputNodeId": 4,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 5,
+				"nameOutput": "Distance",
+				"inputNodeId": 4,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 4,
+				"nameOutput": "output",
+				"inputNodeId": 6,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 6,
+				"nameOutput": "output",
+				"inputNodeId": 7,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 11,
+				"nameOutput": "output",
+				"inputNodeId": 8,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 10,
+				"nameOutput": "output",
+				"inputNodeId": 11,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 7,
+				"nameOutput": "output",
+				"inputNodeId": 11,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			}
+		]
+	}
+}

@@ -18,6 +18,25 @@
 			"diffuseMap": "content/Art/Asset/Debris/Debris_Albedo.png",
 			"normalMap": "content/Art/Asset/Debris/Debris_Normal.png",
 			"specularMap": "content/Art/Asset/Debris/Debris_MetallicRoughnessAO.png"
+		},
+		{
+			"type": "material",
+			"name": "Debris_Tileable",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false,
+					"textureWrap": true
+				}
+			},
+			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+			"specularMap": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png"
 		}
 	]
 }

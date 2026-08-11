@@ -44,38 +44,35 @@
 				{
 					"type": "rfx.colorGrading",
 					"name": "colorGrading",
-					"texturePath": "content/Art/Lut/LUT_J.png",
-					"intensity": 0
+					"texturePath": "content/Art/Lut/Present_LUT.png"
 				},
 				{
 					"type": "rfx.sao",
 					"name": "sao",
-					"size": 0.5,
-					"blur": 10,
+					"blur": 3,
 					"noiseScale": 1000,
-					"samples": 40,
-					"radius": 5,
-					"intensity": 12,
+					"samples": 60,
+					"radius": 3.5,
+					"intensity": 8,
 					"bias": 0.1,
-					"microIntensity": 0.3,
+					"microIntensity": 0.5,
 					"useScalableBias": true
 				},
 				{
 					"type": "rfx.sao",
 					"name": "sao",
-					"size": 0.5,
-					"blur": 10,
+					"blur": 3,
 					"noiseScale": 1000,
 					"samples": 40,
-					"radius": 0.2,
-					"intensity": 0.45,
-					"bias": 0.01,
+					"radius": 0.68,
+					"intensity": 15,
+					"bias": 0.5,
 					"useScalableBias": true
 				},
 				{
 					"type": "rfx.kuwaharaFilter",
 					"name": "kuwaharaFilter",
-					"radius": 1,
+					"radius": 2,
 					"endDist": 0
 				},
 				{

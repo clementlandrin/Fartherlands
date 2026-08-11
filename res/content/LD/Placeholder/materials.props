@@ -33,6 +33,16 @@
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "green",
 				"__refMode": "modelSpec"
+			},
+			"default/ground_lavoir.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_pattern04",
+				"__refMode": "modelSpec"
+			},
+			"default/plane_test.fbx": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_Bloc",
+				"__refMode": "modelSpec"
 			}
 		}
 	}

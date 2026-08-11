@@ -1,0 +1,74 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "common"
+		},
+		{
+			"type": "object",
+			"name": "doors",
+			"x": -0.095,
+			"y": 0.0275
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Small_room_Present",
+					"source": "content/Art/Room_template/Generic/Present/Small_room_Present.prefab"
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "ladderUp",
+			"source": "gameplay/ladder/ladderUp.prefab",
+			"rotationX": 0.0929,
+			"rotationY": 1.1784,
+			"rotationZ": 0.001
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Small_room_Past",
+					"source": "content/Art/Room_template/Generic/Past/Small_room_Past.prefab"
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "door_back",
+			"source": "gameplay/door/doorBack.prefab",
+			"x": -0.13,
+			"y": 3.54,
+			"rotationZ": -90.2
+		},
+		{
+			"type": "object",
+			"name": "object",
+			"x": -0.8750000000000002,
+			"y": 0.5850000000000001
+		}
+	]
+}

@@ -22,10 +22,48 @@
 					"type": "light",
 					"name": "light",
 					"z": 1.96,
-					"power": 0.2,
+					"power": 0.15,
 					"range": 8,
 					"size": 2,
-					"zNear": 0.02
+					"zNear": 0.001,
+					"shadows": {
+						"mode": "Dynamic",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.001,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1,
+							"bias": 0.1
+						}
+					}
+				}
+			]
+		},
+		{
+			"type": "box",
+			"name": "box",
+			"z": 0.9,
+			"scaleX": 0.3,
+			"scaleY": 0.3,
+			"scaleZ": 1.8,
+			"children": [
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
 				}
 			]
 		}

@@ -85,7 +85,7 @@
 				},
 				{
 					"id": "SphereMaxTime",
-					"value": 40
+					"value": 3600
 				},
 				{
 					"id": "ClimbSpeed",

@@ -21,9 +21,10 @@
 				{
 					"type": "polygon",
 					"name": "trigger",
-					"y": 0.03,
-					"z": 0.89,
-					"scaleZ": 1.81,
+					"x": -0.11546819497876148,
+					"z": 0.6581170654796367,
+					"scaleX": 1.5091402414129487,
+					"scaleZ": 2.93774040308428,
 					"kind": 5,
 					"args": []
 				},
@@ -65,6 +66,47 @@
 							"y": -1.0610435563893685
 						}
 					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Collides",
+			"inGameOnly": true,
+			"x": 0.4833333333333334,
+			"y": 0.013333333333333345,
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.5,
+					"y": 0.58,
+					"scaleX": 0.29,
+					"scaleY": 0.91,
+					"scaleZ": 1.87,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.5,
+					"y": -0.59,
+					"scaleX": 0.29,
+					"scaleY": 0.91,
+					"scaleZ": 1.87,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.96,
+					"y": 0.02,
+					"scaleX": 0.29,
+					"scaleY": 1.26,
+					"scaleZ": 1.87
 				}
 			]
 		}

@@ -1,0 +1,9 @@
+{
+	"column05.fbx/column05": {
+		"collide": [
+			{
+				"mesh": "COLLIDER"
+			}
+		]
+	}
+}

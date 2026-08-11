@@ -1,0 +1,1589 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "Common",
+			"x": -14.7013,
+			"y": -12.3419,
+			"children": [
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 20.22,
+					"y": 17.85,
+					"z": 1.21,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": -180,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "stairs02",
+					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
+					"x": 15.48,
+					"y": 17.44,
+					"z": 3.27,
+					"scaleX": 0.88,
+					"scaleY": 0.88,
+					"scaleZ": 0.88,
+					"rotationZ": -90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.5812215945613444,
+							"y": -0.5632167427572728,
+							"z": -0.16429231781844944,
+							"scaleX": 8.099999999999996,
+							"scaleY": 5.572699999999997,
+							"scaleZ": 0.8294107753067691,
+							"rotationX": 1.1950500565762696e-14,
+							"rotationY": -27.322242785197876,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 8.9,
+					"y": 17.85,
+					"z": 1.41,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 1.17,
+					"rotationZ": -90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 12.7,
+					"y": 17.85,
+					"z": 1.41,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 1.17,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 8.9,
+					"y": 17.85,
+					"z": 4.18,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": -90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 9.090000000000003,
+					"y": 4.439999999999998,
+					"z": 14.175247883601386,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 20.22,
+					"y": 10.79,
+					"z": 1.21,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 0.003674696568500835,
+							"y": 0.020000000000000018,
+							"z": -1.9699999999999998,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 20.22,
+					"y": 3.7,
+					"z": 1.21,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.02849712352665623,
+							"y": 0.019999999999999574,
+							"z": -1.9699999999999998,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room03_Past",
+					"source": "content/Art/Room_template/Generic/Past/Big_room03_Past.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "ladder_15",
+					"source": "gameplay/ladder_15.prefab",
+					"x": -6.7683,
+					"y": -5.6179,
+					"z": 6.119,
+					"scaleZ": 1.2015
+				},
+				{
+					"type": "object",
+					"name": "Archi",
+					"x": -6.2875,
+					"y": -3.423300435532841,
+					"z": 4.480712215845564,
+					"children": [
+						{
+							"type": "model",
+							"name": "passerelle01",
+							"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
+							"x": 3.1575,
+							"y": -0.8322,
+							"z": 10.595,
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -1.241049012530818,
+									"y": 0.815280941321094,
+									"z": 0.13416961825629592,
+									"scaleX": 0.2934310552220029,
+									"scaleY": 4.683172713837266,
+									"scaleZ": 0.5995168646165318,
+									"rotationZ": 90
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -1.1395228677640947,
+									"y": 0.004353964689908452,
+									"z": -0.5444639184228546,
+									"scaleX": 1.8705516301105016,
+									"scaleY": 4.983689643550352,
+									"scaleZ": 0.7383521732306635,
+									"rotationZ": 90
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -1.2410490125308193,
+									"y": -0.8101660602306673,
+									"z": 0.13416961825629592,
+									"scaleX": 0.2934310552220029,
+									"scaleY": 4.683172713837266,
+									"scaleZ": 0.5995168646165318,
+									"rotationZ": 90
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -3.484039278042869,
+									"y": 0.0011008346974059613,
+									"z": 0.13416961825629592,
+									"scaleX": 0.2934310552220029,
+									"scaleY": 1.9595210227512283,
+									"scaleZ": 0.5995168646165318,
+									"rotationZ": 9.213864076586628e-15
+								},
+								{
+									"type": "model",
+									"name": "small_join",
+									"source": "content/Art/Asset/Generique/blocs/small_join.fbx",
+									"x": -3.457619604855192,
+									"y": -0.05735839933315079,
+									"z": 0.46377397688761235,
+									"scaleY": 0.9616914270013059
+								},
+								{
+									"type": "model",
+									"name": "joins",
+									"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+									"x": -1.0769774182235192,
+									"y": 0.806855733495782,
+									"z": 0.4972081007167475,
+									"rotationZ": -89.99999999999999
+								},
+								{
+									"type": "model",
+									"name": "joins",
+									"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+									"x": -1.0769774182235188,
+									"y": -0.8318964911357631,
+									"z": 0.4972081007167475,
+									"rotationZ": -89.99999999999999
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "little_bridge02",
+							"source": "content/Art/Asset/Generique/bridges/little_bridge02.fbx",
+							"x": 0.4475,
+							"y": 1.6233,
+							"z": 5.3093,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.84,
+									"y": 0.02,
+									"z": -1.94,
+									"scaleX": 8.91,
+									"scaleY": 2.98,
+									"scaleZ": 2.15,
+									"rotationZ": 180
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.88,
+									"y": 0.02,
+									"z": -4.94,
+									"scaleX": 10.31,
+									"scaleY": 2.98,
+									"scaleZ": 2.7,
+									"rotationX": 180,
+									"rotationY": -90
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -3.53,
+									"y": 0.02,
+									"z": -4.94,
+									"scaleX": 10.31,
+									"scaleY": 2.98,
+									"scaleZ": 2.7,
+									"rotationX": 180,
+									"rotationY": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -0.6625,
+							"y": 3.4533,
+							"z": -2.7007,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -0.5625,
+							"y": -3.6867,
+							"z": -5.0107,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"rotationZ": 180,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.02,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -0.5425,
+							"y": -3.7867,
+							"z": -2.6107,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -0.6625,
+							"y": 3.4533,
+							"z": -0.3007,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -0.5425,
+							"y": -3.5976,
+							"z": -0.2107,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -0.6325,
+							"y": 3.3733,
+							"z": -5.0707,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Big_room03_Present",
+					"source": "content/Art/Room_template/Generic/Present/Big_room03_Present.prefab"
+				},
+				{
+					"type": "object",
+					"name": "Archi",
+					"x": -5.495866554135948,
+					"y": -3.2572119362390293,
+					"z": 9.556139378177527,
+					"children": [
+						{
+							"type": "object",
+							"name": "Debris",
+							"x": 0.5059,
+							"y": 1.3672,
+							"z": -4.9561,
+							"rotationX": -15,
+							"children": [
+								{
+									"type": "model",
+									"name": "Ground_Debris01",
+									"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+									"x": 0.4042596075632625,
+									"y": 0.6621553652834073,
+									"z": -0.3268398278257898,
+									"scaleX": 0.8251000000000001,
+									"scaleY": 0.6530999999999999,
+									"scaleZ": 0.7469999999999997,
+									"rotationX": 12.716241974150996,
+									"rotationY": -9.256248013524589,
+									"rotationZ": 89.29431905723962,
+									"children": [
+										{
+											"type": "material",
+											"name": "material",
+											"props": {
+												"Fatherlands": {
+													"mode": "PBR",
+													"blend": "None",
+													"shadows": true,
+													"culling": "Back",
+													"depthTest": "Less",
+													"colorMask": 15,
+													"enableStencil": false
+												}
+											},
+											"materialName": "02 - Default",
+											"children": [
+												{
+													"type": "shader",
+													"name": "Triplanar",
+													"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+													"props": {
+														"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+														"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+														"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+														"Sharpness": 1,
+														"Offset": 0.73,
+														"Tiling": 0.15
+													}
+												}
+											]
+										},
+										{
+											"type": "material",
+											"name": "material",
+											"props": {
+												"Fatherlands": {
+													"mode": "PBR",
+													"blend": "None",
+													"shadows": true,
+													"culling": "Back",
+													"depthTest": "Less",
+													"colorMask": 15,
+													"enableStencil": false
+												}
+											},
+											"materialName": "01 - Default",
+											"children": [
+												{
+													"type": "shader",
+													"name": "Triplanar",
+													"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+													"props": {
+														"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Albedo.png",
+														"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_MetallicRoughnessAO.png",
+														"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Normal.png",
+														"Sharpness": 1,
+														"Offset": 0.73,
+														"Tiling": 0.2
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "Ground_Debris01",
+									"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+									"x": -1.398792910843941,
+									"y": -2.718863833234243,
+									"z": -0.7876811450673484,
+									"scaleX": 0.9194103884208038,
+									"scaleY": 0.8053915200062158,
+									"scaleZ": 0.7469999999999998,
+									"rotationX": -17.158690982280845,
+									"rotationY": 12.974113580938441,
+									"rotationZ": -164.1778773913474,
+									"children": [
+										{
+											"type": "material",
+											"name": "material",
+											"props": {
+												"Fatherlands": {
+													"mode": "PBR",
+													"blend": "None",
+													"shadows": true,
+													"culling": "Back",
+													"depthTest": "Less",
+													"colorMask": 15,
+													"enableStencil": false
+												}
+											},
+											"materialName": "02 - Default",
+											"children": [
+												{
+													"type": "shader",
+													"name": "Triplanar",
+													"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+													"props": {
+														"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+														"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+														"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+														"Sharpness": 1,
+														"Offset": 0.73,
+														"Tiling": 0.15
+													}
+												}
+											]
+										},
+										{
+											"type": "material",
+											"name": "material",
+											"props": {
+												"Fatherlands": {
+													"mode": "PBR",
+													"blend": "None",
+													"shadows": true,
+													"culling": "Back",
+													"depthTest": "Less",
+													"colorMask": 15,
+													"enableStencil": false
+												}
+											},
+											"materialName": "01 - Default",
+											"children": [
+												{
+													"type": "shader",
+													"name": "Triplanar",
+													"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+													"props": {
+														"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Albedo.png",
+														"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_MetallicRoughnessAO.png",
+														"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Normal.png",
+														"Sharpness": 1,
+														"Offset": 0.73,
+														"Tiling": 0.2
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "Ground_Debris01",
+									"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+									"x": -1.15545140334698,
+									"y": 2.7153502457634353,
+									"z": 1.8393719241976445,
+									"scaleX": 0.919410388420804,
+									"scaleY": 0.8053915200062163,
+									"scaleZ": 0.7469999999999999,
+									"rotationX": 26.032980144537202,
+									"rotationY": 13.493697597645882,
+									"rotationZ": -68.94277381190096,
+									"children": [
+										{
+											"type": "material",
+											"name": "material",
+											"props": {
+												"Fatherlands": {
+													"mode": "PBR",
+													"blend": "None",
+													"shadows": true,
+													"culling": "Back",
+													"depthTest": "Less",
+													"colorMask": 15,
+													"enableStencil": false
+												}
+											},
+											"materialName": "02 - Default",
+											"children": [
+												{
+													"type": "shader",
+													"name": "Triplanar",
+													"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+													"props": {
+														"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+														"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+														"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+														"Sharpness": 1,
+														"Offset": 0.73,
+														"Tiling": 0.15
+													}
+												}
+											]
+										},
+										{
+											"type": "material",
+											"name": "material",
+											"props": {
+												"Fatherlands": {
+													"mode": "PBR",
+													"blend": "None",
+													"shadows": true,
+													"culling": "Back",
+													"depthTest": "Less",
+													"colorMask": 15,
+													"enableStencil": false
+												}
+											},
+											"materialName": "01 - Default",
+											"children": [
+												{
+													"type": "shader",
+													"name": "Triplanar",
+													"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+													"props": {
+														"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Albedo.png",
+														"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_MetallicRoughnessAO.png",
+														"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Normal.png",
+														"Sharpness": 1,
+														"Offset": 0.73,
+														"Tiling": 0.2
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "Debris04",
+									"source": "content/Art/Asset/Debris/Debris04.fbx",
+									"x": -2.46,
+									"y": 1.55,
+									"z": -0.54,
+									"scaleX": 2.97,
+									"scaleY": 2.97,
+									"scaleZ": 2.97,
+									"rotationX": 15
+								},
+								{
+									"type": "model",
+									"name": "Debris04",
+									"source": "content/Art/Asset/Debris/Debris04.fbx",
+									"x": -1.4209,
+									"y": 1.5518,
+									"z": 0.2109,
+									"scaleX": 1.53,
+									"scaleY": 1.53,
+									"scaleZ": 1.53,
+									"rotationX": 8.6,
+									"rotationY": 6.9,
+									"rotationZ": -74.9
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -1.18,
+									"y": -0.6504,
+									"z": -1.282,
+									"scaleX": 11.86,
+									"scaleY": 4.9,
+									"scaleZ": 2.74,
+									"rotationY": 15,
+									"rotationZ": -90
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.29,
+									"y": -0.15,
+									"z": -2.18,
+									"scaleX": 11.86,
+									"scaleY": 7.22,
+									"scaleZ": 2.74,
+									"rotationX": -75.9,
+									"rotationY": 17,
+									"rotationZ": -94.4
+								},
+								{
+									"type": "model",
+									"name": "dalle_ground_path02",
+									"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
+									"x": -0.9109,
+									"y": -3.5882,
+									"z": -1.3191,
+									"rotationZ": -26.3
+								},
+								{
+									"type": "model",
+									"name": "Debris01",
+									"source": "content/Art/Asset/Debris/Debris01.fbx",
+									"x": -1.39,
+									"y": -3.48,
+									"z": -1.48,
+									"scaleX": 2.17,
+									"scaleY": 2.17,
+									"scaleZ": 2.17
+								},
+								{
+									"type": "model",
+									"name": "Debris03",
+									"source": "content/Art/Asset/Debris/Debris03.fbx",
+									"x": -0.91,
+									"y": 2.58,
+									"z": 0.17,
+									"scaleX": 1.53,
+									"scaleY": 1.53,
+									"scaleZ": 1.53,
+									"rotationZ": -75
+								},
+								{
+									"type": "object",
+									"name": "Debris",
+									"x": 2.5,
+									"y": 0.1223,
+									"z": -4.2429,
+									"rotationX": 6.0585,
+									"rotationY": 33.5439,
+									"rotationZ": 13.7329,
+									"children": [
+										{
+											"type": "model",
+											"name": "Debris04",
+											"source": "content/Art/Asset/Debris/Debris04.fbx",
+											"x": -2.46,
+											"y": 1.55,
+											"z": -0.54,
+											"scaleX": 2.97,
+											"scaleY": 2.97,
+											"scaleZ": 2.97,
+											"rotationX": 15
+										},
+										{
+											"type": "model",
+											"name": "Debris04",
+											"source": "content/Art/Asset/Debris/Debris04.fbx",
+											"x": -1.4209,
+											"y": 1.5518,
+											"z": 0.2109,
+											"scaleX": 1.53,
+											"scaleY": 1.53,
+											"scaleZ": 1.53,
+											"rotationX": 8.6,
+											"rotationY": 6.9,
+											"rotationZ": -74.9
+										},
+										{
+											"type": "model",
+											"name": "dalle_ground_path02",
+											"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
+											"x": -0.9109,
+											"y": -3.5882,
+											"z": -1.3191,
+											"rotationZ": -26.3
+										},
+										{
+											"type": "model",
+											"name": "dalle_ground_path02",
+											"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
+											"x": -1.3609,
+											"y": 1.7318,
+											"z": 0.8709,
+											"rotationX": 13.2,
+											"rotationY": -2.6,
+											"rotationZ": -0.7
+										},
+										{
+											"type": "model",
+											"name": "Debris02",
+											"source": "content/Art/Asset/Debris/Debris02.fbx",
+											"x": -2.69,
+											"y": -1.57,
+											"z": -0.81,
+											"scaleX": 3.75,
+											"scaleY": 3.75,
+											"scaleZ": 3.75,
+											"rotationX": 4.7,
+											"rotationY": 9.2,
+											"rotationZ": 0.7
+										},
+										{
+											"type": "model",
+											"name": "Debris01",
+											"source": "content/Art/Asset/Debris/Debris01.fbx",
+											"x": -1.39,
+											"y": -3.48,
+											"z": -1.48,
+											"scaleX": 2.17,
+											"scaleY": 2.17,
+											"scaleZ": 2.17
+										},
+										{
+											"type": "model",
+											"name": "Debris03",
+											"source": "content/Art/Asset/Debris/Debris03.fbx",
+											"x": -0.91,
+											"y": 2.58,
+											"z": 0.17,
+											"scaleX": 1.53,
+											"scaleY": 1.53,
+											"scaleZ": 1.53,
+											"rotationZ": -75
+										},
+										{
+											"type": "model",
+											"name": "Debris02",
+											"source": "content/Art/Asset/Debris/Debris02.fbx",
+											"x": -1.81,
+											"y": 0.69,
+											"z": -0.33,
+											"scaleX": 2.61,
+											"scaleY": 2.61,
+											"scaleZ": 2.61,
+											"rotationX": 16.2
+										},
+										{
+											"type": "model",
+											"name": "Debris02",
+											"source": "content/Art/Asset/Debris/Debris02.fbx",
+											"x": -1.74,
+											"y": 3.58,
+											"z": 1.47,
+											"scaleX": 2.61,
+											"scaleY": 2.61,
+											"scaleZ": 2.61,
+											"rotationX": 17.3,
+											"rotationY": 20,
+											"rotationZ": 6.1
+										},
+										{
+											"type": "model",
+											"name": "cube_stone01",
+											"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+											"x": -1.0309,
+											"y": 1.8118,
+											"z": 0.7509,
+											"rotationX": 30,
+											"rotationY": 15
+										},
+										{
+											"type": "model",
+											"name": "cube_stone02",
+											"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
+											"x": -2.1309,
+											"y": -1.2182,
+											"z": -0.0091,
+											"rotationX": -24,
+											"rotationY": -18.6,
+											"rotationZ": -35.7
+										},
+										{
+											"type": "model",
+											"name": "beam01",
+											"source": "content/Art/Asset/Generique/blocs/beam01.fbx",
+											"x": -2.2509,
+											"y": 1.9718,
+											"z": 0.5509,
+											"scaleX": 0.71,
+											"scaleY": 0.71,
+											"scaleZ": 0.71,
+											"rotationX": 37.3
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "basic_bloc02",
+									"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+									"x": -1.9813,
+									"y": 2.0335,
+									"z": -0.8735,
+									"scaleX": 0.8,
+									"scaleY": 0.8,
+									"scaleZ": 0.8,
+									"rotationY": 31.8,
+									"rotationZ": -90,
+									"children": [
+										{
+											"type": "reference",
+											"name": "Box_Navmesh",
+											"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+											"inGameOnly": true,
+											"x": -0.11,
+											"y": 0.02,
+											"z": -1.97,
+											"scaleX": 8.91,
+											"scaleY": 6.13,
+											"scaleZ": 3.43,
+											"rotationZ": 180
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "basic_bloc02",
+									"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+									"x": 0.8387,
+									"y": -4.7529,
+									"z": -4.5243,
+									"scaleX": 0.8,
+									"scaleY": 0.8,
+									"scaleZ": 0.8,
+									"rotationX": -62.8,
+									"rotationY": -11,
+									"rotationZ": -90,
+									"children": [
+										{
+											"type": "reference",
+											"name": "Box_Navmesh",
+											"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+											"inGameOnly": true,
+											"x": -0.11,
+											"y": 0.02,
+											"z": -1.97,
+											"scaleX": 8.91,
+											"scaleY": 6.13,
+											"scaleZ": 3.43,
+											"rotationZ": 180
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "basic_bloc02",
+									"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+									"x": -1.9813,
+									"y": -4.7131,
+									"z": -2.2774,
+									"scaleX": 0.8,
+									"scaleY": 0.8,
+									"scaleZ": 0.8,
+									"rotationY": -2.7,
+									"rotationZ": -90,
+									"children": [
+										{
+											"type": "reference",
+											"name": "Box_Navmesh",
+											"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+											"inGameOnly": true,
+											"x": -0.11,
+											"y": 0.02,
+											"z": -1.97,
+											"scaleX": 8.91,
+											"scaleY": 6.13,
+											"scaleZ": 3.43,
+											"rotationZ": 180
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "basic_bloc02",
+									"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+									"x": 0.5087,
+									"y": 0.399,
+									"z": -3.9307,
+									"scaleX": 0.8,
+									"scaleY": 0.8,
+									"scaleZ": 0.8,
+									"rotationX": -73.0777,
+									"rotationY": 22.648,
+									"rotationZ": -111.3875,
+									"children": [
+										{
+											"type": "reference",
+											"name": "Box_Navmesh",
+											"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+											"inGameOnly": true,
+											"x": -0.11,
+											"y": 0.02,
+											"z": -1.97,
+											"scaleX": 8.91,
+											"scaleY": 6.13,
+											"scaleZ": 3.43,
+											"rotationZ": 180
+										}
+									]
+								},
+								{
+									"type": "model",
+									"name": "Debris02",
+									"source": "content/Art/Asset/Debris/Debris02.fbx",
+									"x": -0.1332929952659363,
+									"y": 3.8055372562303145,
+									"z": 0.6969165562858493,
+									"scaleX": 2.61,
+									"scaleY": 2.6100000000000003,
+									"scaleZ": 2.6100000000000003,
+									"rotationX": 17.300000000000022,
+									"rotationY": 20,
+									"rotationZ": 6.099999999999998
+								},
+								{
+									"type": "model",
+									"name": "cube_stone01",
+									"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+									"x": -1.0309,
+									"y": 1.8118,
+									"z": 0.7509,
+									"rotationX": 30,
+									"rotationY": 15
+								},
+								{
+									"type": "model",
+									"name": "cube_stone02",
+									"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
+									"x": -1.7542482573771858,
+									"y": -0.2573841031518267,
+									"z": -0.06419509176794058,
+									"scaleY": 0.9999999999999997,
+									"rotationX": -24,
+									"rotationY": -18.600000000000005,
+									"rotationZ": -35.70000000000002
+								},
+								{
+									"type": "model",
+									"name": "cube_stone02",
+									"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
+									"x": 2.03,
+									"y": -3.6,
+									"z": -5.35,
+									"rotationX": -0.5,
+									"rotationY": -29.6,
+									"rotationZ": -140.3
+								},
+								{
+									"type": "model",
+									"name": "beam01",
+									"source": "content/Art/Asset/Generique/blocs/beam01.fbx",
+									"x": -2.2509,
+									"y": 1.9718,
+									"z": 0.5509,
+									"scaleX": 0.71,
+									"scaleY": 0.71,
+									"scaleZ": 0.71,
+									"rotationX": 37.3
+								},
+								{
+									"type": "shader",
+									"name": "Top_down_moss",
+									"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+									"props": {
+										"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+										"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+										"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+										"Sharpness": 1,
+										"Offset": 1,
+										"Tiling": 1,
+										"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+										"Mask_Tiling": 0.14,
+										"Mask_Offset": 0.66,
+										"Mask_Power": 5.76,
+										"Top_Down_Contrast": 10
+									}
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": 2.4665,
+							"y": -2.7691,
+							"z": 5.1659,
+							"scaleX": 0.8251,
+							"scaleY": 0.6531,
+							"scaleZ": 0.747,
+							"rotationZ": 89.3,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.2
+											}
+										}
+									]
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.24734515111342503,
+									"y": 0.15129813432416306,
+									"z": -0.25540000000001584,
+									"scaleX": 2.864,
+									"scaleY": 2.3079408798904164,
+									"scaleZ": 0.9883999999999994,
+									"rotationZ": -89.4459
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.6452724944000634,
+									"y": -0.01263641326900089,
+									"z": -0.2554000000000407,
+									"scaleX": 2.7501176293058096,
+									"scaleY": 2.3369009405712267,
+									"scaleZ": 0.9883999999999984,
+									"rotationZ": -80.33061263774191
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -2.102495651385004,
+							"y": 1.3912715846441386,
+							"z": -0.23044467779444666,
+							"scaleX": 1.124,
+							"scaleY": 0.8897,
+							"scaleZ": 1.0176,
+							"rotationZ": -0.7,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.61,
+												"Tiling": 0.17
+											}
+										}
+									]
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.24734515111342414,
+									"y": 0.15129813432416261,
+									"z": -0.33455997074211474,
+									"scaleX": 2.8640000000000008,
+									"scaleY": 2.307940879890416,
+									"scaleZ": 0.9883999999999993,
+									"rotationZ": -89.4459
+								},
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.6452724944000625,
+									"y": -0.012636413269001334,
+									"z": -0.33455997074213784,
+									"scaleX": 2.7501176293058096,
+									"scaleY": 2.3369009405712267,
+									"scaleZ": 0.9883999999999984,
+									"rotationZ": -80.33061263774191
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"x": -4.989860707812549,
+					"y": -3.9937617642511527,
+					"z": 25.768052522981122,
+					"scaleX": 40,
+					"scaleY": 15.1347,
+					"scaleZ": 15.1347,
+					"rotationY": 89.99999999999999,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 2.58,
+					"range": 40,
+					"zNear": 0.02,
+					"angle": 41.45,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"x": 2.6894878138425753,
+					"y": 2.5482511502506724,
+					"z": 25.768052522981122,
+					"scaleX": 40,
+					"scaleY": 15.1347,
+					"scaleZ": 15.1347,
+					"rotationY": 89.99999999999999,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 2.58,
+					"range": 40,
+					"zNear": 0.02,
+					"angle": 16.51,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
+				},
+				{
+					"type": "reference",
+					"name": "ladder_15",
+					"source": "gameplay/ladder_15.prefab",
+					"x": -6.7683,
+					"y": -5.6179,
+					"z": 6.119,
+					"scaleZ": 1.2015
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "door",
+			"source": "gameplay/door/door.prefab",
+			"x": 2.31,
+			"y": 6.783719696962446,
+			"z": 0.0011452919373244608,
+			"rotationZ": -90
+		},
+		{
+			"type": "reference",
+			"name": "door",
+			"source": "gameplay/door/door.prefab",
+			"x": -0.35,
+			"y": -7.49,
+			"z": -0.01,
+			"rotationZ": 90
+		},
+		{
+			"type": "reference",
+			"name": "door",
+			"source": "gameplay/door/door.prefab",
+			"x": 5.144396646423189,
+			"y": -7.113086641395974,
+			"z": 2.5111084448237744,
+			"rotationZ": 90
+		},
+		{
+			"type": "reference",
+			"name": "door",
+			"source": "gameplay/door/door.prefab",
+			"x": -7.54,
+			"y": -2.03,
+			"z": 10.038061979092754
+		},
+		{
+			"type": "LocalVolumeLighting",
+			"name": "LocalVolumeLighting",
+			"enabled": false,
+			"z": 7.82,
+			"scaleX": 14.54,
+			"scaleY": 14.54,
+			"scaleZ": 13.57,
+			"fogDensity": 0.1,
+			"color": 16769505
+		}
+	]
+}

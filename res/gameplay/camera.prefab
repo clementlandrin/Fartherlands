@@ -4,16 +4,16 @@
 		{
 			"type": "camera",
 			"name": "camera",
-			"x": 3.4831,
-			"y": 3.52,
-			"z": 14.1421,
+			"x": 5.6652,
+			"y": 5.6759,
+			"z": 10.6252,
 			"rotationY": 45,
 			"rotationZ": -135,
 			"fovY": 1,
-			"zFar": 160,
+			"zFar": 30052.59203606311,
 			"zNear": 0.12418426461183099,
 			"ortho": true,
-			"orthoWidth": 40
+			"orthoWidth": 30.05259203606311
 		}
 	]
 }

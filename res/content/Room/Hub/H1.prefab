@@ -23,28 +23,21 @@
 					}
 				},
 				{
-					"type": "model",
-					"name": "column01",
-					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
-					"x": 7.78,
-					"y": 1.78,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "column01",
-					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
-					"x": 7.3,
-					"y": -5.35,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "column01",
-					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
-					"x": -7.8,
-					"y": -5.83,
-					"rotationZ": 90
+					"type": "object",
+					"name": "doors",
+					"x": -0.0275,
+					"y": -2.015,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "door_back",
+							"source": "gameplay/door/doorBack.prefab",
+							"x": -0.12458123747477895,
+							"y": 7.2240230606907625,
+							"rotationZ": -90
+						}
+					]
 				}
 			]
 		},
@@ -60,15 +53,451 @@
 				{
 					"type": "reference",
 					"name": "Present",
-					"source": "lighting/Present.prefab",
-					"editMode": "Edit"
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"x": -3.38,
+					"y": -3.41,
+					"z": 7.55,
+					"scaleX": 40,
+					"scaleY": 15.1347,
+					"scaleZ": 15.1347,
+					"rotationX": -14.4,
+					"rotationY": 62.9,
+					"rotationZ": -13.6,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 2.58,
+					"range": 40,
+					"zNear": 0.02,
+					"angle": 41.45,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"x": -1.79,
+					"y": 3.83,
+					"z": 7.55,
+					"scaleX": 40,
+					"scaleY": 6.042300000000002,
+					"scaleZ": 6.0423,
+					"rotationX": -23.88314942912958,
+					"rotationY": 62.89999999999998,
+					"rotationZ": -13.600000000000001,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 2.58,
+					"range": 40,
+					"zNear": 0.02,
+					"angle": 17.18,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
 				},
 				{
 					"type": "object",
-					"name": "object",
-					"x": -0.038333333333333316,
-					"y": -0.050000000000000114,
-					"z": 0.6616666666666666
+					"name": "Foliage",
+					"x": -0.0111,
+					"y": -2.3922,
+					"z": 0.59,
+					"children": [
+						{
+							"type": "model",
+							"name": "Grass_socle01",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+							"x": 3.3511,
+							"y": -3.8878,
+							"z": -0.55,
+							"scaleX": 0.78,
+							"scaleY": 0.78,
+							"scaleZ": 0.87
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle01",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+							"x": -3.0489,
+							"y": -3.5778,
+							"z": -0.55,
+							"scaleX": 0.78,
+							"scaleY": 0.78,
+							"scaleZ": 0.87
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle01",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+							"x": -1.4089,
+							"y": 8.9622,
+							"z": -0.55,
+							"scaleX": 0.6,
+							"scaleY": 0.6,
+							"scaleZ": 0.6
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle01",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+							"x": 3.7211,
+							"y": 0.5422,
+							"z": -0.59,
+							"scaleX": 0.71,
+							"scaleY": 0.71,
+							"scaleZ": 0.71
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle02",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+							"x": 3.1211,
+							"y": -1.6678,
+							"z": -0.59,
+							"scaleX": 0.64,
+							"scaleY": 0.64,
+							"scaleZ": 0.64
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle02",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+							"x": -3.0789,
+							"y": 1.1022,
+							"z": -0.59,
+							"scaleX": 0.64,
+							"scaleY": 0.64,
+							"scaleZ": 0.64
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle03",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+							"x": -0.3489,
+							"y": 2.9022,
+							"z": -0.59,
+							"scaleX": 0.67,
+							"scaleY": 0.67,
+							"scaleZ": 0.79
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle03",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+							"x": -2.68,
+							"y": 4.94,
+							"z": 0.86,
+							"scaleX": 0.67,
+							"scaleY": 0.67,
+							"scaleZ": 0.79
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle03",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+							"x": 1.7311,
+							"y": -0.2478,
+							"z": -0.59,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61
+						},
+						{
+							"type": "model",
+							"name": "Grass_socle03",
+							"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+							"x": -1.0489,
+							"y": 5.8022,
+							"z": -0.59,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"rotationZ": -69.6
+						},
+						{
+							"type": "model",
+							"name": "Plant02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Plant02.fbx",
+							"x": -2.7589,
+							"y": -2.6278,
+							"z": -0.59,
+							"scaleX": 0.42,
+							"scaleY": 0.42,
+							"scaleZ": 0.42
+						},
+						{
+							"type": "model",
+							"name": "Plant02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Plant02.fbx",
+							"x": -2.7589,
+							"y": 7.7422,
+							"z": -0.59,
+							"scaleX": 0.52,
+							"scaleY": 0.52,
+							"scaleZ": 0.52
+						},
+						{
+							"type": "model",
+							"name": "Plant03",
+							"source": "content/Art/Asset/Vegetation/Foliage/Plant03.fbx",
+							"x": 2.2211,
+							"y": -2.1978,
+							"z": -0.59,
+							"scaleX": 0.34,
+							"scaleY": 0.34,
+							"scaleZ": 0.34,
+							"rotationZ": 40.5
+						},
+						{
+							"type": "model",
+							"name": "Plant01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Plant01.fbx",
+							"x": -1.5989,
+							"y": -1.4078,
+							"z": -0.59,
+							"scaleX": 0.53,
+							"scaleY": 0.53,
+							"scaleZ": 0.53
+						},
+						{
+							"type": "model",
+							"name": "Plant01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Plant01.fbx",
+							"x": 1.7911,
+							"y": -3.6278,
+							"z": -0.59,
+							"scaleX": 0.53,
+							"scaleY": 0.53,
+							"scaleZ": 0.53,
+							"rotationZ": -63.1
+						},
+						{
+							"type": "model",
+							"name": "Plant01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Plant01.fbx",
+							"x": 2.4611,
+							"y": 4.6222,
+							"z": -0.59,
+							"scaleX": 0.53,
+							"scaleY": 0.53,
+							"scaleZ": 0.53,
+							"rotationZ": -63.1
+						},
+						{
+							"type": "model",
+							"name": "Ivy01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
+							"x": -3.5989,
+							"y": -3.7178,
+							"z": 3.57,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61
+						},
+						{
+							"type": "model",
+							"name": "Ivy01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
+							"x": -2.7889,
+							"y": -3.9778,
+							"z": 2.58,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"rotationZ": 45
+						},
+						{
+							"type": "model",
+							"name": "Ivy01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
+							"x": 4.0411,
+							"y": -4.7378,
+							"z": 2.58,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"rotationZ": 135
+						}
+					]
+				},
+				{
+					"type": "object",
+					"name": "Columns",
+					"x": -1.2133,
+					"y": -2.4267,
+					"rotationZ": -90,
+					"children": [
+						{
+							"type": "model",
+							"name": "column01",
+							"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+							"x": 5.35,
+							"y": 5.3,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "column01",
+							"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+							"x": 4.8733,
+							"y": -2.2167,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "column01",
+							"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+							"x": -10.2267,
+							"y": -2.6967,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "cube_stone01",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+							"x": -4.9167,
+							"y": -1.4667,
+							"z": 0.78,
+							"rotationZ": 67.1
+						},
+						{
+							"type": "model",
+							"name": "cube_stone01",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+							"x": -6.3567,
+							"y": -0.4167,
+							"z": 0.6,
+							"scaleX": 0.88,
+							"scaleY": 0.88,
+							"scaleZ": 0.88,
+							"rotationX": 5.7,
+							"rotationY": 90
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": 1.0833,
+							"y": -2.3567,
+							"z": 0.29,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -5.6167,
+							"y": -2.3567,
+							"z": 0.29,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "small_join",
+							"source": "content/Art/Asset/Generique/blocs/small_join.fbx",
+							"x": 4.8933,
+							"y": 3.0233,
+							"z": 0.29,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "small_join",
+							"source": "content/Art/Asset/Generique/blocs/small_join.fbx",
+							"x": 4.8933,
+							"y": -1.0367,
+							"z": 0.29,
+							"scaleY": 1.17
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.9,
+								"Mask_Offset": 0,
+								"Mask_Power": 9.39,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "object",
+					"name": "Doors",
+					"x": -1.91,
+					"y": -3.8274999999999997,
+					"children": [
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -1.53,
+							"y": 3.63
+						},
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": 1.75,
+							"y": -3.38,
+							"rotationZ": 90
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.52,
+								"Mask_Offset": 0,
+								"Mask_Power": 3,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
 				}
 			]
 		},
@@ -84,118 +513,105 @@
 				{
 					"type": "reference",
 					"name": "Past",
-					"source": "lighting/Past.prefab"
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "doors",
-			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": -3.39,
-					"y": -0.23
+					"source": "lighting/Past.prefab",
+					"children": [
+						{
+							"type": "object",
+							"name": "Columns",
+							"x": -1.2133,
+							"y": -2.4267,
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "model",
+									"name": "column01",
+									"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+									"x": 5.3533,
+									"y": 4.9133,
+									"rotationZ": 90
+								},
+								{
+									"type": "model",
+									"name": "column01",
+									"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+									"x": 4.8733,
+									"y": -2.2167,
+									"rotationZ": 90
+								},
+								{
+									"type": "model",
+									"name": "column01",
+									"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+									"x": -10.2267,
+									"y": -2.6967,
+									"rotationZ": 90
+								}
+							]
+						}
+					]
 				},
 				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": -0.07,
-					"y": -7.21,
-					"rotationZ": 90
+					"type": "object",
+					"name": "Doors",
+					"x": -1.91,
+					"y": -3.8275,
+					"children": [
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -1.745,
+							"y": 3.625
+						},
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": 1.745,
+							"y": -3.625,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "joins",
+					"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+					"x": -3.57,
+					"y": -3.51,
+					"z": 0.29,
+					"scaleY": 1.17
+				},
+				{
+					"type": "model",
+					"name": "joins",
+					"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+					"x": -3.57,
+					"y": 3.19,
+					"z": 0.29,
+					"scaleY": 1.17
+				},
+				{
+					"type": "model",
+					"name": "small_join",
+					"source": "content/Art/Asset/Generique/blocs/small_join.fbx",
+					"x": 1.81,
+					"y": -7.32,
+					"z": 0.29,
+					"scaleY": 1.17,
+					"rotationZ": -90
+				},
+				{
+					"type": "model",
+					"name": "small_join",
+					"source": "content/Art/Asset/Generique/blocs/small_join.fbx",
+					"x": -2.25,
+					"y": -7.32,
+					"z": 0.29,
+					"scaleY": 1.17,
+					"rotationZ": -90
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door/doorBack.prefab",
-			"x": -0.11,
-			"y": 7.21,
-			"rotationZ": -90
-		},
-		{
-			"type": "model",
-			"name": "Ivy01",
-			"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
-			"x": -3.41,
-			"y": -3.71,
-			"z": 3.03,
-			"scaleX": 0.6,
-			"scaleY": 0.6,
-			"scaleZ": 0.6
-		},
-		{
-			"type": "model",
-			"name": "Ivy02",
-			"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
-			"x": -2.37,
-			"y": -6.25,
-			"z": 2.56,
-			"scaleX": 0.58,
-			"scaleY": 0.58,
-			"scaleZ": 0.58
-		},
-		{
-			"type": "model",
-			"name": "Ivy02",
-			"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
-			"x": -2.37,
-			"y": -4.86,
-			"z": 5.52,
-			"scaleX": 0.63,
-			"scaleY": 0.63,
-			"scaleZ": 0.63,
-			"rotationZ": 165
-		},
-		{
-			"type": "model",
-			"name": "Grass03",
-			"source": "content/Art/Asset/Vegetation/Foliage/Grass03.fbx",
-			"x": -2.98,
-			"y": -2.95,
-			"scaleX": 0.72,
-			"scaleY": 0.72,
-			"scaleZ": 0.72
-		},
-		{
-			"type": "model",
-			"name": "Monstera01",
-			"source": "content/Art/Asset/Vegetation/Foliage/Monstera01.fbx",
-			"x": -0.8,
-			"y": -7.14,
-			"z": 1.68,
-			"rotationX": -10.2
-		},
-		{
-			"type": "model",
-			"name": "Monstera03",
-			"source": "content/Art/Asset/Vegetation/Foliage/Monstera03.fbx",
-			"x": -2.84,
-			"y": -4.4,
-			"rotationZ": -61.4
-		},
-		{
-			"type": "light",
-			"name": "light",
-			"x": 4.58,
-			"y": -2.07,
-			"z": 9.83,
-			"rotationX": 24.8,
-			"rotationY": 131.9,
-			"rotationZ": 19,
-			"kind": "Spot",
-			"color": 15653514,
-			"power": 1.89,
-			"range": 20,
-			"zNear": 0.02,
-			"angle": 20.55,
-			"fallOff": 1
 		}
 	]
 }

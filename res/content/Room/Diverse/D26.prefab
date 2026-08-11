@@ -48,16 +48,25 @@
 					"type": "reference",
 					"name": "door",
 					"source": "gameplay/door/door.prefab",
-					"x": -7.06,
-					"y": -0.03
+					"x": -7.060000000000002,
+					"y": 4.253012023405567
 				},
 				{
 					"type": "reference",
 					"name": "door_back",
 					"source": "gameplay/door/doorBack.prefab",
-					"x": 7.285,
-					"y": -0.0475,
-					"rotationZ": 180
+					"x": -0.31522854767113984,
+					"y": 7.169321273230423,
+					"rotationZ": -90.00000000000001
+				},
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 5.150247100472377,
+					"y": 7.169321273230423,
+					"z": 2.4531901277912738,
+					"rotationZ": -90.00000000000001
 				}
 			]
 		},
@@ -69,8 +78,8 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -7.57,
-					"y": 5.51,
+					"x": 5.028532331186764,
+					"y": 7.8456843439076565,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
@@ -113,6 +122,34 @@
 							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "stairs02",
+					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
+					"x": 6.0255795192774535,
+					"y": 2.013319610210388,
+					"z": 0.52,
+					"scaleX": 0.7760990627371562,
+					"scaleY": 0.7760990627371562,
+					"scaleZ": 0.7760990627371562,
+					"rotationZ": -180,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.59,
+							"y": -0.53,
+							"z": -3.29,
+							"scaleX": 9.7143,
+							"scaleY": 4.8214,
+							"scaleZ": 3.7321,
+							"rotationY": -30,
 							"rotationZ": -90
 						}
 					]

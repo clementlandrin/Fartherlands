@@ -541,12 +541,14 @@
 		{
 			"type": "reference",
 			"name": "Plains",
-			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab"
+			"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab",
+			"inGameOnly": true
 		},
 		{
 			"type": "reference",
 			"name": "Day02",
 			"source": "lighting/Exterior/Day02.prefab",
+			"inGameOnly": true,
 			"editMode": "Edit"
 		},
 		{

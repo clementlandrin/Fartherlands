@@ -772,7 +772,7 @@
 			"source": "gameplay/door/door.prefab",
 			"x": 7.11,
 			"y": -2.03,
-			"z": 9.99,
+			"z": 10.254548591103108,
 			"rotationZ": -180
 		},
 		{
@@ -1370,6 +1370,166 @@
 								}
 							]
 						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 7.5777682117039,
+					"y": -2.3232173535012395,
+					"z": 10.2062,
+					"scaleX": 2.5746384588469757,
+					"scaleY": 3.432851278462634,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": -105,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 5.127140477200446,
+					"y": -2.4586615973109915,
+					"z": 10.2062,
+					"scaleX": 2.5746384588469757,
+					"scaleY": 3.432851278462634,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": -45.78730284956356,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 4.167745526857719,
+					"y": -3.0193814229589195,
+					"z": 10.2062,
+					"scaleX": 2.574638458846976,
+					"scaleY": 3.432851278462634,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": -12.985519232856388,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 3.2656235273240486,
+					"y": -4.687032478988202,
+					"z": 10.2062,
+					"scaleX": 3.0564491094518385,
+					"scaleY": 3.4328512784626337,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": -34.158723262861095,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 1.0302295069516503,
+					"y": -6.8000925112866675,
+					"z": 10.2062,
+					"scaleX": 2.9936819017492,
+					"scaleY": 4.463073206724576,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": -70.08006947273071,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -1.1063075356465297,
+					"y": -5.709865980614454,
+					"z": 10.2062,
+					"scaleX": 1.3702924746793705,
+					"scaleY": 4.463073206724577,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": -144.4652888780256,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -1.1828364442183614,
+					"y": -4.439343455087001,
+					"z": 10.2062,
+					"scaleX": 2.4034634198909757,
+					"scaleY": 4.4630732067245775,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": -50.580829433397334,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -1.917007169950542,
+					"y": -1.7808566173756828,
+					"z": 10.2062,
+					"scaleX": 3.5534064253836743,
+					"scaleY": 4.4630732067245775,
+					"scaleZ": 2.5746384588469757,
+					"rotationZ": 32.941802465748005,
+					"kind": 0,
+					"args": [
+						0
 					]
 				}
 			]
