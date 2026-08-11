@@ -92,16 +92,7 @@
 					"name": "Foliage_cover",
 					"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
 					"props": {
-						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-						"Sharpness": 1,
-						"Offset": 1,
-						"Tiling": 0.1,
-						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-						"Mask_Tiling": 0.1,
-						"Mask_Offset": 0,
-						"Mask_Power": 1.5
+						"Gradient": "content/Art/MaterialLibrary/Textures/Vegetation/Grass_gradient_Albedo.png"
 					}
 				}
 			]
@@ -413,16 +404,7 @@
 					"name": "Foliage_cover",
 					"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
 					"props": {
-						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-						"Sharpness": 1,
-						"Offset": 1,
-						"Tiling": 0.1,
-						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-						"Mask_Tiling": 0.1,
-						"Mask_Offset": 0,
-						"Mask_Power": 1.5
+						"Gradient": "content/Art/MaterialLibrary/Textures/Vegetation/Grass_gradient_Albedo.png"
 					}
 				}
 			]
@@ -1455,16 +1437,7 @@
 							"name": "Foliage_cover",
 							"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
 							"props": {
-								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-								"Sharpness": 1,
-								"Offset": 1,
-								"Tiling": 0.1,
-								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-								"Mask_Tiling": 0.1,
-								"Mask_Offset": 0,
-								"Mask_Power": 1.5
+								"Gradient": "content/Art/MaterialLibrary/Textures/Vegetation/Grass_gradient_Albedo.png"
 							}
 						}
 					]
