@@ -733,6 +733,13 @@
 					"y": -62.5
 				},
 				{
+					"type": "reference",
+					"name": "D42",
+					"source": "content/Room/Diverse/D42.prefab",
+					"x": -52.5238488384448,
+					"y": -34.394912538856246
+				},
+				{
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
