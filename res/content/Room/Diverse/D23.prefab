@@ -13,106 +13,28 @@
 			"y": -12.3419,
 			"children": [
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"inGameOnly": true,
-					"x": 22.4113,
-					"y": 2.3819,
-					"z": 8.55,
-					"scaleX": 27.1,
-					"scaleY": 5.37,
-					"rotationY": 90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"inGameOnly": true,
-					"x": 4.7213,
-					"y": 19.8419,
-					"z": 8.55,
-					"scaleX": 27.1,
-					"scaleY": 5.37,
-					"rotationX": -90,
-					"rotationY": 90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"inGameOnly": true,
-					"x": 5.6013,
-					"y": 20.8319,
-					"z": 1.84,
-					"scaleX": 27.1,
-					"scaleY": 5.37,
-					"rotationX": -90,
-					"rotationY": 180,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"inGameOnly": true,
-					"x": 23.8613,
-					"y": 12.5419,
-					"z": 0.37,
-					"scaleX": 27.1,
-					"scaleY": 5.37,
-					"rotationX": 90,
-					"rotationZ": 90,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "model",
-					"name": "stairs02",
-					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
-					"x": 15.48,
-					"y": 10.65,
-					"z": -0.36,
-					"scaleX": 0.88,
-					"scaleY": 0.88,
-					"scaleZ": 0.88,
+					"name": "column01",
+					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+					"x": 13.0062,
+					"y": 16.9627,
+					"z": -1.2249,
+					"scaleX": 0.9252,
+					"scaleY": 0.9252,
+					"scaleZ": 0.9252,
 					"rotationZ": -90
 				},
 				{
 					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 8.9,
-					"y": 17.85,
-					"z": 1.41,
-					"scaleX": 0.8,
-					"scaleY": 0.8,
-					"scaleZ": 1.17,
-					"rotationZ": -90,
-					"children": [
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -0.11,
-							"y": 0.02,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": -90
-						}
-					]
+					"name": "column01",
+					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+					"x": 13.0062,
+					"y": 7.7036,
+					"z": -1.2249,
+					"scaleX": 0.9252,
+					"scaleY": 0.9252,
+					"scaleZ": 0.9252,
+					"rotationZ": -90
 				}
 			]
 		},
@@ -131,107 +53,1378 @@
 					"source": "content/Art/Room_template/Generic/Past/Big_room03_Past.prefab"
 				},
 				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.95,
-					"y": -0.99,
-					"z": 1.78,
-					"scaleX": 0.8,
-					"scaleY": 0.8,
-					"scaleZ": 0.8,
+					"type": "object",
+					"name": "Passerelles",
 					"children": [
+						{
+							"type": "model",
+							"name": "Ground_Debris03",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
+							"x": -1.78,
+							"y": -1.56,
+							"z": 9.55,
+							"rotationZ": 127.2,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 1,
+												"Tiling": 0.2
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris03",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
+							"x": -1.0928356393384986,
+							"y": 2.866122771044061,
+							"z": 10.797368007945469,
+							"scaleX": 0.6684168349605695,
+							"scaleY": 0.7966743820808023,
+							"scaleZ": 0.7966743820808021,
+							"rotationZ": 171.1751684177104,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 1,
+												"Tiling": 0.2
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris03",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
+							"x": -0.18386692968815432,
+							"y": 5.191731968458223,
+							"z": 10.683970916314042,
+							"scaleX": 0.44845561777278165,
+							"scaleY": 0.5345064389362233,
+							"scaleZ": 0.5345064389362232,
+							"rotationZ": -148.9598063667156,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 1,
+												"Tiling": 0.2
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris03",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
+							"x": -7.002260847116549,
+							"y": -3.6475377786919663,
+							"z": 9.55,
+							"scaleX": 0.9999999999999992,
+							"scaleY": 1.5556720292991926,
+							"rotationZ": 97.20000000000003,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 1,
+												"Tiling": 0.2
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris04",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris04.fbx",
+							"x": -2.29,
+							"y": 5.15,
+							"z": 9.55,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris04",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris04.fbx",
+							"x": 7.435871835356832,
+							"y": -6.0495732806061095,
+							"z": 9.55,
+							"scaleY": 1.1566824417314034,
+							"rotationZ": -77.61265264656902,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -1.44,
+							"y": -4.92,
+							"z": 9.55,
+							"rotationZ": 44.3,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -5.843030530188533,
+							"y": -4.92,
+							"z": 11.088994250300017,
+							"scaleX": 0.9999999999999991,
+							"scaleY": 0.9999999999999999,
+							"scaleZ": 0.9999999999999991,
+							"rotationY": 17.011844783219697,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -3.7668616075650654,
+							"y": -7.986065559956502,
+							"z": 9.55,
+							"rotationZ": -21.407186227341434,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -0.49,
+							"y": 1.58,
+							"z": 9.55,
+							"rotationZ": 44.3,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": 6.45,
+							"y": -2.29,
+							"z": 9.55,
+							"rotationZ": -16.7,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -7.48,
+							"y": 4.09,
+							"z": 9.55,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris02",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
+							"x": 1.44,
+							"y": -6.47,
+							"z": 9.55,
+							"rotationZ": -158.7,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris02",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
+							"x": 3.7,
+							"y": -3.32,
+							"z": 9.55,
+							"rotationZ": -113.7,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris02",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
+							"x": -0.12421018334676903,
+							"y": -4.96298419599014,
+							"z": 11.024162191208308,
+							"scaleX": 0.7806260075531185,
+							"scaleY": 0.7806260075531185,
+							"scaleZ": 0.7806260075531185,
+							"rotationZ": -79.91776181376989,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 7.79006769949271,
+							"y": -6.663088020167926,
+							"z": 10.125763489352636,
+							"scaleX": 5.558687018238683,
+							"scaleY": 5.779420986232926,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 6.718364999984422,
+							"y": -3.949072522322647,
+							"z": 10.125763489352636,
+							"scaleX": 5.558687018238684,
+							"scaleY": 4.574005090238279,
+							"rotationZ": -41.130200509101684,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 3.2407081152182573,
+							"y": -4.453237056341381,
+							"z": 10.125763489352636,
+							"scaleX": 7.215868881275761,
+							"scaleY": 2.6935350720350892,
+							"rotationZ": -120.61155933533796,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 1.6453860762773564,
+							"y": -6.39568830620192,
+							"z": 10.125763489352636,
+							"scaleX": 4.237744026863969,
+							"scaleY": 2.6935350720350892,
+							"rotationZ": 179.0550001418187,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -1.072531402956821,
+							"y": -4.250472328611435,
+							"z": 10.125763489352636,
+							"scaleX": 4.237744026863971,
+							"scaleY": 3.6683879972328612,
+							"rotationZ": -95.02731302687366,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -2.0989940565302687,
+							"y": -1.4484675326363878,
+							"z": 10.125763489352636,
+							"scaleX": 6.141136215015402,
+							"scaleY": 3.1340538066753085,
+							"rotationZ": -55.79482633469751,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -1.5609539062830622,
+							"y": 2.1033947627036045,
+							"z": 10.125763489352636,
+							"scaleX": 6.141136215015402,
+							"scaleY": 3.8955047990806486,
+							"rotationZ": -111.64852778128021,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -1.5365495684945787,
+							"y": 5.5026719016248355,
+							"z": 10.125763489352636,
+							"scaleX": 5.0597060876160445,
+							"scaleY": 4.629881071062382,
+							"scaleZ": 1.0695536915831214,
+							"rotationZ": 174.02167703970557,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -5.097444106383998,
+							"y": 4.526738768337321,
+							"z": 10.125763489352636,
+							"scaleX": 5.059706087616046,
+							"scaleY": 2.5376211855151762,
+							"scaleZ": 1.0695536915831214,
+							"rotationZ": -171.16140655023617,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -2.303313323013175,
+							"y": 5.8717933752407845,
+							"z": 10.125763489352636,
+							"scaleX": 5.059706087616046,
+							"scaleY": 2.5376211855151762,
+							"scaleZ": 1.0695536915831214,
+							"rotationZ": 177.31704945153155,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -0.4480888338045635,
+							"y": 2.5129433116652793,
+							"z": 10.125763489352636,
+							"scaleX": 3.556152970543987,
+							"scaleY": 2.255773276799766,
+							"scaleZ": 0.579070850415108,
+							"rotationZ": 144.80115156750017,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.11,
-							"y": 0.02,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": -90
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.85,
-					"y": -7.11,
-					"z": -0.53,
-					"scaleX": 0.8,
-					"scaleY": 0.8,
-					"scaleZ": 0.8,
-					"rotationZ": 180,
-					"children": [
+							"x": -1.0171880300411527,
+							"y": 2.5942984639250386,
+							"z": 9.858293625262894,
+							"scaleX": 5.116878223476713,
+							"scaleY": 2.8186414179845536,
+							"scaleZ": 2.449351712785474,
+							"rotationZ": -16.74026519431811
+						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": 0.02,
-							"y": 0.02,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": -90
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.83,
-					"y": -7.21,
-					"z": 1.87,
-					"scaleX": 0.8,
-					"scaleY": 0.8,
-					"scaleZ": 0.8,
-					"children": [
+							"x": -0.019178016850587926,
+							"y": -5.566238028117271,
+							"z": 9.858293625262894,
+							"scaleX": 5.1168782234767125,
+							"scaleY": 2.8186414179845527,
+							"scaleZ": 2.449351712785474,
+							"rotationZ": -85.16796633690845
+						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.11,
-							"y": 0.02,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": -90
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -6.92,
-					"y": -0.05,
-					"z": -0.59,
-					"scaleX": 0.8,
-					"scaleY": 0.8,
-					"scaleZ": 0.8,
-					"children": [
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -0.11,
-							"y": 0.02,
-							"z": -1.97,
-							"scaleX": 8.91,
-							"scaleY": 6.13,
-							"scaleZ": 3.43,
-							"rotationZ": -90
+							"x": -0.2607684781725257,
+							"y": 5.067192619646383,
+							"z": 10.398822963390392,
+							"scaleX": 2.9954350494177113,
+							"scaleY": 2.091570337734321,
+							"scaleZ": 1.9559961078266028,
+							"rotationZ": 17.518463794290593
 						}
 					]
 				}
@@ -252,491 +1445,902 @@
 					"source": "content/Art/Room_template/Generic/Present/Room_Dark.prefab"
 				},
 				{
+					"type": "light",
+					"name": "light",
+					"x": -3.8707,
+					"y": 4.4118,
+					"z": 36.7358,
+					"scaleX": 40,
+					"scaleY": 7.9855,
+					"scaleZ": 7.9855,
+					"rotationY": 84.8727,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 2.58,
+					"range": 40,
+					"zNear": 0.02,
+					"angle": 22.58,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
+				},
+				{
+					"type": "light",
+					"name": "light",
+					"x": -2.7383,
+					"y": -4.7244,
+					"z": 36.8374,
+					"scaleX": 40,
+					"scaleY": 7.9855,
+					"scaleZ": 7.9855,
+					"rotationY": 84.8727,
+					"kind": "Spot",
+					"color": 16775900,
+					"power": 2.58,
+					"range": 40,
+					"zNear": 0.02,
+					"angle": 22.58,
+					"fallOff": 1,
+					"cookiePath": "content/Art/MaterialLibrary/Textures/Utilities/coockie_light.png",
+					"shadows": {
+						"mode": "Mixed",
+						"size": 512,
+						"radius": 0,
+						"quality": 1,
+						"bias": 0.1,
+						"samplingMode": {
+							"kind": "PCF",
+							"quality": 2,
+							"scale": 1.88,
+							"bias": 0.1
+						}
+					}
+				},
+				{
 					"type": "object",
-					"name": "Debris",
-					"x": -4.99,
-					"y": -1.89,
-					"z": 4.6,
-					"rotationX": -15,
+					"name": "Passerelles",
 					"children": [
 						{
 							"type": "model",
-							"name": "Debris04",
-							"source": "content/Art/Asset/Debris/Debris04.fbx",
-							"x": -2.46,
-							"y": 1.55,
-							"z": -0.54,
-							"scaleX": 2.97,
-							"scaleY": 2.97,
-							"scaleZ": 2.97,
-							"rotationX": 15
-						},
-						{
-							"type": "model",
-							"name": "Debris04",
-							"source": "content/Art/Asset/Debris/Debris04.fbx",
-							"x": -1.4209,
-							"y": 1.5518,
-							"z": 0.2109,
-							"scaleX": 1.53,
-							"scaleY": 1.53,
-							"scaleZ": 1.53,
-							"rotationX": 8.6,
-							"rotationY": 6.9,
-							"rotationZ": -74.9
-						},
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -1.18,
-							"y": -0.6504,
-							"z": -1.282,
-							"scaleX": 11.86,
-							"scaleY": 4.9,
-							"scaleZ": 2.74,
-							"rotationY": 15,
-							"rotationZ": -90
-						},
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -0.29,
-							"y": -0.15,
-							"z": -2.18,
-							"scaleX": 11.86,
-							"scaleY": 7.22,
-							"scaleZ": 2.74,
-							"rotationX": -75.9,
-							"rotationY": 17,
-							"rotationZ": -94.4
-						},
-						{
-							"type": "model",
-							"name": "dalle_ground_path02",
-							"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
-							"x": -0.9109,
-							"y": -3.5882,
-							"z": -1.3191,
-							"rotationZ": -26.3
-						},
-						{
-							"type": "model",
-							"name": "dalle_ground_path02",
-							"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
-							"x": -1.3609,
-							"y": 1.7318,
-							"z": 0.8709,
-							"rotationX": 13.2,
-							"rotationY": -2.6,
-							"rotationZ": -0.7
-						},
-						{
-							"type": "model",
-							"name": "Debris02",
-							"source": "content/Art/Asset/Debris/Debris02.fbx",
-							"x": -0.45,
-							"y": -0.96,
-							"z": -2.11,
-							"scaleX": 3.75,
-							"scaleY": 3.75,
-							"scaleZ": 3.75,
-							"rotationX": 20.1,
-							"rotationY": 40.1,
-							"rotationZ": 6.4
-						},
-						{
-							"type": "model",
-							"name": "Debris01",
-							"source": "content/Art/Asset/Debris/Debris01.fbx",
-							"x": -1.39,
-							"y": -3.48,
-							"z": -1.48,
-							"scaleX": 2.17,
-							"scaleY": 2.17,
-							"scaleZ": 2.17
-						},
-						{
-							"type": "model",
-							"name": "Debris03",
-							"source": "content/Art/Asset/Debris/Debris03.fbx",
-							"x": -0.91,
-							"y": 2.58,
-							"z": 0.17,
-							"scaleX": 1.53,
-							"scaleY": 1.53,
-							"scaleZ": 1.53,
-							"rotationZ": -75
-						},
-						{
-							"type": "object",
-							"name": "Debris",
-							"x": 2.5,
-							"y": 0.1223,
-							"z": -4.2429,
-							"rotationX": 6.0585,
-							"rotationY": 33.5439,
-							"rotationZ": 13.7329,
+							"name": "Ground_Debris04",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris04.fbx",
+							"x": 8.390219871724414,
+							"y": -6.406368991033789,
+							"z": 9.55,
+							"scaleY": 1.1566824417314034,
+							"rotationZ": -77.61265264656902,
 							"children": [
 								{
-									"type": "model",
-									"name": "Debris04",
-									"source": "content/Art/Asset/Debris/Debris04.fbx",
-									"x": -2.46,
-									"y": 1.55,
-									"z": -0.54,
-									"scaleX": 2.97,
-									"scaleY": 2.97,
-									"scaleZ": 2.97,
-									"rotationX": 15
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
 								},
 								{
-									"type": "model",
-									"name": "Debris04",
-									"source": "content/Art/Asset/Debris/Debris04.fbx",
-									"x": -1.4209,
-									"y": 1.5518,
-									"z": 0.2109,
-									"scaleX": 1.53,
-									"scaleY": 1.53,
-									"scaleZ": 1.53,
-									"rotationX": 8.6,
-									"rotationY": 6.9,
-									"rotationZ": -74.9
-								},
-								{
-									"type": "model",
-									"name": "dalle_ground_path02",
-									"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
-									"x": -0.9109,
-									"y": -3.5882,
-									"z": -1.3191,
-									"rotationZ": -26.3
-								},
-								{
-									"type": "model",
-									"name": "dalle_ground_path02",
-									"source": "content/Art/Asset/Generique/Ground/dalle_ground_path02.fbx",
-									"x": -1.3609,
-									"y": 1.7318,
-									"z": 0.8709,
-									"rotationX": 13.2,
-									"rotationY": -2.6,
-									"rotationZ": -0.7
-								},
-								{
-									"type": "model",
-									"name": "Debris02",
-									"source": "content/Art/Asset/Debris/Debris02.fbx",
-									"x": -2.69,
-									"y": -1.57,
-									"z": -0.81,
-									"scaleX": 3.75,
-									"scaleY": 3.75,
-									"scaleZ": 3.75,
-									"rotationX": 4.7,
-									"rotationY": 9.2,
-									"rotationZ": 0.7
-								},
-								{
-									"type": "model",
-									"name": "Debris01",
-									"source": "content/Art/Asset/Debris/Debris01.fbx",
-									"x": -1.39,
-									"y": -3.48,
-									"z": -1.48,
-									"scaleX": 2.17,
-									"scaleY": 2.17,
-									"scaleZ": 2.17
-								},
-								{
-									"type": "model",
-									"name": "Debris03",
-									"source": "content/Art/Asset/Debris/Debris03.fbx",
-									"x": -0.91,
-									"y": 2.58,
-									"z": 0.17,
-									"scaleX": 1.53,
-									"scaleY": 1.53,
-									"scaleZ": 1.53,
-									"rotationZ": -75
-								},
-								{
-									"type": "model",
-									"name": "Debris02",
-									"source": "content/Art/Asset/Debris/Debris02.fbx",
-									"x": -1.81,
-									"y": 0.69,
-									"z": -0.33,
-									"scaleX": 2.61,
-									"scaleY": 2.61,
-									"scaleZ": 2.61,
-									"rotationX": 16.2
-								},
-								{
-									"type": "model",
-									"name": "Debris02",
-									"source": "content/Art/Asset/Debris/Debris02.fbx",
-									"x": -1.74,
-									"y": 3.58,
-									"z": 1.47,
-									"scaleX": 2.61,
-									"scaleY": 2.61,
-									"scaleZ": 2.61,
-									"rotationX": 17.3,
-									"rotationY": 20,
-									"rotationZ": 6.1
-								},
-								{
-									"type": "model",
-									"name": "cube_stone01",
-									"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
-									"x": -1.0309,
-									"y": 1.8118,
-									"z": 0.7509,
-									"rotationX": 30,
-									"rotationY": 15
-								},
-								{
-									"type": "model",
-									"name": "cube_stone02",
-									"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
-									"x": -2.1309,
-									"y": -1.2182,
-									"z": -0.0091,
-									"rotationX": -24,
-									"rotationY": -18.6,
-									"rotationZ": -35.7
-								},
-								{
-									"type": "model",
-									"name": "beam01",
-									"source": "content/Art/Asset/Generique/blocs/beam01.fbx",
-									"x": -2.2509,
-									"y": 1.9718,
-									"z": 0.5509,
-									"scaleX": 0.71,
-									"scaleY": 0.71,
-									"scaleZ": 0.71,
-									"rotationX": 37.3
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
 								}
 							]
 						},
 						{
 							"type": "model",
-							"name": "basic_bloc02",
-							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-							"x": -1.9813,
-							"y": 2.0335,
-							"z": -0.8735,
-							"scaleX": 0.8,
-							"scaleY": 0.8,
-							"scaleZ": 0.8,
-							"rotationY": 31.8,
-							"rotationZ": -90,
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -1.3939623699286252,
+							"y": -4.8399623110988355,
+							"z": 9.550000000000015,
+							"rotationZ": 44.29999999999999,
 							"children": [
 								{
-									"type": "reference",
-									"name": "Box_Navmesh",
-									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-									"inGameOnly": true,
-									"x": -0.11,
-									"y": 0.02,
-									"z": -1.97,
-									"scaleX": 8.91,
-									"scaleY": 6.13,
-									"scaleZ": 3.43,
-									"rotationZ": 180
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
 								}
 							]
 						},
 						{
 							"type": "model",
-							"name": "basic_bloc02",
-							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-							"x": 0.84,
-							"y": -4.75,
-							"z": -4.52,
-							"scaleX": 0.8,
-							"scaleY": 0.8,
-							"scaleZ": 0.8,
-							"rotationX": -62.8,
-							"rotationY": -11,
-							"rotationZ": -90,
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -0.9389184075372782,
+							"y": -3.610624111516736,
+							"z": 9.55,
+							"rotationZ": 120.28670761987372,
 							"children": [
 								{
-									"type": "reference",
-									"name": "Box_Navmesh",
-									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-									"inGameOnly": true,
-									"x": -0.11,
-									"y": 0.02,
-									"z": -1.97,
-									"scaleX": 8.91,
-									"scaleY": 6.13,
-									"scaleZ": 3.43,
-									"rotationZ": 180
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
 								}
 							]
 						},
 						{
 							"type": "model",
-							"name": "basic_bloc02",
-							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-							"x": -1.9813,
-							"y": -4.7131,
-							"z": -2.2774,
-							"scaleX": 0.8,
-							"scaleY": 0.8,
-							"scaleZ": 0.8,
-							"rotationY": -2.7,
-							"rotationZ": -90,
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -3.7668616075650654,
+							"y": -7.986065559956502,
+							"z": 9.55,
+							"rotationZ": -21.407186227341434,
 							"children": [
 								{
-									"type": "reference",
-									"name": "Box_Navmesh",
-									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-									"inGameOnly": true,
-									"x": -0.11,
-									"y": 0.02,
-									"z": -1.97,
-									"scaleX": 8.91,
-									"scaleY": 6.13,
-									"scaleZ": 3.43,
-									"rotationZ": 180
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
 								}
 							]
 						},
 						{
 							"type": "model",
-							"name": "basic_bloc02",
-							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-							"x": 0.5087,
-							"y": 0.399,
-							"z": -3.9307,
-							"scaleX": 0.8,
-							"scaleY": 0.8,
-							"scaleZ": 0.8,
-							"rotationX": -73.0777,
-							"rotationY": 22.648,
-							"rotationZ": -111.3875,
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -0.967688696570956,
+							"y": 2.4586059940115406,
+							"z": 9.55,
+							"rotationZ": 44.29999999999999,
 							"children": [
 								{
-									"type": "reference",
-									"name": "Box_Navmesh",
-									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-									"inGameOnly": true,
-									"x": -0.11,
-									"y": 0.02,
-									"z": -1.97,
-									"scaleX": 8.91,
-									"scaleY": 6.13,
-									"scaleZ": 3.43,
-									"rotationZ": 180
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
 								}
 							]
 						},
 						{
 							"type": "model",
-							"name": "Debris02",
-							"source": "content/Art/Asset/Debris/Debris02.fbx",
-							"x": -1.81,
-							"y": 0.69,
-							"z": -0.33,
-							"scaleX": 2.61,
-							"scaleY": 2.61,
-							"scaleZ": 2.61,
-							"rotationX": 16.2
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -1.271153814815497,
+							"y": 4.496420923260606,
+							"z": 9.55,
+							"rotationZ": 126.08246917253976,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
 						},
 						{
 							"type": "model",
-							"name": "Debris02",
-							"source": "content/Art/Asset/Debris/Debris02.fbx",
-							"x": -1.74,
-							"y": 3.58,
-							"z": 1.47,
-							"scaleX": 2.61,
-							"scaleY": 2.61,
-							"scaleZ": 2.61,
-							"rotationX": 17.3,
-							"rotationY": 20,
-							"rotationZ": 6.1
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": 6.45,
+							"y": -2.29,
+							"z": 9.55,
+							"rotationZ": -16.7,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
 						},
 						{
 							"type": "model",
-							"name": "cube_stone01",
-							"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
-							"x": -1.0309,
-							"y": 1.8118,
-							"z": 0.7509,
-							"rotationX": 30,
-							"rotationY": 15
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -7.48,
+							"y": 4.09,
+							"z": 9.55,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
 						},
 						{
 							"type": "model",
-							"name": "cube_stone02",
-							"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
-							"x": -2.1309,
-							"y": -1.2182,
-							"z": -0.0091,
-							"rotationX": -24,
-							"rotationY": -18.6,
-							"rotationZ": -35.7
+							"name": "Ground_Debris02",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
+							"x": 1.44,
+							"y": -6.47,
+							"z": 9.55,
+							"rotationZ": -158.7,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
 						},
 						{
-							"type": "model",
-							"name": "cube_stone02",
-							"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
-							"x": 2.03,
-							"y": -3.6,
-							"z": -5.35,
-							"rotationX": -0.5,
-							"rotationY": -29.6,
-							"rotationZ": -140.3
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 1.044427912719485,
+							"y": -7.507181705927033,
+							"z": 10.125763489352636,
+							"scaleX": 5.084393724650067,
+							"scaleY": 2.6935350720350892,
+							"rotationZ": 179.38844066466208,
+							"kind": 0,
+							"args": [
+								0
+							]
 						},
 						{
-							"type": "model",
-							"name": "beam01",
-							"source": "content/Art/Asset/Generique/blocs/beam01.fbx",
-							"x": -2.2509,
-							"y": 1.9718,
-							"z": 0.5509,
-							"scaleX": 0.71,
-							"scaleY": 0.71,
-							"scaleZ": 0.71,
-							"rotationX": 37.3
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 8.336954571209484,
+							"y": -6.815843779474522,
+							"z": 10.125763489352636,
+							"scaleX": 5.084393724650067,
+							"scaleY": 7.617786976046791,
+							"rotationZ": 179.38844066466208,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 7.153092001672376,
+							"y": -2.8475679851006235,
+							"z": 10.125763489352636,
+							"scaleX": 2.796610546560107,
+							"scaleY": 4.864367493351294,
+							"rotationZ": -125.14698486952807,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -1.022212156921815,
+							"y": 3.954041157210527,
+							"z": 10.125763489352636,
+							"scaleX": 2.796610546560107,
+							"scaleY": 4.864367493351293,
+							"rotationZ": -146.89188174299645,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -0.9835433199677566,
+							"y": 2.66885527472357,
+							"z": 10.125763489352636,
+							"scaleX": 2.7966105465601068,
+							"scaleY": 4.006145504901525,
+							"rotationZ": 128.9903952545414,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -7.41867845604606,
+							"y": 4.0831365384583975,
+							"z": 10.125763489352636,
+							"scaleX": 2.7966105465601063,
+							"scaleY": 4.006145504901526,
+							"rotationZ": 87.37508922966758,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -1.2103513484556008,
+							"y": -4.620242963965803,
+							"z": 10.125763489352636,
+							"scaleX": 4.1792899430925186,
+							"scaleY": 2.6935350720350906,
+							"rotationZ": -141.00067193792907,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -1.1549637148120375,
+							"y": -3.251925988051033,
+							"z": 10.125763489352636,
+							"scaleX": 3.3055041225588178,
+							"scaleY": 2.693535072035092,
+							"rotationZ": -61.55440443964103,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": -0.9027110763134945,
+							"y": -5.8800940719995385,
+							"z": 10.125763489352636,
+							"scaleX": 3.3055041225588178,
+							"scaleY": 1.6915361557333919,
+							"rotationZ": -61.55440443964103,
+							"kind": 0,
+							"args": [
+								0
+							]
 						}
 					]
-				},
-				{
-					"type": "light",
-					"name": "light",
-					"y": 4.97,
-					"z": 18.69,
-					"rotationY": 90,
-					"kind": "Spot",
-					"power": 2.35,
-					"range": 10,
-					"zNear": 0.02,
-					"angle": 25.27,
-					"fallOff": 1
-				},
-				{
-					"type": "light",
-					"name": "light",
-					"x": 3.7,
-					"y": -4.2,
-					"z": 18.69,
-					"rotationY": 90,
-					"kind": "Spot",
-					"power": 3.26,
-					"range": 10,
-					"zNear": 0.02,
-					"angle": 25.27,
-					"fallOff": 1
 				}
 			]
 		},
@@ -762,9 +2366,9 @@
 			"type": "reference",
 			"name": "door",
 			"source": "gameplay/door/door.prefab",
-			"x": -7.54,
-			"y": 3.99,
-			"z": 9.99
+			"x": -7.442339803306116,
+			"y": 3.934404511422171,
+			"z": 10.192117182799718
 		},
 		{
 			"type": "reference",
@@ -785,754 +2389,6 @@
 			"scaleZ": 13.57,
 			"fogDensity": 0.1,
 			"color": 16769505
-		},
-		{
-			"type": "object",
-			"name": "Passerelles",
-			"children": [
-				{
-					"type": "model",
-					"name": "Ground_Debris03",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
-					"x": -1.78,
-					"y": -1.56,
-					"z": 9.55,
-					"rotationZ": 127.2,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 1,
-										"Tiling": 0.2
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "Ground_Debris04",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris04.fbx",
-					"x": -2.29,
-					"y": 5.15,
-					"z": 9.55,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "Ground_Debris01",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-					"x": -1.44,
-					"y": -4.92,
-					"z": 9.55,
-					"rotationZ": 44.3,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "Ground_Debris01",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-					"x": -0.49,
-					"y": 1.58,
-					"z": 9.55,
-					"rotationZ": 44.3,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "Ground_Debris01",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-					"x": 6.45,
-					"y": -2.29,
-					"z": 9.55,
-					"rotationZ": -16.7,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "Ground_Debris01",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-					"x": -7.48,
-					"y": 4.09,
-					"z": 9.55,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "Ground_Debris02",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
-					"x": 1.44,
-					"y": -6.47,
-					"z": 9.55,
-					"rotationZ": -158.7,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "model",
-					"name": "Ground_Debris02",
-					"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
-					"x": 3.7,
-					"y": -3.32,
-					"z": 9.55,
-					"rotationZ": -113.7,
-					"children": [
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "02 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						},
-						{
-							"type": "material",
-							"name": "material",
-							"props": {
-								"Fatherlands": {
-									"mode": "PBR",
-									"blend": "None",
-									"shadows": true,
-									"culling": "Back",
-									"depthTest": "Less",
-									"colorMask": 15,
-									"enableStencil": false
-								}
-							},
-							"materialName": "01 - Default",
-							"children": [
-								{
-									"type": "shader",
-									"name": "Triplanar",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Wall/Diverse/Module/Pattern01_Past_Normal.png",
-										"Sharpness": 1,
-										"Offset": 0.73,
-										"Tiling": 0.15
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": 7.5777682117039,
-					"y": -2.3232173535012395,
-					"z": 10.2062,
-					"scaleX": 2.5746384588469757,
-					"scaleY": 3.432851278462634,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": -105,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": 5.127140477200446,
-					"y": -2.4586615973109915,
-					"z": 10.2062,
-					"scaleX": 2.5746384588469757,
-					"scaleY": 3.432851278462634,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": -45.78730284956356,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": 4.167745526857719,
-					"y": -3.0193814229589195,
-					"z": 10.2062,
-					"scaleX": 2.574638458846976,
-					"scaleY": 3.432851278462634,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": -12.985519232856388,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": 3.2656235273240486,
-					"y": -4.687032478988202,
-					"z": 10.2062,
-					"scaleX": 3.0564491094518385,
-					"scaleY": 3.4328512784626337,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": -34.158723262861095,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": 1.0302295069516503,
-					"y": -6.8000925112866675,
-					"z": 10.2062,
-					"scaleX": 2.9936819017492,
-					"scaleY": 4.463073206724576,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": -70.08006947273071,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -1.1063075356465297,
-					"y": -5.709865980614454,
-					"z": 10.2062,
-					"scaleX": 1.3702924746793705,
-					"scaleY": 4.463073206724577,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": -144.4652888780256,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -1.1828364442183614,
-					"y": -4.439343455087001,
-					"z": 10.2062,
-					"scaleX": 2.4034634198909757,
-					"scaleY": 4.4630732067245775,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": -50.580829433397334,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"x": -1.917007169950542,
-					"y": -1.7808566173756828,
-					"z": 10.2062,
-					"scaleX": 3.5534064253836743,
-					"scaleY": 4.4630732067245775,
-					"scaleZ": 2.5746384588469757,
-					"rotationZ": 32.941802465748005,
-					"kind": 0,
-					"args": [
-						0
-					]
-				}
-			]
 		}
 	]
 }

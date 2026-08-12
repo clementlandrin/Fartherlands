@@ -14,12 +14,12 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 5.49,
-					"y": -2.15,
-					"z": 0.91,
-					"scaleX": 0.61,
-					"scaleY": 0.61,
-					"scaleZ": 0.61,
+					"x": -6.716535270081976,
+					"y": 2.1642570385758275,
+					"z": 1.3054632879346642,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
 					"rotationZ": 90,
 					"children": [
 						{
@@ -41,23 +41,23 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 0.02,
-					"y": -2.15,
-					"z": 0.91,
-					"scaleX": 0.61,
-					"scaleY": 0.61,
-					"scaleZ": 0.61,
-					"rotationZ": -90,
+					"x": 7.174701216833424,
+					"y": -2.5335680575537753,
+					"z": 1.3054632879346642,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.02,
+							"x": -0.11,
 							"y": 0.02,
 							"z": -1.97,
-							"scaleX": 9.43,
+							"scaleX": 8.91,
 							"scaleY": 6.13,
 							"scaleZ": 3.43,
 							"rotationZ": 90
@@ -68,12 +68,39 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -5.42,
-					"y": -2.15,
-					"z": 0.91,
-					"scaleX": 0.61,
-					"scaleY": 0.61,
-					"scaleZ": 0.61,
+					"x": 7.174701216833426,
+					"y": 2.1642570385758244,
+					"z": 1.3054632879346642,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -6.716535270081978,
+					"y": -2.5335680575537722,
+					"z": 1.3054632879346642,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
 					"rotationZ": 90,
 					"children": [
 						{
@@ -101,27 +128,29 @@
 			"children": [
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": 5.39,
-					"y": -3.59,
-					"z": 1.74,
-					"rotationZ": 90
+					"name": "doorBack",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 0.07583103913051595,
+					"y": 3.2191255294549492,
+					"rotationZ": -89.99999999999999
 				},
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": -6.92,
-					"y": -2.51,
-					"z": 1.74
+					"name": "doorBack",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 7.257229109810796,
+					"y": -0.1415046658139658,
+					"z": 2.5378678743871586,
+					"rotationZ": -179.99999999999997
 				},
 				{
 					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": -6.92,
-					"y": 1.74
+					"name": "doorBack",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": -5.187970472010625,
+					"y": 3.179146719803371,
+					"z": 2.4875352484368785,
+					"rotationZ": -89.99999999999999
 				}
 			]
 		},
@@ -138,6 +167,137 @@
 					"type": "reference",
 					"name": "Medium_room_Left_Present",
 					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+				},
+				{
+					"type": "object",
+					"name": "Debris",
+					"x": -0.19532742129161332,
+					"y": -0.3160914521512457,
+					"z": 0.55,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "model",
+							"name": "Debris04",
+							"source": "content/Art/Asset/Debris/Debris04.fbx",
+							"x": 0.3556,
+							"y": 2.4722,
+							"z": -0.52,
+							"scaleX": 2.01,
+							"scaleY": 2.01,
+							"scaleZ": 2.01,
+							"rotationZ": -22.9
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 0.06,
+							"y": 0.34,
+							"z": -0.92,
+							"scaleX": 4.26,
+							"scaleY": 8.43,
+							"scaleZ": 5.35,
+							"rotationZ": 180
+						},
+						{
+							"type": "model",
+							"name": "Debris04",
+							"source": "content/Art/Asset/Debris/Debris04.fbx",
+							"x": 0.1356,
+							"y": 3.0622,
+							"z": 0.24,
+							"scaleX": 2.01,
+							"scaleY": 2.01,
+							"scaleZ": 2.01,
+							"rotationX": 45.1,
+							"rotationY": 5.1,
+							"rotationZ": -5.1
+						},
+						{
+							"type": "model",
+							"name": "Debris04",
+							"source": "content/Art/Asset/Debris/Debris04.fbx",
+							"x": 0.1356,
+							"y": -3.0678,
+							"z": 0.97,
+							"scaleX": 2.01,
+							"scaleY": 2.01,
+							"scaleZ": 2.01,
+							"rotationX": 4.1,
+							"rotationY": -29.4,
+							"rotationZ": -98.3
+						},
+						{
+							"type": "model",
+							"name": "Debris03",
+							"source": "content/Art/Asset/Debris/Debris03.fbx",
+							"x": 0.0956,
+							"y": -1.4878,
+							"z": -0.76,
+							"scaleX": 2.51,
+							"scaleY": 2.51,
+							"scaleZ": 2.51,
+							"rotationZ": -55.6
+						},
+						{
+							"type": "model",
+							"name": "Debris02",
+							"source": "content/Art/Asset/Debris/Debris02.fbx",
+							"x": -1.4944,
+							"y": 0.4222,
+							"z": -0.81,
+							"scaleX": 2.32,
+							"scaleY": 2.32,
+							"scaleZ": 2.32,
+							"rotationZ": -28.6
+						},
+						{
+							"type": "model",
+							"name": "wall_deco01",
+							"source": "content/Art/Asset/Generique/deco/wall_deco01.fbx",
+							"x": 0.8956,
+							"y": 1.4422,
+							"z": 0.05,
+							"rotationX": 90,
+							"rotationY": -27.7,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "wall_deco02",
+							"source": "content/Art/Asset/Generique/deco/wall_deco02.fbx",
+							"x": -0.8244,
+							"y": -0.7478,
+							"z": -0.08,
+							"rotationX": -119.1,
+							"rotationY": 12.2,
+							"rotationZ": 83.7
+						},
+						{
+							"type": "model",
+							"name": "cube_stone01",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+							"x": 0.7256,
+							"y": -0.4178,
+							"z": -0.11,
+							"rotationX": -44.9953,
+							"rotationY": 36.074,
+							"rotationZ": -15.3619
+						},
+						{
+							"type": "model",
+							"name": "cube_stone01",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+							"x": -0.0244,
+							"y": -1.6778,
+							"z": 1.02,
+							"rotationX": -45,
+							"rotationY": 36.1,
+							"rotationZ": -63.8
+						}
+					]
 				}
 			]
 		},
@@ -154,6 +314,55 @@
 					"type": "reference",
 					"name": "Medium_room_Left_Past",
 					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+				},
+				{
+					"type": "model",
+					"name": "little_bridge",
+					"source": "content/Art/Asset/Generique/bridges/little_bridge.fbx",
+					"x": 0.4646725787083864,
+					"y": -0.23609145215124558,
+					"z": 2.19,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.03,
+							"y": -0.02,
+							"z": -0.55,
+							"scaleX": 1.93,
+							"scaleY": 7.98,
+							"scaleZ": 0.77,
+							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 0.02,
+							"y": 0.82,
+							"z": 0.1,
+							"scaleX": 0.23,
+							"scaleY": 6.79,
+							"scaleZ": 0.77,
+							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 0.02,
+							"y": -0.83,
+							"z": 0.1,
+							"scaleX": 0.23,
+							"scaleY": 6.79,
+							"scaleZ": 0.77,
+							"rotationZ": -90
+						}
+					]
 				}
 			]
 		}
