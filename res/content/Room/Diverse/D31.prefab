@@ -13,8 +13,6 @@
 		{
 			"type": "object",
 			"name": "doors",
-			"x": -0.095,
-			"y": 0.0275,
 			"children": [
 				{
 					"type": "reference",
@@ -23,6 +21,21 @@
 					"x": 2.4485678175274685,
 					"y": -3.6777071858073214,
 					"rotationZ": 89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 7.325,
+					"y": 0.0825,
+					"rotationZ": 180
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -7.33376247620329,
+					"y": 0.04064616772210883
 				}
 			]
 		},
@@ -58,23 +71,6 @@
 					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door/doorBack.prefab",
-			"enabled": false,
-			"x": -0.35,
-			"y": 3.52,
-			"rotationZ": 179.8
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door/doorBack.prefab",
-			"x": 7.23,
-			"y": 0.11,
-			"rotationZ": 180
 		}
 	]
 }

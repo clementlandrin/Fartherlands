@@ -14,21 +14,22 @@
 			},
 			"children": [
 				{
+					"type": "polygon",
+					"name": "trigger",
+					"x": -0.1155,
+					"z": 0.6581,
+					"scaleX": 1.5091,
+					"scaleZ": 2.9377,
+					"kind": 5,
+					"args": []
+				},
+				{
 					"type": "model",
 					"name": "Model",
 					"source": "content/Art/Asset/Generique/Door/Door_back.fbx",
 					"scaleX": 0.3,
 					"scaleY": 0.3,
 					"scaleZ": 0.3
-				},
-				{
-					"type": "polygon",
-					"name": "trigger",
-					"y": 0.03,
-					"z": 0.89,
-					"scaleZ": 1.81,
-					"kind": 5,
-					"args": []
 				},
 				{
 					"type": "model",

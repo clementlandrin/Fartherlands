@@ -641,8 +641,7 @@
 					"name": "D26",
 					"source": "content/Room/Diverse/D26.prefab",
 					"x": -32.5,
-					"y": -66.5,
-					"editMode": "Edit"
+					"y": -66.5
 				},
 				{
 					"type": "reference",

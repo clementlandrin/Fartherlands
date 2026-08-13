@@ -22,15 +22,6 @@
 					"scaleZ": 0.3
 				},
 				{
-					"type": "polygon",
-					"name": "trigger",
-					"y": 0.03,
-					"z": 0.89,
-					"scaleZ": 1.81,
-					"kind": 5,
-					"args": []
-				},
-				{
 					"type": "model",
 					"name": "blocker",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
@@ -98,6 +89,16 @@
 							"y": -1.0610435563893685
 						}
 					]
+				},
+				{
+					"type": "polygon",
+					"name": "trigger",
+					"x": -0.11546819497876148,
+					"z": 0.6581170654796367,
+					"scaleX": 1.5091402414129487,
+					"scaleZ": 2.93774040308428,
+					"kind": 5,
+					"args": []
 				}
 			]
 		},

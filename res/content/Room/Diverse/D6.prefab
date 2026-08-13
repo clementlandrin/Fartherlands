@@ -14,17 +14,7 @@
 			"type": "object",
 			"name": "doors",
 			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": 0.31,
-					"y": -3.59,
-					"rotationZ": -90
-				}
-			]
+			"y": 0.0275
 		},
 		{
 			"type": "object",
@@ -60,7 +50,8 @@
 				{
 					"type": "reference",
 					"name": "Room_Dark_Small",
-					"source": "content/Art/Room_template/Generic/Present/Room_Dark_Small.prefab"
+					"source": "content/Art/Room_template/Generic/Present/Room_Dark_Small.prefab",
+					"y": 0.030672826329166014
 				}
 			]
 		},
@@ -68,17 +59,17 @@
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door/doorBack.prefab",
-			"x": 3.48,
-			"y": -0.23,
-			"rotationZ": 87.5
+			"x": 3.310112468602995,
+			"y": 0.10199560839910049,
+			"rotationZ": 177.5
 		},
 		{
 			"type": "reference",
 			"name": "door_back",
 			"source": "gameplay/door/doorBack.prefab",
-			"x": 0.31,
-			"y": 3.4,
-			"rotationZ": 180
+			"x": 0.3100000000000023,
+			"y": 3.3999999999999986,
+			"rotationZ": -90.00000000000001
 		},
 		{
 			"type": "object",

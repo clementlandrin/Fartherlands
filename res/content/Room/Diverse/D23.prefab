@@ -1457,7 +1457,7 @@
 					"kind": "Spot",
 					"color": 16775900,
 					"power": 2.58,
-					"range": 40,
+					"range": 30,
 					"zNear": 0.02,
 					"angle": 22.58,
 					"fallOff": 1,
@@ -1489,7 +1489,7 @@
 					"kind": "Spot",
 					"color": 16775900,
 					"power": 2.58,
-					"range": 40,
+					"range": 30,
 					"zNear": 0.02,
 					"angle": 22.58,
 					"fallOff": 1,
@@ -2103,6 +2103,8 @@
 							"x": 1.44,
 							"y": -6.47,
 							"z": 9.55,
+							"scaleX": 0.9999999999999999,
+							"scaleY": 0.9999999999999999,
 							"rotationZ": -158.7,
 							"children": [
 								{
@@ -2172,6 +2174,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2191,6 +2194,27 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 1.2498234353716637,
+							"y": -6.59992687702457,
+							"z": 10.125763489352636,
+							"scaleX": 5.084393724650067,
+							"scaleY": 2.6935350720350892,
+							"rotationZ": -167.26870642062158,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2210,6 +2234,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2229,6 +2254,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2248,6 +2274,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2267,6 +2294,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2286,6 +2314,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2305,6 +2334,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2324,6 +2354,7 @@
 						{
 							"type": "polygon",
 							"name": "polygon",
+							"inGameOnly": true,
 							"props": {
 								"id": "Start_polygon",
 								"type": 2,
@@ -2345,41 +2376,6 @@
 			]
 		},
 		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": 2.31,
-			"y": 6.86,
-			"z": -0.1,
-			"rotationZ": -90
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": -0.35,
-			"y": -7.49,
-			"z": -0.01,
-			"rotationZ": 90
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": -7.442339803306116,
-			"y": 3.934404511422171,
-			"z": 10.192117182799718
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": 7.11,
-			"y": -2.03,
-			"z": 10.254548591103108,
-			"rotationZ": -180
-		},
-		{
 			"type": "LocalVolumeLighting",
 			"name": "LocalVolumeLighting",
 			"enabled": false,
@@ -2389,6 +2385,66 @@
 			"scaleZ": 13.57,
 			"fogDensity": 0.1,
 			"color": 16769505
+		},
+		{
+			"type": "object",
+			"name": "Doors",
+			"children": [
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": 2.31,
+					"y": 6.86,
+					"z": -0.1,
+					"rotationZ": -90
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -0.35,
+					"y": -7.49,
+					"z": -0.01,
+					"rotationZ": 90
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -7.4424,
+					"y": 3.9344,
+					"z": 10.1922
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": 7.11,
+					"y": -2.03,
+					"z": 10.2546,
+					"rotationZ": -180
+				},
+				{
+					"type": "reference",
+					"name": "doorOneWay",
+					"source": "gameplay/door/doorOneWay.prefab",
+					"x": -7.134963979977925,
+					"y": 5.321174114732479
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "props",
+			"props": {
+				"id": "CamFollowPlayer_props",
+				"type": 0,
+				"$cdbtype": "element",
+				"props": {
+					"camFollowZ": true
+				}
+			}
 		}
 	]
 }

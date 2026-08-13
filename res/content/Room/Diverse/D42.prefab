@@ -37,8 +37,8 @@
 				},
 				{
 					"type": "reference",
-					"name": "Medium_room_Left_Present",
-					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+					"name": "Room_Dark_Left",
+					"source": "content/Art/Room_template/Generic/Present/Room_Dark_Left.prefab"
 				}
 			]
 		},
