@@ -68,8 +68,8 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -9.77,
-					"y": -0.04,
+					"x": -8.531954587923817,
+					"y": -0.04000000000000028,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
@@ -123,6 +123,15 @@
 					"x": -7.16,
 					"y": -0.11,
 					"z": 2.41
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": 4.487465924538764,
+					"y": -3.4855189827493076,
+					"z": 2.41,
+					"rotationZ": 89.99999999999999
 				}
 			]
 		},
@@ -143,9 +152,10 @@
 				{
 					"type": "object",
 					"name": "Debris",
-					"x": -2.66,
-					"y": -0.12,
-					"z": 0.55,
+					"x": -2.3586636670072227,
+					"y": -0.12000000000000006,
+					"z": 0.2873532563298522,
+					"scaleY": 0.933751675856862,
 					"rotationZ": 90,
 					"children": [
 						{
@@ -165,11 +175,24 @@
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": 0.06,
-							"y": 0.34,
+							"x": 0.22699218576741237,
+							"y": -0.5074632077261447,
 							"z": -0.92,
 							"scaleX": 4.26,
-							"scaleY": 8.43,
+							"scaleY": 6.4769486060259664,
+							"scaleZ": 5.35,
+							"rotationZ": 180
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 0.41258205839223433,
+							"y": -1.2786587402376361,
+							"z": -0.92,
+							"scaleX": 2.337354877321751,
+							"scaleY": 6.716155938385046,
 							"scaleZ": 5.35,
 							"rotationZ": 180
 						},
@@ -291,7 +314,7 @@
 					"type": "model",
 					"name": "little_bridge",
 					"source": "content/Art/Asset/Generique/bridges/little_bridge.fbx",
-					"x": -2,
+					"x": -1.8609733598054075,
 					"y": -0.04,
 					"z": 2.19,
 					"children": [

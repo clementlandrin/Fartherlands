@@ -634,7 +634,8 @@
 					"name": "D25",
 					"source": "content/Room/Diverse/D25.prefab",
 					"x": -67.5,
-					"y": -47.5
+					"y": -47.5,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -1015,6 +1016,13 @@
 					"z": -78.27
 				}
 			]
+		},
+		{
+			"type": "reference",
+			"name": "D43",
+			"source": "content/Room/Diverse/D43.prefab",
+			"x": -10.5,
+			"y": -62.5
 		}
 	]
 }

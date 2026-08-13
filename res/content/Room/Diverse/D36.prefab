@@ -14,7 +14,24 @@
 			"type": "object",
 			"name": "doors",
 			"x": -0.095,
-			"y": 0.0275
+			"y": 0.0275,
+			"children": [
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": -0.035,
+					"y": 3.5125,
+					"rotationZ": -90.2
+				},
+				{
+					"type": "reference",
+					"name": "door",
+					"source": "gameplay/door/door.prefab",
+					"x": -3.4462602290482574,
+					"y": -1.2292502521320827
+				}
+			]
 		},
 		{
 			"type": "object",
@@ -55,14 +72,6 @@
 					"source": "content/Art/Room_template/Generic/Past/Small_room_Past.prefab"
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "door_back",
-			"source": "gameplay/door/doorBack.prefab",
-			"x": -0.13,
-			"y": 3.54,
-			"rotationZ": -90.2
 		},
 		{
 			"type": "object",

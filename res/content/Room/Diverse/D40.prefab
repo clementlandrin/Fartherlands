@@ -40,6 +40,58 @@
 					]
 				},
 				{
+					"type": "object",
+					"name": "Doors",
+					"x": 10.2606,
+					"y": 0.9898,
+					"children": [
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": 6.7507,
+							"y": 18.1358,
+							"z": 0.0011,
+							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": 4.0907,
+							"y": 3.8621,
+							"z": -0.01,
+							"rotationZ": 90
+						},
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": 9.5851,
+							"y": 4.239,
+							"z": 2.5111,
+							"rotationZ": 90
+						},
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -3.0993,
+							"y": 9.3221,
+							"z": 10.0381
+						},
+						{
+							"type": "reference",
+							"name": "doorBack",
+							"source": "gameplay/door/doorBack.prefab",
+							"x": 11.211359974382923,
+							"y": 6.686011479155724,
+							"z": 2.46198799134568,
+							"rotationZ": 180
+						}
+					]
+				},
+				{
 					"type": "model",
 					"name": "stairs02",
 					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
@@ -1538,41 +1590,6 @@
 					"scaleZ": 1.2015
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": 2.31,
-			"y": 6.783719696962446,
-			"z": 0.0011452919373244608,
-			"rotationZ": -90
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": -0.35,
-			"y": -7.49,
-			"z": -0.01,
-			"rotationZ": 90
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": 5.144396646423189,
-			"y": -7.113086641395974,
-			"z": 2.5111084448237744,
-			"rotationZ": 90
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": -7.54,
-			"y": -2.03,
-			"z": 10.038061979092754
 		},
 		{
 			"type": "LocalVolumeLighting",

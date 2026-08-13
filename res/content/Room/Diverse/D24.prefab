@@ -30,6 +30,14 @@
 					"source": "gameplay/door/doorOneWay.prefab",
 					"x": -7.35,
 					"y": -0.03
+				},
+				{
+					"type": "reference",
+					"name": "doorBack",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": -0.2540127977462916,
+					"y": 3.287052744255533,
+					"rotationZ": -89.99999999999999
 				}
 			]
 		},

@@ -39,6 +39,17 @@
 					]
 				},
 				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": 2.0707896392373417,
+					"y": -0.455471317509784,
+					"scaleX": 15.884607236298272,
+					"scaleY": 0.589769325651214,
+					"scaleZ": 8.199244312268293
+				},
+				{
 					"type": "object",
 					"name": "object",
 					"x": -6.53,

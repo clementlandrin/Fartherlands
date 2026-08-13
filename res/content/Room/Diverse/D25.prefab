@@ -864,8 +864,8 @@
 							"type": "model",
 							"name": "Ground_Debris02",
 							"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
-							"x": 3.315869151186315,
-							"y": 3.6196494586351586,
+							"x": 2.5616542690159374,
+							"y": 3.2399695908467425,
 							"z": 9.55,
 							"scaleX": 0.7588873252156093,
 							"scaleY": 0.9999999999999997,
@@ -1130,12 +1130,12 @@
 								"type": 2,
 								"$cdbtype": "element"
 							},
-							"x": 2.6921,
-							"y": 1.8865,
-							"scaleX": 2.1706,
-							"scaleY": 3.5315,
-							"scaleZ": 0.8144,
-							"rotationZ": 133.4897,
+							"x": 2.8645534152051075,
+							"y": 1.7460426712687145,
+							"scaleX": 4.00032661826016,
+							"scaleY": 4.863620909294278,
+							"scaleZ": 1.121600699003047,
+							"rotationZ": 140.83837810055164,
 							"kind": 0,
 							"args": [
 								0
@@ -1169,11 +1169,30 @@
 								"$cdbtype": "element"
 							},
 							"x": -0.1472,
-							"y": 4.797,
-							"scaleX": 3.562,
-							"scaleY": 3.5315,
+							"y": 4.797000000000001,
+							"scaleX": 3.5619999999999994,
+							"scaleY": 4.211367857243803,
 							"scaleZ": 0.8144,
 							"rotationZ": 71.0775,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "polygon",
+							"name": "polygon",
+							"props": {
+								"id": "Start_polygon",
+								"type": 2,
+								"$cdbtype": "element"
+							},
+							"x": 2.7296599067838088,
+							"y": 2.5216855652033456,
+							"scaleX": 3.5619999999999994,
+							"scaleY": 4.211367857243803,
+							"scaleZ": 0.8144,
+							"rotationZ": 81.43159726166385,
 							"kind": 0,
 							"args": [
 								0
@@ -1596,8 +1615,8 @@
 							"type": "model",
 							"name": "Ground_Debris02",
 							"source": "content/Art/Asset/Generique/bridges/Ground_Debris02.fbx",
-							"x": 3.315869151186315,
-							"y": 3.6196494586351586,
+							"x": 2.5616542690159374,
+							"y": 3.2399695908467425,
 							"z": 9.55,
 							"scaleX": 0.7588873252156093,
 							"scaleY": 0.9999999999999997,
@@ -1741,6 +1760,24 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.14,
+								"Mask_Offset": 0.66,
+								"Mask_Power": 7,
+								"Top_Down_Contrast": 10
+							}
 						}
 					]
 				},
@@ -1836,12 +1873,12 @@
 								"type": 2,
 								"$cdbtype": "element"
 							},
-							"x": 2.811245951644703,
-							"y": 1.9995245862862876,
-							"scaleX": 2.602497735374585,
-							"scaleY": 3.5315,
-							"scaleZ": 0.8144,
-							"rotationZ": 133.4897,
+							"x": 2.741136860594512,
+							"y": 1.8777915977431587,
+							"scaleX": 3.8797839651786807,
+							"scaleY": 4.867000094388048,
+							"scaleZ": 1.122379973628664,
+							"rotationZ": 143.52166816078372,
 							"kind": 0,
 							"args": [
 								0

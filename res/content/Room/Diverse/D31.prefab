@@ -53,6 +53,91 @@
 					"name": "Medium_room_Left_Present",
 					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab",
 					"editMode": "Edit"
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"x": -3.883,
+					"y": -1.1338,
+					"z": 0.1139,
+					"children": [
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -3.4292,
+							"y": -2.4024,
+							"z": -0.1172,
+							"scaleX": 1.2317,
+							"scaleY": 1.2317,
+							"scaleZ": 1.2317
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -3.4292,
+							"y": 4.7747,
+							"z": -0.1172,
+							"scaleX": 1.2317,
+							"scaleY": 1.2317,
+							"scaleZ": 1.2317
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": 11.1082,
+							"y": -2.4024,
+							"z": -0.1172,
+							"scaleX": 1.2317,
+							"scaleY": 1.2317,
+							"scaleZ": 1.2317
+						},
+						{
+							"type": "model",
+							"name": "long_joins",
+							"source": "content/Art/Asset/Generique/blocs/long_joins.fbx",
+							"x": 2.8165,
+							"y": -2.3965,
+							"z": 0.0938,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -3.5331,
+							"y": -1.5037,
+							"z": 0.1289
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -3.5331,
+							"y": 3.9303,
+							"z": 0.1289
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.14,
+								"Mask_Offset": 0.66,
+								"Mask_Power": 5.76,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
 				}
 			]
 		},
@@ -69,6 +154,73 @@
 					"type": "reference",
 					"name": "Medium_room_Left_Past",
 					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+				},
+				{
+					"type": "object",
+					"name": "object",
+					"x": -3.883,
+					"y": -1.1338,
+					"z": 0.1139,
+					"children": [
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -3.4292,
+							"y": -2.4024,
+							"z": -0.1172,
+							"scaleX": 1.2317,
+							"scaleY": 1.2317,
+							"scaleZ": 1.2317
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -3.4292,
+							"y": 4.7747,
+							"z": -0.1172,
+							"scaleX": 1.2317,
+							"scaleY": 1.2317,
+							"scaleZ": 1.2317
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": 11.1082,
+							"y": -2.4024,
+							"z": -0.1172,
+							"scaleX": 1.2317,
+							"scaleY": 1.2317,
+							"scaleZ": 1.2317
+						},
+						{
+							"type": "model",
+							"name": "long_joins",
+							"source": "content/Art/Asset/Generique/blocs/long_joins.fbx",
+							"x": 2.8165,
+							"y": -2.3965,
+							"z": 0.0938,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -3.5331,
+							"y": -1.5037,
+							"z": 0.1289
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -3.5331,
+							"y": 3.9303,
+							"z": 0.1289
+						}
+					]
 				}
 			]
 		}
