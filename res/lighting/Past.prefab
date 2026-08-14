@@ -42,6 +42,12 @@
 					"sourceMapPath": "content/Art/Envmap/test_sky_J.hdr"
 				},
 				{
+					"type": "rfx.chromaticAberration",
+					"name": "chromaticAberration",
+					"radius": 0,
+					"softness": 0.34
+				},
+				{
 					"type": "rfx.colorGrading",
 					"name": "colorGrading",
 					"texturePath": "content/Art/Lut/LUT_J.png"

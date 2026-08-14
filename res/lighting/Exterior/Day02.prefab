@@ -109,18 +109,18 @@
 				{
 					"type": "rfx.kuwaharaFilter",
 					"name": "kuwaharaFilter",
-					"radius": 3,
+					"radius": 2,
 					"endDist": 0
 				},
 				{
 					"type": "light",
 					"name": "light",
-					"rotationX": -1.9,
+					"rotationX": -1.8999999999999995,
 					"rotationY": 42,
-					"rotationZ": 130.6,
+					"rotationZ": 168.05250518216675,
 					"kind": "Directional",
 					"color": 16764028,
-					"power": 2.2,
+					"power": 2,
 					"range": 10,
 					"zNear": 0.02,
 					"shadows": {

@@ -25,6 +25,10 @@
 			"default": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_pattern01_mesh"
+			},
+			"big_stone": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_bricks"
 			}
 		}
 	}

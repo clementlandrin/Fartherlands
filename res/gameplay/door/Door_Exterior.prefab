@@ -9,9 +9,9 @@
 				"type": 1,
 				"$cdbtype": "element"
 			},
-			"scaleX": 1.5,
-			"scaleY": 1.5,
-			"scaleZ": 1.5,
+			"scaleX": 1.3,
+			"scaleY": 1.3,
+			"scaleZ": 1.3,
 			"children": [
 				{
 					"type": "object",
@@ -56,6 +56,7 @@
 					"type": "model",
 					"name": "Model",
 					"source": "content/Art/Asset/Generique/Door/Door.fbx",
+					"enabled": false,
 					"scaleX": 0.3,
 					"scaleY": 0.3,
 					"scaleZ": 0.3
@@ -63,11 +64,10 @@
 				{
 					"type": "polygon",
 					"name": "trigger",
-					"x": -0.4085383830712872,
-					"y": 4.440892098500626e-16,
+					"x": -0.11546819497876148,
 					"z": 0.6581170654796367,
 					"scaleX": 1.5091402414129487,
-					"scaleZ": 2.9377404030842795,
+					"scaleZ": 2.93774040308428,
 					"kind": 5,
 					"args": []
 				},

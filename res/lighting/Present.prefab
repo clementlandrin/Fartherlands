@@ -94,6 +94,8 @@
 				{
 					"type": "rfx.temporalFiltering",
 					"name": "temporalFiltering",
+					"amount": 0.8,
+					"jitterScale": 1,
 					"renderMode": "BeforeTonemapping"
 				}
 			]

@@ -747,6 +747,13 @@
 					"y": -34.394912538856246
 				},
 				{
+					"type": "reference",
+					"name": "D44",
+					"source": "content/Room/Diverse/D44.prefab",
+					"x": -15,
+					"y": 50.67620331638445
+				},
+				{
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
