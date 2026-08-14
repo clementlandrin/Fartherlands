@@ -494,6 +494,13 @@
 				},
 				{
 					"type": "reference",
+					"name": "D43",
+					"source": "content/Room/Diverse/D43.prefab",
+					"x": -10.5,
+					"y": -62.5
+				},
+				{
+					"type": "reference",
 					"name": "D41",
 					"source": "content/Room/Diverse/D41.prefab",
 					"x": -15,
@@ -1016,13 +1023,6 @@
 					"z": -78.27
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "D43",
-			"source": "content/Room/Diverse/D43.prefab",
-			"x": -10.5,
-			"y": -62.5
 		}
 	]
 }

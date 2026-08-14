@@ -406,7 +406,6 @@
 							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
 							"x": 1.0833,
 							"y": -2.3567,
-							"z": 0.29,
 							"scaleY": 1.17,
 							"rotationZ": 90
 						},
@@ -416,7 +415,6 @@
 							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
 							"x": -5.6167,
 							"y": -2.3567,
-							"z": 0.29,
 							"scaleY": 1.17,
 							"rotationZ": 90
 						},
@@ -426,7 +424,6 @@
 							"source": "content/Art/Asset/Generique/blocs/small_join.fbx",
 							"x": 4.8933,
 							"y": 3.0233,
-							"z": 0.29,
 							"scaleY": 1.17
 						},
 						{
@@ -435,7 +432,6 @@
 							"source": "content/Art/Asset/Generique/blocs/small_join.fbx",
 							"x": 4.8933,
 							"y": -1.0367,
-							"z": 0.29,
 							"scaleY": 1.17
 						},
 						{

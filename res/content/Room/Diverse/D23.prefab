@@ -655,8 +655,8 @@
 							"type": "model",
 							"name": "Ground_Debris01",
 							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-							"x": -3.7668616075650654,
-							"y": -7.986065559956502,
+							"x": -4.694829204197333,
+							"y": -7.622264764864994,
 							"z": 9.55,
 							"rotationZ": -21.407186227341434,
 							"children": [
@@ -1940,9 +1940,9 @@
 									"type": "model",
 									"name": "Ground_Debris01",
 									"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-									"x": -3.8182,
-									"y": -5.7018,
-									"rotationZ": -21.4072,
+									"x": -4.723230397691971,
+									"y": -5.346991262750805,
+									"rotationZ": -21.407200000000003,
 									"children": [
 										{
 											"type": "material",

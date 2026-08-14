@@ -62,6 +62,482 @@
 					"type": "reference",
 					"name": "Medium_room_Left_Present",
 					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
+				},
+				{
+					"type": "object",
+					"name": "Archi",
+					"x": -3.1101,
+					"y": -2.486,
+					"z": -0.0011,
+					"children": [
+						{
+							"type": "model",
+							"name": "column03",
+							"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+							"x": -3.7318,
+							"y": -0.5184,
+							"z": -2.6766
+						},
+						{
+							"type": "model",
+							"name": "column03",
+							"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+							"x": -3.7318,
+							"y": 6.4454,
+							"z": -2.6766
+						},
+						{
+							"type": "model",
+							"name": "column03",
+							"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+							"x": 10.6053,
+							"y": -0.5184,
+							"z": -2.6766,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -2.8808,
+							"y": -1.1243,
+							"z": 0.0011,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "Medium_joins",
+							"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
+							"x": -4.2505,
+							"y": 2.2734,
+							"z": 0.0011,
+							"rotationZ": -180
+						},
+						{
+							"type": "model",
+							"name": "Medium_joins02",
+							"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
+							"x": 7.1312,
+							"y": -1.1491,
+							"z": -0.0022,
+							"rotationZ": 90
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.65,
+								"Mask_Offset": 0,
+								"Mask_Power": 10,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "object",
+					"name": "Foliage",
+					"children": [
+						{
+							"type": "meshSpray",
+							"name": "meshSpray",
+							"locked": true,
+							"sources": [
+								{
+									"isRef": false,
+									"path": "content/Art/Asset/Vegetation/Foliage/Plant01.fbx"
+								},
+								{
+									"isRef": false,
+									"path": "content/Art/Asset/Vegetation/Foliage/Plant02.fbx"
+								},
+								{
+									"isRef": false,
+									"path": "content/Art/Asset/Vegetation/Foliage/Plant03.fbx"
+								}
+							],
+							"defaultConfig": {
+								"deleteRadius": 5,
+								"density": 1,
+								"densityOffset": 0,
+								"dontRepeatItem": true,
+								"enableBrush": true,
+								"orientTerrain": 0,
+								"radius": 0.1,
+								"rotation": 360,
+								"rotationOffset": 360,
+								"scale": 0.6,
+								"scaleOffset": 0.2,
+								"step": 0,
+								"tiltAmount": 0,
+								"zOffset": 0
+							},
+							"split": null,
+							"children": [
+								{
+									"type": "model",
+									"name": "Plant02",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant02.fbx",
+									"x": -6.551,
+									"y": -1.444,
+									"scaleX": 0.6917,
+									"scaleY": 0.6917,
+									"scaleZ": 0.6917,
+									"rotationZ": 149
+								},
+								{
+									"type": "model",
+									"name": "Plant01",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant01.fbx",
+									"x": -4.839,
+									"y": -3.012,
+									"scaleX": 0.5186,
+									"scaleY": 0.5186,
+									"scaleZ": 0.5186,
+									"rotationZ": -25
+								},
+								{
+									"type": "model",
+									"name": "Plant02",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant02.fbx",
+									"x": 6.042,
+									"y": -2.481,
+									"scaleX": 0.7982,
+									"scaleY": 0.7982,
+									"scaleZ": 0.7982,
+									"rotationZ": 162
+								},
+								{
+									"type": "model",
+									"name": "Plant03",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant03.fbx",
+									"x": 4.815,
+									"y": -1.404,
+									"scaleX": 0.6893,
+									"scaleY": 0.6893,
+									"scaleZ": 0.6893,
+									"rotationZ": 62
+								},
+								{
+									"type": "model",
+									"name": "Plant03",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant03.fbx",
+									"x": 0.9624,
+									"y": -2.324,
+									"scaleX": 0.4746,
+									"scaleY": 0.4746,
+									"scaleZ": 0.4746,
+									"rotationZ": -53
+								},
+								{
+									"type": "model",
+									"name": "Plant02",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant02.fbx",
+									"x": 4.965,
+									"y": 2.093,
+									"scaleX": 0.4765,
+									"scaleY": 0.4765,
+									"scaleZ": 0.4765,
+									"rotationZ": 107
+								},
+								{
+									"type": "model",
+									"name": "Plant03",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant03.fbx",
+									"x": -6.413,
+									"y": 0.4553,
+									"scaleX": 0.5441,
+									"scaleY": 0.5441,
+									"scaleZ": 0.5441,
+									"rotationZ": -52
+								},
+								{
+									"type": "model",
+									"name": "Plant01",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant01.fbx",
+									"x": -2.818,
+									"y": 0.4113,
+									"scaleX": 0.5145,
+									"scaleY": 0.5145,
+									"scaleZ": 0.5145,
+									"rotationZ": -122
+								},
+								{
+									"type": "model",
+									"name": "Plant01",
+									"source": "content/Art/Asset/Vegetation/Foliage/Plant01.fbx",
+									"x": -3.201,
+									"y": -0.827,
+									"scaleX": 0.6986,
+									"scaleY": 0.6986,
+									"scaleZ": 0.6986,
+									"rotationZ": -132
+								}
+							]
+						},
+						{
+							"type": "meshSpray",
+							"name": "meshSpray",
+							"locked": true,
+							"sources": [
+								{
+									"isRef": false,
+									"path": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx"
+								},
+								{
+									"isRef": false,
+									"path": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx"
+								},
+								{
+									"isRef": false,
+									"path": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx"
+								}
+							],
+							"defaultConfig": {
+								"deleteRadius": 5,
+								"density": 1,
+								"densityOffset": 0,
+								"dontRepeatItem": true,
+								"enableBrush": true,
+								"orientTerrain": 0,
+								"radius": 0.1,
+								"rotation": 180,
+								"rotationOffset": 360,
+								"scale": 0.6,
+								"scaleOffset": 0.1,
+								"step": 1,
+								"tiltAmount": 0,
+								"zOffset": 0
+							},
+							"children": [
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": -6.478,
+									"y": -1.471,
+									"scaleX": 0.59,
+									"scaleY": 0.59,
+									"scaleZ": 0.59
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle02",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+									"x": -6.571,
+									"y": 0.1432,
+									"scaleX": 0.5674,
+									"scaleY": 0.5674,
+									"scaleZ": 0.5674
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": -5.516,
+									"y": 1.204,
+									"scaleX": 0.5181,
+									"scaleY": 0.5181,
+									"scaleZ": 0.5181
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": -4.935,
+									"y": -1.733,
+									"scaleX": 0.6267,
+									"scaleY": 0.6267,
+									"scaleZ": 0.6267,
+									"rotationZ": -137
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": -4.62,
+									"y": -0.107,
+									"scaleX": 0.5958,
+									"scaleY": 0.5958,
+									"scaleZ": 0.5958,
+									"rotationZ": 105
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle02",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+									"x": -2.906,
+									"y": 0.5617,
+									"scaleX": 0.5246,
+									"scaleY": 0.5246,
+									"scaleZ": 0.5246,
+									"rotationZ": -168
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": 6.192,
+									"y": -2.352,
+									"scaleX": 0.6015,
+									"scaleY": 0.6015,
+									"scaleZ": 0.6015,
+									"rotationZ": 29
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": 4.91,
+									"y": -1.336,
+									"scaleX": 0.5003,
+									"scaleY": 0.5003,
+									"scaleZ": 0.5003,
+									"rotationZ": 49
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": 2.189,
+									"y": 0.8004,
+									"scaleX": 0.6416,
+									"scaleY": 0.6416,
+									"scaleZ": 0.6416,
+									"rotationZ": 62
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": 1.231,
+									"y": 0.2965,
+									"scaleX": 0.5059,
+									"scaleY": 0.5059,
+									"scaleZ": 0.5059,
+									"rotationZ": 161
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle02",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+									"x": 4.845,
+									"y": 1.788,
+									"scaleX": 0.6675,
+									"scaleY": 0.6675,
+									"scaleZ": 0.6675,
+									"rotationZ": -97
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": 4.818,
+									"y": 2.93,
+									"scaleX": 0.636,
+									"scaleY": 0.636,
+									"scaleZ": 0.636,
+									"rotationZ": -42
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": 0.6971,
+									"y": -1.795,
+									"scaleX": 0.6747,
+									"scaleY": 0.6747,
+									"scaleZ": 0.6747,
+									"rotationZ": 22
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": 0.8289,
+									"y": -2.635,
+									"scaleX": 0.5844,
+									"scaleY": 0.5844,
+									"scaleZ": 0.5844,
+									"rotationZ": 171
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle02",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+									"x": -1.647,
+									"y": 0.3603,
+									"scaleX": 0.5979,
+									"scaleY": 0.5979,
+									"scaleZ": 0.5979,
+									"rotationZ": 107
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle01",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
+									"x": -2.238,
+									"y": 3.134,
+									"scaleX": 0.5121,
+									"scaleY": 0.5121,
+									"scaleZ": 0.5121,
+									"rotationZ": -74
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": -0.7046,
+									"y": 3.091,
+									"scaleX": 0.6812,
+									"scaleY": 0.6812,
+									"scaleZ": 0.6812,
+									"rotationZ": 48
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle02",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
+									"x": -4.562,
+									"y": -3.164,
+									"scaleX": 0.6254,
+									"scaleY": 0.6254,
+									"scaleZ": 0.6254,
+									"rotationZ": 93
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": -3.045,
+									"y": -0.9011,
+									"scaleX": 0.5872,
+									"scaleY": 0.5872,
+									"scaleZ": 0.5872,
+									"rotationZ": -176
+								},
+								{
+									"type": "model",
+									"name": "Grass_socle03",
+									"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
+									"x": -3.983,
+									"y": 1.121,
+									"scaleX": 0.602,
+									"scaleY": 0.602,
+									"scaleZ": 0.602,
+									"rotationZ": 20
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -78,6 +554,67 @@
 					"type": "reference",
 					"name": "Medium_room_Left_Past",
 					"source": "content/Art/Room_template/Generic/Past/Medium_room_Left_Past.prefab"
+				},
+				{
+					"type": "object",
+					"name": "Archi",
+					"x": -3.1101,
+					"y": -2.486,
+					"z": -0.0011,
+					"children": [
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -2.8808,
+							"y": -1.1243,
+							"z": 0.0011,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "Medium_joins",
+							"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
+							"x": -4.2505,
+							"y": 2.2734,
+							"z": 0.0011,
+							"rotationZ": -180
+						},
+						{
+							"type": "model",
+							"name": "column03",
+							"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+							"x": -3.7318,
+							"y": -0.5184,
+							"z": -2.6766
+						},
+						{
+							"type": "model",
+							"name": "column03",
+							"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+							"x": -3.7318,
+							"y": 6.4454,
+							"z": -2.6766
+						},
+						{
+							"type": "model",
+							"name": "column03",
+							"source": "content/Art/Asset/Generique/blocs/column03.fbx",
+							"x": 10.6053,
+							"y": -0.5184,
+							"z": -2.6766,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "Medium_joins02",
+							"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
+							"x": 7.1312,
+							"y": -1.1491,
+							"z": -0.0022,
+							"rotationZ": 90
+						}
+					]
 				}
 			]
 		},

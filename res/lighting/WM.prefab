@@ -64,6 +64,7 @@
 				{
 					"type": "rfx.volumetricLighting",
 					"name": "volumetricLighting",
+					"enabled": false,
 					"AFTER_FX": true,
 					"color": 13355770,
 					"steps": 40,

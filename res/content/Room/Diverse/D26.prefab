@@ -78,8 +78,8 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 5.028532331186764,
-					"y": 7.8456843439076565,
+					"x": 5.779280107496142,
+					"y": 8.37855803740359,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
@@ -104,8 +104,34 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -7.41,
-					"y": -5.23,
+					"x": -6.882448445083245,
+					"y": -7.131356791479771,
+					"z": 1.21,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 7.279665318332082,
+					"y": -7.131356791479771,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
@@ -130,8 +156,8 @@
 					"type": "model",
 					"name": "stairs02",
 					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
-					"x": 6.0255795192774535,
-					"y": 2.013319610210388,
+					"x": 5.60764480904535,
+					"y": 2.546193303706321,
 					"z": 0.52,
 					"scaleX": 0.7760990627371562,
 					"scaleY": 0.7760990627371562,
@@ -155,6 +181,69 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "model",
+			"name": "wall03",
+			"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+			"x": -1.965158522583595,
+			"y": -6.399135096312054,
+			"z": 5.5918577775679585,
+			"rotationX": -1.109642275475034e-11,
+			"rotationY": 1.0167631289067235e-11,
+			"rotationZ": 89.99999999999999
+		},
+		{
+			"type": "model",
+			"name": "wall03",
+			"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+			"x": 2.016323540602847,
+			"y": -6.399135096312055,
+			"z": 5.5918577775687295,
+			"rotationX": -1.109642275475034e-11,
+			"rotationY": 1.0167631289067235e-11,
+			"rotationZ": 89.99999999999999
+		},
+		{
+			"type": "model",
+			"name": "wall03",
+			"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+			"x": 0.03506642010100436,
+			"y": -7.095193695315139,
+			"z": 10.623542963428774,
+			"scaleX": 0.667961747213168,
+			"scaleY": 0.667961747213168,
+			"scaleZ": 0.667961747213168,
+			"rotationX": 179.99999999999997,
+			"rotationY": -89.99999999998495
+		},
+		{
+			"type": "model",
+			"name": "arch01",
+			"source": "content/Art/Asset/Generique/deco/arch01.fbx",
+			"x": 4.366589054984319,
+			"y": -7.438578376549943,
+			"z": 7.811568859569933,
+			"scaleX": 0.9925228706808319,
+			"scaleY": 0.9925228706808319,
+			"scaleZ": 0.9925228706808319,
+			"rotationX": 7.797059880027364e-12,
+			"rotationY": -7.144431295654307e-12,
+			"rotationZ": -4.8612270479921555e-25
+		},
+		{
+			"type": "model",
+			"name": "arch01",
+			"source": "content/Art/Asset/Generique/deco/arch01.fbx",
+			"x": -4.331302594739688,
+			"y": -7.438578376549938,
+			"z": 7.770729422020789,
+			"scaleX": 0.9925228706808319,
+			"scaleY": 0.9925228706808319,
+			"scaleZ": 0.9925228706808319,
+			"rotationX": 7.797059880027364e-12,
+			"rotationY": -7.144431295654307e-12,
+			"rotationZ": -4.8612270479921555e-25
 		}
 	]
 }

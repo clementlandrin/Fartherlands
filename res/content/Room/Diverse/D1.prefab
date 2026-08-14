@@ -122,17 +122,16 @@
 							"type": "model",
 							"name": "joins",
 							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
-							"x": 4.385,
-							"y": -2.465,
-							"scaleY": 1.17,
-							"rotationZ": 90
+							"x": -1.675,
+							"y": 4.579018178028295,
+							"scaleY": 1.17
 						},
 						{
 							"type": "model",
 							"name": "joins",
 							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
 							"x": -1.675,
-							"y": 5.175,
+							"y": -2.2555293791855036,
 							"scaleY": 1.17
 						},
 						{
@@ -153,28 +152,20 @@
 						},
 						{
 							"type": "model",
+							"name": "Medium_joins",
+							"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
+							"x": 1.1826999999999996,
+							"y": -2.5360997291091505,
+							"z": -0.3133,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
 							"name": "column06",
 							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
 							"x": 5.465,
 							"y": -2.225,
 							"z": -0.31
-						},
-						{
-							"type": "model",
-							"name": "joins",
-							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
-							"x": -1.675,
-							"y": -0.245,
-							"scaleY": 1.17
-						},
-						{
-							"type": "model",
-							"name": "joins",
-							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
-							"x": -1.035,
-							"y": -2.465,
-							"scaleY": 1.17,
-							"rotationZ": 90
 						},
 						{
 							"type": "shader",

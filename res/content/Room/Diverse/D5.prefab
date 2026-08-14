@@ -138,24 +138,31 @@
 							"rotationZ": 90
 						},
 						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -0.089,
-							"y": 2.6958
-						},
-						{
 							"type": "model",
 							"name": "basic_bloc02",
 							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-							"x": -0.069,
-							"y": 0.5458,
+							"x": -0.017495302860217665,
+							"y": 0.5457999999999998,
 							"z": 0.91,
 							"scaleX": 0.61,
 							"scaleY": 0.61,
 							"scaleZ": 0.61,
-							"rotationZ": -90
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.11000000000000387,
+									"y": -0.22281442175454852,
+									"z": -1.97,
+									"scaleX": 13.008190700918703,
+									"scaleY": 6.13,
+									"scaleZ": 3.4300000000000006,
+									"rotationZ": -90
+								}
+							]
 						},
 						{
 							"type": "reference",
@@ -163,10 +170,10 @@
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
 							"x": -0.069,
-							"y": 0.5458,
-							"z": 0.91,
-							"scaleX": 0.61,
-							"scaleY": 0.61,
+							"y": 2.0629,
+							"z": 1.8578,
+							"scaleX": 0.3857,
+							"scaleY": 17.5407,
 							"scaleZ": 0.61,
 							"rotationZ": -90
 						},
@@ -279,14 +286,6 @@
 							"rotationZ": 90
 						},
 						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"inGameOnly": true,
-							"x": -0.089,
-							"y": 2.6958
-						},
-						{
 							"type": "model",
 							"name": "basic_bloc02",
 							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
@@ -296,18 +295,33 @@
 							"scaleX": 0.61,
 							"scaleY": 0.61,
 							"scaleZ": 0.61,
-							"rotationZ": -90
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": 0.11000000000000298,
+									"y": -0.14745669119332633,
+									"z": -1.97,
+									"scaleX": 10.17090008249279,
+									"scaleY": 6.13,
+									"scaleZ": 3.4300000000000006,
+									"rotationZ": -90
+								}
+							]
 						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"inGameOnly": true,
-							"x": -0.069,
-							"y": 0.5458,
-							"z": 0.91,
-							"scaleX": 0.61,
-							"scaleY": 0.61,
+							"x": -0.06900000000000034,
+							"y": 2.0628575481739193,
+							"z": 1.8578051607877697,
+							"scaleX": 0.38569853834082746,
+							"scaleY": 17.54073237085472,
 							"scaleZ": 0.61,
 							"rotationZ": -90
 						},
