@@ -754,6 +754,20 @@
 					"y": 50.67620331638445
 				},
 				{
+					"type": "reference",
+					"name": "D45",
+					"source": "content/Room/Diverse/D45.prefab",
+					"x": -35.07037480925791,
+					"y": 50.67620331638445
+				},
+				{
+					"type": "reference",
+					"name": "D46",
+					"source": "content/Room/Diverse/D46.prefab",
+					"x": -54.73573835715804,
+					"y": 50.67620331638445
+				},
+				{
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",

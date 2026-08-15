@@ -489,9 +489,10 @@
 			"type": "reference",
 			"name": "Door_Exterior",
 			"source": "gameplay/door/Door_Exterior.prefab",
-			"x": -8.487378559964782,
-			"y": -3.8156716306530143,
-			"z": 1.484042821206458
+			"x": 5.905667034697047,
+			"y": -3.815671630653014,
+			"z": 1.484042821206458,
+			"rotationZ": 180
 		},
 		{
 			"type": "object",
@@ -525,7 +526,7 @@
 					"type": "model",
 					"name": "Medium_joins02",
 					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
-					"x": 18.562,
+					"x": 3.971731867905854,
 					"y": 3.1467,
 					"z": 2.5597,
 					"scaleX": 1.0948,
@@ -537,7 +538,7 @@
 					"type": "model",
 					"name": "Medium_joins",
 					"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
-					"x": 3.8839,
+					"x": 18.492150008674795,
 					"y": 5.7356,
 					"z": 2.5597,
 					"scaleX": 1.0948,

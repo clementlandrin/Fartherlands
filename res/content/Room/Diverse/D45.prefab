@@ -57,7 +57,7 @@
 					"type": "model",
 					"name": "wall08",
 					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": 4.4784532447476275,
+					"x": 20.994138616764758,
 					"y": -4.701255400996203,
 					"z": -14.870247386494853,
 					"scaleX": 1.29,
@@ -67,59 +67,9 @@
 				},
 				{
 					"type": "model",
-					"name": "wall08",
-					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": -2.762716798138715,
-					"y": 2.1338278058439117,
-					"z": -14.820697350235921,
-					"scaleX": 1.29,
-					"scaleY": 1.29,
-					"scaleZ": 1.29,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "wall08",
-					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": 4.4784532447476275,
-					"y": -4.701255400996203,
-					"z": -31.109867489730064,
-					"scaleX": 1.29,
-					"scaleY": 1.29,
-					"scaleZ": 1.29,
-					"rotationZ": -180
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -21.0282,
-					"y": -4.3816,
-					"z": -0.0261,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -12.1268,
-					"y": -4.3816,
-					"z": -0.0261,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "column06",
-					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-					"x": 2.8998,
-					"y": 0.7629,
-					"z": -3.7553
-				},
-				{
-					"type": "model",
 					"name": "wall02",
 					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
-					"x": -2.4931462798944715,
+					"x": -18.730317780518067,
 					"y": -11.381599306644542,
 					"z": 3.846252736085736,
 					"scaleX": 1.29,
@@ -131,7 +81,133 @@
 					"type": "model",
 					"name": "wall08",
 					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": -9.246551072722312,
+					"x": 13.752968573878416,
+					"y": 2.1338278058439117,
+					"z": -14.820697350235921,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "Medium_joins02",
+					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
+					"x": 13.9877,
+					"y": 2.5064,
+					"z": -2.8513,
+					"scaleX": 1.0948,
+					"scaleY": 1.0948,
+					"scaleZ": 1.0948,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "Medium_joins02",
+					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
+					"x": 21.3723,
+					"y": -4.9098,
+					"z": -2.8513,
+					"scaleX": 1.0948,
+					"scaleY": 1.0948,
+					"scaleZ": 1.0948,
+					"rotationZ": 180
+				},
+				{
+					"type": "model",
+					"name": "Medium_joins",
+					"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
+					"x": 6.6942,
+					"y": -2.3209,
+					"z": -2.8513,
+					"scaleX": 1.0948,
+					"scaleY": 1.0948,
+					"scaleZ": 1.0948,
+					"rotationZ": 180
+				},
+				{
+					"type": "model",
+					"name": "Medium_joins02",
+					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
+					"x": -18.990903605489837,
+					"y": 2.5064,
+					"z": -2.8513,
+					"scaleX": 1.0948,
+					"scaleY": 1.0948,
+					"scaleZ": 1.0948,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "Medium_joins02",
+					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
+					"x": -26.19461076574569,
+					"y": -4.9098,
+					"z": -2.8513,
+					"scaleX": 1.0948,
+					"scaleY": 1.0948,
+					"scaleZ": 1.0948,
+					"rotationZ": 180
+				},
+				{
+					"type": "model",
+					"name": "Medium_joins",
+					"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
+					"x": -11.685492402212882,
+					"y": -2.3209,
+					"z": -2.8513,
+					"scaleX": 1.0948,
+					"scaleY": 1.0948,
+					"scaleZ": 1.0948,
+					"rotationZ": 180
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc_garden01",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
+					"x": -18.9401,
+					"y": -4.8028,
+					"z": -4.4642,
+					"rotationZ": -90
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc_garden01",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
+					"x": 14.0029,
+					"y": -4.8028,
+					"z": -4.4642,
+					"rotationZ": -90
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": 20.994138616764758,
+					"y": -4.701255400996203,
+					"z": -31.109867489730064,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": -180
+				},
+				{
+					"type": "model",
+					"name": "wall02",
+					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
+					"x": 14.212598027599707,
+					"y": -11.381599306644542,
+					"z": 3.846252736085736,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": 89.99999999999999
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": 7.269134299294819,
 					"y": -4.701255400996205,
 					"z": -14.870247386494853,
 					"scaleX": 1.29,
@@ -143,7 +219,79 @@
 					"type": "model",
 					"name": "wall08",
 					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": -9.246551072722312,
+					"x": -19.53353426980431,
+					"y": 2.1338278058439117,
+					"z": -14.820697350235921,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": -12.292364226917968,
+					"y": -4.701255400996203,
+					"z": -14.870247386494853,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": -180
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": -19.53353426980431,
+					"y": 2.1338278058439117,
+					"z": -31.06031745347113,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": -12.292364226917968,
+					"y": -4.701255400996203,
+					"z": -31.109867489730064,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": -180
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": -26.017368544387907,
+					"y": -4.701255400996205,
+					"z": -31.109867489730064,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": -180
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": -26.017368544387907,
+					"y": -4.701255400996205,
+					"z": -14.870247386494853,
+					"scaleX": 1.29,
+					"scaleY": 1.29,
+					"scaleZ": 1.29,
+					"rotationZ": -180
+				},
+				{
+					"type": "model",
+					"name": "wall08",
+					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
+					"x": 7.269134299294819,
 					"y": -4.701255400996205,
 					"z": -31.109867489730064,
 					"scaleX": 1.29,
@@ -197,7 +345,7 @@
 					"type": "model",
 					"name": "column06",
 					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-					"x": -8.073049008949809,
+					"x": 8.532858279724074,
 					"y": 0.7627967983343362,
 					"z": -3.617596140053906
 				},
@@ -205,7 +353,15 @@
 					"type": "model",
 					"name": "column06",
 					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-					"x": -10.78865585344677,
+					"x": -13.694265597895358,
+					"y": 0.7627967983343362,
+					"z": -3.617596140053906
+				},
+				{
+					"type": "model",
+					"name": "column06",
+					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+					"x": 5.61966266738596,
 					"y": -7.219243632948377,
 					"z": -3.1980920201739034
 				},
@@ -213,7 +369,23 @@
 					"type": "model",
 					"name": "column06",
 					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-					"x": -10.78865585344677,
+					"x": 5.61966266738596,
+					"y": -10.262280429772176,
+					"z": -3.1980920201739034
+				},
+				{
+					"type": "model",
+					"name": "column06",
+					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+					"x": -10.714651112317394,
+					"y": -7.219243632948377,
+					"z": -3.1980920201739034
+				},
+				{
+					"type": "model",
+					"name": "column06",
+					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+					"x": -10.714651112317394,
 					"y": -10.262280429772176,
 					"z": -3.1980920201739034
 				},
@@ -289,7 +461,7 @@
 					"type": "model",
 					"name": "wall08",
 					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": -2.762716798138715,
+					"x": 13.752968573878416,
 					"y": 2.1338278058439117,
 					"z": -31.06031745347113,
 					"scaleX": 1.29,
@@ -478,15 +650,6 @@
 		},
 		{
 			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": 2.560192859635206,
-			"y": -5.460135067851753,
-			"z": 1.289562693280459,
-			"rotationZ": 89.99999999999999
-		},
-		{
-			"type": "reference",
 			"name": "Door_Exterior",
 			"source": "gameplay/door/Door_Exterior.prefab",
 			"x": -8.487378559964782,
@@ -494,56 +657,38 @@
 			"z": 1.484042821206458
 		},
 		{
+			"type": "reference",
+			"name": "Door_Exterior",
+			"source": "gameplay/door/Door_Exterior.prefab",
+			"x": 8.120536192505227,
+			"y": -3.815671630653014,
+			"z": 1.484042821206458,
+			"rotationZ": 180
+		},
+		{
 			"type": "object",
 			"name": "object",
-			"x": -11.1926,
+			"x": 5.26366003098129,
 			"y": -3.25365,
 			"z": -0.94675,
 			"children": [
 				{
 					"type": "model",
-					"name": "basic_bloc_garden01",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
-					"x": 11.1926,
-					"y": 3.2537,
-					"z": 0.9468,
-					"rotationZ": -90
-				},
-				{
-					"type": "model",
-					"name": "Medium_joins02",
-					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
-					"x": 11.1774,
-					"y": 10.5629,
-					"z": 2.5597,
-					"scaleX": 1.0948,
-					"scaleY": 1.0948,
-					"scaleZ": 1.0948,
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -9.835600400904385,
+					"y": -1.1279157046865236,
+					"z": 0.9206077739936183,
 					"rotationZ": 90
 				},
 				{
 					"type": "model",
-					"name": "Medium_joins02",
-					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
-					"x": 18.562,
-					"y": 3.1467,
-					"z": 2.5597,
-					"scaleX": 1.0948,
-					"scaleY": 1.0948,
-					"scaleZ": 1.0948,
-					"rotationZ": 180
-				},
-				{
-					"type": "model",
-					"name": "Medium_joins",
-					"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
-					"x": 3.8839,
-					"y": 5.7356,
-					"z": 2.5597,
-					"scaleX": 1.0948,
-					"scaleY": 1.0948,
-					"scaleZ": 1.0948,
-					"rotationZ": 180
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": -0.934200400904384,
+					"y": -1.1279157046865236,
+					"z": 0.9206077739936183,
+					"rotationZ": 90
 				},
 				{
 					"type": "shader",
@@ -579,94 +724,6 @@
 						"Mask_Power": 7.12,
 						"Top_Down_Contrast": 10
 					}
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "Foliage",
-			"inGameOnly": true,
-			"x": 1.0440866174304684,
-			"y": -4.476693961246234,
-			"z": 2.9108272954434824,
-			"children": [
-				{
-					"type": "model",
-					"name": "Wall_bush01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush01.fbx",
-					"x": -3.545,
-					"y": -0.9703,
-					"z": -1.7204
-				},
-				{
-					"type": "model",
-					"name": "Wall_bush02",
-					"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
-					"x": -4.6274,
-					"y": 7.0699,
-					"z": -2.0063
-				},
-				{
-					"type": "model",
-					"name": "Wall_bush03",
-					"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush03.fbx",
-					"x": 3.6729,
-					"y": -1.3069,
-					"z": -1.6584
-				},
-				{
-					"type": "model",
-					"name": "Monstera01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Monstera01.fbx",
-					"x": -0.7147,
-					"y": -0.2859,
-					"z": -1.7743,
-					"rotationZ": 20.6267
-				},
-				{
-					"type": "model",
-					"name": "Monstera03",
-					"source": "content/Art/Asset/Vegetation/Foliage/Monstera03.fbx",
-					"x": 4.908,
-					"y": -0.6304,
-					"z": -1.9891,
-					"rotationZ": -21.403
-				},
-				{
-					"type": "model",
-					"name": "Ivy02",
-					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
-					"x": 1.7319,
-					"y": -1.3033,
-					"z": 2.5985,
-					"scaleX": 0.572,
-					"scaleY": 0.572,
-					"scaleZ": 0.572,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "Ivy01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
-					"x": -8.0248,
-					"y": -1.2998,
-					"z": 9.7637,
-					"scaleX": 0.8913,
-					"scaleY": 0.8913,
-					"scaleZ": 0.8913,
-					"rotationZ": 90.1043
-				},
-				{
-					"type": "model",
-					"name": "Ivy01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
-					"x": 6.5991,
-					"y": -1.2732,
-					"z": -3.2139,
-					"scaleX": 0.7769,
-					"scaleY": 0.7769,
-					"scaleZ": 0.7769,
-					"rotationZ": 0.1043
 				}
 			]
 		}
