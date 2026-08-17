@@ -1,5 +1,4 @@
 package gfx;
-
 class Renderer extends h3d.scene.pbr.Renderer {
 
 	public var timeMode : Game.TimeMode;
@@ -16,6 +15,7 @@ class Renderer extends h3d.scene.pbr.Renderer {
 		var player = game.player;
 		ctx.setGlobal("playerPos", game.goddess.getTemporalPos());
 		ctx.setGlobal("temporalRadius", game.goddess.getTemporalRadius());
+		ctx.setGlobal("translucency", new h3d.Vector(0));
 	}
 
 	override function mark(id : String) {
