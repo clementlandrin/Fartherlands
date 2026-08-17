@@ -6,6 +6,7 @@ class PropsTexture extends h3d.shader.pbr.PropsTexture {
 		function __init__fragment() {
 			{
 				var v = texture.get(calculatedUV);
+				translucency = vec3(0);
 				metalness = v.r;
 				roughness = v.g;
 				occlusion = v.b;
