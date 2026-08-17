@@ -551,6 +551,11 @@
 					"opt": null
 				},
 				{
+					"typeStr": "6:element@props@dialog",
+					"name": "target",
+					"opt": true
+				},
+				{
 					"typeStr": "8",
 					"name": "choices",
 					"opt": true

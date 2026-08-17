@@ -28,10 +28,10 @@ class Bubble extends Window {
 	}
 
 	var strip : h2d.Graphics; 
-	var anchor : ent.Entity;
+	var anchor : h3d.scene.Object;
 	var side : Side = Right;
 
-	public function new(anchor : ent.Entity, side : Side, ?parent) {
+	public function new(anchor : h3d.scene.Object, side : Side, ?parent) {
 		super(parent);
 		this.anchor = anchor;
 		this.side = side;
@@ -50,9 +50,8 @@ class Bubble extends Window {
 	override function sync(ctx) {
 		super.sync(ctx);
 
-		var game = anchor.game;
-
-		var dialogAnchor = new h3d.col.Point(anchor.x, anchor.y, anchor.z + anchor.obj.getBounds().getSize().z);
+		var game = Game.inst;
+		var dialogAnchor = anchor.getAbsPos().getPosition();
 		var pos = game.s3d.camera.project(dialogAnchor.x, dialogAnchor.y, dialogAnchor.z, game.s2d.width, game.s2d.height);
 		if (this.side == Right)
 			this.setPosition(pos.x - Std.int(calculatedWidth / 6), pos.y - Std.int(calculatedHeight) - DIALOG_Y_OFFSET);
@@ -67,8 +66,8 @@ class Bubble extends Window {
 		
 		strip.clear();
 
-		var game = anchor.game;
-		var dialogAnchor = new h3d.col.Point(anchor.x, anchor.y, anchor.z + anchor.obj.getBounds().getSize().z);
+		var game = Game.inst;
+		var dialogAnchor = anchor.getAbsPos().getPosition();
 		var pos = game.s3d.camera.project(dialogAnchor.x, dialogAnchor.y, dialogAnchor.z, game.s2d.width, game.s2d.height);
 
 		var color = 0x000000;
@@ -121,7 +120,12 @@ class Dialog extends Window {
 
 		if (dialog[currentDialog].choices == null) {
 			if (hxd.Key.isPressed(hxd.Key.MOUSE_LEFT) || hxd.Key.isPressed(hxd.Key.ENTER)) {
-				currentDialog++;
+				var next = -1;
+				for (idx => d in dialog) {
+					if (d.id ==  dialog[currentDialog].targetId)
+						next = idx; 
+				}
+				this.currentDialog = next;
 				setDialog(currentDialog);
 			}
 		}
@@ -138,8 +142,10 @@ class Dialog extends Window {
 	}
 
 	function setDialog(idx : Int) {
+		var player = Game.inst.get_player();
+
 		if (npcBubble == null)
-			npcBubble = new Bubble(entity, entity.x < Game.inst.player.x ? Left : Right, this);
+			npcBubble = new Bubble(entity.obj.getObjectByName("bubbleAnchor"), entity.x < player.x ? Left : Right, this);
 
 		this.currentDialog = idx;
 		npcBubble?.text = "";
@@ -149,30 +155,32 @@ class Dialog extends Window {
 			return;
 		}
 
-		// var dialog = entity.inf.dialog;
-		// dialogText.text = dialog[idx].text;
+		var dialog = entity.inf.dialog;
+		if (dialog[this.currentDialog].choices == null || dialog[this.currentDialog].choices.length <= 0) {
+			playerBubble?.remove();
+			return;
+		}
 
-		// if (dialog[idx].choices != null) {
-		// 	var buttons = [];
-		// 	for (c in dialog[idx].choices) {
-		// 		var b = new Button(choicesContainer);
-		// 		@:privateAccess b.label.text = c.text;
-		// 		buttons.push(b);
-		// 		b.onClick = () -> {
-		// 			var next = -1;
-		// 			for (idx => d in dialog) {
-		// 				if (d.id ==  c.targetId)
-		// 					next = idx; 
-		// 			}
+		playerBubble = new Bubble(player.obj.getObjectByName("bubbleAnchor"), player.x < entity.x ? Left : Right, this);
+		var buttons = [];
+		for (c in dialog[this.currentDialog].choices) {
+			var b = new ui.comp.Button(@:privateAccess playerBubble.choicesContainer);
+			@:privateAccess b.label.text = c.text;
+			buttons.push(b);
+			b.onClick = () -> {
+				var next = -1;
+				for (idx => d in dialog) {
+					if (d.id ==  c.targetId)
+						next = idx; 
+				}
 
-		// 			if (next == -1)
-		// 				throw "Wrong next dialog";
+				if (next == -1)
+					throw "Wrong next dialog";
 					
-		// 			for (b in buttons)
-		// 				b.remove();
-		// 			setDialog(next);
-		// 		}
-		// 	}
-		// }
+				for (b in buttons)
+					b.remove();
+				setDialog(next);
+			}
+		}
 	}
 }

@@ -39,6 +39,11 @@
 							"bias": 0.1
 						}
 					}
+				},
+				{
+					"type": "object",
+					"name": "bubbleAnchor",
+					"z": 6.627476303162848
 				}
 			]
 		},
