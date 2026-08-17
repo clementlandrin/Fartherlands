@@ -1,0 +1,21 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"Ground": {
+				"colorMask": 15
+			},
+			"WALL06": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_Bloc"
+			},
+			"01 - Default": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_pattern04"
+			},
+			"dalles_mesh": {
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
+				"name": "Wall_bricks02"
+			}
+		}
+	}
+}
