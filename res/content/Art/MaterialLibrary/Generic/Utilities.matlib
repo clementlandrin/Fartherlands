@@ -135,6 +135,29 @@
 				0.43137254901960786,
 				1
 			]
+		},
+		{
+			"type": "material",
+			"name": "Roughness_test",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"normalMap": "content/Art/MaterialLibrary/Textures/Utilities/Roughness_normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Utilities/Roughness_test.png",
+			"color": [
+				0.2588235294117647,
+				0.2588235294117647,
+				0.2588235294117647,
+				1
+			]
 		}
 	]
 }
