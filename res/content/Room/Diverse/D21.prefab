@@ -172,7 +172,8 @@
 				{
 					"type": "reference",
 					"name": "Lavoir_Present",
-					"source": "content/Art/Room_template/Specific/Present/Lavoir_Present.prefab"
+					"source": "content/Art/Room_template/Specific/Present/Lavoir_Present.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "object",
@@ -629,36 +630,6 @@
 						{
 							"type": "Lake",
 							"name": "Lake2",
-							"x": -3.297726335032603,
-							"y": -0.0083,
-							"z": -0.6413231979041809,
-							"scaleX": 7.659907761860446,
-							"scaleY": 15.394644013751705,
-							"scaleZ": 15.2,
-							"hasDebugColor": false,
-							"nearWaterColor": 4545647,
-							"middleWaterColor": 2302761,
-							"deepWaterColor": 1514788,
-							"roughness": 0.08,
-							"opacityPower": 1.17,
-							"maxDepth": 0,
-							"colorNoiseTexture": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
-							"colorNoiseScale": 0.1,
-							"normalMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_Normal.png",
-							"waveIntensity": 0.53,
-							"waveScale": 0.06,
-							"waveSpeed": 0.13,
-							"secondWaveScale": 0.04,
-							"secondWaveRotate": 114.55,
-							"secondWaveSpeed": 0.23,
-							"kind": 0,
-							"args": [
-								0
-							]
-						},
-						{
-							"type": "Lake",
-							"name": "Lake2",
 							"x": -5.664171352891721,
 							"y": -4.162066794166042,
 							"z": 4.791699999999999,
@@ -803,6 +774,36 @@
 							"roughness": 0.1,
 							"opacityPower": 0.61,
 							"maxDepth": 0.36,
+							"colorNoiseTexture": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
+							"colorNoiseScale": 0.1,
+							"normalMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_Normal.png",
+							"waveIntensity": 0.53,
+							"waveScale": 0.06,
+							"waveSpeed": 0.13,
+							"secondWaveScale": 0.04,
+							"secondWaveRotate": 114.55,
+							"secondWaveSpeed": 0.23,
+							"kind": 0,
+							"args": [
+								0
+							]
+						},
+						{
+							"type": "Lake",
+							"name": "Lake2",
+							"x": -3.297726335032603,
+							"y": -0.0083,
+							"z": -1.1261742787419378,
+							"scaleX": 7.659907761860446,
+							"scaleY": 15.168217113631641,
+							"scaleZ": 15.2,
+							"hasDebugColor": false,
+							"nearWaterColor": 4545647,
+							"middleWaterColor": 2302761,
+							"deepWaterColor": 1514788,
+							"roughness": 0.08,
+							"opacityPower": 1.17,
+							"maxDepth": 0.88,
 							"colorNoiseTexture": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
 							"colorNoiseScale": 0.1,
 							"normalMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_Normal.png",

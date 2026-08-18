@@ -393,25 +393,6 @@
 						"type": 2,
 						"$cdbtype": "element"
 					},
-					"x": 2.5,
-					"y": 2.5,
-					"z": -3.3333,
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
 					"x": -5,
 					"y": -7.125456902603037,
 					"z": 1.6666999999999996,
@@ -628,6 +609,59 @@
 					"scaleY": 10.822845171795787,
 					"scaleZ": 1.9443999999999995,
 					"rotationX": -0.7165329746017597,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 4.803417722382486,
+					"y": -0.8990107404366738,
+					"z": -3.7531191792638214,
+					"scaleX": 3.6928071224535812,
+					"scaleY": 2.851548321719474,
+					"scaleZ": 3.226151276236516,
+					"rotationX": -0.7165329746017638,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 1.8473843606625537,
+					"y": -0.5523533740711013,
+					"z": -2.9551259269034995,
+					"scaleX": 1.2640391963189874,
+					"scaleY": 1.301434669234963,
+					"scaleZ": 3.22615127623651,
+					"rotationX": -0.7165329746017637,
+					"rotationZ": -120.00000000000001
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 2.795276819895442,
+					"y": 1.5494964839039396,
+					"z": -2.9522491043248795,
+					"scaleX": 1.2640391963189874,
+					"scaleY": 1.301434669234963,
+					"scaleZ": 3.2261512762365085,
+					"rotationX": -0.35828049575695786,
+					"rotationY": 0.6205317147376959,
+					"rotationZ": -60.00194017177083
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 4.803417722382486,
+					"y": 5.811333635688028,
+					"z": -3.7531191792638214,
+					"scaleX": 3.8596749985446577,
+					"scaleY": 2.851548321719474,
+					"scaleZ": 3.2261512762365143,
+					"rotationX": -0.716532974601764,
 					"rotationZ": -89.99999999999999
 				},
 				{
