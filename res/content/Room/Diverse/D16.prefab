@@ -4,7 +4,8 @@
 		{
 			"type": "reference",
 			"name": "camera",
-			"source": "gameplay/camera.prefab"
+			"source": "gameplay/camera.prefab",
+			"editMode": "Edit"
 		},
 		{
 			"type": "object",
@@ -58,6 +59,22 @@
 					"x": 7.285,
 					"y": -0.0475,
 					"rotationZ": 180
+				},
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 3.759960898532386,
+					"y": -5.429572885800538,
+					"rotationZ": 180
+				},
+				{
+					"type": "reference",
+					"name": "door_back",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 3.7098355504508884,
+					"y": 6.144989923703047,
+					"rotationZ": 180
 				}
 			]
 		},
@@ -70,7 +87,7 @@
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
 					"x": -7.57,
-					"y": 5.51,
+					"y": 6.170218586411446,
 					"z": 1.21,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
@@ -122,7 +139,7 @@
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
 					"x": -7.57,
-					"y": 5.51,
+					"y": 6.170218586411446,
 					"z": 3.63,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
@@ -175,22 +192,26 @@
 					"type": "model",
 					"name": "wall05",
 					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
-					"x": -1.39,
-					"y": 3.24
+					"x": -0.3114928146534901,
+					"y": 4.179644637007219,
+					"scaleX": 1.549035030290769,
+					"scaleY": 0.2826600756539115
 				},
 				{
 					"type": "model",
 					"name": "wall05",
 					"source": "content/Art/Asset/Generique/Walls/wall05.fbx",
 					"x": -1.39,
-					"y": -2.88
+					"y": -3.475256365159068,
+					"scaleX": 1.6714582456723548,
+					"scaleY": 0.2487281801601391
 				},
 				{
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
 					"x": -7.57,
-					"y": 5.51,
+					"y": 6.170218586411446,
 					"z": 6.13,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
@@ -216,13 +237,13 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 7.66,
-					"y": -5.23,
+					"x": 7.525008720155135,
+					"y": -5.212896151664994,
 					"z": 1.14,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -180,
+					"rotationZ": -90.00000000000001,
 					"children": [
 						{
 							"type": "reference",
@@ -243,13 +264,67 @@
 					"type": "model",
 					"name": "basic_bloc02",
 					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": 7.5,
-					"y": 5.51,
+					"x": 7.489627908844504,
+					"y": 5.934775817833724,
 					"z": 1.14,
 					"scaleX": 0.8,
 					"scaleY": 0.8,
 					"scaleZ": 0.8,
-					"rotationZ": -180,
+					"rotationZ": 90.00000000000001,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 7.532170355523732,
+					"y": -5.212896151664994,
+					"z": 3.5362949090638827,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": -90.00000000000001,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -0.11,
+							"y": 0.02,
+							"z": -1.97,
+							"scaleX": 8.91,
+							"scaleY": 6.13,
+							"scaleZ": 3.43,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "basic_bloc02",
+					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+					"x": 7.489627908844504,
+					"y": 5.934775817833724,
+					"z": 3.5362949090638827,
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"scaleZ": 0.8,
+					"rotationZ": 90.00000000000001,
 					"children": [
 						{
 							"type": "reference",

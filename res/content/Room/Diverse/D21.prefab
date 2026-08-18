@@ -36,6 +36,41 @@
 						},
 						{
 							"type": "model",
+							"name": "Wall_bush01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush01.fbx",
+							"x": -6.9925,
+							"y": 1.2636,
+							"z": 6.9741,
+							"rotationZ": -90
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush01",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush01.fbx",
+							"x": -6.8924,
+							"y": -5.3377,
+							"z": 6.839,
+							"rotationZ": -90
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
+							"x": 0.8146,
+							"y": -6.1039,
+							"z": 6.4102
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush03",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush03.fbx",
+							"x": 4.5341,
+							"y": -6.9614,
+							"z": 7.089,
+							"rotationZ": 49.5318
+						},
+						{
+							"type": "model",
 							"name": "Ivy01",
 							"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
 							"x": -6.4169,
@@ -1056,6 +1091,48 @@
 							"bias": 0.1
 						}
 					}
+				},
+				{
+					"type": "object",
+					"name": "Roof",
+					"x": -3.4109,
+					"y": -3.3567,
+					"z": 7.4012,
+					"children": [
+						{
+							"type": "model",
+							"name": "Tile_roof01",
+							"source": "content/Art/Asset/Generique/deco/Tile_roof01.fbx",
+							"x": 3.4109,
+							"y": -3.682261686990527
+						},
+						{
+							"type": "model",
+							"name": "Tile_roof01",
+							"source": "content/Art/Asset/Generique/deco/Tile_roof01.fbx",
+							"x": -3.561263550044858,
+							"y": 3.5266,
+							"rotationZ": -90
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.28,
+								"Mask_Offset": 0.07,
+								"Mask_Power": 4,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
 				}
 			]
 		},
@@ -1099,6 +1176,23 @@
 							"x": 2.786,
 							"y": -0.046,
 							"z": -0.608
+						},
+						{
+							"type": "model",
+							"name": "Tile_roof01",
+							"source": "content/Art/Asset/Generique/deco/Tile_roof01.fbx",
+							"x": 2.786,
+							"y": -7.0849616869905265,
+							"z": 6.7932
+						},
+						{
+							"type": "model",
+							"name": "Tile_roof01",
+							"source": "content/Art/Asset/Generique/deco/Tile_roof01.fbx",
+							"x": -4.186163550044858,
+							"y": 0.1239,
+							"z": 6.7932,
+							"rotationZ": -90
 						}
 					]
 				},

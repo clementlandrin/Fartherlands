@@ -1,0 +1,428 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "lightProbe",
+			"name": "lightProbe_0",
+			"x": -2.79,
+			"y": -1.334291927761674,
+			"z": 0.64,
+			"scaleX": 9.622686090659997,
+			"scaleY": 10.157613950792415,
+			"scaleZ": 8.67,
+			"fadeDist": 3.5,
+			"fadeMode": "Smoothstep",
+			"texturePath": "content/Art/Envmap/envMapInterior03.jpg",
+			"rotation": 330,
+			"power": 3.7,
+			"sphereRadius": 0.48
+		},
+		{
+			"type": "object",
+			"name": "Art",
+			"x": 0.24745066858968068,
+			"y": -1.25,
+			"z": 1.6666666666666665,
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": -2.5,
+					"y": 1.25,
+					"z": 0.83,
+					"scaleX": 10.35,
+					"scaleY": 6.97,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": -0.61280626358338,
+					"y": -1.8744776664863814,
+					"z": 0.8300000000000001,
+					"scaleX": 6.309748585385119,
+					"scaleY": 6.97,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": -0.5936044265199243,
+					"y": 1.25,
+					"z": -1.67,
+					"scaleX": 5.972327652082498,
+					"scaleY": 10.04,
+					"scaleZ": 10.04,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Generic_ground01_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Generic_ground01_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Generic_ground01_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.73,
+								"Tiling": 0.15
+							}
+						}
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
+				},
+				{
+					"type": "shader",
+					"name": "Top_down_moss",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+						"Sharpness": 1,
+						"Offset": 1,
+						"Tiling": 1,
+						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+						"Mask_Tiling": 0.23,
+						"Mask_Offset": 0,
+						"Mask_Power": 10,
+						"Top_Down_Contrast": 10
+					}
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Collide",
+			"inGameOnly": true,
+			"x": -1.25,
+			"y": -1.25,
+			"z": 1.6666666666666665,
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Small_room_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -2.5,
+					"y": 1.25,
+					"z": 0.8333,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Small_room_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.9255541707779154,
+					"y": 1.25,
+					"z": 0.8300000000000001,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Small_room_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 1.25,
+					"y": -1.8717004023895232,
+					"z": 0.8332999999999999,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Small_room_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 1.25,
+					"y": 4.463304869463107,
+					"z": 0.8300000000000001,
+					"scaleX": 7.5,
+					"scaleY": 5,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Small_room_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 1.25,
+					"y": 1.25,
+					"z": -1.6667,
+					"scaleX": 7.5,
+					"scaleY": 7.5,
+					"scaleZ": 7.5,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "Back",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "object",
+			"children": [
+				{
+					"type": "model",
+					"name": "blocsx10",
+					"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+					"x": -0.16,
+					"y": 3.822372880400187,
+					"rotationZ": -90
+				},
+				{
+					"type": "model",
+					"name": "blocsx10",
+					"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+					"x": 2.1481422313461005,
+					"y": -1.39,
+					"rotationZ": -180
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "LightMask",
+			"children": [
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": -2.2525,
+					"y": 8.6547,
+					"z": 2.4967,
+					"scaleX": 10.35,
+					"scaleY": 6.97,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": -2.2525,
+					"z": 8.3189,
+					"scaleX": 14.9564,
+					"scaleY": 6.97,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"rotationZ": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": 1.4975,
+					"y": -3.1245,
+					"z": 7.8362,
+					"scaleX": 12.5497,
+					"scaleY": 6.97,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"x": 7.065,
+					"y": -3.1245,
+					"z": 2.4967,
+					"scaleX": 10.4,
+					"scaleY": 6.97,
+					"scaleZ": 5,
+					"rotationX": -90,
+					"kind": 0,
+					"args": [
+						0
+					],
+					"children": [
+						{
+							"type": "shader",
+							"name": "Triplanar",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Normal.png",
+								"Sharpness": 1,
+								"Offset": 0.94,
+								"Tiling": 0.2
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -608,21 +608,21 @@
 					"type": "reference",
 					"name": "D19",
 					"source": "content/Room/Diverse/D19.prefab",
-					"x": 30,
+					"x": 34.98747620869039,
 					"y": 20
 				},
 				{
 					"type": "reference",
 					"name": "D20",
 					"source": "content/Room/Diverse/D20.prefab",
-					"x": 30,
+					"x": 34.98747620869039,
 					"y": -20
 				},
 				{
 					"type": "reference",
 					"name": "D21",
 					"source": "content/Room/Diverse/D21.prefab",
-					"x": 32.5
+					"x": 37.48747620869039
 				},
 				{
 					"type": "reference",
@@ -768,6 +768,20 @@
 					"source": "content/Room/Diverse/D46.prefab",
 					"x": -54.73573835715804,
 					"y": 50.67620331638445
+				},
+				{
+					"type": "reference",
+					"name": "D47",
+					"source": "content/Room/Diverse/D47.prefab",
+					"x": 24.05697918872908,
+					"y": -5.230810770457705
+				},
+				{
+					"type": "reference",
+					"name": "D48",
+					"source": "content/Room/Diverse/D48.prefab",
+					"x": 24.05697918872908,
+					"y": 4.351537243902708
 				},
 				{
 					"type": "shader",

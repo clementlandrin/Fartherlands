@@ -1,0 +1,295 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "object",
+			"name": "common",
+			"children": [
+				{
+					"type": "reference",
+					"name": "doorBack",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 1.5551212623697168,
+					"y": 0.20642782274687477,
+					"rotationZ": -180
+				},
+				{
+					"type": "object",
+					"name": "doors",
+					"x": -0.095,
+					"y": 0.0275,
+					"children": [
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -2.001713016066752,
+							"y": -0.33150925655407715,
+							"children": [
+								{
+									"type": "shader",
+									"name": "Top_down_moss",
+									"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+									"props": {
+										"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+										"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+										"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+										"Sharpness": 1,
+										"Offset": 1,
+										"Tiling": 1,
+										"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+										"Mask_Tiling": 0.23,
+										"Mask_Offset": 0,
+										"Mask_Power": 10,
+										"Top_Down_Contrast": 10
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "Present",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Present",
+					"source": "lighting/Present.prefab"
+				},
+				{
+					"type": "reference",
+					"name": "Tiny_Room_Present",
+					"source": "content/Art/Room_template/Generic/Present/Tiny_Room_Present.prefab"
+				},
+				{
+					"type": "object",
+					"name": "archi",
+					"x": -1.865,
+					"y": -1.085,
+					"z": 0.31,
+					"children": [
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -0.16671301606675137,
+							"y": 5.175,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -0.309007246490135,
+							"y": -1.9245891397807555,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": 3.50733057476665,
+							"y": -1.9245891397807555,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -0.3678493140064212,
+							"y": 4.755,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -0.16671301606675137,
+							"y": -0.2450000000000001,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": 1.3546884829616481,
+							"y": -1.8394776664863812,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.23,
+								"Mask_Offset": 0,
+								"Mask_Power": 10,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "object",
+					"name": "Foliage",
+					"x": -1.0923,
+					"y": 1.7988
+				},
+				{
+					"type": "model",
+					"name": "levier",
+					"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+					"props": {
+						"id": "D16_levier",
+						"type": 14,
+						"$cdbtype": "element",
+						"props": {
+							"disableOnActivate": [
+								{
+									"ref": "LavoryTrap1"
+								}
+							],
+							"enableOnActivate": [
+								{
+									"ref": "lavory_bridge"
+								}
+							]
+						}
+					},
+					"x": -0.42591975016392425,
+					"y": 1.481926651571957
+				}
+			]
+		},
+		{
+			"type": "object",
+			"name": "past",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Past",
+					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "object",
+					"name": "archi",
+					"x": -1.865,
+					"y": -1.085,
+					"z": 0.31,
+					"children": [
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -0.16671301606675137,
+							"y": 5.175,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -0.309007246490135,
+							"y": -1.9245891397807555,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": 3.50733057476665,
+							"y": -1.9245891397807555,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "column06",
+							"source": "content/Art/Asset/Generique/blocs/column06.fbx",
+							"x": -0.3678493140064212,
+							"y": 4.755,
+							"z": -0.31
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": -0.16671301606675137,
+							"y": -0.2450000000000001,
+							"scaleY": 1.17
+						},
+						{
+							"type": "model",
+							"name": "joins",
+							"source": "content/Art/Asset/Generique/blocs/joins.fbx",
+							"x": 1.3546884829616481,
+							"y": -1.8394776664863812,
+							"scaleY": 1.17,
+							"rotationZ": 90
+						}
+					]
+				},
+				{
+					"type": "object",
+					"name": "doors",
+					"enabled": false,
+					"x": -0.095,
+					"y": 0.0275,
+					"children": [
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -2.001713016066752,
+							"y": -0.33150925655407715
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "levier",
+					"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+					"props": {
+						"id": "D16_levier",
+						"type": 14,
+						"$cdbtype": "element",
+						"props": {
+							"disableOnActivate": [
+								{
+									"ref": "LavoryTrap1"
+								}
+							],
+							"enableOnActivate": [
+								{
+									"ref": "lavory_bridge"
+								}
+							]
+						}
+					},
+					"x": -0.4259,
+					"y": 1.4819
+				}
+			]
+		},
+		{
+			"type": "reference",
+			"name": "Tiny_Room_Past",
+			"source": "content/Art/Room_template/Generic/Past/Tiny_Room_Past.prefab"
+		}
+	]
+}
