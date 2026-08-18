@@ -19,11 +19,6 @@
 				"name": "Tree_Background",
 				"__refMode": "modelSpec"
 			},
-			"default": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
-				"name": "BaseMetal",
-				"__refMode": "modelSpec"
-			},
 			"default/Ladder.fbx": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "BaseMetal",
@@ -34,15 +29,21 @@
 				"name": "green",
 				"__refMode": "modelSpec"
 			},
-			"default/ground_lavoir.fbx": {
-				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
-				"name": "Wall_pattern04",
-				"__refMode": "modelSpec"
-			},
 			"default/plane_test.fbx": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_Bloc",
 				"__refMode": "modelSpec"
+			},
+			"default": {
+				"mode": "PBR",
+				"blend": "None",
+				"shadows": true,
+				"culling": "Back",
+				"depthTest": "Less",
+				"colorMask": 15,
+				"enableStencil": false,
+				"textureWrap": true,
+				"parallax": 0
 			}
 		}
 	}

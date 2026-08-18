@@ -39,7 +39,8 @@
 				{
 					"type": "reference",
 					"name": "H1",
-					"source": "content/Room/Hub/H1.prefab"
+					"source": "content/Room/Hub/H1.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -586,7 +587,8 @@
 					"type": "reference",
 					"name": "D16",
 					"source": "content/Room/Diverse/D16.prefab",
-					"x": 15
+					"x": 15,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
