@@ -46,12 +46,12 @@ class Game extends hxd.App {
 	public var presentShader : prefab.TemporalShader.Temporal;
 
 	public var pastWindowShader : prefab.TemporalWindowShader.TemporalWindow;
-	
+
 	public var baseUI : ui.BaseUI;
 	public var globalEvent : hxd.WaitEvent;
 
 	var modeMake : TimeMode = Common;
-	
+
 	var presentLighting : h3d.scene.Object;
 	var presentRenderer : gfx.Renderer;
 	var pastLighting : h3d.scene.Object;
@@ -82,7 +82,7 @@ class Game extends hxd.App {
 		pastWindowShader = new prefab.TemporalWindowShader.TemporalWindow();
 
 		startLevel = level;
-		startLevel = "world_prog.prefab";
+		// startLevel = "world_prog.prefab";
 		fadeEffect = new hrt.prefab.rfx.Vignetting(null, null);
 		fadeEffect.alpha = 0.0;
 		fadeEffect.color = 0;
@@ -96,7 +96,7 @@ class Game extends hxd.App {
 
 		load();
 		if ( state == null ) {
-			state = new st.GameState();	
+			state = new st.GameState();
 			state.level = startLevel;
 		}
 		ctrl = new controllers.GoddessController(state.goddess);
@@ -105,7 +105,7 @@ class Game extends hxd.App {
 		globalEvent = new hxd.WaitEvent();
 
 		mainUI = new ui.MainUI(baseUI.root);
-		
+
 		presentRenderer = new gfx.Renderer(h3d.scene.pbr.Environment.getDefault());
 		presentRenderer.timeMode = Present;
 		pastRenderer = new gfx.Renderer(h3d.scene.pbr.Environment.getDefault());
@@ -160,7 +160,7 @@ class Game extends hxd.App {
 		presentLighting.visible = false;
 		pastLighting.visible = true;
 		for ( e in entities ) {
-			e.setMode(Past);	
+			e.setMode(Past);
 		}
 		@:privateAccess s3d.renderer.ctx.textures = pastTextureCache;
 		s3d.render(e);
@@ -221,8 +221,8 @@ class Game extends hxd.App {
 			throw "invalid mode";
 		}
 		s3d.renderer = null;
-	} 
-	
+	}
+
 	function customMake(p : hrt.prefab.Prefab) {
 		var obj3d = p.to(hrt.prefab.Object3D);
 		var source = p.source;
@@ -251,7 +251,7 @@ class Game extends hxd.App {
 			case "element":
 				var props: Data.Element = cast p.props;
 				Entity.add(props.id, p);
-				
+
 				switch (props.type) {
 					case Room:
 						curRoom.inf = props.props;
@@ -293,7 +293,7 @@ class Game extends hxd.App {
 						if (props.props?.dialog != null) {
 							var t = new Talkable();
 							e = t;
-						} else 
+						} else
 						if ( props.props != null && props.props.memo ) {
 							var m = new ent.Memo();
 							e = m;
@@ -326,7 +326,7 @@ class Game extends hxd.App {
 						var ww = new ent.interactible.WeatherWheel();
 						e = ww;
 				}
-				
+
 				if ( e != null ) {
 					e.inf = props.props;
 					e.id = props.id;
@@ -355,7 +355,7 @@ class Game extends hxd.App {
 		var obj3d = p.to(hrt.prefab.Object3D);
 		if ( obj3d != null )
 			temporalMaterials(obj3d.local3d, modeMake);
-		
+
 		// leaving past/present folder
 		switch(p.name.toLowerCase()) {
 		case "past":
