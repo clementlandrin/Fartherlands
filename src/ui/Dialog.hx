@@ -5,6 +5,11 @@ enum Side {
 	Left;
 }
 
+enum Align {
+	Top;
+	Bottom;
+}
+
 class Bubble extends Window {
 	static var SRC =
 	<bubble>
@@ -15,7 +20,6 @@ class Bubble extends Window {
 
 	static final STRIP_X_OFFSET = 50;
 	static final STRIP_WIDTH = 25;
-	static final STRIP_SPACING = 0;
 
 	static final DIALOG_Y_OFFSET = 50;
 
@@ -27,14 +31,16 @@ class Bubble extends Window {
 		return bubbleText.text = v;
 	}
 
-	var strip : h2d.Graphics; 
+	var strip : h2d.Graphics;
 	var anchor : h3d.scene.Object;
 	var side : Side = Right;
+	var align : Align = Top;
 
-	public function new(anchor : h3d.scene.Object, side : Side, ?parent) {
+	public function new(anchor : h3d.scene.Object, side : Side, align : Align, ?parent) {
 		super(parent);
 		this.anchor = anchor;
 		this.side = side;
+		this.align = align;
 		initComponent();
 
 		strip = new h2d.Graphics(this.getScene());
@@ -53,18 +59,19 @@ class Bubble extends Window {
 		var game = Game.inst;
 		var dialogAnchor = anchor.getAbsPos().getPosition();
 		var pos = game.s3d.camera.project(dialogAnchor.x, dialogAnchor.y, dialogAnchor.z, game.s2d.width, game.s2d.height);
-		if (this.side == Right)
-			this.setPosition(pos.x - Std.int(calculatedWidth / 6), pos.y - Std.int(calculatedHeight) - DIALOG_Y_OFFSET);
-		else
-			this.setPosition(pos.x - Std.int(calculatedWidth * (5 / 6)), pos.y - Std.int(calculatedHeight) - DIALOG_Y_OFFSET);
-
+		var x = this.side == Right ? pos.x - Std.int(calculatedWidth / 6) : pos.x - Std.int(calculatedWidth * (5 / 6));
+		var y = this.align == Top ? pos.y - Std.int(calculatedHeight) - DIALOG_Y_OFFSET : pos.y + Std.int(calculatedHeight) + DIALOG_Y_OFFSET;
+		this.setPosition(x, y);
 		drawStrip();
 	}
 
 	function drawStrip() {
 		this.calcAbsPos();
-		
+
 		strip.clear();
+
+		if (!this.visible)
+			return;
 
 		var game = Game.inst;
 		var dialogAnchor = anchor.getAbsPos().getPosition();
@@ -73,15 +80,25 @@ class Bubble extends Window {
 		var color = 0x000000;
 		strip.beginFill(color, 0.8);
 		strip.lineStyle(1, color, 0.8);
-		if (this.side == Right)
-			strip.moveTo(this.absX + STRIP_X_OFFSET, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
-		else
-			strip.moveTo(this.absX + this.calculatedWidth - STRIP_X_OFFSET, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
-		strip.lineTo(pos.x, pos.y - STRIP_SPACING);
-		if (this.side == Right)
-			strip.lineTo(this.absX + STRIP_X_OFFSET + STRIP_WIDTH, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
-		else
-			strip.lineTo(this.absX + this.calculatedWidth - STRIP_X_OFFSET - STRIP_WIDTH, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
+
+		var startX = this.side == Right ? this.absX + STRIP_X_OFFSET : this.absX + this.calculatedWidth - STRIP_X_OFFSET;
+		var startY = this.align == Top ? this.absY + 100 : this.absY;
+		strip.moveTo(startX, startY);
+
+		// if (this.side == Right)
+		// 	strip.moveTo(this.absX + STRIP_X_OFFSET, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
+		// else
+		// 	strip.moveTo(this.absX + this.calculatedWidth - STRIP_X_OFFSET, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
+		strip.lineTo(x, y);
+
+		var endX = this.side == Right ? this.absX + STRIP_X_OFFSET + STRIP_WIDTH : this.absX + this.calculatedWidth - STRIP_X_OFFSET - STRIP_WIDTH;
+		var endY = this.align == Top ? this.absY + 100 : this.absY;
+		strip.lineTo(endX, endY);
+
+		// if (this.side == Right)
+		// 	strip.lineTo(this.absX + STRIP_X_OFFSET + STRIP_WIDTH, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
+		// else
+		// 	strip.lineTo(this.absX + this.calculatedWidth - STRIP_X_OFFSET - STRIP_WIDTH, this.absY + 100);//@:privateAccess dialogAnchor.calculatedHeight);
 		strip.endFill();
 	}
 }
@@ -123,11 +140,14 @@ class Dialog extends Window {
 				var next = -1;
 				for (idx => d in dialog) {
 					if (d.id ==  dialog[currentDialog].targetId)
-						next = idx; 
+						next = idx;
 				}
 				this.currentDialog = next;
 				setDialog(currentDialog);
 			}
+		}
+		else if (!playerBubble.visible && npcBubble.text == dialog[this.currentDialog].text) {
+			playerBubble.visible = true;
 		}
 	}
 
@@ -145,11 +165,11 @@ class Dialog extends Window {
 		var player = Game.inst.get_player();
 
 		if (npcBubble == null)
-			npcBubble = new Bubble(entity.obj.getObjectByName("bubbleAnchor"), entity.x < player.x ? Left : Right, this);
+			npcBubble = new Bubble(entity.obj.getObjectByName("bubbleAnchor"), entity.x < player.x ? Left : Right, Top, this);
 
 		this.currentDialog = idx;
 		npcBubble?.text = "";
-		
+
 		if (this.currentDialog < 0 || this.currentDialog >= entity.inf.dialog.length) {
 			this.remove();
 			return;
@@ -161,7 +181,8 @@ class Dialog extends Window {
 			return;
 		}
 
-		playerBubble = new Bubble(player.obj.getObjectByName("bubbleAnchor"), player.x < entity.x ? Left : Right, this);
+		playerBubble = new Bubble(player.obj.getObjectByName("bubbleAnchor"), player.x < entity.x ? Left : Right, Bottom, this);
+		playerBubble.visible = false;
 		var buttons = [];
 		for (c in dialog[this.currentDialog].choices) {
 			var b = new ui.comp.Button(@:privateAccess playerBubble.choicesContainer);
@@ -171,12 +192,12 @@ class Dialog extends Window {
 				var next = -1;
 				for (idx => d in dialog) {
 					if (d.id ==  c.targetId)
-						next = idx; 
+						next = idx;
 				}
 
 				if (next == -1)
 					throw "Wrong next dialog";
-					
+
 				for (b in buttons)
 					b.remove();
 				setDialog(next);

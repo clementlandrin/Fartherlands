@@ -13,12 +13,12 @@ dialog #dialog-container #bubble-text {
   min-width: 500;
 }
 dialog #choices-container {
-  layout: vertical;
   margin-left: 10;
+  align: middle middle;
 }
 dialog #choices-container button {
   background: #000000 0.8;
-  margin-bottom: 5;
+  margin-right: 5;
 }
 dialog #choices-container button:hover {
   background: #404040 0.8;
