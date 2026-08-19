@@ -4,7 +4,6 @@ import hxd.Window;
 import h3d.col.Point;
 
 class CameraController extends h3d.scene.Object {
-    public var strength : Float = 0.3;
     public var deadZone : h2d.col.Bounds;
 
     var game : Game;
@@ -43,7 +42,6 @@ class CameraController extends h3d.scene.Object {
 
         var engine = Engine.getCurrent();
         var sp = camera.project(game.player.x, game.player.y, game.player.z, engine.width, engine.height);
-        var camTargetScreenPoint = camera.project(camera.target.x, camera.target.y, camera.target.z, engine.width, engine.height);
         if (!deadZone.contains(new h2d.col.Point(sp.x, sp.y))) {
             var closestPoint = new h2d.col.Point(engine.width / 2, engine.height / 2);
             if (sp.x < deadZone.xMin || sp.x > deadZone.xMax)
@@ -54,9 +52,12 @@ class CameraController extends h3d.scene.Object {
             var targetPoint = r.intersect(h3d.col.Plane.fromNormalPoint(new h3d.col.Point(0, 0, 1), new h3d.col.Point(game.player.x, game.player.y, game.player.z)));
 
             var p = new h3d.col.Point(
-                hxd.Math.lerp(camera.target.x, targetPoint.x, strength * ctx.elapsedTime),
-                hxd.Math.lerp(camera.target.y, targetPoint.y, strength * ctx.elapsedTime),
-                hxd.Math.lerp(camera.target.z, targetPoint.z, strength * ctx.elapsedTime));
+                hxd.Math.lerp(camera.target.x, targetPoint.x, Const.get(FollowStrength) * ctx.elapsedTime),
+                hxd.Math.lerp(camera.target.y, targetPoint.y, Const.get(FollowStrength) * ctx.elapsedTime),
+                hxd.Math.lerp(camera.target.z, targetPoint.z, Const.get(FollowStrength) * ctx.elapsedTime));
+
+			if (!curRoom?.inf?.camFollowZ)
+				p.z = camera.target.z;
 
             set(p);
         }
