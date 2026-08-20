@@ -52,9 +52,9 @@ class CameraController extends h3d.scene.Object {
             var targetPoint = r.intersect(h3d.col.Plane.fromNormalPoint(new h3d.col.Point(0, 0, 1), new h3d.col.Point(game.player.x, game.player.y, game.player.z)));
 
             var p = new h3d.col.Point(
-                hxd.Math.lerp(camera.target.x, targetPoint.x, Const.get(FollowStrength) * ctx.elapsedTime),
-                hxd.Math.lerp(camera.target.y, targetPoint.y, Const.get(FollowStrength) * ctx.elapsedTime),
-                hxd.Math.lerp(camera.target.z, targetPoint.z, Const.get(FollowStrength) * ctx.elapsedTime));
+                hxd.Math.lerp(camera.target.x, targetPoint.x, Const.get(FollowStrengthXY) * ctx.elapsedTime),
+                hxd.Math.lerp(camera.target.y, targetPoint.y, Const.get(FollowStrengthXY) * ctx.elapsedTime),
+                hxd.Math.lerp(camera.target.z, targetPoint.z, Const.get(FollowStrengthZ) * ctx.elapsedTime));
 
 			if (!curRoom?.inf?.camFollowZ)
 				p.z = camera.target.z;

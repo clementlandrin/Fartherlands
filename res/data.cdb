@@ -120,7 +120,11 @@
 					"value": 15
 				},
 				{
-					"id": "FollowStrength",
+					"id": "FollowStrengthXY",
+					"value": 0.3
+				},
+				{
+					"id": "FollowStrengthZ",
 					"value": 1
 				},
 				{
