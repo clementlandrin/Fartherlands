@@ -42,8 +42,13 @@
 				},
 				{
 					"type": "object",
-					"name": "bubbleAnchor",
-					"z": 6.627476303162848
+					"name": "bubbleAnchorTop",
+					"z": 7.296565395387765
+				},
+				{
+					"type": "object",
+					"name": "bubbleAnchorBottom",
+					"z": -0.8621846880689448
 				}
 			]
 		},
