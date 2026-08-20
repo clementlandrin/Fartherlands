@@ -61,7 +61,7 @@
 					"noiseScale": 1000,
 					"samples": 60,
 					"radius": 20,
-					"intensity": 40,
+					"intensity": 50,
 					"bias": 0.1,
 					"microIntensity": 0,
 					"USE_FADE": true,

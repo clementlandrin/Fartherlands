@@ -497,6 +497,14 @@
 					"type": "reference",
 					"name": "D43",
 					"source": "content/Room/Diverse/D43.prefab",
+					"props": {
+						"id": "World_D43",
+						"type": 0,
+						"$cdbtype": "element",
+						"props": {
+							"camFollowZ": true
+						}
+					},
 					"x": -10.5,
 					"y": -62.5
 				},
@@ -512,6 +520,14 @@
 					"type": "reference",
 					"name": "D40",
 					"source": "content/Room/Diverse/D40.prefab",
+					"props": {
+						"id": "World_D40",
+						"type": 0,
+						"$cdbtype": "element",
+						"props": {
+							"camFollowZ": true
+						}
+					},
 					"x": -32.5,
 					"y": -48.07
 				},
@@ -664,6 +680,14 @@
 					"type": "reference",
 					"name": "D28",
 					"source": "content/Room/Diverse/D28.prefab",
+					"props": {
+						"id": "World_D28",
+						"type": 0,
+						"$cdbtype": "element",
+						"props": {
+							"camFollowZ": true
+						}
+					},
 					"x": 0.03,
 					"y": -84.34,
 					"z": 31.75

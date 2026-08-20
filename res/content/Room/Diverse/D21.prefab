@@ -14,7 +14,8 @@
 				{
 					"type": "reference",
 					"name": "Present",
-					"source": "lighting/Present.prefab"
+					"source": "lighting/Present.prefab",
+					"editMode": "Edit"
 				},
 				{
 					"type": "object",

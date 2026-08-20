@@ -208,7 +208,7 @@
 					"name": "Moss",
 					"source": "content/Art/MaterialLibrary/Custom_Shader/Moss.shgraph",
 					"props": {
-						"Face Size ": 1.2,
+						"Face Size ": 1,
 						"Face Inflat": 0,
 						"Lerp": 1,
 						"uvMin": [

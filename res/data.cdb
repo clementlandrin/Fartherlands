@@ -121,7 +121,7 @@
 				},
 				{
 					"id": "FollowStrength",
-					"value": 0.3
+					"value": 1
 				},
 				{
 					"id": "OutlineSize",

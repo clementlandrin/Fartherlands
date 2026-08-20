@@ -126,9 +126,9 @@
 					"type": "model",
 					"name": "Ivy02",
 					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
-					"x": 0.612,
-					"y": 0.816,
-					"z": 0.442,
+					"x": 0.7209634479376392,
+					"y": 0.8160000000000003,
+					"z": 0.44200000000000017,
 					"scaleX": 0.55,
 					"scaleY": 0.55,
 					"scaleZ": 0.55
@@ -137,25 +137,49 @@
 					"type": "model",
 					"name": "Ivy02",
 					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
-					"x": -0.668,
-					"y": 1.916,
-					"z": -2.298,
+					"x": 0.1895663916944903,
+					"y": 0.36418115832322195,
+					"z": -1.8584209945386174,
 					"scaleX": 0.55,
 					"scaleY": 0.55,
 					"scaleZ": 0.55,
+					"rotationZ": 9.213864076586628e-15
+				},
+				{
+					"type": "model",
+					"name": "Ivy01",
+					"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
+					"x": -4.7251,
+					"y": 2.5538,
+					"z": -1.0348,
+					"scaleX": 0.5524,
+					"scaleY": 0.5524,
+					"scaleZ": 0.5524,
 					"rotationZ": 90
 				},
 				{
 					"type": "model",
 					"name": "Ivy02",
 					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
-					"x": -0.668,
-					"y": 1.586,
-					"z": 9.972,
+					"x": -0.8145352095892733,
+					"y": 1.8588400987740115,
+					"z": -2.996630229502669,
 					"scaleX": 0.55,
 					"scaleY": 0.55,
 					"scaleZ": 0.55,
-					"rotationZ": 90
+					"rotationZ": 89.99999999999999
+				},
+				{
+					"type": "model",
+					"name": "Ivy02",
+					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
+					"x": -0.6680000000000001,
+					"y": 1.5859999999999999,
+					"z": 9.971999999999998,
+					"scaleX": 0.5500000000000002,
+					"scaleY": 0.5500000000000002,
+					"scaleZ": 0.55,
+					"rotationZ": 46.94425640654318
 				},
 				{
 					"type": "model",
@@ -208,26 +232,7 @@
 					"scaleX": 1.2,
 					"scaleY": 1.2,
 					"scaleZ": 1.2,
-					"rotationZ": -90,
-					"children": [
-						{
-							"type": "shader",
-							"name": "Foliage_cover",
-							"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
-							"props": {
-								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-								"Sharpness": 1,
-								"Offset": 1,
-								"Tiling": 1,
-								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-								"Mask_Tiling": 1,
-								"Mask_Offset": 0,
-								"Mask_Power": 1
-							}
-						}
-					]
+					"rotationZ": -90
 				},
 				{
 					"type": "model",
@@ -235,26 +240,7 @@
 					"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
 					"x": -2.4534,
 					"y": 7.3671,
-					"z": -6.1042,
-					"children": [
-						{
-							"type": "shader",
-							"name": "Foliage_cover",
-							"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
-							"props": {
-								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-								"Sharpness": 1,
-								"Offset": 1,
-								"Tiling": 1,
-								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-								"Mask_Tiling": 1,
-								"Mask_Offset": 0,
-								"Mask_Power": 1
-							}
-						}
-					]
+					"z": -6.1042
 				},
 				{
 					"type": "model",
@@ -360,7 +346,7 @@
 							"source": "content/Art/Asset/Generique/bridges/Ground_Debris04.fbx",
 							"x": 3.5058,
 							"y": -2.7275,
-							"z": -18.025,
+							"z": -17.515,
 							"scaleY": 0.87,
 							"rotationZ": 90.4,
 							"children": [
@@ -1200,27 +1186,45 @@
 									"type": "model",
 									"name": "Observatory_part02",
 									"source": "content/Art/Asset/Specifique/Observatory_part02.fbx"
-								},
-								{
-									"type": "shader",
-									"name": "Foliage_cover",
-									"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
-									"props": {
-										"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-										"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-										"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-										"Sharpness": 1,
-										"Offset": 1,
-										"Tiling": 1,
-										"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-										"Mask_Tiling": 1,
-										"Mask_Offset": 0,
-										"Mask_Power": 1
-									}
 								}
 							]
 						}
 					]
+				},
+				{
+					"type": "shader",
+					"name": "Top_down_moss",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+						"Sharpness": 1,
+						"Offset": 1,
+						"Tiling": 0.2,
+						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+						"Mask_Tiling": 0.15,
+						"Mask_Offset": 0,
+						"Mask_Power": 7.12,
+						"Top_Down_Contrast": 10
+					}
+				},
+				{
+					"type": "shader",
+					"name": "Foliage_cover",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+						"Sharpness": 1,
+						"Offset": 1,
+						"Tiling": 0.29,
+						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+						"Mask_Tiling": 0.17,
+						"Mask_Offset": 0.59,
+						"Mask_Power": 2
+					}
 				}
 			]
 		},
@@ -1235,7 +1239,6 @@
 					"type": "reference",
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
 					"x": -0.0367,
 					"y": 2.4127,
 					"z": 0.1163,
@@ -1249,7 +1252,6 @@
 					"type": "reference",
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
 					"x": -0.0367,
 					"y": 5.7765,
 					"z": -0.8638,
@@ -1262,7 +1264,6 @@
 					"type": "reference",
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
 					"x": 0.0733,
 					"y": -8.1891,
 					"z": 0.7475,
@@ -1270,6 +1271,114 @@
 					"scaleY": 18.1488,
 					"scaleZ": 2.3698,
 					"rotationZ": -90
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -3.593195918710535,
+					"y": -6.918060032732683,
+					"z": 16.02170467222095,
+					"scaleX": 3.2892590566443687,
+					"scaleY": 4.138113094197004,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -3.9748541834328535,
+					"y": -8.06791956986217,
+					"z": 16.02170467222095,
+					"scaleX": 3.2892590566443687,
+					"scaleY": 4.138113094197004,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -3.9748541834328535,
+					"y": -5.606462410396944,
+					"z": 16.02170467222095,
+					"scaleX": 3.2892590566443687,
+					"scaleY": 4.138113094197004,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.685533133736044,
+					"y": -9.055204853655596,
+					"z": 16.02170467222095,
+					"scaleX": 4.168400607397215,
+					"scaleY": 4.760395854028975,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 2.8362484746420478,
+					"y": -11.244675205978638,
+					"z": 16.02170467222095,
+					"scaleX": 3.580084679405327,
+					"scaleY": 4.760395854028975,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": 3.8971125768872525,
+					"y": -11.244675205978638,
+					"z": 28.79571968656819,
+					"scaleX": 2.9924524993234813,
+					"scaleY": 3.9928546548227115,
+					"kind": 0,
+					"args": [
+						0
+					]
 				}
 			]
 		},
@@ -1277,6 +1386,16 @@
 			"type": "reference",
 			"name": "camera",
 			"source": "gameplay/camera.prefab"
+		},
+		{
+			"type": "reference",
+			"name": "ladder_15",
+			"source": "gameplay/ladder_15.prefab",
+			"x": -3.1132110260236914,
+			"y": 3.080013189787678,
+			"z": 1.4119206751784077,
+			"scaleZ": 1.5760230590356445,
+			"rotationZ": -89.99999999999999
 		}
 	]
 }
