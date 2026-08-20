@@ -28,7 +28,7 @@ class TemporalWindow extends hxsl.Shader {
 				pixelColor.rgb *= pixelColor.rgb;
 			var curDepth = depthMap.get(screenUV);
 			var pastDepth = depth.get(screenUV).r;
-			if ( curDepth < pastDepth )
+			if ( curDepth < pastDepth - 1e-2) // prevent some z fighting
 				discard;
 		}
 	}
