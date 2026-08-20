@@ -25,4 +25,12 @@ class Renderer extends h3d.scene.pbr.Renderer {
 			Game.inst.measure(id);
 		#end
 	}
+
+	override function end() {
+		if (this.currentStep == Decals) {
+			setTarget(textures.depth);
+			renderPass(depthOutput, get("depthWrite"));
+		}
+		super.end();
+	}
 }
