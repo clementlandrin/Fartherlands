@@ -1379,6 +1379,42 @@
 					"args": [
 						0
 					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -2.900068339882978,
+					"y": -4.733142778663932,
+					"z": 28.79571968656819,
+					"scaleX": 2.9924524993234813,
+					"scaleY": 3.421480476936803,
+					"kind": 0,
+					"args": [
+						0
+					]
+				},
+				{
+					"type": "polygon",
+					"name": "polygon",
+					"props": {
+						"id": "Start_polygon",
+						"type": 2,
+						"$cdbtype": "element"
+					},
+					"x": -2.900068339882978,
+					"y": -6.606122968004456,
+					"z": 28.79571968656819,
+					"scaleX": 2.480898858653672,
+					"scaleY": 3.421480476936803,
+					"kind": 0,
+					"args": [
+						0
+					]
 				}
 			]
 		},
