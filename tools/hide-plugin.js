@@ -53,7 +53,10 @@ gfx.MaterialSetup.set = function() {
 };
 gfx.MaterialSetup.__super__ = h3d.mat.PbrMaterialSetup;
 gfx.MaterialSetup.prototype = $extend(h3d.mat.PbrMaterialSetup.prototype,{
-	createMaterial: function() {
+	createRenderer: function() {
+		return new gfx.Renderer(h3d.scene.pbr.Environment.getDefault());
+	}
+	,createMaterial: function() {
 		return new gfx.Material();
 	}
 	,gloss: function() {
@@ -128,6 +131,28 @@ gfx.PropsTexture.prototype = $extend(h3d.shader.pbr.PropsTexture.prototype,{
 		return s;
 	}
 	,__class__: gfx.PropsTexture
+});
+gfx.Renderer = function(env) {
+	h3d.scene.pbr.Renderer.call(this,env);
+};
+$hxClasses["gfx.Renderer"] = gfx.Renderer;
+gfx.Renderer.__name__ = "gfx.Renderer";
+gfx.Renderer.__super__ = h3d.scene.pbr.Renderer;
+gfx.Renderer.prototype = $extend(h3d.scene.pbr.Renderer.prototype,{
+	initGlobals: function() {
+		h3d.scene.pbr.Renderer.prototype.initGlobals.call(this);
+	}
+	,mark: function(id) {
+		h3d.scene.pbr.Renderer.prototype.mark.call(this,id);
+	}
+	,end: function() {
+		if(this.currentStep == h3d.impl.Step.Decals) {
+			this.setTarget(this.textures.depth);
+			this.renderPass(this.depthOutput,this.get("depthWrite"));
+		}
+		h3d.scene.pbr.Renderer.prototype.end.call(this);
+	}
+	,__class__: gfx.Renderer
 });
 Math.__name__ = "Math";
 var js = js || {};
@@ -621,12 +646,6 @@ prefab.Lake.prototype = $extend(hrt.prefab.l3d.Polygon.prototype,{
 		depthPass.set_depthWrite(true);
 		depthPass.set_depthTest(h3d.mat.Compare.Less);
 		depthPass.addShader(lo.material.passes.getShader(h3d.shader.BaseMesh));
-		var depthPrepass = lo.material.allocPass("depthPrepass",false);
-		depthPrepass.set_depthWrite(false);
-		depthPrepass.addShader(lo.material.passes.getShader(h3d.shader.BaseMesh));
-		depthPrepass.stencil = new h3d.mat.Stencil();
-		depthPrepass.stencil.setFunc(h3d.mat.Compare.Always,2,0,2);
-		depthPrepass.stencil.setOp(h3d.mat.StencilOp.Keep,h3d.mat.StencilOp.Keep,h3d.mat.StencilOp.Replace);
 		this.lakeShader = new prefab.LakeShader();
 		lo.material.passes.addShader(this.lakeShader);
 		lo.material.passes.addShader(new h3d.shader.pbr.StrengthValues());
@@ -3500,7 +3519,7 @@ prefab.Temporal.SRC = "HXSMD3ByZWZhYi5UZW1wb3JhbAEBBFBBU1QCAgABAAAAAAAA";
 prefab.Temporal._MODULE = "prefab.TemporalShader";
 prefab.TemporalShader._ = hrt.prefab.Prefab.register("temporalShader",prefab.TemporalShader);
 prefab.TemporalShader.serializablePropsFields = null;
-prefab.TemporalWindow.SRC = "HXSMFXByZWZhYi5UZW1wb3JhbFdpbmRvdwkBBmdsb2JhbA0BAgIEdGltZQMAAQADEG1vZGVsVmlld0ludmVyc2UHAAEBAwAAAAQGY2FtZXJhDQIBBQ9pbnZlcnNlVmlld1Byb2oHAAQAAAAABghkZXB0aE1hcBEBAAAABw1HQU1NQV9DT1JSRUNUAgIAAQAAAAAACAN0ZXgKAgIAAAkFZGVwdGgKAgIAAAoIc2NyZWVuVVYFCgQAAAsKcGl4ZWxDb2xvcgUMBAAADAhmcmFnbWVudA4GAAABAQwAAAUFBgQCCwUMCQMiDgICCAoCAgoFCgUMBQwLAgcCBoEKAgsFDJIABQsKAgsFDJIABQsFCwAACA0IY3VyRGVwdGgDBAAACQNADgICBhEBAgoFCgMACA4JcGFzdERlcHRoAwQAAAoJAyIOAgIJCgICCgUKBQwAAAMACwYJAg0DAg4DAgwAAAAA";
+prefab.TemporalWindow.SRC = "HXSMFXByZWZhYi5UZW1wb3JhbFdpbmRvdwkBBmdsb2JhbA0BAgIEdGltZQMAAQADEG1vZGVsVmlld0ludmVyc2UHAAEBAwAAAAQGY2FtZXJhDQIBBQ9pbnZlcnNlVmlld1Byb2oHAAQAAAAABghkZXB0aE1hcBEBAAAABw1HQU1NQV9DT1JSRUNUAgIAAQAAAAAACAN0ZXgKAgIAAAkFZGVwdGgKAgIAAAoIc2NyZWVuVVYFCgQAAAsKcGl4ZWxDb2xvcgUMBAAADAhmcmFnbWVudA4GAAABAQwAAAUFBgQCCwUMCQMiDgICCAoCAgoFCgUMBQwLAgcCBoEKAgsFDJIABQsKAgsFDJIABQsFCwAACA0IY3VyRGVwdGgDBAAACQNADgICBhEBAgoFCgMACA4JcGFzdERlcHRoAwQAAAoJAyIOAgIJCgICCgUKBQwAAAMACwYJAg0DBgMCDgMBA3sUrkfheoQ/AwMCDAAAAAA";
 prefab.TemporalWindow._MODULE = "prefab.TemporalWindowShader";
 prefab.TemporalWindowShader._ = hrt.prefab.Prefab.register("temporalWindow",prefab.TemporalWindowShader);
 prefab.TemporalWindowShader.serializablePropsFields = null;

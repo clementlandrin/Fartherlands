@@ -6,6 +6,10 @@ class MaterialSetup extends h3d.mat.PbrMaterialSetup {
 		super(name);
 	}
 
+	override function createRenderer(): h3d.scene.Renderer {
+		return new gfx.Renderer(h3d.scene.pbr.Environment.getDefault());
+	}
+
 	override function createMaterial() {
 		return @:privateAccess new Material();
 	}
