@@ -146,13 +146,6 @@ class Lake extends hrt.prefab.l3d.Polygon {
 		depthPass.depthTest = Less;
 		depthPass.addShader(lo.material.mainPass.getShader(h3d.shader.BaseMesh));
 
-		var depthPrepass = lo.material.allocPass("depthPrepass", false);
-		depthPrepass.depthWrite = false;
-		depthPrepass.addShader(lo.material.mainPass.getShader(h3d.shader.BaseMesh));
-		depthPrepass.stencil = new h3d.mat.Stencil();
-		depthPrepass.stencil.setFunc(Always, (1 << 1), 0, (1 << 1));
-		depthPrepass.stencil.setOp(Keep, Keep, Replace);
-
 		lakeShader = new LakeShader();
 		lo.material.mainPass.addShader(lakeShader);
 		lo.material.mainPass.addShader(new h3d.shader.pbr.StrengthValues());
