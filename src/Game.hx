@@ -107,9 +107,9 @@ class Game extends hxd.App {
 		mainUI = new ui.MainUI(baseUI.root);
 
 		presentRenderer = new gfx.Renderer(h3d.scene.pbr.Environment.getDefault());
-		presentRenderer.timeMode = Present;
+		// presentRenderer.timeMode = Present;
 		pastRenderer = new gfx.Renderer(h3d.scene.pbr.Environment.getDefault());
-		pastRenderer.timeMode = Past;
+		// pastRenderer.timeMode = Past;
 
 		presentTextureCache = @:privateAccess s3d.renderer.ctx.textures;
 		pastTextureCache = new h3d.impl.TextureCache();
