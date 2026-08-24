@@ -1330,7 +1330,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
 			"x": 2.5719181404569085,
 			"y": 1.7349504082733844,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.72,
 			"scaleY": 0.72,
 			"scaleZ": 0.8560988545042414
@@ -1341,7 +1340,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
 			"x": -1.6293592850677285,
 			"y": -6.424978312099938,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.72,
 			"scaleY": 0.72,
 			"scaleZ": 0.8560988545042414
@@ -1352,7 +1350,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
 			"x": -1.6293592850677285,
 			"y": 7.085626226672716,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.72,
 			"scaleY": 0.72,
 			"scaleZ": 0.8560988545042414
@@ -1363,7 +1360,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
 			"x": 6.365440017553404,
 			"y": 7.085626226672716,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.72,
 			"scaleY": 0.72,
 			"scaleZ": 0.8560988545042414
@@ -1374,7 +1370,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
 			"x": 4.349176405083924,
 			"y": -7.16163258503763,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.72,
 			"scaleY": 0.72,
 			"scaleZ": 0.8560988545042414
@@ -1385,7 +1380,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
 			"x": -0.1513580410919957,
 			"y": 5.486555335483409,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.61,
 			"scaleY": 0.61,
 			"scaleZ": 0.53
@@ -1396,7 +1390,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle01.fbx",
 			"x": 0.9168799988998799,
 			"y": 2.4334198888259095,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.61,
 			"scaleY": 0.61,
 			"scaleZ": 0.53
@@ -1407,7 +1400,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
 			"x": 6.48716542607714,
 			"y": -7.012991721084263,
-			"z": -0.00333333333358259,
 			"scaleX": 0.6,
 			"scaleY": 0.6,
 			"scaleZ": 0.6,
@@ -1421,7 +1413,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
 			"x": 1.1865171402973638,
 			"y": 7.054105345881431,
-			"z": -0.0033333333362865233,
 			"scaleX": 0.6,
 			"scaleY": 0.6,
 			"scaleZ": 0.6,
@@ -1435,7 +1426,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle02.fbx",
 			"x": 0.4939691421769682,
 			"y": -7.178511863069084,
-			"z": -0.003333333331290296,
 			"scaleX": 0.6,
 			"scaleY": 0.6,
 			"scaleZ": 0.6,
@@ -1449,7 +1439,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
 			"x": 3.220470396843247,
 			"y": 6.506293177894825,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.57,
 			"scaleY": 0.57,
 			"scaleZ": 0.57
@@ -1460,7 +1449,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
 			"x": 5.425829464554519,
 			"y": -4.47231090777025,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.5700000000000002,
 			"scaleY": 0.5700000000000002,
 			"scaleZ": 0.57,
@@ -1472,7 +1460,6 @@
 			"source": "content/Art/Asset/Vegetation/Grass/Grass_socle03.fbx",
 			"x": 4.234026840393988,
 			"y": 2.9732973330717423,
-			"z": -0.0033333333333303017,
 			"scaleX": 0.5700000000000002,
 			"scaleY": 0.5700000000000002,
 			"scaleZ": 0.57,

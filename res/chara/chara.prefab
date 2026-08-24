@@ -11,7 +11,8 @@
 				{
 					"type": "model",
 					"name": "Character",
-					"source": "chara/Character.fbx"
+					"source": "chara/Character.fbx",
+					"enabled": false
 				},
 				{
 					"type": "object",
