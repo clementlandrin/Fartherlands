@@ -12,7 +12,7 @@ class Goddess extends Entity {
 
 	override function start() {
 		super.start();
-		
+
 		var chara = new h3d.scene.Object(game.s3d);
 		hxd.Res.chara.chara.load().make(chara);
 		setObject(chara);
@@ -25,6 +25,8 @@ class Goddess extends Entity {
 			m.color.set(1.0, 1.0, 1.0, 0.2);
 			m.mainPass.setBlendMode(Alpha);
 			game.pastWindowShader.GAMMA_CORRECT = false;
+			game.pastWindowShader.outColor = h3d.Vector.fromColor(Const.getColor(SphereColor));
+            game.pastWindowShader.outAlpha = Const.get(SphereColor);
 			m.mainPass.setPassName("afterTonemapping");
 			m.mainPass.depthWrite = false;
 			m.shadows = false;

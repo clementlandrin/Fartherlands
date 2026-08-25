@@ -1,7 +1,7 @@
 package prefab;
 
 class TemporalWindow extends hxsl.Shader {
-	
+
 	static var SRC = {
 
 		@global var global : {
@@ -19,6 +19,12 @@ class TemporalWindow extends hxsl.Shader {
 		@param var tex : Sampler2D;
 		@param var depth : Sampler2D;
 
+		@global var temporalRadius : Float;
+		@global var playerPos : Vec3;
+
+		@param var outColor : Vec3;
+		@param var outAlpha : Float;
+
 		var screenUV : Vec2;
 		var pixelColor : Vec4;
 
@@ -30,6 +36,13 @@ class TemporalWindow extends hxsl.Shader {
 			var pastDepth = depth.get(screenUV).r;
 			if ( curDepth < pastDepth - 1e-2) // prevent some z fighting
 				discard;
+
+			var pastPPos = vec4(uvToScreen(screenUV), pastDepth, 1) * camera.inverseViewProj;
+			var pastWPos = pastPPos.xyz / pastPPos.w;
+			if (length(pastWPos - playerPos) > temporalRadius) { // outside sphere
+				pixelColor *= outAlpha;
+				pixelColor.rgb = outColor;
+			}
 		}
 	}
 }
