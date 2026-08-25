@@ -13,20 +13,11 @@ class CameraController extends h3d.scene.Object {
         game = Game.inst;
         super(game.s3d);
 
-        camera = game.s3d.camera;
+		camera = game.s3d.camera;
 		camera.orthoBounds = new h3d.col.Bounds();
 
-        var engine = Engine.getCurrent();
-        var cx = engine.width / 2;
-        var cy = engine.height / 2;
-        var deadzoneWidth = engine.width / 7;
-        var deadZoneHeight = engine.height / 7;
-
-        deadZone = new h2d.col.Bounds();
-        deadZone.xMin = cx - deadzoneWidth;
-        deadZone.xMax = cx + deadzoneWidth;
-        deadZone.yMin = cy - deadZoneHeight;
-        deadZone.yMax = cy + deadZoneHeight;
+		computeDeadzone();
+		Engine.getCurrent().onResized = computeDeadzone;
     }
 
     override function sync(ctx : h3d.scene.RenderContext) {
@@ -66,6 +57,20 @@ class CameraController extends h3d.scene.Object {
     public function enteredRoom(r : ent.Room) {
         set(new Point(r.x, r.y, r.z));
     }
+
+	function computeDeadzone() {
+		var engine = Engine.getCurrent();
+        var cx = engine.width / 2;
+        var cy = engine.height / 2;
+        var deadzoneWidth = engine.width / 7;
+        var deadZoneHeight = engine.height / 7;
+
+        deadZone = new h2d.col.Bounds();
+        deadZone.xMin = cx - deadzoneWidth;
+        deadZone.xMax = cx + deadzoneWidth;
+        deadZone.yMin = cy - deadZoneHeight;
+        deadZone.yMax = cy + deadZoneHeight;
+	}
 
     function initCamera() {
 		var X = Const.get(DefaultCameraWidth) * 0.5;
