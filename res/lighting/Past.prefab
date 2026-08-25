@@ -44,6 +44,7 @@
 				{
 					"type": "rfx.chromaticAberration",
 					"name": "chromaticAberration",
+					"intensity": 0.5,
 					"radius": 0,
 					"softness": 0.34
 				},

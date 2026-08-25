@@ -336,19 +336,18 @@
 							"scaleY": 15.168217113631641,
 							"scaleZ": 15.2,
 							"hasDebugColor": false,
-							"nearWaterColor": 4545647,
-							"middleWaterColor": 2302761,
-							"deepWaterColor": 1514788,
-							"roughness": 0.08,
-							"opacityPower": 1.17,
-							"maxDepth": 0.88,
-							"colorNoiseTexture": "content/Art/MaterialLibrary/Textures/Utilities/perlin.png",
-							"colorNoiseScale": 0.1,
-							"normalMap": "content/Art/MaterialLibrary/Textures/Exterior/Ocean_Normal.png",
-							"waveIntensity": 0.53,
-							"waveScale": 0.06,
-							"waveSpeed": 0.13,
-							"secondWaveScale": 0.04,
+							"nearWaterColor": 3437391,
+							"middleWaterColor": 3627865,
+							"deepWaterColor": 1515556,
+							"roughness": 0.05,
+							"opacityPower": 0.42,
+							"maxDepth": 1.58,
+							"colorNoiseScale": 0,
+							"colorNoiseStrength": 0,
+							"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/ground02_Normal.png",
+							"waveIntensity": 0,
+							"waveScale": 0,
+							"waveSpeed": 0,
 							"secondWaveRotate": 114.55,
 							"secondWaveSpeed": 0.23,
 							"kind": 0,
@@ -1466,7 +1465,7 @@
 					"source": "gameplay/door/door.prefab",
 					"x": -7.6608873686696155,
 					"y": -0.09546056180955986,
-					"z": 1.7302608574008316
+					"z": 1.6054781697369789
 				},
 				{
 					"type": "reference",
@@ -1507,6 +1506,24 @@
 					"scaleZ": 0.9999999999999976,
 					"rotationX": -0.0952492417668323,
 					"rotationZ": -90.00000000000004
+				},
+				{
+					"type": "shader",
+					"name": "Top_down_moss",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+					"props": {
+						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+						"Sharpness": 1,
+						"Offset": 1,
+						"Tiling": 1,
+						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+						"Mask_Tiling": 0.19,
+						"Mask_Offset": 0.24,
+						"Mask_Power": 10,
+						"Top_Down_Contrast": 10
+					}
 				}
 			]
 		},
