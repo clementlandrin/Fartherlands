@@ -39,9 +39,11 @@
 							"type": "model",
 							"name": "Ground_Debris03",
 							"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
-							"x": -3.3242,
-							"y": 0.4625,
+							"x": -3.327181974616366,
+							"y": -0.10700999590614646,
 							"z": -17.515,
+							"scaleX": 0.9999999999999999,
+							"scaleY": 0.9999999999999999,
 							"rotationZ": -90.3,
 							"children": [
 								{
@@ -1239,7 +1241,7 @@
 				},
 				{
 					"type": "object",
-					"name": "Navmesh",
+					"name": "Navmesh_ground",
 					"x": -0.0733,
 					"y": 8.1891,
 					"z": -2.7076,
@@ -1267,6 +1269,18 @@
 							"scaleX": 5.9156,
 							"scaleY": 4.6369,
 							"scaleZ": 2.2773,
+							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -2.0276,
+							"y": -13.6419,
+							"z": 27.73,
+							"scaleX": 3.4418,
+							"scaleY": 4.8048,
+							"scaleZ": 1.119,
 							"rotationZ": -90
 						},
 						{
@@ -1367,8 +1381,8 @@
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": -3.7402886524841006,
-							"y": -6.902590272096379,
+							"x": -3.7432706271004674,
+							"y": -7.472100268002526,
 							"z": 14.920521957943286,
 							"scaleX": 3.282005461548161,
 							"scaleY": 5.2819888956124545,
@@ -1497,63 +1511,6 @@
 							"scaleY": 2.106703118538504,
 							"scaleZ": 1.1190417695560333,
 							"rotationZ": -44.02987735500856
-						},
-						{
-							"type": "polygon",
-							"name": "polygon",
-							"props": {
-								"id": "Start_polygon",
-								"type": 2,
-								"$cdbtype": "element"
-							},
-							"x": -2.254852058305228,
-							"y": -14.330813055534783,
-							"z": 28.714027716904745,
-							"scaleX": 2.9237038095362156,
-							"scaleY": 5.037135904265784,
-							"rotationZ": 89.99999999999999,
-							"kind": 0,
-							"args": [
-								0
-							]
-						},
-						{
-							"type": "polygon",
-							"name": "polygon",
-							"props": {
-								"id": "Start_polygon",
-								"type": 2,
-								"$cdbtype": "element"
-							},
-							"x": -3.5922774607127943,
-							"y": -13.873096436826536,
-							"z": 28.714027716904745,
-							"scaleX": 2.863977521332764,
-							"scaleY": 2.150726834893722,
-							"rotationZ": 89.99999999999999,
-							"kind": 0,
-							"args": [
-								0
-							]
-						},
-						{
-							"type": "polygon",
-							"name": "polygon",
-							"props": {
-								"id": "Start_polygon",
-								"type": 2,
-								"$cdbtype": "element"
-							},
-							"x": -3.1381146385930974,
-							"y": -13.557939372076174,
-							"z": 28.714027716904745,
-							"scaleX": 1.175923372129526,
-							"scaleY": 2.150726834893722,
-							"rotationZ": 149.99999999999997,
-							"kind": 0,
-							"args": [
-								0
-							]
 						}
 					]
 				},
@@ -1833,7 +1790,7 @@
 				},
 				{
 					"type": "object",
-					"name": "Navmesh",
+					"name": "Navmesh_ground",
 					"x": -0.0733,
 					"y": 8.1891,
 					"z": -2.7076,
@@ -1946,7 +1903,7 @@
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"x": -3.7402886524841006,
-							"y": -6.902590272096379,
+							"y": -7.474941064226726,
 							"z": 14.920521957943286,
 							"scaleX": 3.282005461548161,
 							"scaleY": 5.2819888956124545,
@@ -2119,6 +2076,18 @@
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -2.0276229683325155,
+							"y": -13.641914751063691,
+							"z": 27.729990669093176,
+							"scaleX": 3.441801419470158,
+							"scaleY": 4.804840368069862,
+							"scaleZ": 1.1190417695560333,
+							"rotationZ": -89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 							"x": -4.449194146885427,
 							"y": -7.925653848209293,
 							"z": 14.920521957943286,
@@ -2126,63 +2095,6 @@
 							"scaleY": 2.106703118538504,
 							"scaleZ": 1.1190417695560333,
 							"rotationZ": -44.02987735500856
-						},
-						{
-							"type": "polygon",
-							"name": "polygon",
-							"props": {
-								"id": "Start_polygon",
-								"type": 2,
-								"$cdbtype": "element"
-							},
-							"x": -2.254852058305228,
-							"y": -14.330813055534783,
-							"z": 28.714027716904745,
-							"scaleX": 2.9237038095362156,
-							"scaleY": 5.037135904265784,
-							"rotationZ": 89.99999999999999,
-							"kind": 0,
-							"args": [
-								0
-							]
-						},
-						{
-							"type": "polygon",
-							"name": "polygon",
-							"props": {
-								"id": "Start_polygon",
-								"type": 2,
-								"$cdbtype": "element"
-							},
-							"x": -3.5922774607127943,
-							"y": -13.873096436826536,
-							"z": 28.714027716904745,
-							"scaleX": 2.863977521332764,
-							"scaleY": 2.150726834893722,
-							"rotationZ": 89.99999999999999,
-							"kind": 0,
-							"args": [
-								0
-							]
-						},
-						{
-							"type": "polygon",
-							"name": "polygon",
-							"props": {
-								"id": "Start_polygon",
-								"type": 2,
-								"$cdbtype": "element"
-							},
-							"x": -3.1381146385930974,
-							"y": -13.557939372076174,
-							"z": 28.714027716904745,
-							"scaleX": 1.175923372129526,
-							"scaleY": 2.150726834893722,
-							"rotationZ": 149.99999999999997,
-							"kind": 0,
-							"args": [
-								0
-							]
 						}
 					]
 				},
@@ -2197,9 +2109,11 @@
 							"type": "model",
 							"name": "Ground_Debris03",
 							"source": "content/Art/Asset/Generique/bridges/Ground_Debris03.fbx",
-							"x": -3.3242,
-							"y": 0.4625,
+							"x": -3.3241999999999994,
+							"y": -0.10985079213034721,
 							"z": -17.515,
+							"scaleX": 0.9999999999999999,
+							"scaleY": 0.9999999999999999,
 							"rotationZ": -90.3,
 							"children": [
 								{
@@ -4085,11 +3999,11 @@
 			"type": "reference",
 			"name": "ladder_15",
 			"source": "gameplay/ladder_15.prefab",
-			"x": -3.1132110260236914,
-			"y": 3.080013189787678,
+			"x": -2.6983907479687375,
+			"y": 3.4293288150652748,
 			"z": 1.4119206751784077,
 			"scaleZ": 1.5760230590356445,
-			"rotationZ": -89.99999999999999
+			"rotationZ": 3.5083546492674388e-15
 		},
 		{
 			"type": "reference",
@@ -4119,6 +4033,172 @@
 			"y": -4.089600218775674,
 			"z": 39.49342781200721,
 			"scaleZ": 2.432204817479201
+		},
+		{
+			"type": "object",
+			"name": "Navmesh_observatory",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 4.678054298735361,
+					"y": -0.0344074916099828,
+					"z": -0.2805513407336093,
+					"scaleX": 1.333386685815348,
+					"scaleY": 10.493538019169105,
+					"scaleZ": 13.620288264810865
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 5.009226526191554,
+					"y": -0.0344074916099828,
+					"z": 10.691010289561405,
+					"scaleX": 1.333386685815348,
+					"scaleY": 10.493538019169105,
+					"scaleZ": 5.881111452545023
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.29261964691031306,
+					"y": -4.424065497649267,
+					"z": 10.691010289561405,
+					"scaleX": 1.333386685815348,
+					"scaleY": 11.851543989563142,
+					"scaleZ": 15.101111189870407,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.09528112137925848,
+					"y": 5.519916953757587,
+					"z": 10.691010289561405,
+					"scaleX": 1.333386685815348,
+					"scaleY": 11.673558515584388,
+					"scaleZ": 5.881111452545023,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 0.11467338650443572,
+					"y": 4.4816495069070985,
+					"z": 25.115325100793584,
+					"scaleX": 1.333386685815348,
+					"scaleY": 10.249549606337332,
+					"scaleZ": 5.881111452545023,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -4.3559392326189235,
+					"y": -0.09620103577583405,
+					"z": 25.115325100793584,
+					"scaleX": 1.333386685815348,
+					"scaleY": 10.320867843671593,
+					"scaleZ": 14.643659806969836,
+					"rotationZ": 3.5083546492674388e-15
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 4.6968372253500235,
+					"y": 1.6165710288468107,
+					"z": 24.54374207586075,
+					"scaleX": 1.333386685815348,
+					"scaleY": 5.061043336855139,
+					"scaleZ": 5.881111452545023,
+					"rotationZ": -179.99999999999997
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 4.018178685809071,
+					"y": -4.390346974712993,
+					"z": 24.54374207586075,
+					"scaleX": 1.333386685815348,
+					"scaleY": 5.061043336855139,
+					"scaleZ": 5.881111452545023,
+					"rotationZ": 90.00000000000006
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 3.4227719034348913,
+					"y": 4.813918720008559,
+					"scaleX": 1.333386685815348,
+					"scaleY": 4.106652821765074,
+					"scaleZ": 13.620288264810865,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -3.541969043475178,
+					"y": 4.813918720008557,
+					"scaleX": 1.333386685815348,
+					"scaleY": 4.106652821765074,
+					"scaleZ": 16.058808509541,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -3.8534434304106933,
+					"y": 4.25530796818259,
+					"z": 13.196402146820674,
+					"scaleX": 1.333386685815348,
+					"scaleY": 1.2267090436334491,
+					"scaleZ": 3.7221806702028037,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -4.598578111976366,
+					"y": -0.0344074916099828,
+					"scaleX": 1.333386685815348,
+					"scaleY": 10.493538019169105,
+					"scaleZ": 13.03592640352666
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -5.133253082413688,
+					"y": -0.0344074916099828,
+					"z": 9.717316595575198,
+					"scaleX": 1.333386685815348,
+					"scaleY": 10.493538019169105,
+					"scaleZ": 7.644592701157897
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.33038843446738486,
+					"y": -4.723848711787384,
+					"scaleX": 1.333386685815348,
+					"scaleY": 10.493538019169105,
+					"scaleZ": 13.620288264810865,
+					"rotationZ": -89.99999999999999
+				}
+			]
 		}
 	]
 }
