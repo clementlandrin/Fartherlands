@@ -24,23 +24,6 @@
 					"inGameOnly": true
 				},
 				{
-					"type": "polygon",
-					"name": "polygon",
-					"props": {
-						"id": "Start_polygon",
-						"type": 2,
-						"$cdbtype": "element"
-					},
-					"z": -0.38,
-					"scaleX": 15,
-					"scaleY": 15,
-					"scaleZ": 15,
-					"kind": 0,
-					"args": [
-						0
-					]
-				},
-				{
 					"type": "object",
 					"name": "Ground",
 					"x": -0.7058,
@@ -426,84 +409,6 @@
 							"y": -4.0575,
 							"z": -4.745,
 							"rotationZ": 89.3,
-							"children": [
-								{
-									"type": "material",
-									"name": "material",
-									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
-									},
-									"materialName": "02 - Default",
-									"children": [
-										{
-											"type": "shader",
-											"name": "Triplanar",
-											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-											"props": {
-												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-												"Sharpness": 1,
-												"Offset": 0.73,
-												"Tiling": 0.15
-											}
-										}
-									]
-								},
-								{
-									"type": "material",
-									"name": "material",
-									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
-									},
-									"materialName": "01 - Default",
-									"children": [
-										{
-											"type": "shader",
-											"name": "Triplanar",
-											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-											"props": {
-												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_Albedo.png",
-												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_MetallicGlossAO.png",
-												"Normal": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_Normal.png",
-												"Sharpness": 1,
-												"Offset": 0.73,
-												"Tiling": 0.15
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"type": "model",
-							"name": "Ground_Debris01",
-							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-							"x": 1.4546445288333465,
-							"y": -4.386708947249856,
-							"z": -3.86648771248824,
-							"scaleX": 1.1008196825438423,
-							"scaleY": 0.6513564189436433,
-							"scaleZ": 0.8005214775129421,
-							"rotationX": -6.8022273557753135,
-							"rotationY": 15.794798268263401,
-							"rotationZ": 38.54966158124599,
 							"children": [
 								{
 									"type": "material",
@@ -1254,35 +1159,11 @@
 				{
 					"type": "object",
 					"name": "Navmesh_ground",
+					"inGameOnly": true,
 					"x": -0.0733,
 					"y": 8.1891,
 					"z": -2.7076,
 					"children": [
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": -0.0367,
-							"y": 2.4127,
-							"z": 0.1163,
-							"scaleX": 5.9156,
-							"scaleY": 4.6369,
-							"scaleZ": 2.2773,
-							"rotationY": -26.8718,
-							"rotationZ": -90
-						},
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": -0.0367,
-							"y": 5.7765,
-							"z": -0.8638,
-							"scaleX": 5.9156,
-							"scaleY": 4.6369,
-							"scaleZ": 2.2773,
-							"rotationZ": -90
-						},
 						{
 							"type": "reference",
 							"name": "Box_Navmesh",
@@ -1382,32 +1263,6 @@
 							"rotationX": 9.6644,
 							"rotationY": 6.5082,
 							"rotationZ": -0.6725
-						},
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": 0.0733,
-							"y": -8.1891,
-							"z": 0.7475,
-							"scaleX": 18.1488,
-							"scaleY": 18.1488,
-							"scaleZ": 2.3698,
-							"rotationZ": -90
-						},
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": 1.0480369502049511,
-							"y": -11.541362802718618,
-							"z": 28.770257571364382,
-							"scaleX": 2.1445766169006575,
-							"scaleY": 4.238326667627078,
-							"scaleZ": 0.6960573484361309,
-							"rotationX": -16.639393077494173,
-							"rotationY": -6.049794230224956,
-							"rotationZ": -52.39539699749205
 						},
 						{
 							"type": "reference",
@@ -1579,10 +1434,10 @@
 							"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
 							"x": -2.4534,
 							"y": -4.8029,
-							"z": -5.7442,
-							"scaleX": 1.2,
-							"scaleY": 1.2,
-							"scaleZ": 1.2,
+							"z": -6.049918803268974,
+							"scaleX": 1.346745025566505,
+							"scaleY": 1.346745025566505,
+							"scaleZ": 1.346745025566505,
 							"rotationZ": -90
 						},
 						{
@@ -1625,17 +1480,17 @@
 										{
 											"type": "model",
 											"name": "Observatory_part03_present",
-											"source": "content/Art/Asset/Specifique/Observatory_part03_present.fbx"
+											"source": "content/Art/Asset/Specifique/Observatory/Observatory_part03_present.fbx"
 										},
 										{
 											"type": "model",
 											"name": "Observatory_part01",
-											"source": "content/Art/Asset/Specifique/Observatory_part01.fbx"
+											"source": "content/Art/Asset/Specifique/Observatory/Observatory_part01.fbx"
 										},
 										{
 											"type": "model",
 											"name": "Observatory_part02",
-											"source": "content/Art/Asset/Specifique/Observatory_part02.fbx"
+											"source": "content/Art/Asset/Specifique/Observatory/Observatory_part02.fbx"
 										}
 									]
 								}
@@ -1768,7 +1623,7 @@
 						{
 							"type": "model",
 							"name": "Observatory_foliage01",
-							"source": "content/Art/Asset/Specifique/Observatory_foliage01.fbx",
+							"source": "content/Art/Asset/Specifique/Observatory/Observatory_foliage01.fbx",
 							"x": -5.178,
 							"y": -3.584,
 							"z": -11.178
@@ -1817,31 +1672,6 @@
 					"y": 8.1891,
 					"z": -2.7076,
 					"children": [
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": -0.0367,
-							"y": 2.4127,
-							"z": 0.1163,
-							"scaleX": 5.9156,
-							"scaleY": 4.6369,
-							"scaleZ": 2.2773,
-							"rotationY": -26.8718,
-							"rotationZ": -90
-						},
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": -0.0367,
-							"y": 5.7765,
-							"z": -0.8638,
-							"scaleX": 5.9156,
-							"scaleY": 4.6369,
-							"scaleZ": 2.2773,
-							"rotationZ": -90
-						},
 						{
 							"type": "polygon",
 							"name": "polygon",
@@ -1893,6 +1723,20 @@
 							"args": [
 								0
 							]
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 1.048,
+							"y": -11.5414,
+							"z": 28.7703,
+							"scaleX": 2.1446,
+							"scaleY": 4.2383,
+							"scaleZ": 0.6961,
+							"rotationX": -16.6394,
+							"rotationY": -6.0498,
+							"rotationZ": -52.3954
 						},
 						{
 							"type": "reference",
@@ -2392,6 +2236,84 @@
 							"scaleY": 0.5721,
 							"scaleZ": 0.8333,
 							"rotationZ": -81.7135,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_MetallicGlossAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": 1.4546,
+							"y": -4.3867,
+							"z": -3.8665,
+							"scaleX": 1.1008,
+							"scaleY": 0.6514000000000001,
+							"scaleZ": 0.8005,
+							"rotationX": -6.802199999999998,
+							"rotationY": 15.794800000000002,
+							"rotationZ": 38.549699999999994,
 							"children": [
 								{
 									"type": "material",
@@ -3919,18 +3841,6 @@
 						},
 						{
 							"type": "model",
-							"name": "basic_bloc_garden01",
-							"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
-							"x": -2.4534,
-							"y": -4.8029,
-							"z": -5.7442,
-							"scaleX": 1.2,
-							"scaleY": 1.2,
-							"scaleZ": 1.2,
-							"rotationZ": -90
-						},
-						{
-							"type": "model",
 							"name": "stairs02",
 							"source": "content/Art/Asset/Generique/stairs/stairs02.fbx",
 							"x": -2.4534,
@@ -3956,6 +3866,18 @@
 							"rotationZ": -90
 						},
 						{
+							"type": "model",
+							"name": "basic_bloc_garden01",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
+							"x": -2.4534,
+							"y": -4.8029,
+							"z": -6.0499,
+							"scaleX": 1.3467,
+							"scaleY": 1.3467,
+							"scaleZ": 1.3467,
+							"rotationZ": -90
+						},
+						{
 							"type": "object",
 							"name": "Observatory",
 							"children": [
@@ -3969,17 +3891,17 @@
 										{
 											"type": "model",
 											"name": "Observatory_part01",
-											"source": "content/Art/Asset/Specifique/Observatory_part01.fbx"
+											"source": "content/Art/Asset/Specifique/Observatory/Observatory_part01.fbx"
 										},
 										{
 											"type": "model",
 											"name": "Observatory_part03",
-											"source": "content/Art/Asset/Specifique/Observatory_part03.fbx"
+											"source": "content/Art/Asset/Specifique/Observatory/Observatory_part03.fbx"
 										},
 										{
 											"type": "model",
 											"name": "Observatory_part02",
-											"source": "content/Art/Asset/Specifique/Observatory_part02.fbx"
+											"source": "content/Art/Asset/Specifique/Observatory/Observatory_part02.fbx"
 										}
 									]
 								}
@@ -4026,63 +3948,8 @@
 		},
 		{
 			"type": "object",
-			"name": "doors",
-			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "doorBack",
-					"source": "gameplay/door/doorBack.prefab",
-					"x": 0.095,
-					"y": 13.6325,
-					"z": -1.04,
-					"rotationZ": -90
-				}
-			]
-		},
-		{
-			"type": "reference",
-			"name": "ladder_15",
-			"source": "gameplay/ladder_15.prefab",
-			"x": -2.6983907479687375,
-			"y": 3.291776142116369,
-			"z": 1.4119206751784077,
-			"scaleZ": 1.5760230590356445,
-			"rotationZ": 3.5083546492674388e-15
-		},
-		{
-			"type": "reference",
-			"name": "ladder_15",
-			"source": "gameplay/ladder_15.prefab",
-			"x": 3.852195132949876,
-			"y": -1.554429375813072,
-			"z": 14.425869056367446,
-			"scaleZ": 1.5760230590356445,
-			"rotationZ": 2.5444437451708134e-14
-		},
-		{
-			"type": "reference",
-			"name": "ladder_15",
-			"source": "gameplay/ladder_15.prefab",
-			"x": -2.8086513797766193,
-			"y": 1.9944563305195993,
-			"z": 27.03860683138555,
-			"scaleZ": 1.4957781853751695,
-			"rotationZ": -180
-		},
-		{
-			"type": "reference",
-			"name": "ladder_15",
-			"source": "gameplay/ladder_15.prefab",
-			"x": -6.421557442679384,
-			"y": -4.089600218775674,
-			"z": 39.49342781200721,
-			"scaleZ": 2.432204817479201
-		},
-		{
-			"type": "object",
 			"name": "Navmesh_observatory",
+			"inGameOnly": true,
 			"children": [
 				{
 					"type": "reference",
@@ -4105,6 +3972,15 @@
 					"scaleX": 1.333386685815348,
 					"scaleY": 10.493538019169105,
 					"scaleZ": 5.881111452545023
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"z": -6.297807347287744,
+					"scaleX": 20.390490713437462,
+					"scaleY": 20.390490713437462,
+					"scaleZ": 6.625324044594201
 				},
 				{
 					"type": "reference",
@@ -4164,6 +4040,31 @@
 					"scaleX": 14.972098481446295,
 					"scaleY": 12.326625137581734,
 					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.11,
+					"y": 11.0737,
+					"z": -2.8304,
+					"scaleX": 5.9156,
+					"scaleY": 4.6369,
+					"scaleZ": 2.2773,
+					"rotationY": -26.8718,
+					"rotationZ": -90
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.11,
+					"y": 13.9656,
+					"z": -3.5714,
+					"scaleX": 5.9156,
+					"scaleY": 4.6369,
+					"scaleZ": 2.2773,
+					"rotationZ": -90
 				},
 				{
 					"type": "reference",
@@ -4366,6 +4267,84 @@
 					]
 				}
 			]
+		},
+		{
+			"type": "object",
+			"name": "Access",
+			"x": -0.478000739579144,
+			"y": -1.3056161869921294,
+			"z": 17.478870729156434,
+			"children": [
+				{
+					"type": "object",
+					"name": "doors",
+					"x": 0.383,
+					"y": 1.3331,
+					"z": -17.4789,
+					"children": [
+						{
+							"type": "reference",
+							"name": "doorBack",
+							"source": "gameplay/door/doorBack.prefab",
+							"x": 0.095,
+							"y": 13.6325,
+							"z": -1.04,
+							"rotationZ": -90
+						}
+					]
+				},
+				{
+					"type": "reference",
+					"name": "ladder_15",
+					"source": "gameplay/ladder_15.prefab",
+					"x": -2.2204,
+					"y": 4.5974,
+					"z": -16.067,
+					"scaleZ": 1.576
+				},
+				{
+					"type": "reference",
+					"name": "ladder_15",
+					"source": "gameplay/ladder_15.prefab",
+					"x": 4.3302,
+					"y": -0.2488,
+					"z": -3.053,
+					"scaleZ": 1.576
+				},
+				{
+					"type": "reference",
+					"name": "ladder_15",
+					"source": "gameplay/ladder_15.prefab",
+					"x": -2.3307,
+					"y": 3.3001,
+					"z": 9.5597,
+					"scaleZ": 1.4958,
+					"rotationZ": -180
+				},
+				{
+					"type": "reference",
+					"name": "ladder_15",
+					"source": "gameplay/ladder_15.prefab",
+					"x": -5.9436,
+					"y": -2.784,
+					"z": 22.0146,
+					"scaleZ": 2.4322
+				},
+				{
+					"type": "reference",
+					"name": "ladder_observatory",
+					"source": "gameplay/ladder_observatory.prefab",
+					"x": 5.7814,
+					"y": -6.1978,
+					"z": 5.0245,
+					"rotationZ": -180
+				}
+			]
+		},
+		{
+			"type": "model",
+			"name": "Observatory_foliage02",
+			"source": "content/Art/Asset/Specifique/Observatory/Observatory_foliage02.fbx"
 		}
 	]
 }

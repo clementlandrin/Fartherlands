@@ -597,15 +597,13 @@
 					"name": "D30",
 					"source": "content/Room/Diverse/D30.prefab",
 					"x": -15,
-					"y": -37.97,
-					"editMode": "Edit"
+					"y": -37.97
 				},
 				{
 					"type": "reference",
 					"name": "D16",
 					"source": "content/Room/Diverse/D16.prefab",
-					"x": 15,
-					"editMode": "Edit"
+					"x": 15
 				},
 				{
 					"type": "reference",

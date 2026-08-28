@@ -152,6 +152,24 @@
 			"normalMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_02_Normal.png",
 			"specularMap": "content/Art/MaterialLibrary/Textures/Pot/pot05_02_MetallicRoughnessAO.png",
 			"refMatLib": ""
+		},
+		{
+			"type": "material",
+			"name": "Fences",
+			"props": {
+				"Fatherlands": {
+					"mode": "PBR",
+					"blend": "None",
+					"shadows": true,
+					"culling": "Back",
+					"depthTest": "Less",
+					"colorMask": 15,
+					"enableStencil": false
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Fences/Fences_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Fences/Fences_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Fences/Fences_MetallicRoughnessAO.png"
 		}
 	]
 }

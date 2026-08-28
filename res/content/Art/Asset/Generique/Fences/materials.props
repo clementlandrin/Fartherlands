@@ -1,0 +1,10 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"Fence": {
+				"__ref": "content/Art/MaterialLibrary/Assets/Deco.matlib",
+				"name": "Fences"
+			}
+		}
+	}
+}
