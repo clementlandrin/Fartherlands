@@ -17,6 +17,10 @@ class GoddessController extends PlayerController {
 		}
 	}
 
+	override function getSpeed() {
+		return getGoddess().sphereActive ? Const.get(PlayerSpeedWithSphere) : Const.get(PlayerSpeed);
+	}
+
 	function updateSphere(dt : Float) {
 		var goddess = getGoddess();
 		if ( !goddess.unlockedSkill )

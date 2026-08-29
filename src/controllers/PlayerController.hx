@@ -116,6 +116,10 @@ class PlayerController {
 		return true;
 	}
 
+	public function getSpeed() {
+		return Const.get(PlayerSpeed);
+	}
+
 
 	function canControl() {
 		return game.canControl();
@@ -132,7 +136,7 @@ class PlayerController {
 			return;
 		}
 
-		var speed = Const.get(PlayerSpeed);
+		var speed = getSpeed();
 		var displacement = new h2d.col.Point(0.0,0.0);
 		if ( hxd.Key.isDown(hxd.Key.LEFT) || hxd.Key.isDown(hxd.Key.Q) ) {
 			displacement.x = -dt * speed;

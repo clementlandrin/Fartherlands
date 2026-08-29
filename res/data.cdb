@@ -67,6 +67,10 @@
 					"value": 3.2
 				},
 				{
+					"id": "PlayerSpeedWithSphere",
+					"value": 1
+				},
+				{
 					"id": "MaxClimbHeight",
 					"value": 0.25
 				},
