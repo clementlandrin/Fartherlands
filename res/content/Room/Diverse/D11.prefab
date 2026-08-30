@@ -560,6 +560,25 @@
 			"args": [
 				0
 			]
+		},
+		{
+			"type": "model",
+			"name": "blocsx20",
+			"source": "content/Art/Asset/Generique/blocs/blocsx20.fbx",
+			"x": 4.579242886994862,
+			"z": 2.9675802870186203
+		},
+		{
+			"type": "model",
+			"name": "blocsx10",
+			"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+			"x": -0.5913689937380973,
+			"y": 8.111080295416459,
+			"z": 2.878858697184616,
+			"scaleX": 0.9999999999999999,
+			"rotationX": 0.3829797632440544,
+			"rotationY": 0.7496317661582803,
+			"rotationZ": -89.99749458892863
 		}
 	]
 }

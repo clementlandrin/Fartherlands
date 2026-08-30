@@ -399,6 +399,28 @@
 					"rotationZ": -90
 				}
 			]
+		},
+		{
+			"type": "model",
+			"name": "blocsx10",
+			"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+			"x": 1.0960051350733586,
+			"y": 8.077399980294778,
+			"z": 1.7561551194342366,
+			"rotationX": 1.1406964521038636e-11,
+			"rotationY": -0.000009840018003617386,
+			"rotationZ": -90
+		},
+		{
+			"type": "model",
+			"name": "blocsx10",
+			"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+			"x": 4.3416941152934445,
+			"y": 6.112248703466562,
+			"z": 1.7561554569313635,
+			"rotationX": 0.000009840018003617385,
+			"rotationY": 1.1406964522555075e-11,
+			"rotationZ": -180
 		}
 	]
 }

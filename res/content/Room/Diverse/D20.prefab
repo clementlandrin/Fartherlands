@@ -144,12 +144,12 @@
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"inGameOnly": true,
-					"x": -0.1,
-					"y": 0.03,
+					"x": -0.09999999999999964,
+					"y": 0.030000000000000027,
 					"z": -1.97,
-					"scaleX": 8.91,
+					"scaleX": 17.82,
 					"scaleY": 6.13,
-					"scaleZ": 3.43,
+					"scaleZ": 3.4300000000000006,
 					"rotationZ": 90
 				}
 			]
@@ -188,6 +188,58 @@
 			"y": 7.32,
 			"z": 1.74,
 			"rotationZ": -90
+		},
+		{
+			"type": "object",
+			"name": "Fences",
+			"children": [
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"inGameOnly": true,
+					"x": -1.5727,
+					"y": 0.5083,
+					"z": 1.08,
+					"scaleX": 16.1431,
+					"scaleY": 0.2639,
+					"scaleZ": 2.0923,
+					"rotationZ": 90
+				},
+				{
+					"type": "model",
+					"name": "Fence03",
+					"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+					"x": -1.6376,
+					"y": 5.035,
+					"z": 1.8141,
+					"scaleX": 1.7,
+					"scaleY": 1.7,
+					"scaleZ": 1.7
+				},
+				{
+					"type": "model",
+					"name": "Fence03",
+					"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+					"x": -1.6376,
+					"y": -5.7983,
+					"z": 1.8141,
+					"scaleX": 1.7,
+					"scaleY": 1.7,
+					"scaleZ": 1.7
+				},
+				{
+					"type": "model",
+					"name": "Fence01",
+					"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+					"x": -1.6775,
+					"y": -0.6397,
+					"z": 1.815,
+					"scaleX": 1.7,
+					"scaleY": 1.7,
+					"scaleZ": 1.7
+				}
+			]
 		}
 	]
 }

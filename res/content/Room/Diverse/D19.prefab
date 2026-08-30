@@ -13,22 +13,41 @@
 			"rotationZ": -90,
 			"children": [
 				{
+					"type": "object",
+					"name": "doors",
+					"x": -0.0275,
+					"y": -2.015,
+					"rotationZ": 90,
+					"children": [
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -2.45,
+							"y": -7.21,
+							"z": 1.92,
+							"rotationZ": 90
+						},
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -3.605,
+							"y": 4.6225,
+							"z": 1.74
+						}
+					]
+				},
+				{
 					"type": "model",
-					"name": "column01",
-					"source": "content/Art/Asset/Generique/blocs/column01.fbx",
-					"x": -7.8,
-					"y": -5.83,
+					"name": "cube_stone02",
+					"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
+					"x": -7.9822,
+					"y": -4.0702,
+					"z": 1.9074,
 					"rotationZ": 90
 				}
 			]
-		},
-		{
-			"type": "model",
-			"name": "column01",
-			"source": "content/Art/Asset/Generique/blocs/column01.fbx",
-			"x": 7.3,
-			"y": -5.35,
-			"rotationZ": 90
 		},
 		{
 			"type": "object",
@@ -46,29 +65,121 @@
 				},
 				{
 					"type": "object",
-					"name": "object",
-					"x": -0.038333333333333316,
-					"y": -0.050000000000000114,
-					"z": 0.6616666666666666
+					"name": "Archi",
+					"x": -3.12,
+					"y": 0.9333,
+					"z": 0.91,
+					"children": [
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"y": -5.4433,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.1,
+									"y": 0.03,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": 90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"y": -0.0033,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.09999999999999964,
+									"y": 0.030000000000000027,
+									"z": -1.97,
+									"scaleX": 11.600848510161935,
+									"scaleY": 6.13,
+									"scaleZ": 3.4300000000000006,
+									"rotationZ": 90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"y": 5.4467,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.1,
+									"y": 0.03,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": 90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "column01",
+							"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+							"x": 7.3904,
+							"y": -8.8019,
+							"z": -0.91,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "column01",
+							"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+							"x": -0.79,
+							"y": 6.8667,
+							"z": -0.91
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.3,
+								"Mask_Offset": 0,
+								"Mask_Power": 4.17,
+								"Top_Down_Contrast": 10
+							}
+						}
+					]
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "Medium_room_Right_Present",
-			"source": "content/Art/Room_template/Generic/Present/Medium_room_Right_Present.prefab"
-		},
-		{
-			"type": "reference",
-			"name": "Present",
-			"source": "lighting/Present.prefab"
-		},
-		{
-			"type": "object",
-			"name": "object",
-			"x": -0.038333333333333316,
-			"y": -0.050000000000000114,
-			"z": 0.6616666666666666
 		},
 		{
 			"type": "object",
@@ -83,111 +194,158 @@
 					"type": "reference",
 					"name": "Past",
 					"source": "lighting/Past.prefab"
+				},
+				{
+					"type": "object",
+					"name": "Archi",
+					"x": -3.12,
+					"y": 0.9333,
+					"z": 0.91,
+					"children": [
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"y": -5.4433,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.1,
+									"y": 0.03,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": 90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"y": -0.0033,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.09999999999999964,
+									"y": 0.030000000000000027,
+									"z": -1.97,
+									"scaleX": 11.600848510161935,
+									"scaleY": 6.13,
+									"scaleZ": 3.4300000000000006,
+									"rotationZ": 90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "column01",
+							"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+							"x": -0.79,
+							"y": 6.8667,
+							"z": -0.91
+						},
+						{
+							"type": "model",
+							"name": "column01",
+							"source": "content/Art/Asset/Generique/blocs/column01.fbx",
+							"x": 7.3904,
+							"y": -8.8019,
+							"z": -0.91,
+							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"y": 5.4467,
+							"scaleX": 0.61,
+							"scaleY": 0.61,
+							"scaleZ": 0.61,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.1,
+									"y": 0.03,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": 90
+								}
+							]
+						}
+					]
 				}
 			]
 		},
 		{
 			"type": "object",
-			"name": "doors",
-			"x": -0.095,
-			"y": 0.0275,
-			"children": [
-				{
-					"type": "reference",
-					"name": "door",
-					"source": "gameplay/door/door.prefab",
-					"x": -2.45,
-					"y": -7.21,
-					"z": 1.92,
-					"rotationZ": 90
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "basic_bloc02",
-			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-			"x": -3.12,
-			"y": -4.51,
-			"z": 0.91,
-			"scaleX": 0.61,
-			"scaleY": 0.61,
-			"scaleZ": 0.61,
+			"name": "Fences",
 			"children": [
 				{
 					"type": "reference",
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"inGameOnly": true,
-					"x": -0.1,
-					"y": 0.03,
-					"z": -1.97,
-					"scaleX": 8.91,
-					"scaleY": 6.13,
-					"scaleZ": 3.43,
+					"x": -1.5727,
+					"y": 0.5083,
+					"z": 1.08,
+					"scaleX": 16.1431,
+					"scaleY": 0.2639,
+					"scaleZ": 2.0923,
 					"rotationZ": 90
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "basic_bloc02",
-			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-			"x": -3.12,
-			"y": 0.93,
-			"z": 0.91,
-			"scaleX": 0.61,
-			"scaleY": 0.61,
-			"scaleZ": 0.61,
-			"children": [
+				},
 				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -0.1,
-					"y": 0.03,
-					"z": -1.97,
-					"scaleX": 8.91,
-					"scaleY": 6.13,
-					"scaleZ": 3.43,
-					"rotationZ": 90
-				}
-			]
-		},
-		{
-			"type": "model",
-			"name": "basic_bloc02",
-			"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-			"x": -3.12,
-			"y": 6.38,
-			"z": 0.91,
-			"scaleX": 0.61,
-			"scaleY": 0.61,
-			"scaleZ": 0.61,
-			"children": [
+					"type": "model",
+					"name": "Fence03",
+					"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+					"x": -1.6376,
+					"y": 5.035,
+					"z": 1.8141,
+					"scaleX": 1.7,
+					"scaleY": 1.7,
+					"scaleZ": 1.7
+				},
 				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -0.1,
-					"y": 0.03,
-					"z": -1.97,
-					"scaleX": 8.91,
-					"scaleY": 6.13,
-					"scaleZ": 3.43,
-					"rotationZ": 90
+					"type": "model",
+					"name": "Fence03",
+					"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+					"x": -1.6376,
+					"y": -5.7983,
+					"z": 1.8141,
+					"scaleX": 1.7,
+					"scaleY": 1.7,
+					"scaleZ": 1.7
+				},
+				{
+					"type": "model",
+					"name": "Fence01",
+					"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+					"x": -1.6775,
+					"y": -0.6397,
+					"z": 1.815,
+					"scaleX": 1.7,
+					"scaleY": 1.7,
+					"scaleZ": 1.7
 				}
 			]
-		},
-		{
-			"type": "reference",
-			"name": "door",
-			"source": "gameplay/door/door.prefab",
-			"x": -3.7,
-			"y": 4.65,
-			"z": 1.74
 		}
 	]
 }

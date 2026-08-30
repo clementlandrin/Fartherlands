@@ -48,36 +48,6 @@
 					"source": "content/Art/Room_template/Generic/Present/Medium_room_Left_Present.prefab"
 				},
 				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -4.11,
-					"y": -3.97,
-					"z": 0.85,
-					"scaleX": 7.47,
-					"scaleY": 8.75,
-					"scaleZ": 2.87,
-					"rotationX": -82.9,
-					"rotationY": -82.3,
-					"rotationZ": -5.3
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"inGameOnly": true,
-					"x": -1.97,
-					"y": -2.47,
-					"z": 0.85,
-					"scaleX": 7.47,
-					"scaleY": 4.17,
-					"scaleZ": 2.87,
-					"rotationX": -82.9,
-					"rotationY": -82.3,
-					"rotationZ": -5.3
-				},
-				{
 					"type": "object",
 					"name": "Debris",
 					"x": -3.095714285714286,
@@ -130,6 +100,36 @@
 							"scaleZ": 2.26
 						},
 						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": -1.0143,
+							"y": -2.0743,
+							"z": 0.7171,
+							"scaleX": 7.47,
+							"scaleY": 8.75,
+							"scaleZ": 2.87,
+							"rotationX": -82.9,
+							"rotationY": -82.3,
+							"rotationZ": -5.3
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"inGameOnly": true,
+							"x": 1.1257,
+							"y": -0.5743,
+							"z": 0.7171,
+							"scaleX": 7.47,
+							"scaleY": 4.17,
+							"scaleZ": 2.87,
+							"rotationX": -82.9,
+							"rotationY": -82.3,
+							"rotationZ": -5.3
+						},
+						{
 							"type": "model",
 							"name": "cube_stone02",
 							"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
@@ -157,6 +157,24 @@
 							"y": 1.4657,
 							"z": -0.1329,
 							"rotationZ": 75
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.23,
+								"Mask_Offset": 0,
+								"Mask_Power": 10,
+								"Top_Down_Contrast": 10
+							}
 						}
 					]
 				}

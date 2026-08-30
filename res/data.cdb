@@ -64,11 +64,11 @@
 				},
 				{
 					"id": "PlayerSpeed",
-					"value": 3.2
+					"value": 4
 				},
 				{
 					"id": "PlayerSpeedWithSphere",
-					"value": 1
+					"value": 2
 				},
 				{
 					"id": "MaxClimbHeight",
@@ -85,7 +85,7 @@
 				{
 					"id": "SphereColor",
 					"value": 0.1,
-					"color": 4183295
+					"color": 4194247
 				},
 				{
 					"id": "SphereMaxTime",

@@ -24,18 +24,59 @@
 				},
 				{
 					"type": "object",
-					"name": "doors",
-					"x": -0.0275,
-					"y": -2.015,
+					"name": "Doors",
+					"x": 3.8275,
+					"y": -3.83,
 					"rotationZ": 90,
 					"children": [
 						{
 							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": -1.6356914275902088,
+							"y": 3.63
+						},
+						{
+							"type": "reference",
 							"name": "door_back",
 							"source": "gameplay/door/doorBack.prefab",
-							"x": -0.12458123747477895,
-							"y": 7.2240230606907625,
+							"x": 1.6904,
+							"y": 11.079,
 							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "door",
+							"source": "gameplay/door/door.prefab",
+							"x": 1.745,
+							"y": -3.625,
+							"rotationZ": 90
+						},
+						{
+							"type": "reference",
+							"name": "doorBack",
+							"source": "gameplay/door/doorBack.prefab",
+							"x": 5.697777872444086,
+							"y": 3.8010173544354395,
+							"rotationZ": 180
+						},
+						{
+							"type": "shader",
+							"name": "Top_down_moss",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
+							"props": {
+								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
+								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
+								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
+								"Sharpness": 1,
+								"Offset": 1,
+								"Tiling": 1,
+								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
+								"Mask_Tiling": 0.52,
+								"Mask_Offset": 0,
+								"Mask_Power": 3,
+								"Top_Down_Contrast": 10
+							}
 						}
 					]
 				}
@@ -453,55 +494,6 @@
 							}
 						}
 					]
-				},
-				{
-					"type": "object",
-					"name": "Doors",
-					"x": -1.91,
-					"y": -3.8274999999999997,
-					"children": [
-						{
-							"type": "reference",
-							"name": "door",
-							"source": "gameplay/door/door.prefab",
-							"x": -1.53,
-							"y": 3.63
-						},
-						{
-							"type": "reference",
-							"name": "door",
-							"source": "gameplay/door/door.prefab",
-							"x": 1.75,
-							"y": -3.38,
-							"rotationZ": 90
-						},
-						{
-							"type": "reference",
-							"name": "doorBack",
-							"source": "gameplay/door/doorBack.prefab",
-							"x": 5.697777872444086,
-							"y": 3.8010173544354395,
-							"rotationZ": 180
-						},
-						{
-							"type": "shader",
-							"name": "Top_down_moss",
-							"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
-							"props": {
-								"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-								"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-								"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-								"Sharpness": 1,
-								"Offset": 1,
-								"Tiling": 1,
-								"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-								"Mask_Tiling": 0.52,
-								"Mask_Offset": 0,
-								"Mask_Power": 3,
-								"Top_Down_Contrast": 10
-							}
-						}
-					]
 				}
 			]
 		},
@@ -557,6 +549,7 @@
 				{
 					"type": "object",
 					"name": "Doors",
+					"enabled": false,
 					"x": -1.91,
 					"y": -3.8275,
 					"children": [
@@ -564,8 +557,8 @@
 							"type": "reference",
 							"name": "door",
 							"source": "gameplay/door/door.prefab",
-							"x": -1.745,
-							"y": 3.625
+							"x": -1.6356914275902088,
+							"y": 3.63
 						},
 						{
 							"type": "reference",
@@ -574,6 +567,14 @@
 							"x": 1.745,
 							"y": -3.625,
 							"rotationZ": 90
+						},
+						{
+							"type": "reference",
+							"name": "doorBack",
+							"source": "gameplay/door/doorBack.prefab",
+							"x": 5.6978,
+							"y": 3.801,
+							"rotationZ": 180
 						}
 					]
 				},
