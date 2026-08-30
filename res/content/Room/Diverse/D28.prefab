@@ -14,14 +14,12 @@
 				{
 					"type": "reference",
 					"name": "Plains",
-					"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab",
-					"inGameOnly": true
+					"source": "content/LD/Placeholder/Exterior_Backgrounds/Plains.prefab"
 				},
 				{
 					"type": "reference",
 					"name": "Day02",
-					"source": "lighting/Exterior/Day02.prefab",
-					"inGameOnly": true
+					"source": "lighting/Exterior/Day02.prefab"
 				},
 				{
 					"type": "object",
@@ -556,9 +554,9 @@
 							"type": "model",
 							"name": "Ground_Debris01",
 							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
-							"x": -1.2510519435296124,
-							"y": -4.1030412757035934,
-							"z": -3.010384595221865,
+							"x": -1.2681156759747685,
+							"y": -4.109107992951416,
+							"z": -3.103079704137876,
 							"scaleX": 0.68231270478485,
 							"scaleY": 0.6350429899171735,
 							"scaleZ": 0.6357474392442741,
@@ -1268,26 +1266,14 @@
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": -0.8104845039725036,
-							"y": -13.538629288989448,
-							"z": 29.041820087201586,
+							"x": -1.946981808287324,
+							"y": -11.57139467852182,
+							"z": 29.1166320023913,
 							"scaleX": 1.8919830329469167,
-							"scaleY": 2.267166233162957,
+							"scaleY": 2.958783370527469,
 							"scaleZ": 1.119041769556033,
-							"rotationZ": 32.83053779669498
-						},
-						{
-							"type": "reference",
-							"name": "Box_Navmesh",
-							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-							"x": -1.9563275888655365,
-							"y": -11.36192460450421,
-							"z": 29.201405225835796,
-							"scaleX": 1.8919830329469167,
-							"scaleY": 2.2671662331629565,
-							"scaleZ": 1.119041769556033,
-							"rotationX": -2.2557315517768632,
-							"rotationY": 11.322649353620584,
+							"rotationX": -2.2557315517768637,
+							"rotationY": 11.322649353620582,
 							"rotationZ": 6.954695623692824
 						},
 						{
@@ -1449,6 +1435,238 @@
 							"z": -6.1042
 						},
 						{
+							"type": "object",
+							"name": "Fences",
+							"x": -2.0345,
+							"y": -3.8413,
+							"z": 55.5947,
+							"children": [
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": -3.9537,
+									"y": 6.1613,
+									"z": -0.3853,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.0739,
+									"rotationY": 0.0031,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": -1.1904,
+									"y": -8.2452,
+									"z": -0.3853,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.0739,
+									"rotationY": 0.0031,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": 3.1965,
+									"y": 6.2208,
+									"z": -0.3761,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.0739,
+									"rotationY": -0.0031,
+									"rotationZ": 90
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": 6.7178,
+									"y": -4.9574,
+									"z": -0.3853,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.0739,
+									"rotationY": 0.0031
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": -8.3037,
+									"y": -1.8119,
+									"z": -2.169,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 1.884,
+									"rotationY": -0.371,
+									"rotationZ": -0.0061
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": -6.5224,
+									"y": -7.7191,
+									"z": -2.1177,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.7273,
+									"rotationY": -0.0143,
+									"rotationZ": -90.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence02",
+									"source": "content/Art/Asset/Generique/Fences/Fence02.fbx",
+									"x": -7.6344,
+									"y": 5.1765,
+									"z": -0.3382,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.755,
+									"rotationY": 0.0146,
+									"rotationZ": -0.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": -4.7455,
+									"y": -6.3157,
+									"z": -0.1875,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.755,
+									"rotationY": -0.0146,
+									"rotationZ": 179.9999
+								},
+								{
+									"type": "model",
+									"name": "Fence02",
+									"source": "content/Art/Asset/Generique/Fences/Fence02.fbx",
+									"x": 6.7747,
+									"y": 3.0222,
+									"z": -0.225,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.755,
+									"rotationY": 0.0146,
+									"rotationZ": -0.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": 6.7747,
+									"y": 0.1746,
+									"z": -0.1875,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.755,
+									"rotationY": -0.0146,
+									"rotationZ": 179.9999
+								},
+								{
+									"type": "model",
+									"name": "Fence02",
+									"source": "content/Art/Asset/Generique/Fences/Fence02.fbx",
+									"x": -4.7455,
+									"y": -3.4681,
+									"z": -0.225,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.755,
+									"rotationY": 0.0146,
+									"rotationZ": -0.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence02",
+									"source": "content/Art/Asset/Generique/Fences/Fence02.fbx",
+									"x": -8.385776663645636,
+									"y": -6.697024257186463,
+									"z": -2.1310772735201695,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.755,
+									"rotationY": 0.014599999999999998,
+									"rotationZ": -0.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": -7.6344,
+									"y": 2.329,
+									"z": -0.3006,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.755,
+									"rotationY": -0.0146,
+									"rotationZ": 179.9999
+								},
+								{
+									"type": "model",
+									"name": "Fence04",
+									"source": "content/Art/Asset/Generique/Fences/Fence04.fbx",
+									"x": -4.2094,
+									"y": 0.3696,
+									"z": 0.9986,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -1.7937,
+									"rotationY": 1.0447,
+									"rotationZ": 158.4702
+								},
+								{
+									"type": "model",
+									"name": "Fence04",
+									"source": "content/Art/Asset/Generique/Fences/Fence04.fbx",
+									"x": 7.3518,
+									"y": 6.876,
+									"z": 0.9986,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -1.7937,
+									"rotationY": 1.0447,
+									"rotationZ": -177.4771
+								},
+								{
+									"type": "model",
+									"name": "Fence04",
+									"source": "content/Art/Asset/Generique/Fences/Fence04.fbx",
+									"x": 3.2979,
+									"y": -7.3437,
+									"z": 0.9986,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -1.7937,
+									"rotationY": 1.0447,
+									"rotationZ": -177.4771
+								}
+							]
+						},
+						{
 							"type": "model",
 							"name": "passerelle01",
 							"source": "content/Art/Asset/Generique/bridges/passerelle01.fbx",
@@ -1595,6 +1813,38 @@
 							"scaleY": 0.5524,
 							"scaleZ": 0.5524,
 							"rotationZ": 90
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
+							"x": -7.8927,
+							"y": -9.2024,
+							"z": 16.5281,
+							"scaleX": 1.5524,
+							"scaleY": 1.5524,
+							"scaleZ": 1.5524,
+							"rotationZ": -73.7655
+						},
+						{
+							"type": "model",
+							"name": "Wall_bush02",
+							"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
+							"x": -4.601,
+							"y": -10.4416,
+							"z": 16.5281,
+							"scaleX": 1.5524,
+							"scaleY": 1.5524,
+							"scaleZ": 1.5524,
+							"rotationZ": 39.2347
+						},
+						{
+							"type": "model",
+							"name": "Observatory_foliage02",
+							"source": "content/Art/Asset/Specifique/Observatory/Observatory_foliage02.fbx",
+							"x": -5.178,
+							"y": -3.584,
+							"z": -11.178
 						},
 						{
 							"type": "model",
@@ -2314,6 +2564,82 @@
 							"rotationX": -6.802199999999998,
 							"rotationY": 15.794800000000002,
 							"rotationZ": 38.549699999999994,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {
+											"mode": "PBR",
+											"blend": "None",
+											"shadows": true,
+											"culling": "Back",
+											"depthTest": "Less",
+											"colorMask": 15,
+											"enableStencil": false
+										}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_MetallicGlossAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Stone_Wall01_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -0.2645,
+							"y": -6.1808,
+							"z": -3.1627,
+							"scaleX": 0.5805,
+							"scaleY": 0.5805,
+							"scaleZ": 0.6859,
+							"rotationZ": -60.9405,
 							"children": [
 								{
 									"type": "material",
@@ -3879,6 +4205,224 @@
 						},
 						{
 							"type": "object",
+							"name": "Fences",
+							"x": -2.0345,
+							"y": -3.8413,
+							"z": 55.5947,
+							"children": [
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": -3.9537,
+									"y": 6.1613,
+									"z": -0.3853,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.0739,
+									"rotationY": 0.0031,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": -1.1904,
+									"y": -8.2452,
+									"z": -0.3853,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.0739,
+									"rotationY": 0.0031,
+									"rotationZ": -90
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": 3.1965,
+									"y": 6.2208,
+									"z": -0.3761,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.0739,
+									"rotationY": -0.0031,
+									"rotationZ": 90
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": 6.7178,
+									"y": -4.9574,
+									"z": -0.3853,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.0739,
+									"rotationY": 0.0031
+								},
+								{
+									"type": "model",
+									"name": "Fence02",
+									"source": "content/Art/Asset/Generique/Fences/Fence02.fbx",
+									"x": -7.6344,
+									"y": 5.1765,
+									"z": -0.3382,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.755,
+									"rotationY": 0.0146,
+									"rotationZ": -0.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": -4.7455,
+									"y": -6.3157,
+									"z": -0.1875,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.755,
+									"rotationY": -0.0146,
+									"rotationZ": 179.9999
+								},
+								{
+									"type": "model",
+									"name": "Fence03",
+									"source": "content/Art/Asset/Generique/Fences/Fence03.fbx",
+									"x": -8.3037,
+									"y": -1.8119,
+									"z": -2.169,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 1.884,
+									"rotationY": -0.371,
+									"rotationZ": -0.0061
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": -6.5224,
+									"y": -7.7191,
+									"z": -2.1177,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.7273,
+									"rotationY": -0.0143,
+									"rotationZ": -90.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence02",
+									"source": "content/Art/Asset/Generique/Fences/Fence02.fbx",
+									"x": 6.7747,
+									"y": 3.0222,
+									"z": -0.225,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.755,
+									"rotationY": 0.0146,
+									"rotationZ": -0.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": 6.7747,
+									"y": 0.1746,
+									"z": -0.1875,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.755,
+									"rotationY": -0.0146,
+									"rotationZ": 179.9999
+								},
+								{
+									"type": "model",
+									"name": "Fence02",
+									"source": "content/Art/Asset/Generique/Fences/Fence02.fbx",
+									"x": -4.7455,
+									"y": -3.4681,
+									"z": -0.225,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -0.755,
+									"rotationY": 0.0146,
+									"rotationZ": -0.0001
+								},
+								{
+									"type": "model",
+									"name": "Fence01",
+									"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+									"x": -7.6344,
+									"y": 2.329,
+									"z": -0.3006,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": 0.755,
+									"rotationY": -0.0146,
+									"rotationZ": 179.9999
+								},
+								{
+									"type": "model",
+									"name": "Fence04",
+									"source": "content/Art/Asset/Generique/Fences/Fence04.fbx",
+									"x": -4.2094,
+									"y": 0.3696,
+									"z": 0.9986,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -1.7937,
+									"rotationY": 1.0447,
+									"rotationZ": 158.4702
+								},
+								{
+									"type": "model",
+									"name": "Fence04",
+									"source": "content/Art/Asset/Generique/Fences/Fence04.fbx",
+									"x": 7.3518,
+									"y": 6.876,
+									"z": 0.9986,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -1.7937,
+									"rotationY": 1.0447,
+									"rotationZ": -177.4771
+								},
+								{
+									"type": "model",
+									"name": "Fence04",
+									"source": "content/Art/Asset/Generique/Fences/Fence04.fbx",
+									"x": 3.2979,
+									"y": -7.3437,
+									"z": 0.9986,
+									"scaleX": 1.7,
+									"scaleY": 1.7,
+									"scaleZ": 1.7,
+									"rotationX": -1.7937,
+									"rotationY": 1.0447,
+									"rotationZ": -177.4771
+								}
+							]
+						},
+						{
+							"type": "object",
 							"name": "Observatory",
 							"children": [
 								{
@@ -3986,6 +4530,54 @@
 					"type": "reference",
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.8838,
+					"y": -5.3495,
+					"z": 26.3342,
+					"scaleX": 2.0824785414307976,
+					"scaleY": 2.2672,
+					"scaleZ": 1.119,
+					"rotationZ": 32.830499999999994
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 0.4751805770939313,
+					"y": -5.464344742601732,
+					"z": 26.3342,
+					"scaleX": 2.6248476089436203,
+					"scaleY": 2.7602420418935116,
+					"scaleZ": 1.119,
+					"rotationZ": 92.83049999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -2.581910974535495,
+					"y": -6.445137662688526,
+					"z": 26.820335426927375,
+					"scaleX": 2.082478541430797,
+					"scaleY": 3.442043727095126,
+					"scaleZ": 1.9009792176789346,
+					"rotationZ": 32.830499999999994
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 0.8337353007372228,
+					"y": -6.71995487770777,
+					"z": 25.189136053452092,
+					"scaleX": 2.082478541430797,
+					"scaleY": 3.835191923692169,
+					"scaleZ": 3.9401001888767873,
+					"rotationZ": 123.3361358148006
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"x": -0.29261964691031306,
 					"y": -4.424065497649267,
 					"z": 10.691010289561405,
@@ -4036,9 +4628,70 @@
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"x": 1.3581683238137678,
 					"y": 3.0157394888292007e-16,
-					"z": 58.60337178041458,
+					"z": 55.972021330040874,
 					"scaleX": 14.972098481446295,
 					"scaleY": 12.326625137581734,
+					"scaleZ": 3.459152275108739,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 7.037883631760703,
+					"y": 1.5627240905226499e-15,
+					"z": 56.857261692681035,
+					"scaleX": 14.972098481446295,
+					"scaleY": 0.40973373015055803,
+					"scaleZ": 3.459152275108739,
+					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -0.12660634953838112,
+					"y": 7.241809192351868,
+					"z": 56.857261692681035,
+					"scaleX": 14.972098481446295,
+					"scaleY": 0.40973373015055803,
+					"scaleZ": 3.459152275108739,
+					"rotationZ": 3.5083546492674415e-15
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": 6.948335949148057,
+					"y": -7.465885473255183,
+					"z": 56.857261692681035,
+					"scaleX": 2.331430281084502,
+					"scaleY": 0.40973373015055803,
+					"scaleZ": 3.459152275108739,
+					"rotationZ": 3.5083546492674407e-15
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -2.1746576074557735,
+					"y": -7.465885473255183,
+					"z": 56.857261692681035,
+					"scaleX": 13.929482490814502,
+					"scaleY": 0.40973373015055803,
+					"scaleZ": 3.459152275108739,
+					"rotationZ": 3.5083546492674403e-15
+				},
+				{
+					"type": "reference",
+					"name": "Box_Navmesh",
+					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+					"x": -8.399485750989447,
+					"y": -0.5757462242327156,
+					"z": 55.365792659407575,
+					"scaleX": 16.991786165910977,
+					"scaleY": 0.40973373015055803,
+					"scaleZ": 5.85000962862701,
 					"rotationZ": -89.99999999999999
 				},
 				{
@@ -4335,16 +4988,11 @@
 					"name": "ladder_observatory",
 					"source": "gameplay/ladder_observatory.prefab",
 					"x": 5.7814,
-					"y": -6.1978,
-					"z": 5.0245,
+					"y": -6.197800000000001,
+					"z": 4.380223396001849,
 					"rotationZ": -180
 				}
 			]
-		},
-		{
-			"type": "model",
-			"name": "Observatory_foliage02",
-			"source": "content/Art/Asset/Specifique/Observatory/Observatory_foliage02.fbx"
 		}
 	]
 }

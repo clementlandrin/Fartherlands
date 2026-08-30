@@ -4,6 +4,7 @@
 		{
 			"type": "object",
 			"name": "object",
+			"enabled": false,
 			"z": 0.5,
 			"children": [
 				{
@@ -98,6 +99,33 @@
 						0
 					]
 				},
+				{
+					"type": "material",
+					"name": "material",
+					"props": {
+						"Fatherlands": {
+							"mode": "PBR",
+							"blend": "None",
+							"shadows": true,
+							"culling": "None",
+							"depthTest": "Less",
+							"colorMask": 15,
+							"enableStencil": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"type": "box",
+			"name": "box",
+			"props": {
+				"id": "Box_Navmesh_box",
+				"type": 2,
+				"$cdbtype": "element"
+			},
+			"z": 0.5,
+			"children": [
 				{
 					"type": "material",
 					"name": "material",
