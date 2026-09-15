@@ -316,6 +316,25 @@
 								"Mask_Power": 7.12,
 								"Top_Down_Contrast": 10
 							}
+						},
+						{
+							"type": "shader",
+							"name": "caustic_test",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/caustic_test.shgraph",
+							"props": {
+								"Caustic": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
+								"Intensity": 0.5,
+								"Tiling": 2,
+								"Tiling2": 2,
+								"Speed": 0.14,
+								"Speed2": 0.12,
+								"Color": [
+									0.49019607843137253,
+									0.7647058823529411,
+									1,
+									1
+								]
+							}
 						}
 					]
 				},
@@ -384,6 +403,25 @@
 							"args": [
 								0
 							]
+						},
+						{
+							"type": "shader",
+							"name": "caustic_test",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/caustic_test.shgraph",
+							"props": {
+								"Caustic": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
+								"Intensity": 0.5,
+								"Tiling": 2,
+								"Tiling2": 2,
+								"Speed": 0.14,
+								"Speed2": 0.12,
+								"Color": [
+									0.49019607843137253,
+									0.7647058823529411,
+									1,
+									1
+								]
+							}
 						}
 					]
 				},
@@ -473,15 +511,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "02 - Default",
 									"children": [
@@ -504,15 +534,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "01 - Default",
 									"children": [
@@ -551,15 +573,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "02 - Default",
 									"children": [
@@ -582,15 +596,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "01 - Default",
 									"children": [
@@ -628,15 +634,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "02 - Default",
 									"children": [
@@ -659,15 +657,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "01 - Default",
 									"children": [
@@ -850,15 +840,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "02 - Default",
 									"children": [
@@ -881,15 +863,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "01 - Default",
 									"children": [
@@ -928,15 +902,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "02 - Default",
 									"children": [
@@ -959,15 +925,7 @@
 									"type": "material",
 									"name": "material",
 									"props": {
-										"Fatherlands": {
-											"mode": "PBR",
-											"blend": "None",
-											"shadows": true,
-											"culling": "Back",
-											"depthTest": "Less",
-											"colorMask": 15,
-											"enableStencil": false
-										}
+										"Fatherlands": {}
 									},
 									"materialName": "01 - Default",
 									"children": [

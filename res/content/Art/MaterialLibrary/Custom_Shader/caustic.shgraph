@@ -1,0 +1,750 @@
+{
+	"type": "shgraph",
+	"parameters": [
+		{
+			"id": 0,
+			"name": "Normal_noise",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/caustic_noise_normal.png",
+			"index": 0
+		},
+		{
+			"id": 1,
+			"name": "Caustic",
+			"type": [
+				"TSampler",
+				"T2D,false"
+			],
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
+			"index": 1
+		}
+	],
+	"variables": [],
+	"Vertex": {
+		"nodes": [],
+		"edges": []
+	},
+	"Fragment": {
+		"nodes": [
+			{
+				"x": 90,
+				"y": 360,
+				"id": 0,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedPosition",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 378,
+				"y": 360,
+				"id": 1,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"defaults": {
+						"b": 0.01
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 522,
+				"y": 360,
+				"id": 2,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 918,
+				"y": 324,
+				"id": 3,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1080,
+				"y": 378,
+				"id": 4,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 720,
+				"y": 144,
+				"id": 7,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 720,
+				"y": 360,
+				"id": 8,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 720,
+				"y": 576,
+				"id": 9,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 216,
+				"y": 684,
+				"id": 12,
+				"type": "hrt.shgraph.nodes.Abs",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 450,
+				"y": 684,
+				"id": 13,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1224,
+				"y": 882,
+				"id": 14,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1458,
+				"y": 936,
+				"id": 15,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1278,
+				"y": 1170,
+				"id": 16,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"defaults": {
+						"a": 2,
+						"b": 0
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1440,
+				"y": 1170,
+				"id": 17,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 0,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1638,
+				"y": 936,
+				"id": 18,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2070,
+				"y": 288,
+				"id": 19,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2304,
+				"y": 342,
+				"id": 20,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2124,
+				"y": 576,
+				"id": 21,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"defaults": {
+						"a": 0,
+						"b": 0.6
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2700,
+				"y": 342,
+				"id": 23,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2538,
+				"y": 144,
+				"id": 24,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 1,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2484,
+				"y": 432,
+				"id": 25,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1926,
+				"y": 918,
+				"id": 26,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"defaults": {
+						"a": 0.015
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2070,
+				"y": 918,
+				"id": 27,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2214,
+				"y": 918,
+				"id": 28,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2484,
+				"y": 1008,
+				"id": 29,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2052,
+				"y": 1188,
+				"id": 30,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2286,
+				"y": 1242,
+				"id": 31,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2106,
+				"y": 1476,
+				"id": 32,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"defaults": {
+						"a": 0,
+						"b": 0.66
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2772,
+				"y": 1008,
+				"id": 33,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 2610,
+				"y": 810,
+				"id": 34,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 1,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 3113.1977266022877,
+				"y": 752.2224913235624,
+				"id": 35,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3327.381836306859,
+				"y": 766.1715562657611,
+				"id": 36,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"defaults": {
+						"b": 3
+					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3492,
+				"y": 774,
+				"id": 37,
+				"type": "hrt.shgraph.ShaderOutput",
+				"properties": {
+					"variable": "_sg_out_color",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": -18,
+				"y": 684,
+				"id": 38,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			}
+		],
+		"edges": [
+			{
+				"outputNodeId": 0,
+				"nameOutput": "output",
+				"inputNodeId": 1,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 1,
+				"nameOutput": "output",
+				"inputNodeId": 2,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 7,
+				"nameOutput": "output",
+				"inputNodeId": 3,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 8,
+				"nameOutput": "output",
+				"inputNodeId": 3,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 13,
+				"nameOutput": "g",
+				"inputNodeId": 3,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 3,
+				"nameOutput": "output",
+				"inputNodeId": 4,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 9,
+				"nameOutput": "output",
+				"inputNodeId": 4,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 13,
+				"nameOutput": "b",
+				"inputNodeId": 4,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "g",
+				"inputNodeId": 7,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "b",
+				"inputNodeId": 7,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "r",
+				"inputNodeId": 8,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "b",
+				"inputNodeId": 8,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "r",
+				"inputNodeId": 9,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 2,
+				"nameOutput": "g",
+				"inputNodeId": 9,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 38,
+				"nameOutput": "output",
+				"inputNodeId": 12,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 12,
+				"nameOutput": "output",
+				"inputNodeId": 13,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 4,
+				"nameOutput": "output",
+				"inputNodeId": 14,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 14,
+				"nameOutput": "output",
+				"inputNodeId": 15,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 16,
+				"nameOutput": "output",
+				"inputNodeId": 15,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 17,
+				"nameOutput": "Normal_noise",
+				"inputNodeId": 18,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 15,
+				"nameOutput": "output",
+				"inputNodeId": 18,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 4,
+				"nameOutput": "output",
+				"inputNodeId": 19,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 19,
+				"nameOutput": "output",
+				"inputNodeId": 20,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 21,
+				"nameOutput": "output",
+				"inputNodeId": 20,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 24,
+				"nameOutput": "Caustic",
+				"inputNodeId": 23,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 25,
+				"nameOutput": "output",
+				"inputNodeId": 23,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 20,
+				"nameOutput": "output",
+				"inputNodeId": 25,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 28,
+				"nameOutput": "output",
+				"inputNodeId": 25,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 18,
+				"nameOutput": "RGBA",
+				"inputNodeId": 26,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 26,
+				"nameOutput": "output",
+				"inputNodeId": 27,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 27,
+				"nameOutput": "r",
+				"inputNodeId": 28,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 27,
+				"nameOutput": "g",
+				"inputNodeId": 28,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 1
+			},
+			{
+				"outputNodeId": 28,
+				"nameOutput": "output",
+				"inputNodeId": 29,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 31,
+				"nameOutput": "output",
+				"inputNodeId": 29,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 4,
+				"nameOutput": "output",
+				"inputNodeId": 30,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 30,
+				"nameOutput": "output",
+				"inputNodeId": 31,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 32,
+				"nameOutput": "output",
+				"inputNodeId": 31,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 34,
+				"nameOutput": "Caustic",
+				"inputNodeId": 33,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 29,
+				"nameOutput": "output",
+				"inputNodeId": 33,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 23,
+				"nameOutput": "RGBA",
+				"inputNodeId": 35,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 33,
+				"nameOutput": "RGBA",
+				"inputNodeId": 35,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 35,
+				"nameOutput": "output",
+				"inputNodeId": 36,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 36,
+				"nameOutput": "output",
+				"inputNodeId": 37,
+				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			}
+		]
+	}
+}

@@ -2057,6 +2057,17 @@
 					"bias": 0.1
 				}
 			}
+		},
+		{
+			"type": "model",
+			"name": "blocsx10",
+			"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+			"x": -4.91072713776309,
+			"y": 8.114237929276465,
+			"z": 10.364808814884803,
+			"rotationX": -1.193383310594754e-11,
+			"rotationY": 1.5861001075957454e-12,
+			"rotationZ": -89.99999999999999
 		}
 	]
 }

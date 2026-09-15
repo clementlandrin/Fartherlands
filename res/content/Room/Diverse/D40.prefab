@@ -1613,6 +1613,41 @@
 					"camFollowZ": true
 				}
 			}
+		},
+		{
+			"type": "model",
+			"name": "blocsx20",
+			"source": "content/Art/Asset/Generique/blocs/blocsx20.fbx",
+			"x": 7.44321216515676,
+			"y": -2.032237304465637,
+			"z": 2.2140839144945765,
+			"scaleX": 0.9999999999999993,
+			"scaleY": 0.9999999999999992,
+			"rotationX": 1.3047134861963443,
+			"rotationY": -0.41198650436333484,
+			"rotationZ": -0.004691007762043076
+		},
+		{
+			"type": "model",
+			"name": "blocsx10",
+			"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+			"x": 5.420417901775837,
+			"y": 7.7045703484036485,
+			"z": 2.654226557580458,
+			"rotationX": 0.000008144609909240513,
+			"rotationY": -3.302105887650569e-11,
+			"rotationZ": -89.99999999999999
+		},
+		{
+			"type": "model",
+			"name": "blocsx10",
+			"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+			"x": -7.309764888347155,
+			"y": 7.7045703484036485,
+			"z": 5.155523050229657,
+			"rotationX": 0.000008144609909240513,
+			"rotationY": -3.302105887650569e-11,
+			"rotationZ": -89.99999999999999
 		}
 	]
 }

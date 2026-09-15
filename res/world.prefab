@@ -657,8 +657,7 @@
 					"name": "D25",
 					"source": "content/Room/Diverse/D25.prefab",
 					"x": -67.5,
-					"y": -47.5,
-					"editMode": "Edit"
+					"y": -47.5
 				},
 				{
 					"type": "reference",
