@@ -185,8 +185,8 @@
 				}
 			},
 			{
-				"x": 4374,
-				"y": -3780,
+				"x": 4662,
+				"y": -3762,
 				"id": 119,
 				"type": "hrt.shgraph.ShaderOutput",
 				"properties": {
@@ -366,6 +366,57 @@
 				"y": -4194,
 				"id": 160,
 				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3762,
+				"y": -4896,
+				"id": 161,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3978,
+				"y": -4896,
+				"id": 162,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4158,
+				"y": -4968,
+				"id": 163,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4338,
+				"y": -4950,
+				"id": 164,
+				"type": "hrt.shgraph.nodes.Saturate",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4464,
+				"y": -3906,
+				"id": 165,
+				"type": "hrt.shgraph.nodes.Mix",
 				"properties": {
 					"nameOverride": null,
 					"showPreview": true
@@ -595,6 +646,54 @@
 				"inputNodeId": 160,
 				"nameInput": "b",
 				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 161,
+				"nameOutput": "output",
+				"inputNodeId": 162,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 162,
+				"nameOutput": "b",
+				"inputNodeId": 163,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 163,
+				"nameOutput": "output",
+				"inputNodeId": 164,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 134,
+				"nameOutput": "output",
+				"inputNodeId": 165,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 133,
+				"nameOutput": "output",
+				"inputNodeId": 165,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 164,
+				"nameOutput": "output",
+				"inputNodeId": 165,
+				"nameInput": "fact",
+				"inputId": 2,
 				"outputId": 0
 			}
 		]
