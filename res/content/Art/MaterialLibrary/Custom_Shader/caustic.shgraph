@@ -8,7 +8,7 @@
 				"TSampler",
 				"T2D,false"
 			],
-			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/caustic_noise_normal.png",
+			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
 			"index": 0
 		},
 		{
@@ -20,6 +20,81 @@
 			],
 			"defaultValue": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
 			"index": 1
+		},
+		{
+			"id": 2,
+			"name": "Intensity",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 2
+		},
+		{
+			"id": 3,
+			"name": "Tiling",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.38,
+			"index": 3
+		},
+		{
+			"id": 5,
+			"name": "Tiling2",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.66,
+			"index": 4
+		},
+		{
+			"id": 4,
+			"name": "Speed",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.5,
+			"index": 5
+		},
+		{
+			"id": 6,
+			"name": "Speed2",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 0.5,
+			"index": 6
+		},
+		{
+			"id": 8,
+			"name": "Color",
+			"type": [
+				"TVec",
+				"4,VFloat"
+			],
+			"defaultValue": [
+				1,
+				1,
+				1,
+				1
+			],
+			"index": 7
+		},
+		{
+			"id": 9,
+			"name": "Top_down_contrast",
+			"type": [
+				"TFloat",
+				""
+			],
+			"defaultValue": 1,
+			"index": 8
 		}
 	],
 	"variables": [],
@@ -30,357 +105,99 @@
 	"Fragment": {
 		"nodes": [
 			{
-				"x": 90,
-				"y": 360,
-				"id": 0,
-				"type": "hrt.shgraph.ShaderInput",
+				"x": 1980,
+				"y": -4122,
+				"id": 98,
+				"type": "hrt.shgraph.ShaderParam",
 				"properties": {
-					"variable": "transformedPosition",
-					"nameOverride": null,
-					"showPreview": true
+					"parameterId": 1,
+					"perInstance": null
 				}
 			},
 			{
-				"x": 378,
-				"y": 360,
-				"id": 1,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"defaults": {
-						"b": 0.01
-					},
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 522,
-				"y": 360,
-				"id": 2,
-				"type": "hrt.shgraph.nodes.Split",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 918,
-				"y": 324,
-				"id": 3,
-				"type": "hrt.shgraph.nodes.Mix",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 1080,
-				"y": 378,
-				"id": 4,
-				"type": "hrt.shgraph.nodes.Mix",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 720,
-				"y": 144,
-				"id": 7,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 720,
-				"y": 360,
-				"id": 8,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 720,
-				"y": 576,
-				"id": 9,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 216,
-				"y": 684,
-				"id": 12,
-				"type": "hrt.shgraph.nodes.Abs",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 450,
-				"y": 684,
-				"id": 13,
-				"type": "hrt.shgraph.nodes.Split",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 1224,
-				"y": 882,
-				"id": 14,
+				"x": 2016,
+				"y": -3798,
+				"id": 106,
 				"type": "hrt.shgraph.nodes.TilingAndOffset",
 				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 1458,
-				"y": 936,
-				"id": 15,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 1278,
-				"y": 1170,
-				"id": 16,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
 					"defaults": {
-						"a": 2,
-						"b": 0
+						"tiling": 0.6
 					},
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1602,
+				"y": -3402,
+				"id": 107,
+				"type": "hrt.shgraph.ShaderGlobalInput",
+				"properties": {
+					"variableIdx": 0,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1890,
+				"y": -3474,
+				"id": 108,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1350,
+				"y": -3456,
+				"id": 109,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 6,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 1584,
+				"y": -3690,
+				"id": 110,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 5,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2358,
+				"y": -3852,
+				"id": 111,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
 					"nameOverride": null,
 					"showPreview": true
 				}
 			},
 			{
 				"x": 1440,
-				"y": 1170,
-				"id": 17,
-				"type": "hrt.shgraph.ShaderParam",
+				"y": -3816,
+				"id": 113,
+				"type": "hrt.shgraph.nodes.Rotate",
 				"properties": {
-					"parameterId": 0,
-					"perInstance": null
-				}
-			},
-			{
-				"x": 1638,
-				"y": 936,
-				"id": 18,
-				"type": "hrt.shgraph.nodes.Sampler",
-				"properties": {
-					"filter": "Linear",
-					"wrap": "Repeat",
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2070,
-				"y": 288,
-				"id": 19,
-				"type": "hrt.shgraph.nodes.TilingAndOffset",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2304,
-				"y": 342,
-				"id": 20,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2124,
-				"y": 576,
-				"id": 21,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
+					"unit": "Radian",
 					"defaults": {
-						"a": 0,
-						"b": 0.6
+						"rotation": 45
 					},
 					"nameOverride": null,
 					"showPreview": true
 				}
 			},
 			{
-				"x": 2700,
-				"y": 342,
-				"id": 23,
-				"type": "hrt.shgraph.nodes.Sampler",
-				"properties": {
-					"filter": "Linear",
-					"wrap": "Repeat",
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2538,
-				"y": 144,
-				"id": 24,
-				"type": "hrt.shgraph.ShaderParam",
-				"properties": {
-					"parameterId": 1,
-					"perInstance": null
-				}
-			},
-			{
-				"x": 2484,
-				"y": 432,
-				"id": 25,
-				"type": "hrt.shgraph.nodes.Add",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 1926,
-				"y": 918,
-				"id": 26,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"defaults": {
-						"a": 0.015
-					},
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2070,
-				"y": 918,
-				"id": 27,
-				"type": "hrt.shgraph.nodes.Split",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2214,
-				"y": 918,
-				"id": 28,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2484,
-				"y": 1008,
-				"id": 29,
-				"type": "hrt.shgraph.nodes.Add",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2052,
-				"y": 1188,
-				"id": 30,
-				"type": "hrt.shgraph.nodes.TilingAndOffset",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2286,
-				"y": 1242,
-				"id": 31,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2106,
-				"y": 1476,
-				"id": 32,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"defaults": {
-						"a": 0,
-						"b": 0.66
-					},
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2772,
-				"y": 1008,
-				"id": 33,
-				"type": "hrt.shgraph.nodes.Sampler",
-				"properties": {
-					"filter": "Linear",
-					"wrap": "Repeat",
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 2610,
-				"y": 810,
-				"id": 34,
-				"type": "hrt.shgraph.ShaderParam",
-				"properties": {
-					"parameterId": 1,
-					"perInstance": null
-				}
-			},
-			{
-				"x": 3113.1977266022877,
-				"y": 752.2224913235624,
-				"id": 35,
-				"type": "hrt.shgraph.nodes.Add",
-				"properties": {
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 3327.381836306859,
-				"y": 766.1715562657611,
-				"id": 36,
-				"type": "hrt.shgraph.nodes.Multiply",
-				"properties": {
-					"defaults": {
-						"b": 3
-					},
-					"nameOverride": null,
-					"showPreview": true
-				}
-			},
-			{
-				"x": 3492,
-				"y": 774,
-				"id": 37,
+				"x": 4896,
+				"y": -3870,
+				"id": 119,
 				"type": "hrt.shgraph.ShaderOutput",
 				"properties": {
 					"variable": "_sg_out_color",
@@ -389,12 +206,227 @@
 				}
 			},
 			{
-				"x": -18,
-				"y": 684,
-				"id": 38,
+				"x": 3168,
+				"y": -3582,
+				"id": 133,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "pixelColor",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4374,
+				"y": -3870,
+				"id": 134,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1296,
+				"y": -4644,
+				"id": 138,
+				"type": "hrt.shgraph.ShaderGlobalInput",
+				"properties": {
+					"variableIdx": 0,
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1584,
+				"y": -4590,
+				"id": 139,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1782,
+				"y": -4608,
+				"id": 140,
+				"type": "hrt.shgraph.nodes.TilingAndOffset",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1314,
+				"y": -4266,
+				"id": 142,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 4,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 2304,
+				"y": -4590,
+				"id": 143,
+				"type": "hrt.shgraph.nodes.Sampler",
+				"properties": {
+					"filter": "Linear",
+					"wrap": "Repeat",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 324,
+				"y": -3906,
+				"id": 145,
+				"type": "hrt.shgraph.ShaderInput",
+				"properties": {
+					"variable": "calculatedUV",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 1594.7758634357115,
+				"y": -4366.764044782779,
+				"id": 152,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 3,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 3069.95051421078,
+				"y": -4181.7071053188365,
+				"id": 153,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3078,
+				"y": -3852,
+				"id": 154,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3440.0526287771086,
+				"y": -4033.2765416717734,
+				"id": 156,
+				"type": "hrt.shgraph.nodes.Add",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3798,
+				"y": -4104,
+				"id": 157,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3538.7659302053576,
+				"y": -4302.029907555015,
+				"id": 158,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 2,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 3798,
+				"y": -4446,
+				"id": 159,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 8,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 4050,
+				"y": -4194,
+				"id": 160,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4230,
+				"y": -4662,
+				"id": 161,
+				"type": "hrt.shgraph.nodes.Split",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3528,
+				"y": -4824,
+				"id": 163,
 				"type": "hrt.shgraph.ShaderInput",
 				"properties": {
 					"variable": "transformedNormal",
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 4626,
+				"y": -4356,
+				"id": 164,
+				"type": "hrt.shgraph.nodes.Mix",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3906,
+				"y": -4860,
+				"id": 165,
+				"type": "hrt.shgraph.nodes.Multiply",
+				"properties": {
+					"nameOverride": null,
+					"showPreview": true
+				}
+			},
+			{
+				"x": 3708,
+				"y": -4752,
+				"id": 166,
+				"type": "hrt.shgraph.ShaderParam",
+				"properties": {
+					"parameterId": 9,
+					"perInstance": null
+				}
+			},
+			{
+				"x": 4050,
+				"y": -4860,
+				"id": 167,
+				"type": "hrt.shgraph.nodes.Saturate",
+				"properties": {
 					"nameOverride": null,
 					"showPreview": true
 				}
@@ -402,346 +434,282 @@
 		],
 		"edges": [
 			{
-				"outputNodeId": 0,
+				"outputNodeId": 113,
 				"nameOutput": "output",
-				"inputNodeId": 1,
-				"nameInput": "a",
+				"inputNodeId": 106,
+				"nameInput": "uv",
 				"inputId": 0,
 				"outputId": 0
 			},
 			{
-				"outputNodeId": 1,
-				"nameOutput": "output",
-				"inputNodeId": 2,
-				"nameInput": "rgba",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 7,
-				"nameOutput": "output",
-				"inputNodeId": 3,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 8,
-				"nameOutput": "output",
-				"inputNodeId": 3,
-				"nameInput": "b",
+				"outputNodeId": 110,
+				"nameOutput": "Tiling2",
+				"inputNodeId": 106,
+				"nameInput": "tiling",
 				"inputId": 1,
 				"outputId": 0
 			},
 			{
-				"outputNodeId": 13,
-				"nameOutput": "g",
-				"inputNodeId": 3,
-				"nameInput": "fact",
+				"outputNodeId": 108,
+				"nameOutput": "output",
+				"inputNodeId": 106,
+				"nameInput": "offset",
 				"inputId": 2,
-				"outputId": 1
+				"outputId": 0
 			},
 			{
-				"outputNodeId": 3,
+				"outputNodeId": 107,
 				"nameOutput": "output",
-				"inputNodeId": 4,
+				"inputNodeId": 108,
 				"nameInput": "a",
 				"inputId": 0,
 				"outputId": 0
 			},
 			{
-				"outputNodeId": 9,
-				"nameOutput": "output",
-				"inputNodeId": 4,
+				"outputNodeId": 109,
+				"nameOutput": "Speed2",
+				"inputNodeId": 108,
 				"nameInput": "b",
 				"inputId": 1,
 				"outputId": 0
 			},
 			{
-				"outputNodeId": 13,
-				"nameOutput": "b",
-				"inputNodeId": 4,
-				"nameInput": "fact",
-				"inputId": 2,
-				"outputId": 2
-			},
-			{
-				"outputNodeId": 2,
-				"nameOutput": "g",
-				"inputNodeId": 7,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 1
-			},
-			{
-				"outputNodeId": 2,
-				"nameOutput": "b",
-				"inputNodeId": 7,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 2
-			},
-			{
-				"outputNodeId": 2,
-				"nameOutput": "r",
-				"inputNodeId": 8,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 2,
-				"nameOutput": "b",
-				"inputNodeId": 8,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 2
-			},
-			{
-				"outputNodeId": 2,
-				"nameOutput": "r",
-				"inputNodeId": 9,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 2,
-				"nameOutput": "g",
-				"inputNodeId": 9,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 1
-			},
-			{
-				"outputNodeId": 38,
-				"nameOutput": "output",
-				"inputNodeId": 12,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 12,
-				"nameOutput": "output",
-				"inputNodeId": 13,
-				"nameInput": "rgba",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 4,
-				"nameOutput": "output",
-				"inputNodeId": 14,
-				"nameInput": "uv",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 14,
-				"nameOutput": "output",
-				"inputNodeId": 15,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 16,
-				"nameOutput": "output",
-				"inputNodeId": 15,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 17,
-				"nameOutput": "Normal_noise",
-				"inputNodeId": 18,
-				"nameInput": "texture",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 15,
-				"nameOutput": "output",
-				"inputNodeId": 18,
-				"nameInput": "uv",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 4,
-				"nameOutput": "output",
-				"inputNodeId": 19,
-				"nameInput": "uv",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 19,
-				"nameOutput": "output",
-				"inputNodeId": 20,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 21,
-				"nameOutput": "output",
-				"inputNodeId": 20,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 24,
+				"outputNodeId": 98,
 				"nameOutput": "Caustic",
-				"inputNodeId": 23,
+				"inputNodeId": 111,
 				"nameInput": "texture",
 				"inputId": 0,
 				"outputId": 0
 			},
 			{
-				"outputNodeId": 25,
+				"outputNodeId": 106,
 				"nameOutput": "output",
-				"inputNodeId": 23,
+				"inputNodeId": 111,
 				"nameInput": "uv",
 				"inputId": 1,
 				"outputId": 0
 			},
 			{
-				"outputNodeId": 20,
+				"outputNodeId": 145,
 				"nameOutput": "output",
-				"inputNodeId": 25,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 28,
-				"nameOutput": "output",
-				"inputNodeId": 25,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 18,
-				"nameOutput": "RGBA",
-				"inputNodeId": 26,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 26,
-				"nameOutput": "output",
-				"inputNodeId": 27,
-				"nameInput": "rgba",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 27,
-				"nameOutput": "r",
-				"inputNodeId": 28,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 27,
-				"nameOutput": "g",
-				"inputNodeId": 28,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 1
-			},
-			{
-				"outputNodeId": 28,
-				"nameOutput": "output",
-				"inputNodeId": 29,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 31,
-				"nameOutput": "output",
-				"inputNodeId": 29,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 4,
-				"nameOutput": "output",
-				"inputNodeId": 30,
+				"inputNodeId": 113,
 				"nameInput": "uv",
 				"inputId": 0,
 				"outputId": 0
 			},
 			{
-				"outputNodeId": 30,
+				"outputNodeId": 164,
 				"nameOutput": "output",
-				"inputNodeId": 31,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 32,
-				"nameOutput": "output",
-				"inputNodeId": 31,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 34,
-				"nameOutput": "Caustic",
-				"inputNodeId": 33,
-				"nameInput": "texture",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 29,
-				"nameOutput": "output",
-				"inputNodeId": 33,
-				"nameInput": "uv",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 23,
-				"nameOutput": "RGBA",
-				"inputNodeId": 35,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 33,
-				"nameOutput": "RGBA",
-				"inputNodeId": 35,
-				"nameInput": "b",
-				"inputId": 1,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 35,
-				"nameOutput": "output",
-				"inputNodeId": 36,
-				"nameInput": "a",
-				"inputId": 0,
-				"outputId": 0
-			},
-			{
-				"outputNodeId": 36,
-				"nameOutput": "output",
-				"inputNodeId": 37,
+				"inputNodeId": 119,
 				"nameInput": "input",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 160,
+				"nameOutput": "output",
+				"inputNodeId": 134,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 133,
+				"nameOutput": "output",
+				"inputNodeId": 134,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 138,
+				"nameOutput": "output",
+				"inputNodeId": 139,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 142,
+				"nameOutput": "Speed",
+				"inputNodeId": 139,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 145,
+				"nameOutput": "output",
+				"inputNodeId": 140,
+				"nameInput": "uv",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 152,
+				"nameOutput": "Tiling",
+				"inputNodeId": 140,
+				"nameInput": "tiling",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 139,
+				"nameOutput": "output",
+				"inputNodeId": 140,
+				"nameInput": "offset",
+				"inputId": 2,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 98,
+				"nameOutput": "Caustic",
+				"inputNodeId": 143,
+				"nameInput": "texture",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 140,
+				"nameOutput": "output",
+				"inputNodeId": 143,
+				"nameInput": "uv",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 143,
+				"nameOutput": "RGBA",
+				"inputNodeId": 153,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 111,
+				"nameOutput": "RGBA",
+				"inputNodeId": 153,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 111,
+				"nameOutput": "RGBA",
+				"inputNodeId": 154,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 143,
+				"nameOutput": "RGBA",
+				"inputNodeId": 154,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 153,
+				"nameOutput": "output",
+				"inputNodeId": 156,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 154,
+				"nameOutput": "output",
+				"inputNodeId": 156,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 158,
+				"nameOutput": "Intensity",
+				"inputNodeId": 157,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 156,
+				"nameOutput": "output",
+				"inputNodeId": 157,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 159,
+				"nameOutput": "Color",
+				"inputNodeId": 160,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 157,
+				"nameOutput": "output",
+				"inputNodeId": 160,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 167,
+				"nameOutput": "output",
+				"inputNodeId": 161,
+				"nameInput": "rgba",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 134,
+				"nameOutput": "output",
+				"inputNodeId": 164,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 133,
+				"nameOutput": "output",
+				"inputNodeId": 164,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 161,
+				"nameOutput": "b",
+				"inputNodeId": 164,
+				"nameInput": "fact",
+				"inputId": 2,
+				"outputId": 2
+			},
+			{
+				"outputNodeId": 163,
+				"nameOutput": "output",
+				"inputNodeId": 165,
+				"nameInput": "a",
+				"inputId": 0,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 166,
+				"nameOutput": "Top_down_contrast",
+				"inputNodeId": 165,
+				"nameInput": "b",
+				"inputId": 1,
+				"outputId": 0
+			},
+			{
+				"outputNodeId": 165,
+				"nameOutput": "output",
+				"inputNodeId": 167,
+				"nameInput": "a",
 				"inputId": 0,
 				"outputId": 0
 			}

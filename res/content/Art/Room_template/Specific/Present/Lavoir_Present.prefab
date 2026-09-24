@@ -997,10 +997,10 @@
 				{
 					"type": "shader",
 					"name": "caustic_test",
-					"source": "content/Art/MaterialLibrary/Custom_Shader/caustic_test.shgraph",
+					"source": "content/Art/MaterialLibrary/Custom_Shader/Caustic.shgraph",
 					"props": {
 						"Caustic": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
-						"Intensity": 0.5,
+						"Intensity": 1,
 						"Tiling": 2,
 						"Tiling2": 2,
 						"Speed": 0.14,
@@ -1010,7 +1010,8 @@
 							0.7647058823529411,
 							1,
 							1
-						]
+						],
+						"Top_down_contrast": 7.5
 					}
 				}
 			]

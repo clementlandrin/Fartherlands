@@ -320,12 +320,12 @@
 						{
 							"type": "shader",
 							"name": "caustic_test",
-							"source": "content/Art/MaterialLibrary/Custom_Shader/caustic_test.shgraph",
+							"source": "content/Art/MaterialLibrary/Custom_Shader/Caustic.shgraph",
 							"props": {
 								"Caustic": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
-								"Intensity": 0.5,
-								"Tiling": 2,
-								"Tiling2": 2,
+								"Intensity": 1,
+								"Tiling": 0.54,
+								"Tiling2": 0.52,
 								"Speed": 0.14,
 								"Speed2": 0.12,
 								"Color": [
@@ -333,7 +333,8 @@
 									0.7647058823529411,
 									1,
 									1
-								]
+								],
+								"Top_down_contrast": 1
 							}
 						}
 					]
@@ -403,25 +404,6 @@
 							"args": [
 								0
 							]
-						},
-						{
-							"type": "shader",
-							"name": "caustic_test",
-							"source": "content/Art/MaterialLibrary/Custom_Shader/caustic_test.shgraph",
-							"props": {
-								"Caustic": "content/Art/MaterialLibrary/Textures/Utilities/caustics.png",
-								"Intensity": 0.5,
-								"Tiling": 2,
-								"Tiling2": 2,
-								"Speed": 0.14,
-								"Speed2": 0.12,
-								"Color": [
-									0.49019607843137253,
-									0.7647058823529411,
-									1,
-									1
-								]
-							}
 						}
 					]
 				},
