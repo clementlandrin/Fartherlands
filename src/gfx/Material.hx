@@ -10,10 +10,18 @@ class Material extends h3d.mat.PbrMaterial {
 		if( t != null ) {
 			if( spec == null ) {
 				spec = new gfx.PropsTexture();
-				spec.emissiveValue = props.emissive;
+				spec.emissiveValue = props == null ? 0 : props.emissive;
 				mainPass.addShader(spec);
 			}
 		}
 		return super.set_specularTexture(t);
+	}
+
+	override function refreshProps() {
+		super.refreshProps();
+		var props : h3d.mat.PbrMaterial.PbrProps = props;
+		var spec = mainPass.getShader(gfx.PropsTexture);
+		if( spec != null && props != null )
+			spec.emissiveValue = props.emissive;
 	}
 }
