@@ -396,9 +396,8 @@ class Game extends hxd.App {
 			bench.begin();
 		globalEvent.update(dt);
 
-		if ( hxd.Key.isPressed(hxd.Key.K) ) {
+		if ( hxd.Key.isPressed(hxd.Key.K) && canControl() )
 			new ui.KnowledgeWindow(baseUI.root);
-		}
 
 		for ( e in entities )
 			e.cull();
