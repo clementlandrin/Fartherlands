@@ -16,13 +16,6 @@
 					"textureWrap": true
 				},
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
 					"textureWrap": true
 				}
 			},
@@ -45,15 +38,7 @@
 			"type": "material",
 			"name": "Wall_Bloc",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Wall_blocs_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Wall_blocs_Normal.png",
@@ -63,15 +48,7 @@
 			"type": "material",
 			"name": "Wall_Idol",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_idoles_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_idoles_Normal.png",
@@ -81,15 +58,7 @@
 			"type": "material",
 			"name": "Wall_Joins",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_joins_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_joins_Normal.png",
@@ -99,15 +68,7 @@
 			"type": "material",
 			"name": "Wall_Modules",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Wall_modules_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Wall_modules_Normal.png",
@@ -117,15 +78,7 @@
 			"type": "material",
 			"name": "Wall_bricks02",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_bricks02_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_bricks02_Normal.png",
@@ -135,15 +88,7 @@
 			"type": "material",
 			"name": "Wall_bricks",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_bricks_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_bricks_Normal.png",
@@ -154,15 +99,7 @@
 			"name": "Wall_pattern04",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
-					"textureWrap": true,
-					"parallax": 0
+					"textureWrap": true
 				}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Wall_Past_Albedo.png",
@@ -174,13 +111,6 @@
 			"name": "Wall_Past",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
 					"textureWrap": true,
 					"parallaxSteps": 30,
 					"parallax": 0.05
@@ -205,15 +135,7 @@
 			"type": "material",
 			"name": "Wall_pattern03",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"wrapRepeat": true,
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Ground_Past_Albedo.png",
@@ -225,13 +147,6 @@
 			"name": "Wall_pattern02",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
 					"textureWrap": true
 				}
 			},
@@ -243,15 +158,7 @@
 			"type": "material",
 			"name": "Wall_pattern01",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"wrapRepeat": true,
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Wall_pattern01_Albedo.png",
@@ -262,15 +169,7 @@
 			"type": "material",
 			"name": "Wall_pattern05",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern05_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/wall_pattern05_Normal.png",
@@ -280,15 +179,7 @@
 			"type": "material",
 			"name": "Wall_pattern01_mesh",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"wrapRepeat": true,
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall01_Albedo.png",
@@ -299,15 +190,7 @@
 			"type": "material",
 			"name": "Wall_pattern02_mesh",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"wrapRepeat": true,
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/wall02_Albedo.png",
@@ -318,15 +201,7 @@
 			"type": "material",
 			"name": "Basewall_tileable",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/Basewall_tileable_Normal.png",
@@ -351,15 +226,7 @@
 			"type": "material",
 			"name": "Module",
 			"props": {
-				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false
-				}
+				"Fatherlands": {}
 			},
 			"diffuseMap": "content/Art/Asset/Wall/Diverse/Module/module_Albedo.png",
 			"normalMap": "content/Art/Asset/Wall/Diverse/Module/module_Normal.png",
