@@ -1,0 +1,14 @@
+{
+	"materials": {
+		"Fatherlands": {
+			"foliage": {
+				"name": "Foliage_test",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
+			},
+			"bark": {
+				"name": "Bark",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
+			}
+		}
+	}
+}

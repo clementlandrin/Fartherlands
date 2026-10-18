@@ -6,14 +6,8 @@
 			"name": "Moss",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "None",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
-					"alphaKill": true
+					"alphaKill": true,
+					"culling": "None"
 				}
 			},
 			"diffuseMap": "content/Art/Asset/Vegetation/Moss/Moss_AlbedoAlpha.png",
@@ -39,14 +33,8 @@
 			"name": "Moss_cards",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "None",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
-					"alphaKill": true
+					"alphaKill": true,
+					"culling": "None"
 				}
 			},
 			"diffuseMap": "content/Art/Asset/Vegetation/Moss/Square_tree_AlbedoAlpha.png",
@@ -72,13 +60,6 @@
 			"name": "green",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
 					"textureWrap": true
 				}
 			},
@@ -97,13 +78,6 @@
 			"name": "Tree_Background",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
 					"textureWrap": true
 				}
 			},
@@ -122,13 +96,6 @@
 			"name": "Garden_ground",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": true,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
 					"textureWrap": true
 				}
 			},
@@ -157,14 +124,8 @@
 			"name": "Grass",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": false,
-					"culling": "Back",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
-					"textureWrap": true
+					"textureWrap": true,
+					"shadows": false
 				}
 			},
 			"color": [
@@ -189,14 +150,9 @@
 			"name": "Foliage_test",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": false,
+					"alphaKill": true,
 					"culling": "None",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
-					"alphaKill": true
+					"shadows": false
 				}
 			},
 			"diffuseMap": "content/Art/Asset/Vegetation/Foliage/Test_AlbedoAlpha.png",
@@ -252,14 +208,9 @@
 			"name": "Multi_Foliage",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": false,
+					"alphaKill": true,
 					"culling": "None",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
-					"alphaKill": true
+					"shadows": false
 				}
 			},
 			"diffuseMap": "content/Art/Asset/Vegetation/Foliage/Foliage_AlbedoAlpha.png",
@@ -271,14 +222,9 @@
 			"name": "Grass_socle",
 			"props": {
 				"Fatherlands": {
-					"mode": "PBR",
-					"blend": "None",
-					"shadows": false,
+					"alphaKill": true,
 					"culling": "None",
-					"depthTest": "Less",
-					"colorMask": 15,
-					"enableStencil": false,
-					"alphaKill": true
+					"shadows": false
 				}
 			},
 			"diffuseMap": "content/Art/Asset/Vegetation/Foliage/Ground_grass_AlbedoAlpha.png",
@@ -299,6 +245,18 @@
 					}
 				}
 			]
+		},
+		{
+			"type": "material",
+			"name": "Bark",
+			"props": {
+				"Fatherlands": {
+					"textureWrap": true
+				}
+			},
+			"diffuseMap": "content/Art/MaterialLibrary/Textures/Vegetation/Bark_Albedo.png",
+			"normalMap": "content/Art/MaterialLibrary/Textures/Vegetation/Bark_Normal.png",
+			"specularMap": "content/Art/MaterialLibrary/Textures/Vegetation/Bark_MetallicRoughnessAO.png"
 		}
 	]
 }

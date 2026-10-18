@@ -2,6 +2,12 @@
 	"type": "prefab",
 	"children": [
 		{
+			"type": "reference",
+			"name": "camera",
+			"source": "gameplay/camera.prefab",
+			"editMode": "Edit"
+		},
+		{
 			"type": "object",
 			"name": "present",
 			"children": [
@@ -15,8 +21,467 @@
 				{
 					"type": "reference",
 					"name": "Day02",
-					"source": "lighting/Exterior/Day02.prefab",
-					"inGameOnly": true
+					"source": "lighting/Exterior/Day02.prefab"
+				},
+				{
+					"type": "object",
+					"name": "Archi",
+					"x": -1.6753,
+					"y": -2.1218,
+					"z": 1.6418,
+					"children": [
+						{
+							"type": "model",
+							"name": "Tree01",
+							"source": "content/Art/Asset/Vegetation/Tree/Tree01.fbx",
+							"x": 1.6619,
+							"y": 2.1251,
+							"z": -0.5462,
+							"scaleX": 0.7853,
+							"scaleY": 0.7853,
+							"scaleZ": 0.7853,
+							"rotationX": -2.8304,
+							"rotationY": 1.2155,
+							"rotationZ": 31.7467
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -2.0402,
+							"y": -5.4225,
+							"z": 0.2057,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 4.195788512356161,
+							"y": 2.1180159633140643,
+							"z": -1.5089640046032144,
+							"scaleX": 10.078298813814873,
+							"scaleY": 14.939662316810477
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 1.482866538496486,
+							"y": -5.831747252844103,
+							"z": -2.198919270965092,
+							"scaleX": 14.283121314919393,
+							"scaleY": 5.558833510503214,
+							"scaleZ": 5.996763711744762
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -1.2864830622917003,
+							"y": -0.8184551223782237,
+							"z": -4.639964953043197,
+							"scaleX": 10.078298813814873,
+							"scaleY": 6.692508063023768
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -1.8617281230246605,
+							"y": 1.5525987648676352,
+							"z": -4.21806347812953,
+							"scaleX": 8.522796107594559,
+							"scaleY": 0.6618445901227078,
+							"scaleZ": 3.5770893631219765
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 0.19734888794623906,
+							"y": -1.7319079542675269,
+							"z": -4.21806347812953,
+							"scaleX": 8.522796107594559,
+							"scaleY": 0.6618445901227078,
+							"scaleZ": 3.5770893631219765,
+							"rotationZ": -89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -1.8617281230246605,
+							"y": -3.2341787315071664,
+							"z": -4.21806347812953,
+							"scaleX": 8.522796107594559,
+							"scaleY": 0.6618445901227078,
+							"scaleZ": 3.5770893631219765
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -6.136636502593163,
+							"y": -0.7193539572370953,
+							"z": -3.7452098588133964,
+							"scaleX": 5.733092797782711,
+							"scaleY": 0.6618445901227078,
+							"scaleZ": 3.5770893631219765,
+							"rotationZ": 89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 1.6568589484438596,
+							"y": 5.855215821119167,
+							"z": -1.5089640046032144,
+							"scaleX": 7.489522640897233,
+							"scaleY": 14.939662316810477,
+							"rotationZ": 89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -4.556541208770783,
+							"y": 7.152972325790532,
+							"z": -3.2014012860490917,
+							"scaleX": -2.53932005444801,
+							"scaleY": -2.466107436043542,
+							"scaleZ": -7.286023759932235,
+							"rotationX": 180,
+							"rotationZ": 89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -3.140080101164691,
+							"y": 3.9483586581538335,
+							"z": -6.558636725042974,
+							"scaleX": -3.5757110021286893,
+							"scaleY": -4.721339690066857,
+							"scaleZ": -7.286023759932235,
+							"rotationX": 180,
+							"rotationY": -2.816578616648629e-15,
+							"rotationZ": 66.6430987435141
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -0.5410322616802232,
+							"y": 4.3222589378094405,
+							"z": -6.0508195998173315,
+							"scaleX": -1.4635835528157333,
+							"scaleY": -1.6692276155721768,
+							"scaleZ": -6.561160191308734,
+							"rotationX": 180,
+							"rotationY": -1.0091644734739791e-16,
+							"rotationZ": 87.74937060908324
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -4.556541208770784,
+							"y": 3.884229008325299,
+							"z": -3.448826430071983,
+							"scaleX": -3.9562621490021974,
+							"scaleY": -2.466107436043542,
+							"scaleZ": -7.286023759932235,
+							"rotationX": 180,
+							"rotationZ": 89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -4.556541208770783,
+							"y": 5.831272116327316,
+							"z": -2.8805853866431166,
+							"scaleX": -0.2694903307712023,
+							"scaleY": -2.466107436043542,
+							"scaleZ": -7.286023759932235,
+							"rotationX": 180,
+							"rotationZ": 89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 1.0929829207629351,
+							"y": 2.8809686005156196,
+							"z": -1.5089640046032144,
+							"scaleX": 7.489522640897232,
+							"scaleY": 6.494803213357805,
+							"rotationZ": 43.98979631611123
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -3.0323083148374277,
+							"y": 1.8833502165234088,
+							"z": -1.5089640046032144,
+							"scaleX": 0.1882466372021882,
+							"scaleY": 6.494803213357806,
+							"scaleZ": 1.3673785322447287,
+							"rotationZ": 43.98979631611122
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -0.8219344639508068,
+							"y": -3.555354000457537,
+							"z": -1.5089640046032144,
+							"scaleX": 0.1882466372021882,
+							"scaleY": 6.494803213357806,
+							"scaleZ": 1.3673785322447287,
+							"rotationZ": -1.010203683888784
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": 5.0822,
+							"y": -5.4607,
+							"z": 2.6278,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": 5.0822,
+							"y": -5.4225,
+							"z": 0.2057,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "basic_bloc02",
+							"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
+							"x": -2.0402,
+							"y": -5.4607,
+							"z": 2.6278,
+							"scaleX": 0.8,
+							"scaleY": 0.8,
+							"scaleZ": 0.8,
+							"rotationZ": -90,
+							"children": [
+								{
+									"type": "reference",
+									"name": "Box_Navmesh",
+									"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+									"inGameOnly": true,
+									"x": -0.11,
+									"y": 0.02,
+									"z": -1.97,
+									"scaleX": 8.91,
+									"scaleY": 6.13,
+									"scaleZ": 3.43,
+									"rotationZ": -90
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "garden_entrance_present",
+							"source": "content/Art/Asset/Specifique/Garden/garden_entrance_present.fbx",
+							"x": 1.6753,
+							"y": 2.1218,
+							"z": -1.6418,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {}
+									},
+									"materialName": "debris",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 1,
+												"Tiling": 0.2
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "Ground_Debris01",
+							"source": "content/Art/Asset/Generique/bridges/Ground_Debris01.fbx",
+							"x": -2.4409,
+							"y": 3.2956,
+							"z": -1.3344,
+							"rotationX": 25.9765,
+							"rotationY": -10.3766,
+							"rotationZ": -69.7117,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {}
+									},
+									"materialName": "02 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.15
+											}
+										}
+									]
+								},
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {}
+									},
+									"materialName": "01 - Default",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Wall_Present_Normal.png",
+												"Sharpness": 1,
+												"Offset": 0.73,
+												"Tiling": 0.2
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "model",
+							"name": "cube_stone01",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+							"x": -2.583,
+							"y": 2.9084,
+							"z": -0.2582,
+							"rotationX": -10.9125,
+							"rotationY": 23.8243,
+							"rotationZ": -3.4368
+						},
+						{
+							"type": "model",
+							"name": "cube_stone02",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone02.fbx",
+							"x": -0.4081,
+							"y": 4.3669,
+							"z": -0.1936,
+							"rotationX": 2.7741,
+							"rotationY": 10.6919,
+							"rotationZ": 0.2596
+						},
+						{
+							"type": "model",
+							"name": "cube_stone03",
+							"source": "content/Art/Asset/Generique/blocs/cube_stone03.fbx",
+							"x": -2.756520355835674,
+							"y": 4.9624572297946905,
+							"z": -0.5588670446295139,
+							"rotationX": -5.5531,
+							"rotationY": 24.5923,
+							"rotationZ": 79.3344
+						},
+						{
+							"type": "model",
+							"name": "Debris04",
+							"source": "content/Art/Asset/Debris/Debris04.fbx",
+							"x": -2.5368,
+							"y": -0.6771,
+							"z": -1.4335,
+							"scaleX": 1.6948,
+							"scaleY": 1.6948,
+							"scaleZ": 1.6948,
+							"rotationX": -5.0507,
+							"rotationY": -12.8877,
+							"rotationZ": -0.9454
+						}
+					]
 				}
 			]
 		},
@@ -29,6 +494,158 @@
 					"name": "Day02",
 					"source": "lighting/Exterior/Day02.prefab",
 					"inGameOnly": true
+				},
+				{
+					"type": "object",
+					"name": "Navmesh",
+					"inGameOnly": true,
+					"children": [
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"z": -0.714185072825785,
+							"scaleX": 14.891107732894055,
+							"scaleY": 14.891107732894055,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -1.5474632739172067e-15,
+							"y": 6.96915502378306,
+							"z": -0.49779627173666086,
+							"scaleX": 1.1002360694299258,
+							"scaleY": 14.891107732894055,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -1.6208164980105922e-15,
+							"y": 7.299508576476455,
+							"z": -0.3666190618287146,
+							"scaleX": 0.4694968458542121,
+							"scaleY": 14.891107732894055,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": -90
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -6.902021713415027,
+							"y": 0.14168821055841452,
+							"z": -0.49779627173666086,
+							"scaleX": 1.1002360694299258,
+							"scaleY": 14.891107732894055,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": -9.21386407658663e-15
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -0.3182771700815052,
+							"y": -6.259494776778638,
+							"z": -0.49779627173666086,
+							"scaleX": 1.1002360694299258,
+							"scaleY": 15.743741404408453,
+							"scaleZ": 15.831683725342003,
+							"rotationZ": 89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -7.232375266108423,
+							"y": 0.14168821055841452,
+							"z": -0.3666190618287146,
+							"scaleX": 0.4694968458542121,
+							"scaleY": 14.891107732894055,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": -9.213864076586628e-15
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": -7.364923307937491,
+							"y": 2.5357995459660296,
+							"z": 0.22383624817939562,
+							"scaleX": 0.4694968458542121,
+							"scaleY": 10.203511074194815,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": -9.213864076586628e-15
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 0.04469901089691852,
+							"y": 7.432233531099656,
+							"z": 0.22383624817939562,
+							"scaleX": 0.4694968458542121,
+							"scaleY": 15.239022641709232,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": 89.99999999999999
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 7.479664223622646,
+							"y": -0.026081493789433374,
+							"z": 0.22383624817939562,
+							"scaleX": 0.4694968458542121,
+							"scaleY": 15.239022641709232,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": -3.5083546492674396e-15
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 6.841841279666025,
+							"y": 0.14168821055841238,
+							"z": -0.49779627173666086,
+							"scaleX": 1.1002360694299258,
+							"scaleY": 14.891107732894055,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": 180
+						},
+						{
+							"type": "reference",
+							"name": "Box_Navmesh",
+							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
+							"x": 7.172194832359421,
+							"y": 0.14168821055841244,
+							"z": -0.3666190618287146,
+							"scaleX": 0.4694968458542121,
+							"scaleY": 14.891107732894055,
+							"scaleZ": 1.9444231632621625,
+							"rotationZ": 180
+						}
+					]
+				},
+				{
+					"type": "model",
+					"name": "garden_entrance",
+					"source": "content/Art/Asset/Specifique/Garden/garden_entrance.fbx"
+				},
+				{
+					"type": "model",
+					"name": "little_bridge",
+					"source": "content/Art/Asset/Generique/bridges/little_bridge.fbx",
+					"x": -6.2943,
+					"y": -2.1512,
+					"z": 5.1974,
+					"scaleY": 1.1821,
+					"rotationZ": -90
 				},
 				{
 					"type": "reference",
@@ -49,9 +666,6 @@
 			"type": "object",
 			"name": "archi",
 			"inGameOnly": true,
-			"x": 2.453397435897436,
-			"y": 4.802884615384616,
-			"z": 4.464230769230769,
 			"children": [
 				{
 					"type": "model",
@@ -91,41 +705,11 @@
 				},
 				{
 					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -21.0282,
-					"y": -4.3816,
-					"z": -0.0261,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "basic_bloc02",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc02.fbx",
-					"x": -12.1268,
-					"y": -4.3816,
-					"z": -0.0261,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
 					"name": "column06",
 					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
 					"x": 2.8998,
 					"y": 0.7629,
 					"z": -3.7553
-				},
-				{
-					"type": "model",
-					"name": "wall02",
-					"source": "content/Art/Asset/Generique/Walls/wall02.fbx",
-					"x": -2.4931462798944715,
-					"y": -11.381599306644542,
-					"z": 3.846252736085736,
-					"scaleX": 1.29,
-					"scaleY": 1.29,
-					"scaleZ": 1.29,
-					"rotationZ": 89.99999999999999
 				},
 				{
 					"type": "model",
@@ -153,48 +737,6 @@
 				},
 				{
 					"type": "model",
-					"name": "wall08",
-					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": -42.45624893726494,
-					"y": -13.118085569846162,
-					"z": -28.285890848959745,
-					"scaleX": 2.1244,
-					"scaleY": 2.1244,
-					"scaleZ": 2.1244,
-					"rotationX": 180,
-					"rotationY": -7.016709298534879e-15,
-					"rotationZ": 89.99999999999999
-				},
-				{
-					"type": "model",
-					"name": "wall08",
-					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": -42.45624893726494,
-					"y": -13.118085569846162,
-					"z": -1.4809908489597436,
-					"scaleX": 2.1244,
-					"scaleY": 2.1244,
-					"scaleZ": 2.1244,
-					"rotationX": 180,
-					"rotationY": -7.016709298534879e-15,
-					"rotationZ": 89.99999999999999
-				},
-				{
-					"type": "model",
-					"name": "wall08",
-					"source": "content/Art/Asset/Generique/Walls/wall08.fbx",
-					"x": -42.45624893726494,
-					"y": -13.118085569846162,
-					"z": -55.00479084895974,
-					"scaleX": 2.1244,
-					"scaleY": 2.1244,
-					"scaleZ": 2.1244,
-					"rotationX": 180,
-					"rotationY": -7.016709298534879e-15,
-					"rotationZ": 89.99999999999999
-				},
-				{
-					"type": "model",
 					"name": "column06",
 					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
 					"x": -8.073049008949809,
@@ -203,39 +745,23 @@
 				},
 				{
 					"type": "model",
-					"name": "column06",
-					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-					"x": -10.78865585344677,
-					"y": -7.219243632948377,
-					"z": -3.1980920201739034
-				},
-				{
-					"type": "model",
-					"name": "column06",
-					"source": "content/Art/Asset/Generique/blocs/column06.fbx",
-					"x": -10.78865585344677,
-					"y": -10.262280429772176,
-					"z": -3.1980920201739034
-				},
-				{
-					"type": "model",
 					"name": "wall07",
 					"source": "content/Art/Asset/Generique/Walls/wall07.fbx",
-					"x": -5.4983,
+					"x": 15.005521878446494,
 					"y": -13.114232324484927,
 					"z": -1.6416483644956545,
 					"scaleX": 2.1244,
 					"scaleY": 2.1244,
 					"scaleZ": 2.1244,
 					"rotationX": 180,
-					"rotationY": -7.0167092985348775e-15,
+					"rotationY": -7.016709298534879e-15,
 					"rotationZ": 89.99999999999999
 				},
 				{
 					"type": "model",
 					"name": "wall07",
 					"source": "content/Art/Asset/Generique/Walls/wall07.fbx",
-					"x": -5.4983,
+					"x": 15.005521878446494,
 					"y": -25.5652406967395,
 					"z": 12.683727981444255,
 					"scaleX": 2.1244,
@@ -248,41 +774,14 @@
 					"type": "model",
 					"name": "wall07",
 					"source": "content/Art/Asset/Generique/Walls/wall07.fbx",
-					"x": -54.976923555995,
-					"y": -25.565240696739508,
-					"z": 12.683727981444266,
-					"scaleX": 2.1244,
-					"scaleY": 2.1244,
-					"scaleZ": 2.1244,
-					"rotationX": -90,
-					"rotationY": -90
-				},
-				{
-					"type": "model",
-					"name": "wall07",
-					"source": "content/Art/Asset/Generique/Walls/wall07.fbx",
-					"x": -5.498299999999997,
-					"y": -13.114232324484924,
-					"z": -55.13509004387646,
-					"scaleX": 2.1244,
-					"scaleY": 2.1244,
-					"scaleZ": 2.1244,
-					"rotationX": 180,
-					"rotationY": -7.016709298534879e-15,
-					"rotationZ": 89.99999999999999
-				},
-				{
-					"type": "model",
-					"name": "wall07",
-					"source": "content/Art/Asset/Generique/Walls/wall07.fbx",
-					"x": -5.4983,
+					"x": 15.005521878446494,
 					"y": -13.114232324484927,
 					"z": -28.416148364495655,
 					"scaleX": 2.1244,
 					"scaleY": 2.1244,
 					"scaleZ": 2.1244,
 					"rotationX": 180,
-					"rotationY": -7.0167092985348775e-15,
+					"rotationY": -7.016709298534879e-15,
 					"rotationZ": 89.99999999999999
 				},
 				{
@@ -335,154 +834,12 @@
 			]
 		},
 		{
-			"type": "object",
-			"name": "Navmesh",
-			"inGameOnly": true,
-			"children": [
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"z": -0.714185072825785,
-					"scaleX": 14.891107732894055,
-					"scaleY": 14.891107732894055,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": -90
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": -1.5474632739172067e-15,
-					"y": 6.96915502378306,
-					"z": -0.49779627173666086,
-					"scaleX": 1.1002360694299258,
-					"scaleY": 14.891107732894055,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": -90
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": -1.6208164980105922e-15,
-					"y": 7.299508576476455,
-					"z": -0.3666190618287146,
-					"scaleX": 0.4694968458542121,
-					"scaleY": 14.891107732894055,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": -90
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": -6.902021713415027,
-					"y": 0.14168821055841452,
-					"z": -0.49779627173666086,
-					"scaleX": 1.1002360694299258,
-					"scaleY": 14.891107732894055,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": -9.21386407658663e-15
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": -0.3182771700815052,
-					"y": -6.259494776778638,
-					"z": -0.49779627173666086,
-					"scaleX": 1.1002360694299258,
-					"scaleY": 15.743741404408453,
-					"scaleZ": 15.831683725342003,
-					"rotationZ": 89.99999999999999
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": -7.232375266108423,
-					"y": 0.14168821055841452,
-					"z": -0.3666190618287146,
-					"scaleX": 0.4694968458542121,
-					"scaleY": 14.891107732894055,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": -9.213864076586628e-15
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": -7.364923307937491,
-					"y": 2.5357995459660296,
-					"z": 0.22383624817939562,
-					"scaleX": 0.4694968458542121,
-					"scaleY": 10.203511074194815,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": -9.213864076586628e-15
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": 0.04469901089691852,
-					"y": 7.432233531099656,
-					"z": 0.22383624817939562,
-					"scaleX": 0.4694968458542121,
-					"scaleY": 15.239022641709232,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": 89.99999999999999
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": 7.479664223622646,
-					"y": -0.026081493789433374,
-					"z": 0.22383624817939562,
-					"scaleX": 0.4694968458542121,
-					"scaleY": 15.239022641709232,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": -3.5083546492674396e-15
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": 6.841841279666025,
-					"y": 0.14168821055841238,
-					"z": -0.49779627173666086,
-					"scaleX": 1.1002360694299258,
-					"scaleY": 14.891107732894055,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": 180
-				},
-				{
-					"type": "reference",
-					"name": "Box_Navmesh",
-					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
-					"x": 7.172194832359421,
-					"y": 0.14168821055841244,
-					"z": -0.3666190618287146,
-					"scaleX": 0.4694968458542121,
-					"scaleY": 14.891107732894055,
-					"scaleZ": 1.9444231632621625,
-					"rotationZ": 180
-				}
-			]
-		},
-		{
-			"type": "reference",
-			"name": "camera",
-			"source": "gameplay/camera.prefab"
-		},
-		{
 			"type": "reference",
 			"name": "door",
 			"source": "gameplay/door/door.prefab",
-			"x": 2.560192859635206,
-			"y": -5.460135067851753,
-			"z": 1.289562693280459,
+			"x": 3.632163658805838,
+			"y": -6.976297040997702,
+			"z": 5.305415760071249,
 			"rotationZ": 89.99999999999999
 		},
 		{
@@ -495,181 +852,16 @@
 			"rotationZ": 180
 		},
 		{
-			"type": "object",
-			"name": "object",
-			"x": -11.1926,
-			"y": -3.25365,
-			"z": -0.94675,
-			"children": [
-				{
-					"type": "model",
-					"name": "basic_bloc_garden01",
-					"source": "content/Art/Asset/Generique/blocs/basic_bloc_garden01.fbx",
-					"x": 11.1926,
-					"y": 3.2537,
-					"z": 0.9468,
-					"rotationZ": -90
-				},
-				{
-					"type": "model",
-					"name": "Medium_joins02",
-					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
-					"x": 11.1774,
-					"y": 10.5629,
-					"z": 2.5597,
-					"scaleX": 1.0948,
-					"scaleY": 1.0948,
-					"scaleZ": 1.0948,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "Medium_joins02",
-					"source": "content/Art/Asset/Generique/blocs/Medium_joins02.fbx",
-					"x": 3.971731867905854,
-					"y": 3.1467,
-					"z": 2.5597,
-					"scaleX": 1.0948,
-					"scaleY": 1.0948,
-					"scaleZ": 1.0948,
-					"rotationZ": 180
-				},
-				{
-					"type": "model",
-					"name": "Medium_joins",
-					"source": "content/Art/Asset/Generique/blocs/Medium_joins.fbx",
-					"x": 18.492150008674795,
-					"y": 5.7356,
-					"z": 2.5597,
-					"scaleX": 1.0948,
-					"scaleY": 1.0948,
-					"scaleZ": 1.0948,
-					"rotationZ": 180
-				},
-				{
-					"type": "shader",
-					"name": "Foliage_cover",
-					"source": "content/Art/MaterialLibrary/Custom_Shader/Foliage_cover.shgraph",
-					"props": {
-						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-						"Sharpness": 1,
-						"Offset": 1,
-						"Tiling": 0.29,
-						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-						"Mask_Tiling": 0.17,
-						"Mask_Offset": 0.59,
-						"Mask_Power": 2
-					}
-				},
-				{
-					"type": "shader",
-					"name": "Top_down_moss",
-					"source": "content/Art/MaterialLibrary/Custom_Shader/Top_down_moss.shgraph",
-					"props": {
-						"Albedo": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Albedo.png",
-						"MetallicRoughnessAO": "content/Art/Asset/Vegetation/Moss/Folige_Cover_MetallicRoughnessAO.png",
-						"Normal": "content/Art/Asset/Vegetation/Moss/Folige_Cover_Normal.png",
-						"Sharpness": 1,
-						"Offset": 1,
-						"Tiling": 1,
-						"Mask": "content/Art/Asset/Vegetation/Moss/Foliage_cover_mask.png",
-						"Mask_Tiling": 0.15,
-						"Mask_Offset": 0,
-						"Mask_Power": 7.12,
-						"Top_Down_Contrast": 10
-					}
-				}
-			]
-		},
-		{
-			"type": "object",
-			"name": "Foliage",
-			"inGameOnly": true,
-			"x": 1.0440866174304684,
-			"y": -4.476693961246234,
-			"z": 2.9108272954434824,
-			"children": [
-				{
-					"type": "model",
-					"name": "Wall_bush01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush01.fbx",
-					"x": -3.545,
-					"y": -0.9703,
-					"z": -1.7204
-				},
-				{
-					"type": "model",
-					"name": "Wall_bush02",
-					"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush02.fbx",
-					"x": -4.6274,
-					"y": 7.0699,
-					"z": -2.0063
-				},
-				{
-					"type": "model",
-					"name": "Wall_bush03",
-					"source": "content/Art/Asset/Vegetation/Foliage/Wall_bush03.fbx",
-					"x": 3.6729,
-					"y": -1.3069,
-					"z": -1.6584
-				},
-				{
-					"type": "model",
-					"name": "Monstera01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Monstera01.fbx",
-					"x": -0.7147,
-					"y": -0.2859,
-					"z": -1.7743,
-					"rotationZ": 20.6267
-				},
-				{
-					"type": "model",
-					"name": "Monstera03",
-					"source": "content/Art/Asset/Vegetation/Foliage/Monstera03.fbx",
-					"x": 4.908,
-					"y": -0.6304,
-					"z": -1.9891,
-					"rotationZ": -21.403
-				},
-				{
-					"type": "model",
-					"name": "Ivy02",
-					"source": "content/Art/Asset/Vegetation/Foliage/Ivy02.fbx",
-					"x": 1.7319,
-					"y": -1.3033,
-					"z": 2.5985,
-					"scaleX": 0.572,
-					"scaleY": 0.572,
-					"scaleZ": 0.572,
-					"rotationZ": 90
-				},
-				{
-					"type": "model",
-					"name": "Ivy01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
-					"x": -8.0248,
-					"y": -1.2998,
-					"z": 9.7637,
-					"scaleX": 0.8913,
-					"scaleY": 0.8913,
-					"scaleZ": 0.8913,
-					"rotationZ": 90.1043
-				},
-				{
-					"type": "model",
-					"name": "Ivy01",
-					"source": "content/Art/Asset/Vegetation/Foliage/Ivy01.fbx",
-					"x": 6.5991,
-					"y": -1.2732,
-					"z": -3.2139,
-					"scaleX": 0.7769,
-					"scaleY": 0.7769,
-					"scaleZ": 0.7769,
-					"rotationZ": 0.1043
-				}
-			]
+			"type": "reference",
+			"name": "ladder",
+			"source": "gameplay/ladder.prefab",
+			"x": -4.777765521157112,
+			"y": 5.118735456908039,
+			"z": 1.2054929244757036,
+			"scaleZ": 1.1210948817982853,
+			"rotationX": 1.0157172852300868e-11,
+			"rotationY": 9.232153046355209e-12,
+			"rotationZ": -89.99999999999999
 		}
 	]
 }
