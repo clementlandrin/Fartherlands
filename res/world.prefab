@@ -535,13 +535,15 @@
 					"name": "D35",
 					"source": "content/Room/Diverse/D35.prefab",
 					"y": -52.7,
-					"z": 15
+					"z": 15,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
 					"name": "D34",
 					"source": "content/Room/Diverse/D34.prefab",
-					"y": -52.7
+					"y": -52.7,
+					"editMode": "Edit"
 				},
 				{
 					"type": "reference",
@@ -785,17 +787,18 @@
 				},
 				{
 					"type": "reference",
-					"name": "D46",
-					"source": "content/Room/Diverse/D46.prefab",
-					"x": -54.73573835715804,
-					"y": 50.67620331638445
+					"name": "D49",
+					"source": "content/Room/Diverse/D49.prefab",
+					"x": -53.512343248372545,
+					"y": 50.337143911263816,
+					"z": -4.849498526688992
 				},
 				{
 					"type": "reference",
 					"name": "D46",
 					"source": "content/Room/Diverse/D46.prefab",
 					"x": -54.73573835715804,
-					"y": 30.38789473317447
+					"y": 50.67620331638445
 				},
 				{
 					"type": "reference",

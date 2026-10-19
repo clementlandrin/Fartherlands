@@ -12,6 +12,14 @@
 			"dalles_mesh": {
 				"name": "Wall_bricks02",
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
+			},
+			"02 - Default": {
+				"name": "Wall_pattern04",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
+			},
+			"Parts": {
+				"name": "Wall_Modules",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
 			}
 		}
 	}
