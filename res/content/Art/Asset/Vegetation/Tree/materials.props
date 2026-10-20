@@ -9,6 +9,16 @@
 				"name": "Bark",
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
 			}
+		},
+		"Fartherlands": {
+			"bark": {
+				"name": "Bark",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
+			},
+			"foliage": {
+				"name": "Foliage_test",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
+			}
 		}
 	}
 }

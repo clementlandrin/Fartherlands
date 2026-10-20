@@ -59,7 +59,7 @@
 					"source": "gameplay/door/door.prefab",
 					"x": -3.3,
 					"y": 5.119999999999997,
-					"z": 2.359387495372602
+					"z": 2.3188686023268725
 				},
 				{
 					"type": "reference",
@@ -75,6 +75,15 @@
 					"source": "gameplay/door/door.prefab",
 					"x": -3.42232870604464,
 					"y": 0.051624137721049124
+				},
+				{
+					"type": "reference",
+					"name": "doorBack",
+					"source": "gameplay/door/doorBack.prefab",
+					"x": 4.0303275379869286,
+					"y": 5.119999999999997,
+					"z": 2.3457558756037327,
+					"rotationZ": 180
 				}
 			]
 		},
@@ -95,9 +104,9 @@
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"inGameOnly": true,
-					"x": -0.11,
-					"y": 0.02,
-					"z": -1.97,
+					"x": 0.054064699405098615,
+					"y": 0.019999999999999574,
+					"z": -1.9699999999999998,
 					"scaleX": 8.91,
 					"scaleY": 6.13,
 					"scaleZ": 3.43,
@@ -190,15 +199,15 @@
 					"name": "Box_Navmesh",
 					"source": "content/LD/Navmesh/Box_Navmesh.prefab",
 					"inGameOnly": true,
-					"x": -1.0143,
-					"y": -2.0743,
+					"x": 0.5906697415104644,
+					"y": -2.0743000000000014,
 					"z": 0.7171,
-					"scaleX": 7.47,
-					"scaleY": 8.75,
+					"scaleX": 7.470000000000002,
+					"scaleY": 5.583113080486591,
 					"scaleZ": 2.87,
 					"rotationX": -82.9,
 					"rotationY": -82.3,
-					"rotationZ": -5.3
+					"rotationZ": -5.299999999999998
 				},
 				{
 					"type": "reference",

@@ -21,6 +21,32 @@
 				"name": "Wall_Modules",
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
 			}
+		},
+		"Fartherlands": {
+			"WALL06": {
+				"name": "Wall_Bloc",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
+			},
+			"Garden_ground": {
+				"name": "Garden_ground",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
+			},
+			"dalles_mesh": {
+				"name": "Wall_bricks02",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
+			},
+			"debris": {
+				"name": "Debris_Tileable",
+				"__ref": "content/Art/MaterialLibrary/Assets/Debris.matlib"
+			},
+			"02 - Default": {
+				"name": "Wall_pattern04",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
+			},
+			"Parts": {
+				"name": "Wall_Modules",
+				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib"
+			}
 		}
 	}
 }
