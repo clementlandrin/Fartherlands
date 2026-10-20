@@ -5,7 +5,7 @@
 			"type": "material",
 			"name": "Gradient",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "BeforeTonemapping",
 					"blend": "AlphaAdd",
 					"shadows": true,
@@ -22,7 +22,7 @@
 			"type": "material",
 			"name": "material",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "BeforeTonemapping",
 					"blend": "Alpha",
 					"shadows": true,
@@ -75,7 +75,7 @@
 			"type": "material",
 			"name": "Black_unlit",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "BeforeTonemapping",
 					"blend": "None",
 					"shadows": true,
@@ -96,7 +96,7 @@
 			"type": "material",
 			"name": "Blue_unlit",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "BeforeTonemapping",
 					"blend": "None",
 					"shadows": true,
@@ -117,7 +117,7 @@
 			"type": "material",
 			"name": "BaseMetal",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "PBR",
 					"blend": "None",
 					"shadows": true,
@@ -140,7 +140,7 @@
 			"type": "material",
 			"name": "Roughness_test",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "PBR",
 					"blend": "None",
 					"shadows": true,

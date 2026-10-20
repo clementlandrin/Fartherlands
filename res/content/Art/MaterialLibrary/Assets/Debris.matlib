@@ -5,7 +5,7 @@
 			"type": "material",
 			"name": "Debris",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "PBR",
 					"blend": "None",
 					"shadows": true,
@@ -23,7 +23,7 @@
 			"type": "material",
 			"name": "Debris_Tileable",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "PBR",
 					"blend": "None",
 					"shadows": true,

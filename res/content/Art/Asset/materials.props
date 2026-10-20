@@ -1,6 +1,6 @@
 {
 	"materials": {
-		"Fatherlands": {
+		"Fartherlands": {
 			"SunMat": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Utilities.matlib",
 				"name": "Yellow_unlit",

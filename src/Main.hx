@@ -10,9 +10,7 @@ class Main extends hxd.App {
 	static var level : String;
 
 	static function main() {
-		#if hlsdl
-		h3d.impl.GlDriver.enableComputeShaders();
-		#end
+		h3d.impl.Driver.requestFeature(ComputeShaders);
 		hxd.res.Resource.LIVE_UPDATE = true;
 		hxd.Res.initLocal();
 

@@ -2,7 +2,7 @@ package gfx;
 
 class MaterialSetup extends h3d.mat.PbrMaterialSetup {
 
-	public function new(?name="Fatherlands") {
+	public function new(?name="Fartherlands") {
 		super(name);
 	}
 

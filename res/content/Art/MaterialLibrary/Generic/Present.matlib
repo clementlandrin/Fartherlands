@@ -15,7 +15,7 @@
 					"enableStencil": false,
 					"textureWrap": true
 				},
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "PBR",
 					"blend": "None",
 					"shadows": true,

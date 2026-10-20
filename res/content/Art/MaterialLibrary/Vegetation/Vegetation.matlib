@@ -5,7 +5,7 @@
 			"type": "material",
 			"name": "Moss",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"alphaKill": true,
 					"culling": "None"
 				}
@@ -32,7 +32,7 @@
 			"type": "material",
 			"name": "Moss_cards",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"alphaKill": true,
 					"culling": "None"
 				}
@@ -59,7 +59,7 @@
 			"type": "material",
 			"name": "green",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"textureWrap": true
 				}
 			},
@@ -77,7 +77,7 @@
 			"type": "material",
 			"name": "Tree_Background",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"textureWrap": true
 				}
 			},
@@ -95,7 +95,7 @@
 			"type": "material",
 			"name": "Garden_ground",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"textureWrap": true
 				}
 			},
@@ -123,7 +123,7 @@
 			"type": "material",
 			"name": "Grass",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"textureWrap": true,
 					"shadows": false
 				}
@@ -149,7 +149,7 @@
 			"type": "material",
 			"name": "Foliage_test",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"alphaKill": true,
 					"culling": "None",
 					"shadows": false
@@ -207,7 +207,7 @@
 			"type": "material",
 			"name": "Multi_Foliage",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"alphaKill": true,
 					"culling": "None",
 					"shadows": false
@@ -221,7 +221,7 @@
 			"type": "material",
 			"name": "Grass_socle",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"alphaKill": true,
 					"culling": "None",
 					"shadows": false

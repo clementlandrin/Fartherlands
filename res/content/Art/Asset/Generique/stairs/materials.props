@@ -1,6 +1,6 @@
 {
 	"materials": {
-		"Fatherlands": {
+		"Fartherlands": {
 			"dalles_mesh": {
 				"__ref": "content/Art/MaterialLibrary/Generic/Past.matlib",
 				"name": "Wall_bricks02"

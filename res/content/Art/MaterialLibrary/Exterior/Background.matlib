@@ -5,7 +5,7 @@
 			"type": "material",
 			"name": "Ocean",
 			"props": {
-				"Fatherlands": {
+				"Fartherlands": {
 					"mode": "PBR",
 					"blend": "None",
 					"shadows": true,

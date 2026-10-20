@@ -16,7 +16,7 @@
 					"type": "material",
 					"name": "material",
 					"props": {
-						"Fatherlands": {
+						"Fartherlands": {
 							"mode": "BeforeTonemapping",
 							"blend": "Alpha",
 							"shadows": false,

@@ -1,6 +1,6 @@
 {
 	"materials": {
-		"Fatherlands": {
+		"Fartherlands": {
 			"Grass": {
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Grass_socle"

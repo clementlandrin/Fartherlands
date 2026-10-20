@@ -1,6 +1,6 @@
 {
 	"materials": {
-		"Fatherlands": {
+		"Fartherlands": {
 			"default": {
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib",
 				"name": "Foliage_test"
