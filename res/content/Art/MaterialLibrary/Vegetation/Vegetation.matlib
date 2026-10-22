@@ -252,6 +252,9 @@
 			"props": {
 				"Fatherlands": {
 					"textureWrap": true
+				},
+				"Fartherlands": {
+					"textureWrap": true
 				}
 			},
 			"diffuseMap": "content/Art/MaterialLibrary/Textures/Vegetation/Bark_Albedo.png",

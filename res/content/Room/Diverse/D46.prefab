@@ -81,6 +81,40 @@
 							]
 						},
 						{
+							"type": "model",
+							"name": "garden_entrance_present",
+							"source": "content/Art/Asset/Specifique/Garden/garden_entrance_present.fbx",
+							"x": 1.6753,
+							"y": 2.1218,
+							"z": -1.6418,
+							"children": [
+								{
+									"type": "material",
+									"name": "material",
+									"props": {
+										"Fatherlands": {},
+										"Fartherlands": {}
+									},
+									"materialName": "debris",
+									"children": [
+										{
+											"type": "shader",
+											"name": "Triplanar",
+											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
+											"props": {
+												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
+												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
+												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
+												"Sharpness": 1,
+												"Offset": 1,
+												"Tiling": 0.2
+											}
+										}
+									]
+								}
+							]
+						},
+						{
 							"type": "reference",
 							"name": "Box_Navmesh",
 							"source": "content/LD/Navmesh/Box_Navmesh.prefab",
@@ -955,42 +989,19 @@
 									"rotationZ": -90
 								}
 							]
-						},
-						{
-							"type": "model",
-							"name": "garden_entrance_present",
-							"source": "content/Art/Asset/Specifique/Garden/garden_entrance_present.fbx",
-							"x": 1.6753,
-							"y": 2.1218,
-							"z": -1.6418,
-							"children": [
-								{
-									"type": "material",
-									"name": "material",
-									"props": {
-										"Fatherlands": {},
-										"Fartherlands": {}
-									},
-									"materialName": "debris",
-									"children": [
-										{
-											"type": "shader",
-											"name": "Triplanar",
-											"source": "content/Art/MaterialLibrary/Custom_Shader/Triplanar.shgraph",
-											"props": {
-												"Albedo": "content/Art/Asset/Wall/Diverse/Module/Debris_Albedo.png",
-												"MetallicRoughnessAO": "content/Art/Asset/Wall/Diverse/Module/Debris_MetallicRoughnessAO.png",
-												"Normal": "content/Art/Asset/Wall/Diverse/Module/Debris_Normal.png",
-												"Sharpness": 1,
-												"Offset": 1,
-												"Tiling": 0.2
-											}
-										}
-									]
-								}
-							]
 						}
 					]
+				},
+				{
+					"type": "model",
+					"name": "LittleTree01",
+					"source": "content/Art/Asset/Vegetation/Tree/LittleTree01.fbx",
+					"x": 0.6819533289305887,
+					"y": 0.5324645920747816,
+					"z": 0.44780966208094786,
+					"rotationX": 0.7625,
+					"rotationY": -1.6442999999999997,
+					"rotationZ": -0.0109
 				},
 				{
 					"type": "model",

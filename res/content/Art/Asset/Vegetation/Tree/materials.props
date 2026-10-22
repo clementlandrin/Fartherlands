@@ -18,6 +18,14 @@
 			"foliage": {
 				"name": "Foliage_test",
 				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
+			},
+			"Bark": {
+				"name": "Bark",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
+			},
+			"Moss": {
+				"name": "Foliage_test",
+				"__ref": "content/Art/MaterialLibrary/Vegetation/Vegetation.matlib"
 			}
 		}
 	}
