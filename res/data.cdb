@@ -125,11 +125,21 @@
 				},
 				{
 					"id": "FollowStrengthXY",
-					"value": 0.3
+					"value": 6
 				},
 				{
 					"id": "FollowStrengthZ",
-					"value": 1
+					"value": 4
+				},
+				{
+					"id": "CameraDeadZoneWidth",
+					"value": 0.28,
+					"desc": "Dead zone size, as a fraction of the screen width"
+				},
+				{
+					"id": "CameraDeadZoneHeight",
+					"value": 0.28,
+					"desc": "Dead zone size, as a fraction of the screen height"
 				},
 				{
 					"id": "OutlineSize",

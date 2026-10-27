@@ -1,78 +1,91 @@
-import h3d.prim.Cube;
-import h3d.Engine;
-import hxd.Window;
 import h3d.col.Point;
 
 class CameraController extends h3d.scene.Object {
-    public var deadZone : h2d.col.Bounds;
+	var game : Game;
+	
+	var camera : h3d.Camera;
+	var anchor = new Point();
+	var snapToPlayer = true;
 
-    var game : Game;
-    var camera : h3d.Camera;
-
-    public function new() {
-        game = Game.inst;
-        super(game.s3d);
+	public function new() {
+		game = Game.inst;
+		super(game.s3d);
 
 		camera = game.s3d.camera;
 		camera.orthoBounds = new h3d.col.Bounds();
+		anchor.load(camera.target);
+	}
 
-		computeDeadzone();
-		Engine.getCurrent().onResized = computeDeadzone;
-    }
+	override function sync(ctx : h3d.scene.RenderContext) {
+		super.sync(ctx);
 
-    override function sync(ctx : h3d.scene.RenderContext) {
-        super.sync(ctx);
-
-        var curRoom = game.curRoom;
-        if (curRoom != null && curRoom.camera == null)
+		var curRoom = game.curRoom;
+		if (curRoom != null && curRoom.camera == null)
 			initCamera();
 
 		var Y = camera.orthoBounds.xMax / camera.screenRatio;
 		camera.orthoBounds.yMax = Y;
 		camera.orthoBounds.yMin = -Y;
 
-        var engine = Engine.getCurrent();
-        var sp = camera.project(game.player.x, game.player.y, game.player.z, engine.width, engine.height);
-        if (!deadZone.contains(new h2d.col.Point(sp.x, sp.y))) {
-            var closestPoint = new h2d.col.Point(engine.width / 2, engine.height / 2);
-            if (sp.x < deadZone.xMin || sp.x > deadZone.xMax)
-                closestPoint.x = hxd.Math.clamp(sp.x, deadZone.xMin, deadZone.xMax);
-            if (sp.y < deadZone.yMin || sp.y > deadZone.yMax)
-                closestPoint.y = hxd.Math.clamp(sp.y, deadZone.yMin, deadZone.yMax);
-            var r = camera.rayFromScreen(closestPoint.x, closestPoint.y, engine.width, engine.height);
-            var targetPoint = r.intersect(h3d.col.Plane.fromNormalPoint(new h3d.col.Point(0, 0, 1), new h3d.col.Point(game.player.x, game.player.y, game.player.z)));
+		var player = game.player;
+		var playerPos = new Point(player.x, player.y, player.z);
+		var followZ = curRoom?.inf?.camFollowZ == true;
 
-            var p = new h3d.col.Point(
-                hxd.Math.lerp(camera.target.x, targetPoint.x, Const.get(FollowStrengthXY) * ctx.elapsedTime),
-                hxd.Math.lerp(camera.target.y, targetPoint.y, Const.get(FollowStrengthXY) * ctx.elapsedTime),
-                hxd.Math.lerp(camera.target.z, targetPoint.z, Const.get(FollowStrengthZ) * ctx.elapsedTime));
+		if (snapToPlayer) {
+			snapToPlayer = false;
+			centerOn(playerPos, followZ ? playerPos.z : camera.target.z);
+			set(anchor);
+			return;
+		}
 
-			if (!curRoom?.inf?.camFollowZ)
-				p.z = camera.target.z;
+		// Before the dead zone, otherwise a Z change is seen as a vertical screen offset
+		if (followZ)
+			anchor.z = playerPos.z;
 
-            set(p);
-        }
-    }
+		var right = camera.getRight();
+		var up = camera.getUp();
+		var d = playerPos.sub(anchor);
+		var sx = d.dot(right);
+		var sy = d.dot(up);
+		var halfW = camera.orthoBounds.xMax * Const.get(CameraDeadZoneWidth);
+		var halfH = camera.orthoBounds.yMax * Const.get(CameraDeadZoneHeight);
+		var ex = sx - hxd.Math.clamp(sx, -halfW, halfW);
+		var ey = sy - hxd.Math.clamp(sy, -halfH, halfH);
 
-    public function enteredRoom(r : ent.Room) {
-        set(new Point(r.x, r.y, r.z));
-    }
+		anchor.x += right.x * ex;
+		anchor.y += right.y * ex;
+		var groundUpX = -right.y;
+		var groundUpY = right.x;
+		var groundUpOnScreen = groundUpX * up.x + groundUpY * up.y;
+		anchor.x += groundUpX * ey / groundUpOnScreen;
+		anchor.y += groundUpY * ey / groundUpOnScreen;
 
-	function computeDeadzone() {
-		var engine = Engine.getCurrent();
-        var cx = engine.width / 2;
-        var cy = engine.height / 2;
-        var deadzoneWidth = engine.width / 7;
-        var deadZoneHeight = engine.height / 7;
-
-        deadZone = new h2d.col.Bounds();
-        deadZone.xMin = cx - deadzoneWidth;
-        deadZone.xMax = cx + deadzoneWidth;
-        deadZone.yMin = cy - deadZoneHeight;
-        deadZone.yMax = cy + deadZoneHeight;
+		var kXY = 1 - Math.exp(-Const.get(FollowStrengthXY) * ctx.elapsedTime);
+		var kZ = 1 - Math.exp(-Const.get(FollowStrengthZ) * ctx.elapsedTime);
+		set(new Point(
+			hxd.Math.lerp(camera.target.x, anchor.x, kXY),
+			hxd.Math.lerp(camera.target.y, anchor.y, kXY),
+			hxd.Math.lerp(camera.target.z, anchor.z, kZ)));
 	}
 
-    function initCamera() {
+	public function enteredRoom(r : ent.Room) {
+		set(new Point(r.x, r.y, r.z));
+		snapToPlayer = true;
+	}
+
+	function centerOn(pos : Point, z : Float) {
+		anchor.set(pos.x, pos.y, z);
+		var right = camera.getRight();
+		var up = camera.getUp();
+		var groundUpX = -right.y;
+		var groundUpY = right.x;
+		var groundUpOnScreen = groundUpX * up.x + groundUpY * up.y;
+		var offset = (pos.z - z) * up.z / groundUpOnScreen;
+		anchor.x += groundUpX * offset;
+		anchor.y += groundUpY * offset;
+	}
+
+	function initCamera() {
 		var X = Const.get(DefaultCameraWidth) * 0.5;
 		var Z = Const.get(DefaultCameraDepth) * 0.5;
 		camera.orthoBounds.xMax = X;
@@ -81,10 +94,10 @@ class CameraController extends h3d.scene.Object {
 		camera.orthoBounds.zMin = -Z;
 	}
 
-    function set(pos : h3d.col.Point) {
-        camera.target = pos;
-        camera.pos.x = camera.target.x + Const.get(DefaultCameraX);
-        camera.pos.y = camera.target.y + Const.get(DefaultCameraY);
-        camera.pos.z = camera.target.z + Const.get(DefaultCameraZ);
-    }
+	function set(pos : Point) {
+		camera.target.load(pos);
+		camera.pos.x = camera.target.x + Const.get(DefaultCameraX);
+		camera.pos.y = camera.target.y + Const.get(DefaultCameraY);
+		camera.pos.z = camera.target.z + Const.get(DefaultCameraZ);
+	}
 }
