@@ -106,6 +106,66 @@
 					"scaleY": 4.8706804814962075,
 					"scaleZ": 12.259680689970757,
 					"rotationZ": -89.99999999999999
+				},
+				{
+					"type": "model",
+					"name": "Fence01",
+					"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+					"x": 6.079884564436793,
+					"y": -0.13500218781747744,
+					"z": 1.1321091857691323,
+					"scaleX": 2.2452,
+					"scaleY": 2.245199999999999,
+					"scaleZ": 2.2452,
+					"rotationX": 0.10330000000000004,
+					"rotationY": -0.0919,
+					"rotationZ": -90.0001
+				},
+				{
+					"type": "model",
+					"name": "blocsx10",
+					"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+					"x": -6.649510177441572,
+					"y": -0.25520218781747744,
+					"z": 0.586250190513421,
+					"rotationZ": -90
+				},
+				{
+					"type": "model",
+					"name": "Fence01",
+					"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+					"x": -3.5862093028806576,
+					"y": -0.13500218781747744,
+					"z": 1.1321091857691323,
+					"scaleX": 2.2452,
+					"scaleY": 2.245199999999999,
+					"scaleZ": 2.2452,
+					"rotationX": 0.10330000000000004,
+					"rotationY": -0.0919,
+					"rotationZ": -90.0001
+				},
+				{
+					"type": "model",
+					"name": "Fence01",
+					"source": "content/Art/Asset/Generique/Fences/Fence01.fbx",
+					"x": 1.1909845644367931,
+					"y": -0.13510218781747743,
+					"z": 1.1233091857691324,
+					"scaleX": 2.2452,
+					"scaleY": 2.245199999999999,
+					"scaleZ": 2.2452,
+					"rotationX": 0.10330000000000004,
+					"rotationY": -0.0919,
+					"rotationZ": -90.0001
+				},
+				{
+					"type": "model",
+					"name": "blocsx10",
+					"source": "content/Art/Asset/Generique/blocs/blocsx10.fbx",
+					"x": 3.6169302756465127,
+					"y": -0.25520218781747744,
+					"z": 0.586250190513421,
+					"rotationZ": -90
 				}
 			]
 		},

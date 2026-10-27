@@ -268,15 +268,7 @@
 					"type": "material",
 					"name": "material",
 					"props": {
-						"Fartherlands": {
-							"mode": "PBR",
-							"blend": "None",
-							"shadows": true,
-							"culling": "Back",
-							"depthTest": "Less",
-							"colorMask": 15,
-							"enableStencil": false
-						}
+						"Fartherlands": {}
 					}
 				},
 				{
@@ -372,7 +364,7 @@
 					"name": "polygon",
 					"x": -0.63,
 					"y": -8.04,
-					"z": 9.26,
+					"z": 8.247715711045048,
 					"scaleX": 17.59,
 					"scaleY": 7.76,
 					"scaleZ": 15,
@@ -402,7 +394,7 @@
 					"name": "polygon",
 					"x": -8.13,
 					"y": -0.54,
-					"z": 9.26,
+					"z": 8.247715711045048,
 					"scaleX": 17.26,
 					"scaleY": 7.76,
 					"scaleZ": 15,

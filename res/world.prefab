@@ -816,6 +816,13 @@
 					"y": 4.351537243902708
 				},
 				{
+					"type": "reference",
+					"name": "D50",
+					"source": "content/Room/Diverse/D50.prefab",
+					"x": -54.73573835715804,
+					"y": 29.07135680639808
+				},
+				{
 					"type": "shader",
 					"name": "ColorMult",
 					"source": "h3d.shader.ColorMult",
