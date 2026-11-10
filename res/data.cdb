@@ -150,6 +150,12 @@
 					"color": 6983599
 				},
 				{
+					"id": "SeeThroughColor",
+					"value": 0.8,
+					"color": 6737151,
+					"desc": "Silhouette color of the character behind assets, value is the alpha"
+				},
+				{
 					"id": "FadeDurationBetweenRooms",
 					"value": 1
 				},

@@ -24,5 +24,6 @@ class Const {
 #end
 
 	public static final STENCIL_OUTLINE = 1 << 0;
+	public static final STENCIL_SEE_THROUGH = 1 << 1;
 
 }

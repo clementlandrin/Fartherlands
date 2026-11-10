@@ -18,6 +18,8 @@ class Goddess extends Entity {
 		setObject(chara);
 		for ( m in obj.getMaterials() )
 			m.color.setColor(0xFF0000);
+		
+		setupSeeThrough();
 
 		var temporalPrim = new h3d.prim.Sphere(1.0, 64, 60);
 		temporalVisual = new h3d.scene.Mesh(temporalPrim, null, game.s3d);
@@ -43,6 +45,35 @@ class Goddess extends Entity {
 		temporalVisual.setScale(temporalRadius);
 
 		sphereRemainingTime = Const.get(SphereMaxTime);
+	}
+
+	function setupSeeThrough() {
+		var shader = new shaders.SeeThroughShader();
+		shader.color.setColor(Const.getColor(SeeThroughColor));
+		shader.color.a = Const.get(SeeThroughColor);
+
+		var maskStencil = new h3d.mat.Stencil();
+		maskStencil.setFunc(Always, Const.STENCIL_SEE_THROUGH, Const.STENCIL_SEE_THROUGH, Const.STENCIL_SEE_THROUGH);
+		maskStencil.setOp(Keep, Keep, Replace);
+
+		var seeThroughStencil = new h3d.mat.Stencil();
+		seeThroughStencil.setFunc(NotEqual, Const.STENCIL_SEE_THROUGH, Const.STENCIL_SEE_THROUGH, Const.STENCIL_SEE_THROUGH);
+		seeThroughStencil.setOp(Keep, Keep, Replace);
+
+		for ( m in obj.getMaterials() ) {
+			var mask = m.allocPass("afterTonemapping");
+			mask.depth(false, LessEqual);
+			mask.culling = Back;
+			mask.setColorMask(false, false, false, false);
+			mask.stencil = maskStencil;
+
+			var p = m.allocPass("overlay");
+			p.addShader(shader);
+			p.depth(false, Greater);
+			p.culling = Back;
+			p.setBlendMode(Alpha);
+			p.stencil = seeThroughStencil;
+		}
 	}
 
 	public function getTemporalRadius() {
