@@ -35,7 +35,11 @@ class Ladder extends Entity {
 		} catch ( e : Dynamic ) {}
 		if ( top != null )
 			topOut = top.find(o -> o.name.toLowerCase() == "out" ? o : null);
-		
+
+		if ( bottom != null )
+			bottom.culled = true;
+		if ( top != null )
+			top.culled = true;
 	}
 
 	override function start() {
