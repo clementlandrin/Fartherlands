@@ -422,12 +422,7 @@
 				"props": {
 					"disableOnActivate": [
 						{
-							"ref": "LavoryTrap2"
-						}
-					],
-					"enableOnActivate": [
-						{
-							"ref": "lavory_bridge"
+							"ref": "D50_rightDoor"
 						}
 					]
 				}
@@ -460,8 +455,13 @@
 			"children": [
 				{
 					"type": "model",
-					"name": "wall03",
+					"name": "leftDoor",
 					"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+					"props": {
+						"id": "D50_leftDoor",
+						"type": 4,
+						"$cdbtype": "element"
+					},
 					"x": -1.9895,
 					"y": 0.555,
 					"z": -1.8861,
@@ -469,8 +469,13 @@
 				},
 				{
 					"type": "model",
-					"name": "wall03",
+					"name": "rightDoor",
 					"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+					"props": {
+						"id": "D50_rightDoor",
+						"type": 4,
+						"$cdbtype": "element"
+					},
 					"x": 1.992,
 					"y": 0.555,
 					"z": -1.8861,

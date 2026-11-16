@@ -104,6 +104,10 @@ class Console {
 			}
 		});
 
+		console.add("fly", function() {
+			game.ctrl.toggleFly();
+		});
+
 		console.add("unlockSphere", function() {
 			game.goddess.unlockedSkill = true;
 		});

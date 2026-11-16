@@ -146,12 +146,7 @@
 						"props": {
 							"disableOnActivate": [
 								{
-									"ref": "LavoryTrap1"
-								}
-							],
-							"enableOnActivate": [
-								{
-									"ref": "lavory_bridge"
+									"ref": "D50_leftDoor"
 								}
 							]
 						}

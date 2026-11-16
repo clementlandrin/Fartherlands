@@ -166,18 +166,18 @@ gfx.Renderer.prototype = $extend(h3d.scene.pbr.Renderer.prototype,{
 	}
 	,__class__: gfx.Renderer
 });
-Math.__name__ = "Math";
 var js = js || {};
 if(!js.node) js.node = {};
+js.node.Path = require("path");
+js.node.Fs = require("fs");
+Math.__name__ = "Math";
 js.node.ChildProcess = require("child_process");
 js.node.Crypto = require("crypto");
 js.node.DnsErrorCode = require("dns");
 js.node.Dns = require("dns");
-js.node.Fs = require("fs");
 js.node.Module = require("module");
 js.node.Net = require("net");
 js.node.Os = require("os");
-js.node.Path = require("path");
 if(!js.node.events) js.node.events = {};
 js.node.events.EventEmitter = require("events").EventEmitter;
 js.node.Stream = require("stream");

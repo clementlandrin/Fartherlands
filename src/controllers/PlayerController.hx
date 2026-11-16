@@ -8,6 +8,7 @@ class PlayerController {
 	public var sequence : Sequence;
 	public var curElevator : ent.Elevator;
 	public var item : ent.interactible.Pickable;
+	public var fly : Bool = false;
 
 	var game : Game;
 
@@ -64,12 +65,18 @@ class PlayerController {
 	}
 
 
+	public function toggleFly() {
+		fly = !fly;
+		sequence = null;
+		curLadder = null;
+	}
+
 	public function getTimeMode() : Game.TimeMode {
 		return @:privateAccess player.timeMode;
 	}
 
 	public function enterLadder(l : ent.Ladder, to : h3d.col.Point) {
-		if ( !canClimb() )
+		if ( !canClimb() || fly )
 			return;
 		if ( l == null )
 			throw "entering null ladder";
@@ -160,6 +167,19 @@ class PlayerController {
 		right.normalize();
 
 		var move = displacement.y * front + displacement.x * right;
+
+		if ( fly ) {
+			if ( move.length() > 0.0 )
+				player.setFront(move.normalized());
+			if ( hxd.Key.isDown(hxd.Key.SPACE) )
+				z += dt * speed;
+			if ( hxd.Key.isDown(hxd.Key.CTRL) )
+				z -= dt * speed;
+			x += move.x;
+			y += move.y;
+			return;
+		}
+
 		var newPos = new h3d.col.Point(x + move.x, y + move.y, z);
 
 		if ( move.length() > 0.0 ) {

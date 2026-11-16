@@ -26,7 +26,7 @@ class GoddessController extends PlayerController {
 		if ( !goddess.unlockedSkill )
 			return;
 		var sphereIncrease = dt * Const.get(SphereMaxRadius) / Const.get(SphereTransitionDuration);
-		if ( hxd.Key.isPressed(hxd.Key.SPACE) && goddess.getSphereRemainingTime() > 0) {
+		if ( !PlayerController.fly && hxd.Key.isPressed(hxd.Key.SPACE) && goddess.getSphereRemainingTime() > 0) {
 			goddess.sphereActive = !goddess.sphereActive;
 		}
 		if ( goddess.sphereActive ) {
