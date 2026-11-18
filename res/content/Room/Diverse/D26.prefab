@@ -184,8 +184,13 @@
 		},
 		{
 			"type": "model",
-			"name": "wall03",
+			"name": "leftDoor",
 			"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+			"props": {
+				"id": "D26_leftDoor",
+				"type": 4,
+				"$cdbtype": "element"
+			},
 			"x": -1.965158522583595,
 			"y": -6.399135096312054,
 			"z": 5.5918577775679585,
@@ -195,8 +200,13 @@
 		},
 		{
 			"type": "model",
-			"name": "wall03",
+			"name": "rightDoor",
 			"source": "content/Art/Asset/Generique/Walls/wall03.fbx",
+			"props": {
+				"id": "D26_rightDoor",
+				"type": 4,
+				"$cdbtype": "element"
+			},
 			"x": 2.016323540602847,
 			"y": -6.399135096312055,
 			"z": 5.5918577775687295,
@@ -244,6 +254,52 @@
 			"rotationX": 7.797059880027364e-12,
 			"rotationY": -7.144431295654307e-12,
 			"rotationZ": -4.8612270479921555e-25
+		},
+		{
+			"type": "model",
+			"name": "levier",
+			"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+			"props": {
+				"id": "D16_levier",
+				"type": 14,
+				"$cdbtype": "element",
+				"props": {
+					"disableOnActivate": [
+						{
+							"ref": "D26_leftDoor"
+						}
+					]
+				}
+			},
+			"x": -6.516046901896226,
+			"y": -6.2707898752789974,
+			"z": 2.162700570522662,
+			"rotationX": -0.00000814462207880196,
+			"rotationY": 2.4382158514140184e-11,
+			"rotationZ": -1.7329676657752179e-18
+		},
+		{
+			"type": "model",
+			"name": "levier",
+			"source": "content/Art/Asset/Generique/blocs/cube_stone01.fbx",
+			"props": {
+				"id": "D16_levier",
+				"type": 14,
+				"$cdbtype": "element",
+				"props": {
+					"disableOnActivate": [
+						{
+							"ref": "D26_rightDoor"
+						}
+					]
+				}
+			},
+			"x": 7.074111386500817,
+			"y": -6.2707898752789974,
+			"z": 2.162700570522662,
+			"rotationX": -0.00000814462207880196,
+			"rotationY": 2.4382158514140184e-11,
+			"rotationZ": -1.7329676657752179e-18
 		}
 	]
 }
